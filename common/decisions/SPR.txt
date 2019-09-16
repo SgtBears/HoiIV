@@ -1,0 +1,28 @@
+political_actions = {
+
+	SPR_move_capital_to_madrid = {
+
+		allowed = {
+			original_tag = SPR
+		}
+
+		available = {
+			owns_state = 41
+			has_full_control_of_state = 41
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			capital_scope = {
+				not = { state = 41 }
+			}
+		}
+		complete_effect = {
+			set_capital = 41
+		}
+	}
+
+}

@@ -19,7 +19,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}		
@@ -120,7 +120,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_metropolitan_france
-		cost = 10
+		cost = 70
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -262,7 +262,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_industrial_expansion
-		cost = 10
+		cost = 70
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -402,7 +402,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.2
 		}
@@ -613,7 +613,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_algerie_france
-		cost = 10
+		cost = 70
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -737,7 +737,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_colonial_industry
-		cost = 10
+		cost = 70
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -864,7 +864,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_colonial_military_factories
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -886,7 +886,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_extra_research_slot
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -900,7 +900,9 @@ focus_tree = {
 				category = nuclear
 				category = rocketry
 			}
-			news_event = { id = news.174 } 
+			hidden_effect = {
+				news_event = { id = news.174 } 
+			}
 		}
 	}
 
@@ -914,7 +916,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_extra_research_slot
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -945,7 +947,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_jet_effort
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -962,7 +964,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_aggressive_focus }
 		x = 6
 		y = 0
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -983,7 +985,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = FRA_defensive_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -998,7 +1000,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_fortification_focus
-		cost = 10
+		cost = 70
 
 		available = {
 			735 = { is_controlled_by = FRA }
@@ -1021,7 +1023,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_alpine_forts
-		cost = 10
+		cost = 70
 
 		available = {
 			18 = { is_controlled_by = FRA }
@@ -1030,6 +1032,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			ROOT = { country_event = { id = france.2 } }
+			set_global_flag = maginot_line_extended_flag
 			BEL = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -1049,7 +1052,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_defensive_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1065,7 +1068,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_infantry_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1086,7 +1089,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_artillery_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1106,7 +1109,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_defensive_focus }
 		x = 8
 		y = 0
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1126,7 +1129,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_aggressive_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1142,7 +1145,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_motorized_focus
-		cost = 10
+		cost = 70
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1160,7 +1163,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_mechanized_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1185,7 +1188,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_light_medium_armor
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1214,7 +1217,7 @@ focus_tree = {
 
 		x = 14
 		y = 0
-		cost = 10
+		cost = 71
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1239,7 +1242,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_initiate_government_reform
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1272,6 +1275,8 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			custom_effect_tooltip = remove_political_advisor
+			show_ideas_tooltip = leon_blum
 		}
 	}
 
@@ -1287,7 +1292,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_revise_versailles
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1319,7 +1324,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_support_the_left
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 10
 		}
@@ -1411,7 +1416,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = FRA_support_the_left
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1466,7 +1471,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_leftist_rhetoric
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1505,7 +1510,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_national_mobilization
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1528,7 +1533,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_national_mobilization
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1552,7 +1557,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_initiate_government_reform
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1608,7 +1613,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = FRA_support_status_quo
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.1
@@ -1677,7 +1682,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_support_status_quo
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1719,7 +1724,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_little_entente
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1749,7 +1754,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_strengthen_government_support
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1780,7 +1785,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_little_entente
-		cost = 10
+		cost = 70
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1807,7 +1812,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_invite_yugoslavia
-		cost = 10
+		cost = 70
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1828,7 +1833,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_invite_romania
-		cost = 10
+		cost = 70
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1847,7 +1852,7 @@ focus_tree = {
 	#	x = 1
 	#	y = 0
 	#	relative_position_id = FRA_defensive_strategems
-	#	cost = 10
+	#	cost = 70
 	#	#ai_will_do = {
 	#	#	factor = 1
 	#	#}
@@ -1868,7 +1873,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = FRA_revise_versailles
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1904,7 +1909,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_support_the_right
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 10
 		}
@@ -1928,7 +1933,7 @@ focus_tree = {
 			set_rule = {
 				can_send_volunteers = yes
 			}
-			add_ideas = {	FRA_scw_intervention_nationalists_focus	} ## does not seem to work. ask someone
+			add_ideas = {	FRA_scw_intervention_nationalists_focus	}
 			hidden_effect = {
 				random_other_country = {
 					limit = {
@@ -1994,7 +1999,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = FRA_support_the_right
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2049,7 +2054,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_right_wing_rhetoric
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2086,7 +2091,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = FRA_army_of_aggression
-		cost = 10
+		cost = 70
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2118,7 +2123,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_army_of_aggression
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2327,7 +2332,7 @@ focus_tree = {
 				}
 	 			if = {
 	 				limit = {
-	 					GER = { has_completed_focus = GER_reestablish_free_elections }
+	 					GER = { has_completed_focus = GER_oppose_hitler }
 	 				}
 	 				random_other_country = {
 	 					limit = {
@@ -2353,7 +2358,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_woo_italy
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2400,7 +2405,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = FRA_army_of_aggression
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2420,7 +2425,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 23
 		y = 0
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2479,7 +2484,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = FRA_navy_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2503,7 +2508,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_navy_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2526,7 +2531,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_navy_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2551,7 +2556,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_carrier_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2576,7 +2581,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_carrier_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2595,7 +2600,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 29
 		y = 0
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2681,7 +2686,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_air_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2702,7 +2707,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_fighter_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2724,7 +2729,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_air_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2748,7 +2753,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_fighter_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2771,7 +2776,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_bomber_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2792,7 +2797,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = FRA_bomber_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 

@@ -679,6 +679,10 @@ ideas = {
 			allowed = {
 				original_tag = "SOV"
 			}
+			visible = {
+				NOT = { has_country_flag = purged_kalinin }
+				NOT = { has_country_flag = counter_purge }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purged_kalinin }
@@ -698,6 +702,10 @@ ideas = {
 				original_tag = SOV
 			}
 
+			visible = {
+				NOT = { has_country_flag = purge_2_group_b }
+				NOT = { has_country_flag = counter_purge }
+			}
 			available = 
 			{
 				custom_trigger_tooltip = {
@@ -742,6 +750,10 @@ ideas = {
 				original_tag = SOV
 			}
 
+			visible = {
+				NOT = { has_country_flag = purge_2_group_a }
+				NOT = { has_country_flag = counter_purge }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = counter_purge }
@@ -758,6 +770,10 @@ ideas = {
 			
 			allowed = {
 				original_tag = "SOV"
+			}
+			visible = {
+				NOT = { has_country_flag = purged_khrushchev }
+				NOT = { has_country_flag = counter_purge }
 			}
 			available = 
 			{
@@ -817,6 +833,9 @@ ideas = {
 			allowed = {
 				original_tag = "SOV"
 			}
+			visible = {
+				NOT = { has_country_flag = counter_purge }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = counter_purge }
@@ -851,18 +870,13 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
+			visible = {
+				NOT = { has_country_flag = purge_1_group_b }
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_1_group_b }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 404
-						} 
-					}
-				}
 			}
 			
 
@@ -880,18 +894,14 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
+			visible = {
+				NOT = { has_country_flag = purge_1_group_b }
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_1_group_b }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 405
-						} 
-					}
-				}
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
 			}
 			
 
@@ -908,6 +918,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
+			}
+			visible = {
+				NOT = { has_country_flag = purge_1_group_a }
 			}
 			available = 
 			{
@@ -930,6 +943,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 
+			}
+			visible = {
+				NOT = { has_country_flag = purge_1_group_a }
 			}
 			available = 
 			{
@@ -955,6 +971,9 @@ ideas = {
 				original_tag = SOV
 
 			}
+			visible = {
+				NOT = { has_country_flag = purge_1_group_a }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_1_group_a }
@@ -976,6 +995,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 
+			}
+			visible = {
+				NOT = { has_country_flag = purge_1_group_a }
 			}
 			available = 
 			{
@@ -999,6 +1021,9 @@ ideas = {
 				original_tag = SOV
 
 			}
+			visible = {
+				NOT = { has_country_flag = purge_2_group_b }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_2_group_b }
@@ -1020,6 +1045,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 
+			}
+			visible = {
+				NOT = { has_country_flag = purge_1_group_b }
 			}
 			available = 
 			{
@@ -1045,6 +1073,9 @@ ideas = {
 				original_tag = SOV
 
 			}
+			visible = {
+				NOT = { has_country_flag = purge_2_group_a }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_2_group_a }
@@ -1067,6 +1098,9 @@ ideas = {
 				original_tag = SOV
 
 			}
+			visible = {
+				NOT = { has_country_flag = purge_2_group_b }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_2_group_b }
@@ -1087,6 +1121,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 
+			}
+			visible = {
+				NOT = { has_country_flag = purge_2_group_a }
 			}
 			available = 
 			{
@@ -1109,6 +1146,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 
+			}
+			visible = {
+				NOT = { has_country_flag = purge_2_group_a }
 			}
 			available = 
 			{
@@ -1135,19 +1175,14 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
+			visible = {
+				NOT = { has_country_flag = counter_purge }
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = counter_purge }
-				custom_trigger_tooltip = {
-				tooltip = SOV_konev_civil_war
-					NOT = { 
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 408
-						}
-					}
-				}
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
 			}
 			
 
@@ -1167,18 +1202,14 @@ ideas = {
 				original_tag = SOV
 
 			}
+			visible = {
+				NOT = { has_country_flag = purge_2_group_b }
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_2_group_b }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 407
-						} 
-					}
-				}
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
 			}
 			
 
@@ -1195,20 +1226,17 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV # Unlocked via focus
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403
-						} 
-					}
-				}
+			}
+			visible = {
+				NOT = { has_country_flag = purge_1_group_b }
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
+				NOT = { has_completed_focus = SOV_collectivist_propaganda }
 			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_1_group_b }
 				has_completed_focus = SOV_positive_heroism
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
 			}
 			
 
@@ -1227,6 +1255,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 
+			}
+			visible = {
+				NOT = { has_country_flag = counter_purge }
 			}
 			available = 
 			{
@@ -1248,6 +1279,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 
+			}
+			visible = {
+				NOT = { has_country_flag = purge_2_group_b }
 			}
 			available = 
 			{
@@ -1271,6 +1305,9 @@ ideas = {
 				original_tag = SOV
 
 			}
+			visible = {
+				NOT = { has_country_flag = counter_purge }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = counter_purge }
@@ -1292,18 +1329,14 @@ ideas = {
 				original_tag = SOV
 
 			}
+			visible = {
+				NOT = { has_country_flag = purge_1_group_b }
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_1_group_b }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403
-						} 
-					}
-				}
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
 			}
 			
 
@@ -1322,18 +1355,14 @@ ideas = {
 				original_tag = SOV
 
 			}
+			visible = {
+				NOT = { has_country_flag = purge_2_group_a }
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_2_group_a }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 406
-						} 
-					}
-				}
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
 			}
 			
 
@@ -1353,18 +1382,14 @@ ideas = {
 				original_tag = SOV
 
 			}
+			visible = {
+				NOT = { has_country_flag = counter_purge }
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = counter_purge }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 409
-						} 
-					}
-				}
+				NOT = { has_global_flag = soviet_union_great_purge_unneeded }
 			}
 			
 
@@ -1397,6 +1422,15 @@ ideas = {
 				}
 			}
 
+			visible = {
+				OR = {
+					has_focus_tree = china_nationalist_focus
+					has_focus_tree = china_communist_focus
+					has_focus_tree = manchukuo_focus
+					original_tag = SOV
+				}
+				NOT = { has_completed_focus = CHI_closer_ties_with_germany }
+			}
 			available = {
 				if = {
 					limit = {
@@ -1683,6 +1717,9 @@ ideas = {
 				original_tag = SOV
 
 			}
+			visible = {
+				NOT = { has_country_flag = purge_1_group_a }
+			}
 			available = 
 			{
 				NOT = { has_country_flag = purge_1_group_a }
@@ -1721,12 +1758,13 @@ ideas = {
 				original_tag = SOV # Unlocked via focus
 
 			}
-			available = 
-			{
+			visible = {
 				NOT = { has_country_flag = counter_purge }
+				NOT = { has_completed_focus = SOV_collectivist_propaganda }
 			}
 			available = {
 				has_completed_focus = SOV_positive_heroism
+				NOT = { has_country_flag = counter_purge }
 			}
 			
 			cost = 250
@@ -1744,6 +1782,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 
+			}
+			visible = {
+				NOT = { has_country_flag = counter_purge }
 			}
 			available = 
 			{
@@ -1781,6 +1822,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 
+			}
+			visible = {
+				NOT = { has_country_flag = counter_purge }
 			}
 			available = 
 			{

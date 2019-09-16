@@ -1,0 +1,31 @@
+
+state={
+	id=838
+	name="STATE_838"
+	manpower = 1820000
+	
+	state_category = town
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		victory_points = {
+			7588 5
+		}
+		add_core_of = USA
+		add_core_of = WVI
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+			}
+		}
+
+	}
+
+	provinces={
+		11888 6958 3941 7466 4627 6971 10441 7588 3975 801 9923 6850 7646
+	}
+}

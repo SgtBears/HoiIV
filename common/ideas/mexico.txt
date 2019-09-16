@@ -341,6 +341,10 @@ ideas = {
 					air_ground_attack = 0.15
 					instant = yes
 				}
+				jet_tac_bomber_equipment = {
+					air_ground_attack = 0.15
+					instant = yes
+				}
 			}
 		}
 		
@@ -856,6 +860,14 @@ ideas = {
 				original_tag = MEX
 			}
 			
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = MEX_focus_liberalize_the_banking_sector }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -880,6 +892,15 @@ ideas = {
 				original_tag = MEX
 			}
 			
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = MEX_focus_the_red_shirts }
+					NOT = { has_completed_focus = MEX_focus_ban_political_militias }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -904,6 +925,14 @@ ideas = {
 				original_tag = MEX
 			}
 			
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = MEX_focus_jefe_maximo }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -930,6 +959,14 @@ ideas = {
 				original_tag = MEX
 			}
 			
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = MEX_focus_exile_calles }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -969,6 +1006,14 @@ ideas = {
 				original_tag = MEX
 			}
 			
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = MEX_focus_agricultural_credit_bank }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -1017,6 +1062,14 @@ ideas = {
 				original_tag = MEX
 			}
 			
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = MEX_focus_liberalize_the_banking_sector }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -1039,6 +1092,14 @@ ideas = {
 				original_tag = MEX
 			}
 			
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = MEX_focus_repeal_the_calles_law }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -1163,6 +1224,9 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = MEX_focus_arrest_general_cedillo }
+			}
 			available = {
 				has_completed_focus = MEX_focus_support_general_cedillo
 				NOT = {
@@ -1331,6 +1395,9 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = MEX_focus_jefe_maximo }
+			}
 			available = {
 				has_completed_focus = MEX_focus_purge_the_bureaucracy
 			}
@@ -1544,6 +1611,9 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = MEX_focus_nationalize_the_oil_fields }
+			}
 			available = {
 				has_completed_focus = MEX_focus_royal_dutch_shell
 			}
@@ -1573,6 +1643,9 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = MEX_focus_royal_dutch_shell }
+			}
 			available = {
 				has_completed_focus = MEX_focus_nationalize_the_oil_fields
 			}
@@ -1627,6 +1700,9 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = MEX_focus_royal_dutch_shell }
+			}
 			available = {
 				has_completed_focus = MEX_focus_engineering_school
 			}

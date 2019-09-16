@@ -29,8 +29,8 @@ country_event = {
 				factor = 2
 			}
 		}
-		ROM = { country_event = DOD_romania.2 }
-		give_guarantee = ROM
+		RO0 = { country_event = DOD_romania.2 }
+		give_guarantee = RO0
 	}
 
 	option = { #no
@@ -38,7 +38,7 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
-		ROM = { country_event = DOD_romania.3 }	
+		RO0 = { country_event = DOD_romania.3 }	
 	}
 
 }
@@ -53,7 +53,7 @@ country_event = {
 
 	option = { #cool
 		name = DOD_romania.2.a
-		give_guarantee = POL
+		give_guarantee = PO0
 		hidden_effect = {
 			news_event = { id = news.316 days = 1 }
 		}
@@ -95,12 +95,16 @@ country_event = {
 				add = 30
 			}
 		}
-		ROM = { country_event = DOD_romania.11 }
-		add_ai_strategy = {
+		RO0 = { country_event = DOD_romania.11 }
+		RO0 = {
+			ROOT = {
+				add_ai_strategy = {
 					type = alliance
-					id = "ROM"
+					id = PREV
 					value = 200
 				}
+			}
+		}
 	}
 
 	option = { #no
@@ -112,7 +116,7 @@ country_event = {
 				factor = 0
 			}
 		}
-		ROM = { country_event = DOD_romania.12 }	
+		RO0 = { country_event = DOD_romania.12 }	
 	}
 
 }
@@ -166,8 +170,8 @@ country_event = {
 				factor = 2
 			}
 		}
-		give_guarantee = ROM
-		ROM = { country_event = DOD_romania.21 }
+		give_guarantee = RO0
+		RO0 = { country_event = DOD_romania.21 }
 	}
 
 	option = { #no
@@ -175,13 +179,13 @@ country_event = {
 		ai_chance = {
 			factor = 20
 			modifier = {
-				ROM = {
+				RO0 = {
 					has_added_tension_amount > 0.01
 				}
 				factor = 1.5 #Romania was naughty
 			}
 		}
-		ROM = { country_event = DOD_romania.22 }	
+		RO0 = { country_event = DOD_romania.22 }	
 	}
 
 }
@@ -227,19 +231,19 @@ country_event = {
 	
 	option = { #sure
 		name = DOD_romania.30.a
-		give_guarantee = ROM
+		give_guarantee = RO0
 		ai_chance = {
 			factor = 70
 			modifier = {
-				ROM = { has_government = communism }
+				RO0 = { has_government = communism }
 				factor = 3
 			}
 			modifier = {
-				ROM = { has_completed_focus = ROM_appoint_soviet_friendly_government }
+				RO0 = { has_completed_focus = ROM_appoint_soviet_friendly_government }
 				factor = 3
 			}
 		}
-		ROM = { country_event = DOD_romania.31 }
+		RO0 = { country_event = DOD_romania.31 }
 	}
 
 	option = { #no
@@ -247,7 +251,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		ROM = { country_event = DOD_romania.32 }	
+		RO0 = { country_event = DOD_romania.32 }	
 	}
 
 }
@@ -262,7 +266,7 @@ country_event = {
 
 	option = { #cool
 		name = DOD_romania.31.a
-		give_military_access = SOV
+		give_military_access = SO0
 	}
 
 }
@@ -297,11 +301,11 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
-				strength_ratio = { tag = ROM ratio < 0.8 }
+				strength_ratio = { tag = RO0 ratio < 0.8 }
 				factor = 2
 			}
 			modifier = {
-				strength_ratio = { tag = ROM ratio < 0.5 }
+				strength_ratio = { tag = RO0 ratio < 0.5 }
 				factor = 10
 			}
 			modifier = {
@@ -309,7 +313,7 @@ country_event = {
 				factor = 0.5
 			}
 		}
-		ROM = { country_event = DOD_romania.41 }
+		RO0 = { country_event = DOD_romania.41 }
 	}
 
 	option = { #no
@@ -321,7 +325,7 @@ country_event = {
 				factor = 0.5
 			}
 		}
-		ROM = { country_event = DOD_romania.42 }	
+		RO0 = { country_event = DOD_romania.42 }	
 	}
 
 }
@@ -336,7 +340,7 @@ country_event = {
 
 	option = { #cool
 		name = DOD_romania.41.a
-		puppet = BUL
+		puppet = BU0
 		hidden_effect = {
 			news_event = { id = news.318 days = 1 }
 		}
@@ -358,11 +362,11 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				strength_ratio = { tag = BUL ratio < 1 }
+				strength_ratio = { tag = BU0 ratio < 1 }
 				factor = 10
 			}
 			modifier = {
-				BUL = {
+				BU0 = {
 					is_in_faction = yes
 				}
 				factor = 10
@@ -376,11 +380,17 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = BUL
+		BU0 = {
+			ROOT = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
 		}
-		news_event = { id = news.319 days = 1 }
+		hidden_effect = {
+			news_event = { id = news.319 days = 1 }
+		}
 	}
 
 }
@@ -399,7 +409,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		ROM = { country_event = DOD_romania.51 }
+		RO0 = { country_event = DOD_romania.51 }
 	}
 
 	option = { #change government to Romanian type, enter alliance
@@ -407,7 +417,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		ROM = { country_event = DOD_romania.52 }	
+		RO0 = { country_event = DOD_romania.52 }	
 	}
 
 	option = { #no deals
@@ -416,7 +426,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 2
-				ROM = {
+				RO0 = {
 					is_in_faction = no
 				}
 			}
@@ -425,7 +435,7 @@ country_event = {
 				is_in_faction = yes
 			}
 		}
-		ROM = { country_event = DOD_romania.53 }	
+		RO0 = { country_event = DOD_romania.53 }	
 	}
 
 }
@@ -440,8 +450,9 @@ country_event = {
 
 	option = { #cool
 		name = DOD_romania.51.a
-		puppet = HUN
+		puppet = HU5
 		set_country_flag = ROM_HUN_aligned
+		hidden_effect = { news_event = { id = am.news.4 days = 1 } }
 	}
 
 }
@@ -462,15 +473,28 @@ country_event = {
 		}
 		if = {
 			limit = { is_faction_leader = yes }
-			add_to_faction = HUN
+			add_to_faction = HU5
 		}
-		if = {
+		else_if = {
+			limit = {
+				is_in_faction = yes
+				is_faction_leader = no
+			}
+			random_country = {
+				limit = {
+					is_in_faction_with = HU5
+					is_faction_leader = yes
+				}
+				add_to_faction = HU5
+			}
+		}
+		else = {
 			limit = {
 				is_in_faction = no
 			}
 			set_rule = { can_create_factions = yes }
 			create_faction = ROM_BALKAN_FACTION
-			add_to_faction = HUN
+			add_to_faction = HU5
 		}
 		set_country_flag = ROM_HUN_aligned
 	}
@@ -480,11 +504,16 @@ country_event = {
 		ai_chance = {
 			factor = 20
 		}
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = HUN
+		HU5 = {
+			ROOT = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
 		}
 		set_country_flag = HUN_ROM_puppet_war
+		hidden_effect = { news_event = { id = am.news.5 days = 1 } }
 	}
 
 }
@@ -503,7 +532,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				strength_ratio = { tag = HUN ratio < 0.5 }
+				strength_ratio = { tag = HU5 ratio < 0.5 }
 				factor = 7
 			}
 		}
@@ -520,8 +549,9 @@ country_event = {
 		}
 		create_wargoal = {
 			type = puppet_wargoal_focus
-			target = HUN
+			target = HU5
 		}
+		hidden_effect = { news_event = { id = am.news.5 days = 1 } }
 	}
 
 }
@@ -541,15 +571,15 @@ country_event = {
 			factor = 10
 			modifier = {
 				factor = 2
-				strength_ratio = { tag = ROM ratio < 0.5 } #less than half the strength of Romania
+				strength_ratio = { tag = RO0 ratio < 0.5 } #less than half the strength of Romania
 			}
 			modifier = {
 				factor = 2
-				strength_ratio = { tag = ROM ratio < 0.25 } #less than 1/4 the strength of Romania
+				strength_ratio = { tag = RO0 ratio < 0.25 } #less than 1/4 the strength of Romania
 			}
 			modifier = {
 				factor = 5
-				strength_ratio = { tag = ROM ratio < 0.1 } #less than 10% the strength of Romania
+				strength_ratio = { tag = RO0 ratio < 0.1 } #less than 10% the strength of Romania
 			}
 			modifier = {
 				factor = 2
@@ -557,7 +587,7 @@ country_event = {
 				has_idea = YUG_idea_macedonian_opposition
 			}
 		}
-		ROM = { country_event = DOD_romania.61 }
+		RO0 = { country_event = DOD_romania.61 }
 	}
 
 	option = { #no
@@ -570,10 +600,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				strength_ratio = { tag = ROM ratio > 1.0 } #stronger than Romania
+				strength_ratio = { tag = RO0 ratio > 1.0 } #stronger than Romania
 			}
 		}
-		ROM = { country_event = DOD_romania.62 }	
+		RO0 = { country_event = DOD_romania.62 }	
 	}
 
 }
@@ -591,74 +621,275 @@ country_event = {
 		name = DOD_romania.61.a
 		if = {
 			limit = {
-				45 = { is_owned_by = YUG }
+				OR = {
+					45 = { is_owned_by = YU0 }
+					45 = { is_owned_by = CR5 }
+				}
+				HU5 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
 			}
-			SER = { transfer_state = 45 }
+			HU5 = { transfer_state = 45 }
+		}
+		else = {
+			limit = {
+				OR = {
+					45 = { is_owned_by = YU0 }
+					45 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 45 }
 		}
 		if = {
 			limit = {
-				764 = { is_owned_by = YUG }
+				OR = {
+					45 = { is_owned_by = SE0 }
+					45 = { is_owned_by = YU0 }
+				}
+				NOT = { HU5 = { is_subject_of = RO0 } }
+				NOT = { HU5 = { is_in_faction_with = RO0 } }
+				861 = { is_owned_by = YU0 }
 			}
-			SER = { transfer_state = 764 }
+			SE0 = { transfer_state = 861 }
+		}
+		else = {
+			limit = {
+				861 = { is_owned_by = YU0 }
+			}
+			CR5 = { transfer_state = 861 }
 		}
 		if = {
 			limit = {
-				107 = { is_owned_by = YUG }
+				OR = {
+					860 = { is_owned_by = YU0 }
+					860 = { is_owned_by = CR5 }
+				}
+				HU5 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
 			}
-			SER = { transfer_state = 107 }
+			HU5 = { transfer_state = 860 }
+		}
+		else = {
+			limit = {
+				OR = {
+					860 = { is_owned_by = YU0 }
+					860 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 860 }
 		}
 		if = {
 			limit = {
-				108 = { is_owned_by = YUG }
+				OR = {
+					764 = { is_owned_by = YU0 }
+					764 = { is_owned_by = CR5 }
+				}
 			}
-			SER = { transfer_state = 108 }
+			SE0 = { transfer_state = 764 }
 		}
 		if = {
 			limit = {
-				106 = { is_owned_by = YUG }
+				OR = {
+					107 = { is_owned_by = YU0 }
+					107 = { is_owned_by = CR5 }
+				}
 			}
-			SER = { transfer_state = 106 }
+			SE0 = { transfer_state = 107 }
 		}
-		puppet = SER
+		if = {
+			limit = {
+				OR = {
+					108 = { is_owned_by = YU0 }
+					108 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 108 }
+		}
+		if = {
+			limit = {
+				OR = {
+					867 = { is_owned_by = YU0 }
+					867 = { is_owned_by = CR5 }
+				}
+				BU0 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
+			}
+			BU0 = { transfer_state = 867 }
+		}
+		else = {
+			limit = {
+				OR = {
+					867 = { is_owned_by = YU0 }
+					867 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 867 }
+		}
+		if = {
+			limit = {
+				OR = {
+					866 = { is_owned_by = YU0 }
+					866 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 866 }
+		}
+		if = {
+			limit = {
+				OR = {
+					106 = { is_owned_by = YU0 }
+					106 = { is_owned_by = CR5 }
+				}
+				BU0 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
+			}
+			BU0 = { transfer_state = 106 }
+		}
+		else = {
+			limit = {
+				OR = {
+					106 = { is_owned_by = YU0 }
+					106 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 106 }
+		}
+		if = {
+			limit = {
+				OR = {
+					864 = { is_owned_by = YU0 }
+					864 = { is_owned_by = CR5 }
+				}
+				106 = { is_owned_by = BU0 }
+				BU0 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
+			}
+			BU0 = { transfer_state = 864 }
+		}
+		else = {
+			limit = {
+				OR = {
+					864 = { is_owned_by = YU0 }
+					864 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 864 }
+		}
 
 		if = {
 			limit = {
-				105 = { is_owned_by = YUG }
+				OR = {
+					105 = { is_owned_by = YU0 }
+					105 = { is_owned_by = CR5 }
+				}
 			}
-			MNT = { transfer_state = 105 }
+			SE0 = { transfer_state = 105 }
 		}
-		puppet = MNT
+		puppet = SE0
 
 
 		if = {
 			limit = {
-				103 = { is_owned_by = YUG }
+				103 = { is_owned_by = YU0 }
 			}
-			CRO = { transfer_state = 103 }
+			CR5 = { transfer_state = 103 }
 		}
 		if = {
 			limit = {
-				104 = { is_owned_by = YUG }
+				862 = { is_owned_by = YU0 }
 			}
-			CRO = { transfer_state = 104 }
+			CR5 = { transfer_state = 862 }
 		}
 		if = {
 			limit = {
-				109 = { is_owned_by = YUG }
+				863 = { is_owned_by = YU0 }
 			}
-			CRO = { transfer_state = 109 }
+			CR5 = { transfer_state = 863 }
 		}
 		if = {
 			limit = {
-				102 = { is_owned_by = YUG }
+				109 = { is_owned_by = YU0 }
 			}
-			CRO = { transfer_state = 102 }
+			CR5 = { transfer_state = 109 }
 		}
-		puppet = CRO
+		YU0 = {
+			transfer_navy = {
+				target = CR5
+			}
+		}
+		if = {
+			limit = {
+				104 = { is_owned_by = YU0 }
+			}
+			CR5 = { transfer_state = 104 }
+		}
+		if = {
+			limit = {
+				859 = { is_owned_by = YU0 }
+			}
+			CR5 = { transfer_state = 859 }
+		}
+		if = {
+			limit = {
+				102 = { is_owned_by = YU0 }
+			}
+			CR5 = { transfer_state = 102 }
+		}
+		if = {
+			limit = {
+				OR = {
+					868 = { is_owned_by = YU0 }
+					868 = { is_owned_by = CR5 }
+				}
+				HU5 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
+			}
+			HU5 = { transfer_state = 868 }
+		}
+		else = {
+			limit = {
+				OR = {
+					868 = { is_owned_by = YU0 }
+					868 = { is_owned_by = CR5 }
+				}
+			}
+			CR5 = { transfer_state = 868 }
+		}
+		if = {
+			limit = {
+				865 = { is_owned_by = YU0 }
+			}
+			CR5 = { transfer_state = 865 }
+		}
+		puppet = CR5
+
 		hidden_effect = {
-			annex_country = { target = YUG }
+			annex_country = { target = YU0 }
+			news_event = { id = news.324 days = 1 }
 		}
-		news_event = { id = news.324 days = 1 }
 	}
 
 }
@@ -677,22 +908,29 @@ country_event = {
 		ai_chance = {
 			factor = 75
 		}
-		create_wargoal = {
-			type = annex_everything
-			target = YUG
+		YU0 = {
+			ROOT = {
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
 		}
-		news_event = { id = news.320 days = 1 }
+		hidden_effect = {
+			news_event = { id = news.320 days = 1 }
+		}
 	}
 
 	option = { # approach Germans and Italians for joint action
 		name = DOD_romania.62.b
 		trigger = {
 			OR = {
-				GER = {
+				GE0 = {
 					NOT = { owns_state = 102 }
+					owns_state = 152
 				}
-				ITA = {
-					NOT = { owns_state = 103 }
+				IT0 = {
+					NOT = { owns_state = 863 }
 				}
 			}
 		}
@@ -700,17 +938,27 @@ country_event = {
 			factor = 25
 		}
 		if = {
-			limit = { GER = { NOT = { owns_state = 102 } } }
-			GER = { country_event = DOD_romania.63 }	
+			limit = {
+				GE0 = {
+					NOT = {
+						owns_state = 102
+					}
+					owns_state = 152
+				}
+			}
+			GE0 = { country_event = DOD_romania.63 }	
+			effect_tooltip = {
+				IT0 = { country_event = DOD_romania.64 }
+			}
 		}
 		if = {
 			limit = { 
-				ITA = { 
-					NOT = { owns_state = 103 } 
+				IT0 = { 
+					NOT = { owns_state = 863 } 
 				} 
-				GER = { owns_state = 102 }
+				GE0 = { owns_state = 102 }
 			}
-			ITA = { country_event = DOD_romania.64 }
+			IT0 = { country_event = DOD_romania.64 }
 			
 		}
 		
@@ -732,12 +980,43 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-		add_state_claim = 102
-		ROM = { 
+		if = {
+			limit = {
+				OR = {
+					102 = { is_owned_by = YU0 }
+					102 = { is_owned_by = CR5 }
+				}
+				NOT = { 102 = { is_claimed_by = GE0 } }
+			}
+			add_state_claim = 102
+		}
+		if = {
+			limit = {
+				OR = {
+					868 = { is_owned_by = YU0 }
+					868 = { is_owned_by = CR5 }
+				}
+				NOT = { 868 = { is_claimed_by = GE0 } }
+				NOT = { HU5 = { is_subject_of = RO0 } }
+				NOT = { HU5 = { is_in_faction_with = RO0 } }
+			}
+			add_state_claim = 868
+		}
+		if = {
+			limit = {
+				OR = {
+					865 = { is_owned_by = YU0 }
+					865 = { is_owned_by = CR5 }
+				}
+				NOT = { 865 = { is_claimed_by = GE0 } }
+			}
+			custom_effect_tooltip = add_state_claim_tooltip_865
+		}
+		RO0 = { 
 			country_event = DOD_romania.65 
 			set_country_flag = ROM_YUG_GER_approves
 		}
-		ITA = { country_event = DOD_romania.64 }	
+		IT0 = { country_event = DOD_romania.64 }	
 	}
 
 	option = { # rather not
@@ -745,8 +1024,8 @@ country_event = {
 		ai_chance = {
 			factor = 20
 		}
-		ROM = { country_event = DOD_romania.66 }
-		ITA = { country_event = DOD_romania.64 }	
+		RO0 = { country_event = DOD_romania.66 }
+		IT0 = { country_event = DOD_romania.64 }	
 	}
 
 }
@@ -771,15 +1050,72 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 103 = {is_claimed_by = ITA } }
+				NOT = { 865 = { is_claimed_by = IT0 } }
+				OR = {
+					865 = { is_owned_by = YU0 }
+					865 = { is_owned_by = CR5 }
+				}
 			}
-			add_state_claim = 103
+			add_state_claim = 865
 		}
-		ROM = { 
+		if = {
+			limit = {
+				NOT = { 862 = { is_claimed_by = IT0 } }
+				OR = {
+					862 = { is_owned_by = YU0 }
+					862 = { is_owned_by = CR5 }
+				}
+			}
+			add_state_claim = 862
+		}
+		if = {
+			limit = {
+				NOT = { 863 = { is_claimed_by = IT0 } }
+				OR = {
+					863 = { is_owned_by = YU0 }
+					863 = { is_owned_by = CR5 }
+				}
+			}
+			add_state_claim = 863
+		}
+		if = {
+			limit = {
+				NOT = { 105 = { is_claimed_by = IT0 } }
+				IT0 = { owns_state = 44 }
+				OR = {
+					105 = { is_owned_by = YU0 }
+					105 = { is_owned_by = CR5 }
+				}
+			}
+			add_state_claim = 105
+		}
+		if = {
+			limit = {
+				NOT = { 866 = { is_claimed_by = IT0 } }
+				IT0 = { owns_state = 44 }
+				OR = {
+					866 = { is_owned_by = YU0 }
+					866 = { is_owned_by = CR5 }
+				}
+			}
+			add_state_claim = 866
+		}
+		if = {
+			limit = {
+				NOT = { 864 = { is_claimed_by = IT0 } }
+				IT0 = { owns_state = 44 }
+				OR = {
+					864 = { is_owned_by = YU0 }
+					864 = { is_owned_by = CR5 }
+				}
+			}
+			add_state_claim = 864
+		}
+		RO0 = { 
 			country_event = DOD_romania.65 
 			set_country_flag = ROM_YUG_ITA_approves
 		}
-		ROM = { country_event = { id = DOD_romania.67 hours = 12 } }
+		RO0 = { country_event = { id = DOD_romania.67 hours = 12 } }
 	}
 
 	option = { # rather not
@@ -787,18 +1123,18 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		ROM = { country_event = DOD_romania.66 }
+		RO0 = { country_event = DOD_romania.66 }
 		if = {
 			limit = {
-				102 = { is_claimed_by = GER }
+				102 = { is_claimed_by = GE0 }
 			}
-			ROM = { country_event = { id = DOD_romania.67 hours = 12 } }
+			RO0 = { country_event = { id = DOD_romania.67 hours = 12 } }
 		}
 		if = {
 			limit = {
-				NOT = { 102 = { is_claimed_by = GER } }
+				NOT = { 102 = { is_claimed_by = GE0 } }
 			}
-			ROM = { country_event = { id = DOD_romania.68 hours = 12 } }
+			RO0 = { country_event = { id = DOD_romania.68 hours = 12 } }
 		}
 	}
 }
@@ -846,7 +1182,7 @@ country_event = {
 	
 	option = { #send an ultimatum
 		name = DOD_romania.67.a
-		YUG = { country_event = DOD_romania.69 }
+		YU0 = { country_event = DOD_romania.69 }
 
 	}
 
@@ -865,9 +1201,11 @@ country_event = {
 		name = DOD_romania.68.a
 		create_wargoal = {
 			type = annex_everything
-			target = YUG
+			target = YU0
 		}
-		news_event = { id = news.320 days = 1 }
+		hidden_effect = {
+			news_event = { id = news.320 days = 1 }
+		}
 	}
 
 }
@@ -879,16 +1217,16 @@ country_event = {
 	desc = {
 		text = DOD_romania.69.desc_GER
 		trigger = {
-			 ROM = { 
-			 	has_country_flag = ROM_YUG_GER_approves
-			 	NOT = { has_country_flag = ROM_YUG_ITA_approves }
-			 }
+			RO0 = { 
+				has_country_flag = ROM_YUG_GER_approves
+				NOT = { has_country_flag = ROM_YUG_ITA_approves }
+			}
 		}
 	}
 	desc = {
 		text = DOD_romania.69.desc_ITA
 		trigger = {
-			 ROM = { 
+			 RO0 = { 
 			 	has_country_flag = ROM_YUG_ITA_approves
 			 	NOT = { has_country_flag = ROM_YUG_GER_approves }
 			 }
@@ -897,7 +1235,7 @@ country_event = {
 	desc = {
 		text = DOD_romania.69.desc_GERITA
 		trigger = {
-			ROM = { 
+			RO0 = { 
 			 	has_country_flag = ROM_YUG_GER_approves
 			 	has_country_flag = ROM_YUG_ITA_approves 
 			 }
@@ -912,15 +1250,15 @@ country_event = {
 		ai_chance = {
 			factor = 60
 			modifier = {
-				102 = { is_claimed_by = GER }
+				RO0 = { has_country_flag = ROM_YUG_GER_approves }
 				factor = 2
 			}
 			modifier = {
-				103 = { is_claimed_by = ITA }
+				RO0 = { has_country_flag = ROM_YUG_ITA_approves }
 				factor = 2
 			}
 		}
-		ROM = { country_event = DOD_romania.70 }
+		RO0 = { country_event = DOD_romania.70 }
 
 	}
 
@@ -933,14 +1271,14 @@ country_event = {
 				factor = 3
 			}
 		}
-		ROM = { country_event = DOD_romania.71 }
+		RO0 = { country_event = DOD_romania.71 }
 		if = {
-			limit = { ROM = { has_country_flag = ROM_YUG_GER_approves } }
-			GER = { country_event = DOD_romania.71 }
+			limit = { RO0 = { has_country_flag = ROM_YUG_GER_approves } }
+			GE0 = { country_event = DOD_romania.71 }
 		}
 		if = {
-			limit = { ROM = { has_country_flag = ROM_YUG_ITA_approves } }
-			ITA = { country_event = DOD_romania.71 }
+			limit = { RO0 = { has_country_flag = ROM_YUG_ITA_approves } }
+			IT0 = { country_event = DOD_romania.71 }
 		}
 	}
 
@@ -959,113 +1297,382 @@ country_event = {
 		name = DOD_romania.70.a
 		if = {
 			limit = {
-				45 = { is_owned_by = YUG }
+				OR = {
+					45 = { is_owned_by = YU0 }
+					45 = { is_owned_by = CR5 }
+				}
+				HU5 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
 			}
-			SER = { transfer_state = 45 }
+			HU5 = { transfer_state = 45 }
+		}
+		else = {
+			limit = {
+				OR = {
+					45 = { is_owned_by = YU0 }
+					45 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 45 }
 		}
 		if = {
 			limit = {
-				764 = { is_owned_by = YUG }
+				OR = {
+					45 = { is_owned_by = SE0 }
+					45 = { is_owned_by = YU0 }
+				}
+				NOT = { HU5 = { is_subject_of = RO0 } }
+				NOT = { HU5 = { is_in_faction_with = RO0 } }
+				861 = { is_owned_by = YU0 }
 			}
-			SER = { transfer_state = 764 }
+			SE0 = { transfer_state = 861 }
+		}
+		else = {
+			limit = {
+				861 = { is_owned_by = YU0 }
+			}
+			CR5 = { transfer_state = 861 }
 		}
 		if = {
 			limit = {
-				107 = { is_owned_by = YUG }
+				OR = {
+					860 = { is_owned_by = YU0 }
+					860 = { is_owned_by = CR5 }
+				}
+				HU5 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
 			}
-			SER = { transfer_state = 107 }
+			HU5 = { transfer_state = 860 }
+		}
+		else = {
+			limit = {
+				OR = {
+					860 = { is_owned_by = YU0 }
+					860 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 860 }
 		}
 		if = {
 			limit = {
-				108 = { is_owned_by = YUG }
+				OR = {
+					764 = { is_owned_by = YU0 }
+					764 = { is_owned_by = CR5 }
+				}
 			}
-			SER = { transfer_state = 108 }
+			SE0 = { transfer_state = 764 }
 		}
 		if = {
 			limit = {
-				106 = { is_owned_by = YUG }
+				OR = {
+					107 = { is_owned_by = YU0 }
+					107 = { is_owned_by = CR5 }
+				}
 			}
-			SER = { transfer_state = 106 }
+			SE0 = { transfer_state = 107 }
 		}
-		puppet = SER
+		if = {
+			limit = {
+				OR = {
+					108 = { is_owned_by = YU0 }
+					108 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 108 }
+		}
+		if = {
+			limit = {
+				OR = {
+					867 = { is_owned_by = YU0 }
+					867 = { is_owned_by = CR5 }
+				}
+				BU0 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
+			}
+			BU0 = { transfer_state = 867 }
+		}
+		else = {
+			limit = {
+				OR = {
+					867 = { is_owned_by = YU0 }
+					867 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 867 }
+		}
+		if = {
+			limit = {
+				OR = {
+					866 = { is_owned_by = YU0 }
+					866 = { is_owned_by = CR5 }
+				}
+				has_country_flag = ROM_YUG_ITA_approves
+				IT0 = { owns_state = 44 }
+			}
+			IT0 = { transfer_state = 866 }
+		}
+		else = {
+			limit = {
+				OR = {
+					866 = { is_owned_by = YU0 }
+					866 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 866 }
+		}
+		if = {
+			limit = {
+				OR = {
+					106 = { is_owned_by = YU0 }
+					106 = { is_owned_by = CR5 }
+				}
+				BU0 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
+			}
+			BU0 = { transfer_state = 106 }
+		}
+		else = {
+			limit = {
+				OR = {
+					106 = { is_owned_by = YU0 }
+					106 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 106 }
+		}
+		if = {
+			limit = {
+				OR = {
+					864 = { is_owned_by = YU0 }
+					864 = { is_owned_by = CR5 }
+				}
+				has_country_flag = ROM_YUG_ITA_approves
+				IT0 = { owns_state = 44 }
+			}
+			IT0 = { transfer_state = 864 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					864 = { is_owned_by = YU0 }
+					864 = { is_owned_by = CR5 }
+				}
+				106 = { is_owned_by = BU0 }
+				BU0 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
+			}
+			BU0 = { transfer_state = 864 }
+		}
+		else = {
+			limit = {
+				OR = {
+					864 = { is_owned_by = YU0 }
+					864 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 864 }
+		}
 
 		if = {
 			limit = {
-				105 = { is_owned_by = YUG }
+				OR = {
+					105 = { is_owned_by = YU0 }
+					105 = { is_owned_by = CR5 }
+				}
+				has_country_flag = ROM_YUG_ITA_approves
+				IT0 = { owns_state = 44 }
+			}
+			IT0 = { transfer_state = 105 }
+		}
+		else = {
+			limit = {
+				OR = {
+					105 = { is_owned_by = YU0 }
+					105 = { is_owned_by = CR5 }
+				}
+			}
+			SE0 = { transfer_state = 105 }
+		}
+		puppet = SE0
+
+
+		if = {
+			limit = {
+				103 = { is_owned_by = YU0 }
+			}
+			CR5 = { transfer_state = 103 }
+		}
+		if = {
+			limit = {
+				OR = {
+					862 = { is_owned_by = YU0 }
+					862 = { is_owned_by = CR5 }
+				}
 				has_country_flag = ROM_YUG_ITA_approves
 			}
-			ITA = { transfer_state = 105 }
+			IT0 = { transfer_state = 862 }
 		}
-		if = {
+		else = {
 			limit = {
-				105 = { is_owned_by = YUG }
-				NOT = { has_country_flag = ROM_YUG_ITA_approves }
-			}
-			MNT = { transfer_state = 105 }
-			puppet = MNT
-		}
-		if = {
-			limit = {
-				103 = { 
-					is_owned_by = YUG 
-					NOT = { is_claimed_by = ITA }
+				862 = { 
+					is_owned_by = YU0
 				}
-
 			}
-			CRO = { transfer_state = 103 }
+			CR5 = { transfer_state = 862 }
 		}
 		if = {
 			limit = {
-				103 = { 
-					is_owned_by = YUG 
-					is_claimed_by = ITA
+				OR = {
+					863 = { is_owned_by = YU0 }
+					863 = { is_owned_by = CR5 }
 				}
-
+				has_country_flag = ROM_YUG_ITA_approves
 			}
-			ITA = { transfer_state = 103 }
+			IT0 = { transfer_state = 863 }
+		}
+		else = {
+			limit = {
+				863 = { 
+					is_owned_by = YU0
+				}
+			}
+			CR5 = { transfer_state = 863 }
 		}
 		if = {
 			limit = {
-				104 = { is_owned_by = YUG }
+				109 = { is_owned_by = YU0 }
 			}
-			CRO = { transfer_state = 104 }
+			CR5 = { transfer_state = 109 }
+		}
+		YU0 = {
+			transfer_navy = {
+				target = CR5
+			}
 		}
 		if = {
 			limit = {
-				109 = { is_owned_by = YUG }
+				104 = { is_owned_by = YU0 }
 			}
-			CRO = { transfer_state = 109 }
+			CR5 = { transfer_state = 104 }
 		}
 		if = {
+			limit = {
+				859 = { is_owned_by = YU0 }
+			}
+			CR5 = { transfer_state = 859 }
+		}
+		if = {
+			limit = {
+				OR = {
+					102 = { is_owned_by = YU0 }
+					102 = { is_owned_by = CR5 }
+				}
+				has_country_flag = ROM_YUG_GER_approves
+			}
+			GE0 = { transfer_state = 102 }
+		}
+		else = {
 			limit = {
 				102 = { 
-					is_owned_by = YUG 
-					NOT = { is_claimed_by = GER }
+					is_owned_by = YU0 
 				}
-
 			}
-			CRO = { transfer_state = 102 }
+			CR5 = { transfer_state = 102 }
 		}
 		if = {
 			limit = {
-				102 = { 
-					is_owned_by = YUG 
-					is_claimed_by = GER
+				OR = {
+					868 = { is_owned_by = YU0 }
+					868 = { is_owned_by = CR5 }
 				}
-
+				HU5 = {	
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
 			}
-			GER = { transfer_state = 102 }
+			HU5 = { transfer_state = 868 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					868 = { is_owned_by = YU0 }
+					868 = { is_owned_by = CR5 }
+				}
+				has_country_flag = ROM_YUG_GER_approves
+			}
+			GE0 = { transfer_state = 868 }
+		}
+		else = {
+			limit = {
+				868 = { 
+					is_owned_by = YU0 
+				}
+			}
+			CR5 = { transfer_state = 868 }
+		}
+		if = {
+			limit = {
+				OR = {
+					865 = { is_owned_by = YU0 }
+					865 = { is_owned_by = CR5 }
+				}
+				has_country_flag = ROM_YUG_ITA_approves
+			}
+			IT0 = { transfer_state = 865 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					865 = { is_owned_by = YU0 }
+					865 = { is_owned_by = CR5 }
+				}
+				has_country_flag = ROM_YUG_GER_approves
+			}
+			GE0 = { transfer_state = 865 }
+		}
+		else = {
+			limit = {
+				865 = { 
+					is_owned_by = YU0 
+				}
+			}
+			CR5 = { transfer_state = 865 }
 		}
 		if = {
 			limit = { has_country_flag = ROM_YUG_GER_approves }
-			GER = { puppet = CRO }
+			GE0 = { puppet = CR5 }
 		}
-		if = {
-			limit = { NOT = { has_country_flag = ROM_YUG_GER_approves } }
-			puppet = CRO 
+		else_if = {
+			limit = { has_country_flag = ROM_YUG_ITA_approves }
+			IT0 = { puppet = CR5 }
+		}
+		else = {
+			puppet = CR5 
 		}
 		hidden_effect = {
-			annex_country = { target = YUG }
+			annex_country = { target = YU0 }
 			news_event = { id = news.321 days = 1 }
 		}
 		
@@ -1085,34 +1692,42 @@ country_event = {
 
 	option = { #refuse
 		name = DOD_romania.71.a
-		ROM = {
-			declare_war_on = {
-				target = YUG
-				type = take_state_focus
-				generator = { 45 107 108 } 
-			}
-		}
-		if = {
-			limit = { ROM = { has_country_flag = ROM_YUG_GER_approves } }
-			GER = { 
-				create_wargoal = {
-					target = YUG
+		YU0 = {
+			RO0 = {
+				declare_war_on = {
+					target = PREV
 					type = take_state_focus
-					generator = { 104 102 109 } 
+					generator = { 860 45 861 764 107 108 866 106 } 
 				}
 			}
 		}
 		if = {
-			limit = { ROM = { has_country_flag = ROM_YUG_ITA_approves } }
-			ITA = { 
-				create_wargoal = {
-					target = YUG
-					type = take_state_focus
-					generator = { 106 103 105 } 
-				}	
+			limit = { RO0 = { has_country_flag = ROM_YUG_GER_approves } }
+			YU0 = {
+				GE0 = { 
+					create_wargoal = {
+						target = PREV
+						type = take_state_focus
+						generator = { 868 102 109 104 859 } 
+					}
+				}
 			}
 		}
-		news_event = { id = news.320 days = 1 }
+		if = {
+			limit = { RO0 = { has_country_flag = ROM_YUG_ITA_approves } }
+			YU0 = {
+				IT0 = {
+					create_wargoal = {
+						target = PREV
+						type = take_state_focus
+						generator = { 865 862 103 863 105 866 864 }
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			news_event = { id = news.320 days = 1 }
+		}
 	}
 }
 
@@ -1134,7 +1749,7 @@ country_event = {
 			20 = {
 				if = {
 					limit = {
-						FRA = { has_war = no }
+						FR0 = { has_war = no }
 					}
 					country_event = { id = DOD_romania.84 days = 160 random = 30 }
 					else = {
@@ -1145,7 +1760,7 @@ country_event = {
 			20 = {
 				if = {
 					limit = {
-						FRA = { NOT = { has_war_with = ITA } }
+						FR0 = { NOT = { has_war_with = IT0 } }
 					}
 					country_event = { id = DOD_romania.85 days = 160 random = 30 }
 					else = {
@@ -1719,18 +2334,18 @@ country_event = {
 		ai_chance = {
 			factor = 90
 			modifier = {
-				is_in_faction_with = CZE
+				is_in_faction_with = CZ0
 				factor = 0
 			}
 		}
-		ROM = { country_event = DOD_romania.111 }
+		RO0 = { country_event = DOD_romania.111 }
 	}
 	option = {# no deals
 		name = DOD_romania.110.b
 		ai_chance = {
 			factor = 10
 		}
-		ROM = { country_event = DOD_romania.113 }
+		RO0 = { country_event = DOD_romania.113 }
 	}
 }
 
@@ -1745,7 +2360,7 @@ country_event = {
 
 	option = {# agree
 		name = DOD_romania.111.a
-		CZE = { country_event = DOD_romania.114 }
+		CZ0 = { country_event = DOD_romania.114 }
 	}
 }
 
@@ -1769,10 +2384,55 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		add_state_claim = 70
-		add_state_claim = 71
-		add_state_claim = 72
-		add_state_claim = 73
+		if = {
+			limit = {
+				CZ0 = { owns_state = 70 }
+			}
+			add_state_claim = 70
+		}
+		if = {
+			limit = {
+				CZ0 = { owns_state = 71 }
+			}
+			add_state_claim = 71
+		}
+		if = {
+			limit = {
+				CZ0 = { owns_state = 73 }
+			}
+			add_state_claim = 73
+			if = {
+				limit = {
+					HU5 = {
+						OR = {
+							is_subject_of = RO0
+							is_in_faction_with = RO0
+						}
+					}
+					73 = { is_claimed_by = HU5 }
+				}
+				HU5 = { remove_state_claim = 73 }
+			}
+		}
+		if = {
+			limit = {
+				CZ0 = { owns_state = 664 }
+				HU5 = {
+					OR = {
+						is_subject_of = RO0
+						is_in_faction_with = RO0
+					}
+				}
+				NOT = { 664 = { is_claimed_by = HU5 } }
+			}
+			HU5 = { add_state_claim = 664 }
+		}
+		else = {
+			limit = {
+				CZ0 = { owns_state = 664 }
+			}
+			add_state_claim = 664
+		}
 	}
 }
 
@@ -1794,45 +2454,122 @@ country_event = {
 				factor = 0
 			}
 			modifier = {
-				GER = {
-					is_in_faction_with = ROM
-					is_in_faction_with = HUN
+				GE0 = {
+					is_in_faction_with = RO0
+					is_in_faction_with = HU5
 				}
 				factor = 2
 			}
 		}
 		custom_effect_tooltip = GAME_OVER_TT
-		GER = {
-			transfer_state = 9
-			transfer_state = 69
-			transfer_state = 75
-			transfer_state = 74
+		GE0 = {
+			if = {
+				limit = {
+					CZ0 = { owns_state = 9 }
+				}
+				transfer_state = 9
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 69 }
+				}
+				transfer_state = 69
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 808 }
+				}
+				transfer_state = 808
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 75 }
+				}
+				transfer_state = 75
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 74 }
+				}
+				transfer_state = 74
+			}
 		}
 		if = {
 			limit = {
-				country_exists = HUN
+				country_exists = PO0
+				CZ0 = { owns_state = 72 }
 			}
-			HUN = {
-				transfer_state = 664 #might as well throw them a bone
+			effect_tooltip = {
+				PO0 = {
+					transfer_state = 72
+				}
+				72 = { add_core_of = PO0 }
+			}
+			hidden_effect = {
+				PO0 = {
+					country_event = germany.52
+				}
+			}
+			else = {
+				limit = {
+					CZ0 = { owns_state = 72 }
+				}
+				GE0 = { transfer_state = 72 }
+			}
+		}
+		if = {
+			limit = {
+				country_exists = HU5
+				CZ0 = { owns_state = 664 }
+			}
+			effect_tooltip = {
+				HU5 = {
+					transfer_state = 664
+				}
+			}
+			hidden_effect = {
+				HU5 = {
+					country_event = DOD_romania.777
+				}
 			}
 			else = { #Need to get rid of everything
-				SLO = { transfer_state = 664 }
+				limit = {
+					CZ0 = { owns_state = 664 }
+				}
+				SL0 = { transfer_state = 664 }
 			}
 		}
-		SLO = {
-			transfer_state = 70
-			transfer_state = 71
-			transfer_state = 72
-			transfer_state = 73
-			add_state_core = 70
-			add_state_core = 71
-			add_state_core = 72
-			add_state_core = 73
+		SL0 = {
+			if = {
+				limit = {
+					CZ0 = { owns_state = 70 }
+				}
+				transfer_state = 70
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 71 }
+				}
+				transfer_state = 71
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 73 }
+				}
+				transfer_state = 73
+			}
+			hidden_effect = {
+				SL0 = {
+					inherit_technology = CZ0
+					load_oob = SLO_1939
+					add_manpower = 9876
+				}
+			}
 
 		}
-		ROM = {
-			puppet = SLO
-			annex_country = { target = CZE } #cleanup
+		RO0 = {
+			puppet = SL0
+			annex_country = { target = CZ0 } #cleanup
 		}
 	}
 	option = {# refuse
@@ -1844,37 +2581,43 @@ country_event = {
 				factor = 2
 			}
 			modifier = {
-				strength_ratio = { tag = GER ratio > 0.75 }
+				strength_ratio = { tag = GE0 ratio > 0.75 }
 				factor = 2
 			}
 			modifier = {
-				GER = { has_war = yes }
+				GE0 = { has_war = yes }
 				factor = 5
 			}
 		}
-		GER = {
-			create_wargoal = {
-				type = take_state_focus
-				target = CZE
-				generator = { 9 69 75 74 }
+		CZ0 = {
+			GE0 = {
+				create_wargoal = {
+					type = take_state_focus
+					target = PREV
+					generator = { 9 69 808 75 74 72 }
+				}
+				country_event = DOD_romania.115
 			}
-			country_event = DOD_romania.115
 		}
-		HUN = { 
-			create_wargoal = {
-				type = take_state_focus
-				target = CZE
-				generator = { 664 }
+		CZ0 = {
+			HU5 = { 
+				create_wargoal = {
+					type = take_state_focus
+					target = PREV
+					generator = { 664 }
+				}
+				country_event = DOD_romania.115
 			}
-			country_event = DOD_romania.115
 		}
-		FROM = {
-			create_wargoal = {
-				type = take_state_focus
-				target = CZE
-				generator = { 70 71 72 73 }
+		CZ0 = {
+			FROM = {
+				create_wargoal = {
+					type = take_state_focus
+					target = PREV
+					generator = { 70 71 73 }
+				}
+				country_event = DOD_romania.115
 			}
-			country_event = DOD_romania.115
 		}
 	}
 }
@@ -1890,6 +2633,101 @@ country_event = {
 
 	option = {# okay
 		name = DOD_romania.115.a
+		if = {
+			limit = {
+				tag = GE0
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 69 }
+				}
+				add_state_claim = 69
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 808 }
+				}
+				add_state_claim = 808
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 9 }
+				}
+				add_state_claim = 9
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 74 }
+				}
+				add_state_claim = 74
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 72 }
+				}
+				add_state_claim = 72
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 75 }
+				}
+				add_state_claim = 75
+			}
+		}
+		if = {
+			limit = {
+				tag = RO0
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 70 }
+				}
+				add_state_claim = 70
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 71 }
+				}
+				add_state_claim = 71
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 73 }
+				}
+				add_state_claim = 73
+				if = {
+					limit = {
+						HU5 = {
+							OR = {
+								is_subject_of = RO0
+								is_in_faction_with = RO0
+							}
+						}
+						73 = { is_claimed_by = HU5 }
+					}
+					HU5 = { remove_state_claim = 73 }
+				}
+			}
+			if = {
+				limit = {
+					CZ0 = { owns_state = 664 }
+					HU5 = {
+						OR = {
+							is_subject_of = RO0
+							is_in_faction_with = RO0
+						}
+					}
+					NOT = { 664 = { is_claimed_by = HU5 } }
+				}
+				HU5 = { add_state_claim = 664 }
+			}
+			else = {
+				limit = {
+					CZ0 = { owns_state = 664 }
+				}
+				add_state_claim = 664
+			}
+		}
 	}
 }
 
@@ -1912,10 +2750,14 @@ country_event = {
 			}
 		}
 		set_country_flag = ENG_mot_chosen
-		add_relation_modifier = {
-				target = ENG
-				modifier = ROM_foreign_motor_company
+		EN0 = {
+			ROOT = {
+				add_relation_modifier = {
+					target = PREV
+					modifier = ROM_foreign_motor_company
+				}
 			}
+		}
 	}
 	option = {# Germany
 		name = DOD_romania.120.b
@@ -1927,10 +2769,14 @@ country_event = {
 			}
 		}
 		set_country_flag = GER_mot_chosen
-		add_relation_modifier = {
-				target = GER
-				modifier = ROM_foreign_motor_company
+		GE0 = {
+			ROOT = {
+				add_relation_modifier = {
+					target = PREV
+					modifier = ROM_foreign_motor_company
+				}
 			}
+		}
 	}
 	option = {# USA
 		name = DOD_romania.120.c
@@ -1938,10 +2784,14 @@ country_event = {
 			factor = 35
 		}
 		set_country_flag = USA_mot_chosen
-		add_relation_modifier = {
-				target = USA
-				modifier = ROM_foreign_motor_company
+		US0 = {
+			ROOT = {
+				add_relation_modifier = {
+					target = PREV
+					modifier = ROM_foreign_motor_company
+				}
 			}
+		}
 	}
 }
 
@@ -1958,19 +2808,19 @@ country_event = {
 		name = DOD_hungary.150.a
 		trigger = {
 			OR = {
-				GER = {
+				GE0 = {
 					is_available_fighter_HUN = yes
 				}
-				FRA = {
+				FR0 = {
 					is_available_fighter_HUN = yes
 				}
-				ITA = {
+				IT0 = {
 					is_available_fighter_HUN = yes
 				}
-				ENG = {
+				EN0 = {
 					is_available_fighter_HUN = yes
 				}
-				USA = {
+				US0 = {
 					is_available_fighter_HUN = yes
 				}
 			}
@@ -1998,19 +2848,19 @@ country_event = {
 		name = DOD_hungary.150.b
 		trigger = {
 			OR = {
-				GER = {
+				GE0 = {
 					is_available_heavy_fighter_HUN = yes
 				}
-				FRA = {
+				FR0 = {
 					is_available_heavy_fighter_HUN = yes
 				}
-				ITA = {
+				IT0 = {
 					is_available_heavy_fighter_HUN = yes
 				}
-				ENG = {
+				EN0 = {
 					is_available_heavy_fighter_HUN = yes
 				}
-				USA = {
+				US0 = {
 					is_available_heavy_fighter_HUN = yes
 				}
 			}
@@ -2071,27 +2921,27 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 				factor = 10
 			}
 			modifier = {
-				GER = { has_government = ROOT }
+				GE0 = { has_government = ROOT }
 				factor = 2
 			}
 			modifier = {
-				GER = {
+				GE0 = {
 					has_tech = fighter1
 				}
 				add = 10
 			}
 			modifier = {
-				GER = {
+				GE0 = {
 					has_tech = fighter2
 				}
 				add = 10
 			}
 			modifier = {
-				GER = {
+				GE0 = {
 					has_tech = fighter3
 				}
 				add = 10
@@ -2100,22 +2950,22 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					GER = { has_tech = fighter1}
-					ROM = { NOT = { has_tech = fighter1 } }
+					GE0 = { has_tech = fighter1}
+					RO0 = { NOT = { has_tech = fighter1 } }
 				}
 				AND = {
-					GER = { has_tech = fighter2}
-					ROM = { NOT = { has_tech = fighter2 } }
+					GE0 = { has_tech = fighter2}
+					RO0 = { NOT = { has_tech = fighter2 } }
 				}
 				AND = {
-					GER = { has_tech = fighter3}
-					ROM = { NOT = { has_tech = fighter3 } }
+					GE0 = { has_tech = fighter3}
+					RO0 = { NOT = { has_tech = fighter3 } }
 				}
 			}
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = GE0 }
 			NOT = { has_country_flag = GER_fighter_refused }
 		}
-		GER = { country_event = DOD_romania.153 }	
+		GE0 = { country_event = DOD_romania.153 }	
 	}
 
 	option = {# select italian plane
@@ -2123,27 +2973,27 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
-				is_in_faction_with = ITA
+				is_in_faction_with = IT0
 				factor = 10
 			}
 			modifier = {
-				ITA = { has_government = ROOT }
+				IT0 = { has_government = ROOT }
 				factor = 2
 			}
 			modifier = {
-				ITA = {
+				IT0 = {
 					has_tech = fighter1
 				}
 				add = 10
 			}
 			modifier = {
-				ITA = {
+				IT0 = {
 					has_tech = fighter2
 				}
 				add = 10
 			}
 			modifier = {
-				ITA = {
+				IT0 = {
 					has_tech = fighter3
 				}
 				add = 10
@@ -2152,22 +3002,22 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ITA = { has_tech = fighter1}
-					ROM = { NOT = { has_tech = fighter1 } }
+					IT0 = { has_tech = fighter1}
+					RO0 = { NOT = { has_tech = fighter1 } }
 				}
 				AND = {
-					ITA = { has_tech = fighter2}
-					ROM = { NOT = { has_tech = fighter2 } }
+					IT0 = { has_tech = fighter2}
+					RO0 = { NOT = { has_tech = fighter2 } }
 				}
 				AND = {
-					ITA = { has_tech = fighter3}
-					ROM = { NOT = { has_tech = fighter3 } }
+					IT0 = { has_tech = fighter3}
+					RO0 = { NOT = { has_tech = fighter3 } }
 				}
 			}
-			NOT = { has_war_with = ITA }
+			NOT = { has_war_with = IT0 }
 			NOT = { has_country_flag = ITA_fighter_refused }
 		}
-		ITA = { country_event = DOD_romania.153 }	
+		IT0 = { country_event = DOD_romania.153 }	
 	}
 
 	option = {# select french plane
@@ -2175,27 +3025,27 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
-				is_in_faction_with = FRA
+				is_in_faction_with = FR0
 				factor = 10
 			}
 			modifier = {
-				FRA = { has_government = ROOT }
+				FR0 = { has_government = ROOT }
 				factor = 2
 			}
 			modifier = {
-				FRA = {
+				FR0 = {
 					has_tech = fighter1
 				}
 				add = 10
 			}
 			modifier = {
-				FRA = {
+				FR0 = {
 					has_tech = fighter2
 				}
 				add = 10
 			}
 			modifier = {
-				FRA = {
+				FR0 = {
 					has_tech = fighter3
 				}
 				add = 10
@@ -2204,50 +3054,50 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					FRA = { has_tech = fighter1}
-					ROM = { NOT = { has_tech = fighter1 } }
+					FR0 = { has_tech = fighter1}
+					RO0 = { NOT = { has_tech = fighter1 } }
 				}
 				AND = {
-					FRA = { has_tech = fighter2}
-					ROM = { NOT = { has_tech = fighter2 } }
+					FR0 = { has_tech = fighter2}
+					RO0 = { NOT = { has_tech = fighter2 } }
 				}
 				AND = {
-					FRA = { has_tech = fighter3}
-					ROM = { NOT = { has_tech = fighter3 } }
+					FR0 = { has_tech = fighter3}
+					RO0 = { NOT = { has_tech = fighter3 } }
 				}
 			}
-			NOT = { has_war_with = FRA }
+			NOT = { has_war_with = FR0 }
 			NOT = { has_country_flag = FRA_fighter_refused }
 			
 		}
-		FRA = { country_event = DOD_romania.153 }	
+		FR0 = { country_event = DOD_romania.153 }	
 	}
 	option = {# select british plane
 		name = DOD_hungary.151.d
 		ai_chance = {
 			factor = 30
 			modifier = {
-				is_in_faction_with = ENG
+				is_in_faction_with = EN0
 				factor = 10
 			}
 			modifier = {
-				ENG = { has_government = ROOT }
+				EN0 = { has_government = ROOT }
 				factor = 2
 			}
 			modifier = {
-				ENG = {
+				EN0 = {
 					has_tech = fighter1
 				}
 				add = 10
 			}
 			modifier = {
-				ENG = {
+				EN0 = {
 					has_tech = fighter2
 				}
 				add = 10
 			}
 			modifier = {
-				ENG = {
+				EN0 = {
 					has_tech = fighter3
 				}
 				add = 10
@@ -2256,49 +3106,49 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ENG = { has_tech = fighter1}
-					ROM = { NOT = { has_tech = fighter1 } }
+					EN0 = { has_tech = fighter1}
+					RO0 = { NOT = { has_tech = fighter1 } }
 				}
 				AND = {
-					ENG = { has_tech = fighter2}
-					ROM = { NOT = { has_tech = fighter2 } }
+					EN0 = { has_tech = fighter2}
+					RO0 = { NOT = { has_tech = fighter2 } }
 				}
 				AND = {
-					ENG = { has_tech = fighter3}
-					ROM = { NOT = { has_tech = fighter3 } }
+					EN0 = { has_tech = fighter3}
+					RO0 = { NOT = { has_tech = fighter3 } }
 				}
 			}
-			NOT = { has_war_with = ENG }
+			NOT = { has_war_with = EN0 }
 			NOT = { has_country_flag = ENG_fighter_refused }
 		}
-		ENG = { country_event = DOD_romania.153 }	
+		EN0 = { country_event = DOD_romania.153 }	
 	}
 	option = {# select american plane
 		name = DOD_hungary.151.e
 		ai_chance = {
 			factor = 30
 			modifier = {
-				is_in_faction_with = USA
+				is_in_faction_with = US0
 				factor = 10
 			}
 			modifier = {
-				USA = { has_government = ROOT }
+				US0 = { has_government = ROOT }
 				factor = 2
 			}
 			modifier = {
-				USA = {
+				US0 = {
 					has_tech = fighter1
 				}
 				add = 10
 			}
 			modifier = {
-				USA = {
+				US0 = {
 					has_tech = fighter2
 				}
 				add = 10
 			}
 			modifier = {
-				USA = {
+				US0 = {
 					has_tech = fighter3
 				}
 				add = 10
@@ -2307,38 +3157,38 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					USA = { has_tech = fighter1}
-					ROM = { NOT = { has_tech = fighter1 } }
+					US0 = { has_tech = fighter1}
+					RO0 = { NOT = { has_tech = fighter1 } }
 				}
 				AND = {
-					USA = { has_tech = fighter2}
-					ROM = { NOT = { has_tech = fighter2 } }
+					US0 = { has_tech = fighter2}
+					RO0 = { NOT = { has_tech = fighter2 } }
 				}
 				AND = {
-					USA = { has_tech = fighter3}
-					ROM = { NOT = { has_tech = fighter3 } }
+					US0 = { has_tech = fighter3}
+					RO0 = { NOT = { has_tech = fighter3 } }
 				}
 			}
-			NOT = { has_war_with = USA }
+			NOT = { has_war_with = US0 }
 			NOT = { has_country_flag = USA_fighter_refused }
 			NOT = { #to prevent overflow issues
 				AND = {
-					GER = {
+					GE0 = {
 						is_available_fighter_ROM = yes
 					}
-					FRA = {
+					FR0 = {
 						is_available_fighter_ROM = yes
 					}
-					ITA = {
+					IT0 = {
 						is_available_fighter_ROM = yes
 					}
-					ENG = {
+					EN0 = {
 						is_available_fighter_ROM = yes
 					}
 				}
 			}
 		}
-		USA = { country_event = DOD_romania.153 }	
+		US0 = { country_event = DOD_romania.153 }	
 	}
 	option = {# failsafe
 		name = DOD_hungary.151.f	
@@ -2393,27 +3243,27 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 				factor = 10
 			}
 			modifier = {
-				GER = { has_government = ROOT }
+				GE0 = { has_government = ROOT }
 				factor = 2
 			}
 			modifier = {
-				GER = {
+				GE0 = {
 					has_tech = heavy_fighter1
 				}
 				add = 10
 			}
 			modifier = {
-				GER = {
+				GE0 = {
 					has_tech = heavy_fighter2
 				}
 				add = 10
 			}
 			modifier = {
-				GER = {
+				GE0 = {
 					has_tech = heavy_fighter3
 				}
 				add = 10
@@ -2422,22 +3272,22 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					GER = { has_tech = heavy_fighter1}
-					ROM = { NOT = { has_tech = heavy_fighter1 } }
+					GE0 = { has_tech = heavy_fighter1}
+					RO0 = { NOT = { has_tech = heavy_fighter1 } }
 				}
 				AND = {
-					GER = { has_tech = heavy_fighter2}
-					ROM = { NOT = { has_tech = heavy_fighter2 } }
+					GE0 = { has_tech = heavy_fighter2}
+					RO0 = { NOT = { has_tech = heavy_fighter2 } }
 				}
 				AND = {
-					GER = { has_tech = heavy_fighter3}
-					ROM = { NOT = { has_tech = heavy_fighter3 } }
+					GE0 = { has_tech = heavy_fighter3}
+					RO0 = { NOT = { has_tech = heavy_fighter3 } }
 				}
 			}
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = GE0 }
 			NOT = { has_country_flag = GER_heavy_fighter_refused }
 		}
-		GER = { country_event = DOD_romania.154 }	
+		GE0 = { country_event = DOD_romania.154 }	
 	}
 
 	option = {# select italian plane
@@ -2445,27 +3295,27 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
-				is_in_faction_with = ITA
+				is_in_faction_with = IT0
 				factor = 10
 			}
 			modifier = {
-				ITA = { has_government = ROOT }
+				IT0 = { has_government = ROOT }
 				factor = 2
 			}
 			modifier = {
-				ITA = {
+				IT0 = {
 					has_tech = heavy_fighter1
 				}
 				add = 10
 			}
 			modifier = {
-				ITA = {
+				IT0 = {
 					has_tech = heavy_fighter2
 				}
 				add = 10
 			}
 			modifier = {
-				ITA = {
+				IT0 = {
 					has_tech = heavy_fighter3
 				}
 				add = 10
@@ -2474,22 +3324,22 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ITA = { has_tech = heavy_fighter1}
-					ROM = { NOT = { has_tech = heavy_fighter1 } }
+					IT0 = { has_tech = heavy_fighter1}
+					RO0 = { NOT = { has_tech = heavy_fighter1 } }
 				}
 				AND = {
-					ITA = { has_tech = heavy_fighter2}
-					ROM = { NOT = { has_tech = heavy_fighter2 } }
+					IT0 = { has_tech = heavy_fighter2}
+					RO0 = { NOT = { has_tech = heavy_fighter2 } }
 				}
 				AND = {
-					ITA = { has_tech = heavy_fighter3}
-					ROM = { NOT = { has_tech = heavy_fighter3 } }
+					IT0 = { has_tech = heavy_fighter3}
+					RO0 = { NOT = { has_tech = heavy_fighter3 } }
 				}
 			}
-			NOT = { has_war_with = ITA }
+			NOT = { has_war_with = IT0 }
 			NOT = { has_country_flag = ITA_heavy_fighter_refused }
 		}
-		ITA = { country_event = DOD_romania.154 }	
+		IT0 = { country_event = DOD_romania.154 }	
 	}
 
 	option = {# select french plane
@@ -2497,27 +3347,27 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
-				is_in_faction_with = FRA
+				is_in_faction_with = FR0
 				factor = 10
 			}
 			modifier = {
-				FRA = { has_government = ROOT }
+				FR0 = { has_government = ROOT }
 				factor = 2
 			}
 			modifier = {
-				FRA = {
+				FR0 = {
 					has_tech = heavy_fighter1
 				}
 				add = 10
 			}
 			modifier = {
-				FRA = {
+				FR0 = {
 					has_tech = heavy_fighter2
 				}
 				add = 10
 			}
 			modifier = {
-				FRA = {
+				FR0 = {
 					has_tech = heavy_fighter3
 				}
 				add = 10
@@ -2526,50 +3376,50 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					FRA = { has_tech = heavy_fighter1}
-					ROM = { NOT = { has_tech = heavy_fighter1 } }
+					FR0 = { has_tech = heavy_fighter1}
+					RO0 = { NOT = { has_tech = heavy_fighter1 } }
 				}
 				AND = {
-					FRA = { has_tech = heavy_fighter2}
-					ROM = { NOT = { has_tech = heavy_fighter2 } }
+					FR0 = { has_tech = heavy_fighter2}
+					RO0 = { NOT = { has_tech = heavy_fighter2 } }
 				}
 				AND = {
-					FRA = { has_tech = heavy_fighter3}
-					ROM = { NOT = { has_tech = heavy_fighter3 } }
+					FR0 = { has_tech = heavy_fighter3}
+					RO0 = { NOT = { has_tech = heavy_fighter3 } }
 				}
 			}
-			NOT = { has_war_with = FRA }
+			NOT = { has_war_with = FR0 }
 			NOT = { has_country_flag = FRA_heavy_fighter_refused }
 			
 		}
-		FRA = { country_event = DOD_romania.154 }	
+		FR0 = { country_event = DOD_romania.154 }	
 	}
 	option = {# select british plane
 		name = DOD_hungary.152.d
 		ai_chance = {
 			factor = 30
 			modifier = {
-				is_in_faction_with = ENG
+				is_in_faction_with = EN0
 				factor = 10
 			}
 			modifier = {
-				ENG = { has_government = ROOT }
+				EN0 = { has_government = ROOT }
 				factor = 2
 			}
 			modifier = {
-				ENG = {
+				EN0 = {
 					has_tech = heavy_fighter1
 				}
 				add = 10
 			}
 			modifier = {
-				ENG = {
+				EN0 = {
 					has_tech = heavy_fighter2
 				}
 				add = 10
 			}
 			modifier = {
-				ENG = {
+				EN0 = {
 					has_tech = heavy_fighter3
 				}
 				add = 10
@@ -2578,49 +3428,49 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ENG = { has_tech = heavy_fighter1}
-					ROM = { NOT = { has_tech = heavy_fighter1 } }
+					EN0 = { has_tech = heavy_fighter1}
+					RO0 = { NOT = { has_tech = heavy_fighter1 } }
 				}
 				AND = {
-					ENG = { has_tech = heavy_fighter2}
-					ROM = { NOT = { has_tech = heavy_fighter2 } }
+					EN0 = { has_tech = heavy_fighter2}
+					RO0 = { NOT = { has_tech = heavy_fighter2 } }
 				}
 				AND = {
-					ENG = { has_tech = heavy_fighter3}
-					ROM = { NOT = { has_tech = heavy_fighter3 } }
+					EN0 = { has_tech = heavy_fighter3}
+					RO0 = { NOT = { has_tech = heavy_fighter3 } }
 				}
 			}
-			NOT = { has_war_with = ENG }
+			NOT = { has_war_with = EN0 }
 			NOT = { has_country_flag = ENG_heavy_fighter_refused }
 		}
-		ENG = { country_event = DOD_romania.154 }	
+		EN0 = { country_event = DOD_romania.154 }	
 	}
 	option = {# select american plane
 		name = DOD_hungary.152.e
 		ai_chance = {
 			factor = 30
 			modifier = {
-				is_in_faction_with = USA
+				is_in_faction_with = US0
 				factor = 10
 			}
 			modifier = {
-				USA = { has_government = ROOT }
+				US0 = { has_government = ROOT }
 				factor = 2
 			}
 			modifier = {
-				USA = {
+				US0 = {
 					has_tech = heavy_fighter1
 				}
 				add = 10
 			}
 			modifier = {
-				USA = {
+				US0 = {
 					has_tech = heavy_fighter2
 				}
 				add = 10
 			}
 			modifier = {
-				USA = {
+				US0 = {
 					has_tech = heavy_fighter3
 				}
 				add = 10
@@ -2629,38 +3479,38 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					USA = { has_tech = heavy_fighter1}
-					ROM = { NOT = { has_tech = heavy_fighter1 } }
+					US0 = { has_tech = heavy_fighter1}
+					RO0 = { NOT = { has_tech = heavy_fighter1 } }
 				}
 				AND = {
-					USA = { has_tech = heavy_fighter2}
-					ROM = { NOT = { has_tech = heavy_fighter2 } }
+					US0 = { has_tech = heavy_fighter2}
+					RO0 = { NOT = { has_tech = heavy_fighter2 } }
 				}
 				AND = {
-					USA = { has_tech = heavy_fighter3}
-					ROM = { NOT = { has_tech = heavy_fighter3 } }
+					US0 = { has_tech = heavy_fighter3}
+					RO0 = { NOT = { has_tech = heavy_fighter3 } }
 				}
 			}
-			NOT = { has_war_with = USA }
+			NOT = { has_war_with = US0 }
 			NOT = { has_country_flag = USA_heavy_fighter_refused }
 			NOT = { #to prevent overflow issues
 				AND = {
-					GER = {
+					GE0 = {
 						is_available_heavy_fighter_ROM = yes
 					}
-					FRA = {
+					FR0 = {
 						is_available_heavy_fighter_ROM = yes
 					}
-					ITA = {
+					IT0 = {
 						is_available_heavy_fighter_ROM = yes
 					}
-					ENG = {
+					EN0 = {
 						is_available_heavy_fighter_ROM = yes
 					}
 				}
 			}
 		}
-		USA = { country_event = DOD_romania.154 }	
+		US0 = { country_event = DOD_romania.154 }	
 	}
 	option = {# failsafe
 		name = DOD_hungary.151.f	
@@ -2696,20 +3546,24 @@ country_event = {
 				factor = 0.5
 			}
 		}
-		ROM = { country_event = DOD_romania.155 }
+		RO0 = { country_event = DOD_romania.155 }
 		air_experience = 20
 		if = {
 			limit = {
 				has_tech = fighter1
 				NOT = { has_tech = fighter2 }
 			}
-			create_production_license = {
-				target = ROM 
-				equipment = {
-					type = fighter_equipment_1
-					
+			RO0 = {
+				ROOT = {
+					create_production_license = {
+						target = PREV 
+						equipment = {
+							type = fighter_equipment_1
+							
+						}
+						cost_factor = 0
+					}
 				}
-				cost_factor = 0
 			}
 		}
 		if = {
@@ -2717,24 +3571,66 @@ country_event = {
 				has_tech = fighter2
 				NOT = { has_tech = fighter3 }
 			}
-			create_production_license = {
-				target = ROM 
-				equipment = {
-					type = fighter_equipment_2
+			RO0 = {
+				ROOT = {
+					create_production_license = {
+						target = PREV 
+						equipment = {
+							type = fighter_equipment_2
+						}
+						cost_factor = 0
+					}
 				}
-				cost_factor = 0
 			}
 		}
 		if = {
 			limit = {
 				has_tech = fighter3
+				NOT = { has_tech = jet_fighter1 }
 			}
-			create_production_license = {
-				target = ROM 
-				equipment = {
-					type = fighter_equipment_3
+			RO0 = {
+				ROOT = {
+					create_production_license = {
+						target = PREV 
+						equipment = {
+							type = fighter_equipment_3
+						}
+						cost_factor = 0
+					}
 				}
-				cost_factor = 0
+			}
+		}
+		if = {
+			limit = {
+				has_tech = jet_fighter1
+				NOT = { has_tech = jet_fighter2 }
+			}
+			RO0 = {
+				ROOT = {
+					create_production_license = {
+						target = PREV 
+						equipment = {
+							type = jet_fighter_equipment_1
+						}
+						cost_factor = 0
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_tech = jet_fighter2
+			}
+			RO0 = {
+				ROOT = {
+					create_production_license = {
+						target = PREV 
+						equipment = {
+							type = jet_fighter_equipment_2
+						}
+						cost_factor = 0
+					}
+				}
 			}
 		}
 	}
@@ -2744,32 +3640,36 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				is_in_faction_with = ROM
+				is_in_faction_with = RO0
 				factor = 0
 			}
 		}
 		if = {
-			limit = { tag = GER }
-			ROM = { set_country_flag = GER_fighter_refused }
+			limit = { original_tag = GER }
+			RO0 = { set_country_flag = GER_fighter_refused }
 		}
 		if = {
-			limit = { tag = ITA }
-			ROM = { set_country_flag = ITA_fighter_refused }
+			limit = { original_tag = ITA }
+			RO0 = { set_country_flag = ITA_fighter_refused }
 		}
 		if = {
-			limit = { tag = FRA }
-			ROM = { set_country_flag = FRA_fighter_refused }
+			limit = { original_tag = FRA }
+			RO0 = { set_country_flag = FRA_fighter_refused }
 		}
 		if = {
-			limit = { tag = ENG }
-			ROM = { set_country_flag = ENG_fighter_refused }
+			limit = { original_tag = ENG }
+			RO0 = { set_country_flag = ENG_fighter_refused }
 		}
 		if = {
-			limit = { tag = USA }
-			ROM = { set_country_flag = USA_fighter_refused }
+			limit = { original_tag = USA }
+			RO0 = { set_country_flag = USA_fighter_refused }
 		}
-		ROM = { country_event = DOD_romania.151 }
-		reverse_add_opinion_modifier = { target = ROM modifier = refused_help }
+		RO0 = { country_event = DOD_romania.151 }
+		RO0 = {
+			ROOT = {
+				reverse_add_opinion_modifier = { target = PREV modifier = refused_help }
+			}
+		}
 	}
 }
 
@@ -2791,19 +3691,23 @@ country_event = {
 				factor = 0.5
 			}
 		}
-		ROM = { country_event = DOD_romania.155 }
+		RO0 = { country_event = DOD_romania.155 }
 		air_experience = 20
 		if = {
 			limit = {
 				has_tech = heavy_fighter1
 				NOT = { has_tech = heavy_fighter2 }
 			}
-			create_production_license = {
-				target = ROM 
-				equipment = {
-					type = heavy_fighter_equipment_1
+			RO0 = {
+				ROOT = {
+					create_production_license = {
+						target = PREV
+						equipment = {
+							type = heavy_fighter_equipment_1
+						}
+						cost_factor = 0
+					}
 				}
-				cost_factor = 0
 			}
 		}
 		if = {
@@ -2811,24 +3715,32 @@ country_event = {
 				has_tech = heavy_fighter2
 				NOT = { has_tech = heavy_fighter3 }
 			}
-			create_production_license = {
-				target = ROM 
-				equipment = {
-					type = heavy_fighter_equipment_2	
+			RO0 = {
+				ROOT = {
+					create_production_license = {
+						target = PREV 
+						equipment = {
+							type = heavy_fighter_equipment_2	
+						}
+						cost_factor = 0
+					}
 				}
-				cost_factor = 0
 			}
 		}
 		if = {
 			limit = {
 				has_tech = heavy_fighter3
 			}
-			create_production_license = {
-				target = ROM 
-				equipment = {
-					type = heavy_fighter_equipment_3
+			RO0 = {
+				ROOT = {
+					create_production_license = {
+						target = PREV
+						equipment = {
+							type = heavy_fighter_equipment_3
+						}
+						cost_factor = 0
+					}
 				}
-				cost_factor = 0
 			}
 		}
 		
@@ -2839,32 +3751,36 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				is_in_faction_with = ROM
+				is_in_faction_with = RO0
 				factor = 0
 			}
 		}
 		if = {
-			limit = { tag = GER }
-			ROM = { set_country_flag = GER_heavy_fighter_refused }
+			limit = { original_tag = GER }
+			RO0 = { set_country_flag = GER_heavy_fighter_refused }
 		}
 		if = {
-			limit = { tag = ITA }
-			ROM = { set_country_flag = ITA_heavy_fighter_refused }
+			limit = { original_tag = ITA }
+			RO0 = { set_country_flag = ITA_heavy_fighter_refused }
 		}
 		if = {
-			limit = { tag = FRA }
-			ROM = { set_country_flag = FRA_heavy_fighter_refused }
+			limit = { original_tag = FRA }
+			RO0 = { set_country_flag = FRA_heavy_fighter_refused }
 		}
 		if = {
-			limit = { tag = ENG }
-			ROM = { set_country_flag = ENG_heavy_fighter_refused }
+			limit = { original_tag = ENG }
+			RO0 = { set_country_flag = ENG_heavy_fighter_refused }
 		}
 		if = {
-			limit = { tag = USA }
-			ROM = { set_country_flag = USA_heavy_fighter_refused }
+			limit = { original_tag = USA }
+			RO0 = { set_country_flag = USA_heavy_fighter_refused }
 		}
-		ROM = { country_event = DOD_romania.152 }
-		reverse_add_opinion_modifier = { target = ROM modifier = refused_help }
+		RO0 = { country_event = DOD_romania.152 }
+		RO0 = {
+			ROOT = {
+				reverse_add_opinion_modifier = { target = PREV modifier = refused_help }
+			}
+		}
 	}
 }
 
@@ -2893,12 +3809,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = ROM
-		ROM = {
-			has_country_leader = { id = 550 } #Carol II
-			owns_state = 217
-			owns_state = 195
-		}
+		original_tag = ROM
+		has_country_leader = { id = 550 } #Carol II
+		owns_state = 217
+		owns_state = 195
 	}
 
 	option = { #a great idea!
@@ -2919,4 +3833,18 @@ country_event = {
 		add_timed_idea = { idea = ROM_king_carol_ii_consumer_penalty days = 90 }
 	}
 
+}
+country_event = {
+	id = DOD_romania.777
+	title = DOD_romania.777.t
+	desc = DOD_romania.777.desc 
+	picture = GFX_report_event_german_polish_border
+	
+	is_triggered_only = yes
+
+	option = {# great
+		name = DOD_romania.777.a
+		transfer_state = 664
+		
+	}
 }

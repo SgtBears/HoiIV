@@ -157,6 +157,10 @@ technologies = {
 		XOR = {
 			streamlined_line
 		}
+		path = {
+			leads_to_tech = flexible_line_2
+			research_cost_coeff = 1
+		}
 		
 		folder = {
 			name = industry_folder
@@ -188,6 +192,10 @@ technologies = {
 		XOR = {
 			flexible_line
 		}
+		path = {
+			leads_to_tech = streamlined_line_2
+			research_cost_coeff = 1
+		}
 		
 		folder = {
 			name = industry_folder
@@ -200,6 +208,188 @@ technologies = {
 			modifier = {
 				factor = 10
 				date > "1943.1.1"
+			}
+			
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	flexible_line_2 = {
+
+		production_factory_max_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.1
+		
+		research_cost = 3
+		start_year = 1945
+		
+		path = {
+			leads_to_tech = flexible_line_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+						
+			modifier = {
+				factor = 10
+				date > "1945.1.1"
+			}
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	streamlined_line_2 = {
+
+		production_factory_max_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+			
+		research_cost = 3
+		start_year = 1945
+		
+		path = {
+			leads_to_tech = streamlined_line_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+			
+			modifier = {
+				factor = 10
+				date > "1945.1.1"
+			}
+			
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	flexible_line_3 = {
+
+		production_factory_max_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.1
+		
+		research_cost = 3
+		start_year = 1947
+		
+		path = {
+			leads_to_tech = flexible_line_4
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+						
+			modifier = {
+				factor = 10
+				date > "1947.1.1"
+			}
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	streamlined_line_3 = {
+
+		production_factory_max_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+			
+		research_cost = 3
+		start_year = 1947
+		
+		path = {
+			leads_to_tech = streamlined_line_4
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+			
+			modifier = {
+				factor = 10
+				date > "1947.1.1"
+			}
+			
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	flexible_line_4 = {
+
+		production_factory_max_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.1
+		
+		research_cost = 3
+		start_year = 1949
+		
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+						
+			modifier = {
+				factor = 10
+				date > "1949.1.1"
+			}
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	streamlined_line_4 = {
+
+		production_factory_max_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+			
+		research_cost = 3
+		start_year = 1949
+		
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+			
+			modifier = {
+				factor = 10
+				date > "1949.1.1"
 			}
 			
 		}

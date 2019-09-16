@@ -30,7 +30,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -70,7 +70,7 @@ focus_tree = {
 		x = 0
 		y = 0
 
-		cost = 10
+		cost = 71
 
 		ai_will_do = {
 			factor = 24
@@ -104,7 +104,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -142,7 +142,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 75
@@ -211,7 +211,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 75
@@ -247,7 +247,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 75
@@ -288,7 +288,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 473 471 }
+				prioritize = { 473 796 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -313,7 +313,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 75
@@ -379,7 +379,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 75
@@ -449,7 +449,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 75
@@ -509,7 +509,7 @@ focus_tree = {
 		x = 8
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -550,7 +550,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -583,7 +583,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -679,7 +679,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -710,7 +710,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -741,7 +741,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -772,7 +772,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 75
@@ -803,7 +803,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -831,7 +831,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
+				prioritize = { 471 472 683 857 856 }
 				limit = {
 					is_in_home_area = yes
 				}
@@ -841,7 +841,7 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
+				prioritize = { 471 472 683 857 856 }
 				limit = {
 					is_in_home_area = yes
 				}
@@ -851,7 +851,7 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
+				prioritize = { 471 472 683 857 856 }
 				limit = {
 					is_in_home_area = yes
 				}
@@ -871,7 +871,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -909,7 +909,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -967,7 +967,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 276 682 }
+				prioritize = { 276 854 682 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -984,7 +984,7 @@ focus_tree = {
 				set_state_flag = CAN_victory_aircraft_limited_AF1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 276 682 }
+				prioritize = { 854 276 682 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1012,7 +1012,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -1082,7 +1082,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1113,7 +1113,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1171,7 +1171,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 276 682 }
+				prioritize = { 276 854 682 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1188,7 +1188,7 @@ focus_tree = {
 				set_state_flag = CAN_john_inglis_and_company_AF1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 276 682 }
+				prioritize = { 854 276 682 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1215,7 +1215,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -1290,7 +1290,7 @@ focus_tree = {
 				set_country_flag = CAN_polymer_corporation_unlock
 				effect_tooltip = {
 					random_owned_controlled_state = {
-						prioritize = { 682 }
+						prioritize = { 682 854 276 }
 						limit = {
 						}
 						add_extra_state_shared_building_slots = 1
@@ -1302,7 +1302,7 @@ focus_tree = {
 						set_state_flag = CAN_polymer_corporation_1
 					}
 					random_owned_controlled_state = {
-						prioritize = { 276 }
+						prioritize = { 276 854 682 }
 						limit = {
 						}
 						add_extra_state_shared_building_slots = 1
@@ -1325,7 +1325,7 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 682 }
+				prioritize = { 682 854 276 }
 				limit = {
 					free_building_slots = {
 						building = synthetic_refinery
@@ -1341,7 +1341,7 @@ focus_tree = {
 				set_state_flag = CAN_polymer_corporation_1
 			}
 			random_owned_controlled_state = {
-				prioritize = { 276 }
+				prioritize = { 276 854 682 }
 				limit = {
 					free_building_slots = {
 						building = synthetic_refinery
@@ -1368,7 +1368,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1469,7 +1469,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1501,7 +1501,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1540,7 +1540,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1572,7 +1572,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1608,7 +1608,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1646,7 +1646,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1684,7 +1684,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1704,6 +1704,8 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = CAN_conscription_crisis
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CAN_louis_st_laurent
 			custom_effect_tooltip = "CAN_ANGERED_WORKERS"
 			
 			# Opens up the MTTH events tfv_canada.50 - tfv_canada.53
@@ -1719,7 +1721,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1754,7 +1756,7 @@ focus_tree = {
 		y = 7
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1876,7 +1878,7 @@ focus_tree = {
 		x = 15
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -1913,7 +1915,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_army_modernization
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1950,7 +1952,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_army_modernization
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1987,7 +1989,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_army_modernization 
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2032,7 +2034,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_army_modernization
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2068,7 +2070,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_army_modernization 
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2116,7 +2118,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_army_modernization 
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2153,7 +2155,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_army_modernization 
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2189,7 +2191,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CAN_army_modernization 
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2226,7 +2228,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CAN_army_modernization 
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2262,7 +2264,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = CAN_army_modernization 
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2309,7 +2311,7 @@ focus_tree = {
 		x = 21
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -2320,7 +2322,7 @@ focus_tree = {
 		}
 
 		available = {
-			ENG = { has_government = ROOT }
+			EN0 = { has_government = ROOT }
 			is_in_tech_sharing_group = commonwealth_research
 		}
 		
@@ -2338,12 +2340,14 @@ focus_tree = {
          		id = commonwealth_research
          		bonus = 0.03
 			}
-			ENG = {
+			EN0 = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = CAN_strengthen_the_commonwealth_ties
 				}
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CAN_robert_manion
 		}
 	}
 
@@ -2355,7 +2359,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 35
@@ -2478,14 +2482,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 35
 		}
 
 		available = {
-			is_in_faction_with = ENG
+			is_in_faction_with = EN0
 			is_in_tech_sharing_group = commonwealth_research
 		}
 		
@@ -2498,11 +2502,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			CAN = {
-   				 modify_tech_sharing_bonus = {
-        			id = commonwealth_research
-        			bonus = 0.05  
-    			}
+   			 modify_tech_sharing_bonus = {
+        		id = commonwealth_research
+        		bonus = 0.05
 			}
 		}
 	}
@@ -2515,7 +2517,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2550,7 +2552,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2592,7 +2594,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2632,7 +2634,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2682,7 +2684,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2723,7 +2725,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -2750,8 +2752,8 @@ focus_tree = {
 
 		completion_reward = {			
 			add_ideas = CAN_patriation
-			ENG = {
-				add_opinion_modifier = { target = CAN modifier = CAN_patriation_mod }
+			EN0 = {
+				add_opinion_modifier = { target = ROOT modifier = CAN_patriation_mod }
 			}
 
 			hidden_effect = {
@@ -2774,7 +2776,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_patriation
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2791,12 +2793,12 @@ focus_tree = {
 		available = {
 			is_subject = no
 			NOT = {
-				has_war_with = USA
-				is_justifying_wargoal_against = USA
-				has_wargoal_against = USA
-				has_war_together_with = ENG
+				has_war_with = US0
+				is_justifying_wargoal_against = US0
+				has_wargoal_against = US0
+				has_war_together_with = EN0
 			}
-			USA = { has_government = ROOT }			
+			US0 = { has_government = ROOT }			
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -2809,18 +2811,20 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			ENG = { remove_from_faction = ROOT }
-			USA = {
+			EN0 = { remove_from_faction = ROOT }
+			US0 = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = CAN_permanent_joint_defense_board
 				}
 			}
 			add_opinion_modifier = {
-				target = USA
+				target = US0
 				modifier = CAN_permanent_joint_defense_board
 			}
-			give_guarantee = USA
+			give_guarantee = US0
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CAN_robert_manion
 		}
 	}
 
@@ -2832,7 +2836,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_permanent_joint_defense_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2844,7 +2848,7 @@ focus_tree = {
 		}
 		
 		bypass = {
-			is_in_faction_with = USA
+			is_in_faction_with = US0
 		}
 
 		cancel_if_invalid = yes
@@ -2855,12 +2859,12 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 			if = {
 				limit = {
-					USA = {
+					US0 = {
 						has_government = ROOT
 						is_faction_leader = yes
 					}
 				}
-				USA = {
+				US0 = {
 					country_event = { id = tfv_canada.1 }
 				}
 			}
@@ -2875,7 +2879,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_permanent_joint_defense_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2911,14 +2915,14 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_permanent_joint_defense_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 35
 		}
 
 		available = {
-			is_in_faction_with = USA
+			is_in_faction_with = US0
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -2931,7 +2935,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		USA = {
+		US0 = {
 			add_to_tech_sharing_group = us_research
 		}
 		add_to_tech_sharing_group = us_research
@@ -2953,7 +2957,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_patriation
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2985,6 +2989,8 @@ focus_tree = {
 				localization = CAN_swastika_clubs
 			}
 			add_ideas = CAN_swastika_clubs
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CAN_chuck_crate
 		}
 	}
 
@@ -2996,7 +3002,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_swastika_clubs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3033,30 +3039,29 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_swastika_clubs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
 			modifier = {
-				GER = { surrender_progress > 0.5 }
+				GE0 = { surrender_progress > 0.5 }
 				factor = 0 #nopenopenopenope
 			}
 		}
 
 		available = {
 			has_government = fascism
-			GER = { has_government = fascism }
-
+			GE0 = { has_government = fascism }
 			NOT = {
-				has_war_with = GER
-				is_justifying_wargoal_against = GER
-				has_wargoal_against = GER
+				has_war_with = GE0
+				is_justifying_wargoal_against = GE0
+				has_wargoal_against = GE0
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
-			is_in_faction_with = GER
+			is_in_faction_with = GE0
 		}
 
 		cancel_if_invalid = yes
@@ -3064,7 +3069,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			GER = { 
+			GE0 = { 
 				country_event = { id = tfv_canada.20 }
 			}
 		}
@@ -3079,7 +3084,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_swastika_clubs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3102,7 +3107,7 @@ focus_tree = {
 				add_idea = CAN_swastika_clubs_skewer
 				remove_idea = CAN_swastika_clubs_2
 			}
-			MEX = {
+			ME0 = {
 				add_timed_idea = { idea = synarchist_support_surge days = 720 }
 			}
 		}
@@ -3116,7 +3121,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_swastika_clubs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3139,7 +3144,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 					any_neighbor_state = {
-						controller = { NOT = { is_in_faction_with = CAN } }
+						controller = { NOT = { is_in_faction_with = ROOT } }
 					}
 				}
 				add_building_construction = {
@@ -3179,7 +3184,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_swastika_clubs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3222,7 +3227,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_swastika_clubs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3230,10 +3235,10 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			USA = {
-				NOT = { is_subject_of = CAN }
+			US0 = {
+				NOT = { is_subject_of = ROOT }
 			}
-			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = US0 }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -3249,7 +3254,7 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 			create_wargoal = {
 				type = annex_everything
-				target = USA
+				target = US0
 			}
 		}
 	}
@@ -3262,7 +3267,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_swastika_clubs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3281,7 +3286,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			ENG = {
+			EN0 = {
 				country_event = { id = tfv_canada.60 }
 			}
 		}
@@ -3302,7 +3307,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_patriation
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3330,6 +3335,8 @@ focus_tree = {
 				localization = CAN_burn_the_royal_portraits
 			}
 			add_ideas = CAN_communist_ideals
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CAN_william_kashtan
 		}
 	}
 
@@ -3341,7 +3348,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_burn_the_royal_portraits
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3378,7 +3385,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_burn_the_royal_portraits
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3386,11 +3393,11 @@ focus_tree = {
 
 		available = {
 			OR = {
-				USA = { has_war_with = JAP }
-				USA = { has_wargoal_against = JAP }
-				JAP = { has_wargoal_against = USA }
-				USA = { is_justifying_wargoal_against = JAP }
-				JAP = { is_justifying_wargoal_against = USA }
+				US0 = { has_war_with = JA0 }
+				US0 = { has_wargoal_against = JA0 }
+				JA0 = { has_wargoal_against = US0 }
+				US0 = { is_justifying_wargoal_against = JA0 }
+				JA0 = { is_justifying_wargoal_against = US0 }
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
@@ -3408,7 +3415,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 					any_neighbor_state = {
-						controller = { NOT = { is_in_faction_with = CAN } }
+						controller = { NOT = { is_in_faction_with = ROOT } }
 					}
 				}
 				add_building_construction = {
@@ -3449,19 +3456,19 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_burn_the_royal_portraits
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
 			modifier = {
-				SOV = { 
+				SO0 = { 
 					has_war = yes 
 					has_government = communism
 				}
 				factor = 3
 			}
 			modifier = {
-				SOV = { 
+				SO0 = { 
 					has_government = communism
 					surrender_progress > 0.3
 					 }
@@ -3471,11 +3478,11 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				has_war_with = SOV
-				is_justifying_wargoal_against = SOV
-				has_wargoal_against = SOV
+				has_war_with = SO0
+				is_justifying_wargoal_against = SO0
+				has_wargoal_against = SO0
 			}
-			SOV = {
+			SO0 = {
 				exists = yes
 				has_government = communism
 			}
@@ -3491,7 +3498,7 @@ focus_tree = {
 
 		select_effect = {
 			send_equipment = {
-				target = SOV
+				target = SO0
 				type = infantry_equipment
 				amount = 500
 			}
@@ -3502,19 +3509,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			SOV = {
+			SO0 = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = CAN_supply_the_red_army
 				}
 			}
 			add_opinion_modifier = {
-				target = SOV
+				target = SO0
 				modifier = CAN_supply_the_red_army
 			}
 			add_ai_strategy = {
 				type = support
-				id = SOV
+				id = SO0
 				value = 200
 			}
 			every_country = {
@@ -3537,7 +3544,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_burn_the_royal_portraits
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3568,7 +3575,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_burn_the_royal_portraits
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3584,9 +3591,9 @@ focus_tree = {
 			}
 
 			NOT = {
-				has_war_with = SOV
-				is_justifying_wargoal_against = SOV
-				has_wargoal_against = SOV
+				has_war_with = SO0
+				is_justifying_wargoal_against = SO0
+				has_wargoal_against = SO0
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
@@ -3602,12 +3609,12 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					SOV = {
+					SO0 = {
 						has_government = communism
 						is_faction_leader = yes
 					}
 				}
-				SOV = { 
+				SO0 = { 
 					country_event = { id = tfv_canada.10 }
 				}
 			}
@@ -3628,7 +3635,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_burn_the_royal_portraits
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3665,7 +3672,7 @@ focus_tree = {
 		x = 35
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 3
@@ -3737,7 +3744,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_rcaf_station_borden
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3776,7 +3783,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_rcaf_station_borden
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3970,7 +3977,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_rcaf_station_borden
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -4041,7 +4048,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_rcaf_station_borden
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -4084,7 +4091,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_rcaf_station_borden
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -4127,7 +4134,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_rcaf_station_borden
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -4167,7 +4174,7 @@ focus_tree = {
 		x = 39
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -4231,7 +4238,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -4268,7 +4275,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -4305,7 +4312,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -4343,12 +4350,12 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
 			modifier = {
-				has_war_with = GER
+				has_war_with = GE0
 				factor = 2
 			}
 		}
@@ -4385,7 +4392,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -4422,7 +4429,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -4474,7 +4481,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -4505,7 +4512,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25

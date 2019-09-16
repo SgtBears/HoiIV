@@ -12,8 +12,8 @@ communist_infiltration = {
 		if = {
 			limit = { original_tag = JAP }
 			OR = {
-				MAN = { is_subject_of = ROOT }
-				MEN = { is_subject_of = ROOT }
+				MA5 = { is_subject_of = ROOT }
+				ME5 = { is_subject_of = ROOT }
 			}
 		}
 		NOT = { has_government = communism }

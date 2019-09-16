@@ -30,7 +30,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -69,7 +69,7 @@ focus_tree = {
 		x = 1
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -103,7 +103,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -134,7 +134,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -188,7 +188,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -223,7 +223,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -255,7 +255,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -293,7 +293,7 @@ focus_tree = {
 		x = 5
 		y = 0
 
-		cost = 10
+		cost = 71
 
 		ai_will_do = {
 			factor = 1
@@ -301,13 +301,13 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
-			ENG = { has_war = no }
+			EN0 = { has_war = no }
 		}
 		
 		bypass = {
@@ -319,7 +319,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_political_power = 120
+			add_political_power = 120
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SAF_sir_patrick_duncan
 		}
 	}
 
@@ -332,7 +334,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -351,7 +353,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			SAF = {
+			ROOT = {
    				modify_tech_sharing_bonus = {
          			id = commonwealth_research
          			bonus = 0.1  # we get 20% higher bonus from this group
@@ -368,7 +370,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -391,7 +393,7 @@ focus_tree = {
 				remove_idea = SAF_ossewabrandwag
 				add_idea = SAF_ossewabrandwag_2
 			}
-			remove_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
+			remove_opinion_modifier = { target = EN0 modifier = SAF_anti_british_sentiment }
 		}
 	}
 
@@ -403,7 +405,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -434,7 +436,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -466,7 +468,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -498,15 +500,15 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0
 		}
 
 		available = {
-			NOT = { has_war_with = ENG }
-			ENG = { is_puppet = no }
+			NOT = { has_war_with = EN0 }
+			EN0 = { is_puppet = no }
 
 		}
 		
@@ -519,9 +521,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		ENG = { custom_effect_tooltip = needs_approval 
+			custom_effect_tooltip = needs_approval 
+			EN0 = {
 				country_event = tfv_south_africa.1
-				}
+			}
 		}
 	}
 
@@ -537,7 +540,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -568,7 +571,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -605,12 +608,12 @@ focus_tree = {
 		x = 7
 		y = 0
 
-		cost = 10
+		cost = 71
 
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
-				NOT = { ENG = { has_government = democratic } }
+				NOT = { EN0 = { has_government = democratic } }
 				factor = 10
 			}
 			modifier = {
@@ -649,7 +652,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_abandon_westminster
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.5
@@ -680,6 +683,8 @@ focus_tree = {
 				remove_idea = SAF_abandon_westminster
 				add_idea = SAF_abandon_westminster_fascism
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SAF_j_f_van_rensburg_fascist
 		}
 	}
 
@@ -691,7 +696,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -700,15 +705,11 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = no
-				if = {
-					limit = { NOT = { has_government = fascism } }
+				OR = {
 					AND = {
 						has_autonomy_state = autonomy_dominion
 						compare_autonomy_progress_ratio > 0.65
 					}
-				}
-				if = {
-					limit = { has_government = fascism } 
 					AND = {
 						has_autonomy_state = autonomy_satellite
 						compare_autonomy_progress_ratio > 0.65
@@ -743,7 +744,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -774,7 +775,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -806,12 +807,12 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.45
 			modifier = {
-				GER = { has_war = yes }
+				GE0 = { has_war = yes }
 				factor = 0
 			}
 		}
@@ -899,12 +900,12 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.75
 			modifier = {
-				GER = { surrender_progress > 0.5 }
+				GE0 = { surrender_progress > 0.5 }
 				factor = 10 #nopenopnenope
 			}
 		}
@@ -912,22 +913,18 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = no
-				if = {
-					limit = { NOT = { has_government = fascism } }
+				OR = {
 					AND = {
 						has_autonomy_state = autonomy_dominion
 						compare_autonomy_progress_ratio > 0.75
 					}
-				}
-				if = {
-					limit = { has_government = fascism } 
 					AND = {
 						has_autonomy_state = autonomy_satellite
 						compare_autonomy_progress_ratio > 0.75
 					}
 				}
 			}
-			NOT = { has_war_together_with = ENG }
+			NOT = { has_war_together_with = EN0 }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -946,12 +943,12 @@ focus_tree = {
 				}
 				OVERLORD = {
 					set_autonomy = {
-						target = SAF
+						target = ROOT
 						autonomy_state = autonomy_free
 					}
 				}
 			}
-			ENG = { remove_from_faction = ROOT }
+			EN0 = { remove_from_faction = ROOT }
 			set_rule = { can_create_factions = yes }
 			add_political_power = 70
 			add_stability = 0.1
@@ -966,7 +963,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -977,15 +974,11 @@ focus_tree = {
 			controls_state = 541
 			OR = {
 				is_subject = no
-				if = {
-					limit = { NOT = { has_government = fascism } }
+				OR = {
 					AND = {
 						has_autonomy_state = autonomy_dominion
 						compare_autonomy_progress_ratio > 0.80
 					}
-				}
-				if = {
-					limit = { has_government = fascism } 
 					AND = {
 						has_autonomy_state = autonomy_satellite
 						compare_autonomy_progress_ratio > 0.80
@@ -1037,6 +1030,8 @@ focus_tree = {
 						ideology = democratic
 						popularity = 0.35
 					}
+					set_variable = { global.saf_free_tag = THIS.id }
+					set_variable = { global.saf_imperial_tag = THIS.id }
 				}
 				news_event = { hours = 6 id = news.262 }
 				
@@ -1047,12 +1042,13 @@ focus_tree = {
 					ideology = fascism
 					popularity = 1
 				}
-				random_country = {
-					limit = {
-						original_tag = GER
-						has_government = fascism
+				GE1 = {
+					if = {
+						limit = {
+							has_government = fascism
+						}
+						set_country_flag = saf_fascist_uprising # Affects GER ai_strategy
 					}
-					set_country_flag = saf_fascist_uprising # Affects GER ai_strategy
 				}
 			}
 		}
@@ -1066,7 +1062,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1087,7 +1083,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
-				target = ENG
+				target = EN0
 				generator = { 542 545 }
 			}
 		}
@@ -1102,7 +1098,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1137,18 +1133,17 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 		available = {
-			GER = { has_government = fascism }
+			GE0 = { has_government = fascism }
 		}
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
 		}
 
 		available = {
-			
-			is_in_faction_with = GER
+			is_in_faction_with = GE0
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -1161,7 +1156,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			GER = { add_to_tech_sharing_group = axis_research }
+			GE0 = { add_to_tech_sharing_group = axis_research }
 			add_to_tech_sharing_group = axis_research
 		}
 	}
@@ -1174,7 +1169,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1182,10 +1177,10 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				NOT  = { ENG = { has_idea = ENG_king_edward } }
-				NOT = { ENG = { has_idea = ENG_king_edward_fascism } }
-				NOT = { ENG = { has_completed_focus = ENG_the_kings_party } }
-				ENG = { has_country_flag = ENG_king_died }
+				NOT = { EN0 = { has_idea = ENG_king_edward } }
+				NOT = { EN0 = { has_idea = ENG_king_edward_fascism } }
+				NOT = { EN0 = { has_completed_focus = ENG_the_kings_party } }
+				EN0 = { has_country_flag = ENG_king_died }
 				tooltip = SAF_a_king_for_our_people_trigger_tt					
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
@@ -1213,7 +1208,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1269,11 +1264,11 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = SAF_abandon_westminster }
 		mutually_exclusive = { focus = SAF_support_the_afrikaner_broederbond }
-		x = 5
+		x = 7
 		y = 1
 		relative_position_id = SAF_abandon_westminster
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.5
@@ -1304,6 +1299,8 @@ focus_tree = {
 				remove_idea = SAF_abandon_westminster
 				add_idea = SAF_abandon_westminster_communism
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SAF_abram_fischer
 		}
 	}
 
@@ -1315,7 +1312,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 5
+		cost = 35
 
 		ai_will_do = {
 			factor = 30
@@ -1335,15 +1332,11 @@ focus_tree = {
 			}
 			OR = {
 				is_subject = no
-				if = {
-					limit = { NOT = { has_government = fascism } }
+				OR = {
 					AND = {
 						has_autonomy_state = autonomy_dominion
 						compare_autonomy_progress_ratio > 0.65
 					}
-				}
-				if = {
-					limit = { has_government = fascism } 
 					AND = {
 						has_autonomy_state = autonomy_satellite
 						compare_autonomy_progress_ratio > 0.65
@@ -1375,7 +1368,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1411,7 +1404,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1443,7 +1436,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1473,8 +1466,8 @@ focus_tree = {
 						popularity = 0.5
 					}
 			hidden_effect = {
-			news_event = { hours = 6 id = news.263 }
-					}
+				news_event = { hours = 6 id = news.263 }
+			}
 		}
 	}
 	focus = {
@@ -1486,15 +1479,15 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 34
 			modifier = {
 				OR = {
-					SOV = { has_war_with = ENG }
-					SOV = { has_war_with = BEL }
-					SOV = { has_war_with = POR }
+					SO0 = { has_war_with = EN0 }
+					SO0 = { has_war_with = BE0 }
+					SO0 = { has_war_with = PO5 }
 				}
 				factor = 20 #now is the time to strike!
 			}
@@ -1519,19 +1512,506 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.1
-			ENG = { 
-					remove_from_faction = SAF
-					add_opinion_modifier = { target = SAF modifier = SAF_anti_colonialist_crusaders }
-			 }
-			FRA = { 
-			 		add_opinion_modifier = { target = SAF modifier = SAF_anti_colonialist_crusaders } 
-			 }
-			BEL = { 
-			 		add_opinion_modifier = { target = SAF modifier = SAF_anti_colonialist_crusaders } 
-			 }
-			POR = { 
-			 		add_opinion_modifier = { target = SAF modifier = SAF_anti_colonialist_crusaders } 
-			 }
+			leave_faction = yes
+			every_other_country = {
+				limit = {
+					NOT = {
+						original_tag = MRT
+						original_tag = MLI
+						original_tag = NGR
+						original_tag = VOL
+						original_tag = TOG
+						original_tag = DAH
+						original_tag = GHA
+						original_tag = IVO
+						original_tag = GNA
+						original_tag = SIE
+						original_tag = LIB
+						original_tag = SEN
+						original_tag = GAM
+						original_tag = GNB
+						original_tag = SUD
+						original_tag = EGY
+						original_tag = ANG
+						original_tag = MZB
+						original_tag = WES
+						original_tag = MOR
+						original_tag = ALG
+						original_tag = TUN
+						original_tag = LBA
+						original_tag = ETH
+						original_tag = ERI
+						original_tag = DJI
+						original_tag = SOM
+						original_tag = RWA
+						original_tag = COG
+						original_tag = BRD
+						original_tag = MAD
+						original_tag = RCG
+						original_tag = GAB
+						original_tag = EQG
+						original_tag = CMR
+						original_tag = CAR
+						original_tag = CHA
+						original_tag = NGA
+						original_tag = TZN
+						original_tag = KEN
+						original_tag = UGA
+						original_tag = BOT
+						original_tag = ZIM
+						original_tag = ZAM
+						original_tag = MLW
+					}
+					OR = {
+						owns_state = 290
+						owns_state = 461
+						owns_state = 462
+						owns_state = 783
+						owns_state = 699
+						owns_state = 513
+						owns_state = 459
+						owns_state = 460
+						owns_state = 458
+						owns_state = 665
+						owns_state = 448
+						owns_state = 661
+						owns_state = 449
+						owns_state = 662
+						owns_state = 450
+						owns_state = 663
+						owns_state = 451
+						owns_state = 273
+						owns_state = 451
+						owns_state = 453
+						owns_state = 446
+						owns_state = 447
+						owns_state = 457
+						owns_state = 456
+						owns_state = 552
+						owns_state = 767
+						owns_state = 551
+						owns_state = 549
+						owns_state = 550
+						owns_state = 271
+						owns_state = 268
+						owns_state = 269
+						owns_state = 559
+						owns_state = 547
+						owns_state = 548
+						owns_state = 546
+						owns_state = 771
+						owns_state = 770
+						owns_state = 545
+						owns_state = 542
+						owns_state = 541
+						owns_state = 681
+						owns_state = 275
+						owns_state = 719
+						owns_state = 544
+						owns_state = 540
+						owns_state = 709
+						owns_state = 708
+						owns_state = 543
+						owns_state = 706
+						owns_state = 707
+						owns_state = 295
+						owns_state = 538
+						owns_state = 295
+						owns_state = 297
+						owns_state = 705
+						owns_state = 768
+						owns_state = 769
+						owns_state = 772
+						owns_state = 539
+						owns_state = 773
+						owns_state = 660
+						owns_state = 774
+						owns_state = 775
+						owns_state = 558
+						owns_state = 515
+						owns_state = 514
+						owns_state = 782
+						owns_state = 786
+						owns_state = 514
+						owns_state = 781
+						owns_state = 556
+						owns_state = 778
+						owns_state = 776
+						owns_state = 777
+						owns_state = 274
+						owns_state = 779
+						owns_state = 780
+						owns_state = 298
+						owns_state = 700
+						owns_state = 296
+						owns_state = 701
+						owns_state = 272
+						owns_state = 557
+					}
+				}
+				add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders }
+			}
+			
+			MR0 = {
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			ML5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			NG0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			VO0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			TO0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			DA0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			GH0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			IV0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			GN0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			SR5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			LI5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			SE5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			GA0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			GN5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			SU0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			EG0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			AN0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			MZ0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			WE0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			MO5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				} 
+			}
+			AL5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			TU5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			LB0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			ET0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				} 
+			}
+			ER0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			DJ0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			SO5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			RW0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			CG0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			BD0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			MD0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				} 
+			}
+			RC0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			GA5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			EQ0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				} 
+			}
+			CM0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			CP5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			CD0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				} 
+			}
+			NG5 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			TZ0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			KE0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			UG0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			BT0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			ZI0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			ZA0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
+			MW0 = { 
+				if = {
+					limit = {
+						country_exists = THIS
+					}
+					add_opinion_modifier = { target = ROOT modifier = SAF_anti_colonialist_crusaders_good } 
+				}
+			}
 		}
 	}
 
@@ -1539,11 +2019,11 @@ focus_tree = {
 		id = SAF_Union_of_the_African_People
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = SAF_anti_colonialist_crusade}
-		x = 4
+		x = 2
 		y = 4
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1563,36 +2043,205 @@ focus_tree = {
 
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
-			create_faction = SAF_faction_uotap
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = SAF_faction_uotap
+			}
+			set_party_name = { 
+				ideology = communism 
+				long_name = SAF_african_people_union_long 
+				name = SAF_african_people_union 
+			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.264 }
 			}
 		}
 	}
 	focus = {
-		id = SAF_liberate_portugese
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = SAF_Union_of_the_African_People}
-		x = 4
-		y = 5
+		id = SAF_liberate_west_africa
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = SAF_liberate_equatorial_africa}
+		x = 0
+		y = 8
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				POR = { has_war = yes }
-				factor = 10
-			}
 		}
 
 		available = {
-			OR = {
-				ANG = { exists = no }
-				MZB = { exists = no }
-			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			OR = {
+				NOT = {
+					557 = {
+						is_owned_by = MR0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					786 = {
+						is_owned_by = MR0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					782 = {
+						is_owned_by = ML5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					556 = {
+						is_owned_by = ML5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					515 = {
+						is_owned_by = NG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					781 = {
+						is_owned_by = NG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					778 = {
+						is_owned_by = VO0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					776 = {
+						is_owned_by = TO0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					777 = {
+						is_owned_by = DA0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					274 = {
+						is_owned_by = GH0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					779 = {
+						is_owned_by = IV0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					780 = {
+						is_owned_by = GN0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					700 = {
+						is_owned_by = SR5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					298 = {
+						is_owned_by = LI5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					272 = {
+						is_owned_by = SE5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					701 = {
+						is_owned_by = GA0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					296 = {
+						is_owned_by = GN5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					702 = {
+						is_owned_by = GN5
+						is_owned_by = SE5
+						is_owned_by = MR0
+						is_owned_by = GA0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
 		}
 		
 		bypass = {
@@ -1604,35 +2253,550 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = POR
-				generator = { 540 544 }
+			custom_effect_tooltip = liberate_west_africa_tooltip
+			hidden_effect = { country_event = { id = am.south_africa.32 } }
+			
+		}
+	}
+	focus = {
+		id = SAF_liberate_egypt
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SAF_liberate_equatorial_africa focus = SAF_liberate_british }
+		x = 2
+		y = 8
+		relative_position_id = SAF_empower_the_workers
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			OR = {
+				NOT = {
+					549 = {
+						is_owned_by = SU0
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					767 = {
+						is_owned_by = SU0
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					551 = {
+						is_owned_by = SU0
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					552 = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					456 = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					457 = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					452 = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					447 = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					446 = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					453 = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
 			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = liberate_egypt_tooltip
+			hidden_effect = { country_event = { id = am.south_africa.33 } }
+
+			
+		}
+	}
+	focus = {
+		id = SAF_liberate_portugese
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SAF_Union_of_the_African_People}
+		x = -1
+		y = 5
+		relative_position_id = SAF_empower_the_workers
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				PO5 = { has_war = yes }
+				factor = 10
+			}
+		}
+
+		available = {
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			OR = {
+				NOT = {
+					540 = {
+						is_owned_by = AN0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					544 = {
+						is_owned_by = MZ0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = liberate_portugese_tooltip
+			hidden_effect = { country_event = { id = am.south_africa.34 } }
+			
+		}
+	}
+	focus = {
+		id = SAF_liberate_north_africa
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SAF_liberate_west_africa focus = SAF_liberate_egypt }
+		x = 1
+		y = 9
+		relative_position_id = SAF_empower_the_workers
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			OR = {
+				NOT = {
+					699 = {
+						is_owned_by = WE0
+						is_owned_by = MO5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					462 = {
+						is_owned_by = MO5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					783 = {
+						is_owned_by = MO5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					461 = {
+						is_owned_by = MO5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					290 = {
+						is_owned_by = MO5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					459 = {
+						is_owned_by = AL5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					460 = {
+						is_owned_by = AL5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					513 = {
+						is_owned_by = AL5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					514 = {
+						is_owned_by = AL5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					458 = {
+						is_owned_by = TU5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					665 = {
+						is_owned_by = TU5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					448 = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					661 = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					449 = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					662 = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					450 = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					451 = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					663 = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					273 = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = liberate_north_africa_tooltip
+			hidden_effect = { country_event = { id = am.south_africa.35 } }
+
+		}
+	}
+	focus = {
+		id = SAF_liberate_east_africa
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SAF_liberate_british }
+		x = 3
+		y = 6
+		relative_position_id = SAF_empower_the_workers
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			OR = {
+				NOT = {
+					550 = {
+						is_owned_by = ROOT
+						is_owned_by = ET0
+						is_owned_by = ER0
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					271 = {
+						is_owned_by = ROOT
+						is_owned_by = ET0
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					268 = {
+						is_owned_by = ROOT
+						is_owned_by = DJ0
+						is_owned_by = SO5
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					269 = {
+						is_owned_by = ROOT
+						is_owned_by = SO5
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					559 = {
+						is_owned_by = ROOT
+						is_owned_by = SO5
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = liberate_east_africa_tooltip
+			hidden_effect = { country_event = { id = am.south_africa.36 } }
+	
 			
 		}
 	}
 	focus = {
 		id = SAF_liberate_belgian
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = SAF_liberate_portugese}
-		x = 4
+		prerequisite = { focus = SAF_liberate_portugese focus = SAF_liberate_british }
+		x = -1
 		y = 6
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				BEL = { has_war = yes }
+				BE0 = { has_war = yes }
 				factor = 10
 			}
 		}
 
 		available = {
-			COG = { exists = no }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			OR = {     
+				NOT = {
+					768 = {
+						is_owned_by = RW0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					538 = {
+						is_owned_by = CG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					769 = {
+						is_owned_by = BD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					295 = {
+						is_owned_by = CG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					718 = {
+						is_owned_by = CG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
 		}
 		
 		bypass = {
@@ -1644,11 +2808,207 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = BEL
-				generator = { 538 718 295 }
+			custom_effect_tooltip = liberate_congo_tooltip
+			hidden_effect = { country_event = { id = am.south_africa.37 } }
+	
+			
+		}
+	}
+	focus = {
+		id = SAF_liberate_madagascar
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = SAF_liberate_portugese focus = SAF_liberate_british} 
+		x = 2
+		y = 1
+		relative_position_id = SAF_liberate_portugese
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			OR = {
+				NOT = {
+					543 = {
+						is_owned_by = MD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					708 = {
+						is_owned_by = MD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					706 = {
+						is_owned_by = MD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					709 = {
+						is_owned_by = MD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					707 = {
+						is_owned_by = MD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
 			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = liberate_madagascar_tooltip
+			hidden_effect = { country_event = { id = am.south_africa.38 } }
+	
+			
+		}
+	}
+	focus = {
+		id = SAF_liberate_equatorial_africa
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = SAF_liberate_belgian } 
+		x = 0
+		y = 2
+		relative_position_id = SAF_liberate_portugese
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			OR = {
+				NOT = {
+					772 = {
+						is_owned_by = RC0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					539 = {
+						is_owned_by = GA5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					297 = {
+						is_owned_by = EQ0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					705 = {
+						is_owned_by = AN0
+						is_owned_by = EQ0
+						is_owned_by = GA5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					773 = {
+						is_owned_by = CM0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					660 = {
+						is_owned_by = CP5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					774 = {
+						is_owned_by = CD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					775 = {
+						is_owned_by = CD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					558 = {
+						is_owned_by = NG5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = liberate_equatorial_africa_tooltip
+			hidden_effect = { country_event = { id = am.south_africa.39 } }
+	
 			
 		}
 	}
@@ -1656,26 +3016,87 @@ focus_tree = {
 		id = SAF_liberate_british
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = SAF_Union_of_the_African_People}
-		x = 6
+		x = 3
 		y = 5
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				ENG = { has_war = yes }
+				EN0 = { has_war = yes }
 				factor = 10
 			}
 		}
 
 		available = {
-			OR = {
-				KEN = { exists = no } 
-				ZIM = { exists = no }
-			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			OR = {     
+				NOT = {
+					546 = {
+						is_owned_by = TZ0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					547 = {
+						is_owned_by = KE0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					548 = {
+						is_owned_by = UG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					542 = {
+						is_owned_by = BT0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					545 = {
+						is_owned_by = ZI0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					771 = {
+						is_owned_by = ZA0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					770 = {
+						is_owned_by = MW0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
 		}
 		
 		bypass = {
@@ -1687,11 +3108,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = ENG
-				generator = { 546 547 548 542 545 }
-			}
+			custom_effect_tooltip = liberate_british_tooltip
+			hidden_effect = { country_event = { id = am.south_africa.40 } }
+	
 			
 		}
 	}
@@ -1703,33 +3122,33 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = SAF_burn_the_kings_portraits }
 		mutually_exclusive = { focus = SAF_anti_colonialist_crusade }
-		x = 0
+		x = -1
 		y = 3
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
 			modifier = {
-				SOV = { surrender_progress > 0.75 }
+				SO0 = { surrender_progress > 0.75 }
 				factor = 0 # let's not get into that...
 			}
 			modifier = {
-				has_opinion = { target = SOV value > 50 }
+				has_opinion = { target = SO0 value > 50 }
 				factor = 3
 			}
 		}
 
 		available = {
-			NOT = { has_war_with = SOV }
-			SOV = { is_puppet = no }
+			NOT = { has_war_with = SO0 }
+			SO0 = { is_puppet = no }
 			is_subject = no
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
-			is_in_faction_with = SOV
+			is_in_faction_with = SO0
 		}
 
 		cancel_if_invalid = yes
@@ -1741,7 +3160,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SOV = { country_event = { id = tfv_south_africa.20 } }
+			SO0 = { country_event = { id = tfv_south_africa.20 } }
 		}
 	}
 	
@@ -1749,11 +3168,11 @@ focus_tree = {
 		id = SAF_support_the_world_revolution
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = SAF_join_comintern }
-		x = 0
+		x = -2
 		y = 4
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1779,18 +3198,18 @@ focus_tree = {
 		id = SAF_invite_soviet_advisers
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = SAF_support_the_world_revolution }
-		x = 0
+		x = -3
 		y = 5
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			SOV = { exists = yes }
+			SO0 = { exists = yes }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -1826,18 +3245,18 @@ focus_tree = {
 		id = SAF_south_african_soviet_research_treaty
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = SAF_invite_soviet_advisers }
-		x = 0
+		x = -3
 		y = 6
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
 		}
 
 		available = {
-			SOV = { 
+			SO0 = { 
 				exists = yes
 				is_puppet = no
 			}
@@ -1857,8 +3276,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SOV = {
-				custom_effect_tooltip = needs_approval
+			custom_effect_tooltip = needs_approval
+			SO0 = {
 				country_event = { id = tfv_south_africa.40 } #tech sharing
 			}
 		}
@@ -1867,20 +3286,19 @@ focus_tree = {
 	focus = {
 		id = SAF_demand_madagascar
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = SAF_anti_colonialist_crusade focus = SAF_join_comintern}
-		x = 2
+		prerequisite = { focus = SAF_join_comintern }
+		x = 0
 		y = 4
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			has_global_flag = sov_yes_pact
-			FRA = {
+			FR0 = {
 				has_capitulated = yes
 				exists = yes #otherwise Franco-British union might screw things up
 				NOT = { has_government = communism }
@@ -1901,7 +3319,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			FRA = {
+			FR0 = {
 				custom_effect_tooltip = needs_approval
 					country_event = { id = tfv_south_africa.30 hours = 12 }
 			}
@@ -1920,7 +3338,7 @@ focus_tree = {
 		x = 20
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 15
@@ -1977,7 +3395,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -2047,7 +3465,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -2083,7 +3501,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -2140,7 +3558,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -2200,7 +3618,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 15
@@ -2237,7 +3655,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -2297,7 +3715,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 15
@@ -2328,7 +3746,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 45
@@ -2359,7 +3777,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -2395,7 +3813,7 @@ focus_tree = {
 		y = 7
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
@@ -2426,7 +3844,7 @@ focus_tree = {
 		y = 7
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2469,7 +3887,7 @@ focus_tree = {
 		x = 24
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2506,7 +3924,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2542,7 +3960,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2582,7 +4000,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2619,7 +4037,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2655,7 +4073,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2691,7 +4109,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2728,7 +4146,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2764,7 +4182,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2802,7 +4220,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2841,7 +4259,7 @@ focus_tree = {
 		x = 28
 		y = 0	
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2913,7 +4331,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.4
@@ -2953,7 +4371,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.6
@@ -2991,7 +4409,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3028,7 +4446,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3064,7 +4482,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3100,7 +4518,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3140,7 +4558,7 @@ focus_tree = {
 		x = 32
 		y = 0		
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3211,7 +4629,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.8
@@ -3248,12 +4666,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.2
 			modifier = {
-				has_war_with = ENG
+				has_war_with = EN0
 				factor = 10
 			}
 		}
@@ -3288,7 +4706,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3374,7 +4792,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3411,12 +4829,12 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_war_with = ENG
+				has_war_with = EN0
 				factor = 3
 			}
 		}
@@ -3453,7 +4871,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3497,7 +4915,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1

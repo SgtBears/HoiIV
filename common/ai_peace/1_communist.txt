@@ -75,13 +75,13 @@ communist_peace = {
 				AND = {
 					#Is NOT a major
 					NOT = { num_of_factories > 100 }
-					NOT = { tag = GER }
-					NOT = { tag = ENG }
-					NOT = { tag = ITA }
-					NOT = { tag = FRA }
-					NOT = { tag = USA }
-					NOT = { tag = JAP }
-					NOT = { tag = SOV }
+					NOT = { original_tag = GER }
+					NOT = { original_tag = ENG }
+					NOT = { original_tag = ITA }
+					NOT = { original_tag = FRA }
+					NOT = { original_tag = USA }
+					NOT = { original_tag = JAP }
+					NOT = { original_tag = SOV }
 				}
 				is_puppet = yes
 			}
@@ -90,28 +90,40 @@ communist_peace = {
 		modifier = { #Release WGR if cores exist, let USSR have DDR
 			factor = 10
 			FROM = {
-				tag = DDR
+				original_tag = DDR
 			}
 		}
 		modifier = { 
 			factor = 0
-			FROM = { tag = WGR }
+			FROM = { original_tag = WGR }
 		}
 
 		modifier = { #Don't release fascist states in Europe
 			factor = 0
 			FROM = {
 				OR = {
-					tag = CRO
-					tag = SER
-					tag = SLO
+					original_tag = CRO
+					original_tag = SER
+					original_tag = SLV
+					original_tag = BOS
+					original_tag = MAC
+					original_tag = MNT
+					original_tag = SLO
 				}
 			}
 		}
 		modifier = { #Don't release Chinese warlords except for PRC.
 			factor = 0
-			FROM = { is_independent_china_or_warlord = yes }
-			NOT = { tag = PRC }
+			FROM = {
+				OR = {
+					original_tag = SIK
+					original_tag = CHI
+					original_tag = GXC
+					original_tag = YUN
+					original_tag = SHX
+					original_tag = XSM
+				}
+			}
 		}
 	}
 
@@ -168,13 +180,13 @@ communist_peace = {
 				AND = {
 					#Is NOT a major
 					NOT = { num_of_factories > 100 }
-					NOT = { tag = GER }
-					NOT = { tag = ENG }
-					NOT = { tag = ITA }
-					NOT = { tag = FRA }
-					NOT = { tag = USA }
-					NOT = { tag = JAP }
-					NOT = { tag = SOV }
+					NOT = { original_tag = GER }
+					NOT = { original_tag = ENG }
+					NOT = { original_tag = ITA }
+					NOT = { original_tag = FRA }
+					NOT = { original_tag = USA }
+					NOT = { original_tag = JAP }
+					NOT = { original_tag = SOV }
 				}
 				is_puppet = yes
 			}
@@ -184,22 +196,40 @@ communist_peace = {
 			NOT = { is_owner_neighbor_of = FROM }
 			#Is NOT a major
 			NOT = { num_of_factories > 100 }
-			NOT = { tag = GER }
-			NOT = { tag = ENG }
-			NOT = { tag = ITA }
-			NOT = { tag = FRA }
-			NOT = { tag = USA }
-			NOT = { tag = JAP }
-			NOT = { tag = SOV }
+			NOT = { original_tag = GER }
+			NOT = { original_tag = ENG }
+			NOT = { original_tag = ITA }
+			NOT = { original_tag = FRA }
+			NOT = { original_tag = USA }
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = SOV }
 		}
 		modifier = { #Don't break up Czechoslovakia or Yugoslavia
 			factor = 0
-			YUG = { exists = yes }
+			var:global.yug_tag = {
+				exists = yes
+				original_tag = YUG
+			}
 			FROM = {
 				OR = {
-					tag = CRO
-					tag = SER
-					tag = SLO
+					original_tag = CRO
+					original_tag = SER
+					original_tag = SLV
+					original_tag = BOS
+					original_tag = MAC
+					original_tag = MNT
+				}
+			}
+		}
+		modifier = { #Don't break up Czechoslovakia or Yugoslavia
+			factor = 0
+			var:global.cze_tag = {
+				exists = yes
+				original_tag = CZE
+			}
+			FROM = {
+				OR = {
+					original_tag = SLO
 				}
 			}
 		}
@@ -211,34 +241,38 @@ communist_peace = {
 		modifier = { #Release WGR if cores exist, let USSR have DDR
 			factor = 10
 			FROM = {
-				tag = DDR
+				original_tag = DDR
 			}
 		}
 		modifier = { 
 			factor = 0
-			FROM = { tag = WGR }
+			FROM = { original_tag = WGR }
 		}
 		#Don't puppet GER until WGR and DDR are fully released.
 		modifier = {
 			factor = 0
 			FROM = {
-				tag = GER
+				original_tag = GER
 				any_owned_state = {
 					OR = {
-						is_core_of = WGR
-						is_core_of = DDR
+						is_core_of = var:global.wgr_tag
+						is_core_of = var:global.ddr_tag
 					}
 				}
 			}
 		}
 		modifier = { #Puppet only the PRC.
 			factor = 0
-			FROM = { is_independent_china_or_warlord = yes }
-			FROM = { NOT = { tag = PRC } }
-		}
-		modifier = { #Do not release Sinkiang.
-			factor = 0
-			FROM = { tag = SIK }
+			FROM = {
+				OR = {
+					original_tag = SIK
+					original_tag = CHI
+					original_tag = GXC
+					original_tag = YUN
+					original_tag = SHX
+					original_tag = XSM
+				}
+			}
 		}
 	}
 
@@ -487,13 +521,13 @@ communist_peace = {
 				AND = {
 					#Is NOT a major
 					NOT = { num_of_factories > 100 }
-					NOT = { tag = GER }
-					NOT = { tag = ENG }
-					NOT = { tag = ITA }
-					NOT = { tag = FRA }
-					NOT = { tag = USA }
-					NOT = { tag = JAP }
-					NOT = { tag = SOV }
+					NOT = { original_tag = GER }
+					NOT = { original_tag = ENG }
+					NOT = { original_tag = ITA }
+					NOT = { original_tag = FRA }
+					NOT = { original_tag = USA }
+					NOT = { original_tag = JAP }
+					NOT = { original_tag = SOV }
 				}
 				FROM = {
 					owner = {

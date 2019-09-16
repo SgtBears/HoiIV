@@ -18,12 +18,12 @@ country_event = {
 		ai_chance = {
 			base = 90
 			modifier = { 
-				NZL = { NOT = { has_government = communism } } 
+				NZ0 = { NOT = { has_government = communism } } 
 				factor = 0
-				}
+			}
 		}
-		add_to_faction = NZL
-		NZL = { country_event = { id = tfv_new_zealand.2 hours = 6 } }
+		add_to_faction = NZ0
+		NZ0 = { country_event = { id = tfv_new_zealand.2 hours = 6 } }
 	}
 
 
@@ -32,11 +32,11 @@ country_event = {
 		ai_chance = {
 			base = 0
 			modifier = { 
-				NZL = { NOT = { has_government = communism } } 
+				NZ0 = { NOT = { has_government = communism } } 
 				add = 100
-				}
+			}
 		}
-		NZL = { country_event = { id = tfv_new_zealand.3 hours = 6 } }	
+		NZ0 = { country_event = { id = tfv_new_zealand.3 hours = 6 } }	
 	}
 }
 
@@ -85,13 +85,13 @@ country_event = {
 			limit = {
 				is_in_faction = yes
 			}
-			add_to_faction = NZL
+			add_to_faction = NZ0
 			else = {
 				create_faction = "daitoa_kyoeiken"
-				add_to_faction = NZL
+				add_to_faction = NZ0
 			}
 		}
-		NZL = { country_event = { id = tfv_new_zealand.5 hours = 6 } }
+		NZ0 = { country_event = { id = tfv_new_zealand.5 hours = 6 } }
 	}
 
 
@@ -100,7 +100,7 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		NZL = { country_event = { id = tfv_new_zealand.6 hours = 6 } }	
+		NZ0 = { country_event = { id = tfv_new_zealand.6 hours = 6 } }	
 	}
 }
 
@@ -152,8 +152,9 @@ country_event = {
 	
 	#ok I guess
 	option = {
-			name = tfv_new_zealand.7.a
-			create_country_leader = {
+		name = tfv_new_zealand.7.a
+		effect_tooltip = { kill_country_leader = yes }
+		create_country_leader = {
 			name = "Peter Fraser"
 			desc = "POLITICS_PETER_FRASER_DESC"
 			picture = "Portrait_NewZealand_Peter_Fraser.dds"

@@ -2,12 +2,15 @@
 state={
 	id=721
 	name="STATE_721"
-	manpower = 455604
+	manpower = 428693
 	
 	state_category = pastoral
 
 	history={
 		owner = POR
+		victory_points = {
+			12190 1 
+		}
 		buildings = {
 			infrastructure = 3
 			12190 ={
@@ -17,6 +20,6 @@ state={
 	}
 
 	provinces={
-		1326 12178 12190 12206 13001 
+		1326 12178 12190 13001 13337
 	}
 }

@@ -1,0 +1,36 @@
+state={
+	id=841
+	name="STATE_841"
+	resources={
+	}
+
+	state_category = town
+
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			dockyard = 1
+			arms_factory = 1
+			9832 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = USA
+		add_core_of = CNO
+		victory_points = {
+			6909 1 
+		}
+
+	}
+
+	provinces={
+		9850 9847 6909 9832
+	}
+	manpower=1670000
+	buildings_max_level_factor=1.000
+}

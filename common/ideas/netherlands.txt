@@ -1950,6 +1950,15 @@ ideas = {
 				original_tag = HOL
 			}
 
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = HOL_maintain_trade_neutrality }
+					NOT = { has_completed_focus = HOL_cave_to_the_germans }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -1975,6 +1984,16 @@ ideas = {
 				original_tag = HOL
 			}
 
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = HOL_cave_to_the_british }
+					NOT = { has_completed_focus = HOL_cave_to_the_germans }
+					NOT = { has_completed_focus = HOL_oranje_boven }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -2000,6 +2019,15 @@ ideas = {
 				original_tag = HOL
 			}
 
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = HOL_cave_to_the_british }
+					NOT = { has_completed_focus = HOL_maintain_trade_neutrality }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -2035,6 +2063,15 @@ ideas = {
 				original_tag = HOL
 			}
 
+			visible = {
+				OR = {
+					AND = {
+						NOT = { has_completed_focus = HOL_cave_to_the_british }
+						NOT = { has_completed_focus = HOL_maintain_trade_neutrality }
+					}
+					has_government = fascism
+				}
+			}
 			available = {
 				has_government = fascism
 			}
@@ -2050,6 +2087,16 @@ ideas = {
 				original_tag = HOL
 			}
 
+			visible = {
+				OR = {
+					AND = {
+						NOT = { has_completed_focus = HOL_cave_to_the_germans }
+						NOT = { has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }
+					}
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
 			available = {
 				OR = {
 					has_government = democratic
@@ -2069,6 +2116,16 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 
+			visible = {
+				OR = {
+					AND = {
+						NOT = { has_completed_focus = HOL_cave_to_the_germans }
+						NOT = { has_completed_focus = HOL_cave_to_the_british }
+						NOT = { has_completed_focus = HOL_oranje_boven }
+					}
+					has_government = communism
+				}
+			}
 			available = {
 				has_government = communism
 			}
@@ -2084,6 +2141,16 @@ ideas = {
 				original_tag = HOL
 			}
 
+			visible = {
+				OR = {
+					AND = {
+						NOT = { has_completed_focus = HOL_cave_to_the_germans }
+						NOT = { has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }
+					}
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
 			available = {
 				OR = {
 					has_government = democratic
@@ -2104,6 +2171,16 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 
+			visible = {
+				OR = {
+					AND = {
+						NOT = { has_completed_focus = HOL_cave_to_the_germans }
+						NOT = { has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }
+					}
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
 			available = {
 				has_capitulated = yes
 				OR = {
@@ -2124,6 +2201,11 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 
+			visible = {
+				NOT = { has_completed_focus = HOL_cave_to_the_germans }
+				NOT = { has_completed_focus = HOL_cave_to_the_british }
+				NOT = { has_completed_focus = HOL_oranje_boven }
+			}
 			available = {
 				has_government = communism
 				has_completed_focus = HOL_decolonization
@@ -2143,6 +2225,11 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 
+			visible = {
+				NOT = { has_completed_focus = HOL_cave_to_the_germans }
+				NOT = { has_completed_focus = HOL_cave_to_the_british }
+				NOT = { has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }
+			}
 			available = {
 				has_completed_focus = HOL_the_only_man_in_the_dutch_government
 			}
@@ -2164,6 +2251,14 @@ ideas = {
 				original_tag = HOL
 			}
 			
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = HOL_appoint_new_supreme_commander }
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -2228,6 +2323,15 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 		
+			visible = {
+				OR = {
+					AND = {
+						NOT = { has_completed_focus = HOL_cave_to_the_british }
+						NOT = { has_completed_focus = HOL_maintain_trade_neutrality }
+					}
+					has_government = fascism
+				}
+			}
 			available = {
 				has_government = fascism
 			}
@@ -2436,6 +2540,9 @@ ideas = {
 			
 			picture = fokker
 
+			visible = {
+				NOT = { has_completed_focus = HOL_develop_the_zandstad }
+			}
 			available = {
 				has_completed_focus = HOL_fokker
 			}
@@ -2549,6 +2656,9 @@ ideas = {
 			
 			picture = HOL_daf
 
+			visible = {
+				NOT = { has_completed_focus = HOL_develop_the_randstad }
+			}
 			available = {
 				has_completed_focus = HOL_daf
 			}

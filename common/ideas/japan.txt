@@ -1193,6 +1193,9 @@ ideas = {
 				tac_bomber_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				jet_tac_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 		JAP_prioritize_naval_aircraft_construction = {
@@ -1243,6 +1246,16 @@ ideas = {
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
+			visible = {
+				if = {
+					limit = {
+						has_DLC = "Waking the Tiger"
+					}
+					NOT = { has_completed_focus = JAP_purge_the_kodoha_faction }
+					NOT = { has_completed_focus = JAP_support_the_kodoha_faction }
+					NOT = { has_completed_focus = JAP_strengthen_civilian_government }
+				}
+			}
 			allowed = {
 				original_tag = "JAP"
 			}
@@ -1277,6 +1290,16 @@ ideas = {
 				}
 			}
 			
+			visible = {
+				if = {
+					limit = {
+						has_DLC = "Waking the Tiger"
+					}
+					NOT = { has_completed_focus = JAP_purge_the_kodoha_faction }
+					NOT = { has_completed_focus = JAP_support_the_kodoha_faction }
+					NOT = { has_completed_focus = JAP_the_unthinkable_option }
+				}
+			}
 			allowed = {
 				original_tag = "JAP"
 			}
@@ -1703,6 +1726,9 @@ ideas = {
 				has_completed_focus = JAP_supremacy_of_the_battlefleet
 			}
 
+			visible = {
+				NOT = { has_completed_focus = JAP_carrier_warfare_experiments }
+			}
 			cost = 75
 						
 			research_bonus = {

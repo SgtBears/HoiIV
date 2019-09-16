@@ -9,11 +9,11 @@ VEN_abc_islands = {
 		}
 
 		available = {
-			NOT = { has_war_with = USA }
-			NOT = { has_war_with = ENG }
-			NOT = { has_war_with = HOL }
-			695 = { is_owned_and_controlled_by = HOL }
-			HOL = { has_capitulated = yes }
+			NOT = { has_war_with = US0 }
+			NOT = { has_war_with = EN0 }
+			NOT = { has_war_with = HO0 }
+			695 = { is_owned_and_controlled_by = HO0 }
+			HO0 = { has_capitulated = yes }
 		}
 
 		cost = 25
@@ -29,13 +29,12 @@ VEN_abc_islands = {
 		}
 
 		visible = {
-			original_tag = VEN
-			695 = { is_owned_and_controlled_by = HOL }
+			695 = { is_owned_and_controlled_by = HO0 }
 			NOT = { has_global_flag = ven_claims_abc_islands }
 		}
 
 		complete_effect = {
-			HOL = { country_event = { id = mtg_netherlands.1 hours = 6 } }
+			HO0 = { country_event = { id = mtg_netherlands.1 hours = 6 } }
 		}
 
 	}

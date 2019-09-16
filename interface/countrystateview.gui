@@ -23,18 +23,18 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "countrystateview"
-		position = { x=-416 y=-549}
-		show_position = { x=-6 y =-549 }
+		position = { x=-416 y=-780}
+		show_position = { x=-6 y =-780 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
 		orientation = lower_left
-		size = { width=436 height=496 }
+		size = { width=436 height=796 }
 		
 		containerWindowType = {
 			name = "state_info_window"
 			position = { x = 0 y = 0 }
-			size = { width=780 height=496 }
+			size = { width=780 height=696 }
 			
 			
 			background = {
@@ -219,7 +219,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "province_info_window"
-			position = { x = 5 y = 435 }
+			position = { x = 5 y = 668 }
 			size = { width=480 height=29%% }
 			
 			iconType = {
@@ -491,13 +491,13 @@ guiTypes = {
 		
 		iconType = {
 			name = "resource"
-			position = { x=53 y=8 }	
+			position = { x=50 y=10 }	
 			spriteType = "GFX_resources_strip"
 		}
 		
 		instantTextboxType = {
 			name = "amount"
-			position = { x = 70 y = 12 }
+			position = { x = 66 y = 15 }
 			font = "hoi_20b"
 			maxWidth = 37
 			maxHeight = 18

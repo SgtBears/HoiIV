@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		UTA_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		UTA_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		UTA_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		UTA_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = UTA
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UTA_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		UTA_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UTA_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		UTA_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = UTA
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UTA_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = UTA
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		UTA_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		UTA_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UTA_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UTA_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		UTA_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		UTA_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = UTA
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		UTA_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		UTA_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = UTA
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

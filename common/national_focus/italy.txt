@@ -19,7 +19,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -27,42 +27,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		bypass = {
-			550 = { NOT = { is_owned_and_controlled_by = ITA } }
-			# Need province based trigger for this to work
-			#550 = {		
-			#	NOT = { 
-			#		free_building_slots = {
-			#			building = infrastructure
-			#			size > 1
-			#		} 
-			#	}
-			#	NOT = { 
-			#		free_building_slots = {
-			#			building = naval_base
-			#			size > 2
-			#		} 
-			#	}
-			#}
-			559 = { NOT = { is_owned_and_controlled_by = ITA } }
-			# Need province based trigger for this to work
-			#559 = {
-			#	NOT = { 
-			#		free_building_slots = {
-			#			building = infrastructure
-			#			size > 2
-			#		} 
-			#	}
-			#	NOT = { 
-			#		free_building_slots = {
-			#			building = naval_base
-			#			size > 3
-			#		} 
-			#	}
-			#}
+			550 = { NOT = { is_owned_and_controlled_by = ROOT } }
+			559 = { NOT = { is_owned_and_controlled_by = ROOT } }
 		}
 
 		completion_reward = {
-			if = { limit = { 550 = { is_owned_and_controlled_by = ITA } }
+			if = { limit = { 550 = { is_owned_and_controlled_by = ROOT } }
 				550 = {
 					add_building_construction = {
 						type = infrastructure
@@ -80,15 +50,15 @@ focus_tree = {
 				}
 			}
 
-			if = { limit = { 559 = { is_owned_and_controlled_by = ITA } }
+			if = { limit = { 559 = { is_owned_and_controlled_by = ROOT } }
 				559 = {
-						add_building_construction = {
-							type = infrastructure
-							level = 3
-							instant_build = yes
-						}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
 				}
-      	559 = {
+				559 = {
 					add_building_construction = {
 						type = naval_base
 						level = 4
@@ -108,7 +78,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_ethiopian_war_logistics
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -219,7 +189,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_industrial_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -380,7 +350,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_industrial_effort_2
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -459,7 +429,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_industrial_effort_2
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -479,7 +449,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_extra_tech_slot
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -585,7 +555,7 @@ focus_tree = {
 		text = ITA_prospect_for_oil
 		prerequisite = { focus = ITA_italian_highways }
 		available = {
-			ITA = {
+			ROOT = {
 				controls_state = 662
 			}
 		}
@@ -598,7 +568,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_italian_highways
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -623,19 +593,14 @@ focus_tree = {
 		text = ITA_libyan_refineries
 		prerequisite = { focus = ITA_prospect_for_oil }
 		available = {
-			ITA = {
+			ROOT = {
 				controls_state = 450
-			}
-			450 = {
-				NOT = {
-					has_state_flag = benghazi_oil_developed
-				}
 			}
 		}
 		x = -1
 		y = 1
 		relative_position_id = ITA_prospect_for_oil
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -643,13 +608,24 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_resource = {
-				type = oil
-				amount = 4
-				state = 450
+			if = {
+				limit = {
+					450 = {
+						NOT = {
+							has_state_flag = benghazi_oil_developed
+						}
+					}
+				}
+				add_resource = {
+					type = oil
+					amount = 4
+					state = 450
+				}
+				450 = {
+					set_state_flag = benghazi_oil_developed
+				}
 			}
 			450 = {
-				set_state_flag = benghazi_oil_developed
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
@@ -671,7 +647,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_prospect_for_oil
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -740,7 +716,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 4
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -843,7 +819,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_army_primacy
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -868,7 +844,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_modernized_artillery
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -902,7 +878,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_modernized_army
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -934,7 +910,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_special_forces
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -957,7 +933,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 6
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 5
 		}
@@ -1061,7 +1037,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_army_primacy
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1092,7 +1068,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_mare_nostrum
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1116,7 +1092,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_mare_nostrum
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1150,7 +1126,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = ITA_army_primacy
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1185,7 +1161,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = ITA_air_innovation
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1214,7 +1190,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = ITA_carrier_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1245,7 +1221,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_atlantic_fleet
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1279,7 +1255,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_bomber_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1309,7 +1285,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_air_innovation_2
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1333,7 +1309,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		x = 11
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1365,7 +1341,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_light_ship_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1398,7 +1374,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = ITA_light_ship_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1435,7 +1411,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = ITA_submarine_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1465,7 +1441,7 @@ focus_tree = {
 		available = {
 			OR = {
 				owns_state = 271
-				ETH = { is_puppet_of = ITA }
+				ET0 = { is_puppet_of = ROOT }
 			}
 		}
 
@@ -1473,7 +1449,7 @@ focus_tree = {
 
 		x = 15
 		y = 0
-		cost = 10
+		cost = 69
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1491,24 +1467,25 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_victoryinETH
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
 
 		bypass = {
-			NOT = { country_exists = YUG }
+			NOT = { country_exists = YU0 }
 		}
 
 		completion_reward = {
-			add_state_claim = 102
-			add_state_claim = 103
+			add_state_claim = 865
+			add_state_claim = 862
+			add_state_claim = 863
 			add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
-			USA = {
+			US0 = {
 				set_country_flag = { flag = USA_yugoslavia_window days = 60 value = 1 }
 			}
-			YUG = {
-				add_opinion_modifier = { target = ITA modifier = claimed_western_yugoslavia }
+			YU0 = {
+				add_opinion_modifier = { target = ROOT modifier = claimed_western_yugoslavia }
 				if = {
 					limit = {
 						ROOT = { has_government = fascism }
@@ -1562,21 +1539,21 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_victoryinETH
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.25
 		}
 
 		available = {
-			country_exists = YUG
+			country_exists = YU0
 			NOT = {
-				has_war_with = YUG
+				has_war_with = YU0
 			}
 		}
 
 		completion_reward = {
-			YUG = {
-				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
+			YU0 = {
+				add_opinion_modifier = { target = ROOT modifier = ita_yug_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
 					add_timed_idea = { idea = fascist_influence days = 1095 }
@@ -1602,17 +1579,16 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = ITA_victoryinETH }
 		available = {
-			any_other_country = {
-				original_tag = SPR
+			SP1 = {
 				has_government = fascism
 				has_volunteers_amount_from = {
-					tag = ITA
+					tag = IT0
 					count > 1
 				}
 			}
 		}
 		cancel = {
-			SPR = {
+			SP1 = {
 				has_civil_war = no
 			}
 		}
@@ -1620,17 +1596,13 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = ITA_victoryinETH
-		cost = 4.4
+		cost = 30
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
-			random_other_country = {
-				limit = {
-					original_tag = SPR
-					has_government = fascism
-				}
-				add_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
+			SP1 = {
+				add_opinion_modifier = { target = ROOT modifier = ita_supported_spain_civil_war }
 			}
 		}
 	}
@@ -1641,8 +1613,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_support_nationalist_spain }
 		mutually_exclusive = { focus = ITA_spanish_italian_faction }
 		available = {
-			any_other_country = {
-				original_tag = SPR
+			SP1 = {
 				has_government = fascism
 				has_war = no
 				owns_state = 177
@@ -1650,26 +1621,27 @@ focus_tree = {
 			is_puppet = no
 		}
 		cancel = {
-			any_other_country = {
-				original_tag = SPR
-				has_government = fascism
+			SP1 = {
+				NOT = { has_government = fascism }
+				NOT = { owns_state = 177 }
 				has_war_with = ROOT
-				owns_state = 177
 			}
 		}
 		x = 1
 		y = 3
 		relative_position_id = ITA_support_nationalist_spain
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
-			random_other_country = {
-				limit = {
-					owns_state = 177
+			SP1 = {
+				if = {
+					limit = {
+						has_government = fascism
+					}
+					country_event = { id = italy.9 }
 				}
-				country_event = { id = italy.9 }
 			}
 		}
 	}
@@ -1681,22 +1653,22 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			country_exists = BUL
+			country_exists = BU0
 			NOT = {
-				has_war_with = BUL
+				has_war_with = BU0
 			}
 		}
 		bypass = {
-			NOT = { country_exists = BUL }
+			NOT = { country_exists = BU0 }
 		}
 		completion_reward = {
-			BUL = {
-				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
+			BU0 = {
+				add_opinion_modifier = { target = ROOT modifier = ita_bul_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
 					add_timed_idea = { idea = fascist_influence days = 1095 }
@@ -1724,10 +1696,10 @@ focus_tree = {
 		relative_position_id = ITA_slovenia_dalmatia_claims
 		
 		available = {
-			country_exists = ALB
+			country_exists = AL0
 		}
 
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1736,7 +1708,7 @@ focus_tree = {
 			}	
 		}	
 		completion_reward = {
-			ALB = { country_event = { id = italy.3 } }
+			AL0 = { country_event = { id = italy.3 } }
 		}
 	}
 
@@ -1747,20 +1719,20 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_italy_first }
 		available = {
 			has_government = fascism
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = GE0 }
 			OR = {
 				AND = {
 					has_government = fascism
-					GER = { 
+					GE0 = { 
 						has_government = fascism 
-						country_exists = GER
+						country_exists = GE0
 					}
 				}
 				AND = {
 					has_government = neutrality
-					GER = { 
+					GE0 = { 
 						has_government = neutrality
-						country_exists = GER
+						country_exists = GE0
 					}
 				}
 			}
@@ -1769,7 +1741,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_bulgaria_friend
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 
@@ -1791,14 +1763,14 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				OR = {
-					GER = { has_completed_focus = GER_reestablish_free_elections }
-					GER = { has_completed_focus = GER_expatriate_the_communists }
+					GE0 = { has_completed_focus = GER_reestablish_free_elections }
+					GE0 = { has_completed_focus = GER_expatriate_the_communists }
 				}
 			}
 		}
 		completion_reward = {
-			GER = {
-				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }
+			GE0 = {
+				add_opinion_modifier = { target = ROOT modifier = pact_of_steel_opinion }
 			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.184 }
@@ -1812,14 +1784,14 @@ focus_tree = {
 		prerequisite = { focus = ITA_pact_of_steel }
 
 		available = {
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = GE0 }
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 		
 		x = -3
 		y = 1
 		relative_position_id = ITA_pact_of_steel
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1837,29 +1809,31 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_pact_of_steel }
 		available = {
 			is_subject = no
-			NOT = { has_war_with = BUL }
-			NOT = { is_in_faction_with = GER }
-			NOT = { is_in_faction_with = ENG }
+			NOT = { has_war_with = BU0 }
+			NOT = { is_in_faction_with = GE0 }
+			NOT = { is_in_faction_with = EN0 }
 			OR = {
 				owns_state = 44
 				owns_state = 102
+				owns_state = 868
+				owns_state = 868
 			}
-			BUL = {
+			BU0 = {
 				is_in_faction = no
 				is_subject = no
 			}
 		}
 		bypass = {
-			FRA = { has_completed_focus = FRA_woo_italy }
-			is_in_faction_with = FRA
+			FR0 = { has_completed_focus = FRA_woo_italy }
+			is_in_faction_with = FR0
 		}
 		cancel = {
-			is_in_faction_with = GER
+			is_in_faction_with = GE0
 		}
 		x = 1
 		y = 1
 		relative_position_id = ITA_bulgaria_friend
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 2.5
 
@@ -1880,27 +1854,32 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_political_power = 120
-			set_rule = { can_create_factions = yes }
-			create_faction = "italy_empire_faction"
+			set_rule = { can_create_factions = yes } 
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = "italy_empire_faction"
+			}
 
 			if = {
 				limit = {
-					BUL = { 
+					BU0 = { 
 						is_ai = yes
 						is_puppet = no
 					}					
 				}
-				add_to_faction = BUL
-				BUL = {
+				add_to_faction = BU0
+				BU0 = {
 					add_ai_strategy = {
 						type = alliance
-						id = "ITA"
+						id = ROOT
 						value = 200
 					}
 				}
 			}
-			YUG = {
-				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
+			YU0 = {
+				add_opinion_modifier = { target = ROOT modifier = ita_yug_diplomacy_focus }
 				# REVISIT Possibly clear old negative modifier if Slovenia and Dalmatia were taken
 			}
 			hidden_effect = {
@@ -1914,21 +1893,21 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = ITA_italy_first }
 		available = {
-			country_exists = FRA
-			FRA = {
+			country_exists = FR0
+			FR0 = {
 				OR = {
 					owns_state = 1
 					owns_state = 735
 					owns_state = 458
 				}
 			}
-			NOT = { is_in_faction_with = FRA }
+			NOT = { is_in_faction_with = FR0 }
 		}
 		will_lead_to_war_with = FRA
 		x = 2
 		y = 1
 		relative_position_id = ITA_italy_first
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 
@@ -1948,10 +1927,14 @@ focus_tree = {
 			}
 		}			
 		completion_reward = {
-			create_wargoal = {
-				target = FRA
-				type = take_state_focus
-				generator = { 1 735 458 }
+			FR0 = {
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = take_state_focus
+						generator = { 1 735 458 }
+					}
+				}
 			}
 		}
 	}	
@@ -1963,28 +1946,28 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_bulgaria_friend
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			country_exists = ROM
+			country_exists = RO0
 			NOT = {
-				has_war_with = ROM
+				has_war_with = RO0
 			}
 			has_government = fascism
 		}
 		bypass = {
-			ROM = {
+			RO0 = {
 				OR = {
-					NOT = { country_exists = ROM }
+					NOT = { country_exists = RO0 }
 					has_capitulated = yes
 				}
 			}
 		}
 		completion_reward = {
-			ROM = {
-				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
+			RO0 = {
+				add_opinion_modifier = { target = ROOT modifier = ita_rom_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
 					add_timed_idea = { idea = fascist_influence days = 1095 }
@@ -2009,11 +1992,11 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
-		cancel = { has_war_with = GER }
+		cancel = { has_war_with = GE0 }
 		x = -1
 		y = 1
 		relative_position_id = ITA_pact_of_steel
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2021,11 +2004,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			GER = {
+			GE0 = {
 				country_event = { id = italy.5 days = 1 }
 				custom_effect_tooltip = needs_approval
 			}
-			# Actual reward effects added in event if Soviets approve
 			effect_tooltip = {
 				add_tech_bonus = {
 					name = synth_bonus
@@ -2055,7 +2037,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_german_millitary_cooperation
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2082,14 +2064,13 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_demand_balearic_islands }
 		available = {
 			is_in_faction = yes
-			any_other_country = {
-				original_tag = SPR
+			SP1 = {
 				has_government = fascism
 				has_civil_war = no
 				NOT = { has_war_with = ROOT }
 				is_in_faction = no
 			}
-			FRA = {
+			FR0 = {
 				OR = {
 					NOT = { country_exists = THIS }
 					has_capitulated = yes
@@ -2098,8 +2079,7 @@ focus_tree = {
 			}			
 		}
 		bypass = {
-			any_other_country = {
-				original_tag = SPR
+			SP1 = {
 				has_government = fascism
 				is_in_faction_with = ROOT
 			}
@@ -2107,19 +2087,29 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = ITA_italy_first
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
-			random_other_country = {
+			if = {
 				limit = {
-					original_tag = SPR
-					has_government = fascism
+					OR = { 
+						SP1 = { NOT = { has_government = fascism } }
+						NOT = { country_exists = SP1 }
+					}
 				}
-				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
-				add_ideas = fascist_influence 
-				country_event = { id = generic.5 }           
+				custom_effect_tooltip = GER_nationalist_spain_ally_tt
+			}
+			else = {
+				limit = {
+					SP1 = { has_government = fascism }
+				}
+				SP1 = {
+					add_opinion_modifier = { target = ROOT modifier = ita_spr_diplomacy_focus }
+					add_ideas = fascist_influence 
+					country_event = { id = generic.5 }  
+				}         
 			}
 		}
 	}
@@ -2131,22 +2121,22 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_spanish_italian_faction
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
 			is_in_faction = yes
-			country_exists = POR
+			country_exists = PO5
 			NOT = {
-				has_war_with = POR
+				has_war_with = PO5
 			}
 		}
 
 		completion_reward = {
-			POR = {
-				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
+			PO5 = {
+				add_opinion_modifier = { target = ROOT modifier = ita_por_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
 					add_timed_idea = { idea = fascist_influence days = 1095 }
@@ -2170,24 +2160,28 @@ focus_tree = {
 		prerequisite = { focus = ITA_pact_of_steel focus = ITA_italy_first }
 		mutually_exclusive = { focus = ITA_greece_friend }
 		available = {
-			NOT = { is_in_faction_with = GRE }
-			NOT = { has_war_with = GRE }
-			GRE = { NOT = { is_puppet_of = ITA } }
-			country_exists = GRE
+			NOT = { is_in_faction_with = GR0 }
+			NOT = { has_war_with = GR0 }
+			GR0 = { NOT = { is_puppet_of = ROOT } }
+			country_exists = GR0
 		}
 		will_lead_to_war_with = GRE
 		x = 1
 		y = 3
 		relative_position_id = ITA_pact_of_steel
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = GRE
-				generator = { 47 } # Athens
+			GR0 = {
+				ROOT = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = { 47 } # Athens
+					}
+				}
 			}
 
 			hidden_effect = {
@@ -2204,25 +2198,25 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = ITA_italy_first
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			country_exists = GRE
+			country_exists = GR0
 			NOT = {
-				has_war_with = GRE
+				has_war_with = GR0
 			}
 			has_government = fascism
 		}
 
 		bypass = {
-			NOT = { country_exists = GRE }
+			NOT = { country_exists = GR0 }
 		}
 
 		completion_reward = {
-			GRE = {
-				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
+			GR0 = {
+				add_opinion_modifier = { target = ROOT modifier = ita_gre_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
 					add_timed_idea = { idea = fascist_influence days = 1095 }
@@ -2249,7 +2243,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = ITA_greece_friend }
 		available = {
-			TUR = {
+			TU0 = {
 				owns_state = 342
 			}
 		}
@@ -2257,23 +2251,27 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_greece_friend
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
 			if = {
 				limit = {
-					is_in_faction_with = GRE
-					TUR = { owns_state = 339 }
+					is_in_faction_with = GR0
+					TU0 = { owns_state = 339 }
 				}
 
-				GRE = { country_event = greece.4 }
+				GR0 = { country_event = greece.4 }
 			}
-			create_wargoal = {
-			target = TUR
-			type = take_state_focus
-			generator = { 342 }
+			TU0 = {
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = take_state_focus
+						generator = { 342 }
+					}
+				}
 			}
 
 			hidden_effect = {
@@ -2288,15 +2286,14 @@ focus_tree = {
 		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
 			is_puppet = no
-			is_in_faction_with = GER
-			GER = { 
+			is_in_faction_with = GE0
+			GE0 = { 
 				controls_state = 16 				
-				GER = { is_faction_leader = yes }
+				GE0 = { is_faction_leader = yes }
 			}
 			custom_trigger_tooltip = {
-			 tooltip = ITA_claims_on_france_tt
-				any_other_country = {
-					original_tag = FRA
+				tooltip = ITA_claims_on_france_tt
+				FR1 = {
 					has_government = fascism
 					owns_state = 735
 					controls_state = 735
@@ -2308,7 +2305,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_pact_of_steel
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 
@@ -2330,8 +2327,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { 
-					any_other_country = {
-						original_tag = FRA
+					FR1 = {
 						has_government = fascism
 						owns_state = 735
 					}
@@ -2340,8 +2336,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					any_other_country = {
-						original_tag = FRA
+					FR1 = {
 						has_government = fascism
 						owns_state = 1
 					}
@@ -2349,7 +2344,7 @@ focus_tree = {
 				set_global_flag = ITA_claims_on_france_1
 			}
 
-			GER = { country_event = germany.104 }			
+			GE0 = { country_event = germany.104 }			
 		}
 	}
 	
@@ -2362,22 +2357,22 @@ focus_tree = {
 		x = 3
 		y = 3
 		relative_position_id = ITA_italy_first
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			country_exists = TUR
+			country_exists = TU0
 			NOT = {
-				has_war_with = TUR
+				has_war_with = TU0
 			}
 			has_government = fascism
 		}
 
 		completion_reward = {
-			TUR = {
-				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
+			TU0 = {
+				add_opinion_modifier = { target = ROOT modifier = ita_tur_diplomacy_focus }
 				if = {
 					limit = { ROOT = { has_government = fascism } }
 					add_timed_idea = { idea = fascist_influence days = 1095 }
@@ -2405,20 +2400,20 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = ITA_italy_first }	
 		available = {
-			NOT = { is_in_faction_with = ENG }
+			NOT = { is_in_faction_with = EN0 }
 		}	
 		bypass = {
 			OR = {
-				has_war_with = ENG
-				is_in_faction_with = GER
-				NOT = { country_exists = ENG }
+				has_war_with = EN0
+				is_in_faction_with = GE0
+				NOT = { country_exists = EN0 }
 			}
 		}
 		will_lead_to_war_with = ENG
 		x = 0
 		y = 1
 		relative_position_id = ITA_italy_first
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 
@@ -2438,10 +2433,14 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = ENG
-				generator = { 118 453 116 183 } # Gibraltar, Suez, Malta, Cyprus
+			EN0 = {
+				ROOT = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = { 118 453 116 183 } # Gibraltar, Suez, Malta, Cyprus
+					}
+				}
 			}
 		}
 	}
@@ -2451,16 +2450,16 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = ITA_anti_uk_war_goals }
 		available = {
-			JAP = { 
+			JA0 = { 
 				is_in_faction = no
-				country_exists = JAP
+				country_exists = JA0
 				has_government = ROOT
 			}
 		}
 		x = 0
 		y = 1
 		relative_position_id = ITA_anti_uk_war_goals
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 		
@@ -2468,7 +2467,7 @@ focus_tree = {
 			factor = 1
 		}			
 		completion_reward = {
-			JAP = { add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus } }
+			JA0 = { add_opinion_modifier = { target = ROOT modifier = ita_jap_diplomacy_focus } }
 		}
 	}
 

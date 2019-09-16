@@ -1,0 +1,133 @@
+﻿add_namespace = am.news
+#Greenlandic Independence
+news_event = {
+	id = am.news.1
+	title = am.news.1.t
+	desc = am.news.1.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.1.a
+	}
+}
+news_event = {
+	id = am.news.2
+	title = am.news.2.t
+	desc = am.news.2.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.2.a
+	}
+}
+news_event = {
+	id = am.news.3
+	title = am.news.3.t
+	desc = am.news.3.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.3.a
+		trigger = { original_tag = IRE }
+	}
+	option = {
+		name = am.news.3.b
+		trigger = {
+			OR = {
+				original_tag = ENG
+				is_in_faction_with = EN0
+				is_subject_of = EN0
+			}
+		}
+	}
+	option = {
+		name = am.news.3.c
+		trigger = { 
+			NOT = {
+				original_tag = ENG
+				original_tag = IRE
+				is_in_faction_with = EN0
+				is_subject_of = EN0
+			}
+		}
+	}
+}
+#Bulgaria Submits to Romanian Ultimatum
+news_event = {
+	id = am.news.4
+	title = am.news.4.t
+	desc = am.news.4.desc
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.4.a
+		trigger = {
+			original_tag = ROM
+		}
+	}
+	option = {
+		name = am.news.4.b
+		trigger = { 
+			original_tag = HUN
+		}
+	}
+	option = {
+		name = am.news.4.c
+		trigger = { 
+			NOT = {
+				original_tag = ROM
+				original_tag = HUN
+			}
+		}
+	}
+}
+
+#Bulgaria Rejects Romanian Ultimatum - War might start
+news_event = {
+	id = am.news.5
+	title = am.news.5.t
+	desc = am.news.5.desc
+	picture = GFX_news_event_bulgarian_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.5.a
+		trigger = {
+			original_tag = ROM
+		}
+	}
+	option = {
+		name = am.news.5.b
+		trigger = { 
+			original_tag = HUN
+		}
+	}
+	option = {
+		name = am.news.5.c
+		trigger = { 
+			NOT = {
+				original_tag = ROM
+				original_tag = HUN
+			}
+		}
+	}
+}

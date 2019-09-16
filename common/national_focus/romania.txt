@@ -25,7 +25,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -68,7 +68,7 @@ focus_tree = {
 		x = 3
 		y = 0
 
-		cost = 10
+		cost = 69
 
 		ai_will_do = {
 			factor = 9
@@ -100,15 +100,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
 		}
 
 		available = {
-			NOT = { has_war_with = SOV }
-			SOV = {
+			NOT = { has_war_with = SO0 }
+			SO0 = {
 				exists = yes
 				is_puppet = no
 			}
@@ -125,8 +125,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = { ideology = communism popularity = 0.1 }
-			add_opinion_modifier = { target = SOV modifier = ROM_a_deal_with_the_devil }
-			SOV = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+			add_opinion_modifier = { target = SO0 modifier = ROM_a_deal_with_the_devil }
+			SO0 = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
 		}
 	}
 
@@ -138,7 +138,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_a_deal_with_the_devil
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -170,7 +170,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_a_deal_with_the_devil
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -178,7 +178,7 @@ focus_tree = {
 
 		available = {
 			is_in_faction = no
-			SOV = {
+			SO0 = {
 				exists = yes
 				is_puppet = no
 				NOT = {
@@ -188,7 +188,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			is_in_faction_with = SOV
+			is_in_faction_with = SO0
 		}
 
 		cancel_if_invalid = yes
@@ -197,7 +197,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			SOV = { country_event = DOD_romania.30 }
+			SO0 = { country_event = DOD_romania.30 }
 		}
 	}
 
@@ -209,7 +209,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = ROM_a_deal_with_the_devil
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -241,33 +241,33 @@ focus_tree = {
 		y = 4
 		relative_position_id = ROM_a_deal_with_the_devil
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				SOV = {
+				SO0 = {
 					has_capitulated = yes
 				}
 			}
 		}
 
 		available = {
-			SOV = { is_faction_leader = yes }
+			SO0 = { is_faction_leader = yes }
 			is_in_faction = no
-			NOT = { has_war_with = SOV }
+			NOT = { has_war_with = SO0 }
 			is_subject = no
 			NOT = {
 				any_other_country = {
-					is_in_faction_with = SOV
-					has_war_with = ROM
+					is_in_faction_with = SO0
+					has_war_with = ROOT
 				}
 			}
 		}
 
 		bypass = {
-			is_in_faction_with = SOV
+			is_in_faction_with = SO0
 		}
 
 		cancel_if_invalid = yes
@@ -276,7 +276,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			SOV = { country_event = generic.2 }
+			SO0 = { country_event = generic.2 }
 		}
 	}
 
@@ -288,14 +288,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
 		}
 
 		available = {
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = GE0 }
 		}
 
 		bypass = {
@@ -309,8 +309,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = { ideology = fascism popularity = 0.05 }
-			add_opinion_modifier = { target = GER modifier = ROM_trade_treaty_with_germany }
-			GER = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_germany } }
+			add_opinion_modifier = { target = GE0 modifier = ROM_trade_treaty_with_germany }
+			GE0 = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_germany } }
 		}
 	}
 
@@ -322,17 +322,17 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = GE0 }
 			OR = {
 				is_in_faction = no
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 			}
 		}
 
@@ -349,13 +349,13 @@ focus_tree = {
 			custom_effect_tooltip = ROM_invite_german_advisors_tt
 			hidden_effect = {
 				diplomatic_relation = {
-					country = GER
+					country = GE0
 					relation = military_access
 					active = yes
 				}
 			}
 			add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group
-			GER = { add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group }
+			GE0 = { add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group }
 		}
 	}
 
@@ -367,7 +367,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -376,7 +376,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_in_faction = no
-				is_in_faction_with = GER 
+				is_in_faction_with = GE0
 			}
 		}
 
@@ -391,7 +391,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_relation_modifier = {
-				target = GER
+				target = GE0
 				modifier = ROM_license_german_equipment
 			}
 		}
@@ -405,36 +405,36 @@ focus_tree = {
 		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				GER = {
+				GE0 = {
 					has_capitulated = yes
 				}
 			}
 		}
 
 		available = {
-			GER = { 
+			GE0 = { 
 				is_faction_leader = yes
 				has_government = fascism
 			}
 			is_in_faction = no
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = GE0 }
 			is_subject = no
 			NOT = {
 				any_other_country = {
-					is_in_faction_with = GER
-					has_war_with = ROM
+					is_in_faction_with = GE0
+					has_war_with = ROOT
 				}
 			}
 		}
 
 		bypass = {
-			is_in_faction_with = GER
+			is_in_faction_with = GE0
 		}
 
 		cancel_if_invalid = yes
@@ -443,7 +443,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			GER = {
+			GE0 = {
 				country_event = generic.2
 			}
 		}
@@ -458,15 +458,15 @@ focus_tree = {
 		relative_position_id = ROM_trade_treaty_with_germany
 
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			is_in_faction_with = GER
-			GER = {
+			is_in_faction_with = GE0
+			GE0 = {
 				exists = yes
 				is_puppet = no
 			}
@@ -491,10 +491,10 @@ focus_tree = {
 					amount = 8
 				}
 			}
-			GER = {
+			GE0 = {
 				random_owned_controlled_state = {
 					limit = {
-						GER = { has_full_control_of_state = PREV }
+						GE0 = { has_full_control_of_state = PREV }
 					}
 					add_resource = {
 						type = oil
@@ -513,7 +513,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -521,12 +521,12 @@ focus_tree = {
 
 		available = {
 			192 = {
-				is_owned_by = SOV
-				is_controlled_by = SOV
+				is_owned_by = SO0
+				is_controlled_by = SO0
 			}
 			198 = {
-				is_owned_by = SOV
-				is_controlled_by = SOV
+				is_owned_by = SO0
+				is_controlled_by = SO0
 			}
 		}
 
@@ -542,7 +542,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
-				target = SOV
+				target = SO0
 				generator = { 192 198 }
 			}
 		}
@@ -556,18 +556,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
 		}
 
 		available = {
-			POL = { 
+			PO0 = { 
 				exists = yes 
 				is_puppet = no
 			}
-			NOT = { has_war_with = POL }
+			NOT = { has_war_with = PO0 }
 			is_subject = no
 		}
 
@@ -582,7 +582,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = { ideology = democratic popularity = 0.05 }
-			POL = { country_event = DOD_romania.1 }
+			PO0 = { country_event = DOD_romania.1 }
 		}
 	}
 
@@ -594,7 +594,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_renew_the_romanian_polish_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -604,8 +604,8 @@ focus_tree = {
 			is_in_faction = no
 			is_subject = no
 			OR = {
-				country_exists = POL
-				country_exists = CZE
+				country_exists = PO0
+				country_exists = CZ0
 			}
 		}
 
@@ -623,34 +623,34 @@ focus_tree = {
 			create_faction = ROM_CORDON_SANITAIRE_FACTION
 			if = {
 				limit = {
-					CZE = { 
+					CZ0 = { 
 						exists = yes 
 						has_capitulated = no
 						is_subject = no
 						is_in_faction = no
 					}
 				}
-				CZE = { country_event = DOD_romania.10 }
+				CZ0 = { country_event = DOD_romania.10 }
 			}
 			if = {
 				limit = {
-					POL = { 
+					PO0 = { 
 						exists = yes 
 						has_capitulated = no
 						is_subject = no
 						is_in_faction = no
 					}
 				}
-				POL = { country_event = DOD_romania.10 }
+				PO0 = { country_event = DOD_romania.10 }
 			}
 			if = {
 				limit = {
-					POL = {
+					PO0 = {
 						is_faction_leader = yes #Poland did own faction
 						has_capitulated = no
 					}
 				}
-				POL = {
+				PO0 = {
 						country_event = generic.2
 					}
 			}
@@ -668,7 +668,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_renew_the_romanian_polish_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -676,25 +676,25 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			NOT = { has_war_with = ENG }
-			NOT = { has_war_with = FRA }
-			ENG = { is_subject = no }
+			NOT = { has_war_with = EN0 }
+			NOT = { has_war_with = FR0 }
+			EN0 = { is_subject = no }
 			if = {
 				limit = {
-					NOT = { ENG = { has_government = democratic } }
-					FRA = {
-						NOT = { is_in_faction_with = ENG }
+					NOT = { EN0 = { has_government = democratic } }
+					FR0 = {
+						NOT = { is_in_faction_with = EN0 }
 					}
 				}
-				FRA = { is_subject = no }
+				FR0 = { is_subject = no }
 			}
 			
 		}
 
 		bypass = {
 			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = FRA
+				is_in_faction_with = EN0
+				is_in_faction_with = FR0
 			}
 		}
 
@@ -707,24 +707,24 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = {
-						NOT = { ENG = { has_government = democratic } }
-						FRA = {
+						NOT = { EN0 = { has_government = democratic } }
+						FR0 = {
 							OR = {
-								NOT = { is_in_faction_with = ENG }
+								NOT = { is_in_faction_with = EN0 }
 								is_faction_leader = yes #if France has formed the little entente
 							}
 						}
 					}
 				}
-				FRA = { country_event = DOD_romania.20 }
+				FR0 = { country_event = DOD_romania.20 }
 			}
 			if = {
 				limit = {
-					ENG = {
+					EN0 = {
 						is_faction_leader = yes 
 					}
 				}
-				ENG = { country_event = DOD_romania.20 }
+				EN0 = { country_event = DOD_romania.20 }
 			}
 			
 			
@@ -739,7 +739,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = ROM_renew_the_romanian_polish_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -761,18 +761,18 @@ focus_tree = {
 		completion_reward = {
 			
 			add_relation_modifier = {
-				target = ENG
+				target = EN0
 				modifier = ROM_military_modernization
 			}
 			
 			if = {
 				limit = {
-					FRA = {
-						is_in_faction_with = ENG
+					FR0 = {
+						is_in_faction_with = EN0
 					}
 				}
 				add_relation_modifier = {
-					target = FRA
+					target = FR0
 					modifier = ROM_military_modernization
 				}
 			
@@ -788,17 +788,17 @@ focus_tree = {
 		y = 4
 		relative_position_id = ROM_renew_the_romanian_polish_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
 				OR = {
-					ENG = {
+					EN0 = {
 						has_capitulated = yes
 					}
-					FRA = {
+					FR0 = {
 						has_capitulated = yes
 					}
 				}
@@ -806,23 +806,23 @@ focus_tree = {
 		}
 
 		available = {
-			ENG = {
+			EN0 = {
 				is_faction_leader = yes
 				has_government = democratic
 			}
 			is_in_faction = no
-			NOT = { has_war_with = ENG }
+			NOT = { has_war_with = EN0 }
 			is_subject = no
 			NOT = {
 				any_other_country = {
-					is_in_faction_with = ENG
-					has_war_with = ROM
+					is_in_faction_with = EN0
+					has_war_with = ROOT
 				}
 			}
 		}
 
 		bypass = {
-			is_in_faction_with = ENG
+			is_in_faction_with = EN0
 		}
 
 		cancel_if_invalid = yes
@@ -831,7 +831,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			ENG = {
+			EN0 = {
 				country_event = generic.2
 			}
 		}
@@ -846,15 +846,15 @@ focus_tree = {
 		y = 5
 		relative_position_id = ROM_renew_the_romanian_polish_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			is_in_faction_with = ENG
-			ENG = { is_faction_leader = yes }
+			is_in_faction_with = EN0
+			EN0 = { is_faction_leader = yes }
 		}
 
 		bypass = {
@@ -868,12 +868,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group
-			ENG = { add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group }
+			EN0 = { add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group }
 			if = {
 				limit = {
-					FRA = { is_in_faction_with = ENG }
+					FR0 = { is_in_faction_with = EN0 }
 				}
-				FRA = { add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group }
+				FR0 = { add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group }
 			}
 		}
 	}
@@ -890,7 +890,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -927,7 +927,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 69
 
 		ai_will_do = {
 			factor = 20
@@ -1014,7 +1014,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1046,7 +1046,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1155,7 +1155,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -1217,7 +1217,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -1249,7 +1249,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1318,7 +1318,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1382,7 +1382,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1419,7 +1419,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1450,7 +1450,7 @@ focus_tree = {
 		y = 7
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1484,7 +1484,7 @@ focus_tree = {
 		x = 15
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -1516,7 +1516,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_balkans_dominance
 		will_lead_to_war_with = BUL
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -1524,23 +1524,23 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			BUL = {
+			BU0 = {
 				exists = yes
-				NOT = { has_war_with = ROM }
+				NOT = { has_war_with = ROOT }
 			}
-			strength_ratio = { tag = BUL ratio > 1.5 }
+			strength_ratio = { tag = BU0 ratio > 1.5 }
 			has_army_manpower = { size > 400000 }
 		}
 
 		bypass = {
-			BUL = {
+			BU0 = {
 				OR = {
-					is_puppet_of = ROM
+					is_puppet_of = ROOT
 					exists = no 
 					AND = {
-						has_war_with = ROM
+						has_war_with = ROOT
 						has_capitulated = yes
-						ROM = {
+						ROOT = {
 							controls_state = 48
 							controls_state = 212
 							controls_state = 211
@@ -1555,7 +1555,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			BUL = { country_event = DOD_romania.40 }
+			BU0 = { country_event = DOD_romania.40 }
 		}
 	}
 
@@ -1567,7 +1567,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_balkans_dominance
 		will_lead_to_war_with = HUN
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -1575,21 +1575,21 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			HUN = {
+			HU5 = {
 				exists = yes
-				NOT = { has_war_with = ROM }
+				NOT = { has_war_with = ROOT }
 			}
 			strength_ratio = {
-				tag = HUN
+				tag = HU5
 				ratio > 1.5
 			}
 			has_army_manpower = { size > 400000 }
 		}
 
 		bypass = {
-			HUN = {
+			HU5 = {
 				OR = {
-					is_puppet_of = ROM
+					is_puppet_of = ROOT
 					exists = no 
 				}
 			}
@@ -1602,7 +1602,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			HUN = { country_event = DOD_romania.50 }
+			HU5 = { country_event = DOD_romania.50 }
 		}
 	}
 
@@ -1614,7 +1614,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_puppet_bulgaria
 		will_lead_to_war_with = GRE
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1622,20 +1622,20 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			GRE = {
+			GR0 = {
 				exists = yes
 				NOT = {
-					is_in_faction_with = ROM
+					is_in_faction_with = ROOT
 				}
 			}
-			strength_ratio = { tag = GRE ratio > 1 }
+			strength_ratio = { tag = GR0 ratio > 1 }
 			has_army_manpower = { size > 500000 }
 		}
  
 		bypass = {
-			GRE = {
+			GR0 = {
 				OR = {
-					is_puppet_of = ROM
+					is_puppet_of = ROOT
 					exists = no 
 				}
 			}
@@ -1648,7 +1648,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
-				target = GRE
+				target = GR0
 			}
 		}
 	}
@@ -1661,7 +1661,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_puppet_bulgaria
 		will_lead_to_war_with = YUG
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1669,25 +1669,25 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			YUG = {
+			YU0 = {
 				exists = yes
 				is_puppet = no
 				NOT = {
-					is_in_faction_with = ROM
+					is_in_faction_with = ROOT
 				}
 			}
 			strength_ratio = {
-				tag = YUG
+				tag = YU0
 				ratio > 1.5
 			}
 			has_army_manpower = { size > 500000 }
 		}
 
 		bypass = {
-			YUG = {
+			YU0 = {
 				has_war = yes
 			}
-			has_wargoal_against = YUG
+			has_wargoal_against = YU0
 		}
 
 		cancel_if_invalid = yes
@@ -1697,13 +1697,13 @@ focus_tree = {
 		completion_reward = {
 			#Only split if YUG is not at war
 			if = {
-				limit = { YUG = { has_war = yes } }
+				limit = { YU0 = { has_war = yes } }
 				create_wargoal = {
 					type = annex_everything
-					target = YUG
+					target = YU0
 				}
 				else = {				
-					YUG = {
+					YU0 = {
 						country_event = DOD_romania.60
 					}
 				}
@@ -1719,7 +1719,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_align_hungary
 		will_lead_to_war_with = CZE
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1727,12 +1727,12 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			CZE = {
+			CZ0 = {
 				exists = yes
 				is_puppet = no
-				NOT =  { is_in_faction_with = ROM }
+				NOT =  { is_in_faction_with = ROOT }
 			}
-			strength_ratio = { tag = CZE ratio > 1.5 }
+			strength_ratio = { tag = CZ0 ratio > 1.5 }
 			has_army_manpower = { size > 500000 }
 		}
 
@@ -1745,7 +1745,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			GER = { country_event = DOD_romania.110 }
+			GE0 = { country_event = DOD_romania.110 }
 		}
 	}
 
@@ -1757,7 +1757,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_puppet_bulgaria
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1765,17 +1765,17 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			TUR = {
+			TU0 = {
 				exists = yes
-				NOT = { has_war_with = ROM }
+				NOT = { has_war_with = ROOT }
 			}
-			strength_ratio = { tag = TUR ratio > 1.5 }
+			strength_ratio = { tag = TU0 ratio > 1.5 }
 			has_army_manpower = { size > 750000 }
 		}
 
 		bypass = {
-			TUR = {
-				is_puppet_of = ROM
+			TU0 = {
+				is_puppet_of = ROOT
 			}
 		}
 
@@ -1786,7 +1786,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
-				target = TUR
+				target = TU0
 			}
 		}
 	}
@@ -1801,7 +1801,7 @@ focus_tree = {
 		x = 21
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -1847,7 +1847,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1904,7 +1904,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1938,7 +1938,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_fortify_the_borders
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -1947,10 +1947,10 @@ focus_tree = {
 		available = {
 			OR = {
 				has_country_flag = ROM_HUN_aligned
-				HUN = { is_subject_of = ROM }
+				HU5 = { is_subject_of = ROOT }
 				AND = {
-					HUN = { exists = no }
-					ROM = {
+					HU5 = { exists = no }
+					ROOT = {
 						owns_state = 155
 						owns_state = 154
 						owns_state = 43
@@ -1987,7 +1987,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_his_majestys_loyal_government
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2026,7 +2026,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_his_majestys_loyal_government
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2065,7 +2065,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2105,7 +2105,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2138,7 +2138,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -2169,19 +2169,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_war_with = SOV
+				has_war_with = SO0
 			}
 		}
 
 		available = {
 			is_subject = no
-			SOV = {
+			SO0 = {
 				is_faction_leader = yes
 				has_government = communism
 				NOT = { has_war_with = ROM}
@@ -2226,9 +2226,11 @@ focus_tree = {
 				popularity = 0.35
 				ideology = communism
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ROM_gheorghe_gheorghiu_dej
 			add_stability = -0.05
-			add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = SOV }
-			SOV = { add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = ROOT } }
+			add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = SO0 }
+			SO0 = { add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = ROOT } }
 		}
 	}
 
@@ -2240,7 +2242,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_appoint_soviet_friendly_government
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2289,22 +2291,22 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_war_with = GER
+				has_war_with = GE0
 			}
 		}
 
 		available = {
 			is_subject = no
-			GER = {
+			GE0 = {
 				is_faction_leader = yes
 				has_government = fascism
-				NOT = { has_war_with = ROM }
+				NOT = { has_war_with = ROOT }
 			}
 		}
 
@@ -2349,29 +2351,49 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ROM_mihail_sturdza
 			add_stability = -0.05
-			add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GER }
-			GER = { add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = ROOT } }
+			add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GE0 }
+			GE0 = { add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = ROOT } }
 			
 			#Cancel guarantees
-			diplomatic_relation = {
-				country = YUG
-				relation = guarantee
-				active = no
+			if = {
+				limit = {
+					has_guaranteed = YU0
+				}
+				diplomatic_relation = {
+					country = YU0
+					relation = guarantee
+					active = no
+				}
 			}
-			diplomatic_relation = {
-				country = CZE
-				relation = guarantee
-				active = no
+			if = {
+				limit = {
+					has_guaranteed = CZ0
+				}
+				diplomatic_relation = {
+					country = CZ0
+					relation = guarantee
+					active = no
+				}
 			}
-			diplomatic_relation = {
-				country = GRE
-				relation = guarantee
-				active = no
+			if = {
+				limit = {
+					has_guaranteed = GR0
+				}
+				diplomatic_relation = {
+					country = GR0
+					relation = guarantee
+					active = no
+				}
 			}
-			diplomatic_relation = {
-				country = TUR
-				relation = guarantee
-				active = no
+			if = {
+				limit = {
+					has_guaranteed = TU0
+				}
+				diplomatic_relation = {
+					country = TU0
+					relation = guarantee
+					active = no
+				}
 			}
 		}
 	}
@@ -2384,7 +2406,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_appoint_german_friendly_government
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2444,7 +2466,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_appoint_german_friendly_government
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -2530,22 +2552,22 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_war_with = ENG
+				has_war_with = EN0
 			}
 		}
 
 		available = {
 			is_subject = no
-			ENG = {
+			EN0 = {
 				is_faction_leader = yes
 				has_government = democratic
-				NOT = { has_war_with = ROM }
+				NOT = { has_war_with = ROOT }
 			}
 		}
 
@@ -2587,9 +2609,11 @@ focus_tree = {
 				popularity = 0.35
 				ideology = democratic
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ROM_iuliu_maniu
 			add_stability = -0.05
-			add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ENG }
-			ENG = { add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ROOT } }
+			add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = EN0 }
+			EN0 = { add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ROOT } }
 		}
 	}
 
@@ -2601,7 +2625,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_appoint_allied_friendly_government
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2651,7 +2675,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_appoint_allied_friendly_government
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -2709,7 +2733,7 @@ focus_tree = {
 		x = 31
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -2795,7 +2819,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_the_air_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -2827,7 +2851,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2864,7 +2888,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2900,7 +2924,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2936,7 +2960,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2948,7 +2972,7 @@ focus_tree = {
 				has_tech = heavy_fighter3
 			}
 			OR = {
-				GER = {
+				GE0 = {
 					custom_trigger_tooltip = {
 						tooltip = fighter_tt
 						OR = {
@@ -2957,7 +2981,7 @@ focus_tree = {
 						}
 					}
 				}
-				FRA = {
+				FR0 = {
 					custom_trigger_tooltip = {
 						tooltip = fighter_tt
 						OR = {
@@ -2966,7 +2990,7 @@ focus_tree = {
 						}
 					}
 				}
-				ITA = {
+				IT0 = {
 					custom_trigger_tooltip = {
 						tooltip = fighter_tt
 						OR = {
@@ -2975,7 +2999,7 @@ focus_tree = {
 						}
 					}
 				}
-				ENG = {
+				EN0 = {
 					custom_trigger_tooltip = {
 						tooltip = fighter_tt
 						OR = {
@@ -2984,7 +3008,7 @@ focus_tree = {
 						}
 					}
 				}
-				USA = {
+				US0 = {
 					custom_trigger_tooltip = {
 						tooltip = fighter_tt
 						OR = {
@@ -3018,7 +3042,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_the_air_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -3050,7 +3074,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_local_development
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -3086,7 +3110,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_air_superiority
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3122,7 +3146,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_air_superiority
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3175,7 +3199,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_local_development
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -3211,7 +3235,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_strategic_bomber_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3247,7 +3271,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_strategic_bomber_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3285,7 +3309,7 @@ focus_tree = {
 		x = 39
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -3316,7 +3340,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3360,7 +3384,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_war_college
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3396,7 +3420,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3443,7 +3467,7 @@ focus_tree = {
 					prioritize = { 46 }
 					create_unit = {
 						division = "name = \"Vanatori de munte\" division_template = \"Vanatori de munte\" start_experience_factor = 1.0" 
-						owner = ROM
+						owner = ROOT
 					}
 				}
 			}
@@ -3464,7 +3488,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3501,7 +3525,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -3538,7 +3562,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3570,7 +3594,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -3646,7 +3670,7 @@ focus_tree = {
 					prioritize = { 46 }
 					create_unit = {
 						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
-						owner = ROM
+						owner = ROOT
 					}
 				}
 			}			
@@ -3662,7 +3686,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -3694,7 +3718,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3834,7 +3858,7 @@ focus_tree = {
 					prioritize = { 46 }
 					create_unit = {
 						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7" 
-						owner = ROM
+						owner = ROOT
 					}
 				}
 			}			
@@ -3849,7 +3873,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3882,7 +3906,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_acquire_modern_tanks
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -3914,7 +3938,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = ROM_reserve_divisions
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3953,7 +3977,7 @@ focus_tree = {
 		x = 46
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 3
@@ -4016,7 +4040,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_the_galati_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 9
@@ -4048,7 +4072,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -4084,7 +4108,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -4120,7 +4144,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -4154,7 +4178,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -4191,7 +4215,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_the_galati_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -4223,7 +4247,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_black_sea_dominance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -4261,7 +4285,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -4297,7 +4321,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_black_sea_dominance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1

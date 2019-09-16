@@ -17,7 +17,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = 6
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 12
 		}
@@ -42,7 +42,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 8
 		}
@@ -149,6 +149,7 @@ focus_tree = {
 				has_full_control_of_state = 142
 				has_full_control_of_state = 143
 				has_full_control_of_state = 144
+				has_full_control_of_state = 794
 				has_full_control_of_state = 785
 			}
 		}
@@ -156,7 +157,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_west_wall
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -729,6 +730,38 @@ focus_tree = {
 								tag = GER
 								is_in_faction_with = GER
 							}
+							has_full_control_of_state = 794
+						}
+					}		
+					794 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
 							has_full_control_of_state = 785
 						}
 					}
@@ -786,7 +819,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_west_wall
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1144,7 +1177,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 9
 		}
@@ -1172,7 +1205,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_autarky
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 9
 		}
@@ -1251,7 +1284,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_hermann_goring_werke
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 5
 		}
@@ -1329,7 +1362,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_autarky
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 4
 		}
@@ -1368,7 +1401,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_coal_liquidization
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 4
 		}
@@ -1396,7 +1429,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_kdf_wagen
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1415,7 +1448,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_autarky
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 12
 		}
@@ -1485,7 +1518,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_autobahn
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1572,7 +1605,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1589,7 +1622,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_grosraumwirtschaft
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1652,7 +1685,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_grosraumwirtschaft
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1717,7 +1750,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_align_hungary
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2027,7 +2060,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_integrate_war_economies
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2049,7 +2082,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 16
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2082,6 +2115,8 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = hugo_sperrle
 		}
 		
 		completion_reward = {
@@ -2158,6 +2193,8 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = hugo_sperrle
 		}
 	}
 
@@ -2169,7 +2206,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -2200,7 +2237,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_tactical_air_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.1
 		}
@@ -2226,7 +2263,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_tactical_air_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2251,7 +2288,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2280,7 +2317,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 19
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2300,7 +2337,9 @@ focus_tree = {
 				category = land_doctrine
 			}
 			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = walther_von_brauchitsch			
+			show_ideas_tooltip = walther_von_brauchitsch
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = erwin_rommel
 		}
 	}
 	
@@ -2333,7 +2372,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_army_innovation
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
@@ -2369,7 +2408,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_strategic_air_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2406,7 +2445,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_soviet_treaty
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2443,7 +2482,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_extra_tech_slot
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2474,7 +2513,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_rocketry_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2518,7 +2557,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = GER_soviet_treaty
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -2559,7 +2598,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_mol_rib_pact
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.01
 			modifier = {
@@ -2611,7 +2650,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_soviet_ally
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2626,7 +2665,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_oppose_hitler }
 		x = 25
 		y = 0
-		cost = 10
+		cost = 69
 		available = {
 			is_puppet = no
 			NOT = {
@@ -2681,7 +2720,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_rhineland
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2742,7 +2781,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_rhineland
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
@@ -2772,7 +2811,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = GER_rhineland
-		cost = 10
+		cost = 70
 		available = {
 			is_puppet = no
 			NOT = { has_government = communism }
@@ -2824,7 +2863,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = GER_anti_comitern_pact
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 2.5	
 		}
@@ -2867,7 +2906,7 @@ focus_tree = {
 		x = 1
 		y = 4
 		relative_position_id = GER_anti_comitern_pact
-		cost = 10
+		cost = 70
 		historical_ai = {
 			NOT = {
 				any_home_area_neighbor_country = {
@@ -2943,7 +2982,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_ussr_war_goal
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -3024,7 +3063,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = GER_rhineland
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -3114,51 +3153,13 @@ focus_tree = {
 					country_event = { id = germany.126 days = 1 }
 				}
 			}
-
-			if = {
+			every_state = {
 				limit = {
-					4 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
+					is_core_of = AUS
+					NOT = { is_core_of = ROOT }
 				}
-				add_state_core = 4
-			}
-			if = {
-				limit = {
-					152 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 152
-			}
-			if = {
-				limit = {
-					153 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 153
+				add_core_of = ROOT
+				add_core_of = WGR
 			}
 		}
 	}
@@ -3171,7 +3172,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 70
 		bypass = {
 			188 = { is_owned_by = GER }
 			85 = { is_owned_by = GER }
@@ -3265,7 +3266,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = GER_demand_memel
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10	
 			modifier = {
@@ -3385,7 +3386,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_danzig_or_war
-		cost = 4
+		cost = 28
 		ai_will_do = {
 			factor = 10	
 			modifier = {
@@ -3487,7 +3488,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = GER_danzig_or_war
-		cost = 4
+		cost = 28
 		ai_will_do = {
 			factor = 10			
 			modifier = {
@@ -3589,7 +3590,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 2.5
 			modifier = {
@@ -3699,7 +3700,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
@@ -3822,6 +3823,12 @@ focus_tree = {
 				}
 				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
 			}
+			74 = {
+				add_claim_by = GER
+			}
+			808 = {
+				add_claim_by = GER
+			}
 			69 = {
 				add_claim_by = GER
 			}
@@ -3845,7 +3852,7 @@ focus_tree = {
 							create_wargoal = {
 								type = take_state_focus
 								target = PREV
-								generator = { 69 }
+								generator = { 69 808 74 }
 							}
 						}
 					}
@@ -3876,7 +3883,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_demand_sudetenland
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
@@ -3922,7 +3929,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_first_vienna_award
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -3971,7 +3978,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = GER_czech_friend
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -4057,7 +4064,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_second_vienna_award
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -4102,7 +4109,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_italy_ally
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -4123,18 +4130,25 @@ focus_tree = {
 				limit = {
 					OR = { 
 						SPR = { NOT = { has_government = fascism } }
+						SPR = { has_civil_war = yes }
 						NOT = { country_exists = SPR }
 					}
 				}
 				custom_effect_tooltip = GER_nationalist_spain_ally_tt
 			}
-			random_other_country = {
-				limit = {
-					original_tag = SPR
-					has_government = fascism
+			SP1 = {
+				if = {
+					limit = {
+						has_government = fascism
+					}
+					if = {
+						limit = {
+							has_idea = SPA_recovering_from_civil_war
+						}
+						remove_ideas = SPA_recovering_from_civil_war
+					}
+					add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
 				}
-				remove_ideas = SPA_recovering_from_civil_war
-				add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
 			}
 		}
 	}
@@ -4164,7 +4178,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_end_of_czechoslovakia
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0
 		}	
@@ -4196,7 +4210,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_danzig_vs_slovakia
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0
 		}	
@@ -4243,7 +4257,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_around_maginot
-		cost = 10
+		cost = 70
 		bypass = {
 			OR = {
 				NOT = { country_exists = FRA }
@@ -4292,7 +4306,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_war_with_france
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -4344,7 +4358,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_war_with_france
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -4352,6 +4366,10 @@ focus_tree = {
 		completion_reward = {
 			add_state_core = 8
 			add_state_core = 28
+			hidden_effect = {
+				8 = { add_core_of = WGR }
+				28 = { add_core_of = WGR }
+			}
 			if = {
 				limit = {
 					NOT = { owns_state = 28 }
@@ -4376,7 +4394,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 35
 		y = 1
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 1
 		}
@@ -4465,7 +4483,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = GER_naval_rearmament
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 1
 		}
@@ -4540,7 +4558,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -4607,7 +4625,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = GER_naval_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.25
 		}	
@@ -4695,7 +4713,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = GER_naval_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -4768,7 +4786,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_u_boat_effort
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -4793,7 +4811,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_trade_interdiction
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -4832,7 +4850,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_plan_z
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -4894,7 +4912,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_denmark_friend
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -4962,7 +4980,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_denmark_friend
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -5024,7 +5042,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_norway_friend
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -5108,13 +5126,15 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
 		completion_reward = {
-			remove_ideas = sour_loser
-			add_ideas = triumphant_will
+			swap_ideas = {
+				remove_idea = sour_loser
+				add_idea = triumphant_will
+			}
 		}
 	}
 
@@ -5146,7 +5166,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -5193,13 +5213,22 @@ focus_tree = {
 					country_exists = YUG
 					NOT = { has_war_with = YUG }
 					owns_state = 102
+					owns_state = 868
+					owns_state = 865
 				}
 				AND = {
 					NOT = { country_exists = YUG }
 					owns_state = 102
+					owns_state = 868
+					owns_state = 865
 					owns_state = 45
+					owns_state = 860
 					owns_state = 106
-					owns_state = 103
+					owns_state = 864
+					owns_state = 867
+					owns_state = 866
+					owns_state = 862
+					owns_state = 863
 					owns_state = 105
 				}
 			}
@@ -5220,10 +5249,40 @@ focus_tree = {
 				NOT = {
 					OR = {
 						YUG = {
+							owns_state = 102
+						}
+						YUG = {
+							owns_state = 868
+						}
+						YUG = {
+							owns_state = 865
+						}
+						YUG = {
 							owns_state = 45
 						}
 						YUG = {
+							owns_state = 860
+						}
+						YUG = {
 							owns_state = 106
+						}
+						YUG = {
+							owns_state = 864
+						}
+						YUG = {
+							owns_state = 867
+						}
+						YUG = {
+							owns_state = 866
+						}
+						YUG = {
+							owns_state = 862
+						}
+						YUG = {
+							owns_state = 863
+						}
+						YUG = {
+							owns_state = 105
 						}
 					}
 				}
@@ -5238,7 +5297,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_demand_slovenia
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -5256,6 +5315,10 @@ focus_tree = {
 							OR = {
 								45 = { is_owned_by = YUG }
 								45 = { is_owned_by = GER }
+								860 = { is_owned_by = YUG }
+								860 = { is_owned_by = GER }
+								868 = { is_owned_by = YUG }
+								868 = { is_owned_by = GER }
 							}
 						}
 						HUN = {
@@ -5268,14 +5331,50 @@ focus_tree = {
 				effect_tooltip = {
 					if = {
 						limit = {
+							OR = {
+								45 = { is_owned_by = YUG }
+								45 = { is_owned_by = GER }
+								860 = { is_owned_by = YUG }
+								860 = { is_owned_by = GER }
+								868 = { is_owned_by = YUG }
+								868 = { is_owned_by = GER }
+							}
+						}
+						HUN = {
+							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
+						}
+						if = {
+							limit = {
+								OR = {
+									860 = { is_owned_by = YUG }
+									860 = { is_owned_by = GER }
+								}
+							}
+							HUN = {
+								transfer_state = 860
+							}
+						}
+						if = {
+							limit = {
 								OR = {
 									45 = { is_owned_by = YUG }
 									45 = { is_owned_by = GER }
 								}
+							}
+							HUN = {
+								transfer_state = 45
+							}
 						}
-						HUN = {
-							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-							transfer_state = 45
+						if = {
+							limit = {
+								OR = {
+									868 = { is_owned_by = YUG }
+									868 = { is_owned_by = GER }
+								}
+							}
+							HUN = {
+								transfer_state = 868
+							}
 						}
 					}
 				}
@@ -5300,6 +5399,8 @@ focus_tree = {
 							OR = {
 								106 = { is_owned_by = YUG }
 								106 = { is_owned_by = GER }
+								867 = { is_owned_by = YUG }
+								867 = { is_owned_by = GER }
 							}
 						}
 						BUL = { 
@@ -5315,11 +5416,48 @@ focus_tree = {
 							OR = {
 								106 = { is_owned_by = YUG }
 								106 = { is_owned_by = GER }
+								867 = { is_owned_by = YUG }
+								867 = { is_owned_by = GER }
 							}
 						}
 						BUL = {
 							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-							transfer_state = 106
+						}
+						if = {
+							limit = {
+								OR = {
+									106 = { is_owned_by = YUG }
+									106 = { is_owned_by = GER }
+								}
+							}
+							BUL = {
+								transfer_state = 106
+							}
+							if = {
+								limit = {
+									OR = {
+										864 = { is_owned_by = YUG }
+										864 = { is_owned_by = GER }
+									}
+									ITA = {
+										NOT = { owns_state = 44 }
+									}
+								}
+								BUL = {
+									transfer_state = 864
+								}
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									867 = { is_owned_by = YUG }
+									867 = { is_owned_by = GER }
+								}
+							}
+							BUL = {
+								transfer_state = 867
+							}
 						}
 					}
 				}
@@ -5343,22 +5481,143 @@ focus_tree = {
 					}
 				}
 				hidden_effect = {
-					ITA = { country_event = { id = italy.13 days = 1 } 
-						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+									OR = {
+										865 = { is_owned_by = YUG }
+										865 = { is_owned_by = GER }
+										863 = { is_owned_by = YUG }
+										863 = { is_owned_by = GER }
+										862 = { is_owned_by = YUG }
+										862 = { is_owned_by = GER }
+									}
+								}
+								AND = {
+									ITA = { owns_state = 44 }
+									OR = {
+										105 = { is_owned_by = YUG }
+										105 = { is_owned_by = GER }
+										866 = { is_owned_by = YUG }
+										866 = { is_owned_by = GER }
+										864 = { is_owned_by = YUG }
+										864 = { is_owned_by = GER }
+									}
+								}
+							}
+						}
+						ITA = {
+							country_event = { id = italy.13 days = 1 } 
+							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
+						}
+						set_country_flag = GER_first_ljubljana_award
 					}
-					set_country_flag = GER_first_ljubljana_award
 				}
 				effect_tooltip = {
-					ITA = {
-						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-						if = {
-							limit = { has_completed_focus = ITA_slovenia_dalmatia_claims }
-							transfer_state = 103
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+									OR = {
+										865 = { is_owned_by = YUG }
+										865 = { is_owned_by = GER }
+										863 = { is_owned_by = YUG }
+										863 = { is_owned_by = GER }
+										862 = { is_owned_by = YUG }
+										862 = { is_owned_by = GER }
+									}
+								}
+								AND = {
+									ITA = { owns_state = 44 }
+									OR = {
+										105 = { is_owned_by = YUG }
+										105 = { is_owned_by = GER }
+										866 = { is_owned_by = YUG }
+										866 = { is_owned_by = GER }
+										864 = { is_owned_by = YUG }
+										864 = { is_owned_by = GER }
+									}
+								}
+							}
+						}
+						ITA = {
+							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 						}
 						if = {
-							limit = { owns_state = 44 }
-							transfer_state = 105
-						}	
+							limit = {
+								ITA = { owns_state = 44 }
+								OR = {
+									864 = { is_owned_by = YUG }
+									864 = { is_owned_by = GER }
+								}
+							}
+							ITA = {
+								transfer_state = 864
+							}
+						}
+						if = {
+							limit = {
+								ITA = { owns_state = 44 }
+								OR = {
+									866 = { is_owned_by = YUG }
+									866 = { is_owned_by = GER }
+								}
+							}
+							ITA = {
+								transfer_state = 866
+							}
+						}
+						if = {
+							limit = {
+								ITA = { owns_state = 44 }
+								OR = {
+									105 = { is_owned_by = YUG }
+									105 = { is_owned_by = GER }
+								}
+							}
+							ITA = {
+								transfer_state = 105
+							}
+						}
+						if = {
+							limit = {
+								ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+								OR = {
+									865 = { is_owned_by = YUG }
+									865 = { is_owned_by = GER }
+								}
+							}
+							ITA = {
+								transfer_state = 865
+							}
+						}
+						if = {
+							limit = {
+								ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+								OR = {
+									863 = { is_owned_by = YUG }
+									863 = { is_owned_by = GER }
+								}
+							}
+							ITA = {
+								transfer_state = 863
+							}
+						}
+						if = {
+							limit = {
+								ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+								OR = {
+									862 = { is_owned_by = YUG }
+									862 = { is_owned_by = GER }
+								}
+							}
+							ITA = {
+								transfer_state = 862
+							}
+						}
 					}
 				}
 				every_other_country = {
@@ -5398,7 +5657,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_first_ljubljana_award
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
@@ -5426,7 +5685,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_fate_of_yugoslavia
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -5571,7 +5830,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_fate_of_yugoslavia
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
@@ -5597,7 +5856,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_second_ljubljana_award
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
@@ -5621,7 +5880,7 @@ focus_tree = {
 		}
 		x = 47
 		y = 0
-		cost = 10
+		cost = 69
 		ai_will_do = {
 			factor = 1
 		}
@@ -5636,6 +5895,8 @@ focus_tree = {
 			add_political_power = 120
 			add_named_threat = { threat = 5 name = GER_oppose_hitler }
 			country_event = { id = wtt_germany.1 }
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GER_hans_oster
 		}
 	}
 
@@ -5656,7 +5917,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_oppose_hitler
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -5686,7 +5947,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_secure_the_new_state
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 3
 		}
@@ -5698,6 +5959,10 @@ focus_tree = {
 			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
 			set_rule = { can_send_volunteers = yes }
 			add_named_threat = { threat = 5 name = GER_revive_the_kaiserreich }
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GER_alfred_hugenberg
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GER_carl_friedrich_goerdeler
 		}
 	}
 
@@ -5710,7 +5975,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_revive_the_kaiserreich
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 9
 		}
@@ -5730,7 +5995,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_rebuild_the_nation
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 8
 		}
@@ -5780,7 +6045,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_rebuild_the_nation
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 8
 		}
@@ -5832,7 +6097,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_fan_the_prussian_militarism
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 5
 		}
@@ -5862,7 +6127,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_revive_the_kaiserreich
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -5887,7 +6152,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = GER_return_of_the_kaiser
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 3
 		}
@@ -5913,7 +6178,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_focus_on_the_true_enemy
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -5991,7 +6256,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_rebuild_the_high_seas_fleet
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 1
 		}
@@ -6042,7 +6307,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_our_place_in_the_sun
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 9
 		}
@@ -6128,7 +6393,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = GER_our_place_in_the_sun
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -6155,7 +6420,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_prepare_for_the_next_blockade
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -6300,7 +6565,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_break_the_anglo_french_colonial_hegemony
-		cost = 4
+		cost = 28
 		ai_will_do = {
 			factor = 10
 		}
@@ -6346,7 +6611,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_break_the_anglo_french_colonial_hegemony
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -6450,19 +6715,14 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_our_place_in_the_sun
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 10
 		}
 		
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
-			if = {
-				limit = {
-					is_in_faction = no
-				}
-				create_faction = "GER_central_powers_faction"
-			}
+			create_faction = "GER_central_powers_faction"
 
 			if = {
 				limit = {
@@ -6527,7 +6787,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_the_central_powers
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -6558,7 +6818,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_prepare_italian_coup
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -6616,7 +6876,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_the_central_powers
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -6663,7 +6923,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_return_of_the_kaiser
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.5
 		}
@@ -6715,7 +6975,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_expatriate_the_communists
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -6743,14 +7003,19 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_accept_british_naval_dominance
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
 		
 		completion_reward = {
-			ENG = {
-				country_event = { id = generic.2 }
+			if = {
+				limit = {
+					ENG = {
+						is_faction_leader = yes
+					}
+				}
+				ENG = { country_event = generic.2 }
 				add_ai_strategy = {
 					type = befriend
 					id = "GER"			
@@ -6761,6 +7026,63 @@ focus_tree = {
 					id = "GER"			
 					value = 200
 				}	
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}
+				}
+				random_country = {
+					limit = {
+						is_in_faction_with = ENG
+						is_faction_leader = yes
+					}
+					country_event = generic.2
+					add_ai_strategy = {
+						type = befriend
+						id = "GER"			
+						value = 1000
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = "GER"			
+						value = 200
+					}	
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = "GER"			
+					value = 1000
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "GER"			
+					value = 200
+				}	
+			}
+			else = {
+				set_rule = { can_create_factions = yes } 
+				if = {
+					limit = {
+						is_in_faction = no
+					}
+					create_faction = GER_ENG_FACTION
+				}
+				ENG = {
+					country_event = { id = generic.5 }
+					add_ai_strategy = {
+						type = befriend
+						id = "GER"			
+						value = 1000
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = "GER"			
+						value = 200
+					}	
+				}
 			}
 		}
 	}
@@ -6779,7 +7101,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_ally_the_shade
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -6812,7 +7134,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_carte_blanche_for_alsace_and_french_colonies
-		cost = 4
+		cost = 28
 		ai_will_do = {
 			factor = 10
 		}
@@ -6850,13 +7172,16 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_schlieffen_once_more
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
 		
 		completion_reward = {
 			add_state_core = 28
+			hidden_effect = {
+				28 = { add_core_of = WGR }
+			}
 			if = {
 				limit = {
 					NOT = { owns_state = 28 }
@@ -6884,7 +7209,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_return_of_the_kaiser
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 5
 		}
@@ -6991,7 +7316,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = GER_see_to_the_eastern_front
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 5
 		}
@@ -7053,7 +7378,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_see_to_the_eastern_front
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -7159,7 +7484,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_safeguard_the_baltic
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -7194,7 +7519,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_support_the_finns
-		cost = 10
+		cost = 70
 		available = {
 			is_puppet = no
 			NOT = { has_government = communism }
@@ -7248,7 +7573,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_anti_comintern_pact_unaligned
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 2.5	
 		}
@@ -7297,12 +7622,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_anti_soviet_pact_unaligned
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
 		
 		completion_reward = {
+			set_rule = { can_create_factions = yes }
 			if = {
 				limit = {
 					NOT = { is_in_faction = yes }
@@ -7331,7 +7657,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_tackle_the_communist_threat
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -7367,7 +7693,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_secure_the_new_state
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -7378,6 +7704,12 @@ focus_tree = {
 				days = 720
 			}
 			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = kurt_schumacher
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GER_julius_leber
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GER_theodor_heuss
 		}
 	}
 
@@ -7393,7 +7725,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_reestablish_free_elections
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -7423,7 +7755,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_the_monarchy_compromise
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 8
 		}
@@ -7482,7 +7814,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_the_great_red_menace
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 5
 		}
@@ -7492,6 +7824,7 @@ focus_tree = {
 			effect_tooltip = {
 				create_faction = "GER_central_european_alliance"
 			}
+			set_rule = { can_create_factions = yes }
 			hidden_effect = {
 				if = {
 					limit = {
@@ -7630,7 +7963,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_central_european_alliance
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -7707,7 +8040,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_danubian_membership
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -7773,7 +8106,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_danubian_expansion
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -7903,7 +8236,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_central_european_alliance
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -7980,7 +8313,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_low_countries_membership
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -8110,7 +8443,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = GER_central_european_alliance
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}
@@ -8206,7 +8539,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = GER_scandinavian_membership
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -8311,7 +8644,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_scandinavian_membership
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -8394,7 +8727,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = GER_scandinavian_membership
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -8475,7 +8808,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_polish_membership
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -8508,7 +8841,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_the_monarchy_compromise
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 5
 		}
@@ -8529,7 +8862,7 @@ focus_tree = {
 		x = 7
 		y = 1
 		relative_position_id = GER_central_european_alliance
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 3
 		}
@@ -8555,7 +8888,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_shared_rd_programs
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -8615,7 +8948,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_shared_rd_programs
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 3
 		}

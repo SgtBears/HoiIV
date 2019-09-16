@@ -21,8 +21,12 @@ state= {
 			6389 ={
 				naval_base = 8
 			}
+			9347 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = GER
+		add_core_of = WGR
 		1939.1.1 = {
 			buildings = {
 				synthetic_refinery = 3

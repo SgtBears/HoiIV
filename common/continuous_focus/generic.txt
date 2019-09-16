@@ -175,12 +175,12 @@ continuous_focus_palette = {
 		
 		available = {
 			hidden_trigger = { has_dlc = "Together for Victory" }
+			is_in_faction = yes
+			num_faction_members > 1
 			
 		}
 
 		enable = {
-			is_in_faction = yes
-			num_faction_members > 1
 
 			custom_trigger_tooltip = {
 				tooltip = NO_OTHER_SHARING_GROUPS
@@ -245,9 +245,6 @@ continuous_focus_palette = {
 		
 		available = {
 			hidden_trigger = { has_dlc = "Together for Victory" }
-		}
-
-		enable = {
 			num_subjects > 0
 		}
 

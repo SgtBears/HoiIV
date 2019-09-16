@@ -5,18 +5,23 @@ war_measures = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
-			original_tag = USA
+			OR = {
+				original_tag = USA
+				original_tag = CSA
+				original_tag = USB
+			}
 		}
 
 		available = {
-			any_state = {
-				is_core_of = USA
-				NOT = {
-					is_controlled_by = USA
+			has_civil_war = no
+			any_of = {
+				array = ROOT.core_states
+				var:v = {
+					NOT = { is_controlled_by = US5 }
+					NOT = { is_controlled_by = CS0 }
+					NOT = { is_controlled_by = US0 }
 				}
 			}
-			has_civil_war = no
-
 		}
 
 		cost = 50
@@ -27,8 +32,10 @@ war_measures = {
 
 		visible = {
 			has_defensive_war = yes
-			CSA = {
-				exists = no
+			NOT = {
+				has_war_with = US0
+				has_war_with = CS0
+				has_war_with = US5
 			}
 		}
 
@@ -76,7 +83,11 @@ war_measures = {
 		icon = generic_prepare_civil_war
 		
 		allowed = {
-			original_tag = USA
+			OR = {
+				original_tag = USA
+				original_tag = CSA
+				original_tag = USB
+			}
 		}
 
 		available = {
@@ -180,246 +191,258 @@ war_measures = {
 				}
 			}
 			366 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
+				create_unit = {
+					division = "name = \"I/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"II/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"III/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
 			}
 			365 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
+				create_unit = {
+					division = "name = \"I/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"II/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"III/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
 			}
 			367 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
+				create_unit = {
+					division = "name = \"I/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"II/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"III/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
 			}
 			370 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
+				create_unit = {
+					division = "name = \"I/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"II/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"III/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
 			}
 			362 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
+				create_unit = {
+					division = "name = \"I/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"II/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+			}
+			838 = {
+				create_unit = {
+					division = "name = \"I/Free Corps West Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
 			}
 			363 = {
-					create_unit = {
-						division = "name = \"I/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
+				create_unit = {
+					division = "name = \"I/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"II/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"III/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
 			}
 			364 = {
-					create_unit = {
-						division = "name = \"I/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
+				create_unit = {
+					division = "name = \"I/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"II/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"III/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
 			}
 			371 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
+				create_unit = {
+					division = "name = \"I/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"II/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"III/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
 			}
 			375 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
+				create_unit = {
+					division = "name = \"I/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"II/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"III/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
 			}
 			372 = {
-					create_unit = {
-						division = "name = \"I/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
+				create_unit = {
+					division = "name = \"I/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"II/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"III/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
 			}
 			if = {
-					limit = {
-						has_country_flag = MTG_work_with_the_bund
+				limit = {
+					has_country_flag = MTG_work_with_the_bund
+				}
+				373 = {
+					create_unit = {
+						division = "name = \"I/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
 					}
-					373 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
+					create_unit = {
+						division = "name = \"II/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
 					}
-					394 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
+					create_unit = {
+						division = "name = \"III/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
 					}
-					395 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
+				}
+				394 = {
+					create_unit = {
+						division = "name = \"I/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
 					}
-					261 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
+					create_unit = {
+						division = "name = \"II/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
 					}
-					396 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
+					create_unit = {
+						division = "name = \"III/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
 					}
-					393 = {
-						create_unit = {
-							division = "name = \"I/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"II/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
-						create_unit = {
-							division = "name = \"III/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-							owner = ROOT
-						}
+				}
+				846 = {
+					create_unit = {
+						division = "name = \"I/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
 					}
+				}
+				395 = {
+					create_unit = {
+						division = "name = \"II/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+				}
+				261 = {
+					create_unit = {
+						division = "name = \"I/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+				}
+				396 = {
+					create_unit = {
+						division = "name = \"I/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+				}
+				393 = {
+					create_unit = {
+						division = "name = \"I/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+				}
+				847 = {
+					create_unit = {
+						division = "name = \"II/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+				}
+				848 = {
+					create_unit = {
+						division = "name = \"III/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+				}
 			}
 		}
 	}
 	USA_CSA_set_up_provisional_government = { 
 		available = {
-			any_state = {
-				is_core_of = USA
-				is_fully_controlled_by = ROOT
+			US0 = {
+				ROOT = {
+					any_of = {
+						array = PREV.core_states
+						var:v = { is_fully_controlled_by = ROOT }
+					}
+				}
 			}
 		}
 		visible = {
 			original_tag = CSA
-			has_war_with = USA
+			has_war_with = US0
 		}
 		cost = 0
 		days_remove = 100
@@ -434,38 +457,42 @@ war_measures = {
 			random_state = {
 				limit = {
 					not = { is_core_of = ROOT }
-					is_core_of = USA
+					is_core_of = US0
 					is_fully_controlled_by = ROOT
 				}
-				remove_core_of = USA
-				add_claim_by = USA
-				add_core_of = CSA
+				remove_core_of = US0
+				add_claim_by = US0
+				add_core_of = CS0
 				save_event_target_as = USA_state_government_created
 			}
-			USA = {
+			US0 = {
 				country_event = mtg_usa_civil_war_fascists.203
 			}
 		}
 	}
 	USA_order_weapons_in_USB = {
-	icon = generic_prepare_civil_war
+		icon = generic_prepare_civil_war
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = USB_available_factories_tt
-				check_variable = { USB.USB_factories_available > 5 }
+			US5 = {
+				ROOT = {
+					custom_trigger_tooltip = {
+						tooltip = USB_available_factories_tt
+						check_variable = { PREV.USB_factories_available > 5 }
+					}
+				}
 			}
 			any_neighbor_country = {
-				tag = USB
+				tag = US5
 			}
 		}
 		visible = {
-			country_exists = USB
+			country_exists = US5
 			OR = {
 				original_tag = CSA
 				original_tag = USA
 			}
-			not = { has_war_with = USB }
-			USB = { is_in_faction = no }
+			not = { has_war_with = US5 }
+			US5 = { is_in_faction = no }
 		}
 		days_remove = 45
 		cost = 25
@@ -486,41 +513,166 @@ war_measures = {
 			civilian_factory_use = 2
 		}
 		complete_effect = {
-			add_to_variable = { USB.USB_factories_available = -3 }
-			USB = {
+			US5 = {
+				ROOT = {
+					add_to_variable = { PREV.USB_factories_available = -3 }
+				}
 				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+			if = {
+				limit = {
+					has_tech = advanced_infantry_weapons
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = advanced_infantry_weapons
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = infantry_equipment_3
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = infantry_equipment_3
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = improved_infantry_weapons
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = improved_infantry_weapons
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = infantry_equipment_2
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = infantry_equipment_2
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons1
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = infantry_weapons1
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = infantry_equipment_1
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = infantry_equipment_1
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else = {
+				limit = {
+					has_tech = infantry_weapons
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = infantry_weapons
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = infantry_equipment_0
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = infantry_equipment_0
+						}
+						cost_factor = 0
+					}
+				}
 			}
 		}
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 2500
+				producer = US5
 			}
-			USB = {
+			US5 = {
 				add_offsite_building = { type = industrial_complex level = -2 }
+				ROOT = {
+					add_to_variable = { PREV.USB_factories_available = 3 }
+				}
 			}
-			add_to_variable = { USB.USB_factories_available = 3 }
 		}
 	}
 	USA_order_artillery_in_USB = {
 		icon = ger_military_buildup
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = USB_available_factories_tt
-				check_variable = { USB.USB_factories_available > 5 }
+			US5 = {
+				ROOT = {
+					custom_trigger_tooltip = {
+						tooltip = USB_available_factories_tt
+						check_variable = { PREV.USB_factories_available > 5 }
+					}
+				}
 			}
 			any_neighbor_country = {
-				tag = USB
+				tag = US5
 			}
 		}
 		visible = {
-			country_exists = USB
+			country_exists = US5
 			OR = {
 				original_tag = CSA
 				original_tag = USA
 			}
-			not = { has_war_with = USB }
-			USB = { is_in_faction = no }
+			not = { has_war_with = US5 }
+			US5 = { is_in_faction = no }
 		}
 		days_remove = 60
 		cost = 50
@@ -541,104 +693,155 @@ war_measures = {
 			civilian_factory_use = 5
 		}
 		complete_effect = {
-			add_to_variable = { USB.USB_factories_available = -6 }
-			USB = {
+			US5 = {
+				ROOT = {
+					add_to_variable = { PREV.USB_factories_available = -6 }
+				}
 				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+			if = {
+				limit = {
+					has_tech = artillery4
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = artillery4
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = artillery_equipment_3
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = artillery_equipment_3
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = artillery1
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = artillery1
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = artillery_equipment_2
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = artillery_equipment_2
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else = {
+				limit = {
+					has_tech = gw_artillery
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = gw_artillery
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = artillery_equipment_1
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = artillery_equipment_1
+						}
+						cost_factor = 0
+					}
+				}
 			}
 		}
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = 75
+				producer = US5
 			}
-			USB = {
+			US5 = {
 				add_offsite_building = { type = industrial_complex level = -5 }
+				ROOT = {
+					add_to_variable = { PREV.USB_factories_available = 6 }
+				}
 			}
-			add_to_variable = { USB.USB_factories_available = 6 }
 		}
 	}
 	USA_order_fighters_in_USB = {
 		icon = generic_air
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = USB_available_factories_tt
-				check_variable = { USB.USB_factories_available > 5 }
+			US5 = {
+				ROOT = {
+					custom_trigger_tooltip = {
+						tooltip = USB_available_factories_tt
+						check_variable = { PREV.USB_factories_available > 5 }
+					}
+				}
 			}
 			any_neighbor_country = {
-				tag = USB
+				tag = US5
 			}
 		}
 		visible = {
-			country_exists = USB
+			country_exists = US5
 			OR = {
 				original_tag = CSA
 				original_tag = USA
 			}
-			not = { has_war_with = USB }
-			USB = { is_in_faction = no }
+			not = { has_war_with = US5 }
+			US5 = { is_in_faction = no }
 		}
 		days_remove = 60
 		cost = 50
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				NOT = {
+					has_tech = jet_fighter1
+				}
 				has_equipment = {
 					fighter_equipment < 1
 				}
 				factor = 5
 			}
 			modifier = {
-				has_manpower < 10000 
-				factor = 0 #need to up conscription laws
-			}
-		}
-		modifier = {
-			civilian_factory_use = 5
-		}
-		complete_effect = {
-			add_to_variable = { USB.USB_factories_available = -6 }
-			USB = {
-				add_offsite_building = { type = industrial_complex level = 5 }
-			}
-		}
-		remove_effect = {
-			add_equipment_to_stockpile = {
-				type = fighter_equipment
-				amount = 50
-			}
-			USB = {
-				add_offsite_building = { type = industrial_complex level = -5 }
-			}
-			add_to_variable = { USB.USB_factories_available = 6 }
-		}
-	}
-	USA_order_bombers_in_USB = {
-		icon = generic_air
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = USB_available_factories_tt
-				check_variable = { USB.USB_factories_available > 5 }
-			}
-			any_neighbor_country = {
-				tag = USB
-			}
-		}
-		visible = {
-			country_exists = USB
-			OR = {
-				original_tag = CSA
-				original_tag = USA
-			}
-			not = { has_war_with = USB }
-			USB = { is_in_faction = no }
-		}
-		days_remove = 60
-		cost = 50
-		ai_will_do = {
-			factor = 1
-			modifier = {
+				has_tech = jet_fighter1
 				has_equipment = {
-					tac_bomber_equipment < 1
+					jet_fighter_equipment < 1
 				}
 				factor = 5
 			}
@@ -651,20 +854,471 @@ war_measures = {
 			civilian_factory_use = 5
 		}
 		complete_effect = {
-			add_to_variable = { USB.USB_factories_available = -6 }
-			USB = {
+			US5 = {
+				ROOT = {
+					add_to_variable = { PREV.USB_factories_available = -6 }
+				}
 				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+			if = {
+				limit = {
+					has_tech = jet_fighter2
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = jet_fighter2
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = jet_fighter_equipment_2
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = jet_fighter_equipment_2
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = jet_fighter1
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = jet_fighter1
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = jet_fighter_equipment_1
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = jet_fighter_equipment_1
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = fighter3
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = fighter3
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = fighter_equipment_3
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = fighter_equipment_3
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = fighter2
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = fighter2
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = fighter_equipment_2
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = fighter_equipment_2
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = fighter1
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = fighter1
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = fighter_equipment_1
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = fighter_equipment_1
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else = {
+				limit = {
+					has_tech = early_fighter
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = early_fighter
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = fighter_equipment_0
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = fighter_equipment_0
+						}
+						cost_factor = 0
+					}
+				}
 			}
 		}
 		remove_effect = {
-			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment
-				amount = 25
+			if = {
+				limit = {
+					has_tech = jet_fighter1
+				}
+				add_equipment_to_stockpile = {
+					type = jet_fighter_equipment
+					amount = 50
+					producer = US5
+				}
 			}
-			USB = {
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment
+					amount = 50
+					producer = US5
+				}
+			}
+			US5 = {
 				add_offsite_building = { type = industrial_complex level = -5 }
+				ROOT = {
+					add_to_variable = { PREV.USB_factories_available = 6 }
+				}
 			}
-			add_to_variable = { USB.USB_factories_available = 6 }
+		}
+	}
+	USA_order_bombers_in_USB = {
+		icon = generic_air
+		available = {
+			US5 = {
+				ROOT = {
+					custom_trigger_tooltip = {
+						tooltip = USB_available_factories_tt
+						check_variable = { PREV.USB_factories_available > 5 }
+					}
+				}
+			}
+			any_neighbor_country = {
+				tag = US5
+			}
+		}
+		visible = {
+			country_exists = US5
+			OR = {
+				original_tag = CSA
+				original_tag = USA
+			}
+			not = { has_war_with = US5 }
+			US5 = { is_in_faction = no }
+		}
+		days_remove = 60
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = {
+					has_tech = jet_tactical_bomber1
+				}
+				has_equipment = {
+					tac_bomber_equipment < 1
+				}
+				factor = 5
+			}
+			modifier = {
+				has_tech = jet_tactical_bomber1
+				has_equipment = {
+					jet_tac_bomber_equipment < 1
+				}
+				factor = 5
+			}
+			modifier = {
+				has_manpower < 10000 
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			US5 = {
+				ROOT = {
+					add_to_variable = { PREV.USB_factories_available = -6 }
+				}
+				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+			if = {
+				limit = {
+					has_tech = jet_tactical_bomber2
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = jet_tactical_bomber2
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = jet_tac_bomber_equipment_2
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = jet_tac_bomber_equipment_2
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = jet_tactical_bomber1
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = jet_tactical_bomber1
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = jet_tac_bomber_equipment_1
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = jet_tac_bomber_equipment_1
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = tactical_bomber3
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = tactical_bomber3
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = tac_bomber_equipment_3
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = tac_bomber_equipment_3
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = tactical_bomber2
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = tactical_bomber2
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = tac_bomber_equipment_2
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = tac_bomber_equipment_2
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = tactical_bomber1
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = tactical_bomber1
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = tac_bomber_equipment_1
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = tac_bomber_equipment_1
+						}
+						cost_factor = 0
+					}
+				}
+			}
+			else = {
+				limit = {
+					has_tech = early_bomber
+				}
+				if = {
+					limit = {
+						US5 = {
+							NOT = {
+								has_tech = early_bomber
+							}
+						}
+						NOT = {
+							is_licensing_to = {
+								target = US5
+								equipment = {
+									type = tac_bomber_equipment_0
+								}
+							}
+						}
+					}
+					create_production_license = {
+						target = US5
+						equipment = {
+							type = tac_bomber_equipment_0
+						}
+						cost_factor = 0
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_tech = jet_tactical_bomber1
+				}
+				add_equipment_to_stockpile = {
+					type = jet_tac_bomber_equipment
+					amount = 25
+					producer = US5
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = tac_bomber_equipment
+					amount = 25
+					producer = US5
+				}
+			}
+			US5 = {
+				add_offsite_building = { type = industrial_complex level = -5 }
+				ROOT = {
+					add_to_variable = { PREV.USB_factories_available = 6 }
+				}
+			}
 		}
 	}
 }
@@ -673,14 +1327,10 @@ USA_aid_britain = {
 
 		icon = generic_political_discourse
 
-		allowed = {
-			original_tag = USA
-		}
-
 		available = {
 			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
 			has_country_flag = blood_toil_tears_sweat_speech
-			ENG = { has_defensive_war = yes }
+			EN0 = { has_defensive_war = yes }
 		}
 
 		cost = 50
@@ -689,11 +1339,11 @@ USA_aid_britain = {
 			factor = 1
 			modifier = {
 				factor = 10
-				has_opinion = { target = ENG value > 60 }
+				has_opinion = { target = EN0 value > 60 }
 			}
 			modifier = {
 				factor = 10
-				has_opinion = { target = ENG value > 99 }
+				has_opinion = { target = EN0 value > 99 }
 			}
 		}
 
@@ -703,8 +1353,8 @@ USA_aid_britain = {
 
 		complete_effect = {
 			add_war_support = 0.05
-			add_opinion_modifier = { target = ENG modifier = USA_special_relationship }
-			reverse_add_opinion_modifier = { target = ENG modifier = USA_special_relationship }
+			add_opinion_modifier = { target = EN0 modifier = USA_special_relationship }
+			reverse_add_opinion_modifier = { target = EN0 modifier = USA_special_relationship }
 		}
 	}
 
@@ -712,14 +1362,10 @@ USA_aid_britain = {
 
 		icon = generic_civil_support
 
-		allowed = {
-			original_tag = USA
-		}
-
 		available = {
 			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
 			has_country_flag = fight_on_the_beaches_speech
-			ENG = { has_defensive_war = yes }
+			EN0 = { has_defensive_war = yes }
 		}
 
 		cost = 50
@@ -728,11 +1374,11 @@ USA_aid_britain = {
 			factor = 1
 			modifier = {
 				factor = 10
-				has_opinion = { target = ENG value > 60 }
+				has_opinion = { target = EN0 value > 60 }
 			}
 			modifier = {
 				factor = 10
-				has_opinion = { target = ENG value > 99 }
+				has_opinion = { target = EN0 value > 99 }
 			}
 		}
 
@@ -755,14 +1401,10 @@ USA_aid_britain = {
 
 		icon = generic_prepare_civil_war
 
-		allowed = {
-			original_tag = USA
-		}
-
 		available = {
 			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
 			has_country_flag = this_was_their_finest_hour_speech
-			ENG = { has_defensive_war = yes }
+			EN0 = { has_defensive_war = yes }
 		}
 
 		cost = 50
@@ -771,11 +1413,11 @@ USA_aid_britain = {
 			factor = 1
 			modifier = {
 				factor = 10
-				has_opinion = { target = ENG value > 60 }
+				has_opinion = { target = EN0 value > 60 }
 			}
 			modifier = {
 				factor = 10
-				has_opinion = { target = ENG value > 99 }
+				has_opinion = { target = EN0 value > 99 }
 			}
 		}
 
@@ -790,10 +1432,12 @@ USA_aid_britain = {
 		}
 
 		complete_effect = {
-			ENG = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = USA }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 producer = USA }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = USA }
+			EN0 = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = US0 }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 producer = US0 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = US0 }
+			}
+			EN0 = {
 				country_event = { id = wtt_britain.30 }
 			}
 		}
@@ -803,14 +1447,10 @@ USA_aid_britain = {
 
 		icon = generic_industry
 
-		allowed = {
-			original_tag = USA
-		}
-
 		available = {
 			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
 			has_country_flag = mers_el_kebir_raid
-			ENG = { has_defensive_war = yes }
+			EN0 = { has_defensive_war = yes }
 		}
 
 		cost = 50
@@ -843,7 +1483,11 @@ foreign_support = {
 		icon = generic_industry
 
 		allowed = {
-			original_tag = USA
+			OR = {
+				original_tag = USA
+				original_tag = CSA
+				original_tag = USB
+			}
 		}
 
 		available = {
@@ -852,11 +1496,11 @@ foreign_support = {
 			}
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 		}
 
-		targets = { CHI PRC GXC YUN SHX XSM SIK D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+		targets = { CH0 PR0 GX0 YU5 SH0 XS0 SI5 }
 
 		target_root_trigger = {
 			OR = {
@@ -868,7 +1512,7 @@ foreign_support = {
 		target_trigger = {
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 		}
 
@@ -876,7 +1520,7 @@ foreign_support = {
 			has_government = democratic
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 		}
 
@@ -900,7 +1544,7 @@ foreign_support = {
 
 			modifier = {
 				factor = 2
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 		}
 
@@ -935,7 +1579,11 @@ foreign_support = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
-			original_tag = USA
+			OR = {
+				original_tag = USA
+				original_tag = CSA
+				original_tag = USB
+			}
 		}
 
 		available = {
@@ -943,17 +1591,17 @@ foreign_support = {
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 		}
 
-		targets = { CHI PRC GXC YUN SHX XSM SIK D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+		targets = { CH0 PR0 GX0 YU5 SH0 XS0 SI5 }
 
 		target_trigger = {
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 		}
 
@@ -962,7 +1610,7 @@ foreign_support = {
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 		}
 
@@ -986,7 +1634,7 @@ foreign_support = {
 
 			modifier = {
 				factor = 2
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 		}
 
@@ -1016,6 +1664,12 @@ USA_foreign_support = {
 			has_completed_focus = USA_invite_foreign_support
 			has_war = no
 		}
+
+		target_root_trigger = {
+			has_completed_focus = USA_invite_foreign_support
+		}
+		target_array = global.majors
+
 		target_trigger = {
 			FROM = {
 				is_major = yes
@@ -1044,8 +1698,13 @@ USA_foreign_support = {
 		visible = {
 			has_completed_focus = USA_invite_foreign_support
 			has_war = no
-
 		}
+
+		target_root_trigger = {
+			has_completed_focus = USA_invite_foreign_support
+		}
+		target_array = global.majors
+
 		target_trigger = {
 			FROM = {
 				exists = yes
@@ -1075,6 +1734,12 @@ USA_foreign_support = {
 			has_completed_focus = USA_invite_foreign_support
 			has_war = no
 		}
+
+		target_root_trigger = {
+			has_completed_focus = USA_invite_foreign_support
+		}
+		target_array = global.majors
+
 		target_trigger = {
 			FROM = {
 				is_major = yes
@@ -1105,6 +1770,12 @@ USA_foreign_support = {
 			has_completed_focus = USA_invite_foreign_support
 			has_war = no
 		}
+
+		target_root_trigger = {
+			has_completed_focus = USA_invite_foreign_support
+		}
+		target_array = global.majors
+
 		target_trigger = {
 			FROM = {
 				exists = yes
@@ -1137,6 +1808,12 @@ USA_foreign_support = {
 			has_completed_focus = USA_invite_foreign_support
 			has_war = no
 		}
+
+		target_root_trigger = {
+			has_completed_focus = USA_invite_foreign_support
+		}
+		target_array = global.majors
+
 		target_trigger = {
 			FROM = {
 				exists = yes
@@ -1337,13 +2014,15 @@ economy_decisions = {
 	USA_communal_domain = {
 		icon = generic_operation
 		available = {
-			any_state = {
-				is_core_of = ROOT
-				is_controlled_by = ROOT
-				free_building_slots = {
-					building = industrial_complex
-					size > 1
-					include_locked = yes
+			any_of = {
+				array = core_states
+				var:v = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
 				}
 			}
 		}
@@ -1377,17 +2056,21 @@ foreign_politics = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
-			original_tag = USA
+			OR = {
+				original_tag = USA
+				original_tag = CSA
+				original_tag = USB
+			}
 		}
 
 		available = {
 			OR = {
 				not = { has_government = communism }
-				has_war_with = SOV #commie on commie violence
+				has_war_with = SO0 #commie on commie violence
 			}
 			has_equipment = { infantry_equipment > 999 }
 			FROM = {
-				has_war_with = SOV
+				has_war_with = SO0
 				not = {
 					has_war_with = ROOT
 				}
@@ -1401,14 +2084,14 @@ foreign_politics = {
 		target_trigger = {
 			FROM = {
 				not = { has_war_with = ROOT }
-				has_war_with = SOV
+				has_war_with = SO0
 			}
 		}
 
 		visible = {
 			has_completed_focus = USA_anti_bolshevist_aid
 			FROM = {
-				has_war_with = SOV
+				has_war_with = SO0
 			}
 		}
 
@@ -1425,7 +2108,7 @@ foreign_politics = {
 
 			modifier = {
 				factor = 2
-				has_war_with = SOV
+				has_war_with = SO0
 			}
 		}
 
@@ -1457,7 +2140,7 @@ foreign_politics = {
 		ai_will_do = {
 			factor = 10
 			modifier = {
-				has_war_with = USA
+				has_war_with = US0
 				factor = 20
 			}
 		}
@@ -1492,7 +2175,7 @@ foreign_politics = {
 		ai_will_do = {
 			factor = 10
 			modifier = {
-				has_war_with = USA
+				has_war_with = US0
 				factor = 20
 			}
 		}
@@ -1515,14 +2198,14 @@ foreign_politics = {
 	USA_join_the_unions = {
 		icon = infiltrate_state
 		visible = {
-			SOV = {
+			SO0 = {
 				has_war = yes
-				is_in_faction_with = USA
+				is_in_faction_with = US0
 			}
 			has_completed_focus = USA_unholy_alliance
 		}
 		available = {
-			SOV = {
+			SO0 = {
 				surrender_progress > 0.8
 			}
 		}
@@ -1531,9 +2214,11 @@ foreign_politics = {
 			factor = 0
 		}
 		complete_effect = {
-			annex_country = { target = SOV transfer_troops = yes}
-				 
-			
+			SO0 = {
+				ROOT = {
+					annex_country = { target = PREV transfer_troops = yes}
+				}
+			}
 		}
 	}
 }
@@ -1541,7 +2226,7 @@ USA_war_plans = {
 	USA_execute_war_plan_green = {
 		icon = generic_operation
 		available = {
-			has_war_with = MEX
+			has_war_with = ME0
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_green
@@ -1555,7 +2240,7 @@ USA_war_plans = {
 			production_speed_infrastructure_factor = 0.1
 		}
 		targeted_modifier = {
-			tag = MEX
+			tag = ME0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1563,7 +2248,7 @@ USA_war_plans = {
 	USA_execute_war_plan_red = {
 		icon = generic_operation
 		available = {
-			has_war_with = ENG
+			has_war_with = EN0
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_red
@@ -1577,7 +2262,7 @@ USA_war_plans = {
 			spotting_chance = 0.1
 		}
 		targeted_modifier = {
-			tag = ENG
+			tag = EN0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1585,7 +2270,7 @@ USA_war_plans = {
 	USA_execute_war_plan_silver = {
 		icon = generic_operation
 		available = {
-			has_war_with = ITA
+			has_war_with = IT0
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_silver
@@ -1596,7 +2281,7 @@ USA_war_plans = {
 		fire_only_once = yes
 		days_remove = 180
 		targeted_modifier = {
-			tag = ITA
+			tag = IT0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1604,7 +2289,7 @@ USA_war_plans = {
 	USA_execute_war_plan_ruby = {
 		icon = generic_operation
 		available = {
-			has_war_with = RAJ
+			has_war_with = RA0
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_ruby
@@ -1615,7 +2300,7 @@ USA_war_plans = {
 		fire_only_once = yes
 		days_remove = 180
 		targeted_modifier = {
-			tag = RAJ
+			tag = RA0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1623,8 +2308,8 @@ USA_war_plans = {
 	USA_execute_war_plan_scarlet_garnet = {
 		icon = generic_operation
 		available = {
-			has_war_with = AST
-			has_war_with = NZL
+			has_war_with = AS0
+			has_war_with = NZ0
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_scarlet_garnet
@@ -1635,12 +2320,12 @@ USA_war_plans = {
 		fire_only_once = yes
 		days_remove = 180
 		targeted_modifier = {
-			tag = AST
+			tag = AS0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
 		targeted_modifier = {
-			tag = NZL
+			tag = NZ0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1648,7 +2333,7 @@ USA_war_plans = {
 	USA_execute_war_plan_orange = {
 		icon = generic_operation
 		available = {
-			has_war_with = JAP
+			has_war_with = JA0
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_orange
@@ -1663,17 +2348,17 @@ USA_war_plans = {
 			invasion_preparation = -0.25
 		}
 		targeted_modifier = {
-			tag = JAP
+			tag = JA0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
 		targeted_modifier = {
-			tag = MAN
+			tag = MA5
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
 		targeted_modifier = {
-			tag = MEN
+			tag = ME5
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1682,13 +2367,13 @@ USA_war_plans = {
 		icon = generic_operation
 		available = {
 			OR = {
-				has_war_with = CHI
-				has_war_with = PRC
-				has_war_with = SHX
-				has_war_with = YUN
-				has_war_with = GXC
-				has_war_with = XSM
-				has_war_with = SIK
+				has_war_with = CH0
+				has_war_with = PR0
+				has_war_with = SH0
+				has_war_with = YU5
+				has_war_with = GX0
+				has_war_with = XS0
+				has_war_with = SI5
 
 			}
 		}
@@ -1701,37 +2386,37 @@ USA_war_plans = {
 		fire_only_once = yes
 		days_remove = 180
 		targeted_modifier = {
-			tag = CHI
+			tag = CH0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
 		targeted_modifier = {
-			tag = PRC
+			tag = PR0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
 		targeted_modifier = {
-			tag = SHX
+			tag = SH0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
 		targeted_modifier = {
-			tag = YUN
+			tag = YU5
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
 		targeted_modifier = {
-			tag = XSM
+			tag = XS0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
 		targeted_modifier = {
-			tag = GXC
+			tag = GX0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
 		targeted_modifier = {
-			tag = SIK
+			tag = SI5
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1739,7 +2424,7 @@ USA_war_plans = {
 	USA_execute_war_plan_crimson = {
 		icon = generic_operation
 		available = {
-			has_war_with = CAN
+			has_war_with = CA0
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_crimson
@@ -1753,7 +2438,7 @@ USA_war_plans = {
 			production_speed_bunker_factor = 0.1
 		}
 		targeted_modifier = {
-			tag = CAN
+			tag = CA0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1787,7 +2472,7 @@ USA_war_plans = {
 	USA_execute_war_plan_gold = {
 		icon = generic_operation
 		available = {
-			has_war_with = FRA
+			has_war_with = FR0
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_gold
@@ -1798,7 +2483,7 @@ USA_war_plans = {
 		fire_only_once = yes
 		days_remove = 180
 		targeted_modifier = {
-			tag = FRA
+			tag = FR0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1806,7 +2491,7 @@ USA_war_plans = {
 	USA_execute_war_plan_black = {
 		icon = generic_operation
 		available = {
-			has_war_with = GER
+			has_war_with = GE0
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_black
@@ -1817,7 +2502,7 @@ USA_war_plans = {
 		fire_only_once = yes
 		days_remove = 180
 		targeted_modifier = {
-			tag = GER
+			tag = GE0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1825,7 +2510,7 @@ USA_war_plans = {
 	USA_execute_war_plan_white = {
 		icon = generic_operation
 		available = {
-			has_war_with = SOV
+			has_war_with = SO0
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_white
@@ -1836,7 +2521,7 @@ USA_war_plans = {
 		fire_only_once = yes
 		days_remove = 180
 		targeted_modifier = {
-			tag = SOV
+			tag = SO0
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1895,8 +2580,8 @@ USA_intervention_mandate = {
 			}
 			modifier = {
 				OR = {
-					GER = { has_completed_focus = GER_danzig_or_war }
-					JAP = { has_completed_focus = JAP_intervene_in_china }
+					GE0 = { has_completed_focus = GER_danzig_or_war }
+					JA0 = { has_completed_focus = JAP_intervene_in_china }
 				}
 				factor = 10
 			}
@@ -1922,6 +2607,12 @@ USA_intervention_mandate = {
 			}
 			has_completed_focus = USA_focus_on_europe
 		}
+
+		target_root_trigger = {
+			has_completed_focus = USA_focus_on_europe
+		}
+		target_array = global.majors
+
 		target_trigger = {
 			FROM = {
 				is_major = yes
@@ -1984,6 +2675,11 @@ USA_intervention_mandate = {
 			has_completed_focus = USA_focus_on_asia
 		}
 
+		target_root_trigger = {
+			has_completed_focus = USA_focus_on_asia
+		}
+		target_array = global.majors
+
 		target_trigger = {
 			FROM = {
 				is_major = yes
@@ -2039,7 +2735,7 @@ USA_intervention_mandate = {
 			has_country_flag = USA_anschluss_window
 			has_completed_focus = USA_focus_on_europe
 			not = {
-				has_war_with = GER
+				has_war_with = GE0
 			}
 		}
 		fire_only_once = yes
@@ -2053,14 +2749,14 @@ USA_intervention_mandate = {
 		}
 		complete_effect = {
 			add_war_support = 0.05
-			GER = { country_event = mtg_usa_diplomatic_protest.1 } 
+			GE0 = { country_event = mtg_usa_diplomatic_protest.1 } 
 			if = {
 				limit = {
-					GER = {
+					GE0 = {
 						not = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				GER = {
+				GE0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2068,7 +2764,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				GER = { 
+				GE0 = { 
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2086,7 +2782,7 @@ USA_intervention_mandate = {
 			has_country_flag = USA_munich_window
 			has_completed_focus = USA_focus_on_europe
 			not = {
-				has_war_with = GER
+				has_war_with = GE0
 			}
 		}
 		fire_only_once = yes
@@ -2100,14 +2796,14 @@ USA_intervention_mandate = {
 		}
 		complete_effect = {
 			add_war_support = 0.05
-			GER = { country_event = mtg_usa_diplomatic_protest.1 } 
+			GE0 = { country_event = mtg_usa_diplomatic_protest.1 } 
 			if = {
 				limit = {
-					GER = {
+					GE0 = {
 						not = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				GER = {
+				GE0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2115,7 +2811,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				GER = {
+				GE0 = {
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2133,7 +2829,7 @@ USA_intervention_mandate = {
 			has_country_flag = USA_MR_window
 			has_completed_focus = USA_focus_on_europe
 			not = {
-				has_war_with = GER
+				has_war_with = GE0
 			}
 		}
 		fire_only_once = yes
@@ -2147,14 +2843,14 @@ USA_intervention_mandate = {
 		}
 		complete_effect = {
 			add_war_support = 0.05
-			GER = { country_event = mtg_usa_diplomatic_protest.1 } 
+			GE0 = { country_event = mtg_usa_diplomatic_protest.1 } 
 			if = {
 				limit = {
-					GER = {
+					GE0 = {
 						not = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				GER = {
+				GE0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2162,7 +2858,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				GER = {
+				GE0 = {
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2171,11 +2867,11 @@ USA_intervention_mandate = {
 			}
 			if = {
 				limit = {
-					SOV = {
+					SO0 = {
 						not = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				SOV = {
+				SO0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2183,7 +2879,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				SOV = {
+				SO0 = {
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2201,7 +2897,7 @@ USA_intervention_mandate = {
 			has_country_flag = USA_baltic_window
 			has_completed_focus = USA_focus_on_europe
 			not = {
-				has_war_with = SOV
+				has_war_with = SO0
 			}
 		}
 		fire_only_once = yes
@@ -2213,7 +2909,7 @@ USA_intervention_mandate = {
 				factor = 0
 			}
 			modifier = {
-				GER = {
+				GE0 = {
 					has_country_flag = USA_intervention_strikes
 				}
 				factor = 0
@@ -2221,14 +2917,14 @@ USA_intervention_mandate = {
 		}
 		complete_effect = {
 			add_war_support = 0.05
-			SOV = { country_event = mtg_usa_diplomatic_protest.1 } 
+			SO0 = { country_event = mtg_usa_diplomatic_protest.1 } 
 			if = {
 				limit = {
-					SOV = {
+					SO0 = {
 						not = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				SOV = {
+				SO0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2236,7 +2932,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				SOV = {
+				SO0 = {
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2253,8 +2949,8 @@ USA_intervention_mandate = {
 		visible = {
 			has_country_flag = USA_army_of_aggression_window
 			has_completed_focus = USA_focus_on_europe
-			not = {
-				has_war_with = FRA
+			NOT = {
+				has_war_with = FR0
 			}
 		}
 		fire_only_once = yes
@@ -2266,7 +2962,7 @@ USA_intervention_mandate = {
 				factor = 0
 			}
 			modifier = {
-				GER = {
+				GE0 = {
 					has_country_flag = USA_intervention_strikes
 				}
 				factor = 0
@@ -2274,14 +2970,14 @@ USA_intervention_mandate = {
 		}
 		complete_effect = {
 			add_war_support = 0.05
-			FRA = { country_event = mtg_usa_diplomatic_protest.1 } 
+			FR0 = { country_event = mtg_usa_diplomatic_protest.1 } 
 			if = {
 				limit = {
-					FRA = {
-						not = { has_country_flag = USA_intervention_strikes }
+					FR0 = {
+						NOT = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				FRA = {
+				FR0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2289,7 +2985,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				FRA = {
+				FR0 = {
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2307,7 +3003,7 @@ USA_intervention_mandate = {
 			has_country_flag = USA_albania_window
 			has_completed_focus = USA_focus_on_europe
 			not = {
-				has_war_with = ITA
+				has_war_with = IT0
 			}
 		}
 		fire_only_once = yes
@@ -2319,7 +3015,7 @@ USA_intervention_mandate = {
 				factor = 0
 			}
 			modifier = {
-				GER = {
+				GE0 = {
 					has_country_flag = USA_intervention_strikes
 				}
 				factor = 0
@@ -2327,14 +3023,14 @@ USA_intervention_mandate = {
 		}
 		complete_effect = {
 			add_war_support = 0.05
-			ITA = { country_event = mtg_usa_diplomatic_protest.1 } 
+			IT0 = { country_event = mtg_usa_diplomatic_protest.1 } 
 			if = {
 				limit = {
-					ITA = {
+					IT0 = {
 						not = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				ITA = {
+				IT0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2342,7 +3038,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				ITA = {
+				IT0 = {
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2360,7 +3056,7 @@ USA_intervention_mandate = {
 			has_country_flag = USA_yugoslavia_window
 			has_completed_focus = USA_focus_on_europe
 			not = {
-				has_war_with = ITA
+				has_war_with = IT0
 			}
 		}
 		fire_only_once = yes
@@ -2372,7 +3068,7 @@ USA_intervention_mandate = {
 				factor = 0
 			}
 			modifier = {
-				GER = {
+				GE0 = {
 					has_country_flag = USA_intervention_strikes
 				}
 				factor = 0
@@ -2380,14 +3076,14 @@ USA_intervention_mandate = {
 		}
 		complete_effect = {
 			add_war_support = 0.05
-			ITA = { country_event = mtg_usa_diplomatic_protest.1 } 
+			IT0 = { country_event = mtg_usa_diplomatic_protest.1 } 
 			if = {
 				limit = {
-					ITA = {
+					IT0 = {
 						not = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				ITA = {
+				IT0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2395,7 +3091,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				ITA = {
+				IT0 = {
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2416,14 +3112,14 @@ USA_intervention_mandate = {
 					CONTROLLER = {
 						OR = {
 							original_tag = JAP
-							is_subject_of = JAP
+							is_subject_of = JA0
 						}
 					}
 				}
 			}
 			has_completed_focus = USA_focus_on_asia
 			not = {
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 		}
 		fire_only_once = yes
@@ -2437,14 +3133,14 @@ USA_intervention_mandate = {
 		}
 		complete_effect = {
 			add_war_support = 0.05
-			JAP = { country_event = mtg_usa_diplomatic_protest.1 } 
+			JA0 = { country_event = mtg_usa_diplomatic_protest.1 } 
 			if = {
 				limit = {
-					JAP = {
+					JA0 = {
 						not = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				JAP = {
+				JA0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2452,7 +3148,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				JAP = {
+				JA0 = {
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2470,7 +3166,7 @@ USA_intervention_mandate = {
 			has_country_flag = USA_indochina_window
 			has_completed_focus = USA_focus_on_asia
 			not = {
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 		}
 		fire_only_once = yes
@@ -2484,14 +3180,14 @@ USA_intervention_mandate = {
 		}
 		complete_effect = {
 			add_war_support = 0.05
-			JAP = { country_event = mtg_usa_diplomatic_protest.1 } 
+			JA0 = { country_event = mtg_usa_diplomatic_protest.1 } 
 			if = {
 				limit = {
-					JAP = {
+					JA0 = {
 						not = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				JAP = {
+				JA0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2499,7 +3195,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				JAP = {
+				JA0 = {
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2517,9 +3213,9 @@ USA_intervention_mandate = {
 			has_country_flag = USA_panay_window
 			has_completed_focus = USA_focus_on_asia
 			not = {
-				has_war_with = JAP
+				has_war_with = JA0
 			}
-			not = { has_wargoal_against = JAP }
+			not = { has_wargoal_against = JA0 }
 		}
 		fire_only_once = yes
 		cost = 25
@@ -2532,14 +3228,14 @@ USA_intervention_mandate = {
 		}
 		complete_effect = {
 			add_war_support = 0.05
-			JAP = { country_event = mtg_usa_diplomatic_protest.1 } 
+			JA0 = { country_event = mtg_usa_diplomatic_protest.1 } 
 			if = {
 				limit = {
-					JAP = {
+					JA0 = {
 						not = { has_country_flag = USA_intervention_strikes }
 					}
 				}
-				JAP = {
+				JA0 = {
 					set_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2547,7 +3243,7 @@ USA_intervention_mandate = {
 				}
 			}
 			else = {
-				JAP = {
+				JA0 = {
 					modify_country_flag = {
 						flag = USA_intervention_strikes
 						value = 1
@@ -2584,6 +3280,11 @@ USA_intervention_mandate = {
 				not = { is_subject_of = ROOT }
 			}
 		}
+
+		target_root_trigger = {
+			has_completed_focus = USA_reinforce_monroe_doctrine
+		}
+
 		target_trigger = {
 			FROM = {
 				exists = yes
@@ -2602,7 +3303,7 @@ USA_intervention_mandate = {
 					has_civil_war = yes
 					AND = {
 						is_subject = yes
-						NOT = { tag = CAN }
+						NOT = { tag = CA0 }
 						OVERLORD = {
 							NOT = { 
 								capital_scope = {
@@ -2667,6 +3368,11 @@ USA_intervention_mandate = {
 				}
 			} 
 		}
+
+		target_root_trigger = {
+			has_completed_focus = USA_reinforce_monroe_doctrine
+		}
+
 		target_trigger = {
 			FROM = {
 				NOT = { 
@@ -2710,11 +3416,12 @@ USA_intervention_mandate = {
 USA_decolonisation = {
 	USA_freedom_for_Papua = {
 		available = {
-			PNG = {
+			PN0 = {
 				exists = no
 			}
 			controls_state = 523
 			controls_state = 737
+			controls_state = 806
 		}
 		cost = 25
 		ai_will_do = {
@@ -2723,9 +3430,10 @@ USA_decolonisation = {
 		fire_only_once = yes
 		days_remove = 180
 		remove_effect = {
-			PNG = {
+			PN0 = {
 				transfer_state = 523
 				transfer_state = 737 
+				transfer_state = 806 
 			}
 		}
 	}
@@ -2737,8 +3445,11 @@ USA_decolonisation = {
 				controls_state = 673
 				controls_state = 334
 				controls_state = 672
+				controls_state = 803
 				controls_state = 335
 				controls_state = 667
+				controls_state = 804
+				controls_state = 807
 				controls_state = 738
 			}
 		}
@@ -2751,56 +3462,69 @@ USA_decolonisation = {
 		remove_effect = {
 			if = {
 				limit = {
-					not = { country_exists = INS }
+					not = { country_exists = IN0 }
 				}
 				every_state = {
 					limit = {
-						is_core_of = INS
+						is_core_of = IN0
 						is_controlled_by = ROOT
 					}
-					"INS" = {
+					IN0 = {
 						transfer_state = PREV
 					}
 				}
 			}
 			else_if = {
 				limit = {
-					has_war_with = INS
+					has_war_with = IN0
 				}
-				"INS" = {
+				IN0 = {
 					start_civil_war = {
 						ideology = ROOT
 						size = 1
 					}
 				}
-				random_country = {
+				random_other_country = {
 					limit = {
 						original_tag = INS
 						has_government = ROOT
 					}
-					ROOT = {
-						add_to_faction = PREV
-					}
-					every_state = {
+					set_variable = { global.ins_rebel_tag = THIS.id }
+				}
+				IN0 = {
+					if = {
 						limit = {
-							OR = {
-								state = 669
-								state = 668
-								state = 673
-								state = 334
-								state = 672
-								state = 335
-								state = 667
-								state = 738
-							}
-							is_controlled_by = ROOT
+							has_government = ROOT
 						}
-						random_country = {
+						ROOT = {
+							add_to_faction = PREV
+						}
+						every_state = {
 							limit = {
-								original_tag = INS
-								has_government = ROOT
+								OR = {
+									state = 669
+									state = 668
+									state = 673
+									state = 334
+									state = 807
+									state = 672
+									state = 335
+									state = 667
+									state = 804
+									state = 803
+									state = 738
+								}
+								is_controlled_by = ROOT
 							}
-							transfer_state = PREV
+							IN0 = {
+								if = {
+									limit = {
+										has_government = ROOT
+									}
+									transfer_state = PREV
+								}
+	
+							}
 						}
 					}
 				}

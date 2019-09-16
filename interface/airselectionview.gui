@@ -322,7 +322,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "unassigned_airwings_view"
 		position = {x=0 y=0}
-		size = { width=582 height=430 } # height set in code, but initial value here is used for max allowed height
+		size = { width=582 height=880 } # height set in code, but initial value here is used for max allowed height	#mod
 		Orientation = upper_left
 		clipping = no
 
@@ -438,7 +438,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "air_wings_window"
 			position = {x=0 y=38}
-			size = {width=580 height=535 } # Y Set in code to match the window size, but initial value is used as extra space in height
+			size = {width=580 height=880 } # Y Set in code to match the window size, but initial value is used as extra space in height		#mod
 			Orientation = upper_left
 
 			verticalScrollbar = "right_vertical_slider"

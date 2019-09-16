@@ -226,16 +226,16 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Rod Hull"
-	desc = ""
-	picture = "Portrait_Australia_Rod_Hull.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+#create_country_leader = {
+#	name = "Rod Hull"
+#	desc = ""
+#	picture = "Portrait_Australia_Rod_Hull.dds"
+#	expire = "1965.1.1"
+#	ideology = despotism
+#	traits = {
+#		#
+#	}
+#}
 
 set_convoys = 100
 

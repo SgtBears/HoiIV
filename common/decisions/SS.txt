@@ -11,33 +11,29 @@ SS_recruitment = {
 			99 = {
 				CONTROLLER = {
 					OR = {
-						original_tag = GER
-						is_subject_of = GER
+						tag = GE0
+						is_subject_of = GE0
 					}
 				}
 			}
 			37 = {
 				CONTROLLER = {
 					OR = {
-						original_tag = GER
-						is_subject_of = GER
+						tag = GE0
+						is_subject_of = GE0
 					}
 				}
 			}
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				DEN = {
-					is_subject_of = GER
+				DE0 = {
+					is_subject_of = GE0
 				}
-				has_war_with = DEN
+				has_war_with = DE0
 				AND = {
 					has_war = yes
-					DEN = {
+					DE0 = {
 						exists = no
 					}
 				}
@@ -65,47 +61,51 @@ SS_recruitment = {
 			110 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			142 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			143 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			144 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
+					} 
+				} 
+			}
+			794 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				NOR = {
-					is_subject_of = GER
+				NO0 = {
+					is_subject_of = GE0
 				}
-				has_war_with = NOR
-				NOR = { exists = no }
+				has_war_with = NO0
+				NO0 = { exists = no }
 			}
 		}
 
@@ -131,24 +131,24 @@ SS_recruitment = {
 			36 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			7 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			35 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
@@ -157,15 +157,11 @@ SS_recruitment = {
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				HOL = {
-					is_subject_of = GER
+				HO0 = {
+					is_subject_of = GE0
 				}
-				has_war_with = HOL
-				HOL = { exists = no }
+				has_war_with = HO0
+				HO0 = { exists = no }
 			}
 		}
 
@@ -190,31 +186,27 @@ SS_recruitment = {
 			6 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			34 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}	
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				BEL = {
-					is_subject_of = GER
+				BE0 = {
+					is_subject_of = GE0
 				}
-				has_war_with = BEL
-				BEL = { exists = no }
+				has_war_with = BE0
+				BE0 = { exists = no }
 			}
 		}
 
@@ -239,47 +231,43 @@ SS_recruitment = {
 			29 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			16 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			15 = {
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			14 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				FRA = {
-					is_subject_of = GER
+				FR1 = {
+					is_subject_of = GE0
 				}
-				has_war_with = FRA
-				FRA = { exists = no }
+				has_war_with = FR2
+				FR0 = { exists = no }
 			}
 		}
 
@@ -304,33 +292,29 @@ SS_recruitment = {
 			13 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			191 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				EST = {
-					is_subject_of = GER
+				ES0 = {
+					is_subject_of = GE0
 				}
-				has_war_with = EST
+				has_war_with = ES0
 				AND = {
 					has_war = yes
-					EST = {
+					ES0 = {
 						exists = no
 					}
 				}
@@ -358,33 +342,29 @@ SS_recruitment = {
 			12 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			190 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				LAT = {
-					is_subject_of = GER
+				LA0 = {
+					is_subject_of = GE0
 				}
-				has_war_with = LAT
+				has_war_with = LA0
 				AND = {
 					has_war = yes
-					LAT = {
+					LA0 = {
 						exists = no
 					}
 				}
@@ -413,33 +393,29 @@ SS_recruitment = {
 			11 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			189 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				LIT = {
-					is_subject_of = GER
+				LI0 = {
+					is_subject_of = GE0
 				}
-				has_war_with = LIT
+				has_war_with = LI0
 				AND = {
 					has_war = yes
-					LIT = {
+					LI0 = {
 						exists = no
 					}
 				}
@@ -467,49 +443,45 @@ SS_recruitment = {
 			126 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0  
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			127 = {
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			123 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			338 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				ENG = {
-					is_subject_of = GER
+				EN0 = {
+					is_subject_of = GE0
 				}
-				has_war_with = ENG
+				has_war_with = EN0
 				AND = {
 					has_war = yes
-					ENG = {
+					EN0 = {
 						exists = no
 					}
 				}
@@ -536,36 +508,32 @@ SS_recruitment = {
 			}
 			OR = {
 				AND = {
-					121 = { is_controlled_by = GER }
-					133 = { is_controlled_by = GER }
-					136 = { is_controlled_by = GER }
-					120 = { is_controlled_by = GER }
+					121 = { is_controlled_by = GE0 }
+					133 = { is_controlled_by = GE0 }
+					136 = { is_controlled_by = GE0 }
+					120 = { is_controlled_by = GE0 }
 				}
 				AND = {
-					121 = { CONTROLLER = { is_subject_of = GER } }
-					133 = { CONTROLLER = { is_subject_of = GER } }
-					136 = { CONTROLLER = { is_subject_of = GER } }
-					120 = { CONTROLLER = { is_subject_of = GER } }
+					121 = { CONTROLLER = { is_subject_of = GE0 } }
+					133 = { CONTROLLER = { is_subject_of = GE0 } }
+					136 = { CONTROLLER = { is_subject_of = GE0 } }
+					120 = { CONTROLLER = { is_subject_of = GE0 } }
 				}
 			}
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
 				AND = {
-					121 = { is_controlled_by = GER }
-					133 = { is_controlled_by = GER }
-					136 = { is_controlled_by = GER }
-					120 = { is_controlled_by = GER }
+					121 = { is_controlled_by = GE0 }
+					133 = { is_controlled_by = GE0 }
+					136 = { is_controlled_by = GE0 }
+					120 = { is_controlled_by = GE0 }
 				}
 				AND = {
-					121 = { CONTROLLER = { is_subject_of = GER } }
-					133 = { CONTROLLER = { is_subject_of = GER } }
-					136 = { CONTROLLER = { is_subject_of = GER } }
-					120 = { CONTROLLER = { is_subject_of = GER } }
+					121 = { CONTROLLER = { is_subject_of = GE0 } }
+					133 = { CONTROLLER = { is_subject_of = GE0 } }
+					136 = { CONTROLLER = { is_subject_of = GE0 } }
+					120 = { CONTROLLER = { is_subject_of = GE0 } }
 				}
 			}
 		}
@@ -591,49 +559,45 @@ SS_recruitment = {
 			141 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			139 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			138 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 			140 = { 
 				CONTROLLER = { 
 					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
+						tag = GE0 
+						is_subject_of = GE0 
 					} 
 				} 
 			}
 		}
 		visible = {
 			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				SWE = {
-					is_subject_of = GER
+				SW0 = {
+					is_subject_of = GE0
 				}
-				has_war_with = SWE
+				has_war_with = SW0
 				AND = {
 					has_war = yes
-					SWE = {
+					SW0 = {
 						exists = no
 					}
 				}
@@ -657,11 +621,10 @@ SS_demands = {
 		icon = generic_army_support
 
 		available = {
-			has_idea = heinrich_himmler
-			has_war = yes
-		}
-		visible = {
-			has_idea = heinrich_himmler
+			OR = {
+				has_idea = heinrich_himmler
+				has_country_leader = { name = "Heinrich Himmler" }
+			}
 			has_war = yes
 		}
 		cost = 25
@@ -681,7 +644,4 @@ SS_demands = {
 			}
 		}
 	}
-}
-wehrmacht_demands = {
-	
 }

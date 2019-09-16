@@ -1,0 +1,27 @@
+state={
+	id=866
+	name="STATE_866"
+	resources={
+	}
+
+	history={
+		owner = YUG
+		victory_points = {
+			9874 1
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = YUG
+		add_core_of = SER
+
+	}
+
+	provinces={
+		9849 6940 9874 3922
+	}
+	manpower=273847
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

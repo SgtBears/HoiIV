@@ -2,10 +2,13 @@ state={
 	id=332
 	name="STATE_332"
 	
-	state_category = wasteland
+	state_category = pastoral
 
 	history={
 		owner = ENG
+		victory_points = {
+			12503 1
+		}
 		buildings = {
 			infrastructure = 1
 
@@ -13,13 +16,14 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = CAN
+		add_core_of = NEF
+		add_core_of = LAB
 
 	}
 
 	provinces={
-		1426 1785 4720 4787 12503 13165 13180 
+		1426 1785 4720 4787 12503 13165 13849 13851 13852 13853 13854 13855 13856 13857
 	}
-	manpower=22179
+	manpower=5000
 	buildings_max_level_factor=1.000
 }

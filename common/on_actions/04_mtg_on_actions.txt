@@ -565,6 +565,10 @@ on_actions = {
 					drop_cosmetic_tag = yes
 					transfer_state = 332
 					transfer_state = 331
+					transfer_state = 855
+					add_state_core = 332
+					add_state_core = 331
+					add_state_core = 855
 				}
 			}
 			if = {

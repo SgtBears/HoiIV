@@ -30,7 +30,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -68,7 +68,7 @@ focus_tree = {
 		x = 6
 		y = 0
 
-		cost = 10
+		cost = 71
 
 		ai_will_do = {
 			factor = 20
@@ -113,7 +113,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_provincial_elections
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 15
@@ -151,7 +151,7 @@ focus_tree = {
 				value = 0.1
 				localization = RAJ_swaraj
 			}
-			add_opinion_modifier = { target = ENG modifier = RAJ_swaraj }
+			add_opinion_modifier = { target = EN0 modifier = RAJ_swaraj }
 			hidden_effect = { news_event = { id = news.284 hours = 12 } }
 		}
 	}
@@ -165,7 +165,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_provincial_elections
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 27
@@ -195,7 +195,7 @@ focus_tree = {
 				value = 0.1
 				localization = RAJ_indian_national_congress
 			}
-			add_opinion_modifier = { target = ENG modifier = RAJ_indian_national_congress }
+			add_opinion_modifier = { target = EN0 modifier = RAJ_indian_national_congress }
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = RAJ_bhimrao_ramji_ambedkar
 			hidden_effect = { news_event = { id = news.283 hours = 12 } }
@@ -210,7 +210,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_swaraj
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -255,7 +255,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_swaraj
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -299,7 +299,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_all_india_forward_bloc
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -332,7 +332,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			is_in_faction_with = SOV
+			is_in_faction_with = SO0
 		}
 
 		cancel_if_invalid = yes
@@ -344,7 +344,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SOV = {
+			SO0 = {
 				country_event = { id = tfv_raj.30 hours = 6 }
 			}
 			if = {
@@ -374,7 +374,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_seek_help_from_soviet
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -410,7 +410,7 @@ focus_tree = {
 			hidden_effect = {
 				random_owned_controlled_state = {
 					prioritize = { 429 425 }
-					RAJ = { set_capital = PREV }
+					ROOT = { set_capital = PREV }
 				}
 				if = {
 					set_temp_variable = { ideology_val = party_popularity@communism }
@@ -428,8 +428,8 @@ focus_tree = {
 						has_global_flag = RAJ_seek_help_from_soviet_promised
 						SOV_can_help_against_ENG = yes
 					}
-					SOV = {
-						add_to_faction = RAJ
+					SO0 = {
+						add_to_faction = ROOT
 						add_popularity = {
 							ideology = communism
 							popularity = 0.35
@@ -456,8 +456,13 @@ focus_tree = {
 						ideology = neutrality
 						popularity = 0.15
 					}
-					ENG = { add_to_faction = PREV }
-				}						
+					set_variable = { global.raj_imperial_tag = THIS.id }
+					EN0 = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_colony } 
+						add_to_faction = PREV
+					}
+					set_cosmetic_tag = RAJ_UK
+				}				
 			}
 		}
 	}
@@ -470,14 +475,14 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_seek_help_from_soviet
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
 		}
 
 		available = {
-			is_in_faction_with = SOV
+			is_in_faction_with = SO0
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
@@ -494,7 +499,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SOV = { add_to_tech_sharing_group = comintern_research }
+			SO0 = { add_to_tech_sharing_group = comintern_research }
 			add_to_tech_sharing_group = comintern_research
 		}
 	}
@@ -507,14 +512,14 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_seek_help_from_soviet
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
 		}
 
 		available = {
-			is_in_faction_with = SOV
+			is_in_faction_with = SO0
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
@@ -566,7 +571,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_all_india_forward_bloc
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -625,7 +630,7 @@ focus_tree = {
 			prioritize = { 439 }
 			create_unit = { 
 				division = "name = \"1. Rani of Jhansi Division\" division_template = \"Rani of Jhansi Division\" start_experience_factor = 0.5" 
-				owner = RAJ
+				owner = ROOT
 				}
 
 		}
@@ -641,7 +646,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = RAJ_all_india_forward_bloc
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -764,7 +769,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_all_india_forward_bloc
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -790,7 +795,7 @@ focus_tree = {
 			}
 			has_civil_war = no
 			NOT = { has_global_flag = RAJ_seek_help_from_soviet_promised }
-			GER = {				
+			GE0 = {				
 				exists = yes
 				has_government = fascism
 			}
@@ -798,7 +803,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			is_in_faction_with = GER
+			is_in_faction_with = GE0
 		}
 
 		cancel_if_invalid = yes
@@ -810,7 +815,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER = {
+			GE0 = {
 				country_event = { id = tfv_raj.40 hours = 6 }
 			}
 			if = {
@@ -840,7 +845,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_seek_help_from_germany
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -875,7 +880,7 @@ focus_tree = {
 			hidden_effect = {
 				random_owned_controlled_state = {
 					prioritize = { 429 425 }
-					RAJ = { set_capital = PREV }
+					ROOT = { set_capital = PREV }
 				}
 				if = {
 					set_temp_variable = { ideology_val = party_popularity@fascism }
@@ -893,8 +898,8 @@ focus_tree = {
 						has_global_flag = RAJ_seek_help_from_germany_promised
 						GER_can_help_against_ENG = yes
 					}
-					GER = {
-						add_to_faction = RAJ
+					GE0 = {
+						add_to_faction = ROOT
 						add_popularity = {
 							ideology = fascism
 							popularity = 0.35
@@ -920,8 +925,13 @@ focus_tree = {
 						ideology = neutrality
 						popularity = 0.15
 					}
-					ENG = { add_to_faction = PREV }
-				}					
+					set_variable = { global.raj_imperial_tag = THIS.id }
+					EN0 = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_colony } 
+						add_to_faction = PREV
+					}
+					set_cosmetic_tag = RAJ_UK
+				}				
 			}
 		}
 	}
@@ -934,16 +944,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_seek_help_from_germany
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
 		}
 
 		available = {
-			ITA = {
+			IT0 = {
 				has_capitulated = no
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 				has_government = fascism
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
@@ -976,41 +986,34 @@ focus_tree = {
 					}
 				}
 			}
-			
-		
-			ITA = {
-				country_event = { id = tfv_raj.201 }
-			}
-			
-			if = {
-				limit = {
-					is_ai = no
+			custom_effect_tooltip = tfv_raj_focus_paratrooper_tt
+			hidden_effect = {
+				IT0 = {
+					country_event = { id = tfv_raj.201 }
 				}
-				
-				division_template = {
-					name = "Battaglione Azad Hindoustan" #Hindu paratrooper division created for Italy
-					division_names_group = RAJ_PAR_01
-					regiments = {
-						paratrooper = { x = 0 y = 0 }
-						paratrooper = { x = 0 y = 1 }
-						paratrooper = { x = 0 y = 2 }
-
-						paratrooper = { x = 1 y = 0 }
-						paratrooper = { x = 1 y = 1 }
-						paratrooper = { x = 1 y = 2 }
+				IT0 = {
+					if = {
+						limit = { NOT = { has_tech = paratroopers } }
+						set_technology = { paratroopers = 1 }
 					}
-				}
-					
-				ITA = {
+					division_template = {
+						name = "Battaglione Azad Hindoustan" #Hindu paratrooper division created for Italy
+						division_names_group = RAJ_PAR_01
+						regiments = {
+							paratrooper = { x = 0 y = 0 }
+							paratrooper = { x = 0 y = 1 }
+							paratrooper = { x = 0 y = 2 }
+
+							paratrooper = { x = 1 y = 0 }
+							paratrooper = { x = 1 y = 1 }
+							paratrooper = { x = 1 y = 2 }
+						}
+					}
 					random_owned_controlled_state = {
 						prioritize = { 2 }
-						
-						custom_effect_tooltip = tfv_raj_focus_paratrooper_tt
-						hidden_effect = {
-							create_unit = { 
-								division = "name = \"Battaglione Azad Hindoustan\" division_template = \"Battaglione Azad Hindoustan\" start_experience_factor = 1.0" 
-								owner = RAJ
-							}
+						create_unit = { 
+							division = "name = \"Battaglione Azad Hindoustan\" division_template = \"Battaglione Azad Hindoustan\" start_experience_factor = 1.0" 
+							owner = IT0
 						}
 					}
 				}
@@ -1026,7 +1029,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_seek_help_from_germany
 		dynamic = yes
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1034,8 +1037,8 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_in_faction_with = GER
-				is_in_faction_with = JAP
+				is_in_faction_with = GE0
+				is_in_faction_with = JA0
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
@@ -1053,7 +1056,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER = { add_to_tech_sharing_group = axis_research }
+			GE0 = { add_to_tech_sharing_group = axis_research }
 			add_to_tech_sharing_group = axis_research
 		}
 	}
@@ -1066,7 +1069,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_seek_help_from_germany
 		dynamic = yes
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1074,8 +1077,8 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_in_faction_with = GER
-				is_in_faction_with = JAP
+				is_in_faction_with = GE0
+				is_in_faction_with = JA0
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
@@ -1123,7 +1126,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_indian_national_congress
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1173,7 +1176,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_indian_national_congress
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1215,7 +1218,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_indian_national_congress
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1253,7 +1256,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_princely_state_donations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1261,10 +1264,10 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 		}
@@ -1301,7 +1304,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_princely_state_donations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1309,15 +1312,15 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 			OR = {
-				has_war_with = GER
-				ENG = { has_war_with = GER }
+				has_war_with = GE0
+				EN0 = { has_war_with = GE0 }
 			}
 		}
 
@@ -1346,7 +1349,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_princely_state_donations
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1434,7 +1437,7 @@ focus_tree = {
 						add_equipment_production = {
 							equipment = {
 								type = ship_hull_cruiser_2
-								creator = "RAJ"
+								creator = RAJ
 								version_name = "Delhi Class"
 							}
 							requested_factories = 1
@@ -1444,7 +1447,7 @@ focus_tree = {
 						add_equipment_production = {
 							equipment = {
 								type = ship_hull_cruiser_2
-								creator = "RAJ"
+								creator = RAJ
 								version_name = "Delhi Class"
 							}
 							requested_factories = 1
@@ -1474,7 +1477,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_indian_national_congress
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1482,10 +1485,10 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 		}
@@ -1517,7 +1520,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_british_army_support
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1567,7 +1570,7 @@ focus_tree = {
 					prioritize = { 439 }
 					create_unit = {
 						division = "name = \"Red Eagles Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
-						owner = RAJ
+						owner = ROOT
 					}	
 				}
 			}
@@ -1582,7 +1585,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_british_army_support
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1637,7 +1640,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_british_army_support
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1673,7 +1676,7 @@ focus_tree = {
 		x = 20
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 3
@@ -1713,7 +1716,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_lessons_of_the_great_war
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1745,7 +1748,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_indianisation_of_army
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1794,7 +1797,7 @@ focus_tree = {
 					prioritize = { 439 }
 					create_unit = {
 						division = "name = \"1. Gorkha Rifles\" division_template = \"Gorkha Rifles\" start_experience_factor = 1.0" 
-						owner = RAJ
+						owner = ROOT
 					}	
 				}
 			}
@@ -1810,7 +1813,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_indianisation_of_army
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1873,7 +1876,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_indianisation_of_army
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1897,32 +1900,31 @@ focus_tree = {
 			hidden_effect = {
 
 				division_template = {
-				name = "Sikh Regiment" #sikh regiment, bro
-				division_names_group = RAJ_INF_01
-				regiments = {
+					name = "Sikh Regiment" #sikh regiment, bro
+					division_names_group = RAJ_INF_01
+					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
 		
-		        		infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
 
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
 						infantry = { x = 2 y = 2 }
-							}
-						}
-		
-					random_owned_controlled_state = {
-							prioritize = { 439 }
-							create_unit = { 
-								division = "name = \"1. Sikh Regiment\" division_template = \"Sikh Regiment\" start_experience_factor = 0.5" 
-								owner = RAJ
-								}
-		
 					}
 				}
+	
+				random_owned_controlled_state = {
+					prioritize = { 439 }
+					create_unit = { 
+						division = "name = \"1. Sikh Regiment\" division_template = \"Sikh Regiment\" start_experience_factor = 0.5" 
+						owner = ROOT
+					}
+				}
+			}
 
 		}
 	}
@@ -1935,7 +1937,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_indianisation_of_army
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1978,7 +1980,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_lessons_of_the_great_war
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -2014,7 +2016,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -2050,7 +2052,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -2087,7 +2089,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -2123,7 +2125,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -2159,7 +2161,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -2200,7 +2202,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2237,7 +2239,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2274,7 +2276,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_lessons_of_the_great_war
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -2289,7 +2291,7 @@ focus_tree = {
 		}
 
 		bypass = {
-		NOT = { is_in_faction_with = ENG }
+		NOT = { is_in_faction_with = EN0 }
 
 		}
 
@@ -2317,7 +2319,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_british_pilot_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2400,7 +2402,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_british_pilot_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2438,7 +2440,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_british_pilot_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2475,7 +2477,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_british_pilot_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2520,7 +2522,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = RAJ_british_pilot_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -2567,7 +2569,7 @@ focus_tree = {
 		x = 31
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 7
@@ -2675,7 +2677,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_great_indian_peninsula_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2736,7 +2738,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -2780,7 +2782,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -2825,7 +2827,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -2860,7 +2862,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2902,7 +2904,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2951,7 +2953,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -3033,7 +3035,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -3116,7 +3118,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3154,7 +3156,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -3191,7 +3193,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -3228,7 +3230,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -3264,7 +3266,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -3301,7 +3303,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3342,7 +3344,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_great_indian_peninsula_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3425,7 +3427,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -3508,7 +3510,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -3569,7 +3571,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_integrate_princely_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -3607,7 +3609,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_ishapore_arsenal
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -3618,11 +3620,11 @@ focus_tree = {
 				AND = {
 					compare_autonomy_progress_ratio > 0.4
 					compare_autonomy_state > autonomy_puppet
-					is_subject_of = ENG
+					is_subject_of = EN0
 				}
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 		}
@@ -3714,7 +3716,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_ishapore_arsenal
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -3723,7 +3725,7 @@ focus_tree = {
 		available = {
 			compare_autonomy_progress_ratio > 0.4
 			compare_autonomy_state > autonomy_puppet
-			is_subject_of = ENG
+			is_subject_of = EN0
 		}
 
 		bypass = {
@@ -3813,7 +3815,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_ishapore_arsenal
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -3822,7 +3824,7 @@ focus_tree = {
 		available = {
 			compare_autonomy_progress_ratio > 0.4
 			compare_autonomy_state > autonomy_puppet
-			is_subject_of = ENG
+			is_subject_of = EN0
 		}
 
 		bypass = {

@@ -1,0 +1,22 @@
+state = {
+	id=827
+	name="STATE_827"
+	manpower=62000
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = ENG
+		add_core_of = BAS
+		add_core_of = TRI
+		buildings = {
+			infrastructure = 4
+			13009 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		13009
+	}
+}

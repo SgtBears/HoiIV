@@ -46,15 +46,14 @@ set_convoys = 5
 	}
 }
 
-# A colony of Italy in 1939, however if independent it would have the same politics as in 1936
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	monarchism = 100
 }
 
 create_country_leader = {
@@ -62,7 +61,7 @@ create_country_leader = {
 	desc = "POLITICS_HAILE_SELASSIE_DESC"
 	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = royalism
 	traits = {
 		#
 	}
@@ -71,11 +70,24 @@ create_country_leader = {
 create_country_leader = {
 	name = "Fitawrari Yeebio Woldai"
 	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
-	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	picture = "gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
 		#
+	}
+}
+
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = monarchism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		monarchism = 100
 	}
 }
 

@@ -929,4 +929,7 @@
  develop_nejd_oil_fields:0 "Develop Ghawar Oil Fields"
  develop_eastern_desert_oil_fields:0 "Develop Ras Gharib Oil Fields"
  develop_qatar_oil_fields:0 "Develop Dukhan Oil Fields"
+ develop_kazan_rubber_plantations:0 "Grow Rubber Root Plantations in Kyzyl Orda"
+ develop_akhtubisnk_rubber_plantations:0 "Grow Rubber Root Plantations in Akhtubinsk"
+ develop_urgench_rubber_plantations:0 "Grow Rubber Root Plantations in Urgench"
 

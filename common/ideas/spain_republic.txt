@@ -145,6 +145,15 @@ ideas = {
 				original_tag = SPR
 			}
 			
+			visible = {
+				OR = {
+					AND = {
+						NOT = { has_global_flag = scw_over }
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+					has_government = fascism
+				}
+			}
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = spr_franco_unavailable_tooltip

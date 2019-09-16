@@ -1,0 +1,25 @@
+
+state={
+	id=880
+	name="STATE_880"
+	manpower=734
+	state_category = tiny_island
+
+	history={
+		owner = FRA
+		add_core_of = TAH
+		buildings = {
+			infrastructure = 2
+			14299 = {
+				naval_base = 1
+			}
+			14301 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		14298 14299 14300 14301
+	}
+}

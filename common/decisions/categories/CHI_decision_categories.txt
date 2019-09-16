@@ -27,15 +27,15 @@ CHI_integrate_the_warlords = {
 	visible = {
 		tag = event_target:WTT_current_china_leader
 		OR = {
-			any_other_country = {
+			any_of_scopes = {
+				array = subjects
 				OR = {
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = SIK
+					tag = GX0
+					tag = YU5
+					tag = SH0
+					tag = XS0
+					tag = SI5
 				}
-				is_subject_of = ROOT
 			}
 		}
 	}
@@ -57,8 +57,8 @@ CHI_xian_incident = {
 		is_independent_china_or_warlord = yes
 		NOT = {
 			OR = {
-				tag = CHI
-				tag = PRC
+				original_tag = CHI
+				original_tag = PRC
 			}
 		}
 	}
@@ -92,10 +92,10 @@ CHI_seek_japanese_support = {
 	icon = jap_pacific_guardian
 	allowed = {
 		OR = {
-			tag = GXC
-			tag = YUN
-			tag = SHX
-			tag = XSM
+			original_tag = GXC
+			original_tag = YUN
+			original_tag = SHX
+			original_tag = XSM
 		}
 	}
 }

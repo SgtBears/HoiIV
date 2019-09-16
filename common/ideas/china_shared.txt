@@ -165,6 +165,14 @@ ideas = {
 			
 			picture = generic_army_europe_2 
 
+			visible = {
+				OR = {
+					has_focus_tree = china_nationalist_focus
+					has_focus_tree = china_communist_focus
+					has_focus_tree = manchukuo_focus
+				}
+				NOT = { has_global_flag = falkenhausen_recalled }
+			}
 			available = {
 				has_completed_focus = CHI_give_falkenhausen_citizenship
 				NOT = { has_global_flag = falkenhausen_recalled }
@@ -194,6 +202,14 @@ ideas = {
 			
 			picture = CHI_claire_chennault
 
+			visible = {
+				OR = {
+					has_focus_tree = china_nationalist_focus
+					has_focus_tree = china_communist_focus
+					has_focus_tree = manchukuo_focus
+				}
+				NOT = { has_completed_focus = CHI_collaboration_with_the_japanese }
+			}
 			available = {
 				has_completed_focus = CHI_hire_chennault
 				NOT = { has_idea = CHI_claire_lee_chennault_air_theorist }
@@ -237,6 +253,14 @@ ideas = {
 
 			picture = CHI_claire_chennault		
 			
+			visible = {
+				OR = {
+					has_focus_tree = china_nationalist_focus
+					has_focus_tree = china_communist_focus
+					has_focus_tree = manchukuo_focus
+				}
+				NOT = { has_completed_focus = CHI_collaboration_with_the_japanese }
+			}
 			available = {
 				has_completed_focus = CHI_hire_chennault
 				NOT = { has_idea = CHI_claire_lee_chennault_air_chief }
@@ -439,6 +463,14 @@ ideas = {
 				}
 			}
 			
+			visible = {
+				OR = {
+					has_focus_tree = china_nationalist_focus
+					has_focus_tree = china_communist_focus
+					has_focus_tree = manchukuo_focus
+				}
+				NOT = { has_completed_focus = CHI_rapprochement_with_soviet_union }
+			}
 			available = {
 				OR = {
 					has_completed_focus = CHI_chinese_panzers
@@ -488,6 +520,17 @@ ideas = {
 				}
 			}
 
+			visible = {
+				OR = {
+					has_focus_tree = china_nationalist_focus
+					has_focus_tree = china_communist_focus
+					has_focus_tree = manchukuo_focus
+				}
+				AND = {
+					NOT = { has_completed_focus = CHI_collaboration_with_the_japanese }
+					NOT = { has_completed_focus = CHI_reach_out_to_france }
+				}
+			}
 			allowed = {
 				has_DLC = "Waking the Tiger"
 				OR = {
@@ -515,6 +558,14 @@ ideas = {
 
 			picture = CHI_camco
 
+			visible = {
+				OR = {
+					has_focus_tree = china_nationalist_focus
+					has_focus_tree = china_communist_focus
+					has_focus_tree = manchukuo_focus
+				}
+				NOT = { has_completed_focus = CHI_reach_out_to_france }
+			}
 			available = {
 				if = {
 					limit = {
@@ -542,6 +593,10 @@ ideas = {
 					air_agility = 0.05
 					air_attack = 0.1
 				}
+				jet_fighter_equipment = {
+					air_agility = 0.05
+					air_attack = 0.1
+				}
 			}
 			
 			traits = { medium_aircraft_manufacturer }
@@ -559,6 +614,14 @@ ideas = {
 
 			cost = 50
 
+			visible = {
+				OR = {
+					has_focus_tree = china_nationalist_focus
+					has_focus_tree = china_communist_focus
+					has_focus_tree = manchukuo_focus
+				}
+				NOT = { has_completed_focus = CHI_reach_out_to_france }
+			}
 			available = {
 				has_completed_focus = CHI_local_bomber_production
 			}
@@ -576,7 +639,15 @@ ideas = {
 					air_agility = 0.05
 					air_attack = 0.1
 				}
+				jet_fighter_equipment = {
+					air_agility = 0.05
+					air_attack = 0.1
+				}
 				tac_bomber_equipment = {
+					air_range = 0.1
+					air_ground_attack = 0.1
+				}
+				jet_tac_bomber_equipment = {
 					air_range = 0.1
 					air_ground_attack = 0.1
 				}

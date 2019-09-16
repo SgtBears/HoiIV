@@ -18,11 +18,15 @@ state={
 			industrial_complex = 5
 		}
 		add_core_of = USA
+		add_core_of = MIS
 		victory_points = {
-			4569 10 
+			4569 9 
 		}
 		victory_points = {
-			10717 10 
+			10717 9
+		}
+		victory_points = {
+			1523 10 
 		}
 		victory_points = {
 			10370 1 

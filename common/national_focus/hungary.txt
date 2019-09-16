@@ -25,7 +25,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -63,7 +63,7 @@ focus_tree = {
 		x = 5
 		y = 0
 
-		cost = 10
+		cost = 69
 
 		ai_will_do = {
 			factor = 50
@@ -94,7 +94,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_balanced_budget
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -115,6 +115,8 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = HUN_hungarian_monarchy
 			set_party_name = { ideology = neutrality long_name = HUN_legitimists_party_long name = HUN_legitimists_party }
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = HUN_gusztav_gratz
 		}
 	}
 
@@ -126,7 +128,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_balanced_budget
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -167,7 +169,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_elect_a_king
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -227,16 +229,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_invite_the_habsburg_prince
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
 		}
 
 		available = {
-			NOT = { has_war_with = AUS }
+			NOT = { has_war_with = AU0 }
 			is_subject = no
-			AUS = {
+			AU0 = {
 				OR = {
 					exists = yes
 					is_subject = no
@@ -260,7 +262,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			AUS = { country_event = { id = DOD_hungary.1 } }
+			AU0 = { country_event = { id = DOD_hungary.1 } }
 		}
 	}
 
@@ -274,13 +276,13 @@ focus_tree = {
 		relative_position_id = HUN_invite_the_habsburg_prince
 		will_lead_to_war_with = AUS
 		will_lead_to_war_with = GER #if after Anschluss
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
 			modifier = {
 				factor = 0.5
-				AUS = { is_in_faction = yes }
+				AU0 = { is_in_faction = yes }
 			}
 		}
 
@@ -304,7 +306,7 @@ focus_tree = {
 				limit = {
 					owns_state = 4
 				}
-				HUN = {
+				ROOT = {
 					create_wargoal = {
 						type = take_state_focus
 						target = PREV
@@ -326,7 +328,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_invite_the_habsburg_prince
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -349,19 +351,18 @@ focus_tree = {
 
 		completion_reward = {
 			set_cosmetic_tag = HUN_EMPIRE
-			hidden_effect = { AUS = { set_cosmetic_tag = AUS_NOT_WHITE } }
-			152 = { add_core_of = ROOT }
-			153 = { add_core_of = ROOT }
-			4 = { add_core_of = ROOT }
-			69 = { add_core_of = ROOT }
-			9 = { add_core_of = ROOT }
-			75 = { add_core_of = ROOT }
-			74 = { add_core_of = ROOT }
-			72 = { add_core_of = ROOT }
-			70 = { add_core_of = ROOT }
-			664 = { add_core_of = ROOT }
-			71 = { add_core_of = ROOT }
-			73 = { add_core_of = ROOT }
+			hidden_effect = { AU0 = { set_cosmetic_tag = AUS_NOT_WHITE } }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = AU0
+						is_core_of = CZ0
+					}
+					NOT = { is_core_of = ROOT }
+				}
+				add_core_of = ROOT
+				remove_claim_by = ROOT
+			}
 			hidden_effect = {
 				news_event = { id = news.295 }
 			}
@@ -379,7 +380,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_invite_the_habsburg_prince
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -387,11 +388,11 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			country_exists = CZE
+			country_exists = CZ0
 		}
 
 		bypass = {
-			CZE = {
+			CZ0 = {
 				OR = {
 					exists = no
 					is_subject = yes
@@ -405,7 +406,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			CZE = { country_event = { id = DOD_hungary.10 } }
+			CZ0 = { country_event = { id = DOD_hungary.10 } }
 		}
 	}
 
@@ -419,7 +420,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = HUN_invite_the_habsburg_prince
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -427,7 +428,7 @@ focus_tree = {
 
 		available = {
 			has_army_manpower = { size > 200000 }
-			76 = { OWNER = { NOT = { is_in_faction_with = HUN } } }
+			76 = { OWNER = { NOT = { is_in_faction_with = ROOT } } }
 			is_subject = no
 		}
 
@@ -450,10 +451,10 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = {
-						has_war_with = ROM
+						has_war_with = RO0
 					}
 					threat < 0.5
-					ROM = {
+					RO0 = {
 						OR = {
 							owns_state = 76
 							owns_state = 83
@@ -462,12 +463,12 @@ focus_tree = {
 						}
 					}
 				}
-				ROM = { country_event = DOD_hungary.50 }
+				RO0 = { country_event = DOD_hungary.50 }
 			}
 			else = {
 				add_ai_strategy = {
 					type = conquer
-  					id = ROM
+  					id = RO0
   					value = 200
 				}
 			}	
@@ -482,7 +483,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = HUN_invite_the_habsburg_prince
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -490,16 +491,23 @@ focus_tree = {
 
 		available = {
 			has_army_manpower = { size > 250000 }
-			109 = { OWNER = { NOT = { is_in_faction_with = HUN } } }
+			109 = { OWNER = { NOT = { is_in_faction_with = ROOT } } }
 			is_subject = no
 		}
 
 		bypass = {
 			controls_state = 102
+			controls_state = 868
+			controls_state = 865
 			controls_state = 103
+			controls_state = 862
+			controls_state = 863
 			controls_state = 109
+			controls_state = 861
 			controls_state = 104
+			controls_state = 859
 			controls_state = 45
+			controls_state = 860
 			controls_state = 163
 		}
 
@@ -509,19 +517,26 @@ focus_tree = {
 
 		completion_reward = {
 			add_state_claim = 102
+			add_state_claim = 868
+			add_state_claim = 865
+			add_state_claim = 859
+			add_state_claim = 862
+			add_state_claim = 863
 			add_state_claim = 103
 			add_state_claim = 109
+			add_state_claim = 861
 			add_state_claim = 104
 			add_state_claim = 163
 			add_state_core = 764
 			add_state_core = 45
+			add_state_core = 860
 			if = {
 				limit = {
-					103 = { is_controlled_by = YUG }
+					103 = { is_controlled_by = YU0 }
 				}
 				add_ai_strategy = {
 					type = conquer
-  					id = YUG
+  					id = YU0
   					value = 200
 				}
 			}
@@ -536,7 +551,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = HUN_invite_the_habsburg_prince
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -544,7 +559,7 @@ focus_tree = {
 
 		available = {
 			has_army_manpower = { size > 300000 }
-			160 = { OWNER = { NOT = { is_in_faction_with = HUN } } }
+			160 = { OWNER = { NOT = { is_in_faction_with = ROOT } } }
 		}
 
 		bypass = {
@@ -552,6 +567,7 @@ focus_tree = {
 			controls_state = 736
 			controls_state = 160
 			controls_state = 39
+			controls_state = 831
 		}
 
 		cancel_if_invalid = yes
@@ -561,14 +577,29 @@ focus_tree = {
 		completion_reward = {
 			add_state_claim = 736
 			add_state_claim = 160
-			add_state_claim = 39
 			if = {
 				limit = {
-					160 = { is_controlled_by = ITA }
+					831 = {
+						NOT = { is_core_of = ROOT }
+					}
+				}
+				add_state_claim = 831
+			}
+			if = {
+				limit = {
+					39 = {
+						NOT = { is_core_of = ROOT }
+					}
+				}
+				add_state_claim = 39
+			}
+			if = {
+				limit = {
+					160 = { is_controlled_by = IT0 }
 				}
 				add_ai_strategy = {
 					type = conquer
-  					id = ITA
+  					id = IT0
   					value = 200
 				}
 			}
@@ -584,7 +615,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = HUN_invite_the_habsburg_prince
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -592,7 +623,7 @@ focus_tree = {
 
 		available = {
 			has_army_manpower = { size > 200000 }
-			89 = { OWNER = { NOT = { is_in_faction_with = HUN } } }
+			89 = { OWNER = { NOT = { is_in_faction_with = ROOT } } }
 			is_subject = no
 		}
 
@@ -614,7 +645,7 @@ focus_tree = {
 				limit = {
 					89 = {
 						OWNER = {
-							not = { is_guaranteed_by = GER }
+							not = { is_guaranteed_by = GE0 }
 						}
 					}
 				}
@@ -641,7 +672,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = HUN_invite_the_habsburg_prince
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -672,7 +703,7 @@ focus_tree = {
 		y = 7
 		relative_position_id = HUN_invite_the_habsburg_prince
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -728,7 +759,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_elect_a_king
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -755,7 +786,7 @@ focus_tree = {
 			unlock_decision_tooltip = HUN_call_in_sweden
 			add_ideas = HUN_charles_v
 			add_relation_modifier = {
-				target = SWE
+				target = SW0
 				modifier = HUN_dynastic_ties_license
 			}
 			hidden_effect = {
@@ -763,27 +794,31 @@ focus_tree = {
 			}
 			add_ai_strategy = {
 				type = befriend
-				id = "SWE"
+				id = SW0
 				value = 200
 			}
 			add_ai_strategy = {
 				type = support
-				id = "SWE"
+				id = SW0
 				value = 200
 			}
-			SWE = {
+			SW0 = {
 				add_ai_strategy = {
 					type = befriend
-					id = "HUN"
+					id = HU5
 					value = 200
 				}
 				add_ai_strategy = {
 					type = support
-					id = "HUN"
+					id = HU5
 					value = 200
 				}
 			}
 			set_cosmetic_tag = HUN_MONARCHY
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = HUN_jozsef_szell
+			custom_effect_tooltip = remove_political_advisor
+			show_ideas_tooltip = HUN_gusztav_gratz
 		}
 	}
 
@@ -795,7 +830,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_elect_a_democratic_king
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -815,7 +850,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_politics = { ruling_party = democratic }
-			hold_election = HUN
+			hold_election = ROOT
 
 			swap_ideas = {
 				add_idea = HUN_his_majestys_government
@@ -832,7 +867,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_elect_a_democratic_king
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -846,13 +881,13 @@ focus_tree = {
 			OR = {
 				NOT = { has_idea = HUN_treaty_of_triannon }
 				AND = {
-					ROM = {
+					RO0 = {
 						OR = {
 							exists = no
 							is_puppet = yes
 						}
 					}
-					FRA = {
+					FR0 = {
 						OR = {
 							exists = no
 							is_puppet = yes
@@ -870,24 +905,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					FRA = { 
+					FR0 = { 
 						exists = yes
 						is_subject = no
 						has_completed_focus = FRA_little_entente 
 					}
 				}
-				FRA = { country_event = { id = DOD_hungary.30 } }
+				FR0 = { country_event = { id = DOD_hungary.30 } }
 			}
 			if = {
 				limit = {
-					country_exists = ROM
+					country_exists = RO0
 					OR = {
-						FRA = { NOT = { has_completed_focus = FRA_little_entente } }
-						FRA = { exists = no }
-						FRA = { is_subject = yes }
+						FR0 = { NOT = { has_completed_focus = FRA_little_entente } }
+						FR0 = { exists = no }
+						FR0 = { is_subject = yes }
 					}
 				}
-				ROM = { country_event = { id = DOD_hungary.30 } }
+				RO0 = { country_event = { id = DOD_hungary.30 } }
 			}
 			
 		}
@@ -902,28 +937,28 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_elect_a_democratic_king
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
 			modifier = {
 				factor = 0
-					ENG = { has_capitulated = yes }
+					EN0 = { has_capitulated = yes }
 			}
 			modifier = {
 				factor = 0.2
-					ENG = { surrender_progress > 0.2 }
+					EN0 = { surrender_progress > 0.2 }
 			}
 		}
 
 		available = {
 			is_in_faction = no
 			is_subject = no
-			ENG = {
+			EN0 = {
 				exists = yes
 				is_puppet = no
 				NOT = {
-					has_war_with = HUN
+					has_war_with = ROOT
 				}
 			}
 			any_other_country = {
@@ -933,8 +968,8 @@ focus_tree = {
 			}
 			NOT = {
 				any_other_country = {
-					is_in_faction_with = ENG
-					has_war_with = HUN	
+					is_in_faction_with = EN0
+					has_war_with = ROOT
 				}
 			}
 		}
@@ -950,13 +985,13 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					ENG = {
+					EN0 = {
 						has_government = democratic
 						is_faction_leader = yes
 						not = { has_war_with = ROOT }
 					}
 				}
-				ENG = { country_event = generic.2 }
+				EN0 = { country_event = generic.2 }
 			}
 			else = {
 				get_best_alliance_match_democratic_effect = yes
@@ -976,7 +1011,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_elect_a_democratic_king
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -995,7 +1030,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes } 
+			set_rule = { can_create_factions = yes }
 			create_faction = HUN_BALKAN_FACTION
 		}
 	}
@@ -1008,14 +1043,14 @@ focus_tree = {
 		y = 4
 		relative_position_id = HUN_elect_a_democratic_king
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
 		}
 
 		available = {
-			ROM = {
+			RO0 = {
 				is_in_faction = no
 			}
 		}
@@ -1031,7 +1066,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			ROM = { country_event = generic.5 }
+			RO0 = { country_event = generic.5 }
 		}
 	}
 
@@ -1043,15 +1078,15 @@ focus_tree = {
 		y = 4
 		relative_position_id = HUN_elect_a_democratic_king
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
 		}
 
 		available = {
-			is_in_faction_with = ENG
-			ENG = {
+			is_in_faction_with = EN0
+			EN0 = {
 				is_faction_leader = yes
 				has_government = democratic
 			}
@@ -1069,7 +1104,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_tech_sharing_group = HUN_joint_oil_exploitation_company_tech_group
-			ENG = { add_to_tech_sharing_group = HUN_joint_oil_exploitation_company_tech_group }
+			EN0 = { add_to_tech_sharing_group = HUN_joint_oil_exploitation_company_tech_group }
 		}
 	}
 
@@ -1088,7 +1123,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_elect_a_king
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -1158,6 +1193,10 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = HUN_gyula_gombos_de_jakfa
+			custom_effect_tooltip = remove_political_advisor
+			show_ideas_tooltip = HUN_gusztav_gratz
 			hidden_effect = {
 				news_event = { id = news.297 }
 			}
@@ -1175,7 +1214,7 @@ focus_tree = {
 		x = 15
 		y = 0
 
-		cost = 10
+		cost = 69
 
 		ai_will_do = {
 			factor = 100
@@ -1215,7 +1254,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_economic_intervention
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -1252,6 +1291,8 @@ focus_tree = {
 					id = 503 #Horthy fascist
 				}
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = HUN_gyula_gombos_de_jakfa
 		}
 	}
 
@@ -1263,7 +1304,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_strengthen_fascists
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -1295,24 +1336,24 @@ focus_tree = {
 			add_threat = 1
 			if = {
 				limit = { 
-					FRA = { 
+					FR0 = { 
 						has_completed_focus = FRA_little_entente 
 						exists = yes
 						is_subject = no
 					} 
 
 				}
-				FRA = { country_event = { id = DOD_hungary.40 } }
+				FR0 = { country_event = { id = DOD_hungary.40 } }
 			}
 			if = {
 				limit = { 
 					OR = {
-						NOT = { FRA = { has_completed_focus = FRA_little_entente } } 
-						FRA = { exists = no }
-						FRA = { is_subject = yes }
+						NOT = { FR0 = { has_completed_focus = FRA_little_entente } } 
+						FR0 = { exists = no }
+						FR0 = { is_subject = yes }
 					}
 				} #Romania gets the event if France not engaged in Balkans
-				ROM = { country_event = { id = DOD_hungary.40 } }	 
+				RO0 = { country_event = { id = DOD_hungary.40 } }	 
 			}
 			
 			#make Horthy or King dude leader. depending on focus picked earlier
@@ -1376,7 +1417,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -1387,16 +1428,16 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_war_with = ITA }
-			NOT = { has_war_with = AUS }
-			ITA = {
-				NOT = { has_war_with = AUS }
+			NOT = { has_war_with = IT0 }
+			NOT = { has_war_with = AU0 }
+			IT0 = {
+				NOT = { has_war_with = AU0 }
 				OR = {
 					has_government = neutrality
 					has_government = fascism
 				}
 			}
-			AUS = {
+			AU0 = {
 				OR = {
 					has_government = neutrality
 					has_government = fascism
@@ -1408,7 +1449,7 @@ focus_tree = {
 
 		}
 		historical_ai = {
-			GER = {
+			GE0 = {
 				OR = {
 					exists = no
 					NOT = {
@@ -1430,19 +1471,21 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					country_exists = AUS
+					country_exists = AU0
 				}
-				reverse_add_opinion_modifier = { target = AUS modifier = HUN_renew_the_rome_protocols }
-				add_opinion_modifier = { target = AUS modifier = HUN_renew_the_rome_protocols }
+				reverse_add_opinion_modifier = { target = AU0 modifier = HUN_renew_the_rome_protocols }
+				add_opinion_modifier = { target = AU0 modifier = HUN_renew_the_rome_protocols }
 			}
 			if = {
 				limit = {
-					country_exists = ITA
+					country_exists = IT0
 				}
-				reverse_add_opinion_modifier = { target = ITA modifier = HUN_renew_the_rome_protocols }
-				add_opinion_modifier = { target = ITA modifier = HUN_renew_the_rome_protocols }
+				reverse_add_opinion_modifier = { target = IT0 modifier = HUN_renew_the_rome_protocols }
+				add_opinion_modifier = { target = IT0 modifier = HUN_renew_the_rome_protocols }
 			}
-			news_event = { id = news.312 }
+			hidden_effect = {
+				news_event = { id = news.312 }
+			}
 		}
 	}
 
@@ -1454,7 +1497,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -1466,13 +1509,13 @@ focus_tree = {
 
 		bypass = {
 			4 = {
-				NOT = { is_owned_by = AUS }
+				NOT = { is_owned_by = AU0 }
 			}
 			152 = {
-				NOT = { is_owned_by = AUS }
+				NOT = { is_owned_by = AU0 }
 			}
 			153 = {
-				NOT = { is_owned_by = AUS }
+				NOT = { is_owned_by = AU0 }
 			}
 		}
 
@@ -1484,7 +1527,7 @@ focus_tree = {
 
 		completion_reward = {
 			#This modifies the AI change in germany.4 Aschluss event
-			give_guarantee = AUS
+			give_guarantee = AU0
 		}
 	}
 
@@ -1496,17 +1539,17 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
 		}
 
 		available = {
-			NOT = { has_war_with = ITA }
+			NOT = { has_war_with = IT0 }
 			is_subject = no
 			is_in_faction = no
-			ITA = {
+			IT0 = {
 				OR = {
 					is_in_faction = no
 					is_faction_leader = yes
@@ -1528,24 +1571,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					ITA = { is_in_faction = no }
+					IT0 = { is_in_faction = no }
 				}
-				HUN = {
-					set_rule = { can_create_factions = yes }
+				ROOT = {
+					set_rule = { can_create_factions = yes } 
 					create_faction = HUN_PACT_OF_ROME_FACTION
-					ITA = { 
+					IT0 = { 
 						country_event = generic.5 
 						add_ai_strategy = {
 							type = alliance
-							id = "HUN"
+							id = HU5
 							value = 200
 						}
 					}
 					if = {
 						limit = {
-							country_exists = AUS
+							country_exists = AU0
 						}
-						AUS = {
+						AU0 = {
 							country_event = generic.5
 						}
 					}
@@ -1553,17 +1596,17 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					ITA = { is_faction_leader = yes }
+					IT0 = { is_faction_leader = yes }
 				}
-				ITA = {
+				IT0 = {
 					country_event = generic.2
 				}
 			}
 			if = {
 				limit = {
-					ITA = { is_in_faction_with = FRA }
+					IT0 = { is_in_faction_with = FR0 }
 				}
-				FRA = {
+				FR0 = {
 					country_event = generic.2
 				}
 			}
@@ -1583,17 +1626,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 		available = {
-			NOT = { GER = { has_government = communism } }
+			NOT = { GE0 = { has_government = communism } }
 		}
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
 		}
 
 		available = {
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = GE0 }
 		}
 
 		bypass = {
@@ -1607,8 +1650,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
-			reverse_add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
+			add_opinion_modifier = { target = GE0 modifier = HUN_trade_deal_with_germany }
+			reverse_add_opinion_modifier = { target = GE0 modifier = HUN_trade_deal_with_germany }
 			swap_ideas = {
 				add_idea = HUN_interventionism_2
 				remove_idea = HUN_interventionism
@@ -1624,7 +1667,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -1662,31 +1705,31 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
 			modifier = {
 				factor = 0
-					GER = { has_capitulated = yes }
+					GE0 = { has_capitulated = yes }
 			}
 			modifier = {
-				GER = { surrender_progress > 0.25 }
+				GE0 = { surrender_progress > 0.25 }
 				factor = 0.1
 			}
 		}
 
 		available = {
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = GE0 }
 			is_subject = no
 			is_in_faction = no
 			NOT = {
 				any_other_country = {
-					is_in_faction_with = GER
-					has_war_with = HUN	
+					is_in_faction_with = GE0
+					has_war_with = ROOT
 				}
 			}
-			GER = {
+			GE0 = {
 				is_faction_leader = yes
 				has_government = fascism
 				is_subject = no
@@ -1695,8 +1738,8 @@ focus_tree = {
 
 		bypass = {
 			AND = { 
-				is_in_faction_with = GER
-				GER = {
+				is_in_faction_with = GE0
+				GE0 = {
 					is_faction_leader = yes
 					has_government = fascism
 				}
@@ -1710,7 +1753,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			GER = {
+			GE0 = {
 				country_event = generic.2
 			}
 		}
@@ -1724,17 +1767,17 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
 			modifier = {
 				factor = 0.25
 				OR = {
-					YUG = {
+					YU0 = {
 						is_in_faction = yes
 					}
-					ROM = {
+					RO0 = {
 						is_in_faction = yes 
 					}					
 				}
@@ -1744,9 +1787,9 @@ focus_tree = {
 				is_in_faction = yes
 				NOT = {
 					OR = {
-						is_in_faction_with = GER
-						is_in_faction_with = ROM
-						is_in_faction_with = YUG
+						is_in_faction_with = GE0
+						is_in_faction_with = RO0
+						is_in_faction_with = YU0
 					}
 				}
 			}
@@ -1772,6 +1815,7 @@ focus_tree = {
 			add_state_core = 84
 			add_state_core = 664
 			add_state_core = 45
+			add_state_core = 860
 			add_state_core = 764
 			add_state_claim = 82
 		}
@@ -1785,7 +1829,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_reaffirm_territorial_claims
 		will_lead_to_war_with = ROM
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -1793,19 +1837,19 @@ focus_tree = {
 
 		available = {
 
-			ROM = {
+			RO0 = {
 				controls_state = 76
 				controls_state = 83
 				controls_state = 84
 			}
 			is_puppet = no
 			NOT = {
-				is_in_faction_with = ROM
+				is_in_faction_with = RO0
 			}
 			NOT = {
-				has_war_with = ROM
+				has_war_with = RO0
 			}
-			strength_ratio = { tag = ROM ratio > 0.66 }
+			strength_ratio = { tag = RO0 ratio > 0.66 }
 			has_army_manpower = { size > 200000 }
 		
 		}
@@ -1818,7 +1862,7 @@ focus_tree = {
 					}
 				}
 				NOT = {
-					ROM = {
+					RO0 = {
 						controls_state = 76
 						controls_state = 83
 						controls_state = 84
@@ -1835,7 +1879,7 @@ focus_tree = {
 
 		completion_reward = {	
 			custom_effect_tooltip = HUN_demands_tt		
-			ROM = { country_event = { id = DOD_hungary.50 } }
+			RO0 = { country_event = { id = DOD_hungary.50 } }
 			hidden_effect = {
 				news_event = { id = news.300 }
 			}
@@ -1851,7 +1895,7 @@ focus_tree = {
 		relative_position_id = HUN_reaffirm_territorial_claims
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = SLO
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -1861,17 +1905,17 @@ focus_tree = {
 			
 			if = {
 				limit = { 
-					country_exists = CZE 
-					664 = { is_owned_by = CZE }
+					country_exists = CZ0 
+					664 = { is_owned_by = CZ0 }
 				}
-				strength_ratio = { tag = CZE ratio > 0.75 }
+				strength_ratio = { tag = CZ0 ratio > 0.75 }
 			}
 			if = {
 				limit = { 
-					country_exists = SLO 
-					664 = { is_owned_by = SLO }
+					country_exists = SL0
+					664 = { is_owned_by = SL0 }
 				}
-				strength_ratio = { tag = SLO ratio > 0.75 }
+				strength_ratio = { tag = SL0 ratio > 0.75 }
 			}
 				
 			
@@ -1887,8 +1931,8 @@ focus_tree = {
 					}
 				}
 				AND = {
-					NOT = { CZE = { owns_state = 664 } }
-					NOT = { SLO = { owns_state = 664 } }
+					NOT = { CZ0 = { owns_state = 664 } }
+					NOT = { SL0 = { owns_state = 664 } }
 				}
 			}
 		}
@@ -1903,43 +1947,43 @@ focus_tree = {
 			custom_effect_tooltip = HUN_demands_tt
 			if = {
 				limit = {
-					CZE = {
+					CZ0 = {
 						exists = yes 
 						owns_state = 664
 					}
 				}
 				if = {
 					limit = {
-						CZE = { is_subject = yes }
+						CZ0 = { is_subject = yes }
 					}
 					create_wargoal = {
 						type = take_state_focus
-						target = CZE
+						target = CZ0
 						generator = { 664 }
 					}
 					else = {
-						CZE = { country_event = DOD_hungary.80 }
+						CZ0 = { country_event = DOD_hungary.80 }
 					}
 				}
 			}
 			if = {
 				limit = {
-					664 = { is_owned_by = POL } #exchanged Danzig for Slovakia
+					664 = { is_owned_by = PO0 } #exchanged Danzig for Slovakia
 				}
 				create_wargoal = {
 					type = take_state_focus
-					target = POL
+					target = PO0
 					generator = { 664 }
 				}
 			}
 			if = {
 				limit = {
-					SLO = { 
+					SL0 = { 
 						exists = yes 
 						owns_state = 664
 					}
 				}
-				SLO = { country_event = DOD_hungary.80 }
+				SL0 = { country_event = DOD_hungary.80 }
 			}
 			
 		}
@@ -1954,31 +1998,48 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_reaffirm_territorial_claims
 		will_lead_to_war_with = YUG
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
 		}
 
 		available = {
-			strength_ratio = { tag = YUG ratio > 0.75 }
+			strength_ratio = { tag = YU0 ratio > 0.75 }
 			has_army_manpower = { size > 175000 }
 		}
 
 		bypass = {
 			OR = {
-				YUG = {
+				YU0 = {
 					exists = no
 				}
-				owns_state = 45
-				45 = {
-					OWNER = {
-						is_in_faction_with = ROOT
+				AND = {
+					owns_state = 45
+					owns_state = 860
+				}
+				AND = {
+					45 = {
+						OWNER = {
+							is_in_faction_with = ROOT
+						}
+					}
+					860 = {
+						OWNER = {
+							is_in_faction_with = ROOT
+						}
 					}
 				}
-				45 = {
-					OWNER = {
-						has_war_with = ROOT
+				AND = {
+					45 = {
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+					860 = {
+						OWNER = {
+							has_war_with = ROOT
+						}
 					}
 				}
 			}
@@ -1995,34 +2056,44 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = {
-						has_war_with = YUG
-						45 = {
-							NOT = {
-								is_owned_by = YUG
+						has_war_with = YU0
+						AND = {
+							45 = {
+								NOT = {
+									is_owned_by = YU0
+								}
+							}
+							860 = {
+								NOT = {
+									is_owned_by = YU0
+								}
 							}
 						}
 					}
 				}
-				45 = { add_core_of = HUN }
+				45 = { add_core_of = ROOT }
+				860 = { add_core_of = ROOT }
 				else = {
 					if = {
 						limit = {
-							YUG = { 
+							YU0 = { 
 								is_subject = yes 
 								owns_state = 45
+								owns_state = 860
 							}
 						}
 						create_wargoal = {
 							type = take_state_focus
-							target = YUG
-							generator = { 45 }
+							target = YU0
+							generator = { 45 860 }
 						}
 						else = {
 							if = {
 								limit = {
-									45 = { is_owned_by = YUG }
+									45 = { is_owned_by = YU0 }
+									860 = { is_owned_by = YU0 }
 								}
-								YUG = { country_event = DOD_hungary.90 }
+								YU0 = { country_event = DOD_hungary.90 }
 							}
 						}
 					}
@@ -2042,7 +2113,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_reaffirm_territorial_claims
 		will_lead_to_war_with = SLO
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -2050,9 +2121,9 @@ focus_tree = {
 
 		available = {
 			OR = {
-				SLO = {
+				SL0 = {
 					exists = yes
-					NOT = { is_puppet_of = HUN }
+					NOT = { is_puppet_of = ROOT }
 				}
 				any_other_country = {
 					owns_state = 70
@@ -2060,22 +2131,22 @@ focus_tree = {
 					owns_state = 72
 					owns_state = 73
 					NOT = {
-						has_war_with = HUN
+						has_war_with = ROOT
 					}
 				}
 			}
 			if = {
-				limit = { country_exists = SLO }
-				strength_ratio = { tag = SLO ratio > 0.75 }
-				NOT = { has_war_with = SLO }
+				limit = { country_exists = SL0 }
+				strength_ratio = { tag = SL0 ratio > 0.75 }
+				NOT = { has_war_with = SL0 }
 			}
 			has_army_manpower = { size > 175000 }
 		}
 
 		bypass = {
 			OR = {
-				SLO = {
-					is_subject_of = HUN
+				SL0 = {
+					is_subject_of = ROOT
 				}
 				AND = {
 					owns_state = 70
@@ -2103,7 +2174,7 @@ focus_tree = {
 							}
 						}
 					}
-					SLO = { exists = no } 
+					SL0 = { exists = no } 
 					any_other_country = {
 						NOT = {
 							owns_state = 70
@@ -2121,7 +2192,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					SLO = {
+					SL0 = {
 						exists = yes
 						is_puppet = no
 						NOT = {
@@ -2129,11 +2200,11 @@ focus_tree = {
 						}
 					}
 				}
-				SLO = { country_event = DOD_hungary.107 }
+				SL0 = { country_event = DOD_hungary.107 }
 			}
 			if = {
 				limit = {
-					SLO = {
+					SL0 = {
 						exists = yes
 						is_puppet = yes
 						NOT = {
@@ -2141,7 +2212,7 @@ focus_tree = {
 						}
 					}
 				}
-				SLO = { OVERLORD = { country_event = DOD_hungary.107 } }
+				SL0 = { OVERLORD = { country_event = DOD_hungary.107 } }
 			}
 			hidden_effect = {
 				news_event = { id = news.309 }
@@ -2157,7 +2228,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_reaffirm_territorial_claims
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -2172,6 +2243,7 @@ focus_tree = {
 				owns_state = 83
 				owns_state = 82
 				owns_state = 45
+				owns_state = 860
 			}
 			NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }
 		}
@@ -2210,7 +2282,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -2235,6 +2307,8 @@ focus_tree = {
 				add_idea = HUN_interventionism_communism
 				remove_idea = HUN_interventionism
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = HUN_laszlo_rajk
 		}
 	}
 
@@ -2247,7 +2321,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_council_of_peoples_commissars }
 		relative_position_id = HUN_council_of_peoples_commissars
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -2277,7 +2351,9 @@ focus_tree = {
 				ruling_party = communism
 				elections_allowed = no
 			}
-			news_event = { id = news.314 }
+			hidden_effect = {
+				news_event = { id = news.314 }
+			}
 		}
 	}
 
@@ -2289,7 +2365,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_council_of_peoples_commissars
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -2324,7 +2400,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_council_of_peoples_commissars
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -2346,7 +2422,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group
-			SOV = { add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group }
+			SO0 = { add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group }
 		}
 	}
 
@@ -2359,18 +2435,18 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_council_of_peoples_commissars
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
 			modifier = {
 				factor = 0
-					SOV = { has_capitulated = yes }
+					SO0 = { has_capitulated = yes }
 			}
 		}
 
 		available = {
-			NOT = { has_war_with = SOV }
+			NOT = { has_war_with = SO0 }
 			any_other_country = {
 				is_major = yes
 				has_government = communism
@@ -2379,12 +2455,12 @@ focus_tree = {
 			is_in_faction = no
 			NOT = {
 				any_other_country = {
-					is_in_faction_with = SOV
-					has_war_with = HUN	
+					is_in_faction_with = SO0
+					has_war_with = ROOT	
 				}
 			}
 			is_subject = no
-			SOV = { is_faction_leader = yes }
+			SO0 = { is_faction_leader = yes }
 			communism > 0.5
 		}
 
@@ -2399,17 +2475,17 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					SOV = {
+					SO0 = {
 						has_government = communism
 						is_faction_leader = yes
 					}
 				}
-				SOV = {
+				SO0 = {
 					country_event = generic.2
 				}
 				if = {
 					limit = {
-						SOV = {
+						SO0 = {
 							NOT = {
 								has_completed_focus = SOV_great_purge
 							}
@@ -2445,7 +2521,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_assassinate_horthy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -2478,24 +2554,24 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_council_of_peoples_commissars
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
 		}
 
 		available = {
-			ROM = { 
+			RO0 = { 
 				exists = yes 
-				NOT = { is_in_faction_with = SOV }
-				NOT = { has_war_with = SOV }
+				NOT = { is_in_faction_with = SO0 }
+				NOT = { has_war_with = SO0 }
 				OR = {
 					owns_state = 76
 					owns_state = 78
 				}
 			}
-			NOT = { has_war_with = SOV }
-			SOV = { 
+			NOT = { has_war_with = SO0 }
+			SO0 = { 
 				is_faction_leader = yes 
 				exists = yes
 				is_subject = no
@@ -2511,7 +2587,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			SOV = { country_event = DOD_hungary.110 }
+			SO0 = { country_event = DOD_hungary.110 }
 		}
 	}
 
@@ -2523,17 +2599,17 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_council_of_peoples_commissars
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
 		}
 
 		available = {
-			CZE = { exists = yes }
-			NOT = { has_war_with = SOV }
-			CZE = { NOT = { is_in_faction_with = SOV } }
-			SOV = { is_faction_leader = yes }
+			CZ0 = { exists = yes }
+			NOT = { has_war_with = SO0 }
+			CZ0 = { NOT = { is_in_faction_with = SO0 } }
+			SO0 = { is_faction_leader = yes }
 		}
 
 		bypass = {
@@ -2545,7 +2621,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			SOV = { country_event = DOD_hungary.120 }
+			SO0 = { country_event = DOD_hungary.120 }
 		}
 	}
 
@@ -2559,7 +2635,7 @@ focus_tree = {
 		x = 22
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -2595,7 +2671,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_industrial_revitalization
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -2645,12 +2721,46 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { country_exists = AUS }
-				reverse_add_opinion_modifier = { target = AUS modifier = HUN_reintegrate_the_railroads }
+				limit = { AU0 = { owns_state = 4 } }
+				4 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				reverse_add_opinion_modifier = { target = AU0 modifier = HUN_reintegrate_the_railroads }
 			}
 			if = {
-				limit = { country_exists = CZE }
-				reverse_add_opinion_modifier = { target = CZE modifier = HUN_reintegrate_the_railroads }
+				limit = { ROOT = { owns_state = 4 } }
+				4 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { CZ0 = { owns_state = 664 } }
+				664 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				reverse_add_opinion_modifier = { target = CZ0 modifier = HUN_reintegrate_the_railroads }
+			}
+			if = {
+				limit = { ROOT = { owns_state = 664 } }
+				664 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 		}
 
@@ -2686,7 +2796,7 @@ focus_tree = {
 				set_state_flag = HUN_reintegrate_the_railroads_Inf_2
 			}
 			random_owned_controlled_state = {
-				prioritize = { 664 }
+				prioritize = { 154 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -2701,12 +2811,46 @@ focus_tree = {
 				set_state_flag = HUN_reintegrate_the_railroads_Inf_3
 			}
 			if = {
-				limit = { country_exists = AUS }
-				reverse_add_opinion_modifier = { target = AUS modifier = HUN_reintegrate_the_railroads }
+				limit = { AU0 = { owns_state = 4 } }
+				4 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				reverse_add_opinion_modifier = { target = AU0 modifier = HUN_reintegrate_the_railroads }
 			}
 			if = {
-				limit = { country_exists = CZE }
-				reverse_add_opinion_modifier = { target = CZE modifier = HUN_reintegrate_the_railroads }
+				limit = { ROOT = { owns_state = 4 } }
+				4 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { CZ0 = { owns_state = 664 } }
+				664 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				reverse_add_opinion_modifier = { target = CZ0 modifier = HUN_reintegrate_the_railroads }
+			}
+			if = {
+				limit = { ROOT = { owns_state = 664 } }
+				664 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 		}
 	}
@@ -2719,7 +2863,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_industrial_revitalization
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -2778,7 +2922,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = HUN_industrial_revitalization
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -2822,7 +2966,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = HUN_industrial_revitalization
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -2854,7 +2998,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = HUN_industrial_revitalization
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -2895,7 +3039,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -2957,7 +3101,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -2988,7 +3132,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -3058,7 +3202,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -3095,7 +3239,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
@@ -3131,7 +3275,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -3220,7 +3364,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_domestic_arms_industry
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -3251,7 +3395,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_domestic_arms_industry
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -3316,7 +3460,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_announce_the_gyor_program
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -3352,7 +3496,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_announce_the_gyor_program
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -3419,7 +3563,7 @@ focus_tree = {
 		x = 33
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -3450,7 +3594,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -3481,7 +3625,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -3517,7 +3661,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -3535,13 +3679,13 @@ focus_tree = {
 				}
 				has_idea = HUN_treaty_of_triannon_3
 				AND = {
-					ROM = {
+					RO0 = {
 						OR = {
 							exists = no
 							is_puppet = yes
 						}
 					}
-					FRA = {
+					FR0 = {
 						OR = {
 							exists = no
 							is_puppet = yes
@@ -3558,15 +3702,15 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					FRA = { has_completed_focus = FRA_little_entente }
+					FR0 = { has_completed_focus = FRA_little_entente }
 				}
-				FRA = { country_event = DOD_hungary.140 }
+				FR0 = { country_event = DOD_hungary.140 }
 			}
 			if = {
 				limit = {
-					NOT = { FRA = { has_completed_focus = FRA_little_entente } }
+					NOT = { FR0 = { has_completed_focus = FRA_little_entente } }
 				}
-				ROM = { country_event = DOD_hungary.140 }
+				RO0 = { country_event = DOD_hungary.140 }
 			}
 		}
 	}
@@ -3583,7 +3727,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -3623,7 +3767,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = HUN_establish_the_air_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -3655,7 +3799,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_indigenous_designs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -3695,7 +3839,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_indigenous_designs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -3736,7 +3880,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_indigenous_designs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -3776,7 +3920,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_indigenous_designs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -3815,7 +3959,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = HUN_establish_the_air_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -3846,7 +3990,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_license_foreign_designs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -3858,7 +4002,7 @@ focus_tree = {
 				has_tech = heavy_fighter3
 			}
 			OR = {
-				GER = {
+				GE0 = {
 					custom_trigger_tooltip = {
 						tooltip = fighter_tt
 						OR = {
@@ -3867,7 +4011,7 @@ focus_tree = {
 						}
 					}
 				}
-				FRA = {
+				FR0 = {
 					custom_trigger_tooltip = {
 						tooltip = fighter_tt
 						OR = {
@@ -3876,7 +4020,7 @@ focus_tree = {
 						}
 					}
 				}
-				ITA = {
+				IT0 = {
 					custom_trigger_tooltip = {
 						tooltip = fighter_tt
 						OR = {
@@ -3885,7 +4029,7 @@ focus_tree = {
 						}
 					}
 				}
-				ENG = {
+				EN0 = {
 					custom_trigger_tooltip = {
 						tooltip = fighter_tt
 						OR = {
@@ -3894,7 +4038,7 @@ focus_tree = {
 						}
 					}
 				}
-				USA = {
+				US0 = {
 					custom_trigger_tooltip = {
 						tooltip = fighter_tt
 						OR = {
@@ -3927,7 +4071,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_license_foreign_designs
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -3939,7 +4083,7 @@ focus_tree = {
 				has_tech = tactical_bomber3
 			}
 			OR = {
-				GER = {
+				GE0 = {
 					custom_trigger_tooltip = {
 						tooltip = bomber_tt
 						OR = {
@@ -3948,7 +4092,7 @@ focus_tree = {
 						}
 					}
 				}
-				FRA = {
+				FR0 = {
 					custom_trigger_tooltip = {
 						tooltip = bomber_tt
 						OR = {
@@ -3957,7 +4101,7 @@ focus_tree = {
 						}
 					}
 				}
-				ITA = {
+				IT0 = {
 					custom_trigger_tooltip = {
 						tooltip = bomber_tt
 						OR = {
@@ -3966,7 +4110,7 @@ focus_tree = {
 						}
 					}
 				}
-				ENG = {
+				EN0 = {
 					custom_trigger_tooltip = {
 						tooltip = bomber_tt
 						OR = {
@@ -3975,7 +4119,7 @@ focus_tree = {
 						}
 					}
 				}
-				USA = {
+				US0 = {
 					custom_trigger_tooltip = {
 						tooltip = bomber_tt
 						OR = {
@@ -4010,7 +4154,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = HUN_establish_the_air_force
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -4032,7 +4176,7 @@ focus_tree = {
 			add_to_tech_sharing_group = HUN_joint_air_development_group
 			every_other_country = {
 				limit = {
-					is_in_faction_with = HUN
+					is_in_faction_with = ROOT
 				}
 				add_to_tech_sharing_group = HUN_joint_air_development_group
 			}
@@ -4051,7 +4195,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_bled_agreement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -4093,7 +4237,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_army_maneuvers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -4129,7 +4273,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_mobile_focus
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -4165,7 +4309,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = HUN_mobile_focus
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -4203,7 +4347,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_mobile_focus
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -4240,7 +4384,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_mobile_focus
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -4271,7 +4415,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_mobile_focus
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -4293,7 +4437,7 @@ focus_tree = {
 			add_to_tech_sharing_group = HUN_joint_tank_development_group
 			every_other_country = {
 				limit = {
-					is_in_faction_with = HUN
+					is_in_faction_with = ROOT
 				}
 				add_to_tech_sharing_group = HUN_joint_tank_development_group
 			}
@@ -4309,7 +4453,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_the_botond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -4345,7 +4489,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_the_botond
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -4386,7 +4530,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_army_maneuvers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -4422,7 +4566,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_home_defense
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -4458,7 +4602,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_home_defense
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -4494,7 +4638,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_home_defense
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -4566,7 +4710,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					create_unit = {
 						division = "name = \"1. Light Division\" division_template = \"Light Division\" start_experience_factor = 1.0" 
-						owner = HUN
+						owner = ROOT
 					}
 				}
 			}
@@ -4582,7 +4726,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_home_defense
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -4622,7 +4766,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -4630,7 +4774,7 @@ focus_tree = {
 
 		available = {
 			any_state = {
-				is_controlled_by = HUN
+				is_controlled_by = ROOT
 				is_coastal = yes
 			}
 		}
@@ -4660,7 +4804,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_naval_warfare
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -4697,7 +4841,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_naval_warfare
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -4737,7 +4881,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_naval_warfare
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -4775,7 +4919,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_naval_warfare
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -4812,7 +4956,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = HUN_naval_warfare
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -4850,7 +4994,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_naval_warfare
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -4888,7 +5032,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = HUN_naval_warfare
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50

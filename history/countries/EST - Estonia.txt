@@ -125,6 +125,12 @@ set_popularities = {
 }
 
 1939.1.1 = {
+	set_popularities = {
+		democratic = 20
+		fascism = 15
+		communism = 5
+		neutrality = 60
+	}
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1938.2.25"

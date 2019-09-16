@@ -1,0 +1,37 @@
+state={
+	id=850
+	name="STATE_850"
+	resources={
+		steel=13 # was: 24.000
+	}
+	
+	state_category = metropolis
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 9
+			arms_factory = 2
+			industrial_complex = 5
+			dockyard = 3
+			air_base = 10
+			3878 = {
+				naval_base = 6
+
+			}
+
+		}
+		add_core_of = USA
+		add_core_of = NYO
+		victory_points = {
+			3878 30
+		}
+
+	}
+
+	provinces={
+		3878 859
+	}
+	manpower=8022570
+	buildings_max_level_factor=1.000
+}

@@ -401,7 +401,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "national_focus_detail_view"
 		position = { x=500 y=100 }
-		size = { width = 550 height = 550 }
+		size = { width = 550 height = 700 }		#mod
 		Orientation = UPPER_LEFT
 		moveable = yes
 		clipping = no
@@ -525,7 +525,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = ""
 			maxWidth = 455
-			maxHeight = 138
+			maxHeight = 288		#mod
 			scrollbarType = standardtext_slider
 #			format = center
 		}
@@ -567,7 +567,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "coninuous_focus_detail_view"
 		position = { x=500 y=100 }
-		size = { width = 550 height = 550 }
+		size = { width = 550 height = 700 }		#mod
 		Orientation = UPPER_LEFT
 		moveable = yes
 		clipping = no
@@ -691,7 +691,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = ""
 			maxWidth = 455
-			maxHeight = 138
+			maxHeight = 288		#mod
 			scrollbarType = standardtext_slider
 #			format = center
 		}

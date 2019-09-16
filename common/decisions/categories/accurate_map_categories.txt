@@ -1,0 +1,13 @@
+################
+##### Accurate Map ######
+################
+
+greenland = {
+	allowed = {
+		original_tag = SGR
+	}
+}
+greenland2 = {
+	allowed = {
+	}
+}

@@ -10,8 +10,15 @@ state=
 	history=
 	{
 		owner = IRE
+		victory_points = {
+			9303 1
+		}
 		buildings = {
 			infrastructure = 6
+			337 = {
+				naval_base = 1
+
+			}
 		}
 		add_core_of = IRE
 	}

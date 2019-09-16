@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		CLO_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		CLO_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		CLO_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		CLO_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = CLO
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CLO_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		CLO_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CLO_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		CLO_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = CLO
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CLO_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = CLO
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		CLO_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		CLO_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CLO_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CLO_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CLO_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		CLO_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = CLO
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		CLO_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		CLO_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = CLO
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

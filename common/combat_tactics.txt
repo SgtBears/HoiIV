@@ -736,7 +736,104 @@ tactic_human_wave_tactics = { #People's army attacker tactic
 tactic_banzai_charge = { #Special Japan attacker tactic
 	is_attacker = yes
 	trigger = {
-		tag = JAP
+		OR = {
+			AND = {
+				tag = JAP
+				var:global.jap_tag = {
+					tag = JAP
+				}
+			}
+			AND = {
+				tag = D01
+				var:global.jap_tag = {
+					tag = D01
+				}
+			}
+			AND = {
+				tag = D02
+				var:global.jap_tag = {
+					tag = D02
+				}
+			}
+			AND = {
+				tag = D03
+				var:global.jap_tag = {
+					tag = D03
+				}
+			}
+			AND = {
+				tag = D04
+				var:global.jap_tag = {
+					tag = D04
+				}
+			}
+			AND = {
+				tag = D05
+				var:global.jap_tag = {
+					tag = D05
+				}
+			}
+			AND = {
+				tag = D06
+				var:global.jap_tag = {
+					tag = D06
+				}
+			}
+			AND = {
+				tag = D07
+				var:global.jap_tag = {
+					tag = D07
+				}
+			}
+			AND = {
+				tag = D08
+				var:global.jap_tag = {
+					tag = D08
+				}
+			}
+			AND = {
+				tag = D09
+				var:global.jap_tag = {
+					tag = D09
+				}
+			}
+			AND = {
+				tag = D10
+				var:global.jap_tag = {
+					tag = D10
+				}
+			}
+			AND = {
+				tag = D11
+				var:global.jap_tag = {
+					tag = D11
+				}
+			}
+			AND = {
+				tag = D12
+				var:global.jap_tag = {
+					tag = D12
+				}
+			}
+			AND = {
+				tag = D13
+				var:global.jap_tag = {
+					tag = D13
+				}
+			}
+			AND = {
+				tag = D14
+				var:global.jap_tag = {
+					tag = D14
+				}
+			}
+			AND = {
+				tag = D15
+				var:global.jap_tag = {
+					tag = D15
+				}
+			}
+		}
 		is_attacker = yes
 		phase = no
 	}

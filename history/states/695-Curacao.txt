@@ -26,6 +26,6 @@ state={
 	}
 
 	provinces={
-		153 
+		153
 	}
 }

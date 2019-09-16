@@ -1,6 +1,10 @@
 SS_demands = { 
 	allowed = {
-		original_tag = GER
+		OR = {
+			original_tag = GER
+			original_tag = WGR
+			original_tag = DDR
+		}
 	}
 
 	visible = {
@@ -9,7 +13,11 @@ SS_demands = {
 }
 SS_recruitment = { 
 	allowed = {
-		original_tag = GER
+		OR = {
+			original_tag = GER
+			original_tag = WGR
+			original_tag = DDR
+		}
 	}
 
 	available = {
@@ -17,11 +25,9 @@ SS_recruitment = {
 	}
 
 	visible = {
-		has_idea = heinrich_himmler
-	}
-}
-wehrmacht_demands = {
-	allowed = {
-		original_tag = GER
+		OR = {
+			has_idea = heinrich_himmler
+			has_country_leader = { name = "Heinrich Himmler" }
+		}
 	}
 }

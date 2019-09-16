@@ -56,13 +56,29 @@ set_popularities = {
 	communism = 14
 	neutrality = 12
 }
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#}
+
+create_country_leader = {	
+	name = "Myat Phaya Lat"
+	picture = "gfx/leaders/Asia/portrait_asian_princess.tga"
+	expire = "1965.1.1"
+	ideology = royalism
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 72
+		fascism = 2
+		communism = 14
+		neutrality = 12
+	}
+}
+

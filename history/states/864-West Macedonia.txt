@@ -1,0 +1,29 @@
+state={
+	id=864
+	name="STATE_864"
+	resources={
+		chromium=20.000
+		aluminium=4.000
+	}
+
+	history={
+		owner = YUG
+		victory_points = {
+			867 1
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = YUG
+		add_core_of = MAC
+
+	}
+
+	provinces={
+		833 867 14252 11856
+	}
+	manpower=346270
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

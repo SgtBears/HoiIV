@@ -81,7 +81,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "countrydivisiondesignerview"
-		position = { x=0 y=0}	
+		position = { x=414 y=24}	#mod
 		size = { width = 1092 height = 553 }
 		moveable = yes
 		fade_time = 500

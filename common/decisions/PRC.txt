@@ -53,7 +53,7 @@ PRC_infiltrate_nationalist_areas = {
 				#Block if still trying to kill JAP
 				factor = 0
 				AND = {
-					has_war_with = JAP
+					has_war_with = JA0
 					#Allow JAP, faction member or puppet to control 5 states at most before triggering civil war
 					count_triggers = {
 						amount = 5
@@ -1365,9 +1365,9 @@ PRC_anti_japanese_expedition = {
 			#Block if not at least 2 troops and states are instant flipped
 			modifier = {
 				factor = 0
-				NOT = { has_war_with = JAP }
-				NOT = { has_war_with = MEN }
-				NOT = { has_war_with = MAN }
+				NOT = { has_war_with = JA0 }
+				NOT = { has_war_with = ME5 }
+				NOT = { has_war_with = MA5 }
 				NOT = {
 					count_triggers = {
 						amount = 2
@@ -1449,9 +1449,9 @@ PRC_anti_japanese_expedition = {
 
 		complete_effect = {
 			hidden_effect = {
-				MAN = { country_event = wtt_infiltration.10 }
-				MEN = { country_event = wtt_infiltration.10 }
-				JAP = { country_event = wtt_infiltration.10 }
+				MA5 = { country_event = wtt_infiltration.10 }
+				ME5 = { country_event = wtt_infiltration.10 }
+				JA0 = { country_event = wtt_infiltration.10 }
 			}
 		}
 
@@ -1460,22 +1460,34 @@ PRC_anti_japanese_expedition = {
 		war_with_on_remove = MAN
 	
 		remove_effect = {
-			declare_war_on = { target = JAP type = annex_everything }
-			if = {
-				limit = {
-					MAN = { 
-						exists = yes
-					}
+			JA0 = {
+				ROOT = {
+					declare_war_on = { target = PREV type = annex_everything }
 				}
-				declare_war_on = { target = MAN type = annex_everything }
 			}
 			if = {
 				limit = {
-					MEN = { 
+					MA5 = { 
 						exists = yes
 					}
 				}
-				declare_war_on = { target = MEN type = annex_everything }
+				MA5 = {
+					ROOT = {
+						declare_war_on = { target = PREV type = annex_everything }
+						}
+					}
+			}
+			if = {
+				limit = {
+					ME5 = { 
+						exists = yes
+					}
+				}
+				ME5 = {
+					ROOT = {
+						declare_war_on = { target = PREV type = annex_everything }
+					}
+				}
 			}
 
 			609 = { #east_hebei
@@ -1604,9 +1616,9 @@ PRC_anti_japanese_expedition = {
 			609 = {
 				PRC_can_increase_infiltration_in_state = yes
 			}
-			NOT = { has_war_with = JAP }
-			NOT = { has_war_with = MEN }
-			NOT = { has_war_with = MAN }
+			NOT = { has_war_with = JA0 }
+			NOT = { has_war_with = ME5 }
+			NOT = { has_war_with = MA5 }
 		}
 		
 		modifier = {
@@ -1685,9 +1697,9 @@ PRC_anti_japanese_expedition = {
 			610 = {
 				PRC_can_increase_infiltration_in_state = yes
 			}
-			NOT = { has_war_with = JAP }
-			NOT = { has_war_with = MEN }
-			NOT = { has_war_with = MAN }
+			NOT = { has_war_with = JA0 }
+			NOT = { has_war_with = ME5 }
+			NOT = { has_war_with = MA5 }
 		}
 		
 		modifier = {
@@ -1766,9 +1778,9 @@ PRC_anti_japanese_expedition = {
 			611 = {
 				PRC_can_increase_infiltration_in_state = yes
 			}
-			NOT = { has_war_with = JAP }
-			NOT = { has_war_with = MEN }
-			NOT = { has_war_with = MAN }
+			NOT = { has_war_with = JA0 }
+			NOT = { has_war_with = ME5 }
+			NOT = { has_war_with = MA5 }
 		}
 		
 		modifier = {
@@ -1847,9 +1859,9 @@ PRC_anti_japanese_expedition = {
 			612 = {
 				PRC_can_increase_infiltration_in_state = yes
 			}
-			NOT = { has_war_with = JAP }
-			NOT = { has_war_with = MEN }
-			NOT = { has_war_with = MAN }
+			NOT = { has_war_with = JA0 }
+			NOT = { has_war_with = ME5 }
+			NOT = { has_war_with = MA5 }
 		}
 		
 		modifier = {
@@ -1928,9 +1940,9 @@ PRC_anti_japanese_expedition = {
 			714 = {
 				PRC_can_increase_infiltration_in_state = yes
 			}
-			NOT = { has_war_with = JAP }
-			NOT = { has_war_with = MEN }
-			NOT = { has_war_with = MAN }
+			NOT = { has_war_with = JA0 }
+			NOT = { has_war_with = ME5 }
+			NOT = { has_war_with = MA5 }
 		}
 		
 		modifier = {
@@ -2009,9 +2021,9 @@ PRC_anti_japanese_expedition = {
 			715 = {
 				PRC_can_increase_infiltration_in_state = yes
 			}
-			NOT = { has_war_with = JAP }
-			NOT = { has_war_with = MEN }
-			NOT = { has_war_with = MAN }
+			NOT = { has_war_with = JA0 }
+			NOT = { has_war_with = ME5 }
+			NOT = { has_war_with = MA5 }
 		}
 		
 		modifier = {
@@ -2089,20 +2101,20 @@ PRC_provoke_japan = {
 		icon = generic_ignite_civil_war
 		available = {
 			not = {
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 			OR = {
 				is_subject = no
 				is_subject_of = event_target:WTT_current_china_leader
 			}
 			OR = {
-				MAN = { 
+				MA5 = { 
 					OR = {
-						is_subject_of = JAP
+						is_subject_of = JA0
 						has_cosmetic_tag = MAN_kwantung_army 
 					}
 				}
-				JAP = {
+				JA0 = {
 					owns_state = 525
 					owns_state = 527
 				}
@@ -2110,16 +2122,16 @@ PRC_provoke_japan = {
 		}
 		visible = {
 			not = {
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 			OR = {
-				MAN = { 
+				MA5 = { 
 					OR = {
-						is_subject_of = JAP 
+						is_subject_of = JA0 
 						has_cosmetic_tag = MAN_kwantung_army 
 					}
 				}
-				JAP = {
+				JA0 = {
 					owns_state = 525
 					owns_state = 527
 				}
@@ -2133,7 +2145,7 @@ PRC_provoke_japan = {
 				factor = 0 # let's just not make things worse for ourselves
 			}
 			modifier = {
-				JAP = {
+				JA0 = {
 					has_war_with = event_target:WTT_current_china_leader
 				}
 				factor = 0 # mission accomplished
@@ -2145,16 +2157,16 @@ PRC_provoke_japan = {
 			IF = {
 				limit = {
 					OR = {
-						MAN = {
-							is_subject_of = JAP
+						MA5 = {
+							is_subject_of = JA0
 						}
-						JAP = {
+						JA0 = {
 							owns_state = 525
 							owns_state = 527
 						}
 					}
 				}
-				JAP = {
+				JA0 = {
 					random_list = {
 						25 = { country_event = wtt_prc.21 }# sabotage - military
 						25 = { country_event = wtt_prc.22 }# sabotage - civilian
@@ -2165,11 +2177,11 @@ PRC_provoke_japan = {
 			}
 			else_if = {
 				limit = {
-					MAN = {
+					MA5 = {
 						has_cosmetic_tag = MAN_kwantung_army 
 					}
 				}
-				MAN = {
+				MA5 = {
 					random_list = {
 						25 = { country_event = wtt_prc.21 }# sabotage - military
 						25 = { country_event = wtt_prc.22 }# sabotage - civilian
@@ -2189,7 +2201,7 @@ political_actions = {
 			event_target:WTT_communist_china = {
 				tag = ROOT
 			}
-			JAP = {
+			JA0 = {
 				has_government = communism
 				not = {
 					has_war_with = ROOT
@@ -2209,7 +2221,7 @@ political_actions = {
 					controls_state = 609
 				}
 			}
-			MAN = {
+			MA5 = {
 				OR = {
 					exists = no
 					has_capitulated = yes
@@ -2221,7 +2233,7 @@ political_actions = {
 			event_target:WTT_communist_china = {
 				tag = ROOT
 			}
-			JAP = {
+			JA0 = {
 				has_government = communism
 				not = {
 					has_war_with = ROOT
@@ -2250,7 +2262,7 @@ political_actions = {
 		}
 
 		complete_effect = {
-			JAP = {
+			JA0 = {
 				country_event = wtt_japan.40
 			}
 		}
@@ -2333,10 +2345,10 @@ political_actions = {
 			has_country_flag = WTT_support_from_soviet
 		}
 
-		targets = { SOV }
+		targets = { SO0 }
 
 		target_trigger = {
-			FROM = { tag = SOV }
+			FROM = { tag = SO0 }
 		}
 
 		fire_only_once = yes

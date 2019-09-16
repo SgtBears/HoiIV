@@ -1,0 +1,31 @@
+
+state={
+	id=798
+	name="STATE_798"
+	manpower = 698667
+	resources={
+	}
+	
+	state_category = pastoral
+
+	history={
+		owner = GUA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			13085 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GUA
+		victory_points = {
+			13085 1 
+		}
+
+	}
+
+	provinces={
+		4991 13306 13304 13085 
+	}
+	
+}

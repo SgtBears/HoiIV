@@ -58,7 +58,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -67,32 +67,26 @@ set_politics = {
 set_popularities = {
 	fascism = 15
 	communism = 10
-	neutrality = 75
+	monarchism = 75
 }
-
-# Mohammad Hashim Khan (Prime Minister) other potential candidate
 create_country_leader = {
 	name = "Mohammed Zahir Shah"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = royalism
 	traits = {
 		#
 	}
 }
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		fascism = 20
-		communism = 10
-		neutrality = 70
+create_country_leader = {
+	name = "Shah Mahmud Khan"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
 	}
 }
 

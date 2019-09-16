@@ -1,5 +1,19 @@
 leader_traits = {
 	
+	regent_king = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	regent = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	dictator = {
 		random = no
 		political_power_factor = 0.25
@@ -297,7 +311,13 @@ leader_traits = {
 			tac_bomber_equipment = {
 				air_range = 0.01
 			}
+			jet_tac_bomber_equipment = {
+				air_range = 0.01
+			}
 			fighter_equipment = {
+				air_range = 0.01
+			}
+			jet_fighter_equipment = {
 				air_range = 0.01
 			}
 		}
@@ -1671,6 +1691,9 @@ leader_traits = {
 			cv_fighter_equipment = {
 				air_agility = 0.1 maximum_speed = 0.1
 			}
+			jet_fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
+			}
 		}
 		
 		ai_will_do = {
@@ -1685,6 +1708,9 @@ leader_traits = {
 				air_agility = 0.2 maximum_speed = 0.1
 			}
 			cv_fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1
+			}
+			jet_fighter_equipment = {
 				air_agility = 0.2 maximum_speed = 0.1
 			}
 		}
@@ -1720,6 +1746,9 @@ leader_traits = {
 			tac_bomber_equipment = {
 				reliability = 0.2
 			}
+			jet_tac_bomber_equipment = {
+				reliability = 0.2
+			}
 		}
 		
 		ai_will_do = {
@@ -1740,6 +1769,12 @@ leader_traits = {
 			tac_bomber_equipment = {
 				reliability = 0.2
 			}
+			jet_tac_bomber_equipment = {
+				reliability = 0.2
+			}
+			jet_fighter_equipment = {
+				air_range = 0.1
+			}
 		}
 		
 		ai_will_do = {
@@ -1752,6 +1787,9 @@ leader_traits = {
 		equipment_bonus = {
 
 			strat_bomber_equipment = {
+				air_bombing = 0.1
+			}
+			jet_strat_bomber_equipment = {
 				air_bombing = 0.1
 			}
 		}

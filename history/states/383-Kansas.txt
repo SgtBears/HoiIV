@@ -17,6 +17,7 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = USA
+		add_core_of = KAN
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2
@@ -26,7 +27,7 @@ state={
 			4740 3
 		}
 		victory_points = {
-			7834 1
+			7834 4
 		}
 	}
 

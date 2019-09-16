@@ -1,0 +1,740 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			set_variable = { global.ger_tag = GER.id }
+			set_variable = { global.eng_tag = ENG.id }
+			set_variable = { global.sov_tag = SOV.id }
+			set_variable = { global.swe_tag = SWE.id }
+			set_variable = { global.fra_tag = FRA.id }
+			set_variable = { global.lux_tag = LUX.id }
+			set_variable = { global.bel_tag = BEL.id }
+			set_variable = { global.hol_tag = HOL.id }
+			set_variable = { global.cze_tag = CZE.id }
+			set_variable = { global.pol_tag = POL.id }
+			set_variable = { global.aus_tag = AUS.id }
+			set_variable = { global.lit_tag = LIT.id }
+			set_variable = { global.est_tag = EST.id }
+			set_variable = { global.lat_tag = LAT.id }
+			set_variable = { global.spr_tag = SPR.id }
+			set_variable = { global.ita_tag = ITA.id }
+			set_variable = { global.rom_tag = ROM.id }
+			set_variable = { global.yug_tag = YUG.id }
+			set_variable = { global.ser_tag = SER.id }
+			set_variable = { global.swi_tag = SWI.id }
+			set_variable = { global.tur_tag = TUR.id }
+			set_variable = { global.gre_tag = GRE.id }
+			set_variable = { global.alb_tag = ALB.id }
+			set_variable = { global.nor_tag = NOR.id }
+			set_variable = { global.den_tag = DEN.id }
+			set_variable = { global.bul_tag = BUL.id }
+			set_variable = { global.por_tag = POR.id }
+			set_variable = { global.fin_tag = FIN.id }
+			set_variable = { global.ire_tag = IRE.id }
+			set_variable = { global.hun_tag = HUN.id }
+			set_variable = { global.afg_tag = AFG.id }
+			set_variable = { global.arg_tag = ARG.id }
+			set_variable = { global.ast_tag = AST.id }
+			set_variable = { global.bhu_tag = BHU.id }
+			set_variable = { global.bol_tag = BOL.id }
+			set_variable = { global.bra_tag = BRA.id }
+			set_variable = { global.can_tag = CAN.id }
+			set_variable = { global.chi_tag = CHI.id }
+			set_variable = { global.chl_tag = CHL.id }
+			set_variable = { global.col_tag = COL.id }
+			set_variable = { global.cos_tag = COS.id }
+			set_variable = { global.ecu_tag = ECU.id }
+			set_variable = { global.els_tag = ELS.id }
+			set_variable = { global.eth_tag = ETH.id }
+			set_variable = { global.gua_tag = GUA.id }
+			set_variable = { global.hon_tag = HON.id }
+			set_variable = { global.irq_tag = IRQ.id }
+			set_variable = { global.jap_tag = JAP.id }
+			set_variable = { global.kor_tag = KOR.id }
+			set_variable = { global.lib_tag = LIB.id }
+			set_variable = { global.mex_tag = MEX.id }
+			set_variable = { global.men_tag = MEN.id }
+			set_variable = { global.nep_tag = NEP.id }
+			set_variable = { global.nic_tag = NIC.id }
+			set_variable = { global.nzl_tag = NZL.id }
+			set_variable = { global.pan_tag = PAN.id }
+			set_variable = { global.per_tag = PER.id }
+			set_variable = { global.phi_tag = PHI.id }
+			set_variable = { global.pru_tag = PRU.id }
+			set_variable = { global.saf_tag = SAF.id }
+			set_variable = { global.sau_tag = SAU.id }
+			set_variable = { global.sia_tag = SIA.id }
+			set_variable = { global.sik_tag = SIK.id }
+			set_variable = { global.tib_tag = TIB.id }
+			set_variable = { global.urg_tag = URG.id }
+			set_variable = { global.ven_tag = VEN.id }
+			set_variable = { global.yun_tag = YUN.id }
+			set_variable = { global.usa_tag = USA.id }
+			set_variable = { global.mon_tag = MON.id }
+			set_variable = { global.tan_tag = TAN.id }
+			set_variable = { global.par_tag = PAR.id }
+			set_variable = { global.cub_tag = CUB.id }
+			set_variable = { global.dom_tag = DOM.id }
+			set_variable = { global.hai_tag = HAI.id }
+			set_variable = { global.yem_tag = YEM.id }
+			set_variable = { global.oma_tag = OMA.id }
+			set_variable = { global.slo_tag = SLO.id }
+			set_variable = { global.raj_tag = RAJ.id }
+			set_variable = { global.cro_tag = CRO.id }
+			set_variable = { global.gxc_tag = GXC.id }
+			set_variable = { global.prc_tag = PRC.id }
+			set_variable = { global.shx_tag = SHX.id }
+			set_variable = { global.xsm_tag = XSM.id }
+			set_variable = { global.ice_tag = ICE.id }
+			set_variable = { global.leb_tag = LEB.id }
+			set_variable = { global.jor_tag = JOR.id }
+			set_variable = { global.syr_tag = SYR.id }
+			set_variable = { global.egy_tag = EGY.id }
+			set_variable = { global.lba_tag = LBA.id }
+			set_variable = { global.wgr_tag = WGR.id }
+			set_variable = { global.ddr_tag = DDR.id }
+			set_variable = { global.pal_tag = PAL.id }
+			set_variable = { global.isr_tag = ISR.id }
+			set_variable = { global.vin_tag = VIN.id }
+			set_variable = { global.cam_tag = CAM.id }
+			set_variable = { global.mal_tag = MAL.id }
+			set_variable = { global.ins_tag = INS.id }
+			set_variable = { global.lao_tag = LAO.id }
+			set_variable = { global.mnt_tag = MNT.id }
+			set_variable = { global.ukr_tag = UKR.id }
+			set_variable = { global.geo_tag = GEO.id }
+			set_variable = { global.kaz_tag = KAZ.id }
+			set_variable = { global.azr_tag = AZR.id }
+			set_variable = { global.arm_tag = ARM.id }
+			set_variable = { global.blr_tag = BLR.id }
+			set_variable = { global.ang_tag = ANG.id }
+			set_variable = { global.mzb_tag = MZB.id }
+			set_variable = { global.zim_tag = ZIM.id }
+			set_variable = { global.cog_tag = COG.id }
+			set_variable = { global.ken_tag = KEN.id }
+			set_variable = { global.pak_tag = PAK.id }
+			set_variable = { global.bot_tag = BOT.id }
+			set_variable = { global.man_tag = MAN.id }
+			set_variable = { global.sgr_tag = SGR.id }
+			set_variable = { global.fae_tag = FAE.id }
+			set_variable = { global.bah_tag = BAH.id }
+			set_variable = { global.ban_tag = BAN.id }
+			set_variable = { global.blz_tag = BLZ.id }
+			set_variable = { global.brm_tag = BRM.id }
+			set_variable = { global.crc_tag = CRC.id }
+			set_variable = { global.gdl_tag = GDL.id }
+			set_variable = { global.gya_tag = GYA.id }
+			set_variable = { global.jam_tag = JAM.id }
+			set_variable = { global.kyr_tag = KYR.id }
+			set_variable = { global.mad_tag = MAD.id }
+			set_variable = { global.mol_tag = MOL.id }
+			set_variable = { global.png_tag = PNG.id }
+			set_variable = { global.pue_tag = PUE.id }
+			set_variable = { global.qat_tag = QAT.id }
+			set_variable = { global.sco_tag = SCO.id }
+			set_variable = { global.srl_tag = SRL.id }
+			set_variable = { global.sur_tag = SUR.id }
+			set_variable = { global.taj_tag = TAJ.id }
+			set_variable = { global.tri_tag = TRI.id }
+			set_variable = { global.tms_tag = TMS.id }
+			set_variable = { global.uae_tag = UAE.id }
+			set_variable = { global.uzb_tag = UZB.id }
+			set_variable = { global.kuw_tag = KUW.id }
+			set_variable = { global.cyp_tag = CYP.id }
+			set_variable = { global.mlt_tag = MLT.id }
+			set_variable = { global.alg_tag = ALG.id }
+			set_variable = { global.mor_tag = MOR.id }
+			set_variable = { global.tun_tag = TUN.id }
+			set_variable = { global.sud_tag = SUD.id }
+			set_variable = { global.eri_tag = ERI.id }
+			set_variable = { global.dji_tag = DJI.id }
+			set_variable = { global.som_tag = SOM.id }
+			set_variable = { global.uga_tag = UGA.id }
+			set_variable = { global.rwa_tag = RWA.id }
+			set_variable = { global.brd_tag = BRD.id }
+			set_variable = { global.tzn_tag = TZN.id }
+			set_variable = { global.zam_tag = ZAM.id }
+			set_variable = { global.mlw_tag = MLW.id }
+			set_variable = { global.gab_tag = GAB.id }
+			set_variable = { global.rcg_tag = RCG.id }
+			set_variable = { global.eqg_tag = EQG.id }
+			set_variable = { global.cmr_tag = CMR.id }
+			set_variable = { global.car_tag = CAR.id }
+			set_variable = { global.cha_tag = CHA.id }
+			set_variable = { global.nga_tag = NGA.id }
+			set_variable = { global.dah_tag = DAH.id }
+			set_variable = { global.tog_tag = TOG.id }
+			set_variable = { global.gha_tag = GHA.id }
+			set_variable = { global.ivo_tag = IVO.id }
+			set_variable = { global.vol_tag = VOL.id }
+			set_variable = { global.mli_tag = MLI.id }
+			set_variable = { global.sie_tag = SIE.id }
+			set_variable = { global.gna_tag = GNA.id }
+			set_variable = { global.gnb_tag = GNB.id }
+			set_variable = { global.sen_tag = SEN.id }
+			set_variable = { global.gam_tag = GAM.id }
+			set_variable = { global.wls_tag = WLS.id }
+			set_variable = { global.ngr_tag = NGR.id }
+			set_variable = { global.csa_tag = CSA.id }
+			set_variable = { global.usb_tag = USB.id }
+			set_variable = { global.mrt_tag = MRT.id }
+			set_variable = { global.nmb_tag = NMB.id }
+			set_variable = { global.wes_tag = WES.id }
+			set_variable = { global.bas_tag = BAS.id }
+			set_variable = { global.cay_tag = CAY.id }
+			set_variable = { global.mld_tag = MLD.id }
+			set_variable = { global.fij_tag = FIJ.id }
+			set_variable = { global.slv_tag = SLV.id }
+			set_variable = { global.bos_tag = BOS.id }
+			set_variable = { global.mac_tag = MAC.id }
+			set_variable = { global.nir_tag = NIR.id }
+			set_variable = { global.sib_tag = SIB.id }
+			set_variable = { global.fer_tag = FER.id }
+			set_variable = { global.kar_tag = KAR.id }
+			set_variable = { global.nhb_tag = NHB.id }
+			set_variable = { global.ALA_tag = ALA.id }
+			set_variable = { global.ALS_tag = ALS.id }
+			set_variable = { global.ARI_tag = ARI.id }
+			set_variable = { global.ARK_tag = ARK.id }
+			set_variable = { global.CAL_tag = CAL.id }
+			set_variable = { global.CLO_tag = CLO.id }
+			set_variable = { global.CNO_tag = CNO.id }
+			set_variable = { global.DEL_tag = DEL.id }
+			set_variable = { global.FLO_tag = FLO.id }
+			set_variable = { global.USG_tag = USG.id }
+			set_variable = { global.HAW_tag = HAW.id }
+			set_variable = { global.IDA_tag = IDA.id }
+			set_variable = { global.ILL_tag = ILL.id }
+			set_variable = { global.IND_tag = IND.id }
+			set_variable = { global.IOW_tag = IOW.id }
+			set_variable = { global.KAN_tag = KAN.id }
+			set_variable = { global.KTY_tag = KTY.id }
+			set_variable = { global.LOU_tag = LOU.id }
+			set_variable = { global.MAI_tag = MAI.id }
+			set_variable = { global.MAR_tag = MAR.id }
+			set_variable = { global.MAS_tag = MAS.id }
+			set_variable = { global.MIC_tag = MIC.id }
+			set_variable = { global.MIN_tag = MIN.id }
+			set_variable = { global.MSS_tag = MSS.id }
+			set_variable = { global.MIS_tag = MIS.id }
+			set_variable = { global.MOT_tag = MOT.id }
+			set_variable = { global.NEB_tag = NEB.id }
+			set_variable = { global.NEV_tag = NEV.id }
+			set_variable = { global.NHA_tag = NHA.id }
+			set_variable = { global.NJE_tag = NJE.id }
+			set_variable = { global.NME_tag = NME.id }
+			set_variable = { global.NYO_tag = NYO.id }
+			set_variable = { global.NCA_tag = NCA.id }
+			set_variable = { global.NDA_tag = NDA.id }
+			set_variable = { global.OHI_tag = OHI.id }
+			set_variable = { global.OKL_tag = OKL.id }
+			set_variable = { global.ORE_tag = ORE.id }
+			set_variable = { global.PEN_tag = PEN.id }
+			set_variable = { global.RHI_tag = RHI.id }
+			set_variable = { global.SCA_tag = SCA.id }
+			set_variable = { global.SDA_tag = SDA.id }
+			set_variable = { global.TEN_tag = TEN.id }
+			set_variable = { global.TEX_tag = TEX.id }
+			set_variable = { global.UTA_tag = UTA.id }
+			set_variable = { global.VER_tag = VER.id }
+			set_variable = { global.VIR_tag = VIR.id }
+			set_variable = { global.WAS_tag = WAS.id }
+			set_variable = { global.WVI_tag = WVI.id }
+			set_variable = { global.WIS_tag = WIS.id }
+			set_variable = { global.WYO_tag = WYO.id }
+			set_variable = { global.SUP_tag = SUP.id }
+			set_variable = { global.WDC_tag = WDC.id }
+			set_variable = { global.PEI_tag = PEI.id }
+			set_variable = { global.NSC_tag = NSC.id }
+			set_variable = { global.NBR_tag = NBR.id }
+			set_variable = { global.NEF_tag = NEF.id }
+			set_variable = { global.LAB_tag = LAB.id }
+			set_variable = { global.QUE_tag = QUE.id }
+			set_variable = { global.ONT_tag = ONT.id }
+			set_variable = { global.MAT_tag = MAT.id }
+			set_variable = { global.SAS_tag = SAS.id }
+			set_variable = { global.VAN_tag = VAN.id }
+			set_variable = { global.ALT_tag = ALT.id }
+			set_variable = { global.BCL_tag = BCL.id }
+			every_country = {
+				country_event = { id = am.variables.1 }
+			}
+		}
+	}
+	on_annex = {
+		effect = {
+			set_variable = { global.ger_tag = GER.id }
+			set_variable = { global.eng_tag = ENG.id }
+			set_variable = { global.sov_tag = SOV.id }
+			set_variable = { global.swe_tag = SWE.id }
+			set_variable = { global.fra_tag = FRA.id }
+			set_variable = { global.lux_tag = LUX.id }
+			set_variable = { global.bel_tag = BEL.id }
+			set_variable = { global.hol_tag = HOL.id }
+			set_variable = { global.cze_tag = CZE.id }
+			set_variable = { global.pol_tag = POL.id }
+			set_variable = { global.aus_tag = AUS.id }
+			set_variable = { global.lit_tag = LIT.id }
+			set_variable = { global.est_tag = EST.id }
+			set_variable = { global.lat_tag = LAT.id }
+			set_variable = { global.spr_tag = SPR.id }
+			set_variable = { global.ita_tag = ITA.id }
+			set_variable = { global.rom_tag = ROM.id }
+			set_variable = { global.yug_tag = YUG.id }
+			set_variable = { global.ser_tag = SER.id }
+			set_variable = { global.swi_tag = SWI.id }
+			set_variable = { global.tur_tag = TUR.id }
+			set_variable = { global.gre_tag = GRE.id }
+			set_variable = { global.alb_tag = ALB.id }
+			set_variable = { global.nor_tag = NOR.id }
+			set_variable = { global.den_tag = DEN.id }
+			set_variable = { global.bul_tag = BUL.id }
+			set_variable = { global.por_tag = POR.id }
+			set_variable = { global.fin_tag = FIN.id }
+			set_variable = { global.ire_tag = IRE.id }
+			set_variable = { global.hun_tag = HUN.id }
+			set_variable = { global.afg_tag = AFG.id }
+			set_variable = { global.arg_tag = ARG.id }
+			set_variable = { global.ast_tag = AST.id }
+			set_variable = { global.bhu_tag = BHU.id }
+			set_variable = { global.bol_tag = BOL.id }
+			set_variable = { global.bra_tag = BRA.id }
+			set_variable = { global.can_tag = CAN.id }
+			set_variable = { global.chi_tag = CHI.id }
+			set_variable = { global.chl_tag = CHL.id }
+			set_variable = { global.col_tag = COL.id }
+			set_variable = { global.cos_tag = COS.id }
+			set_variable = { global.ecu_tag = ECU.id }
+			set_variable = { global.els_tag = ELS.id }
+			set_variable = { global.eth_tag = ETH.id }
+			set_variable = { global.gua_tag = GUA.id }
+			set_variable = { global.hon_tag = HON.id }
+			set_variable = { global.irq_tag = IRQ.id }
+			set_variable = { global.jap_tag = JAP.id }
+			set_variable = { global.kor_tag = KOR.id }
+			set_variable = { global.lib_tag = LIB.id }
+			set_variable = { global.mex_tag = MEX.id }
+			set_variable = { global.men_tag = MEN.id }
+			set_variable = { global.nep_tag = NEP.id }
+			set_variable = { global.nic_tag = NIC.id }
+			set_variable = { global.nzl_tag = NZL.id }
+			set_variable = { global.pan_tag = PAN.id }
+			set_variable = { global.per_tag = PER.id }
+			set_variable = { global.phi_tag = PHI.id }
+			set_variable = { global.pru_tag = PRU.id }
+			set_variable = { global.saf_tag = SAF.id }
+			set_variable = { global.sau_tag = SAU.id }
+			set_variable = { global.sia_tag = SIA.id }
+			set_variable = { global.sik_tag = SIK.id }
+			set_variable = { global.tib_tag = TIB.id }
+			set_variable = { global.urg_tag = URG.id }
+			set_variable = { global.ven_tag = VEN.id }
+			set_variable = { global.yun_tag = YUN.id }
+			set_variable = { global.usa_tag = USA.id }
+			set_variable = { global.mon_tag = MON.id }
+			set_variable = { global.tan_tag = TAN.id }
+			set_variable = { global.par_tag = PAR.id }
+			set_variable = { global.cub_tag = CUB.id }
+			set_variable = { global.dom_tag = DOM.id }
+			set_variable = { global.hai_tag = HAI.id }
+			set_variable = { global.yem_tag = YEM.id }
+			set_variable = { global.oma_tag = OMA.id }
+			set_variable = { global.slo_tag = SLO.id }
+			set_variable = { global.raj_tag = RAJ.id }
+			set_variable = { global.cro_tag = CRO.id }
+			set_variable = { global.gxc_tag = GXC.id }
+			set_variable = { global.prc_tag = PRC.id }
+			set_variable = { global.shx_tag = SHX.id }
+			set_variable = { global.xsm_tag = XSM.id }
+			set_variable = { global.ice_tag = ICE.id }
+			set_variable = { global.leb_tag = LEB.id }
+			set_variable = { global.jor_tag = JOR.id }
+			set_variable = { global.syr_tag = SYR.id }
+			set_variable = { global.egy_tag = EGY.id }
+			set_variable = { global.lba_tag = LBA.id }
+			set_variable = { global.wgr_tag = WGR.id }
+			set_variable = { global.ddr_tag = DDR.id }
+			set_variable = { global.pal_tag = PAL.id }
+			set_variable = { global.isr_tag = ISR.id }
+			set_variable = { global.vin_tag = VIN.id }
+			set_variable = { global.cam_tag = CAM.id }
+			set_variable = { global.mal_tag = MAL.id }
+			set_variable = { global.ins_tag = INS.id }
+			set_variable = { global.lao_tag = LAO.id }
+			set_variable = { global.mnt_tag = MNT.id }
+			set_variable = { global.ukr_tag = UKR.id }
+			set_variable = { global.geo_tag = GEO.id }
+			set_variable = { global.kaz_tag = KAZ.id }
+			set_variable = { global.azr_tag = AZR.id }
+			set_variable = { global.arm_tag = ARM.id }
+			set_variable = { global.blr_tag = BLR.id }
+			set_variable = { global.ang_tag = ANG.id }
+			set_variable = { global.mzb_tag = MZB.id }
+			set_variable = { global.zim_tag = ZIM.id }
+			set_variable = { global.cog_tag = COG.id }
+			set_variable = { global.ken_tag = KEN.id }
+			set_variable = { global.pak_tag = PAK.id }
+			set_variable = { global.bot_tag = BOT.id }
+			set_variable = { global.man_tag = MAN.id }
+			set_variable = { global.sgr_tag = SGR.id }
+			set_variable = { global.fae_tag = FAE.id }
+			set_variable = { global.bah_tag = BAH.id }
+			set_variable = { global.ban_tag = BAN.id }
+			set_variable = { global.blz_tag = BLZ.id }
+			set_variable = { global.brm_tag = BRM.id }
+			set_variable = { global.crc_tag = CRC.id }
+			set_variable = { global.gdl_tag = GDL.id }
+			set_variable = { global.gya_tag = GYA.id }
+			set_variable = { global.jam_tag = JAM.id }
+			set_variable = { global.kyr_tag = KYR.id }
+			set_variable = { global.mad_tag = MAD.id }
+			set_variable = { global.mol_tag = MOL.id }
+			set_variable = { global.png_tag = PNG.id }
+			set_variable = { global.pue_tag = PUE.id }
+			set_variable = { global.qat_tag = QAT.id }
+			set_variable = { global.sco_tag = SCO.id }
+			set_variable = { global.srl_tag = SRL.id }
+			set_variable = { global.sur_tag = SUR.id }
+			set_variable = { global.taj_tag = TAJ.id }
+			set_variable = { global.tri_tag = TRI.id }
+			set_variable = { global.tms_tag = TMS.id }
+			set_variable = { global.uae_tag = UAE.id }
+			set_variable = { global.uzb_tag = UZB.id }
+			set_variable = { global.kuw_tag = KUW.id }
+			set_variable = { global.cyp_tag = CYP.id }
+			set_variable = { global.mlt_tag = MLT.id }
+			set_variable = { global.alg_tag = ALG.id }
+			set_variable = { global.mor_tag = MOR.id }
+			set_variable = { global.tun_tag = TUN.id }
+			set_variable = { global.sud_tag = SUD.id }
+			set_variable = { global.eri_tag = ERI.id }
+			set_variable = { global.dji_tag = DJI.id }
+			set_variable = { global.som_tag = SOM.id }
+			set_variable = { global.uga_tag = UGA.id }
+			set_variable = { global.rwa_tag = RWA.id }
+			set_variable = { global.brd_tag = BRD.id }
+			set_variable = { global.tzn_tag = TZN.id }
+			set_variable = { global.zam_tag = ZAM.id }
+			set_variable = { global.mlw_tag = MLW.id }
+			set_variable = { global.gab_tag = GAB.id }
+			set_variable = { global.rcg_tag = RCG.id }
+			set_variable = { global.eqg_tag = EQG.id }
+			set_variable = { global.cmr_tag = CMR.id }
+			set_variable = { global.car_tag = CAR.id }
+			set_variable = { global.cha_tag = CHA.id }
+			set_variable = { global.nga_tag = NGA.id }
+			set_variable = { global.dah_tag = DAH.id }
+			set_variable = { global.tog_tag = TOG.id }
+			set_variable = { global.gha_tag = GHA.id }
+			set_variable = { global.ivo_tag = IVO.id }
+			set_variable = { global.vol_tag = VOL.id }
+			set_variable = { global.mli_tag = MLI.id }
+			set_variable = { global.sie_tag = SIE.id }
+			set_variable = { global.gna_tag = GNA.id }
+			set_variable = { global.gnb_tag = GNB.id }
+			set_variable = { global.sen_tag = SEN.id }
+			set_variable = { global.gam_tag = GAM.id }
+			set_variable = { global.wls_tag = WLS.id }
+			set_variable = { global.ngr_tag = NGR.id }
+			set_variable = { global.csa_tag = CSA.id }
+			set_variable = { global.usb_tag = USB.id }
+			set_variable = { global.mrt_tag = MRT.id }
+			set_variable = { global.nmb_tag = NMB.id }
+			set_variable = { global.wes_tag = WES.id }
+			set_variable = { global.bas_tag = BAS.id }
+			set_variable = { global.cay_tag = CAY.id }
+			set_variable = { global.mld_tag = MLD.id }
+			set_variable = { global.fij_tag = FIJ.id }
+			set_variable = { global.slv_tag = SLV.id }
+			set_variable = { global.bos_tag = BOS.id }
+			set_variable = { global.mac_tag = MAC.id }
+			set_variable = { global.nir_tag = NIR.id }
+			set_variable = { global.sib_tag = SIB.id }
+			set_variable = { global.fer_tag = FER.id }
+			set_variable = { global.kar_tag = KAR.id }
+			set_variable = { global.nhb_tag = NHB.id }
+			set_variable = { global.ALA_tag = ALA.id }
+			set_variable = { global.ALS_tag = ALS.id }
+			set_variable = { global.ARI_tag = ARI.id }
+			set_variable = { global.ARK_tag = ARK.id }
+			set_variable = { global.CAL_tag = CAL.id }
+			set_variable = { global.CLO_tag = CLO.id }
+			set_variable = { global.CNO_tag = CNO.id }
+			set_variable = { global.DEL_tag = DEL.id }
+			set_variable = { global.FLO_tag = FLO.id }
+			set_variable = { global.USG_tag = USG.id }
+			set_variable = { global.HAW_tag = HAW.id }
+			set_variable = { global.IDA_tag = IDA.id }
+			set_variable = { global.ILL_tag = ILL.id }
+			set_variable = { global.IND_tag = IND.id }
+			set_variable = { global.IOW_tag = IOW.id }
+			set_variable = { global.KAN_tag = KAN.id }
+			set_variable = { global.KTY_tag = KTY.id }
+			set_variable = { global.LOU_tag = LOU.id }
+			set_variable = { global.MAI_tag = MAI.id }
+			set_variable = { global.MAR_tag = MAR.id }
+			set_variable = { global.MAS_tag = MAS.id }
+			set_variable = { global.MIC_tag = MIC.id }
+			set_variable = { global.MIN_tag = MIN.id }
+			set_variable = { global.MSS_tag = MSS.id }
+			set_variable = { global.MIS_tag = MIS.id }
+			set_variable = { global.MOT_tag = MOT.id }
+			set_variable = { global.NEB_tag = NEB.id }
+			set_variable = { global.NEV_tag = NEV.id }
+			set_variable = { global.NHA_tag = NHA.id }
+			set_variable = { global.NJE_tag = NJE.id }
+			set_variable = { global.NME_tag = NME.id }
+			set_variable = { global.NYO_tag = NYO.id }
+			set_variable = { global.NCA_tag = NCA.id }
+			set_variable = { global.NDA_tag = NDA.id }
+			set_variable = { global.OHI_tag = OHI.id }
+			set_variable = { global.OKL_tag = OKL.id }
+			set_variable = { global.ORE_tag = ORE.id }
+			set_variable = { global.PEN_tag = PEN.id }
+			set_variable = { global.RHI_tag = RHI.id }
+			set_variable = { global.SCA_tag = SCA.id }
+			set_variable = { global.SDA_tag = SDA.id }
+			set_variable = { global.TEN_tag = TEN.id }
+			set_variable = { global.TEX_tag = TEX.id }
+			set_variable = { global.UTA_tag = UTA.id }
+			set_variable = { global.VER_tag = VER.id }
+			set_variable = { global.VIR_tag = VIR.id }
+			set_variable = { global.WAS_tag = WAS.id }
+			set_variable = { global.WVI_tag = WVI.id }
+			set_variable = { global.WIS_tag = WIS.id }
+			set_variable = { global.WYO_tag = WYO.id }
+			set_variable = { global.SUP_tag = SUP.id }
+			set_variable = { global.WDC_tag = WDC.id }
+			set_variable = { global.PEI_tag = PEI.id }
+			set_variable = { global.NSC_tag = NSC.id }
+			set_variable = { global.NBR_tag = NBR.id }
+			set_variable = { global.NEF_tag = NEF.id }
+			set_variable = { global.LAB_tag = LAB.id }
+			set_variable = { global.QUE_tag = QUE.id }
+			set_variable = { global.ONT_tag = ONT.id }
+			set_variable = { global.MAT_tag = MAT.id }
+			set_variable = { global.SAS_tag = SAS.id }
+			set_variable = { global.VAN_tag = VAN.id }
+			set_variable = { global.ALT_tag = ALT.id }
+			set_variable = { global.BCL_tag = BCL.id }
+			hidden_effect = {
+				every_country = {
+					country_event = { id = am.variables.1 }
+				}
+			}
+		}
+	}
+	on_civil_war_end_before_annexation = {
+		effect = {
+			every_state = {
+				limit = {
+					is_core_of = FROM
+				}
+				remove_core_of = FROM
+				add_core_of = ROOT
+			}
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			hidden_effect = {
+				every_country = {
+					country_event = { id = am.variables.1 }
+				}
+			}
+			if = {
+				limit = {
+					tag = SP2
+					has_government = fascism
+					has_civil_war = no
+					has_global_flag = spanish_civil_war
+					NOT = { has_global_flag = scw_over }
+				}
+				news_event = { id = news.64 days = 2 }
+			}
+			if = {
+				limit = {
+					tag = SP1
+					NOT = { has_government = fascism }
+					has_civil_war = no
+					has_global_flag = spanish_civil_war
+					NOT = { has_global_flag = scw_over }
+				}
+				news_event = { id = news.65 days = 2 }
+			}
+		}
+	}
+	on_puppet = {
+		effect = {
+			hidden_effect = {
+				every_country = {
+					country_event = { id = am.variables.1 }
+				}
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			hidden_effect = {
+				every_country = {
+					country_event = { id = am.variables.1 }
+				}
+			}
+			if = {
+				limit = {
+					tag = NHB
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					country_exists = AZ0
+					country_exists = AR5
+					GE5 = {
+						has_cosmetic_tag = GEO_transcaucasia
+					}
+				}
+				GE5 = {
+					drop_cosmetic_tag = yes
+					230 = {
+						remove_core_of = GE5
+					}
+					229 = {
+						remove_core_of = GE5
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = JA5
+					country_exists = BS0
+					TR0 = {
+						has_cosmetic_tag = TRI_caribbean_federation
+					}
+				}
+				TR0 = {
+					drop_cosmetic_tag = yes
+					every_state = {
+						limit = {
+							is_core_of = TR0
+							NOT = { state = 691 }
+						}
+						remove_core_of = TR0
+					}
+				}
+			}
+		}
+	}
+	on_release_as_free = {
+		effect = {
+			hidden_effect = {
+				every_country = {
+					country_event = { id = am.variables.1 }
+				}
+			}
+			if = {
+				limit = {
+					tag = NHB
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					country_exists = AZ0
+					country_exists = AR5
+					GE5 = {
+						has_cosmetic_tag = GEO_transcaucasia
+					}
+				}
+				GE5 = {
+					drop_cosmetic_tag = yes
+					230 = {
+						remove_core_of = GE5
+					}
+					229 = {
+						remove_core_of = GE5
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = JA5
+					country_exists = BS0
+					TR0 = {
+						has_cosmetic_tag = TRI_caribbean_federation
+					}
+				}
+				TR0 = {
+					drop_cosmetic_tag = yes
+					every_state = {
+						limit = {
+							is_core_of = TR0
+							NOT = { state = 691 }
+						}
+						remove_core_of = TR0
+					}
+				}
+			}
+		}
+	}
+	on_subject_free = {
+		effect = {
+			hidden_effect = {
+				every_country = {
+					country_event = { id = am.variables.1 }
+				}
+			}
+			if = {
+				limit = {
+					tag = NHB
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					country_exists = AZ0
+					country_exists = AR5
+					GE5 = {
+						has_cosmetic_tag = GEO_transcaucasia
+					}
+				}
+				GE5 = {
+					drop_cosmetic_tag = yes
+					230 = {
+						remove_core_of = GE5
+					}
+					229 = {
+						remove_core_of = GE5
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = JA5
+					country_exists = BS0
+					TR0 = {
+						has_cosmetic_tag = TRI_caribbean_federation
+					}
+				}
+				TR0 = {
+					drop_cosmetic_tag = yes
+					every_state = {
+						limit = {
+							is_core_of = TR0
+							NOT = { state = 691 }
+						}
+						remove_core_of = TR0
+					}
+				}
+			}
+		}
+	}
+	on_subject_annexed = {
+		effect = {
+			hidden_effect = {
+				every_country = {
+					country_event = { id = am.variables.1 }
+				}
+			}
+		}
+	}
+}

@@ -11,88 +11,93 @@ communist_infiltration = {
 		}
 	
 		complete_effect = {
-			random_country = {
-				limit = {
-					original_tag = PRC
-					has_government = communism
-				}
-				
-				every_state = {
+			PR0 = {
+				if = {
 					limit = {
-						CONTROLLER = { tag = ROOT }
-						has_any_PRC_infiltration_flag = yes
+						has_government = communism
 					}
-					PRC_execute_infiltration_effects_for_PREV = yes
+					every_state = {
+						limit = {
+							CONTROLLER = { tag = ROOT }
+							has_any_PRC_infiltration_flag = yes
+						}
+						PRC_execute_infiltration_effects_for_PREV = yes
+					}
 				}
 			}
 
-			random_country = {
-				limit = {
-					original_tag = GXC
-					has_government = communism
-				}
-				every_state = {
+			GX0 = {
+				if = {
 					limit = {
-						CONTROLLER = { tag = ROOT }
-						PRC_is_infiltrated_by_PREV = yes
+						has_government = communism
 					}
-					PRC_execute_infiltration_effects_for_PREV = yes
+					every_state = {
+						limit = {
+							CONTROLLER = { tag = ROOT }
+							PRC_is_infiltrated_by_PREV = yes
+						}
+						PRC_execute_infiltration_effects_for_PREV = yes
+					}
 				}
 			}
 
-			random_country = {
-				limit = {
-					original_tag = YUN
-					has_government = communism
-				}
-				every_state = {
+			YU5 = {
+				if = {
 					limit = {
-						CONTROLLER = { tag = ROOT }
-						PRC_is_infiltrated_by_PREV = yes
+						has_government = communism
 					}
-					PRC_execute_infiltration_effects_for_PREV = yes
+					every_state = {
+						limit = {
+							CONTROLLER = { tag = ROOT }
+							PRC_is_infiltrated_by_PREV = yes
+						}
+						PRC_execute_infiltration_effects_for_PREV = yes
+					}
 				}
 			}
 
-			random_country = {
-				limit = {
-					original_tag = SHX
-					has_government = communism
-				}
-				every_state = {
+			SH0 = {
+				if = {
 					limit = {
-						CONTROLLER = { tag = ROOT }
-						PRC_is_infiltrated_by_PREV = yes
+						has_government = communism
 					}
-					PRC_execute_infiltration_effects_for_PREV = yes
+					every_state = {
+						limit = {
+							CONTROLLER = { tag = ROOT }
+							PRC_is_infiltrated_by_PREV = yes
+						}
+						PRC_execute_infiltration_effects_for_PREV = yes
+					}
 				}
 			}
 
-			random_country = {
-				limit = {
-					original_tag = XSM
-					has_government = communism
-				}
-				every_state = {
+			XS0 = {
+				if = {
 					limit = {
-						CONTROLLER = { tag = ROOT }
-						PRC_is_infiltrated_by_PREV = yes
+						has_government = communism
 					}
-					PRC_execute_infiltration_effects_for_PREV = yes
+					every_state = {
+						limit = {
+							CONTROLLER = { tag = ROOT }
+							PRC_is_infiltrated_by_PREV = yes
+						}
+						PRC_execute_infiltration_effects_for_PREV = yes
+					}
 				}
 			}
 
-			random_country = {
-				limit = {
-					original_tag = SIK
-					has_government = communism
-				}
-				every_state = {
+			SI5 = {
+				if = {
 					limit = {
-						CONTROLLER = { tag = ROOT }
-						PRC_is_infiltrated_by_PREV = yes
+						has_government = communism
 					}
-					PRC_execute_infiltration_effects_for_PREV = yes
+					every_state = {
+						limit = {
+							CONTROLLER = { tag = ROOT }
+							PRC_is_infiltrated_by_PREV = yes
+						}
+						PRC_execute_infiltration_effects_for_PREV = yes
+					}
 				}
 			}			
 		}

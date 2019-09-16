@@ -22,12 +22,12 @@ country_event = {
 		}
 		
 		effect_tooltip = {
-			AST = {
-				puppet = MAL
+			AS0 = {
+				puppet = MA0
 			}
 		}
 		hidden_effect = {
-			AST = {
+			AS0 = {
 				country_event = { id = tfv_australia.2 }
 			}
 		}
@@ -40,7 +40,7 @@ country_event = {
 			base = 0
 		}
 		
-		AST = {
+		AS0 = {
 			country_event = { id = tfv_australia.3 }
 		}
 	}
@@ -57,9 +57,11 @@ country_event = {
 	option = {
 		name = tfv_australia.2.a
 		
-		puppet = MAL
+		puppet = MA0
 		
-		news_event = { hours = 6 id = news.238 }
+		hidden_effect = {
+			news_event = { hours = 6 id = news.238 }
+		}
 	}
 }
 
@@ -93,18 +95,18 @@ country_event = {
 			base = 100
 			modifier = {
 				factor = 0
-				has_war_with = AST
+				has_war_with = AS0
 			}
 		}
 		
 		effect_tooltip = {
-			AST = {
-				puppet = INS
+			AS0 = {
+				puppet = IN0
 			}
 		}
 		
 		hidden_effect = {
-			AST = {
+			AS0 = {
 				country_event = { id = tfv_australia.11 }
 			}
 		}
@@ -117,11 +119,11 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 100
-				has_war_with = AST
+				has_war_with = AS0
 			}
 		}
 		
-		AST = {
+		AS0 = {
 			country_event = { id = tfv_australia.12 }
 		}
 	}
@@ -138,9 +140,11 @@ country_event = {
 	option = {
 		name = tfv_australia.11.a
 		
-		puppet = INS
+		puppet = IN0
 		
-		news_event = { id = news.240 hours = 6 }
+		hidden_effect = {
+			news_event = { id = news.240 hours = 6 }
+		}
 	}
 }
 
@@ -176,33 +180,33 @@ country_event = {
 				add = 20
 				OR = {
 					AND = {
-						is_in_faction_with = ENG
-						ENG = {
+						is_in_faction_with = EN0
+						EN0 = {
 							surrender_progress > 0.3
 						}
 					}
-					NZL = { is_in_faction = no }
+					NZ0 = { is_in_faction = no }
 					has_government = fascism
 				}
 			}
 			modifier = {
 				add = 10
-				is_subject_of = ENG
-				CAN = { NOT = { is_subject_of = ENG } }
-				RAJ = { NOT = { is_subject_of = ENG } }
+				is_subject_of = EN0
+				CA0 = { NOT = { is_subject_of = EN0 } }
+				RA0 = { NOT = { is_subject_of = EN0 } }
 			}
 			modifier = {
 				factor = 5
 				FROM = {
 					strength_ratio = {
-						tag = ROOT
+						tag = NZ0
 						ratio > 2
 					}
 				}
 			}
 		}
 		
-		AST = {
+		AS0 = {
 			country_event = { id = tfv_australia.21 }
 		}
 
@@ -217,16 +221,16 @@ country_event = {
 		}
 		
 		effect_tooltip = {
-			AST = {
+			AS0 = {
 				create_wargoal = {
 					type = annex_everything
-					target = NZL
+					target = NZ0
 				}
 			}
 		}
 
 		hidden_effect = {
-			AST = {
+			AS0 = {
 				country_event = { id = tfv_australia.22 }
 			}
 		}
@@ -243,11 +247,16 @@ country_event = {
 	
 	option = {
 		name = tfv_australia.21.a
-		
-		annex_country = { target = NZL }
+		NZ0 = {
+			ROOT = {
+				annex_country = { target = PREV }
+			}
+		}
 
-		news_event = {
-			id = news.254 hours = 2
+		hidden_effect = {
+			news_event = {
+				id = news.254 hours = 2
+			}
 		}
 	}
 }
@@ -262,10 +271,13 @@ country_event = {
 	
 	option = {
 		name = tfv_australia.22.a
-		
-		create_wargoal = {
-			type = annex_everything
-			target = NZL
+		NZ0 = {
+			ROOT = {
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
 		}
 	}
 }
@@ -284,13 +296,15 @@ country_event = {
 		create_faction = "south_west_pacific_initiative"
 		if = {
 			limit = {
-				country_exists = INS
-				not = { has_war_with = INS }
+				country_exists = IN0
+				not = { has_war_with = IN0 }
 			}
-			add_to_faction = INS
+			add_to_faction = IN0
 		}
 		
-		news_event = { id = news.244 hours = 6 }
+		hidden_effect = {
+			news_event = { id = news.244 hours = 6 }
+		}
 	}
 }
 
@@ -310,20 +324,20 @@ country_event = {
 		}
 
 		effect_tooltip = {
-			AST = {
+			AS0 = {
 				create_faction = "south_west_pacific_initiative"
-				add_to_faction = USA
+				add_to_faction = US0
 				
 				if = {
 					limit = {
 						has_country_flag = INS_is_a_puppet
 					}
-					add_to_faction = INS
+					add_to_faction = IN0
 				}
 			}
 		}
 		hidden_effect = {
-			AST = {
+			AS0 = {
 				country_event = { id = tfv_australia.33 }
 			}
 		}
@@ -336,7 +350,7 @@ country_event = {
 			base = 0
 		}
 		
-		AST = {
+		AS0 = {
 			country_event = { id = tfv_australia.34 }
 		}
 	}
@@ -354,16 +368,18 @@ country_event = {
 		name = tfv_australia.33.a
 		
 		create_faction = "south_west_pacific_initiative"
-		add_to_faction = USA
+		add_to_faction = US0
 		
 		if = {
 			limit = {
 				has_country_flag = INS_is_a_puppet
 			}
-			add_to_faction = INS
+			add_to_faction = IN0
 		}
 		
-		news_event = { id = news.245 hours = 6 }
+		hidden_effect = {
+			news_event = { id = news.245 hours = 6 }
+		}
 	}
 }
 
@@ -382,9 +398,11 @@ country_event = {
 		}
 		
 		create_faction = "south_west_pacific_initiative"
-		add_to_faction = INS
+		add_to_faction = IN0
 		
-		news_event = { id = news.244 hours = 6 }
+		hidden_effect = {
+			news_event = { id = news.244 hours = 6 }
+		}
 	}
 	
 	option = {
@@ -408,9 +426,11 @@ country_event = {
 				original_tag = INS
 				has_government = fascism
 			}
-			white_peace = HOL
+			HO0 = {
+				PREV = { white_peace = PREV }
+			}
 		}
-		puppet = INS
+		puppet = IN0
 	}
 }
 
@@ -432,10 +452,10 @@ country_event = {
 		}
 		
 		effect_tooltip = {
-			add_to_faction = AST
+			add_to_faction = AS0
 		}
 		hidden_effect = {
-			AST = {
+			AS0 = {
 				country_event = { id = tfv_australia.51 }
 			}
 		}
@@ -449,7 +469,7 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			AST = {
+			AS0 = {
 				country_event = { id = tfv_australia.52 }
 			}
 		}
@@ -466,10 +486,12 @@ country_event = {
 	
 	option = {
 		name = tfv_australia.51.a
-		SOV = {
-			add_to_faction = AST
+		SO0 = {
+			add_to_faction = AS0
 		}
-		news_event = { hours = 6 id = news.239 }
+		hidden_effect = {
+			news_event = { hours = 6 id = news.239 }
+		}
 	}
 }
 
@@ -506,16 +528,16 @@ country_event = {
 			}
 			modifier = {
 				add = -20
-				is_in_faction_with = ENG
+				is_in_faction_with = EN0
 			}
 		}
 		effect_tooltip = {
-			AST = {
-				puppet = NZL
+			AS0 = {
+				puppet = NZ0
 			}
 		}
 		hidden_effect = {
-			AST = { 
+			AS0 = { 
 				country_event = { id = tfv_australia.61 }
 			}
 		}
@@ -532,7 +554,7 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			AST = {
+			AS0 = {
 				country_event = { id = tfv_australia.62 }
 			}
 		}
@@ -549,9 +571,11 @@ country_event = {
 	
 	option = {
 		name = tfv_australia.61.a
-		puppet = NZL
+		puppet = NZ0
 		
-		news_event = { id = news.241 }
+		hidden_effect = {
+			news_event = { id = news.241 }
+		}
 	}
 }
 
@@ -565,9 +589,13 @@ country_event = {
 	
 	option = {
 		name = tfv_australia.62.a
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = NZL
+		NZ0 = {
+			ROOT = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
 		}
 	}
 }
@@ -590,12 +618,12 @@ country_event = {
 		}
 
 		effect_tooltip = {
-			AST = {
-				puppet = MAL
+			AS0 = {
+				puppet = MA0
 			}
 		}
 		hidden_effect = {
-			AST = {
+			AS0 = {
 				country_event = { id = tfv_australia.71 }
 			}
 		}
@@ -609,7 +637,7 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			AST = {
+			AS0 = {
 				country_event = { id = tfv_australia.72 }
 			}
 		}
@@ -627,9 +655,11 @@ country_event = {
 	option = {
 		name = tfv_australia.71.a
 		
-		puppet = MAL
+		puppet = MA0
 		
-		news_event = { id = news.242 hours = 6 }
+		hidden_effect = {
+			news_event = { id = news.242 hours = 6 }
+		}
 	}
 }
 
@@ -665,17 +695,17 @@ country_event = {
 		}
 		
 		effect_tooltip = {
-			AST = {
+			AS0 = {
 				if = {
 					limit = {
-						MAL = { is_puppet_of = AST }
+						MA0 = { is_puppet_of = AS0 }
 					}
-					JAP = {
-						puppet = MAL
+					JA0 = {
+						puppet = MA0
 					}
 					
 					else = {
-						JAP = {
+						JA0 = {
 							transfer_state = 334
 							transfer_state = 673
 							transfer_state = 668
@@ -684,19 +714,19 @@ country_event = {
 				}
 
 				if = {
-					limit = { JAP = { is_faction_leader = yes } }
-					JAP = {
-						add_to_faction = AST
+					limit = { JA0 = { is_faction_leader = yes } }
+					JA0 = {
+						add_to_faction = AS0
 					}
 					else = {
 						create_faction = "western_pacific_sphere"
-						add_to_faction = JAP					
+						add_to_faction = JA0					
 					}
 				}				
 			}
 		}
 		hidden_effect = {
-			AST = {
+			AS0 = {
 				country_event = { id = tfv_australia.81 }
 			}
 		}
@@ -714,7 +744,7 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			AST = {	
+			AS0 = {	
 				country_event = { id = tfv_australia.82 }
 			}
 		}
@@ -733,29 +763,31 @@ country_event = {
 		name = tfv_australia.81.a
 		if = {
 			limit = {
-				MAL = { is_puppet_of = AST }
+				MA0 = { is_puppet_of = AS0 }
 			}
-			JAP = {
-				puppet = MAL
+			JA0 = {
+				puppet = MA0
 			}
 			
 			else = {
-				JAP = { transfer_state = 334 }
-				JAP = { transfer_state = 673 }
-				JAP = { transfer_state = 668 }
+				JA0 = { transfer_state = 334 }
+				JA0 = { transfer_state = 673 }
+				JA0 = { transfer_state = 668 }
 			}
 		}
 		
 		if = {
-			limit = { JAP = { is_faction_leader = yes } }
-			JAP = { add_to_faction = AST }
+			limit = { JA0 = { is_faction_leader = yes } }
+			JA0 = { add_to_faction = AS0 }
 			else = {
 				create_faction = "western_pacific_sphere"
-				add_to_faction = JAP					
+				add_to_faction = JA0					
 			}
 		}
 		
-		news_event = { id = news.243 hours = 6 }
+		hidden_effect = {
+			news_event = { id = news.243 hours = 6 }
+		}
 	}
 }
 
@@ -879,7 +911,14 @@ country_event = {
 		start_civil_war = {
 			ideology = fascism
 			size = 0.5
-			states = { 334 673 669 668 738 667 }
+			states = { 334 673 669 668 738 667 804 }
+		}
+		random_other_country = {
+			limit = {
+				original_tag = INS
+				has_government = fascism
+			}
+			set_variable = { IN1 = THIS.id }
 		}
 	}
 	option = {
@@ -896,6 +935,13 @@ country_event = {
 				ideology = democratic
 				size = 0.5
 			}
+			random_other_country = {
+				limit = {
+					original_tag = INS
+					has_government = democratic
+				}
+				set_variable = { IN2 = THIS.id }
+			}
 		}
 		if = {
 			limit = {
@@ -906,6 +952,13 @@ country_event = {
 				ideology = communism
 				size = 0.5
 			}
+			random_other_country = {
+				limit = {
+					original_tag = INS
+					has_government = communism
+				}
+				set_variable = { IN2 = THIS.id }
+			}
 		}
 		if = {
 			limit = {
@@ -915,6 +968,13 @@ country_event = {
 				ruling_party = fascism
 				ideology = neutrality
 				size = 0.5
+			}
+			random_other_country = {
+				limit = {
+					original_tag = INS
+					has_government = neutrality
+				}
+				set_variable = { IN2 = THIS.id }
 			}
 		}
 	}

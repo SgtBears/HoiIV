@@ -12,7 +12,13 @@ state= {
 	{
 		owner = DEN
 		victory_points = {
-			6364 3 
+			6364 5 
+		}
+		victory_points = {
+			394 3
+		}
+		victory_points = {
+			399 3 
 		}
 		buildings = {
 			infrastructure = 8

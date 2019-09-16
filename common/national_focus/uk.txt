@@ -26,8 +26,8 @@ focus_tree = {
 				AND = {
 					has_war_with = GER
 					POL = {
-							is_in_faction_with = GER # If POL is in GER's faction, no help for us
-						}
+						is_in_faction_with = GER # If POL is in GER's faction, no help for us
+					}
 				}
 				AND = {
 					has_war = yes
@@ -40,7 +40,7 @@ focus_tree = {
 		icon = GFX_focus_generic_cryptologic_bomb
 		x = 0
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -67,7 +67,7 @@ focus_tree = {
 				NOT = { has_government = democratic }
 				num_of_factories > 30
 			}
-			NOt = {
+			NOT = {
 				has_war_with = USA
 			}
 			USA = { 
@@ -88,7 +88,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = crypto_bomb_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -106,7 +106,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = tizard_mission_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -129,7 +129,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_tank
 		x = 5
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -209,7 +209,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -232,7 +232,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_motorized_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -283,7 +283,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -319,6 +319,7 @@ focus_tree = {
 					}
 				}
 			}
+			remove_ideas = ENG_philip_kerr
 		}
 
 		completion_reward = {
@@ -532,7 +533,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_defense_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -584,7 +585,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -602,7 +603,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = shadow_scheme_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -627,7 +628,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -669,7 +670,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -691,7 +692,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -744,7 +745,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -840,7 +841,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = royal_ordinance_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -859,7 +860,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = royal_ordinance_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -894,7 +895,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 3
 		}
@@ -1110,7 +1111,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1129,7 +1130,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 3
 		}
@@ -1154,7 +1155,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1179,7 +1180,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1204,7 +1205,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = fighter_command_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 3
 		}
@@ -1222,7 +1223,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = aircraft_production_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1245,7 +1246,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1345,7 +1346,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1387,7 +1388,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1412,7 +1413,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1436,7 +1437,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_destroyer_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1465,7 +1466,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_destroyer_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1491,7 +1492,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = uk_convoy_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1516,7 +1517,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1540,7 +1541,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_waves_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1566,7 +1567,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_waves_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1590,7 +1591,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1620,7 +1621,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_battleship_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1673,7 +1674,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_battleship_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -1741,7 +1742,7 @@ focus_tree = {
 	#	icon = GFX_goal_support_democracy
 	#	x = 12
 	#	y = 0
-	#	cost = 10
+	#	cost = 70
 	#	ai_will_do = {
 	#		factor = 1
 	#	}	
@@ -1773,7 +1774,7 @@ focus_tree = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1806,7 +1807,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = uk_empire_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -1834,7 +1835,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 10
+		cost = 70
 		completion_reward = {
 			if = {
 				limit = {
@@ -1884,7 +1885,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = uk_mediterranean_focus
-		cost = 10
+		cost = 70
 		completion_reward = {
 			118 = {
 				add_building_construction = {
@@ -1932,7 +1933,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_mediterranean_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2011,7 +2012,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_mediterranean_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2099,7 +2100,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_protect_suez
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2164,7 +2165,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_balkan_strategy
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -2195,7 +2196,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_sanction_italy_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2226,7 +2227,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = uk_protect_suez
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2299,7 +2300,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_protect_suez
-		cost = 10
+		cost = 70
 		completion_reward = {
 			if = {
 				limit = { has_government = democratic }
@@ -2361,7 +2362,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = uk_mediterranean_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -2425,7 +2426,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		x = 33
 		y = 0
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2465,7 +2466,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ENG_revisit_colonial_policy
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2559,7 +2560,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_guide_the_colonies
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2638,7 +2639,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_towards_dominion_independence
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2722,7 +2723,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_foundations_for_an_indian_state
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2823,7 +2824,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ENG_foundations_for_an_indian_state
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2867,9 +2868,18 @@ focus_tree = {
 					RAJ = {
 						is_subject = yes
 						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
 					}
 				}
-				set_autonomy = { target = RAJ autonomy_state = autonomy_dominion }
+				if = {
+					limit = {
+						has_government = fascism
+					}
+					set_autonomy = { target = RAJ autonomy_state = autonomy_satellite }
+				}
+				else = {
+					set_autonomy = { target = RAJ autonomy_state = autonomy_dominion }
+				}
 			}
 			if = {
 				limit = {
@@ -2877,9 +2887,18 @@ focus_tree = {
 					BAN = {
 						is_subject = yes
 						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
 					}
 				}
-				set_autonomy = { target = BAN autonomy_state = autonomy_dominion }
+				if = {
+					limit = {
+						has_government = fascism
+					}
+					set_autonomy = { target = BAN autonomy_state = autonomy_satellite }
+				}
+				else = {
+					set_autonomy = { target = BAN autonomy_state = autonomy_dominion }
+				}
 			}
 			if = {
 				limit = {
@@ -2887,9 +2906,18 @@ focus_tree = {
 					PAK = {
 						is_subject = yes
 						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
 					}
 				}
-				set_autonomy = { target = PAK autonomy_state = autonomy_dominion }
+				if = {
+					limit = {
+						has_government = fascism
+					}
+					set_autonomy = { target = PAK autonomy_state = autonomy_satellite }
+				}
+				else = {
+					set_autonomy = { target = PAK autonomy_state = autonomy_dominion }
+				}
 			}
 			RAJ = {
 				drop_cosmetic_tag = yes
@@ -2906,6 +2934,7 @@ focus_tree = {
 			OR = {
 				has_full_control_of_state = 659
 				has_full_control_of_state = 326
+				has_full_control_of_state = 855
 				has_full_control_of_state = 332
 				has_full_control_of_state = 331
 				has_full_control_of_state = 119
@@ -2918,6 +2947,7 @@ focus_tree = {
 					owns_state = 659
 					owns_state = 326
 					owns_state = 332
+					owns_state = 855
 					owns_state = 331
 					owns_state = 119
 					owns_state = 118
@@ -2931,7 +2961,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_guide_the_colonies
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2962,7 +2992,28 @@ focus_tree = {
 				}
 				CAN = {
 					transfer_state = 332
-					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+					add_state_core = 332
+					if = {
+						limit = {
+							NOT = { has_opinion_modifier = ENG_returned_our_territory }
+						}
+						add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 855
+				}
+				CAN = {
+					transfer_state = 855
+					add_state_core = 855
+					if = {
+						limit = {
+							NOT = { has_opinion_modifier = ENG_returned_our_territory }
+						}
+						add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+					}
 				}
 			}
 			if = {
@@ -2971,18 +3022,42 @@ focus_tree = {
 				}
 				CAN = {
 					transfer_state = 331
+					add_state_core = 331
+					if = {
+						limit = {
+							NOT = { has_opinion_modifier = ENG_returned_our_territory }
+						}
+						add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+					}
 				}
 			}
 			if = {
 				limit = {
 					has_full_control_of_state = 299
-					has_full_control_of_state = 720
 				}
 				ARG = {
 					transfer_state = 299
 					299 = { add_core_of = ARG }
+					if = {
+						limit = {
+							NOT = { has_opinion_modifier = ENG_returned_our_territory }
+						}
+						add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 720
+				}
+				ARG = {
 					transfer_state = 720
-					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+					if = {
+						limit = {
+							NOT = { has_opinion_modifier = ENG_returned_our_territory }
+						}
+						add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+					}
 				}
 			}
 			if = {
@@ -3035,7 +3110,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_withdraw_from_contested_territories
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 1
 		}	
@@ -3153,7 +3228,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ENG_self_government_for_the_mediterranean
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -3577,7 +3652,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_withdraw_from_contested_territories
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 1
 		}	
@@ -3796,15 +3871,25 @@ focus_tree = {
 		available = { 
 			is_subject = no
 			OR = {
-			has_full_control_of_state = 311
-			has_full_control_of_state = 690
-			has_full_control_of_state = 693
-			has_full_control_of_state = 689
-			has_full_control_of_state = 691
-			has_full_control_of_state = 692
-			has_full_control_of_state = 308
-			has_full_control_of_state = 687
-		}
+				has_full_control_of_state = 311
+				has_full_control_of_state = 690
+				has_full_control_of_state = 693
+				has_full_control_of_state = 689
+				has_full_control_of_state = 816
+				has_full_control_of_state = 815
+				has_full_control_of_state = 691
+				has_full_control_of_state = 692
+				has_full_control_of_state = 308
+				has_full_control_of_state = 817
+				has_full_control_of_state = 818
+				has_full_control_of_state = 821
+				has_full_control_of_state = 822
+				has_full_control_of_state = 824
+				has_full_control_of_state = 825
+				has_full_control_of_state = 827
+				has_full_control_of_state = 826
+				has_full_control_of_state = 687
+			}
 		}
 		bypass = {
 			NOT = {
@@ -3813,11 +3898,21 @@ focus_tree = {
 					owns_state = 690
 					owns_state = 693
 					owns_state = 689
+					owns_state = 816
+					owns_state = 815
 					owns_state = 691
 					owns_state = 692
 					owns_state = 308
+					owns_state = 817
+					owns_state = 818
+					owns_state = 821
+					owns_state = 822
+					owns_state = 824
+					owns_state = 825
+					owns_state = 827
+					owns_state = 826
 					owns_state = 687
-		}
+				}
 			}
 		}
 
@@ -3827,7 +3922,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_self_government_for_the_middle_east
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 1
 		}	
@@ -3893,35 +3988,23 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_full_control_of_state = 689
-				}
-				release = JAM
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					set_autonomy = { target = JAM autonomy_state = autonomy_dominion }
-				}
-				if = {
-					limit = {
-						NOT = { has_dlc = "Together for Victory" }
-					}
-					puppet = JAM
-				}
-				hidden_effect = {
-					every_other_country = {
-						limit = {
-							has_war_with = ENG
-						}
-						JAM = {
-							add_to_war = { targeted_alliance = ENG enemy = PREV hostility_reason = asked_to_join }
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
 					has_full_control_of_state = 691
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 817
+					}
+					TRI = {
+						add_state_core = 817
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 696
+					}
+					TRI = {
+						add_state_core = 696
+					}
 				}
 				release = TRI
 				if = {
@@ -3949,7 +4032,45 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+					has_full_control_of_state = 689
+					has_full_control_of_state = 816
+					has_full_control_of_state = 815
+				}
+				release = JAM
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					set_autonomy = { target = JAM autonomy_state = autonomy_dominion }
+				}
+				if = {
+					limit = {
+						NOT = { has_dlc = "Together for Victory" }
+					}
+					puppet = JAM
+				}
+				hidden_effect = {
+					every_other_country = {
+						limit = {
+							has_war_with = ENG
+						}
+						JAM = {
+							add_to_war = { targeted_alliance = ENG enemy = PREV hostility_reason = asked_to_join }
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
 					has_full_control_of_state = 692
+					has_full_control_of_state = 817
+					has_full_control_of_state = 818
+					has_full_control_of_state = 821
+					has_full_control_of_state = 822
+					has_full_control_of_state = 824
+					has_full_control_of_state = 825
+					has_full_control_of_state = 827
+					has_full_control_of_state = 826
 					has_full_control_of_state = 308
 				}
 				release = BAS
@@ -4013,53 +4134,43 @@ focus_tree = {
 		available = { 
 			is_subject = no
 			OR = {
-			has_full_control_of_state = 422
-			has_full_control_of_state = 281
-			has_full_control_of_state = 636
-			has_full_control_of_state = 643
-			has_full_control_of_state = 639
-			has_full_control_of_state = 725
-			has_full_control_of_state = 711
-			has_full_control_of_state = 712
-			OR = {
-				RAJ = {
-					is_subject_of = ENG
-					has_full_control_of_state = 640
-					has_full_control_of_state = 288
-				}
-				RAJ = { NOT = { is_subject_of = ENG } }
-				ENG = {
-					has_full_control_of_state = 640
-					has_full_control_of_state = 288
-				}
-			}
-		}
-		}
-		bypass = {
-			NOT = {
-				AND = {
-					owns_state = 422
-					owns_state = 281
-					owns_state = 636
-					owns_state = 643
-					owns_state = 639
-					owns_state = 725
-					owns_state = 711
-					owns_state = 712
-					OR = {
-						RAJ = {
-							is_subject_of = ENG
-							owns_state = 640
-							owns_state = 288
-		}
-						RAJ = { is_subject = no }
-						ENG = {
-							owns_state = 640
-							owns_state = 288
-						}
+				has_full_control_of_state = 422
+				has_full_control_of_state = 281
+				has_full_control_of_state = 636
+				has_full_control_of_state = 643
+				has_full_control_of_state = 639
+				has_full_control_of_state = 711
+				has_full_control_of_state = 712
+				OR = {
+					RAJ = {
+						is_subject_of = ENG
+						has_full_control_of_state = 640
+						has_full_control_of_state = 288
+					}
+					RAJ = { NOT = { is_subject_of = ENG } }
+					ENG = {
+						has_full_control_of_state = 640
+						has_full_control_of_state = 288
 					}
 				}
 			}
+		}
+		bypass = {
+			NOT = { owns_state = 422 }
+			NOT = { owns_state = 281 }
+			NOT = { owns_state = 636 }
+			NOT = { owns_state = 643 }
+			NOT = { owns_state = 639 }
+			NOT = { owns_state = 711 }
+			NOT = { owns_state = 712 }
+			NOT = { owns_state = 640 }
+			NOT = { owns_state = 288 }
+			RAJ = {
+				is_subject_of = ENG
+				NOT = { owns_state = 640 }
+				NOT = { owns_state = 288 }
+			}
+			RAJ = { is_subject = no }
 		}
 
 		continue_if_invalid = no
@@ -4068,7 +4179,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_self_government_for_the_americas
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -4136,7 +4247,6 @@ focus_tree = {
 					has_full_control_of_state = 636
 					has_full_control_of_state = 643
 					has_full_control_of_state = 639
-					has_full_control_of_state = 725
 				}
 				release = FIJ
 				if = {
@@ -4236,7 +4346,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_self_government_for_africa
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -4446,7 +4556,10 @@ focus_tree = {
 							has_country_flag = ENG_decolonization_left_faction
 						}
 					}
-					CAN = { create_faction = ENG_coalition_of_free_commonwealth_states }
+					CAN = {
+						set_rule = { can_create_factions = yes }
+						create_faction = ENG_coalition_of_free_commonwealth_states
+					}
 				}
 				else_if = {
 					limit = {
@@ -4455,7 +4568,10 @@ focus_tree = {
 							has_country_flag = ENG_decolonization_left_faction
 						}
 					}
-					AST = { create_faction = ENG_coalition_of_free_commonwealth_states }
+					AST = {
+						set_rule = { can_create_factions = yes }
+						create_faction = ENG_coalition_of_free_commonwealth_states
+					}
 				}
 				else_if = {
 					limit = {
@@ -4464,7 +4580,10 @@ focus_tree = {
 							has_country_flag = ENG_decolonization_left_faction
 						}
 					}
-					RAJ = { create_faction = ENG_coalition_of_free_commonwealth_states }
+					RAJ = {
+						set_rule = { can_create_factions = yes }
+						create_faction = ENG_coalition_of_free_commonwealth_states
+					}
 				}
 				else_if = {
 					limit = {
@@ -4473,7 +4592,10 @@ focus_tree = {
 							has_country_flag = ENG_decolonization_left_faction
 						}
 					}
-					SAF = { create_faction = ENG_coalition_of_free_commonwealth_states }
+					SAF = {
+						set_rule = { can_create_factions = yes }
+						create_faction = ENG_coalition_of_free_commonwealth_states
+					}
 				}
 				else_if = {
 					limit = {
@@ -4482,7 +4604,10 @@ focus_tree = {
 							has_country_flag = ENG_decolonization_left_faction
 						}
 					}
-					NZL = { create_faction = ENG_coalition_of_free_commonwealth_states }
+					NZL = {
+						set_rule = { can_create_factions = yes }
+						create_faction = ENG_coalition_of_free_commonwealth_states
+					}
 				}
 				else_if = {
 					limit = {
@@ -4530,6 +4655,7 @@ focus_tree = {
 							}
 							has_country_flag = ENG_decolonization_left_faction
 						}
+						set_rule = { can_create_factions = yes }
 						create_faction = ENG_coalition_of_free_commonwealth_states
 					}
 				}
@@ -4561,7 +4687,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -4597,7 +4723,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = uk_colonial_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -4705,7 +4831,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = uk_asia_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -4853,7 +4979,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_burma_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -4887,7 +5013,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = uk_sanction_japan_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -4908,7 +5034,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_asia_focus
-		cost = 10
+		cost = 70
 
 		available = {
 			336 = {
@@ -4960,7 +5086,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = singapore_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -5024,12 +5150,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = sp_landward_forts_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
 		available = {
-			336 = {
+			809 = {
 				CONTROLLER = {
 					OR = {
 						tag = ENG
@@ -5042,7 +5168,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			336 = {
+			809 = {
 				add_building_construction = {
 					type = bunker
 					level = 3
@@ -5089,7 +5215,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = uk_asia_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -5126,7 +5252,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = hongkong_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -5176,7 +5302,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = hk_landward_forts_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -5236,7 +5362,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = hk_air_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -5327,7 +5453,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = uk_colonial_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -5377,7 +5503,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 3
 		}
@@ -5428,7 +5554,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -5579,7 +5705,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = uk_india_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -5645,7 +5771,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -5805,7 +5931,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_australia_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -5965,7 +6091,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -6124,7 +6250,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -6265,7 +6391,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_india_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			#modifier = {
@@ -6397,7 +6523,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_new_zealand_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			#modifier = {
@@ -6866,7 +6992,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_imperial_conference
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			#modifier = {
@@ -6881,7 +7007,9 @@ focus_tree = {
 					}
 				}
 				set_cosmetic_tag = ENG_imperial_federation_unified
-				news_event = { id = mtg_news.8 days = 1 }
+				hidden_effect = {
+					news_event = { id = mtg_news.8 days = 1 }
+				}
 			}
 			if = {
 				limit = {
@@ -6890,7 +7018,9 @@ focus_tree = {
 					}
 				}
 				set_cosmetic_tag = ENG_imperial_federation_india_unified
-				news_event = { id = mtg_news.9 days = 1 }
+				hidden_effect = {
+					news_event = { id = mtg_news.9 days = 1 }
+				}
 			}
 			CAN = {
 				every_unit_leader = {
@@ -7012,7 +7142,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_revisit_colonial_policy
-		cost = 5
+		cost = 36
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -7049,7 +7179,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = ENG_steady_as_she_goes
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -7198,7 +7328,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_global_defense
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7236,7 +7366,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_global_defense
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7260,7 +7390,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_motion_of_no_confidence
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7274,6 +7404,8 @@ focus_tree = {
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = ENG_no_further_appeasement_idea
 			hidden_effect = { news_event = { id = mtg_news.16 days = 1 } }
+			custom_effect_tooltip = remove_political_advisor
+			show_ideas_tooltip = ENG_philip_kerr
 		}
 	}
 
@@ -7290,7 +7422,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = ENG_no_further_appeasement
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7368,7 +7500,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_kickstart_the_war_industry
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7437,7 +7569,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_no_further_appeasement
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
@@ -7523,7 +7655,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_maintaining_imperial_integrity
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7548,7 +7680,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_no_further_appeasement
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
@@ -7608,7 +7740,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_maintaining_the_balance_of_power
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}
@@ -7655,7 +7787,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_steady_as_she_goes
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7753,7 +7885,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_home_defence
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7788,7 +7920,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_iraq_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7821,7 +7953,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_iran_focus
-		cost = 10
+		cost = 70
 
 		available_if_capitulated = yes
 
@@ -7849,7 +7981,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_embargo_ussr
-		cost = 10
+		cost = 70
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -7884,7 +8016,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_home_defence
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7910,7 +8042,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_issue_gasmasks
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7938,7 +8070,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_military_training_act
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -7967,7 +8099,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_embargo_germany
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8023,7 +8155,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_home_defence
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8081,7 +8213,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_scandinavian_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8114,7 +8246,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_scandinavian_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8147,7 +8279,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_scandinavian_focus
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8185,7 +8317,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_home_defence
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8228,7 +8360,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_home_defence
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8265,7 +8397,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_benelux_intervention
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8298,7 +8430,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_benelux_intervention
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8335,7 +8467,7 @@ focus_tree = {
 		x = 18
 		y = 0
 		relative_position_id = ENG_steady_as_she_goes
-		cost = 5
+		cost = 36
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8477,6 +8609,8 @@ focus_tree = {
 					value = -200
 				}
 			}
+			custom_effect_tooltip = remove_political_advisor
+			show_ideas_tooltip = ENG_david_lloyd_george
 		}
 	}
 
@@ -8495,7 +8629,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = ENG_a_change_in_course
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8549,7 +8683,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_the_kings_party
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8626,7 +8760,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_reassess_continental_commitments
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8653,7 +8787,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_isolate_the_mediterranean_threat
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8692,7 +8826,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_isolate_the_mediterranean_threat
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8714,7 +8848,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_noninterference_treaty_with_germany
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8748,7 +8882,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ENG_a_change_in_course
 		cancel_if_invalid = yes
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -8846,7 +8980,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_organize_the_blackshirts
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8884,7 +9018,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_the_british_path_to_fascism
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8956,30 +9090,32 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_pre_empt_spanish_alignment }
 		available = {
 			is_subject = no
-			any_country = {
-				original_tag = SPR
-				has_government = fascism
+			SP1 = {
 				exists = yes
+				has_government = fascism
 				NOT = { is_in_faction_with = ENG }
 				has_war = yes
+				NOT = { has_civil_war = yes }
 			}
-			has_global_flag = scw_over
 		}
 		icon = GFX_goal_generic_dangerous_deal
 		x = -1
 		y = 1
 		relative_position_id = ENG_secure_the_italian_alliance
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
-			random_country = {
-				limit = {
-					original_tag = SPR
-					has_government = fascism
+			SP1 = {
+				transfer_state = 118
+			}
+			add_to_faction = SP1
+			custom_effect_tooltip = needs_approval
+			hidden_effect = {
+				SP1 = {
+					country_event = { id = mtg_britain.40 hours = 6 }
 				}
-				country_event = { id = mtg_britain.40 hours = 6 }
 			}
 		}
 	}
@@ -8990,19 +9126,17 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_gibraltar_for_spanish_support }
 		available = {
 			is_subject = no
-			any_country = {
-				original_tag = SPR
+			SP1 = {
 				has_government = fascism
 				exists = yes
 				NOT = { is_in_faction_with = ENG }
 				NOT = { has_war_with = ENG }
+				NOT = { has_civil_war = yes }
 			}
-			has_global_flag = scw_over
 		}
 		bypass = {
 			NOT = {
-				any_country = {
-					original_tag = SPR
+				SP1 = {
 					has_government = fascism
 					exists = yes
 				}
@@ -9013,7 +9147,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_secure_the_italian_alliance
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -9022,8 +9156,7 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 0
-				any_country = {
-					original_tag = SPR
+				SP1 = {
 					has_government = fascism
 					exists = yes
 					is_in_faction_with = GER
@@ -9032,18 +9165,10 @@ focus_tree = {
 		}	
 		completion_reward = {
 			ENG_mosley_pacifism_level_down = yes
-			random_country = {
-				limit = {
-					original_tag = SPR
-					has_government = fascism
-				}
-				ENG = {
-					create_wargoal = {
-						type = puppet_wargoal_focus
-						target = PREV
-						expire = 0
-					}
-				}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SP1
+				expire = 0
 			}
 		}
 	}
@@ -9061,7 +9186,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_gibraltar_for_spanish_support
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -9073,7 +9198,7 @@ focus_tree = {
 			ENG_mosley_pacifism_level_down = yes
 			create_wargoal = {
 				type = puppet_wargoal_focus
-				target = GER
+				target = GE0
 				expire = 0
 			}
 		}
@@ -9089,7 +9214,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ENG_the_british_path_to_fascism
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -9117,10 +9242,21 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_idea = limited_exports }
-					NOT = { has_idea = closed_economy }
+					has_idea = free_trade
 				}
-				add_ideas = limited_exports
+				swap_ideas = {
+					remove_idea = free_trade
+					add_idea = limited_exports
+				}
+			}
+			if = {
+				limit = {
+					has_idea = export_focus
+				}
+				swap_ideas = {
+					remove_idea = export_focus
+					add_idea = limited_exports
+				}
 			}
 			add_ideas = ENG_the_mosley_memorandum_idea
 			random_owned_controlled_state = {
@@ -9176,7 +9312,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ENG_the_kings_party
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -9221,7 +9357,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_god_save_the_king
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -9281,7 +9417,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ENG_ceylon_forward_operating_base
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -9356,7 +9492,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_reclaim_the_jewel_in_the_crown
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -9396,7 +9532,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_pre_empt_the_ideological_threat
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -9433,7 +9569,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ENG_reclaim_the_jewel_in_the_crown
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -9466,13 +9602,17 @@ focus_tree = {
 			owns_state = 121
 			owns_state = 136
 			owns_state = 120
+			owns_state = 790
+			owns_state = 791
+			owns_state = 792
+			owns_state = 793
 		}
 		will_lead_to_war_with = IRE
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 0
 		y = 2
 		relative_position_id = ENG_god_save_the_king
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -9490,6 +9630,10 @@ focus_tree = {
 						owns_state = 121
 						owns_state = 136
 						owns_state = 120
+						owns_state = 790
+						owns_state = 791
+						owns_state = 792
+						owns_state = 793
 					}
 				}
 				ENG = {
@@ -9521,7 +9665,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ENG_consolidate_the_british_isles
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -9600,7 +9744,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_god_save_the_king
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -9665,7 +9809,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ENG_appeal_to_imperial_loyalists
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -9753,7 +9897,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ENG_bring_the_dominions_back_into_the_fold
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -9794,7 +9938,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_bring_the_dominions_back_into_the_fold
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -9833,7 +9977,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ENG_a_change_in_course
 		cancel_if_invalid = yes
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -9931,54 +10075,56 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ENG_organize_the_blackshirts
-		cost = 5
+		cost = 35
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
 			add_political_power = 120
 			custom_effect_tooltip = ENG_move_to_secure_the_dominions_tt
-			if = {
-				limit = {
-					CAN = {
-						is_subject_of = ENG
+			hidden_effect = {
+				if = {
+					limit = {
+						CAN = {
+							is_subject_of = ENG
+						}
 					}
+					CAN = { country_event = { id = mtg_britain.62 hours = 6 } }
 				}
-				CAN = { country_event = { id = mtg_britain.62 hours = 6 } }
-			}
-			if = {
-				limit = {
-					SAF = {
-						is_subject_of = ENG
+				if = {
+					limit = {
+						SAF = {
+							is_subject_of = ENG
+						}
 					}
+					SAF = { country_event = { id = mtg_britain.62 hours = 6 } }
 				}
-				SAF = { country_event = { id = mtg_britain.62 hours = 6 } }
-			}
-			if = {
-				limit = {
-					RAJ = {
-						is_subject_of = ENG
+				if = {
+					limit = {
+						RAJ = {
+							is_subject_of = ENG
+						}
 					}
+					RAJ = { country_event = { id = mtg_britain.62 hours = 6 } }
 				}
-				RAJ = { country_event = { id = mtg_britain.62 hours = 6 } }
-			}
-			if = {
-				limit = {
-					AST = {
-						is_subject_of = ENG
+				if = {
+					limit = {
+						AST = {
+							is_subject_of = ENG
+						}
 					}
+					AST = { country_event = { id = mtg_britain.62 hours = 6 } }
 				}
-				AST = { country_event = { id = mtg_britain.62 hours = 6 } }
-			}
-			if = {
-				limit = {
-					NZL = {
-						is_subject_of = ENG
+				if = {
+					limit = {
+						NZL = {
+							is_subject_of = ENG
+						}
 					}
+					NZL = { country_event = { id = mtg_britain.62 hours = 6 } }
 				}
-				NZL = { country_event = { id = mtg_britain.62 hours = 6 } }
+				news_event = { id = mtg_news.30 days = 1 }
 			}
-			hidden_effect = { news_event = { id = mtg_news.30 days = 1 } }
 		}
 	}
 
@@ -9992,7 +10138,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_concessions_to_the_trade_unions
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10012,14 +10158,153 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_concessions_to_the_trade_unions
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
+		complete_tooltip = {
+			add_political_power = 60
+			every_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_upper_classes_2IC
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ENG_raymond_briggs
+			remove_unit_leader = 997
+			remove_unit_leader = 996
+			remove_unit_leader = 995
+			remove_unit_leader = 994
+			remove_unit_leader = 993
+			remove_unit_leader = 998
+			remove_unit_leader = 983
+			remove_unit_leader = 984
+			remove_unit_leader = 987
+			remove_unit_leader = 988
+			custom_effect_tooltip = remove_chief_of_army
+			show_ideas_tooltip = john_vereker
+			custom_effect_tooltip = remove_chief_of_army
+			show_ideas_tooltip = alan_brooke
+			custom_effect_tooltip = remove_military_high_command
+			show_ideas_tooltip = archibald_wavell
+			custom_effect_tooltip = remove_military_high_command
+			show_ideas_tooltip = louis_mountbatten
+			custom_effect_tooltip = remove_theorist
+			show_ideas_tooltip = bernard_montgomery
+			custom_effect_tooltip = remove_theorist
+			show_ideas_tooltip = harold_alexander
+			custom_effect_tooltip = remove_theorist
+			show_ideas_tooltip = james_somerville
+			
+		}
 		completion_reward = {
 			add_political_power = 60
-			custom_effect_tooltip = ENG_eliminate_the_upper_class_tt
-			country_event = { id = mtg_britain.45 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_upper_classes_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_upper_classes_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_upper_classes_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_upper_classes_2AF
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ENG_raymond_briggs
+			remove_unit_leader = 997
+			remove_unit_leader = 996
+			remove_unit_leader = 995
+			remove_unit_leader = 994
+			remove_unit_leader = 993
+			remove_unit_leader = 998
+			remove_unit_leader = 983
+			remove_unit_leader = 984
+			remove_unit_leader = 987
+			remove_unit_leader = 988
+			custom_effect_tooltip = remove_chief_of_army
+			show_ideas_tooltip = john_vereker
+			custom_effect_tooltip = remove_chief_of_army
+			show_ideas_tooltip = alan_brooke
+			custom_effect_tooltip = remove_military_high_command
+			show_ideas_tooltip = archibald_wavell
+			custom_effect_tooltip = remove_military_high_command
+			show_ideas_tooltip = louis_mountbatten
+			custom_effect_tooltip = remove_theorist
+			show_ideas_tooltip = bernard_montgomery
+			custom_effect_tooltip = remove_theorist
+			show_ideas_tooltip = harold_alexander
+			custom_effect_tooltip = remove_theorist
+			show_ideas_tooltip = james_somerville
 		}
 	}
 
@@ -10034,7 +10319,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_the_fate_of_the_royal_family
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10058,13 +10343,14 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ENG_for_the_good_of_the_revolution
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
 		completion_reward = {
 			add_stability = 0.05
 			dismantle_faction = yes
+			set_rule = { can_create_factions = yes }
 			create_faction = ENG_british_communist_alternative
 			hidden_effect = { news_event = { id = mtg_news.36 days = 1 } }
 			if = {
@@ -10130,7 +10416,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_the_british_communist_alternative
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10142,11 +10428,13 @@ focus_tree = {
 							NOT = { original_tag = PUE }
 							owns_state = 686
 							has_full_control_of_state = 686
+							owns_state = 828
+							has_full_control_of_state = 828
 						}
 						PUE = {
 							is_subject_of = PREV
 						}
-						"PHI" = {
+						PHI = {
 							is_subject_of = PREV
 						}
 						AND = {
@@ -10513,6 +10801,8 @@ focus_tree = {
 							NOT = { original_tag = CRC }
 							owns_state = 695
 							has_full_control_of_state = 695
+							owns_state = 820
+							has_full_control_of_state = 820
 						}
 						AND = {
 							NOT = { original_tag = SUR }
@@ -10534,6 +10824,12 @@ focus_tree = {
 							has_full_control_of_state = 335
 							owns_state = 672
 							has_full_control_of_state = 672
+							owns_state = 803
+							has_full_control_of_state = 803
+							owns_state = 804
+							has_full_control_of_state = 804
+							owns_state = 807
+							has_full_control_of_state = 807
 							owns_state = 334
 							has_full_control_of_state = 334
 							owns_state = 673
@@ -10598,7 +10894,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_the_british_communist_alternative
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10664,7 +10960,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_enforce_decolonization
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10703,7 +10999,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_reach_out_across_the_channel
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10743,7 +11039,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ENG_for_the_good_of_the_revolution
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 10
 		}	
@@ -10772,7 +11068,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_follow_moscow
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10816,7 +11112,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_tackle_fascism
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10849,7 +11145,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_follow_moscow
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10870,7 +11166,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_tackle_capitalism
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10916,7 +11212,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_bermuda_invasion_launch_point
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10939,7 +11235,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ENG_follow_moscow
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10969,7 +11265,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ENG_the_one_true_revolution
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	
@@ -10992,7 +11288,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = ENG_liberate_the_home_of_marx
-		cost = 10
+		cost = 70
 		ai_will_do = {
 			factor = 1
 		}	

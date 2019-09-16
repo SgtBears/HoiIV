@@ -1,0 +1,30 @@
+
+state={
+	id=875
+	name="STATE_875"
+	manpower = 70000
+	
+	state_category = small_island
+
+	history={
+		owner = ENG
+		add_core_of = TON
+		buildings = {
+			infrastructure = 3
+			14264 = {
+				naval_base = 1
+			}
+			14266 = {
+				naval_base = 1
+			}
+		}
+		
+		victory_points = {
+			14264 1 
+		}
+	}
+	
+	provinces={
+		14264 14265 14266
+	}
+}

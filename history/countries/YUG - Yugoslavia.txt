@@ -183,7 +183,7 @@ if = {
 
 set_convoys = 10
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = yes
@@ -192,12 +192,12 @@ set_popularities = {
 	democratic = 15
 	fascism = 10
 	communism = 15
-	neutrality = 60
+	monarchism = 60
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = neutrality
+		ruling_party = monarchism
 		last_election = "1938.12.1"
 		election_frequency = 36
 		elections_allowed = yes
@@ -206,7 +206,7 @@ set_popularities = {
 		democratic = 10
 		fascism = 20
 		communism = 10
-		neutrality = 60
+		monarchism = 60
 	}
 }
 set_stability = 0.6
@@ -216,9 +216,9 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = royalism
 	traits = {
-		#
+		regent
 	}
 }
 

@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		NBR_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		NBR_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		NBR_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		NBR_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = NBR
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NBR_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		NBR_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NBR_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		NBR_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = NBR
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NBR_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = NBR
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		NBR_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		NBR_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NBR_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NBR_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NBR_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		NBR_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = NBR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		NBR_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		NBR_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = NBR
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

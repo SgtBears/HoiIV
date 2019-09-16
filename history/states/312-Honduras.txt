@@ -2,7 +2,7 @@ state=
 {
 	id=312
 	name="STATE_312"
-	manpower=859761
+	manpower=1287000
 	resources={
 		chromium=1 # was: 1
 	}
@@ -19,17 +19,23 @@ state=
 			12865 = {
 				naval_base = 1
 			}
-			8017 = {
+			13309 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = HON
 		victory_points = {
-			12865 3 
+			12865 1 
+		}
+		victory_points = {
+			13309 1 
+		}
+		victory_points = {
+			13311 3 
 		}
 
 	}
 	provinces={
-		2031 8017 12865
+		2031 8017 12865 13309 13310 13313 13311 13312
 	}
 }

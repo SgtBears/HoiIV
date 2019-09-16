@@ -1,0 +1,211 @@
+ideas = {
+
+	political_advisor = {
+
+		EGY_generic_captain_of_industry = {
+
+			picture = generic_political_advisor_arab_2
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { captain_of_industry }
+		}
+		
+		EGY_generic_fortification_engineer = {
+
+			picture = generic_political_advisor_arab_1
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { fortification_engineer }
+		}
+
+		EGY_generic_war_industrialist = {
+
+			picture = generic_political_advisor_arab_3
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+
+	army_chief = {
+		
+		EGY_generic_army_chief_off = {
+			
+			picture = generic_army_arab_2
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		EGY_generic_army_chief_def = {
+			
+			picture = generic_army_arab_1
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+	}
+
+	navy_chief = {		
+
+		EGY_generic_navy_chief_decisive_bat = {
+			
+			picture = generic_navy_arab_2
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		EGY_generic_navy_anti_submarine = {
+			
+			picture = generic_navy_arab_3
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+
+	air_chief = {
+
+		EGY_generic_air_close_air_sup = {
+			
+			picture = generic_air_arab_3
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	
+		EGY_generic_air_chief_all_weather = {
+			
+			picture = generic_air_arab_3
+		
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+	}
+
+	high_command = {
+
+			
+		EGY_generic_army_art = {
+			
+			picture = generic_army_arab_1
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		EGY_generic_army_log = {
+
+			picture = generic_army_arab_3
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		EGY_generic_navy_fleet_log = {
+
+			picture = generic_navy_arab_2
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		EGY_generic_air_air_combat_trainer = {
+
+			picture = generic_air_arab_2
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+
+	theorist = {
+
+		EGY_generic_military_theorist = {
+			
+			picture = generic_army_arab_1
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+	
+		EGY_generic_naval_theorist = {
+			
+			picture = generic_navy_arab_3
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		EGY_generic_air_warfare_theorist = {
+			
+			picture = generic_air_arab_2
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+}

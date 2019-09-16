@@ -49,6 +49,24 @@ country_event = {
 
 	option = {
 		name = turkey.1.a
+		if = {
+			limit = {
+				has_country_leader = { ruling_only = yes name = "Mustafa Kemal Atatürk" }
+			}
+			effect_tooltip = {
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Ismet Inönü"
+					desc = "POLITICS_ISMET_INÖNÜ_DESC"
+					picture = "Portrait_Turkey_Ismet_Inonu.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						#
+					}
+				}
+			}
+		}
 		every_country = {
 	 		limit = {
 				has_unit_leader = 59

@@ -411,6 +411,9 @@ ideas = {
 				original_tag = RAJ
 			}
 
+			visible = {
+				NOT = { has_completed_focus = RAJ_swaraj }
+			}
 			available = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
@@ -444,6 +447,9 @@ ideas = {
 				original_tag = RAJ
 			}
 
+			visible = {
+				NOT = { has_completed_focus = RAJ_indian_national_congress }
+			}
 			available = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }	
@@ -475,6 +481,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = RAJ				
+			}
+			visible = {
+				NOT = { has_completed_focus = RAJ_indian_national_congress }
 			}
 
 			available = {

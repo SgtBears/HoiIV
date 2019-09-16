@@ -1,0 +1,22 @@
+state = {
+	id=815
+	name="STATE_815"
+	manpower=5800
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = ENG
+		add_core_of = JAM
+		add_core_of = TRI
+		buildings = {
+			infrastructure = 4
+			13613 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		13613
+	}
+}

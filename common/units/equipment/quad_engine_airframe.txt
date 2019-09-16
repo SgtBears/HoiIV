@@ -76,6 +76,8 @@ equipments = {
 		naval_strike_attack = 1.5
 		naval_strike_targetting = 0.6
 		
+		#Space taken in convoy
+		lend_lease_cost = 12
 		build_cost_ic = 80
 		resources = {
 			aluminium = 3
@@ -161,7 +163,7 @@ equipments = {
 		air_range = 7000
 		maximum_speed = 920
 		air_agility = 14
-		air_attack = 100
+		air_attack = 150
 		air_defence = 54
 		air_bombing = 64
 	}

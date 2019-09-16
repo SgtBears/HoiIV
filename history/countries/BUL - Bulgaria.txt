@@ -76,7 +76,7 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1931.6.21"
 	election_frequency = 48
 	elections_allowed = no
@@ -85,13 +85,13 @@ set_politics = {
 set_popularities = {
 	democratic = 5
 	fascism = 35
-	neutrality = 60
+	monarchism = 60
 }
 
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = neutrality
+		ruling_party = monarchism
 		last_election = "1938.3.27"
 		election_frequency = 48
 		elections_allowed = no
@@ -103,7 +103,7 @@ create_country_leader = {
 	desc = "POLITICS_BORIS_III_DESC"
 	picture = "Portrait_Bulgaria_Boris_III.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = royalism
 	traits = {
 		#
 	}
@@ -123,13 +123,22 @@ create_country_leader = {
 create_country_leader = {
 	name = "Nikola Petkov"
 	desc = "POLITICS_NIKOLA_PETKOV_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
 		#
 	}
 }
+#create_country_leader = {
+#	name = "Bogdan Filov"
+#	picture = "gfx/leaders/BUL/Portrait_BUL_Bogdan_Filov.tga"
+#	expire = "1965.1.1"
+#	ideology = socialism
+#	traits = {
+#		#
+#	}
+#}
 
 create_country_leader = {
 	name = "Hristo Lukov"

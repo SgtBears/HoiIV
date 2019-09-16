@@ -108,11 +108,100 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				option = FREE
 			}
 			OR = {
-				NOT = { has_dlc = "Man the Guns" }
 				NOT = { original_tag = ENG }
+				NOT = { original_tag = CZE }
+				NOT = { original_tag = GER }
+				NOT = { original_tag = WGR }
+				NOT = { original_tag = DDR }
+				NOT = { original_tag = SER }
+				NOT = { original_tag = YUG }
+				NOT = { original_tag = SLV }
+				NOT = { original_tag = BOS }
+				NOT = { original_tag = MAC }
+				NOT = { original_tag = CRO }
+				NOT = { original_tag = MNT }
 			}
 		}
 		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			OR = {
+				original_tag = SLV
+				original_tag = BOS
+				original_tag = MAC
+				original_tag = CRO
+				original_tag = MNT
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_YUGOSLAVIA_TOOLTIP
+			NOT = { FROM = { tag = YUG } }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			original_tag = SER
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = YUG } }
+			NOT = { FROM = { tag = MNT } }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			original_tag = YUG
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = SER } }
+			NOT = { FROM = { tag = MNT } }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			OR = {
+				original_tag = GER
+				original_tag = WGR
+				original_tag = DDR
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = GER } }
+			NOT = { FROM = { tag = DDR } }
+			NOT = { FROM = { tag = WGR } }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			original_tag = CZE
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = SLO } }
+		}
 	}
 	if = {
 		limit = {
@@ -124,18 +213,19 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			original_tag = ENG
 		}
 		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = WLS } }
+			NOT = { FROM = { tag = NIR } }
+			NOT = { FROM = { tag = SCO } }
+		}
+		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_BRITAIN_TOOLTIP
 			NOT = { FROM = { tag = MLT } }
 			NOT = { FROM = { tag = CYP } }
 			NOT = { FROM = { tag = PAL } }
 			NOT = { FROM = { tag = ISR } }
 			NOT = { FROM = { tag = JOR } }
-			NOT = {
-				AND = {
-					FROM = { tag = EGY }
-					is_ironman = no
-				}
-			}
+			NOT = { FROM = { tag = EGY } }
 			NOT = { FROM = { tag = KUW } }
 			NOT = { FROM = { tag = QAT } }
 			NOT = { FROM = { tag = UAE } }
@@ -168,16 +258,161 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		limit = {
 			has_game_rule = {
 				rule = allow_release_nations
+				option = FREE
+			}
+			original_tag = ENG
+			NOT = { has_dlc = "Man the Guns" }
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = WLS } }
+			NOT = { FROM = { tag = NIR } }
+			NOT = { FROM = { tag = SCO } }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
 				option = PEACE_ONLY
 			}
 			OR = {
-				NOT = { has_dlc = "Man the Guns" }
 				NOT = { original_tag = ENG }
+				NOT = { original_tag = CZE }
+				NOT = { original_tag = GER }
+				NOT = { original_tag = WGR }
+				NOT = { original_tag = DDR }
+				NOT = { original_tag = SER }
+				NOT = { original_tag = YUG }
+				NOT = { original_tag = SLV }
+				NOT = { original_tag = BOS }
+				NOT = { original_tag = MAC }
+				NOT = { original_tag = CRO }
+				NOT = { original_tag = MNT }
 			}
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
 			has_war = no
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			OR = {
+				original_tag = SLV
+				original_tag = BOS
+				original_tag = MAC
+				original_tag = CRO
+				original_tag = MNT
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
+			has_war = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_YUGOSLAVIA_TOOLTIP
+			NOT = { FROM = { tag = YUG } }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = PEACE_ONLY
+			}
+			original_tag = YUG
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
+			has_war = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = SER } }
+			NOT = { FROM = { tag = MNT } }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = PEACE_ONLY
+			}
+			original_tag = SER
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
+			has_war = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = YUG } }
+			NOT = { FROM = { tag = MNT } }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = PEACE_ONLY
+			}
+			OR = {
+				original_tag = GER
+				original_tag = WGR
+				original_tag = DDR
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
+			has_war = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = GER } }
+			NOT = { FROM = { tag = DDR } }
+			NOT = { FROM = { tag = WGR } }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = PEACE_ONLY
+			}
+			original_tag = CZE
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
+			has_war = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = SLO } }
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = PEACE_ONLY
+			}
+			original_tag = ENG
+			NOT = { has_dlc = "Man the Guns" }
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
+			has_war = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = WLS } }
+			NOT = { FROM = { tag = NIR } }
+			NOT = { FROM = { tag = SCO } }
 		}
 	}
 	if = {
@@ -192,6 +427,12 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
 			has_war = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_UNITED_TOOLTIP
+			NOT = { FROM = { tag = WLS } }
+			NOT = { FROM = { tag = NIR } }
+			NOT = { FROM = { tag = SCO } }
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_BRITAIN_TOOLTIP

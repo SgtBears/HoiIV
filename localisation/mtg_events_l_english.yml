@@ -1187,6 +1187,7 @@
  mtg_news.15.desc:0 "At midnight today the long-awaited transfer of full sovereignty for the various subject nations of the British Empire was accomplished. Despite the [From.GetAdjective] government's invitation for former subjects to join the [From.GetFactionName], many have chosen to go their own way.\n\nThe move continues to be controversial domestically, but is greatly applauded by socialists internationally. What weakness this has caused for [From.GetNameDef]'s position in the world remains to be seen, as does the situation of those nations who elected to go their own way."
  mtg_news.15.a:0 "The future was inevitable, so we have made it the now."
  mtg_news.15.b:0 "The end of an era."
+ mtg_news.15.c:0 "The future was inevitable, so they have made it the now."
  mtg_news.16.t:0 "[From.GetName] Disavows Appeasement"
  mtg_news.16.desc:0 "In a public statement today, the new [From.GetAdjective] Prime Minister [From.GetLeader] has announced the new government's intention to steer away from the course of Appeasement their predecessors had loyally maintained. In no uncertain terms, [From.GetLeader] made it clear that [From.GetNameDef]'s aim is to "put a halt to the march of tyranny, wherever it may rear its ugly head".\n\nWhether the threat of war will serve to halt the expansionism of certain nations remains to be seen, but already recruitment programs are well on their way in [From.GetNameDef], lending credence to their statements."
  mtg_news.16.a:0 "The time to appease is over. We have now drawn the line."

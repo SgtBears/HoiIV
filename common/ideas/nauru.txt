@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		NAU_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		NAU_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		NAU_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		NAU_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = NAU
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NAU_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		NAU_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NAU_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		NAU_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = NAU
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NAU_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = NAU
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		NAU_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		NAU_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NAU_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NAU_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NAU_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		NAU_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = NAU
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		NAU_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		NAU_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = NAU
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

@@ -23,16 +23,16 @@ country_event = {
 					any_other_country = {
 						is_major = yes
 						OR = {
-							is_in_faction_with = EST
-							has_guaranteed = EST
+							is_in_faction_with = ES0
+							has_guaranteed = ES0
 						}
 					}
 					has_idea = anti_soviet_pact
-					SOV = { surrender_progress > 0.5 }
+					SO0 = { surrender_progress > 0.5 }
 				}
 			}
 		}
-		SOV = {
+		SO0 = {
 			country_event = { days = 5 id = soviet.6 }
 		}
 		custom_effect_tooltip = GAME_OVER_TT
@@ -47,7 +47,7 @@ country_event = {
 					is_historical_focus_on = no
 					any_other_country = {
 						is_major = yes
-						is_in_faction_with = EST
+						is_in_faction_with = ES0
 					}
 				}
 			}
@@ -55,18 +55,20 @@ country_event = {
 				add = 5
 				any_other_country = {
 					is_major = yes
-					has_guaranteed = EST
+					has_guaranteed = ES0
 				}
 			}
 		}
 
-		SOV = {
-			country_event = { days = 5 id = soviet.7 }
-			effect_tooltip = {
-				create_wargoal = {
-					type = annex_everything
-					target = EST
-				}	
+		ES0 = {
+			SO0 = {
+				country_event = { days = 5 id = soviet.7 }
+				effect_tooltip = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}	
+				}
 			}
 		}
 	}
@@ -91,17 +93,17 @@ country_event = {
 					any_other_country = {
 						is_major = yes
 						OR = {
-							is_in_faction_with = LAT
-							has_guaranteed = LAT
+							is_in_faction_with = LA0
+							has_guaranteed = LA0
 						}
 					}
 					has_idea = anti_soviet_pact
-					SOV = { surrender_progress > 0.5 }
+					SO0 = { surrender_progress > 0.5 }
 				}
 			}
 		}
 
-		SOV = {
+		SO0 = {
 			country_event = { days = 5 id = soviet.8 }
 		}
 	}
@@ -115,7 +117,7 @@ country_event = {
 					is_historical_focus_on = no
 					any_other_country = {
 						is_major = yes
-						is_in_faction_with = LAT
+						is_in_faction_with = LA0
 					}
 				}
 			}
@@ -123,17 +125,19 @@ country_event = {
 				add = 5
 				any_other_country = {
 					is_major = yes
-					has_guaranteed = LAT
+					has_guaranteed = LA0
 				}
 			}
 		}
 
-		SOV = {
-			country_event = { days = 5 id = soviet.9 }
-			effect_tooltip = {
-				create_wargoal = {
-					type = annex_everything
-					target = LAT
+		LA0 = {
+			SO0 = {
+				country_event = { days = 5 id = soviet.9 }
+				effect_tooltip = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
 				}
 			}
 		}
@@ -159,17 +163,17 @@ country_event = {
 					any_other_country = {
 						is_major = yes
 						OR = {
-							is_in_faction_with = LIT
-							has_guaranteed = LIT
+							is_in_faction_with = LI0
+							has_guaranteed = LI0
 						}
 					}
 					has_idea = anti_soviet_pact
-					SOV = { surrender_progress > 0.5 }
+					SO0 = { surrender_progress > 0.5 }
 				}
 			}
 		}
 
-		SOV = {
+		SO0 = {
 			country_event = { days = 5 id = soviet.10 }
 		}
 	}
@@ -183,7 +187,7 @@ country_event = {
 					is_historical_focus_on = no
 					any_other_country = {
 						is_major = yes
-						is_in_faction_with = LIT
+						is_in_faction_with = LI0
 					}
 				}
 			}
@@ -191,18 +195,20 @@ country_event = {
 				add = 5
 				any_other_country = {
 					is_major = yes
-					has_guaranteed = LIT
+					has_guaranteed = LI0
 				}
 			}
 		}
 
-		SOV = {
-			country_event = { days = 5 id = soviet.11 }
-			effect_tooltip = {
-				create_wargoal = {
-				type = annex_everything
-				target = LIT
-				}		
+		LI0 = {
+			SO0 = {
+				country_event = { days = 5 id = soviet.11 }
+				effect_tooltip = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}		
+				}
 			}
 		}
 	}
@@ -225,11 +231,11 @@ country_event = {
 				factor = 0
 				NOT = {
 					OR = {
-						is_puppet_of = GER
-						is_in_faction_with = GER
+						is_puppet_of = GE0
+						is_in_faction_with = GE0
 					}
 				}
-				GER = {
+				GE0 = {
 					surrender_progress > 0.09
 				}
 			}
@@ -237,25 +243,25 @@ country_event = {
 				factor = 0
 				any_other_country = {
 					is_in_faction_with = ROOT
-					has_war_with = GER
+					has_war_with = GE0
 				}
 			}
 			modifier = {
 				factor = 0
 				any_other_country = {
 					NOT = {
-						tag = GER
+						tag = GE0
 					}
-					LIT = {
+					LI0 = {
 						is_puppet_of = PREV
 					}
 					NOT = {
-						is_in_faction_with = GER
+						is_in_faction_with = GE0
 					}
 				}
 			}
 		}
-		GER = {
+		GE0 = {
 			country_event = { days = 1 id = germany.22 }
 		}
 	}
@@ -267,26 +273,26 @@ country_event = {
 				factor = 0
 				is_historical_focus_on = yes
 				NOT = {
-					GER = {
+					GE0 = {
 						surrender_progress > 0.09
 					}
 				}
 				NOT = {
 					any_other_country = {
 						is_in_faction_with = ROOT
-						has_war_with = GER
+						has_war_with = GE0
 					}
 				}
 				NOT = {
 					any_other_country = {
 						NOT = {
-							tag = GER
+							tag = GE0
 						}
-						LIT = {
+						LI0 = {
 							is_puppet_of = PREV
 						}
 						NOT = {
-							is_in_faction_with = GER
+							is_in_faction_with = GE0
 						}
 					}
 				}
@@ -294,25 +300,25 @@ country_event = {
 			modifier = {
 				factor = 0
 				OR = {
-					is_in_faction_with = GER
-					LIT = {
-						is_puppet_of = GER
+					is_in_faction_with = GE0
+					LI0 = {
+						is_puppet_of = GE0
 					}
 				}
 			}
 		}
 		effect_tooltip = {
-			GER = {
+			GE0 = {
 				create_wargoal = {
-				type = take_state_focus
-				target = LIT
-				generator = { 188 }
+					type = take_state_focus
+					target = LI0
+					generator = { 188 }
 				}
 				country_event = { days = 1 id = germany.23 }
 			}
 		}
 		hidden_effect = {
-			GER = {
+			GE0 = {
 				country_event = { days = 1 id = germany.23 }
 			}
 		}		
@@ -327,15 +333,15 @@ country_event = {
 	picture = GFX_report_event_worker_protests
 
 	trigger = {
-		SOV = { has_government = communism }
-		NOT = { has_country_flag = baltic.5_fired }
 		OR = {
-			tag = LIT
-			tag = FIN
-			tag = EST
-			tag = LAT
+			tag = LI0
+			tag = FI0
+			tag = ES0
+			tag = LA0
 		} 
 		has_government = communism
+		SO0 = { has_government = communism }
+		NOT = { has_country_flag = baltic.5_fired }
 	}
 
 	immediate = {
@@ -350,9 +356,9 @@ country_event = {
 			modifier =  {
 				factor = 2
 				OR = {
-					tag = LIT
-					tag = LAT
-					tag = EST
+					tag = LI0
+					tag = ES0
+					tag = LA0
 				}
 			}
 			modifier = {
@@ -360,17 +366,17 @@ country_event = {
 				is_puppet = yes
 			}
 		}
-		SOV =	{ country_event = { id = soviet.35 days = 1 } }
+		SO0 = { country_event = { id = soviet.35 days = 1 } }
 	}
 	option = { # Become Puppet state
 		name = baltic.5.b
 		ai_chance = { factor = 55
 			modifier = {
 				factor = 2
-				tag = FIN
+				tag = FI0
 			}
 		}
-		SOV = { country_event = { id = soviet.36 days = 1 } }
+		SO0 = { country_event = { id = soviet.36 days = 1 } }
 	}
 	option = { # Stay as own communist state
 		name = baltic.5.c
@@ -414,12 +420,12 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		POL = {
+		PO0 = {
 			add_to_faction = ROOT
 			ROOT = {
 				add_ai_strategy = {
 					type = alliance
-					id = "POL"
+					id = PREV
 					value = 200
 				}
 			}
@@ -433,14 +439,14 @@ country_event = {
 			factor = 10
 		}
 		effect_tooltip = {
-			POL = {
+			PO0 = {
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = ROOT
 				}
 			}
 		}
-		POL = {
+		PO0 = {
 			country_event = { id = poland.11 days = 1 }
 		}
 	}

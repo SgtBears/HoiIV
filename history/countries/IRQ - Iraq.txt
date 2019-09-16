@@ -69,14 +69,14 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
 	fascism = 20
-	neutrality = 80
+	monarchism = 80
 }
 
 create_country_leader = {
@@ -84,7 +84,7 @@ create_country_leader = {
 	desc = "POLITICS_GHAZI_I_DESC"
 	picture = "GFX_portrait_iraq_ghazi"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = royalism
 	traits = {
 		#
 	}
@@ -93,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rashid Ali al-Gaylani"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_fascism1.dds"
+	picture = "gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -104,7 +104,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Yusuf Salman Yusuf"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_communism1.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -114,24 +114,24 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = neutrality
+		ruling_party = monarchism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	set_popularities = {
 		fascism = 30
-		neutrality = 70
+		monarchism = 70
 	}
 
 	create_country_leader = {
-		name = "Faisal II"
+		name = "'Abd al-Ilah"
 		desc = "POLITICS_FAISAL_II_DESC"
 		picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_land_1.dds"
 		expire = "1965.1.1"
-		ideology = despotism
+		ideology = royalism
 		traits = {
-			#
+			regent
 		}
 	}
 }

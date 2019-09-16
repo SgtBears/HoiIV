@@ -1,0 +1,23 @@
+state=
+{
+	id=793
+	name="STATE_793"
+	manpower = 25000
+	
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = ENG
+		victory_points = { 6196 1 }
+		buildings = {
+			infrastructure = 4
+			6196 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ENG
+		add_core_of = SCO
+	}
+	provinces= { 6196 }
+}

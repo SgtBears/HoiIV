@@ -9,7 +9,7 @@ political_actions = {
 		}
 		visible = {
 			has_completed_focus = HUN_protect_czechoslovakia
-			CZE = {
+			CZ0 = {
 				exists = yes
 				is_subject_of = ROOT
 			}
@@ -19,50 +19,23 @@ political_actions = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				CZE = {
+				CZ0 = {
 					is_ai = no
 				}
 				factor = 0
 			}
 		}
 		complete_effect = {
-			CZE = {
+			CZ0 = {
 				add_autonomy_ratio = {
 					value = -0.1
-					localization = HUN_closer_ties_to_CZE
+					localization = HUN_closer_ties_to_CZE_autonomy
 				}
 			}
 		}
 	}
 }
 
-economy_decisions = {
-
-	
-}
-
-
-
-
-operations = {
-	
-	
-}
-
-
-
-war_measures = {
-	
-	
-}
-
-foreign_politics = {
-	
-}
-
-economy_decisions = {
-	
-}
 
 foreign_support = {
 	HUN_call_in_sweden = {
@@ -72,12 +45,12 @@ foreign_support = {
 		visible = {
 			has_completed_focus = HUN_elect_a_democratic_king
 			NOT = {
-				has_war_with = SWE
+				has_war_with = SW0
 			}
 			NOT = {
-				is_in_faction_with = SWE
+				is_in_faction_with = SW0
 			}
-			SWE = {
+			SW0 = {
 				not = {
 					has_government = communism
 				}
@@ -88,7 +61,7 @@ foreign_support = {
 			factor = 1
 		}
 		complete_effect = {
-			SWE = {
+			SW0 = {
 				country_event = DOD_hungary.20
 			}
 		}
@@ -101,14 +74,14 @@ foreign_support = {
 			original_tag = SWE
 		}
 		visible = {
-			HUN = { has_completed_focus = HUN_elect_a_democratic_king }
+			HU5 = { has_completed_focus = HUN_elect_a_democratic_king }
 			NOT = {
-				has_war_with = HUN
+				has_war_with = HU5
 			}
 			NOT = {
-				is_in_faction_with = HUN
+				is_in_faction_with = HU5
 			}
-			SWE = {
+			SW0 = {
 				not = {
 					has_government = communism
 				}
@@ -119,7 +92,7 @@ foreign_support = {
 			factor = 1
 		}
 		complete_effect = {
-			HUN = {
+			HU5 = {
 				country_event = DOD_hungary.24
 			}
 		}

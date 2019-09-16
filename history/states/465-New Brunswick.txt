@@ -2,12 +2,21 @@
 state={
 	id=465
 	name="STATE_465"
-	manpower = 475020
+	manpower = 457401
 	
 	state_category = rural
 
 	history={
 		owner = CAN
+		victory_points = {
+			12289 2
+		}
+		victory_points = {
+			1424 1
+		}
+		victory_points = {
+			4285 1
+		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
@@ -16,9 +25,10 @@ state={
 			}
 		}
 		add_core_of = CAN
+		add_core_of = NBR
 	}
 
 	provinces={
-		634 1424 4285 4342 4362 4432 7379 12289 
+		634 1424 4285 4342 4362 4432 7379 12289 13837 14246
 	}
 }

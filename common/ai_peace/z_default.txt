@@ -91,13 +91,13 @@ default_peace = {
 			factor = 0
 			#Is NOT a major
 			NOT = { num_of_factories > 100 }
-			NOT = { tag = GER }
-			NOT = { tag = ENG }
-			NOT = { tag = ITA }
-			NOT = { tag = FRA }
-			NOT = { tag = USA }
-			NOT = { tag = JAP }
-			NOT = { tag = SOV }
+			NOT = { original_tag = GER }
+			NOT = { original_tag = ENG }
+			NOT = { original_tag = ITA }
+			NOT = { original_tag = FRA }
+			NOT = { original_tag = USA }
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = SOV }
 		}
 		#modifier = {
 		#	factor = 0
@@ -116,24 +116,24 @@ default_peace = {
 					FROM = {
 						OR = {
 							num_of_factories > 100
-							tag = GER
-							tag = ENG
-							tag = ITA
-							tag = FRA
-							tag = USA
-							tag = JAP
-							tag = SOV
+							original_tag = GER
+							original_tag = ENG
+							original_tag = ITA
+							original_tag = FRA
+							original_tag = USA
+							original_tag = JAP
+							original_tag = SOV
 						}
 					}
 					#Is NOT a major
 					NOT = { num_of_factories > 100 }
-					NOT = { tag = GER }
-					NOT = { tag = ENG }
-					NOT = { tag = ITA }
-					NOT = { tag = FRA }
-					NOT = { tag = USA }
-					NOT = { tag = JAP }
-					NOT = { tag = SOV }
+					NOT = { original_tag = GER }
+					NOT = { original_tag = ENG }
+					NOT = { original_tag = ITA }
+					NOT = { original_tag = FRA }
+					NOT = { original_tag = USA }
+					NOT = { original_tag = JAP }
+					NOT = { original_tag = SOV }
 				}
 			}
 		}
@@ -143,12 +143,30 @@ default_peace = {
 		}
 		modifier = { #Don't break up Czechoslovakia or Yugoslavia
 			factor = 0
-			YUG = { exists = yes }
+			var:global.yug_tag = {
+				exists = yes
+				original_tag = YUG
+			}
 			FROM = {
 				OR = {
-					tag = CRO
-					tag = SER
-					tag = SLO
+					original_tag = CRO
+					original_tag = SER
+					original_tag = SLV
+					original_tag = BOS
+					original_tag = MAC
+					original_tag = MNT
+				}
+			}
+		}
+		modifier = { #Don't break up Czechoslovakia or Yugoslavia
+			factor = 0
+			var:global.cze_tag = {
+				exists = yes
+				original_tag = CZE
+			}
+			FROM = {
+				OR = {
+					original_tag = SLO
 				}
 			}
 		}
@@ -386,13 +404,13 @@ default_peace = {
 				AND = {
 					#Is NOT a major
 					NOT = { num_of_factories > 100 }
-					NOT = { tag = GER }
-					NOT = { tag = ENG }
-					NOT = { tag = ITA }
-					NOT = { tag = FRA }
-					NOT = { tag = USA }
-					NOT = { tag = JAP }
-					NOT = { tag = SOV }
+					NOT = { original_tag = GER }
+					NOT = { original_tag = ENG }
+					NOT = { original_tag = ITA }
+					NOT = { original_tag = FRA }
+					NOT = { original_tag = USA }
+					NOT = { original_tag = JAP }
+					NOT = { original_tag = SOV }
 					NOT = {
 						any_owned_state = { is_on_continent = africa }
 					}

@@ -1,0 +1,27 @@
+state={
+	id=805
+	name="STATE_805"
+	manpower = 26911
+	
+	state_category = enclave
+
+
+	history=
+	{
+		owner = POR
+		victory_points = {
+			12206 1 
+		}
+		
+
+		buildings = {
+			infrastructure = 3
+			12206 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		12206
+	}
+}

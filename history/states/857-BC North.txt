@@ -1,0 +1,24 @@
+
+state={
+	id=857
+	name="STATE_857"
+	impassable = yes
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = CAN
+		add_core_of = BCL
+
+	}
+
+	provinces={
+		10703 7830 13268 13858 13859 13860 13861 13862 13295 13863 13864 13865 13866 13867 13868 13869 13870 13871 13872 13873 13874 13875 13876 13877 13878 13879 13880 13881 13887 13888 13889 13890
+	}
+	manpower=6014
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

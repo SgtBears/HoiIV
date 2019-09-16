@@ -22,12 +22,10 @@ state={
 			arms_factory = 2
 			industrial_complex = 1
 			dockyard = 2
-			6325 = {
-				naval_base = 1
-			}
 
 		}
 		add_core_of = GER
+		add_core_of = WGR
 
 		1939.1.1 = {
 			buildings = {

@@ -7,7 +7,7 @@ guiTypes = {
 
 	containerWindowType =  {
 		name = "MapmodesInterface_Ingame"
-		position = { x=-631 y=-244 }	
+		position = { x=-661 y=-244 }	#mod shift relevant X values -30
 		size = { width=314 height=31 }
 		Orientation = lower_RIGHT
 
@@ -22,6 +22,12 @@ guiTypes = {
 			position = { x=590 y=11 }
 			quadTextureSprite ="GFX_find_screen_button"
 			pdx_tooltip = "SEARCH"
+			pdx_tooltip_anchor =
+			{
+				x = -142
+				y = 200
+				relative = yes #It is default set to yes ( to the gui object )
+			}
 			shortcut = "f"
 			clicksound = click_default
 		}
@@ -35,8 +41,8 @@ guiTypes = {
 			pdx_tooltip = "MAPMODE_CONFIGURE"
 			pdx_tooltip_anchor =
 			{
-				x = -230
-				y = 0
+				x = -242
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -50,8 +56,8 @@ guiTypes = {
 			pdx_tooltip = "MAPMODE_ALL"
 			pdx_tooltip_anchor =
 			{
-				x = -310
-				y = 0
+				x = -320
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -67,8 +73,8 @@ guiTypes = {
 			shortcut = "F1"
 			pdx_tooltip_anchor =
 			{
-				x = -158
-				y = 0
+				x = -160
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -80,8 +86,8 @@ guiTypes = {
 			shortcut = "F1"
 			pdx_tooltip_anchor =
 			{
-				x = -158
-				y = 0
+				x = -160
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}			
 		}
@@ -103,8 +109,8 @@ guiTypes = {
 			shortcut = "F2"
 			pdx_tooltip_anchor =
 			{
-				x = -207
-				y = 0
+				x = -209
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}			
 		}
@@ -116,8 +122,8 @@ guiTypes = {
 			shortcut = "F2"
 			pdx_tooltip_anchor =
 			{
-				x = -207
-				y = 0
+				x = -209
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -132,8 +138,8 @@ guiTypes = {
 			shortcut = "F3"
 			pdx_tooltip_anchor =
 			{
-				x = -190
-				y = 0
+				x = -192
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}			
 		}
@@ -145,8 +151,8 @@ guiTypes = {
 			shortcut = "F3"
 			pdx_tooltip_anchor =
 			{
-				x = -190
-				y = 0
+				x = -192
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -161,8 +167,8 @@ guiTypes = {
 			shortcut = "F4"
 			pdx_tooltip_anchor =
 			{
-				x = -198
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}			
 		}
@@ -174,8 +180,8 @@ guiTypes = {
 			shortcut = "F4"
 			pdx_tooltip_anchor =
 			{
-				x = -198
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -190,8 +196,8 @@ guiTypes = {
 			shortcut = "F5"
 			pdx_tooltip_anchor =
 			{
-				x = -153
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}			
 		}
@@ -203,8 +209,8 @@ guiTypes = {
 			shortcut = "F5"
 			pdx_tooltip_anchor =
 			{
-				x = -153
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -212,28 +218,28 @@ guiTypes = {
 		# 6th BUTTON (SMALL)
 		buttonType = {
 			name = "mapmode_button_6"
-			position = { x=610 y=100 }
+			position = { x=609 y=100 }
 			quadTextureSprite ="GFX_mapmode_buttons_deselected_small"
 			#shortcut = "y"
 			clicksound = click_default
 			shortcut = "F6"
 			pdx_tooltip_anchor =
 			{
-				x = -184
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}			
 		}
 		buttonType = {
 			name = "mapmode_button_6_s"
-			position = { x=610 y=100 }
+			position = { x=609 y=100 }
 			quadTextureSprite ="GFX_mapmode_buttons_selected_small"
 			#shortcut = "y"
 			shortcut = "F6"
 			pdx_tooltip_anchor =
 			{
-				x = -184
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -241,28 +247,28 @@ guiTypes = {
 		# 7th BUTTON (SMALL)
 		buttonType = {
 			name = "mapmode_button_7"
-			position = { x=610 y=121 }
+			position = { x=609 y=121 }
 			quadTextureSprite ="GFX_mapmode_buttons_deselected_small"
 			#shortcut = "s"
 			clicksound = click_default
 			shortcut = "F7"
 			pdx_tooltip_anchor =
 			{
-				x = -174
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}			
 		}
 		buttonType = {
 			name = "mapmode_button_7_s"
-			position = { x=610 y=121 }
+			position = { x=609 y=121 }
 			quadTextureSprite ="GFX_mapmode_buttons_selected_small"
 			#shortcut = "s"
 			shortcut = "F7"
 			pdx_tooltip_anchor =
 			{
-				x = -174
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -270,28 +276,28 @@ guiTypes = {
 		# 8th BUTTON (SMALL)
 		buttonType = {
 			name = "mapmode_button_8"
-			position = { x=611 y=145 }
+			position = { x=609 y=145 }
 			quadTextureSprite ="GFX_mapmode_buttons_deselected_small"
 			#shortcut = "y"
 			clicksound = click_default
 			shortcut = "F8"
 			pdx_tooltip_anchor =
 			{
-				x = -186
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}				
 		}
 		buttonType = {
 			name = "mapmode_button_8_s"
-			position = { x=611 y=145 }
+			position = { x=609 y=145 }
 			quadTextureSprite ="GFX_mapmode_buttons_selected_small"
 			#shortcut = "y"
 			shortcut = "F8"
 			pdx_tooltip_anchor =
 			{
-				x = -186
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -299,28 +305,28 @@ guiTypes = {
 		# 9th BUTTON (SMALL)
 		buttonType = {
 			name = "mapmode_button_9"
-			position = { x=610 y=167 }
+			position = { x=609 y=167 }
 			quadTextureSprite ="GFX_mapmode_buttons_deselected_small"
 			#shortcut = "y"
 			clicksound = click_default
 			shortcut = "F9"
 			pdx_tooltip_anchor =
 			{
-				x = -168
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}			
 		}
 		buttonType = {
 			name = "mapmode_button_9_s"
-			position = { x=610 y=167 }
+			position = { x=609 y=167 }
 			quadTextureSprite ="GFX_mapmode_buttons_selected_small"
 			#shortcut = "y"
 			shortcut = "F9"
 			pdx_tooltip_anchor =
 			{
-				x = -168
-				y = 0
+				x = -200
+				y = 200
 				relative = yes #It is default set to yes ( to the gui object )
 			}	
 		}
@@ -406,7 +412,7 @@ guiTypes = {
 			pdx_tooltip = "TOGGLE_RADAR"
 			pdx_tooltip_anchor =
 			{
-				x = -249
+				x = -253	#mod
 				y = 0
 				relative = yes #It is default set to yes ( to the gui object )
 			}
@@ -495,7 +501,7 @@ guiTypes = {
 
 	containerWindowType =  {
 		name = "WindowWithMapModeSlots"
-		position = { x=-253 y=-240 }	
+		position = { x=-283 y=-240 }	#mod
 		size = { width=180 height=172 }
 		Orientation = lower_RIGHT
 		fade_time = 500
@@ -535,7 +541,7 @@ guiTypes = {
 	# A window with the list of all possible map modes that is attached to the "WindowWithMapModeSlots".
 	containerWindowType =  {
 		name = "WindowWithAllMapModes"
-		position = { x=-430 y=-320 }	
+		position = { x=-460 y=-320 }	#mod
 		size = { width=180 height=252 }
 		Orientation = lower_RIGHT
 		fade_time = 500
@@ -558,7 +564,7 @@ guiTypes = {
 	# A window with the list of all possible map modes that is attached to the main map-modes window.
 	containerWindowType =  {
 		name = "WindowWithAllMapModes_Standalone"
-		position = { x=-255 y=-300 }	
+		position = { x=-285 y=-300 }	#mod
 		size = { width=180 height=254 } 
 		Orientation = lower_RIGHT
 		fade_time = 500

@@ -338,6 +338,9 @@ ideas = {
 			
 			picture = generic_political_advisor_asia_2
 
+			visible = {
+				has_focus_tree = china_communist_focus
+			}
 			available = {
 				has_completed_focus = PRC_socialist_market_economy
 			}
@@ -377,6 +380,9 @@ ideas = {
 			
 			picture = generic_political_advisor_asia_2
 
+			visible = {
+				has_focus_tree = china_communist_focus
+			}
 			available = {
 				has_completed_focus = PRC_military_intelligence_department
 			}

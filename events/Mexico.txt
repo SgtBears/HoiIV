@@ -56,6 +56,7 @@ country_event = {
 					original_tag = MEX
 					has_war_with = ROOT
 				}
+				set_variable = { global.mex_rebel_tag = THIS.id }
 				hidden_effect = {
 					division_template = {
 						name = "Brigada de Infantería"
@@ -67,64 +68,104 @@ country_event = {
 						}
 						priority = 0
 					}
-					random_owned_controlled_state = {
-						create_unit = {
-							division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"GER\" } }"
-							owner = PREV
+					GE0 = {
+						PREV = {
+							random_owned_controlled_state = {
+								create_unit = {
+									division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+									owner = THIS
+								}
+							}
 						}
 					}
-					random_owned_controlled_state = {
-						create_unit = {
-							division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }"
-							owner = PREV
+					EN0 = {
+						PREV = {
+							random_owned_controlled_state = {
+								create_unit = {
+									division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+									owner = THIS
+								}
+							}
 						}
 					}
-					random_owned_controlled_state = {
-						create_unit = {
-							division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"USA\" } }"
-							owner = PREV
+					US0 = {
+						PREV = {
+							random_owned_controlled_state = {
+								create_unit = {
+									division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+									owner = THIS
+								}
+							}
 						}
 					}
-					random_owned_controlled_state = {
-						create_unit = {
-							division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"GER\" } }"
-							owner = PREV
+					GE0 = {
+						PREV = {
+							random_owned_controlled_state = {
+								create_unit = {
+									division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+									owner = THIS
+								}
+							}
 						}
 					}
-					random_owned_controlled_state = {
-						create_unit = {
-							division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }"
-							owner = PREV
+					EN0 = {
+						PREV = {
+							random_owned_controlled_state = {
+								create_unit = {
+									division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+									owner = THIS
+								}
+							}
 						}
 					}
-					random_owned_controlled_state = {
-						create_unit = {
-							division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"USA\" } }"
-							owner = PREV
+					US0 = {
+						PREV = {
+							random_owned_controlled_state = {
+								create_unit = {
+									division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+									owner = THIS
+								}
+							}
 						}
 					}
-					random_owned_controlled_state = {
-						create_unit = {
-							division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"GER\" } }"
-							owner = PREV
+					GE0 = {
+						PREV = {
+							random_owned_controlled_state = {
+								create_unit = {
+									division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+									owner = THIS
+								}
+							}
 						}
 					}
-					random_owned_controlled_state = {
-						create_unit = {
-							division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }"
-							owner = PREV
+					EN0 = {
+						PREV = {
+							random_owned_controlled_state = {
+								create_unit = {
+									division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+									owner = THIS
+								}
+							}
 						}
 					}
-					random_owned_controlled_state = {
-						create_unit = {
-							division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"USA\" } }"
-							owner = PREV
+					US0 = {
+						PREV = {
+							random_owned_controlled_state = {
+								create_unit = {
+									division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+									owner = THIS
+								}
+							}
 						}
 					}
-					random_owned_controlled_state = {
-						create_unit = {
-							division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"USA\" } }"
-							owner = PREV
+					US0 = {
+						PREV = {
+							random_owned_controlled_state = {
+								create_unit = {
+									division = "division_template = \"Brigada de Infantería\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+									owner = THIS
+								}
+							}
 						}
 					}
 				}
@@ -380,7 +421,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				tag = USA
+				tag = US0
 				is_historical_focus_on = yes
 			}
 		}
@@ -487,7 +528,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				MEX = {
+				ME0 = {
 					has_war = yes
 					any_enemy_country = {
 						NOT = {
@@ -498,7 +539,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				MEX = {
+				ME0 = {
 					has_war = yes
 					any_enemy_country = {
 						NOT = {
@@ -525,7 +566,7 @@ country_event = {
 			factor = 25
 			modifier = {
 				factor = 0.1
-				MEX = {
+				ME0 = {
 					OR = {
 						has_government = ROOT
 						is_major = yes
@@ -558,13 +599,13 @@ country_event = {
 	option = {
 		name = mexico.9.a
 
-		add_to_faction = MEX
+		add_to_faction = ME0
 				
 		hidden_effect = {
 			news_event = { id = news.289 hours = 12 }
 		}
 		
-		MEX = { country_event = { id = generic.3 hours = 6 } }
+		ME0 = { country_event = { id = generic.3 hours = 6 } }
 		
 		ai_chance = {
 			factor = 90
@@ -574,7 +615,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				MEX = {
+				ME0 = {
 					has_war = yes
 					any_enemy_country = {
 						NOT = {
@@ -585,7 +626,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				MEX = {
+				ME0 = {
 					has_war = yes
 					any_enemy_country = {
 						NOT = {
@@ -612,7 +653,7 @@ country_event = {
 			factor = 10
 			modifier = {
 				factor = 0.1
-				MEX = {
+				ME0 = {
 					OR = {
 						has_government = ROOT
 						is_major = yes
@@ -666,7 +707,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				MEX = {
+				ME0 = {
 					has_war = yes
 					any_enemy_country = {
 						NOT = {
@@ -677,7 +718,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				MEX = {
+				ME0 = {
 					has_war = yes
 					any_enemy_country = {
 						NOT = {
@@ -748,7 +789,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				MEX = {
+				ME0 = {
 					has_war = yes
 					any_enemy_country = {
 						NOT = {
@@ -759,7 +800,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				MEX = {
+				ME0 = {
 					has_war = yes
 					any_enemy_country = {
 						NOT = {
@@ -808,7 +849,7 @@ country_event = {
 		
 		add_political_power = 25
 		
-		MEX = {
+		ME0 = {
 			transfer_state = 311
 			add_state_core = 311
 			country_event = {
@@ -835,7 +876,7 @@ country_event = {
 	option = {
 		name = mexico.12.b
 		
-		MEX = {
+		ME0 = {
 			country_event = {
 				id = mexico.14
 				days = 1
@@ -897,7 +938,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = MEX
+		original_tag = MEX
 		has_dlc = "Man the Guns"
 	}
 	
@@ -969,7 +1010,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = MEX
+		original_tag = MEX
+		has_dlc = "Man the Guns"
 		
 		date > 1937.1.1
 		
@@ -992,7 +1034,6 @@ country_event = {
 				}
 			}
 		}
-		has_dlc = "Man the Guns"
 	}
 	
 	mean_time_to_happen = {
@@ -1045,7 +1086,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = MEX
+		original_tag = MEX
 		date > 1936.08.28
 		OR = {
 			has_government = neutrality
@@ -1071,18 +1112,18 @@ country_event = {
 		
 		if = {
 			limit = {
-				SOV = {
+				SO0 = {
 					has_country_leader = { name = "Joseph Stalin" }
 				}
 			}
-			SOV = {
+			SO0 = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = mexico_trotskyite_wreckers
 				}
 			}
 		}
-		USA = {
+		US0 = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = mexico_snubbed_stalin
@@ -1145,11 +1186,11 @@ country_event = {
 	
 	option = {
 		trigger = {
-			SOV = {
+			SO0 = {
 				has_country_leader = { name = "Joseph Stalin" }
 			}
 			NOT = {
-				has_war_with = SOV
+				has_war_with = SO0
 			}
 		}
 		
@@ -1157,7 +1198,7 @@ country_event = {
 				
 		if = {
 			limit = {
-				SOV = {
+				SO0 = {
 					has_country_leader = { name = "Joseph Stalin" }
 				}
 				NOT = {
@@ -1167,7 +1208,7 @@ country_event = {
 					}
 				}
 			}
-			SOV = {
+			SO0 = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = mexico_extradited_trotsky
@@ -1178,7 +1219,7 @@ country_event = {
 				}
 			}
 		}
-		USA = {
+		US0 = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = mexico_communist_menace
@@ -1223,18 +1264,18 @@ country_event = {
 		
 		if = {
 			limit = {
-				SOV = {
+				SO0 = {
 					has_country_leader = { name = "Joseph Stalin" }
 				}
 			}
-			SOV = {
+			SO0 = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = mexico_trotskyite_wreckers
 				}
 			}
 		}
-		USA = {
+		US0 = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = mexico_communist_menace
@@ -1384,7 +1425,7 @@ country_event = {
 		hidden_effect = { # Juan Andreu complains he was not selected
 			if = {
 				limit = {
-					USA = {
+					US0 = {
 						is_subject = no
 						exists = yes
 						NOT = {
@@ -1426,7 +1467,7 @@ country_event = {
 		hidden_effect = { # Juan Andreu complains he was not selected
 			if = {
 				limit = {
-					USA = {
+					US0 = {
 						is_subject = no
 						exists = yes
 						NOT = {
@@ -1523,7 +1564,7 @@ country_event = {
 		hidden_effect = { # Juan Andreu complains he was not selected
 			if = {
 				limit = {
-					USA = {
+					US0 = {
 						is_subject = no
 						exists = yes
 						NOT = {
@@ -1569,7 +1610,7 @@ country_event = {
 		hidden_effect = { # Juan Andreu complains he was not selected
 			if = {
 				limit = {
-					USA = {
+					US0 = {
 						is_subject = no
 						exists = yes
 						NOT = {
@@ -1615,7 +1656,7 @@ country_event = {
 		hidden_effect = { # Juan Andreu complains he was not selected
 			if = {
 				limit = {
-					USA = {
+					US0 = {
 						is_subject = no
 						exists = yes
 						NOT = {
@@ -1789,7 +1830,7 @@ country_event = {
 			}
 			NOT = { has_global_flag = flag_trotsky_dead }
 			NOT = {
-				SOV = {
+				SO0 = {
 					has_country_leader = { name = "Leon Trotsky" }
 				}
 			}
@@ -1984,13 +2025,13 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = MEX
+		original_tag = MEX
+		has_dlc = "Man the Guns"
 		has_global_flag = flag_trotsky_returning_to_ussr_from_mexico
 		has_global_flag = flag_mexico_invited_trotsky_to_government
 		NOT = {
 			has_global_flag = trotsky_dead
 		}
-		has_dlc = "Man the Guns"
 	}
 	
 	mean_time_to_happen = {
@@ -2047,12 +2088,12 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = GER
-		
-		has_war_with = USA
+		original_tag = GER
+		has_dlc = "Man the Guns"
+		has_war_with = US0
 		
 		NOT = {
-			has_war_with = MEX
+			has_war_with = ME0
 		}
 		
 		has_navy_size = { unit = submarine size > 9 }
@@ -2089,7 +2130,6 @@ country_event = {
 				size > 0
 			}
 		}
-		has_dlc = "Man the Guns"
 	}
 	
 	mean_time_to_happen = {
@@ -2111,7 +2151,7 @@ country_event = {
 			days = 90
 		}
 		
-		MEX = {
+		ME0 = {
 			country_event = {
 				id = mexico.24
 				days = 1
@@ -2147,7 +2187,7 @@ country_event = {
 		
 		trigger = {
 			NOT = {
-				has_war_with = USA
+				has_war_with = US0
 			}
 			is_in_faction = no
 			has_dlc = "Man the Guns"
@@ -2157,7 +2197,7 @@ country_event = {
 		
 		random_other_country = {
 			limit = {
-				is_in_faction_with = USA
+				is_in_faction_with = US0
 				is_faction_leader = yes
 			}
 			country_event = {
@@ -2171,7 +2211,7 @@ country_event = {
 			
 			modifier = {
 				factor = 0.1
-				USA = {
+				US0 = {
 					surrender_progress > 0.1
 				}
 			}
@@ -2214,17 +2254,19 @@ country_event = {
 		
 		trigger = {
 			NOT = {
-				has_war_with = MEX
+				has_war_with = ME0
 			}
 			has_dlc = "Man the Guns"
 		}
 		
-		add_to_faction = MEX
+		add_to_faction = ME0
 		
-		MEX = {
-			add_to_war = {
-				targeted_alliance = ROOT
-				enemy = GER
+		GE0 = {
+			ME0 = {
+				add_to_war = {
+					targeted_alliance = ROOT
+					enemy = PREV
+				}
 			}
 		}
 		
@@ -2240,7 +2282,7 @@ country_event = {
 			
 			modifier = {
 				factor = 0.5
-				MEX = {
+				ME0 = {
 					has_war = yes
 				}
 			}
@@ -2282,8 +2324,8 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = MEX
-				is_in_faction_with = MEX
-				has_war_with = GER
+				is_in_faction_with = ME0
+				has_war_with = GE0
 			}
 		}
 	}
@@ -2293,8 +2335,8 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = GER
-				is_in_faction_with = GER
-				has_war_with = MEX
+				is_in_faction_with = GE0
+				has_war_with = ME0
 			}
 		}
 	}
@@ -2305,11 +2347,11 @@ news_event = {
 			NOT = {
 				OR = {
 					original_tag = MEX
-					is_in_faction_with = MEX
-					has_war_with = MEX
+					is_in_faction_with = ME0
+					has_war_with = ME0
 					original_tag = GER
-					is_in_faction_with = GER
-					has_war_with = GER
+					is_in_faction_with = GE0
+					has_war_with = GE0
 				}
 			}
 		}
@@ -2328,8 +2370,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = MEX
-		
+		original_tag = MEX
+		has_dlc = "Man the Guns"
 		date > 1937.1.1
 		
 		has_civil_war = no
@@ -2337,7 +2379,6 @@ country_event = {
 		NOT = {
 			has_global_flag = flag_second_mexican_civil_war
 		}
-		has_dlc = "Man the Guns"
 	}
 	
 	mean_time_to_happen = {
@@ -2446,6 +2487,7 @@ country_event = {
 					original_tag = MEX
 					has_war_with = ROOT
 				}
+				set_variable = { global.mex_rebel_tag = THIS.id }
 				MEX_remove_church_power = yes
 				set_cosmetic_tag = MEX_cristero
 				create_field_marshal = {
@@ -2508,40 +2550,64 @@ country_event = {
 					}
 					priority = 0
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"GER\" } }"
-						owner = PREV
+				GE0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"USA\" } }"
-						owner = PREV
+				US0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"ITA\" } }"
-						owner = PREV
+				IT0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"GER\" } }"
-						owner = PREV
+				GE0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"USA\" } }"
-						owner = PREV
+				US0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"ITA\" } }"
-						owner = PREV
+				IT0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Guardia Cristera\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
 				set_party_name = { ideology = fascism name = MEX_fascist_party_legionnaires_of_christ_short long_name = MEX_fascist_party_legionnaires_of_christ_long }
@@ -2581,7 +2647,7 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = MEX
-				is_in_faction_with = MEX
+				is_in_faction_with = ME0
 			}
 			has_dlc = "Man the Guns"
 		}
@@ -2590,7 +2656,7 @@ news_event = {
 		name = mexico.29.b
 		
 		trigger = {
-			has_war_with = MEX
+			has_war_with = ME0
 		}
 	}
 	option = {
@@ -2600,8 +2666,8 @@ news_event = {
 			NOT = {
 				OR = {
 					original_tag = MEX
-					is_in_faction_with = MEX
-					has_war_with = MEX
+					is_in_faction_with = ME0
+					has_war_with = ME0
 				}
 			}
 		}
@@ -2680,6 +2746,7 @@ country_event = {
 					original_tag = MEX
 					has_war_with = ROOT
 				}
+				set_variable = { global.mex_rebel_tag = THIS.id }
 				drop_cosmetic_tag = yes
 				MEX_remove_church_power = yes
 				save_event_target_as = mexican_second_revolution_rebeller
@@ -2805,40 +2872,64 @@ country_event = {
 					}
 					priority = 0
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"MEX\" } }"
-						owner = PREV
+				ME0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"USA\" } }"
-						owner = PREV
+				US0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"SOV\" } }"
-						owner = PREV
+				SO0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"MEX\" } }"
-						owner = PREV
+				ME0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"USA\" } }"
-						owner = PREV
+				US0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"SOV\" } }"
-						owner = PREV
+				SO0 = {
+					PREV = {
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "division_template = \"Brigada Roja\" start_experience_factor = 0.2 force_equipment_variants = { infantry_equipment_0 = { owner = \"PREV\" } }"
+								owner = THIS
+							}
+						}
 					}
 				}
 			}
@@ -2876,7 +2967,7 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = MEX
-				is_in_faction_with = MEX
+				is_in_faction_with = ME0
 			}
 		}
 	}
@@ -2884,7 +2975,7 @@ news_event = {
 		name = mexico.31.b
 		
 		trigger = {
-			has_war_with = MEX
+			has_war_with = ME0
 		}
 	}
 	option = {
@@ -2894,8 +2985,8 @@ news_event = {
 			NOT = {
 				OR = {
 					original_tag = MEX
-					is_in_faction_with = MEX
-					has_war_with = MEX
+					is_in_faction_with = ME0
+					has_war_with = ME0
 				}
 			}
 		}
@@ -2914,20 +3005,19 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = USA
-		
+		original_tag = USA
+		has_dlc = "Man the Guns"
 		date > 1941.1.1
 		
 		has_war = yes # Ostensibly over fabrics in short supply during wartime. Sumptuary laws help create an orderly and peaceful society under God
 		
 		has_government = democratic # Bigger concerns if they are fascists or communists
 		
-		country_exists = MEX
+		country_exists = ME0
 		
 		NOT = {
-			has_war_with = MEX
+			has_war_with = ME0
 		}
-		has_dlc = "Man the Guns"
 	}
 	
 	mean_time_to_happen = {
@@ -2956,7 +3046,7 @@ country_event = {
 		add_stability = -0.01
 		add_war_support = 0.01
 		
-		MEX = {
+		ME0 = {
 			country_event = {
 				days = 1
 				id = mexico.33
@@ -3057,17 +3147,21 @@ country_event = {
 		
 		trigger = {
 			NOT = {
-				has_war_with = MEX
+				has_war_with = ME0
 			}
 		}
 		
 		effect_tooltip = {
-			add_opinion_modifier = {
-				target = MEX
-				modifier = mexico_german_resource_exchange
+			ME0 = {
+				ROOT = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = mexico_german_resource_exchange
+					}
+				}
 			}
 			
-			MEX = {
+			ME0 = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = mexico_german_resource_exchange
@@ -3082,12 +3176,16 @@ country_event = {
 					limit = {
 						has_tech = advanced_light_tank
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = light_tank_equipment_3
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = light_tank_equipment_3
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3095,12 +3193,16 @@ country_event = {
 						has_tech = improved_light_tank
 						NOT = { has_tech = advanced_light_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = light_tank_equipment_2
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = light_tank_equipment_2
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3108,24 +3210,32 @@ country_event = {
 						has_tech = basic_light_tank
 						NOT = { has_tech = improved_light_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = light_tank_equipment_1
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = light_tank_equipment_1
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
 					limit = {
 						has_tech = advanced_medium_tank
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = medium_tank_equipment_3
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = medium_tank_equipment_3
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3133,12 +3243,16 @@ country_event = {
 						has_tech = improved_medium_tank
 						NOT = { has_tech = advanced_medium_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = medium_tank_equipment_2
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = medium_tank_equipment_2
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3146,24 +3260,32 @@ country_event = {
 						has_tech = basic_medium_tank
 						NOT = { has_tech = improved_medium_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = medium_tank_equipment_1
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = medium_tank_equipment_1
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
 					limit = {
 						has_tech = advanced_heavy_tank
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = heavy_tank_equipment_3
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = heavy_tank_equipment_3
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3171,12 +3293,16 @@ country_event = {
 						has_tech = improved_heavy_tank
 						NOT = { has_tech = advanced_heavy_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = heavy_tank_equipment_2
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = heavy_tank_equipment_2
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3184,15 +3310,19 @@ country_event = {
 						has_tech = basic_heavy_tank
 						NOT = { has_tech = improved_heavy_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = heavy_tank_equipment_1
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = heavy_tank_equipment_1
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
-				MEX = {
+				ME0 = {
 					add_tech_bonus = {
 						name = armor
 						bonus = 1.0
@@ -3205,7 +3335,7 @@ country_event = {
 				limit = {
 					NOT = { has_dlc = "Death or Dishonor" }
 				}
-				MEX = {
+				ME0 = {
 					add_tech_bonus = {
 						name = armor
 						bonus = 1.0
@@ -3214,17 +3344,19 @@ country_event = {
 					}
 				}
 			}
-			MEX = {
-				give_resource_rights = { receiver = GER state = 476 }
-				country_event = {
-					days = 1
-					id = mexico.35
+			GE0 = {
+				ME0 = {
+					give_resource_rights = { receiver = PREV state = 476 }
+					country_event = {
+						days = 1
+						id = mexico.35
+					}
 				}
 			}
 		}
 		
 		hidden_effect = {
-			MEX = {
+			ME0 = {
 				country_event = {
 					days = 1
 					id = mexico.35
@@ -3252,7 +3384,7 @@ country_event = {
 	option = {
 		name = mexico.34.b
 		
-		MEX = {
+		ME0 = {
 			country_event = {
 				days = 1
 				id = mexico.36
@@ -3279,21 +3411,21 @@ country_event = {
 			modifier = {
 				factor = 2.0
 				FROM = {
-					is_in_faction_with = USA
+					is_in_faction_with = US0
 				}
 			}
 			
 			modifier = {
 				factor = 2.0
 				FROM = {
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 			
 			modifier = {
 				factor = 2.0
 				FROM = {
-					is_in_faction_with = SOV
+					is_in_faction_with = SO0
 				}
 			}
 		}
@@ -3314,12 +3446,16 @@ country_event = {
 	option = {
 		name = mexico.35.a
 		
-		add_opinion_modifier = {
-			target = GER
-			modifier = mexico_german_resource_exchange
+		GE0 = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = mexico_german_resource_exchange
+				}
+			}
 		}
 	
-		GER = {
+		GE0 = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = mexico_german_resource_exchange
@@ -3333,12 +3469,16 @@ country_event = {
 					limit = {
 						has_tech = advanced_light_tank
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = light_tank_equipment_3
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = light_tank_equipment_3
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3346,12 +3486,16 @@ country_event = {
 						has_tech = improved_light_tank
 						NOT = { has_tech = advanced_light_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = light_tank_equipment_2
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = light_tank_equipment_2
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3359,24 +3503,32 @@ country_event = {
 						has_tech = basic_light_tank
 						NOT = { has_tech = improved_light_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = light_tank_equipment_1
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = light_tank_equipment_1
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
 					limit = {
 						has_tech = advanced_medium_tank
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = medium_tank_equipment_3
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = medium_tank_equipment_3
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3384,12 +3536,16 @@ country_event = {
 						has_tech = improved_medium_tank
 						NOT = { has_tech = advanced_medium_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = medium_tank_equipment_2
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = medium_tank_equipment_2
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3397,24 +3553,32 @@ country_event = {
 						has_tech = basic_medium_tank
 						NOT = { has_tech = improved_medium_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = medium_tank_equipment_1
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = MEX
+								equipment = {
+									type = medium_tank_equipment_1
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
 					limit = {
 						has_tech = advanced_heavy_tank
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = heavy_tank_equipment_3
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = heavy_tank_equipment_3
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3422,12 +3586,16 @@ country_event = {
 						has_tech = improved_heavy_tank
 						NOT = { has_tech = advanced_heavy_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = heavy_tank_equipment_2
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = heavy_tank_equipment_2
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
 				if = {
@@ -3435,15 +3603,19 @@ country_event = {
 						has_tech = basic_heavy_tank
 						NOT = { has_tech = improved_heavy_tank }
 					}
-					create_production_license = {
-						target = MEX
-						equipment = {
-							type = heavy_tank_equipment_1
+					ME0 = {
+						ROOT = {
+							create_production_license = {
+								target = PREV
+								equipment = {
+									type = heavy_tank_equipment_1
+								}
+								cost_factor = 0
+							}
 						}
-						cost_factor = 0
 					}
 				}
-				MEX = {
+				ME0 = {
 					add_tech_bonus = {
 						name = armor
 						bonus = 1.0
@@ -3456,7 +3628,7 @@ country_event = {
 				limit = {
 					NOT = { has_dlc = "Death or Dishonor" }
 				}
-				MEX = {
+				ME0 = {
 					add_tech_bonus = {
 						name = armor
 						bonus = 1.0
@@ -3465,7 +3637,9 @@ country_event = {
 					}
 				}
 			}
-			give_resource_rights = { receiver = GER state = 476 }
+			ROOT = {
+				give_resource_rights = { receiver = PREV state = 476 }
+			}
 		}
 	}
 }
@@ -3526,12 +3700,16 @@ country_event = {
 
 		add_political_power = 100
 		
-		add_opinion_modifier = {
-			target = MEX
-			modifier = embargo
+		ME0 = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = embargo
+				}
+			}
 		}
 		
-		MEX = {
+		ME0 = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = embargo
@@ -3562,17 +3740,21 @@ country_event = {
 
 		add_war_support = 0.05
 		
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = MEX
+		ME0 = {
+			ROOT = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+				
+				add_opinion_modifier = {
+					target = PREV
+					modifier = embargo
+				}
+			}
 		}
 		
-		add_opinion_modifier = {
-			target = MEX
-			modifier = embargo
-		}
-		
-		MEX = {
+		ME0 = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = embargo
@@ -3633,12 +3815,16 @@ country_event = {
 				
 		army_experience = 25
 		
-		add_opinion_modifier = {
-			target = MEX
-			modifier = embargo
+		ME0 = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = embargo
+				}
+			}
 		}
 		
-		MEX = {
+		ME0 = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = embargo
@@ -3667,17 +3853,21 @@ country_event = {
 		
 		army_experience = 25
 		
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = MEX
+		ME0 = {
+			ROOT = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+				
+				add_opinion_modifier = {
+					target = PREV
+					modifier = embargo
+				}
+			}
 		}
 		
-		add_opinion_modifier = {
-			target = MEX
-			modifier = embargo
-		}
-		
-		MEX = {
+		ME0 = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = embargo
@@ -3733,7 +3923,7 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = MEX
-				is_in_faction_with = MEX
+				is_in_faction_with = ME0
 			}
 		}
 	}
@@ -3742,8 +3932,8 @@ news_event = {
 		
 		trigger = {
 			OR = {
-				original_tag = USA
-				is_in_faction_with = USA
+				original_tag = MEX
+				is_in_faction_with = US0
 			}
 		}
 	}
@@ -3754,9 +3944,9 @@ news_event = {
 			NOT = {
 				OR = {
 					original_tag = MEX
-					is_in_faction_with = MEX
+					is_in_faction_with = ME0
 					original_tag = USA
-					is_in_faction_with = USA
+					is_in_faction_with = US0
 				}
 			}
 		}
@@ -3794,7 +3984,7 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = MEX
-				is_in_faction_with = MEX
+				is_in_faction_with = ME0
 			}
 		}
 	}
@@ -3804,7 +3994,7 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = USA
-				is_in_faction_with = USA
+				is_in_faction_with = US0
 			}
 		}
 	}
@@ -3815,9 +4005,9 @@ news_event = {
 			NOT = {
 				OR = {
 					original_tag = MEX
-					is_in_faction_with = MEX
+					is_in_faction_with = ME0
 					original_tag = USA
-					is_in_faction_with = USA
+					is_in_faction_with = US0
 				}
 			}
 		}
@@ -3843,7 +4033,7 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = MEX
-				is_in_faction_with = MEX
+				is_in_faction_with = ME0
 			}
 		}
 	}
@@ -3851,7 +4041,7 @@ news_event = {
 		name = mexico.46.b
 		
 		trigger = {
-			has_war_with = MEX
+			has_war_with = ME0
 		}
 	}
 	option = {
@@ -3861,8 +4051,8 @@ news_event = {
 			NOT = {
 				OR = {
 					original_tag = MEX
-					is_in_faction_with = MEX
-					has_war_with = MEX
+					is_in_faction_with = ME0
+					has_war_with = ME0
 				}
 			}
 		}
@@ -3888,7 +4078,7 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = MEX
-				is_in_faction_with = MEX
+				is_in_faction_with = ME0
 			}
 		}
 	}
@@ -3896,7 +4086,7 @@ news_event = {
 		name = mexico.46.b
 		
 		trigger = {
-			has_war_with = MEX
+			has_war_with = ME0
 		}
 	}
 	option = {
@@ -3906,8 +4096,8 @@ news_event = {
 			NOT = {
 				OR = {
 					original_tag = MEX
-					is_in_faction_with = MEX
-					has_war_with = MEX
+					is_in_faction_with = ME0
+					has_war_with = ME0
 				}
 			}
 		}
@@ -3927,11 +4117,10 @@ country_event = {
 	
 	option = {
 		name = mexico.50.a
-
 		add_equipment_to_stockpile = {
 			type = infantry_equipment_0
 			amount = 250
-			producer = "MEX"
+			producer = ME0
 		}
 	}
 }
@@ -3959,7 +4148,7 @@ country_event = {
 		text = mexico.52.desc_not_trotsky
 		trigger = {
 			NOT = {
-				MEX = {
+				ME0 = {
 					has_country_leader = { ruling_only = yes name = "Leon Trotsky" }
 				}			
 			}	
@@ -3968,7 +4157,7 @@ country_event = {
 	desc = {
 		text = mexico.52.desc_trotsky
 		trigger = {			
-			MEX = {
+			ME0 = {
 				has_country_leader = { ruling_only = yes name = "Leon Trotsky" }
 			}				
 		}
@@ -3988,7 +4177,7 @@ country_event = {
 			}
 		}
 		dismantle_faction = yes
-		MEX = {
+		ME0 = {
 			add_to_faction = PREV
 		}
 		ai_chance = {
@@ -4013,7 +4202,7 @@ country_event = {
 
 	option = { #ask minor communist countries to join Trotsky
 		name = mexico.53.a
-		MEX = {
+		ME0 = {
 			add_to_faction = ROOT
 		}
 		ai_chance = {
@@ -4045,35 +4234,35 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				strength_ratio = {
-					tag = MEX
+					tag = ME0
 					ratio < 0.5
 				}
 			}
 			modifier = {
 				factor = 2
 				strength_ratio = {
-					tag = MEX
+					tag = ME0
 					ratio < 0.3
 				}
 			}
 			modifier = {
 				factor = 2
 				strength_ratio = {
-					tag = MEX
+					tag = ME0
 					ratio < 0.2
 				}
 			}
 			modifier = {
 				factor = 2
 				strength_ratio = {
-					tag = MEX
+					tag = ME0
 					ratio < 0.1
 				}
 			}
 			modifier = {
 				factor = 0
 				strength_ratio = {
-					tag = MEX
+					tag = ME0
 					ratio > 1.6
 				}
 			}
@@ -4083,9 +4272,11 @@ country_event = {
 				original_tag = USA
 				owns_state = 686
 				has_full_control_of_state = 686
+				owns_state = 828
+				has_full_control_of_state = 828
 			}
-			release = PUE
-			PUE = {
+			release = PU0
+			PU0 = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4098,9 +4289,11 @@ country_event = {
 				original_tag = HOL
 				owns_state = 695
 				has_full_control_of_state = 695
+				owns_state = 820
+				has_full_control_of_state = 820
 			}
-			release = CRC
-			CRC = {
+			release = CR0
+			CR0 = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4114,8 +4307,8 @@ country_event = {
 				owns_state = 309
 				has_full_control_of_state = 309
 			}
-			release = SUR
-			SUR = {
+			release = SU5
+			SU5 = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4129,8 +4322,8 @@ country_event = {
 				owns_state = 694
 				has_full_control_of_state = 694
 			}
-			release = GDL
-			GDL = {
+			release = GD0
+			GD0 = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4144,8 +4337,8 @@ country_event = {
 				owns_state = 310
 				has_full_control_of_state = 310
 			}
-			release = CAY
-			CAY = {
+			release = CY5
+			CY5 = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4159,8 +4352,8 @@ country_event = {
 				owns_state = 687
 				has_full_control_of_state = 687
 			}
-			release = GYA
-			GYA = {
+			release = GY0
+			GY0 = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4173,9 +4366,13 @@ country_event = {
 				original_tag = ENG
 				owns_state = 689
 				has_full_control_of_state = 689
+				owns_state = 816
+				has_full_control_of_state = 816
+				owns_state = 815
+				has_full_control_of_state = 815
 			}
-			release = JAM
-			JAM = {
+			release = JA5
+			JA5 = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4189,8 +4386,8 @@ country_event = {
 				owns_state = 691
 				has_full_control_of_state = 691
 			}
-			release = TRI
-			TRI = {
+			release = TR0
+			TR0 = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4203,11 +4400,27 @@ country_event = {
 				original_tag = ENG
 				owns_state = 692
 				has_full_control_of_state = 692
+				has_full_control_of_state = 817
+				owns_state = 817
+				has_full_control_of_state = 818
+				owns_state = 818
+				has_full_control_of_state = 821
+				owns_state = 821
+				has_full_control_of_state = 822
+				owns_state = 822
+				has_full_control_of_state = 824
+				owns_state = 824
+				has_full_control_of_state = 825
+				owns_state = 825
+				has_full_control_of_state = 827
+				owns_state = 827
+				has_full_control_of_state = 826
+				owns_state = 826
 				owns_state = 308
 				has_full_control_of_state = 308				
 			}
-			release = BAS
-			BAS = {
+			release = BS0
+			BS0 = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4223,8 +4436,8 @@ country_event = {
 				owns_state = 693
 				has_full_control_of_state = 693				
 			}
-			release = BAH
-			BAH = {
+			release = BA0
+			BA0 = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4243,35 +4456,35 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				strength_ratio = {
-					tag = MEX
+					tag = ME0
 					ratio > 0.7
 				}
 			}
 			modifier = {
 				factor = 2
 				strength_ratio = {
-					tag = MEX
+					tag = ME0
 					ratio > 0.85
 				}
 			}
 			modifier = {
 				factor = 2
 				strength_ratio = {
-					tag = MEX
+					tag = ME0
 					ratio > 1
 				}
 			}
 			modifier = {
 				factor = 2
 				strength_ratio = {
-					tag = MEX
+					tag = ME0
 					ratio > 1.2
 				}
 			}
 			modifier = {
 				factor = 2
 				strength_ratio = {
-					tag = MEX
+					tag = ME0
 					ratio > 1.4
 				}
 			}
@@ -4339,7 +4552,7 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = MEX
-				is_in_faction_with = MEX
+				is_in_faction_with = ME0
 			}
 		}
 	}
@@ -4349,8 +4562,8 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = SOV
-				is_in_faction_with = SOV
-				has_war_with = MEX
+				is_in_faction_with = SO0
+				has_war_with = ME0
 			}
 		}
 	}
@@ -4361,10 +4574,10 @@ news_event = {
 			NOT = {
 				OR = {
 					original_tag = MEX
-					is_in_faction_with = MEX
-					has_war_with = MEX
+					is_in_faction_with = ME0
+					has_war_with = ME0
 					original_tag = SOV
-					is_in_faction_with = SOV
+					is_in_faction_with = SO0
 				}
 			}
 		}

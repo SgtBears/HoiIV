@@ -1,0 +1,30 @@
+state={
+	id=842
+	name="STATE_842"
+	resources={
+	}
+
+	state_category = rural
+
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			4445 1
+		}
+		add_core_of = USA
+		add_core_of = VER
+
+	}
+
+	provinces={
+		7629 4445 9675 13158
+	}
+	manpower=360000
+	buildings_max_level_factor=1.000
+}

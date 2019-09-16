@@ -144,7 +144,7 @@ USA_destroyers = {
 			factor = 100
 			modifier = {
 				factor = 10
-				has_war_with = JAP
+				has_war_with = var:global.jap_tag
 			}
 		}
 		role_icon_index = 2
@@ -185,7 +185,7 @@ USA_destroyers = {
 			factor = 200
 			modifier = {
 				factor = 10
-				has_war_with = JAP
+				has_war_with = var:global.jap_tag
 			}
 		}
 		role_icon_index = 2
@@ -623,8 +623,8 @@ USA_naval_light_AA_cruiser = {
 		modifier = {
 			factor = 20
 			OR = {
-				has_war_with = ENG
-				has_war_with = JAP
+				has_war_with = var:global.eng_tag
+				has_war_with = var:global.jap_tag
 			}
 		}
 	}
@@ -1257,7 +1257,7 @@ USA_naval_carrier = {
 			modifier = {
 				OR = {
 					has_War = yes
-					JAP = {
+					var:global.jap_tag = {
 						has_navy_size = {
 							unit = carrier
 							size > 8
@@ -1512,7 +1512,7 @@ USA_naval_submarine = {
 			factor = 50
 			modifier = {
 				factor = 15
-				has_war_with = JAP
+				has_war_with = var:global.jap_tag
 			}
 		}
 		role_icon_index = 6

@@ -1,0 +1,29 @@
+# all the below are NOT triggers
+am_release_puppet_trigger = {
+	OR = {
+		has_government = democratic 
+		has_government = neutrality 
+	}
+}
+am_release_puppet_local_rulers_trigger = {
+	OR = {
+		has_government = communism
+		has_government = fascism
+		has_government = monarchism
+	}
+}
+am_release_dominion_local_rulers_trigger = {
+	NOT = { original_tag = ENG }
+}
+am_release_faction_trigger = {
+	always = yes
+}
+am_release_faction_local_rulers_trigger = {
+	always = yes
+}
+am_release_freedom_trigger = {
+	always = yes
+}
+am_release_freedom_local_rulers_trigger = {
+	always = yes
+}

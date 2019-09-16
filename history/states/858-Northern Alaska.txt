@@ -1,0 +1,22 @@
+state={
+	id=858
+	name="STATE_858"
+	impassable = yes
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = ALS
+		#add_core_of = USA
+
+	}
+
+	provinces={
+		7855 13069 14235 14236 14237 14238 14239 14240 14241 14242 14243
+	}
+	manpower=2000
+	state_category=wasteland
+}

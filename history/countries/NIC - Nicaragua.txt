@@ -91,6 +91,12 @@ create_country_leader = {
 		election_frequency = 48
 		elections_allowed = no
 	}
+	set_popularities = {
+		democratic = 15
+		fascism = 5
+		communism = 10
+		neutrality = 70
+	}
 }
 
 create_country_leader = {

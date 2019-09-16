@@ -29,17 +29,17 @@ country_event = {
 			}
 			modifier = {
 				factor = 75
-				16 = { NOT = { is_controlled_by = FRA } } #Paris	
+				16 = { NOT = { is_controlled_by = FR0 } } #Paris	
 			}
 		} 
-		JAP = {
+		JA0 = {
 			country_event = { days = 5 id = japan.6 }
 		}
 	}
 	option = { # Refuse
 		name = france.1.b
 		ai_chance = { factor = 25 }
-		JAP = {
+		JA0 = {
 			country_event = { days = 5 id = japan.7 }
 		}
 	}
@@ -177,13 +177,13 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = FRA
-		has_war_with = GER
-		16 = { is_controlled_by = GER }
-		is_in_faction_with = ENG
-		ENG = { has_war_with = GER }
+		tag = FR0
+		has_war_with = GE0
+		16 = { is_controlled_by = GE0 }
+		is_in_faction_with = EN0
+		EN0 = { has_war_with = GE0 }
 		surrender_progress > 0.7
-		GER = {
+		GE0 = {
 			OR = {
 				is_faction_leader = yes
 				has_government = neutrality
@@ -201,10 +201,10 @@ country_event = {
 				NOT = { state = 42 }
 				is_controlled_by = ROOT
 				OR = {
-					is_owned_by = GER
+					is_owned_by = GE0
 					AND = {
-						FRA = { has_War_with = ITA }
-						is_owned_by = ITA
+						FR0 = { has_War_with = IT0 }
+						is_owned_by = IT0
 					}
 				}
 			}
@@ -212,19 +212,19 @@ country_event = {
 
 		#Don't fire if any states in France are controlled by a different human player
 		NOT = {
-			any_country = {
+			any_enemy_country = {
 				is_ai = no
-				NOT = { tag = GER }
-				NOT = { is_in_faction_with = GER }
-				has_war_with = ROOT
-				any_state = {
-					is_on_continent = europe
-					NOT = { state = 1 }
-					NOT = { state = 735 }
-					NOT = { state = 21 }
-					NOT = { state = 31 }
-					is_owned_by = ROOT
-					is_controlled_by = PREV
+				NOT = { tag = GE0 }
+				NOT = { is_in_faction_with = GE0 }
+				ROOT = {
+					any_owned_state = {
+						is_on_continent = europe
+						NOT = { state = 1 }
+						NOT = { state = 735 }
+						NOT = { state = 21 }
+						NOT = { state = 31 }
+						is_controlled_by = PREV.PREV
+					}
 				}
 			}
 		}
@@ -243,7 +243,7 @@ country_event = {
 		trigger = { is_ai = no }
 		set_country_flag = become_vichy
 		set_global_flag = fall_of_france
-		GER = { country_event = france.14 }
+		GE0 = { country_event = france.14 }
 		custom_effect_tooltip = france.10.a_tt
 		# Switches to Vichy if GER accepts
 	}
@@ -253,7 +253,7 @@ country_event = {
 			factor = 85
 		}
 		set_global_flag = fall_of_france
-		GER = { country_event = france.14 }
+		GE0 = { country_event = france.14 }
 		custom_effect_tooltip = france.10.b_tt
 	}
 	option = { # Ask for British Union
@@ -265,10 +265,12 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		ENG = {
-			country_event = france.11
-			effect_tooltip = {
-				annex_country = { target = FRA transfer_troops = yes }
+		FR0 = {
+			EN0 = {
+				country_event = france.11
+				effect_tooltip = {
+					annex_country = { target = PREV transfer_troops = yes }
+				}
 			}
 		}
 		custom_effect_tooltip = GAME_OVER_TT
@@ -289,7 +291,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		FRA = {
+		FR0 = {
 			country_event = { hours = 6 id = france.13 }
 		}
 	}
@@ -298,7 +300,7 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		FRA = {
+		FR0 = {
 			country_event = { hours = 6 id = france.12 }
 		}
 	}
@@ -321,26 +323,30 @@ country_event = {
 		hidden_effect = {
 			every_state = {
 				limit = {
-					is_core_of = FRA
+					is_core_of = FR0
 				}
-				ENG = {
+				EN0 = {
 					add_state_core = PREV
 				}
 			}
 		}
-		FRA = {
-			every_unit_leader = {
-				set_unit_leader_flag = flag_former_french_general
-				set_nationality = ENG
+		EN0 = {
+			FR0 = {
+				every_unit_leader = {
+					set_unit_leader_flag = flag_former_french_general
+					set_nationality = PREV
+				}
 			}
 		}
-		ENG = {
-			annex_country = { target = FRA transfer_troops = yes }
+		FR0 = {
+			EN0 = {
+				annex_country = { target = PREV transfer_troops = yes }
+			}
 		}
 		custom_effect_tooltip = FRA_franco_british_cores
 		hidden_effect = {
-			ENG = { set_cosmetic_tag = FRA_UK }
-			GER = { 
+			EN0 = { set_cosmetic_tag = FRA_UK }
+			GE0 = { 
 				country_event = { hours = 6 id = news.35 }
 			}
 		}
@@ -361,13 +367,13 @@ country_event = {
 		trigger = { is_ai = no }
 		set_country_flag = become_vichy
 		set_global_flag = fall_of_france
-		GER = { country_event = france.14 }
+		GE0 = { country_event = france.14 }
 		custom_effect_tooltip = france.10.a_tt
 		# Switches to Vichy if GER accepts
 	}
 	option = { # Become Free France
 		name = france.13.b
-		GER = { country_event = france.14 }
+		GE0 = { country_event = france.14 }
 		custom_effect_tooltip = france.10.b_tt
 		set_global_flag = fall_of_france
 	}
@@ -391,7 +397,7 @@ country_event = {
 			has_government = fascism
 		}
 		#Set same cosmetic tag they would get on capitulation
-		FRA = {
+		FR0 = {
 			set_cosmetic_tag = FRA_FREE
 		}
 		# German Occupation Zone
@@ -453,162 +459,162 @@ country_event = {
 				AND = {
 					735 = { #Savoy
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 					21 = { #Provence
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 					32 = { #Alpes
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 				}
 			}
-			ITA = { transfer_state = 32 }
+			IT0 = { transfer_state = 32 }
 		}
 		if = {
 			limit = {
 				AND = {
 					21 = { #Provence
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 				}
 			}
-			ITA = { transfer_state = 21 }
+			IT0 = { transfer_state = 21 }
 		}
 		if = {
 			limit = {
 				AND = {
 					1 = { #Corsica
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 				}
 			}
-			ITA = { transfer_state = 1 }
+			IT0 = { transfer_state = 1 }
 		}
 		if = {
 			limit = {
 				AND = {
 					735 = { #Savoy
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 				}
 			}
-			ITA = { transfer_state = 735 }
+			IT0 = { transfer_state = 735 }
 		}
 		
 		#Spanish occupation zone
 		if = {
 			limit = {
 				31 = { #Midi-Pyrinees
-					owner = { original_tag = FRA }
-					is_controlled_by = SPR
+						owner = { original_tag = FRA }
+					is_controlled_by = SP0
 				}
 			}
-			SPR = {
+			SP0 = {
 				transfer_state = 31
 			}
 		}
-		FRA = {
+		FR0 = {
 			set_capital = 539
 			hidden_effect = {
-					set_state_controller = 26
-					set_state_controller = 22
-					set_state_controller = 25
-					set_state_controller = 20
-					set_state_controller = 33
-					#tunisia
-					if = {
-						limit = {
-							458 = {
+				set_state_controller = 26
+				set_state_controller = 22
+				set_state_controller = 25
+				set_state_controller = 20
+				set_state_controller = 33
+				#tunisia
+				if = {
+					limit = {
+						458 = {
 								owner = { original_tag = FRA }
-								controller = { 
-									original_tag = FRA
-								}
+							controller = { 
+								tag = FR0
 							}
 						}
-						set_state_controller = 458
-					}					
+					}
+					set_state_controller = 458
+				}					
 
-					#syria
-					if = {
-						limit = {
-							677 = {
-								owner = { original_tag = FRA }
-								controller = { 
-									original_tag = FRA
-								}
+				#syria
+				if = {
+					limit = {
+						677 = {
+							owner = { original_tag = FRA }
+							controller = { 
+								original_tag = FRA
 							}
 						}
-						set_state_controller = 677
 					}
-					if = {
-						limit = {
-							680 = {
-								owner = { original_tag = FRA }
-								controller = { 
-									original_tag = FRA
-								}
+					set_state_controller = 677
+				}
+				if = {
+					limit = {
+						680 = {
+							owner = { original_tag = FRA }
+							controller = { 
+								original_tag = FRA
 							}
 						}
-						set_state_controller = 680
 					}
-					if = {
-						limit = {
-							554 = {
-								owner = { original_tag = FRA }
-								controller = { 
-									original_tag = FRA
-								}
+					set_state_controller = 680
+				}
+				if = {
+					limit = {
+						554 = {
+							owner = { original_tag = FRA }
+							controller = { 
+								original_tag = FRA
 							}
 						}
-						set_state_controller = 554 
 					}
+					set_state_controller = 554 
+				}
 
-					if = {
-						limit = {
-							1 = {
-								owner = { original_tag = FRA }
-							}
+				if = {
+					limit = {
+						1 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 1
 					}
-					if = {
-						limit = {
-							32 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 1
+				}
+				if = {
+					limit = {
+						32 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 32
 					}
-					if = {
-						limit = {
-							735 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 32
+				}
+				if = {
+					limit = {
+						735 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 735
 					}
-					if = {
-						limit = {
-							21 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 735
+				}
+				if = {
+					limit = {
+						21 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 21
 					}
-					if = {
-						limit = {
-							31 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 21
+				}
+				if = {
+					limit = {
+						31 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 31
 					}
+					set_state_controller = 31
+				}
 			}
 			start_civil_war = {
 				ideology = fascism
@@ -655,22 +661,28 @@ country_event = {
 				fascism = 76
 				communism = 2
 			}
-			every_unit_leader = {
-				limit = {
-					has_id = 101
+			set_cosmetic_tag = FRA_civil_war
+			set_variable = { global.fra_vichy_tag = THIS.id }
+			FR0 = {
+				PREV = {
+					every_unit_leader = {
+						limit = {
+							has_id = 101
+						}
+						set_nationality = PREV
+					}
 				}
-				set_nationality = FRA
 			}
 			# FRA Player Switches to Vichy
 			if = {
-				limit = { FRA = { has_country_flag = become_vichy } }
-				change_tag_from = FRA
+				limit = { FR0 = { has_country_flag = become_vichy } }
+				change_tag_from = FR0
 			}
 			save_event_target_as = vichy_france
 		}
 		country_event = { hours = 6 id = news.34 }
 		hidden_effect =  {
-			FRA = { news_event = { id = france.20 days = 1 } }
+			FR0 = { news_event = { id = france.20 days = 1 } }
 		}
 	}
 
@@ -683,7 +695,7 @@ country_event = {
 			has_government = neutrality
 		}
 		#Set same cosmetic tag they would get on capitulation
-		FRA = {
+		FR0 = {
 			set_cosmetic_tag = FRA_FREE
 		}
 		# German Occupation Zone
@@ -745,52 +757,52 @@ country_event = {
 				AND = {
 					735 = { #Savoy
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 					21 = { #Provence
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 					32 = { #Alpes
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 				}
 			}
-			ITA = { transfer_state = 32 }
+			IT0 = { transfer_state = 32 }
 		}
 		if = {
 			limit = {
 				AND = {
 					21 = { #Provence
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 				}
 			}
-			ITA = { transfer_state = 21 }
+			IT0 = { transfer_state = 21 }
 		}
 		if = {
 			limit = {
 				AND = {
 					1 = { #Corsica
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 				}
 			}
-			ITA = { transfer_state = 1 }
+			IT0 = { transfer_state = 1 }
 		}
 		if = {
 			limit = {
 				AND = {
 					735 = { #Savoy
 						owner = { original_tag = FRA }
-						is_controlled_by = ITA
+						is_controlled_by = IT0
 					}
 				}
 			}
-			ITA = { transfer_state = 735 }
+			IT0 = { transfer_state = 735 }
 		}
 		
 		#Spanish occupation zone
@@ -798,14 +810,14 @@ country_event = {
 			limit = {
 				31 = { #Midi-Pyrinees
 					owner = { original_tag = FRA }
-					is_controlled_by = SPR
+					is_controlled_by = SP0
 				}
 			}
-			SPR = {
+			SP0 = {
 				transfer_state = 31
 			}
 		}
-		FRA = {
+		FR0 = {
 			set_capital = 539
 			hidden_effect = {
 					set_state_controller = 26
@@ -949,16 +961,18 @@ country_event = {
 				fascism = 16
 				communism = 2
 			}
+			set_cosmetic_tag = FRA_civil_war
+			set_variable = { global.fra_vichy_tag = THIS.id }
 			# FRA Player Switches to Vichy
 			if = {
-				limit = { FRA = { has_country_flag = become_vichy } }
-				change_tag_from = FRA
+				limit = { FR0 = { has_country_flag = become_vichy } }
+				change_tag_from = FR0
 			}
 			save_event_target_as = vichy_france
 		}
 		country_event = { hours = 6 id = news.34 }
 		hidden_effect =  {
-			FRA = { news_event = { id = france.20 days = 1 } }
+			FR0 = { news_event = { id = france.20 days = 1 } }
 		}
 	}
 
@@ -971,7 +985,7 @@ country_event = {
 				factor = 0
 			}
 		}
-		FRA = {
+		FR0 = {
 			country_event = { hours = 6 id = france.15 }
 		}
 	}
@@ -1031,21 +1045,25 @@ country_event = {
 	option = {
 		name = france.17.a
 		ai_chance = { factor = 90 }
-		FRA = {
+		FR0 = {
 			country_event = france.18
 			add_to_faction = ROOT
 		}
-		add_ai_strategy = {
-			type = alliance
-			id = "FRA"
-			value = 200
+		FR0 = {
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 200
+				}
+			}
 		}
 	}
 
 	option = {
 		name = france.17.b
 		ai_chance = { factor = 10 }
-		FRA = { country_event = france.19 }
+		FR0 = { country_event = france.19 }
 	}
 }
 
@@ -1117,7 +1135,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_government = communism }
-		tag = FRA
+		tag = FR0
 		date > 1936.4.1
 		date < 1938.1.1
 	}
@@ -1282,33 +1300,35 @@ country_event = {
 			factor = 90
 			modifier = {
 				factor = 0
-				is_in_faction_with = YUG
+				is_in_faction_with = YU0
 			}
 		}
 		if = {
 			limit = {
-				ITA = {
+				IT0 = {
 					OR = {
 						NOT = { has_completed_focus = ITA_yugoslavia_friend }						
-						is_in_faction_with = GER
+						is_in_faction_with = GE0
 						exists = no
 					}
 				}
 			}
-			YUG = {
-				add_opinion_modifier = { target = FRA modifier = western_betrayal }
-				country_event = { id = yugoslavia.5 hours = 6 }
+			FR0 = {
+				YU0 = {
+					add_opinion_modifier = { target = PREV modifier = western_betrayal }
+					country_event = { id = yugoslavia.5 hours = 6 }
+				}
 			}			
 		}
 		if = {
 			limit = { 
-				ITA = {
+				IT0 = {
 					has_completed_focus = ITA_yugoslavia_friend
-					NOT = { is_in_faction_with = GER }
-					NOT = { has_war_with = YUG }
+					NOT = { is_in_faction_with = GE0 }
+					NOT = { has_war_with = YU0 }
 				}
 			}
-			ITA = { country_event = { id = italy.12 } }
+			IT0 = { country_event = { id = italy.12 } }
 		}
 	}
 	option = { # Support the Yugoslavs alone
@@ -1317,51 +1337,59 @@ country_event = {
 			factor = 10
 			modifier = {
 				factor = 0
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 			}
 		}
 		add_political_power = -200
-		add_opinion_modifier = { target = GER modifier = condemn_aggression }
-		YUG = { 
-			country_event = { id = yugoslavia.4 days = 1 }
-			add_opinion_modifier = { target = FRA modifier = offered_support }
+		GE0 = {
+			ROOT = {
+				add_opinion_modifier = { target = PREV modifier = condemn_aggression }
+			}
 		}
-		GER = {
-			country_event = { id = germany.97 hours = 6 } #Generate wargoal
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state_focus
-					target = YUG
-					generator = { 102 }
+		FR0 = {
+			YU0 = { 
+				country_event = { id = yugoslavia.4 days = 1 }
+				add_opinion_modifier = { target = PREV modifier = offered_support }
+				GE0 = {
+					country_event = { id = germany.97 hours = 6 } #Generate wargoal
+					effect_tooltip = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							generator = { 102 868 865 }
+						}
+					}
 				}
 			}
 		}
 		if = {
-			limit = { is_in_faction_with = ENG }
-			ENG = { 
+			limit = { is_in_faction_with = EN0 }
+			EN0 = { 
 				country_event = { id = britain.15 hours = 6 }
-				remove_from_faction = FRA
+				remove_from_faction = FR0
 			}
 		}
 		if = {
-			limit = { is_in_faction_with = GER }
-			GER = { 
-				remove_from_faction = FRA
+			limit = { is_in_faction_with = GE0 }
+			GE0 = { 
+				remove_from_faction = FR0
 			}
 		}
 		if = {
 			limit = {
 				is_in_faction = yes
 				is_faction_leader = yes
-				NOT = { is_in_faction_with = ENG }
-				NOT = { is_in_faction_with = GER }
+				NOT = { is_in_faction_with = EN0 }
+				NOT = { is_in_faction_with = GE0 }
 			}
-			add_to_faction = YUG
-			YUG = {
-				add_ai_strategy = {
-					type = alliance
-					id = "FRA"
-					value = 200
+			add_to_faction = YU0
+			FR0 = {
+				YU0 = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 200
+					}
 				}
 			}
 		}
@@ -1370,17 +1398,19 @@ country_event = {
 				OR = {
 					is_in_faction = no
 					is_faction_leader = no
-					is_in_faction_with = ENG
-					is_in_faction_with = GER
+					is_in_faction_with = EN0
+					is_in_faction_with = GE0
 				}
 			}
 			create_faction = "french_alliance"
-			add_to_faction = YUG
-			YUG = {
-				add_ai_strategy = {
-					type = alliance
-					id = "FRA"
-					value = 200
+			add_to_faction = YU0
+			FR0 = {
+				YU0 = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 200
+					}
 				}
 			}
 		}
@@ -1406,39 +1436,47 @@ country_event = {
 			factor = 90
 			modifier = {
 				factor = 0
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 			}
 		}
 		if = {
 			limit = {
 				is_in_faction = yes
-				NOT = { is_in_faction_with = ENG }
+				NOT = { is_in_faction_with = EN0 }
 			}
-			remove_from_faction = FRA
+			remove_from_faction = FR0
 		}
 		if = {
-			limit = { NOT = { is_in_faction_with = ENG } }
-			ENG = { add_to_faction = FRA }
-			FRA = {
-				add_ai_strategy = {
-					type = alliance
-					id = "ENG"
-					value = 200
+			limit = { NOT = { is_in_faction_with = EN0 } }
+			EN0 = {
+				add_to_faction = FR0
+				FR0 = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 200
+					}
 				}
 			}
 		}
-		add_opinion_modifier = { target = GER modifier = condemn_aggression }
-		YUG = { 
-			country_event = { id = yugoslavia.3 days = 1 }
-			add_opinion_modifier = { target = FRA modifier = offered_support }
+		GE0 = {
+			ROOT = {
+				add_opinion_modifier = { target = PREV modifier = condemn_aggression }
+			}
 		}
-		GER = {
-			country_event = { id = germany.93 hours = 6 } #Generate wargoal
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state_focus
-					target = YUG
-					generator = { 102 }
+		FR0 = {
+			YU0 = { 
+				country_event = { id = yugoslavia.3 days = 1 }
+				add_opinion_modifier = { target = PREV modifier = offered_support }
+				GE0 = {
+					country_event = { id = germany.93 hours = 6 } #Generate wargoal
+					effect_tooltip = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							generator = { 102 868 865 }
+						}
+					}
 				}
 			}
 		}		
@@ -1447,12 +1485,14 @@ country_event = {
 	#Abandon
 	option = {
 		name = france.26.b
-		trigger = { NOT = { is_in_faction_with = ENG } }
+		trigger = { NOT = { is_in_faction_with = EN0 } }
 		ai_chance = { factor = 10 }
 		set_global_flag = FRA_abandoned_yugoslavia
-		YUG = {
-			country_event = { id = yugoslavia.3 hours = 6 }
-			add_opinion_modifier = { target = FRA modifier = western_betrayal }
+		FR0 = {
+			YU0 = {
+				country_event = { id = yugoslavia.3 hours = 6 }
+				add_opinion_modifier = { target = PREV modifier = western_betrayal }
+			}
 		}
 	}	
 }
@@ -1491,11 +1531,11 @@ country_event = {
 		effect_tooltip = {
 			if = {
 				limit = { has_global_flag = ITA_claims_on_france_735 }
-				ITA = { transfer_state = 735 }
+				IT0 = { transfer_state = 735 }
 			}
 			if = {
 				limit = { has_global_flag = ITA_claims_on_france_1 }
-				ITA = { transfer_state = 1 }
+				IT0 = { transfer_state = 1 }
 			}
 		}
 
@@ -1510,11 +1550,7 @@ country_event = {
 				}
 
 			}
-			random_other_country = {
-				limit = {
-					original_tag = FRA
-					has_government = democratic
-				}
+			FR2 = {
 				if = {
 					limit = { ROOT = { owns_state = 554 } }
 					transfer_state = 554
@@ -1607,8 +1643,8 @@ country_event = {
         	expire = "1965.1.1"
         	ideology = liberalism
         	traits = {
+        	      }
             }
-        }
         set_country_flag = daladier_resigned
       }
 }
@@ -1623,16 +1659,17 @@ country_event = {
     is_triggered_only = yes
 
     immediate = {
-    	random_other_country = {
-			limit = {
-				original_tag = SPR
-				has_government = fascism
-			}
-			FRA = {
-				add_ai_strategy = {
-					type = befriend
-					id = "PREV"
-					value = 200
+    	SP1 = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				FR0 = {
+					add_ai_strategy = {
+						type = befriend
+						id = "PREV"
+						value = 200
+					}
 				}
 			}
 		}
@@ -1656,12 +1693,12 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = ENG
+		tag = EN0
+		has_global_flag = flag_franco_british_union
 		has_war = no
 		is_subject = no
-		has_global_flag = flag_franco_british_union
 		any_owned_state = {
-			is_core_of = FRA
+			is_core_of = FR0
 		}
 	}
 	
@@ -1681,13 +1718,13 @@ country_event = {
 		
 		if = {
 			limit = {
-				NOT = { country_exists = FRA }
+				NOT = { country_exists = FR0 }
 			}
 			if = {
 				limit = {
 					has_government = democratic
 				}
-				FRA = {
+				FR0 = {
 					set_politics = {
 						ruling_party = democratic
 						elections_allowed = yes
@@ -1703,7 +1740,7 @@ country_event = {
 				limit = {
 					has_government = fascism
 				}
-				FRA = {
+				FR0 = {
 					set_politics = {
 						ruling_party = fascism
 						elections_allowed = no
@@ -1719,7 +1756,7 @@ country_event = {
 				limit = {
 					has_government = communism
 				}
-				FRA = {
+				FR0 = {
 					set_politics = {
 						ruling_party = communism
 						elections_allowed = no
@@ -1735,7 +1772,7 @@ country_event = {
 				limit = {
 					has_government = neutrality
 				}
-				FRA = {
+				FR0 = {
 					set_politics = {
 						ruling_party = neutrality
 						elections_allowed = no
@@ -1748,29 +1785,33 @@ country_event = {
 					}
 				}
 			}
-			release = FRA
+			release = FR0
 			
-			set_autonomy = { target = FRA autonomy_state = autonomy_free }
+			FR0 = {
+				ROOT = {
+					set_autonomy = { target = PREV autonomy_state = autonomy_free }
+				}
+			}
 		}
 		
 		every_state = {
 			limit = {
-				is_core_of = ENG
-				is_core_of = FRA
+				is_core_of = EN0
+				is_core_of = FR0
 			}
-			remove_core_of = ENG
+			remove_core_of = EN0
 		}
 		
 		hidden_effect = { # This looks odd in the tooltip
 			every_other_country = {
 				limit = {
-					is_subject_of = ENG
+					is_subject_of = EN0
 				}
 				every_owned_state = {
 					limit = {
-						is_core_of = FRA
+						is_core_of = FR0
 					}
-					FRA = {
+					FR0 = {
 						transfer_state = PREV
 					}
 				}
@@ -1780,21 +1821,25 @@ country_event = {
 		if = {
 			limit = {
 				is_faction_leader = yes
-				FRA = {
+				FR0 = {
 					is_subject = no
 					is_in_faction = no
 				}
 			}
-			add_to_faction = FRA
+			add_to_faction = FR0
 		}
 		
-		every_unit_leader = {
-			limit = {
-				has_unit_leader_flag = {
-					flag = flag_former_french_general
+		FR0 = {
+			ROOT = {
+				every_unit_leader = {
+					limit = {
+						has_unit_leader_flag = {
+							flag = flag_former_french_general
+						}
+					}
+					set_nationality = PREV
 				}
 			}
-			set_nationality = FRA
 		}
 		
 		hidden_effect =  {
@@ -1819,19 +1864,23 @@ country_event = {
 		
 		every_state = {
 			limit = {
-				is_core_of = ENG
-				is_core_of = FRA
+				is_core_of = EN0
+				is_core_of = FR0
 			}
-			remove_core_of = ENG
+			remove_core_of = EN0
 		}
 		
-		every_unit_leader = {
-			limit = {
-				has_unit_leader_flag = {
-					flag = flag_former_french_general
+		FR0 = {
+			ROOT = {
+				every_unit_leader = {
+					limit = {
+						has_unit_leader_flag = {
+							flag = flag_former_french_general
+						}
+					}
+					set_nationality = PREV
 				}
 			}
-			set_nationality = FRA
 		}
 		
 		ai_chance = {
@@ -1872,10 +1921,10 @@ news_event = {
 		name = france.34.a
 		trigger = {
 			OR = {
-				tag = ENG
-				tag = FRA
-				is_in_faction_with = ENG
-				is_subject_of = ENG
+				tag = EN0
+				tag = FR0
+				is_in_faction_with = EN0
+				is_subject_of = EN0
 			}
 		}
 	}
@@ -1885,10 +1934,10 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					tag = ENG
-					tag = FRA
-					is_in_faction_with = ENG
-					is_subject_of = ENG
+					tag = EN0
+					tag = FR0
+					is_in_faction_with = EN0
+					is_subject_of = EN0
 				}
 			}
 		}

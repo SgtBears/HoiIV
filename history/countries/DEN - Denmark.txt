@@ -146,6 +146,11 @@ set_popularities = {
 		election_frequency = 48
 		elections_allowed = yes
 	}
+	set_popularities = {
+		democratic = 97
+		fascism = 1
+		communism = 2
+	}
 }
 
 set_convoys = 40
@@ -164,7 +169,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Frits Clausen"
 	desc = "POLITICS_FRITS_CLAUSEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -175,7 +180,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aksel Larsen"
 	desc = "POLITICS_AKSEL_LARSEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -186,7 +191,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Peter Rochegune Munch"
 	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {

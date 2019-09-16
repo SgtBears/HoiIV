@@ -17,7 +17,11 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			7816 1
+		}
 		add_core_of = SOV
+		add_core_of = FER
 	}
 
 	provinces={

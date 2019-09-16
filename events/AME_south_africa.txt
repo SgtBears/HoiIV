@@ -1,0 +1,4161 @@
+﻿###########################
+# Accurate Map Events
+###########################
+
+add_namespace = am.south_africa
+
+country_event = {
+	id = am.south_africa.1
+	title = am.south_africa.1.t
+	desc = am.south_africa.1.desc
+	picture = GFX_report_event_communist_leader
+	is_triggered_only = yes
+
+	
+	option = {
+		name = am.south_africa.1.a
+		
+		ai_chance = {
+			factor = 40
+			modifier = {
+				has_government = communism 
+				factor = 5
+			}
+		}
+		
+		hidden_effect = {
+			SA0 = {
+				country_event = { id = am.south_africa.2 hours = 6 }
+			}
+		}
+	}
+	
+	option = {
+		name = am.south_africa.1.b
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				has_government = fascism 
+				factor = 10
+			}
+		}
+		
+		effect_tooltip = {
+			SA0 = {
+				create_wargoal = {
+					type = liberate_wargoal
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			SA0 = {
+				country_event = { id = am.south_africa.3 hours = 6 }
+			}
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.2
+	title = am.south_africa.2.t
+	desc = am.south_africa.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+
+	
+	option = { #a great idea!
+		name = south_africa.2.a
+		
+		set_variable = { VARTAG = MR0 }
+		set_variable = { OWNSTATE1 = 557.id }
+		set_variable = { OWNSTATE2 = 786.id }
+		country_exists_release_offer_communism_2states = yes
+		
+		set_variable = { VARTAG = ML5 }
+		set_variable = { OWNSTATE1 = 782.id }
+		set_variable = { OWNSTATE2 = 556.id }
+		country_exists_release_offer_communism_2states = yes
+		
+		set_variable = { VARTAG = NG0 }
+		set_variable = { OWNSTATE1 = 515.id }
+		set_variable = { OWNSTATE2 = 781.id }
+		country_exists_release_offer_communism_2states = yes
+		
+		set_variable = { VARTAG = VO0 }
+		set_variable = { OWNSTATE = 778.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = TO0 }
+		set_variable = { OWNSTATE = 777.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = DA0 }
+		set_variable = { OWNSTATE = 776.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = GH0 }
+		set_variable = { OWNSTATE = 274.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = IV0 }
+		set_variable = { OWNSTATE = 779.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = SR5 }
+		set_variable = { OWNSTATE = 700.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = LI5 }
+		set_variable = { OWNSTATE = 298.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = SE5 }
+		set_variable = { OWNSTATE = 272.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = GA0 }
+		set_variable = { OWNSTATE = 701.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = GN5 }
+		set_variable = { OWNSTATE = 296.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = GN0 }
+		set_variable = { OWNSTATE = 780.id }
+		country_exists_release_offer_communism = yes
+		
+		set_variable = { VARTAG = GN5 }
+		set_variable = { NOTTAG1 = MR0 }
+		set_variable = { NOTTAG2 = SE5 }
+		set_variable = { NOTTAG3 = GA0 }
+		set_variable = { OWNSTATE = 702.id }
+		set_state_owner_am_cape_verde = yes
+	}
+
+}
+country_event = {
+	id = am.south_africa.3
+	title = am.south_africa.3.t
+	desc = am.south_africa.3.desc
+	picture = GFX_report_event_british_inspect_troops
+	is_triggered_only = yes
+
+	
+	option = { #a great idea!
+		name = south_africa.3.a
+		ai_chance = {
+			factor = 1
+		}
+		create_wargoal = {
+			type = liberate_wargoal
+			target = FROM
+		}
+	}
+	option = { #a great idea!
+		name = south_africa.3.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.28
+	title = am.south_africa.28.t
+	desc = am.south_africa.28.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	
+	immediate = {
+		set_country_flag = african_union_offer
+	}
+	option = { #a great idea!
+		name = south_africa.28.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_in_faction = yes
+				factor = 0
+			}
+			modifier = {
+				has_government = fascism
+				factor = 0.01
+			}
+			modifier = {
+				has_government = democratic
+				factor = 0.7
+			}
+		}
+		add_popularity = { ideology = communism popularity = 0.45 }
+		set_politics = {
+			ruling_party = communism
+		}
+		set_party_name = { 
+			ideology = communism 
+			long_name = SAF_african_people_union_long 
+			name = SAF_african_people_union 
+		}
+		FROM = {
+			add_to_faction = ROOT
+			country_event = { id = am.south_africa.29 hours = 6 }
+		}
+	}
+	option = { #a great idea!
+		name = south_africa.28.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				AND = {
+					is_in_faction = no
+					has_war = yes
+				}
+				factor = 0.05
+			}
+			modifier = {
+				has_government = communism
+				factor = 0.01
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_government = communism }
+			}
+			set_party_name = { 
+				ideology = communism 
+				long_name = SAF_african_people_union_long 
+				name = SAF_african_people_union 
+			}
+		}
+		add_popularity = { ideology = communism popularity = 0.25 }
+		FROM = {
+			country_event = { id = am.south_africa.30 hours = 6 }
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.29
+	title = am.south_africa.29.t
+	desc = am.south_africa.29.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	
+	option = { #a great idea!
+		name = south_africa.29.a
+	}
+
+}
+country_event = {
+	id = am.south_africa.30
+	title = am.south_africa.30.t
+	desc = am.south_africa.30.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	
+	option = { #a great idea!
+		name = south_africa.30.a
+	}
+
+}
+country_event = {
+	id = am.south_africa.31
+	title = am.south_africa.31.t
+	desc = am.south_africa.31.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	option = { #a great idea!
+		name = south_africa.31.a
+		add_popularity = { ideology = communism popularity = 0.5 }
+		set_country_flag = african_union_offer
+		set_politics = {
+			ruling_party = communism
+		}
+		set_party_name = { 
+			ideology = communism 
+			long_name = SAF_african_people_union_long 
+			name = SAF_african_people_union 
+		}
+		FROM = {
+			add_to_faction = ROOT
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.32
+	title = am.south_africa.32.t
+	desc = am.south_africa.32.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	option = {
+		name = am.south_africa.32.a
+		if = {
+			limit = {
+				557 = {
+					NOT = {
+						is_owned_by = MR0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			557 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				786 = {
+					NOT = {
+						is_owned_by = MR0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 786
+							}
+						}
+					}
+				}
+			}
+			786 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				782 = {
+					NOT = {
+						is_owned_by = ML5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 782
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 782
+							}
+						}
+					}
+				}
+			}
+			782 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				556 = {
+					NOT = {
+						is_owned_by = ML5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 556
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 556
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 556
+							}
+						}
+					}
+				}
+			}
+			556 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				515 = {
+					NOT = {
+						is_owned_by = NG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 515
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 515
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 515
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 515
+							}
+						}
+					}
+				}
+			}
+			515 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				781 = {
+					NOT = {
+						is_owned_by = NG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 781
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 781
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 781
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 781
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 781
+							}
+						}
+					}
+				}
+			}
+			781 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				778 = {
+					NOT = {
+						is_owned_by = VO0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 778
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 778
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 778
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 778
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 778
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 778
+							}
+						}
+					}
+				}
+			}
+			778 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				776 = {
+					NOT = {
+						is_owned_by = DA0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 776
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 776
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 776
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 776
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 776
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 776
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 776
+							}
+						}
+					}
+				}
+			}
+			776 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				777 = {
+					NOT = {
+						is_owned_by = TO0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 777
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 777
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 777
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 777
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 777
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 777
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 777
+							}
+						}
+						776 = {
+							OWNER = {
+								owns_state = 777
+							}
+						}
+					}
+				}
+			}
+			777 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				274 = {
+					NOT = {
+						is_owned_by = GH0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 274
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 274
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 274
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 274
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 274
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 274
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 274
+							}
+						}
+						776 = {
+							OWNER = {
+								owns_state = 274
+							}
+						}
+						777 = {
+							OWNER = {
+								owns_state = 274
+							}
+						}
+					}
+				}
+			}
+			274 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				779 = {
+					NOT = {
+						is_owned_by = IV0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 779
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 779
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 779
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 779
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 779
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 779
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 779
+							}
+						}
+						776 = {
+							OWNER = {
+								owns_state = 779
+							}
+						}
+						777 = {
+							OWNER = {
+								owns_state = 779
+							}
+						}
+						274 = {
+							OWNER = {
+								owns_state = 779
+							}
+						}
+					}
+				}
+			}
+			779 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				780 = {
+					NOT = {
+						is_owned_by = GN0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+						776 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+						777 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+						274 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+						779 = {
+							OWNER = {
+								owns_state = 780
+							}
+						}
+					}
+				}
+			}
+			780 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				700 = {
+					NOT = {
+						is_owned_by = SR5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						776 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						777 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						274 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						779 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+						780 = {
+							OWNER = {
+								owns_state = 700
+							}
+						}
+					}
+				}
+			}
+			700 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				298 = {
+					NOT = {
+						is_owned_by = LI5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						776 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						777 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						274 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						779 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						780 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+						700 = {
+							OWNER = {
+								owns_state = 298
+							}
+						}
+					}
+				}
+			}
+			298 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				296 = {
+					NOT = {
+						is_owned_by = GN5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						776 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						777 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						274 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						779 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						780 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						700 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+						298 = {
+							OWNER = {
+								owns_state = 296
+							}
+						}
+					}
+				}
+			}
+			296 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				272 = {
+					NOT = {
+						is_owned_by = SE5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						776 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						777 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						274 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						779 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						780 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						700 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						298 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+						296 = {
+							OWNER = {
+								owns_state = 272
+							}
+						}
+					}
+				}
+			}
+			272 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				701 = {
+					NOT = {
+						is_owned_by = GA0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						776 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						777 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						274 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						779 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						780 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						700 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						298 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						296 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+						272 = {
+							OWNER = {
+								owns_state = 701
+							}
+						}
+					}
+				}
+			}
+			701 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				702 = {
+					NOT = {
+						is_owned_by = GN5
+						is_owned_by = SE5
+						is_owned_by = MR0
+						is_owned_by = GA0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						557 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						786 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						782 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						556 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						515 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						781 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						778 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						776 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						777 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						274 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						779 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						780 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						700 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						298 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						296 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						272 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+						701 = {
+							OWNER = {
+								owns_state = 702
+							}
+						}
+					}
+				}
+			}
+			702 = {
+				OWNER = {
+					country_event = { id = am.south_africa.1 }
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.33
+	title = am.south_africa.33.t
+	desc = am.south_africa.33.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = am.south_africa.33.a
+		if = {
+			limit = {
+				549 = {
+					NOT = {
+						is_owned_by = SU0
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			549 = {
+				OWNER = {
+					country_event = { id = am.south_africa.22 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				551 = {
+					NOT = {
+						is_owned_by = SU0
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						549 = {
+							OWNER = {
+								owns_state = 551
+							}
+						}
+					}
+				}
+			}
+			551 = {
+				OWNER = {
+					country_event = { id = am.south_africa.22 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				767 = {
+					NOT = {
+						is_owned_by = SU0
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						549 = {
+							OWNER = {
+								owns_state = 767
+							}
+						}
+						551 = {
+							OWNER = {
+								owns_state = 767
+							}
+						}
+					}
+				}
+			}
+			767 = {
+				OWNER = {
+					country_event = { id = am.south_africa.22 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				452 = {
+					NOT = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						549 = {
+							OWNER = {
+								owns_state = 452
+							}
+						}
+						551 = {
+							OWNER = {
+								owns_state = 452
+							}
+						}
+						767 = {
+							OWNER = {
+								owns_state = 452
+							}
+						}
+					}
+				}
+			}
+			452 = {
+				OWNER = {
+					country_event = { id = am.south_africa.22 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				447 = {
+					NOT = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						549 = {
+							OWNER = {
+								owns_state = 447
+							}
+						}
+						551 = {
+							OWNER = {
+								owns_state = 447
+							}
+						}
+						767 = {
+							OWNER = {
+								owns_state = 447
+							}
+						}
+						452 = {
+							OWNER = {
+								owns_state = 447
+							}
+						}
+					}
+				}
+			}
+			447 = {
+				OWNER = {
+					country_event = { id = am.south_africa.22 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				446 = {
+					NOT = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						549 = {
+							OWNER = {
+								owns_state = 446
+							}
+						}
+						551 = {
+							OWNER = {
+								owns_state = 446
+							}
+						}
+						767 = {
+							OWNER = {
+								owns_state = 446
+							}
+						}
+						452 = {
+							OWNER = {
+								owns_state = 446
+							}
+						}
+						447 = {
+							OWNER = {
+								owns_state = 446
+							}
+						}
+					}
+				}
+			}
+			446 = {
+				OWNER = {
+					country_event = { id = am.south_africa.22 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				552 = {
+					NOT = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						549 = {
+							OWNER = {
+								owns_state = 552
+							}
+						}
+						551 = {
+							OWNER = {
+								owns_state = 552
+							}
+						}
+						767 = {
+							OWNER = {
+								owns_state = 552
+							}
+						}
+						452 = {
+							OWNER = {
+								owns_state = 552
+							}
+						}
+						447 = {
+							OWNER = {
+								owns_state = 552
+							}
+						}
+						446 = {
+							OWNER = {
+								owns_state = 552
+							}
+						}
+					}
+				}
+			}
+			552 = {
+				OWNER = {
+					country_event = { id = am.south_africa.22 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				456 = {
+					NOT = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						549 = {
+							OWNER = {
+								owns_state = 456
+							}
+						}
+						551 = {
+							OWNER = {
+								owns_state = 456
+							}
+						}
+						767 = {
+							OWNER = {
+								owns_state = 456
+							}
+						}
+						452 = {
+							OWNER = {
+								owns_state = 456
+							}
+						}
+						447 = {
+							OWNER = {
+								owns_state = 456
+							}
+						}
+						446 = {
+							OWNER = {
+								owns_state = 456
+							}
+						}
+						552 = {
+							OWNER = {
+								owns_state = 456
+							}
+						}
+					}
+				}
+			}
+			456 = {
+				OWNER = {
+					country_event = { id = am.south_africa.22 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				457 = {
+					NOT = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						549 = {
+							OWNER = {
+								owns_state = 457
+							}
+						}
+						551 = {
+							OWNER = {
+								owns_state = 457
+							}
+						}
+						767 = {
+							OWNER = {
+								owns_state = 457
+							}
+						}
+						452 = {
+							OWNER = {
+								owns_state = 457
+							}
+						}
+						447 = {
+							OWNER = {
+								owns_state = 457
+							}
+						}
+						446 = {
+							OWNER = {
+								owns_state = 457
+							}
+						}
+						552 = {
+							OWNER = {
+								owns_state = 457
+							}
+						}
+						456 = {
+							OWNER = {
+								owns_state = 457
+							}
+						}
+					}
+				}
+			}
+			457 = {
+				OWNER = {
+					country_event = { id = am.south_africa.22 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				453 = {
+					NOT = {
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						549 = {
+							OWNER = {
+								owns_state = 453
+							}
+						}
+						551 = {
+							OWNER = {
+								owns_state = 453
+							}
+						}
+						767 = {
+							OWNER = {
+								owns_state = 453
+							}
+						}
+						452 = {
+							OWNER = {
+								owns_state = 453
+							}
+						}
+						447 = {
+							OWNER = {
+								owns_state = 453
+							}
+						}
+						446 = {
+							OWNER = {
+								owns_state = 453
+							}
+						}
+						552 = {
+							OWNER = {
+								owns_state = 453
+							}
+						}
+						456 = {
+							OWNER = {
+								owns_state = 453
+							}
+						}
+						457 = {
+							OWNER = {
+								owns_state = 453
+							}
+						}
+					}
+				}
+			}
+			453 = {
+				OWNER = {
+					country_event = { id = am.south_africa.22 }
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.34
+	title = am.south_africa.34.t
+	desc = am.south_africa.34.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = am.south_africa.34.a
+		if = {
+			limit = {
+				544 = {
+					NOT = {
+						is_owned_by = MZ0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			544 = {
+				OWNER = {
+					country_event = { id = am.south_africa.19 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				540 = {
+					NOT = {
+						is_owned_by = MZ0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						544 = {
+							OWNER = {
+								owns_state = 540
+							}
+						}
+					}
+				}
+			}
+			540 = {
+				OWNER = {
+					country_event = { id = am.south_africa.19 }
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.35
+	title = am.south_africa.35.t
+	desc = am.south_africa.35.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = am.south_africa.35.a
+		if = {
+			limit = {
+				273 = {
+					NOT = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			273 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				663 = {
+					NOT = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 663
+							}
+						}
+					}
+				}
+			}
+			663 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				699 = {
+					NOT = {
+						is_owned_by = WE0
+						is_owned_by = MO5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 699
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 699
+							}
+						}
+					}
+				}
+			}
+			699 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				462 = {
+					NOT = {
+						is_owned_by = MO5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 462
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 462
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 462
+							}
+						}
+					}
+				}
+			}
+			462 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				783 = {
+					NOT = {
+						is_owned_by = MO5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 783
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 783
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 783
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 783
+							}
+						}
+					}
+				}
+			}
+			783 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				461 = {
+					NOT = {
+						is_owned_by = MO5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 461
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 461
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 461
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 461
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 461
+							}
+						}
+					}
+				}
+			}
+			461 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				290 = {
+					NOT = {
+						is_owned_by = MO5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 290
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 290
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 290
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 290
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 290
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 290
+							}
+						}
+					}
+				}
+			}
+			290 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				459 = {
+					NOT = {
+						is_owned_by = AL5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 459
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 459
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 459
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 459
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 459
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 459
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 459
+							}
+						}
+					}
+				}
+			}
+			459 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				460 = {
+					NOT = {
+						is_owned_by = AL5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 460
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 460
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 460
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 460
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 460
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 460
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 460
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 460
+							}
+						}
+					}
+				}
+			}
+			460 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				513 = {
+					NOT = {
+						is_owned_by = AL5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 513
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 513
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 513
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 513
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 513
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 513
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 513
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 513
+							}
+						}
+						460 = {
+							OWNER = {
+								owns_state = 513
+							}
+						}
+					}
+				}
+			}
+			513 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				514 = {
+					NOT = {
+						is_owned_by = AL5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 514
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 514
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 514
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 514
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 514
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 514
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 514
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 514
+							}
+						}
+						460 = {
+							OWNER = {
+								owns_state = 514
+							}
+						}
+						513 = {
+							OWNER = {
+								owns_state = 514
+							}
+						}
+					}
+				}
+			}
+			514 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				458 = {
+					NOT = {
+						is_owned_by = TU5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+						460 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+						513 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+						514 = {
+							OWNER = {
+								owns_state = 458
+							}
+						}
+					}
+				}
+			}
+			458 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				665 = {
+					NOT = {
+						is_owned_by = TU5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						460 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						513 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						514 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+						458 = {
+							OWNER = {
+								owns_state = 665
+							}
+						}
+					}
+				}
+			}
+			665 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				448 = {
+					NOT = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						460 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						513 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						514 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						458 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+						665 = {
+							OWNER = {
+								owns_state = 448
+							}
+						}
+					}
+				}
+			}
+			448 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				661 = {
+					NOT = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						460 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						513 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						514 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						458 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						665 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+						448 = {
+							OWNER = {
+								owns_state = 661
+							}
+						}
+					}
+				}
+			}
+			661 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				449 = {
+					NOT = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						460 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						513 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						514 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						458 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						665 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						448 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+						661 = {
+							OWNER = {
+								owns_state = 449
+							}
+						}
+					}
+				}
+			}
+			449 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				662 = {
+					NOT = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						460 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						513 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						514 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						458 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						665 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						448 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						661 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+						449 = {
+							OWNER = {
+								owns_state = 662
+							}
+						}
+					}
+				}
+			}
+			662 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				450 = {
+					NOT = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						460 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						513 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						514 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						458 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						665 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						448 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						661 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						449 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+						662 = {
+							OWNER = {
+								owns_state = 450
+							}
+						}
+					}
+				}
+			}
+			450 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				451 = {
+					NOT = {
+						is_owned_by = LB0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						273 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						663 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						699 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						462 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						783 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						461 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						290 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						459 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						460 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						513 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						514 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						458 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						665 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						448 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						661 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						449 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						662 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+						450 = {
+							OWNER = {
+								owns_state = 451
+							}
+						}
+					}
+				}
+			}
+			451 = {
+				OWNER = {
+					country_event = { id = am.south_africa.25 }
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.36
+	title = am.south_africa.36.t
+	desc = am.south_africa.36.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = am.south_africa.36.a
+		if = {
+			limit = {
+				550 = {
+					NOT = {
+						is_owned_by = ROOT
+						is_owned_by = ER0
+						is_owned_by = ET0
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			550 = {
+				OWNER = {
+					country_event = { id = am.south_africa.16 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				268 = {
+					NOT = {
+						is_owned_by = DJ0
+						is_owned_by = ROOT
+						is_owned_by = SO5
+						OWNER = {
+							has_war_with = ROOT
+						}
+						550 = {
+							OWNER = {
+								owns_state = 268
+							}
+						}
+					}
+				}
+			}
+			268 = {
+				OWNER = {
+					country_event = { id = am.south_africa.16 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				269 = {
+					NOT = {
+						is_owned_by = ROOT
+						is_owned_by = SO5
+						OWNER = {
+							has_war_with = ROOT
+						}
+						550 = {
+							OWNER = {
+								owns_state = 269
+							}
+						}
+						268 = {
+							OWNER = {
+								owns_state = 269
+							}
+						}
+					}
+				}
+			}
+			269 = {
+				OWNER = {
+					country_event = { id = am.south_africa.16 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				559 = {
+					NOT = {
+						is_owned_by = ROOT
+						is_owned_by = SO5
+						OWNER = {
+							has_war_with = ROOT
+						}
+						550 = {
+							OWNER = {
+								owns_state = 559
+							}
+						}
+						268 = {
+							OWNER = {
+								owns_state = 559
+							}
+						}
+						269 = {
+							OWNER = {
+								owns_state = 559
+							}
+						}
+					}
+				}
+			}
+			559 = {
+				OWNER = {
+					country_event = { id = am.south_africa.16 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				271 = {
+					NOT = {
+						is_owned_by = ROOT
+						is_owned_by = ET0
+						OWNER = {
+							has_war_with = ROOT
+						}
+						550 = {
+							OWNER = {
+								owns_state = 271
+							}
+						}
+						268 = {
+							OWNER = {
+								owns_state = 271
+							}
+						}
+						269 = {
+							OWNER = {
+								owns_state = 271
+							}
+						}
+						559 = {
+							OWNER = {
+								owns_state = 271
+							}
+						}
+					}
+				}
+			}
+			271 = {
+				OWNER = {
+					country_event = { id = am.south_africa.16 }
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.37
+	title = am.south_africa.37.t
+	desc = am.south_africa.37.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = am.south_africa.37.a
+		if = {
+			limit = {
+				769 = {
+					NOT = {
+						is_owned_by = BD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			769 = {
+				OWNER = {
+					country_event = { id = am.south_africa.7 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				768 = {
+					NOT = {
+						is_owned_by = RW0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						769 = {
+							OWNER = {
+								owns_state = 768
+							}
+						}
+					}
+				}
+			}
+			768 = {
+				OWNER = {
+					country_event = { id = am.south_africa.7 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				295 = {
+					NOT = {
+						is_owned_by = CG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						768 = {
+							OWNER = {
+								owns_state = 295
+							}
+						}
+						769 = {
+							OWNER = {
+								owns_state = 295
+							}
+						}
+					}
+				}
+			}
+			295 = {
+				OWNER = {
+					country_event = { id = am.south_africa.7 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				718 = {
+					NOT = {
+						is_owned_by = CG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						768 = {
+							OWNER = {
+								owns_state = 718
+							}
+						}
+						769 = {
+							OWNER = {
+								owns_state = 718
+							}
+						}
+						295 = {
+							OWNER = {
+								owns_state = 718
+							}
+						}
+					}
+				}
+			}
+			718 = {
+				OWNER = {
+					country_event = { id = am.south_africa.7 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				538 = {
+					NOT = {
+						is_owned_by = CG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						768 = {
+							OWNER = {
+								owns_state = 538
+							}
+						}
+						769 = {
+							OWNER = {
+								owns_state = 538
+							}
+						}
+						295 = {
+							OWNER = {
+								owns_state = 538
+							}
+						}
+						718 = {
+							OWNER = {
+								owns_state = 538
+							}
+						}
+					}
+				}
+			}
+			538 = {
+				OWNER = {
+					country_event = { id = am.south_africa.7 }
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.38
+	title = am.south_africa.38.t
+	desc = am.south_africa.38.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	option = {
+		name = am.south_africa.38.a
+		if = {
+			limit = {
+				543 = {
+					NOT = {
+						is_owned_by = MD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			543 = {
+				OWNER = {
+					country_event = { id = am.south_africa.4 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				708 = {
+					NOT = {
+						is_owned_by = MD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						543 = {
+							OWNER = {
+								owns_state = 708
+							}
+						}
+					}
+				}
+			}
+			708 = {
+				OWNER = {
+					country_event = { id = am.south_africa.4 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				706 = {
+					NOT = {
+						is_owned_by = MD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						543 = {
+							OWNER = {
+								owns_state = 706
+							}
+						}
+						708 = {
+							OWNER = {
+								owns_state = 706
+							}
+						}
+					}
+				}
+			}
+			706 = {
+				OWNER = {
+					country_event = { id = am.south_africa.4 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				709 = {
+					NOT = {
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						543 = {
+							OWNER = {
+								owns_state = 709
+							}
+						}
+						708 = {
+							OWNER = {
+								owns_state = 709
+							}
+						}
+						706 = {
+							OWNER = {
+								owns_state = 709
+							}
+						}
+					}
+				}
+			}
+			709 = {
+				OWNER = {
+					country_event = { id = am.south_africa.4 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				707 = {
+					NOT = {
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						543 = {
+							OWNER = {
+								owns_state = 707
+							}
+						}
+						708 = {
+							OWNER = {
+								owns_state = 707
+							}
+						}
+						706 = {
+							OWNER = {
+								owns_state = 707
+							}
+						}
+						709 = {
+							OWNER = {
+								owns_state = 707
+							}
+						}
+					}
+				}
+			}
+			707 = {
+				OWNER = {
+					country_event = { id = am.south_africa.4 }
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.39
+	title = am.south_africa.39.t
+	desc = am.south_africa.39.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = am.south_africa.39.a
+		if = {
+			limit = {
+				558 = {
+					NOT = {
+						is_owned_by = NG5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			558 = {
+				OWNER = {
+					country_event = { id = am.south_africa.13 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				773 = {
+					NOT = {
+						is_owned_by = CM0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						558 = {
+							OWNER = {
+								owns_state = 773
+							}
+						}
+					}
+				}
+			}
+			773 = {
+				OWNER = {
+					country_event = { id = am.south_africa.13 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				775 = {
+					NOT = {
+						is_owned_by = CD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						558 = {
+							OWNER = {
+								owns_state = 775
+							}
+						}
+						773 = {
+							OWNER = {
+								owns_state = 775
+							}
+						}
+					}
+				}
+			}
+			775 = {
+				OWNER = {
+					country_event = { id = am.south_africa.13 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				774 = {
+					NOT = {
+						is_owned_by = CD0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						558 = {
+							OWNER = {
+								owns_state = 774
+							}
+						}
+						773 = {
+							OWNER = {
+								owns_state = 774
+							}
+						}
+						775 = {
+							OWNER = {
+								owns_state = 774
+							}
+						}
+					}
+				}
+			}
+			774 = {
+				OWNER = {
+					country_event = { id = am.south_africa.13 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				660 = {
+					NOT = {
+						is_owned_by = CP5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						558 = {
+							OWNER = {
+								owns_state = 660
+							}
+						}
+						773 = {
+							OWNER = {
+								owns_state = 660
+							}
+						}
+						775 = {
+							OWNER = {
+								owns_state = 660
+							}
+						}
+						774 = {
+							OWNER = {
+								owns_state = 660
+							}
+						}
+					}
+				}
+			}
+			660 = {
+				OWNER = {
+					country_event = { id = am.south_africa.13 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				297 = {
+					NOT = {
+						is_owned_by = EQ0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						558 = {
+							OWNER = {
+								owns_state = 297
+							}
+						}
+						773 = {
+							OWNER = {
+								owns_state = 297
+							}
+						}
+						775 = {
+							OWNER = {
+								owns_state = 297
+							}
+						}
+						774 = {
+							OWNER = {
+								owns_state = 297
+							}
+						}
+						660 = {
+							OWNER = {
+								owns_state = 297
+							}
+						}
+					}
+				}
+			}
+			297 = {
+				OWNER = {
+					country_event = { id = am.south_africa.13 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				772 = {
+					NOT = {
+						is_owned_by = RC0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						558 = {
+							OWNER = {
+								owns_state = 772
+							}
+						}
+						773 = {
+							OWNER = {
+								owns_state = 772
+							}
+						}
+						775 = {
+							OWNER = {
+								owns_state = 772
+							}
+						}
+						774 = {
+							OWNER = {
+								owns_state = 772
+							}
+						}
+						660 = {
+							OWNER = {
+								owns_state = 772
+							}
+						}
+						297 = {
+							OWNER = {
+								owns_state = 772
+							}
+						}
+					}
+				}
+			}
+			772 = {
+				OWNER = {
+					country_event = { id = am.south_africa.13 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				539 = {
+					NOT = {
+						is_owned_by = GA5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						558 = {
+							OWNER = {
+								owns_state = 539
+							}
+						}
+						773 = {
+							OWNER = {
+								owns_state = 539
+							}
+						}
+						775 = {
+							OWNER = {
+								owns_state = 539
+							}
+						}
+						774 = {
+							OWNER = {
+								owns_state = 539
+							}
+						}
+						660 = {
+							OWNER = {
+								owns_state = 539
+							}
+						}
+						297 = {
+							OWNER = {
+								owns_state = 539
+							}
+						}
+						772 = {
+							OWNER = {
+								owns_state = 539
+							}
+						}
+					}
+				}
+			}
+			539 = {
+				OWNER = {
+					country_event = { id = am.south_africa.13 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				705 = {
+					NOT = {
+						is_owned_by = AN0
+						is_owned_by = EQ0
+						is_owned_by = GA5
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						558 = {
+							OWNER = {
+								owns_state = 705
+							}
+						}
+						773 = {
+							OWNER = {
+								owns_state = 705
+							}
+						}
+						775 = {
+							OWNER = {
+								owns_state = 705
+							}
+						}
+						774 = {
+							OWNER = {
+								owns_state = 705
+							}
+						}
+						660 = {
+							OWNER = {
+								owns_state = 705
+							}
+						}
+						297 = {
+							OWNER = {
+								owns_state = 705
+							}
+						}
+						772 = {
+							OWNER = {
+								owns_state = 705
+							}
+						}
+						539 = {
+							OWNER = {
+								owns_state = 705
+							}
+						}
+					}
+				}
+			}
+			705 = {
+				OWNER = {
+					country_event = { id = am.south_africa.13 }
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.40
+	title = am.south_africa.40.t
+	desc = am.south_africa.40.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = am.south_africa.40.a
+		if = {
+			limit = {
+				548 = {
+					NOT = {
+						is_owned_by = UG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			548 = {
+				OWNER = {
+					country_event = { id = am.south_africa.10 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				547 = {
+					NOT = {
+						is_owned_by = KE0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						548 = {
+							OWNER = {
+								owns_state = 547
+							}
+						}
+					}
+				}
+			}
+			547 = {
+				OWNER = {
+					country_event = { id = am.south_africa.10 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				546 = {
+					NOT = {
+						is_owned_by = TZ0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						548 = {
+							OWNER = {
+								owns_state = 546
+							}
+						}
+						547 = {
+							OWNER = {
+								owns_state = 546
+							}
+						}
+					}
+				}
+			}
+			546 = {
+				OWNER = {
+					country_event = { id = am.south_africa.10 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				770 = {
+					NOT = {
+						is_owned_by = MW0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						548 = {
+							OWNER = {
+								owns_state = 770
+							}
+						}
+						547 = {
+							OWNER = {
+								owns_state = 770
+							}
+						}
+						546 = {
+							OWNER = {
+								owns_state = 770
+							}
+						}
+					}
+				}
+			}
+			770 = {
+				OWNER = {
+					country_event = { id = am.south_africa.10 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				771 = {
+					NOT = {
+						is_owned_by = ZA0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						548 = {
+							OWNER = {
+								owns_state = 771
+							}
+						}
+						547 = {
+							OWNER = {
+								owns_state = 771
+							}
+						}
+						546 = {
+							OWNER = {
+								owns_state = 771
+							}
+						}
+						770 = {
+							OWNER = {
+								owns_state = 771
+							}
+						}
+					}
+				}
+			}
+			771 = {
+				OWNER = {
+					country_event = { id = am.south_africa.10 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				545 = {
+					NOT = {
+						is_owned_by = ZI0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						548 = {
+							OWNER = {
+								owns_state = 545
+							}
+						}
+						547 = {
+							OWNER = {
+								owns_state = 545
+							}
+						}
+						546 = {
+							OWNER = {
+								owns_state = 545
+							}
+						}
+						770 = {
+							OWNER = {
+								owns_state = 545
+							}
+						}
+						771 = {
+							OWNER = {
+								owns_state = 545
+							}
+						}
+					}
+				}
+			}
+			545 = {
+				OWNER = {
+					country_event = { id = am.south_africa.10 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				542 = {
+					NOT = {
+						is_owned_by = BT0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+						548 = {
+							OWNER = {
+								owns_state = 542
+							}
+						}
+						547 = {
+							OWNER = {
+								owns_state = 542
+							}
+						}
+						546 = {
+							OWNER = {
+								owns_state = 542
+							}
+						}
+						770 = {
+							OWNER = {
+								owns_state = 542
+							}
+						}
+						771 = {
+							OWNER = {
+								owns_state = 542
+							}
+						}
+						545 = {
+							OWNER = {
+								owns_state = 542
+							}
+						}
+					}
+				}
+			}
+			542 = {
+				OWNER = {
+					country_event = { id = am.south_africa.10 }
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = am.south_africa.41
+	title = am.south_africa.41.t
+	desc = am.south_africa.41.desc
+	picture = GFX_report_event_british_inspect_troops
+	is_triggered_only = yes
+
+	
+	option = { #a great idea!
+		name = south_africa.41.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { #a great idea!
+		name = south_africa.41.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+}

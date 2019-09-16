@@ -28,7 +28,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id =
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -69,7 +69,7 @@ focus_tree = {
 		x = 16
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -80,7 +80,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			NOT = { is_subject_of = ENG }
+			NOT = { is_subject_of = EN0 }
 		}
 
 		cancel_if_invalid = yes
@@ -89,16 +89,16 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = NZL_transfer_ships_tt
-			ENG = {
+			EN0 = {
 			    transfer_ship = {
 			        prefer_name = "HMS Achilles"
 			        type = light_cruiser
-			        target = NZL
+			        target = ROOT
 			    }
 			    transfer_ship = {
 			        prefer_name = "HMS Leander"
 			        type = light_cruiser
-			        target = NZL
+			        target = ROOT
 			    }
 			}
 		}
@@ -112,7 +112,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -149,7 +149,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -219,7 +219,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -292,7 +292,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -330,7 +330,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -367,7 +367,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -404,7 +404,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -445,7 +445,7 @@ focus_tree = {
 		x = 21
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -467,22 +467,22 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = nav_bomber_equipment_1
 				amount = 56
-				producer = ENG
+				producer = EN0
 			}
 			if = {
 				limit = {
-					ENG = { has_tech = tactical_bomber1 }
+					EN0 = { has_tech = tactical_bomber1 }
 				}
 				add_equipment_to_stockpile = {
 					type = tac_bomber_equipment_1
 					amount = 30
-					producer = ENG
+					producer = EN0
 				}
 				else = {
 					add_equipment_to_stockpile = {
 						type = tac_bomber_equipment_0
 						amount = 30
-						producer = ENG
+						producer = EN0
 					}	
 				}
 			}
@@ -497,7 +497,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -569,7 +569,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -606,7 +606,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -643,7 +643,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -680,7 +680,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -721,7 +721,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -760,7 +760,7 @@ focus_tree = {
 		x = 25
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 8
@@ -845,7 +845,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -881,7 +881,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -917,7 +917,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -952,7 +952,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1017,7 +1017,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 35
@@ -1053,7 +1053,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1119,7 +1119,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1213,7 +1213,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 35
@@ -1249,7 +1249,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 35
@@ -1281,7 +1281,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 35
@@ -1315,7 +1315,7 @@ focus_tree = {
 		x = 30
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -1352,7 +1352,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1392,7 +1392,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1429,7 +1429,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1494,7 +1494,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1530,7 +1530,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1566,7 +1566,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1603,7 +1603,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1643,7 +1643,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1682,7 +1682,7 @@ focus_tree = {
 		x = 4
 		y = 0
 
-		cost = 10
+		cost = 71
 
 		ai_will_do = {
 			factor = 2
@@ -1717,7 +1717,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1748,7 +1748,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1786,7 +1786,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1817,7 +1817,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1849,7 +1849,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1887,7 +1887,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 8
@@ -1918,7 +1918,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1940,6 +1940,109 @@ focus_tree = {
 			add_ideas = NZL_maori_conscription
 		}
 	}
+	focus = {
+		id = NZL_self_government_pacific_territories
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = NZL_maori_volunteers focus = NZL_maori_conscription }
+		x = 0
+		y = 5
+		relative_position_id = NZL_ratana_alliance
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			OR = {
+				owns_state = 872
+				owns_state = 870
+				owns_state = 726
+				owns_state = 869
+				owns_state = 871
+				owns_state = 873
+				owns_state = 876
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					owns_state = 872
+				}
+				872 = {
+					add_core_of = NZL
+					set_state_category = small_island
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 870
+				}
+				870 = {
+					add_core_of = NZL
+					set_state_category = small_island
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 726
+					owns_state = 726
+				}
+				726 = {
+					add_core_of = NZL
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 872
+				}
+				869 = {
+					add_core_of = NZL
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 872
+				}
+				871 = {
+					add_core_of = NZL
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 872
+				}
+				873 = {
+					add_core_of = NZL
+					set_state_name = "Tokelau Islands"
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 872
+				}
+				876 = {
+					add_core_of = NZL
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = NZL_maori_volunteers
@@ -1949,7 +2052,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -1986,7 +2089,7 @@ focus_tree = {
 				prioritize = { 284 723 }
 				create_unit = {
 					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
-					owner = NZL
+					owner = ROOT
 				}
 			}
 		}
@@ -2006,7 +2109,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -2030,8 +2133,10 @@ focus_tree = {
 			   	bonus = 0.05
 			}
 			add_political_power = 100
-			add_opinion_modifier = { target = ENG modifier = NZL_strengthen_ties } 
-			ENG = { add_opinion_modifier = { target = NZL modifier = NZL_strengthen_ties } }
+			add_opinion_modifier = { target = EN0 modifier = NZL_strengthen_ties } 
+			EN0 = { add_opinion_modifier = { target = ROOT modifier = NZL_strengthen_ties } }
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = generic_democratic_reformer
 		}
 	}
 
@@ -2044,7 +2149,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 3
@@ -2083,7 +2188,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2114,7 +2219,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2145,14 +2250,14 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
 		}
 
 		available = {
-			ENG = { has_government = ROOT }
+			EN0 = { has_government = ROOT }
 			is_in_tech_sharing_group = commonwealth_research
 		}
 
@@ -2185,7 +2290,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_statute_of_westminster
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2208,6 +2313,8 @@ focus_tree = {
 				remove_idea = NZL_first_labor_government
 				add_idea = NZL_the_workers_party_1
 			}
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = generic_communist_revolutionary
 		}
 	}
 
@@ -2219,7 +2326,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_the_lee_affair
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2228,7 +2335,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			has_government = communism
-			NOT = { has_war_together_with = ENG }
+			NOT = { has_war_together_with = EN0 }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
@@ -2241,11 +2348,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			ENG = { remove_from_faction = ROOT }
+			EN0 = { remove_from_faction = ROOT }
 			add_political_power = 100
 			OVERLORD = {
 				set_autonomy = {
-					target = NZL
+					target = ROOT
 					autonomy_state = autonomy_free
 				}
 			}
@@ -2265,7 +2372,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_the_lee_affair
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2274,7 +2381,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			has_government = communism
-			SOV = {
+			SO0 = {
 				has_capitulated = no
 				is_subject = no
 			}
@@ -2290,7 +2397,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			SOV = { country_event = { id = tfv_new_zealand.1 } }
+			SO0 = { country_event = { id = tfv_new_zealand.1 } }
 		}
 	}
 
@@ -2302,7 +2409,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_the_lee_affair
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -2311,7 +2418,7 @@ focus_tree = {
 		available = {
 			has_government = communism
 			is_subject = no
-			is_in_faction_with = SOV
+			is_in_faction_with = SO0
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
@@ -2325,7 +2432,7 @@ focus_tree = {
 
 		completion_reward = {
 		
-			SOV = { add_to_tech_sharing_group = comintern_research }
+			SO0 = { add_to_tech_sharing_group = comintern_research }
 			add_to_tech_sharing_group = comintern_research
 		}
 	}
@@ -2344,7 +2451,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_statute_of_westminster
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2367,6 +2474,8 @@ focus_tree = {
 				remove_idea = NZL_first_labor_government
 				add_idea = NZL_in_the_darkness
 			}
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = generic_fascist_demagogue
 		}
 	}
 
@@ -2379,15 +2488,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_in_the_darkness
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
 		}
 
 		available = {
-			NOT = { has_war_with = JAP }
-			JAP = { has_government = ROOT }
+			NOT = { has_war_with = JA0 }
+			JA0 = { has_government = ROOT }
 			is_subject = no
 			has_government = fascism			
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
@@ -2402,7 +2511,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			JAP = { country_event = { id = tfv_new_zealand.4 } }
+			JA0 = { country_event = { id = tfv_new_zealand.4 } }
 		}
 	}
 
@@ -2415,7 +2524,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_in_the_darkness
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2437,10 +2546,10 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			if = {
-				limit = { AST = { NOT = { has_government = ROOT } } }
+				limit = { AS0 = { NOT = { has_government = ROOT } } }
 				create_wargoal = {
-					type = annex_EVERYTHING#!!!!!
-					target = AST
+					type = annex_everything
+					target = AS0
 				}
 				else = {
 					add_political_power = 50
@@ -2457,7 +2566,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_in_the_darkness
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -2465,7 +2574,7 @@ focus_tree = {
 
 		available = {
 			has_government = fascism
-			is_in_faction_with = JAP
+			is_in_faction_with = JA0
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
@@ -2478,7 +2587,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			JAP = { add_to_tech_sharing_group = japanese_research }
+			JA0 = { add_to_tech_sharing_group = japanese_research }
 			add_to_tech_sharing_group = japanese_research
 		}
 	}
@@ -2497,7 +2606,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_statute_of_westminster
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2527,6 +2636,8 @@ focus_tree = {
 				value = 1
 				localization = NZL_constitution_amendment_act
 			}
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = generic_democratic_reformer
 		}
 	}
 
@@ -2538,7 +2649,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_constitution_amendment_act
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25

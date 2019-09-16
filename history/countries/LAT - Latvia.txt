@@ -111,9 +111,19 @@ set_popularities = {
 	neutrality = 40
 }
 
-# probably needs some adjustment before nazi occupation in 1940
 1939.1.1 = {
-	#
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1931.10.3"
+		election_frequency = 108
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 30
+		fascism = 15
+		communism = 15
+		neutrality = 40
+	}
 }
 
 create_country_leader = {
@@ -130,7 +140,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gustavs Celmiņš"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -140,7 +150,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Fricis Menders"
 	desc = ""
-	picture = "GFX_portrait_lat_fricis_menders"
+	picture = "gfx/leaders/LAT/portrait_lat_fricis_menders.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
@@ -150,7 +160,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vilis Lacis"
 	desc = ""
-	picture = "GFX_portrait_lat_vilis_lacis"
+	picture = "gfx/leaders/LAT/portrait_lat_vilis_lacis.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {

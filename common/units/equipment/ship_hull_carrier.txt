@@ -119,10 +119,6 @@ equipments = {
 		priority = 1000
 		
 		module_slots = inherit
-
-		default_modules = {
-			fixed_ship_engine_slot = carrier_ship_engine_2
-		}
 	}
 
 	ship_hull_carrier_2 = {
@@ -159,7 +155,6 @@ equipments = {
 		default_modules = {
 			front_1_custom_slot = empty
 			mid_1_custom_slot = empty
-			fixed_ship_engine_slot = carrier_ship_engine_3
 		}
 		naval_range = 4000
 		reliability = 0.75

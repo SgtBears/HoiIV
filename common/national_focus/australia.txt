@@ -30,7 +30,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -67,7 +67,7 @@ focus_tree = {
 		x = 2
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -104,7 +104,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -140,7 +140,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -190,7 +190,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -225,7 +225,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -268,7 +268,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -305,7 +305,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -337,7 +337,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -365,6 +365,8 @@ focus_tree = {
 				technology = tech_logistics_company3
 				technology = tech_logistics_company4
 			}
+			custom_effect_tooltip = available_military_high_command
+		    show_ideas_tooltip = AST_cederic_hicks
 			
 			
 		}
@@ -378,7 +380,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_additional_militia_training
 		
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -414,7 +416,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -451,7 +453,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -487,7 +489,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -524,7 +526,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -561,7 +563,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -603,7 +605,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 7
 		y = 0
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -674,7 +676,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_expand_the_raaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -714,7 +716,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_expand_the_raaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -786,7 +788,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -830,7 +832,7 @@ focus_tree = {
 
 		x = -1
 		y = 3
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1027,7 +1029,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_expand_the_raaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1064,7 +1066,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_expand_the_raaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1211,7 +1213,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_expand_the_raaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1245,7 +1247,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_expand_the_raaf
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1319,7 +1321,7 @@ focus_tree = {
 		x = 11
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1387,7 +1389,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1425,7 +1427,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1461,7 +1463,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1498,7 +1500,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1535,7 +1537,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1566,7 +1568,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1604,7 +1606,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1644,7 +1646,7 @@ focus_tree = {
 		x = 14
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -1736,7 +1738,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -1773,7 +1775,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -1862,7 +1864,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -1923,7 +1925,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -1984,7 +1986,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -2047,7 +2049,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -2137,7 +2139,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2195,7 +2197,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2227,7 +2229,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2265,7 +2267,7 @@ focus_tree = {
 		x = 22
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 3
@@ -2296,7 +2298,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 8
@@ -2330,7 +2332,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2361,7 +2363,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -2395,7 +2397,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 15
@@ -2426,7 +2428,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -2457,7 +2459,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2489,7 +2491,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2497,15 +2499,15 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 			#Requires UK at war in Africa
 			any_country = {
-				has_war_with = ENG
+				has_war_with = EN0
 				any_state = {
 					is_controlled_by = PREV
 					is_on_continent = africa
@@ -2579,11 +2581,11 @@ focus_tree = {
 				if = {
 					limit = {
 						any_country = {
-							is_in_faction_with = AST
+							is_in_faction_with = ROOT
 							controls_state = 273
 						}
 						any_country = {
-							is_in_faction_with = AST
+							is_in_faction_with = ROOT
 							controls_state = 552
 						}
 					}
@@ -2601,11 +2603,11 @@ focus_tree = {
 			if = {
 				limit = {
 					any_country = {
-						is_in_faction_with = AST
+						is_in_faction_with = ROOT
 						controls_state = 273
 					}
 					any_country = {
-						is_in_faction_with = AST
+						is_in_faction_with = ROOT
 						controls_state = 552
 					}
 				}
@@ -2631,7 +2633,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 15
@@ -2681,7 +2683,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 25
@@ -2721,7 +2723,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -2755,7 +2757,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -2818,7 +2820,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2889,7 +2891,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2923,12 +2925,12 @@ focus_tree = {
 		x = 28
 		y = 0
 
-		cost = 10
+		cost = 71
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				NOT = { ENG = { has_government = democratic } } #less likely to do if ENG not democratic
+				NOT = { EN0 = { has_government = democratic } } #less likely to do if ENG not democratic
 				factor = 0.5
 			}
 			modifier = {
@@ -2942,18 +2944,18 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
-			ENG = { has_war = no }
+			EN0 = { has_war = no }
 		}
 		
 		bypass = {
-			is_subject_of = ENG
-			has_war_together_with = ENG
+			is_subject_of = EN0
+			has_war_together_with = EN0
 		}
 
 		cancel_if_invalid = yes
@@ -2965,12 +2967,16 @@ focus_tree = {
  				id = commonwealth_research
  				bonus = 0.03
 			}
-			ENG = {
+			EN0 = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = AST_support_the_policy_of_appeasement
 				}
 			}
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = AST_herbert_v_evatt
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = AST_arthur_calwell
 		}
 	}
 
@@ -2982,36 +2988,35 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				ENG = { NOT = { has_government = democratic } }
+				EN0 = { NOT = { has_government = democratic } }
 				factor = 0
 			}
 		}
 
 		available = {
-			is_subject_of = ENG
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 			OR = {
-				ENG = { has_idea = ENG_george_vi }
-				ENG = { has_country_flag = edward_viii_married_wallis_simpson }
+				EN0 = { has_idea = ENG_george_vi }
+				EN0 = { has_country_flag = edward_viii_married_wallis_simpson }
 			}
 		}
 		
 		bypass = {
 			NOT = {
 				OR = {
-					is_subject_of = ENG
-					is_in_faction_with = ENG
+					is_subject_of = EN0
+					is_in_faction_with = EN0
 				}
 			}
 		}
@@ -3023,13 +3028,13 @@ focus_tree = {
 		completion_reward = {
 			if = { 
 				limit = {
-					ENG = { has_idea = ENG_george_vi }
-					}
-					country_event = { id = tfv_australia.90 }
-					}
+					EN0 = { has_idea = ENG_george_vi }
+				}
+				country_event = { id = tfv_australia.90 }
+			}
 			if = { 
 				limit = {
-					ENG = { has_country_flag = edward_viii_married_wallis_simpson } 
+					EN0 = { has_country_flag = edward_viii_married_wallis_simpson } 
 					}
 					country_event = { id = tfv_australia.92 } 
 				}
@@ -3044,17 +3049,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.2
 		}
 
 		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
-			MAL = {
-				is_puppet_of = ENG
+			is_in_faction_with = EN0
+			EN0 = { has_government = ROOT }
+			MA0 = {
+				is_puppet_of = EN0
 			}
 		}
 		
@@ -3063,16 +3068,19 @@ focus_tree = {
 				NOT = {
 					OR = {
 						336 = {
-							is_owned_by = MAL
+							is_owned_by = MA0
+						}
+						809 = {
+							is_owned_by = MA0
 						}
 						333 = {
-							is_owned_by = MAL
+							is_owned_by = MA0
 						}
 					}
 				}
 				NOT = {
-					MAL = {
-						is_puppet_of = ENG
+					MA0 = {
+						is_puppet_of = EN0
 					}
 				}
 			}
@@ -3083,7 +3091,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			ENG = {
+			EN0 = {
 				country_event = { id = tfv_australia.1 }
 			}
 		}
@@ -3097,7 +3105,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3105,10 +3113,10 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 		}
@@ -3127,8 +3135,6 @@ focus_tree = {
 				value = 0.1
 				localization = AST_adopt_westminster
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AST_arthur_calwell
 		}
 	}
 
@@ -3140,7 +3146,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -3148,10 +3154,10 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 			is_in_tech_sharing_group = commonwealth_research
@@ -3166,7 +3172,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			AST = {
+			ROOT = {
   				modify_tech_sharing_bonus = {
      				id = commonwealth_research
      				bonus = 0.05  
@@ -3183,25 +3189,28 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				NOT = { AST = { has_completed_focus = AST_the_singapore_strategy } } #ENG can defend its own stuff!
+				NOT = { ROOT = { has_completed_focus = AST_the_singapore_strategy } } #ENG can defend its own stuff!
 				factor = 0.2
 			}
 		}
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 			336 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			809 = {
 				controller = { is_in_faction_with = ROOT }
 			}
 			333 = {
@@ -3244,6 +3253,49 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+
+				#Extra fort on naval bases
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+			}
+			809 = {
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
 
 				#border inland bunker
 				add_building_construction = {
@@ -3327,7 +3379,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3335,10 +3387,10 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 		}
@@ -3364,7 +3416,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3372,10 +3424,10 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
+				is_subject_of = EN0
 				AND = {
 					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
+					is_in_faction_with = EN0
 				}
 			}
 		}
@@ -3389,7 +3441,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = AST_commonwealth_aircraft_corporation
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = AST_commonwealth_aircraft_corporation
 		}
 	}
 
@@ -3404,7 +3457,7 @@ focus_tree = {
 		x = 35
 		y = 0
 
-		cost = 10
+		cost = 71
 
 		ai_will_do = {
 			factor = 0.5 
@@ -3423,7 +3476,7 @@ focus_tree = {
 				factor = 30
 			}
 			modifier = {
-				NOT = { ENG = { has_government = democratic } } 
+				NOT = { EN0 = { has_government = democratic } } 
 				factor = 5
 			}
 		}
@@ -3433,7 +3486,7 @@ focus_tree = {
 		}
 		
 		bypass = {
-			NOT = { is_subject_of = ENG }
+			NOT = { is_subject_of = EN0 }
 		}
 
 		cancel_if_invalid = yes
@@ -3449,6 +3502,8 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { id = news.253 hours = 5 }
 			}
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = AST_ben_chifley
 		}
 	}
 
@@ -3466,7 +3521,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_never_another_gallipoli
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3534,6 +3589,8 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = AST_arthur_calwell
 		}
 	}
 
@@ -3545,7 +3602,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_protect_the_homeland
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3564,28 +3621,28 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			JAP = {			
+			JA0 = {			
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = AST_the_swpa_menace
 				}
 			}
-			USA = {
+			US0 = {
 				add_opinion_modifier = {
-					target = JAP
+					target = JA0
 					modifier = AST_the_swpa_menace_boycot_JAP
 				}
 				add_opinion_modifier = {
-					target = JAP
+					target = JA0
 					modifier = AST_the_swpa_menace
 				}
 			}
 			add_opinion_modifier = {
-				target = JAP
+				target = JA0
 				modifier = AST_the_swpa_menace_boycot_JAP
 			}
 			add_opinion_modifier = {
-				target = JAP
+				target = JA0
 				modifier = AST_the_swpa_menace
 			}
 		}
@@ -3599,26 +3656,22 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_protect_the_homeland
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			if = {
-				limit = { NOT = { has_government = fascism } }
+			OR = {
 				has_autonomy_state = autonomy_dominion
-			}
-			if = {
-				limit = { has_government = fascism }
 				has_autonomy_state = autonomy_satellite
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
-			has_war_with = ENG
+			has_war_with = EN0
 		}
 
 		cancel_if_invalid = yes
@@ -3628,13 +3681,11 @@ focus_tree = {
 		completion_reward = {
 			OVERLORD = {
 				set_autonomy = {
-					target = AST
+					target = ROOT
 					autonomy_state = autonomy_free
 				}
 			}
-			ENG = { remove_from_faction = ROOT }
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AST_arthur_calwell
+			EN0 = { remove_from_faction = ROOT }
 			hidden_effect = {
 				news_event = { id = news.286 hours = 6}
 			}
@@ -3650,7 +3701,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_protect_the_homeland
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3662,9 +3713,9 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				has_war_with = USA
+				has_war_with = US0
 			}
-			USA = { 
+			US0 = { 
 				has_government = ROOT
 				is_puppet = no
 			}
@@ -3673,12 +3724,12 @@ focus_tree = {
 		
 		bypass = {
 			OR = {
-				USA = { exists = no }
-				USA = {
+				US0 = { exists = no }
+				US0 = {
 					AND = {
 						is_in_faction = yes
 						NOT = {
-							is_in_faction_with = AST
+							is_in_faction_with = ROOT
 						}
 					}
 				}
@@ -3690,14 +3741,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			USA = {
+			US0 = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = AST_woo_usa
 				}
 			}
 			add_opinion_modifier = {
-				target = USA
+				target = US0
 				modifier = AST_woo_usa
 			}
 		}
@@ -3711,22 +3762,22 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_protect_the_homeland
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			NOT = { has_war_with = HOL }
-			HOL = { has_capitulated = yes }
+			NOT = { has_war_with = HO0 }
+			HO0 = { has_capitulated = yes }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
-			INS = {
+			IN0 = {
 				OR = {
-					NOT = { is_puppet_of = HOL }
+					NOT = { is_puppet_of = HO0 }
 					exists = no
 				}
 			}
@@ -3737,7 +3788,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			HOL = {
+			HO0 = {
 				country_event = { id = tfv_australia.10 }
 			}
 		}
@@ -3751,7 +3802,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_protect_the_homeland
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -3772,18 +3823,28 @@ focus_tree = {
 
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
-			create_faction = south_west_pacific_initiative
+			effect_tooltip = {
+				create_faction = south_west_pacific_initiative
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						is_in_faction = no
+					}
+					create_faction = south_west_pacific_initiative
+				}
+			}
 			if = {
 				limit = {
 					has_completed_focus = AST_protect_the_dutch_colonies
-					INS = { is_puppet_of = AST }
+					IN0 = { is_puppet_of = ROOT }
 				}
 				set_country_flag = INS_is_a_puppet
 			}
 			if = {
 				limit = {
 					has_completed_focus = AST_woo_usa
-					USA = {
+					US0 = {
 						exists = yes
 						has_capitulated = no
 						is_puppet = no
@@ -3794,7 +3855,7 @@ focus_tree = {
 						}
 					}
 				}
-				USA = {
+				US0 = {
 					country_event = { id = tfv_australia.32 } #Ask USA to join faction
 				}
 				else = {
@@ -3812,7 +3873,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_protect_the_homeland
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -3833,13 +3894,13 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = AST_swpi_research_tt
 			if = {
-				limit = { AST = { is_in_faction_with = USA } }
+				limit = { ROOT = { is_in_faction_with = US0 } }
 				add_to_tech_sharing_group = us_research
-				USA = { add_to_tech_sharing_group = us_research }
+				US0 = { add_to_tech_sharing_group = us_research }
 				else = {
-					AST = { add_to_tech_sharing_group = swpi_research }
+					ROOT = { add_to_tech_sharing_group = swpi_research }
 					if = {
-						limit = { all_country = { is_in_faction_with = AST } }
+						limit = { all_country = { is_in_faction_with = ROOT } }
 						add_to_tech_sharing_group = swpi_research 
 						}
 					}
@@ -3855,7 +3916,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_protect_the_homeland
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -3863,7 +3924,7 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				JAP = { has_government = ROOT }
+				JA0 = { has_government = ROOT }
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
@@ -3879,7 +3940,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = topple_government
-				target = JAP
+				target = JA0
 			}
 		}
 	}
@@ -3897,7 +3958,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_never_another_gallipoli
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.5
@@ -3959,12 +4020,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_abandon_the_westminster_system
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
-				NOT = { JAP = { has_government = fascism } }
+				NOT = { JA0 = { has_government = fascism } }
 				factor = 0 #let's not go fascist if Japan isn't
 			}
 			modifier = {
@@ -4016,15 +4077,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_support_the_centre_party
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			country_exists = INS
-			INS = { is_subject = yes }
+			country_exists = IN0
+			IN0 = { is_subject = yes }
 			ROOT = {
 				fascism > 0.15
 			}
@@ -4055,12 +4116,12 @@ focus_tree = {
 
 		completion_reward = {
 			#Boosts fascism in Indonesia
-			INS = {
+			IN0 = {
 				add_timed_idea = { days = 730 idea = AST_indonesian_nationalists } 
 			}
 			hidden_effect = {
-				INS = { country_event = { id = tfv_australia.95 } }
-				HOL = { country_event = { id = tfv_australia.95 } }
+				IN0 = { country_event = { id = tfv_australia.95 } }
+				HO0 = { country_event = { id = tfv_australia.95 } }
 			}
 		}
 	}
@@ -4073,31 +4134,27 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_support_the_centre_party
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			country_exists = INS
-			INS = { is_subject = yes }
+			country_exists = IN0
+			IN0 = { is_subject = yes }
 			OR = {
 				is_subject = no
 				AND = {
 					compare_autonomy_progress_ratio > 0.75
-					if = {
-						limit = { not = { has_government = fascism } }
+					OR = {
 						has_autonomy_state = autonomy_dominion
-					}
-					if = {
-						limit = { has_government = fascism } 
 						has_autonomy_state = autonomy_satellite
 					}
 				}
 			}
 			fascism > 0.3
-			INS = {
+			IN0 = {
 				fascism > 0.3
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
@@ -4117,9 +4174,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					INS = { has_civil_war = no }
+					IN0 = { has_civil_war = no }
 				}
-				INS = { country_event = { id = tfv_australia.96 } }
+				IN0 = { country_event = { id = tfv_australia.96 } }
 			}
 			add_ideas = AST_support_indonesian_uprising
 		}
@@ -4133,7 +4190,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_support_the_centre_party
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1.5
@@ -4141,8 +4198,8 @@ focus_tree = {
 
 		available = {
 			has_government = fascism
-			NOT = { has_war_together_with = ENG }
-			NOT = { is_in_faction_with = NZL }
+			NOT = { has_war_together_with = EN0 }
+			NOT = { is_in_faction_with = NZ0 }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -4160,16 +4217,16 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { is_in_faction_with = ENG }
-				ENG = { remove_from_faction = ROOT }
+				limit = { is_in_faction_with = EN0 }
+				EN0 = { remove_from_faction = ROOT }
 			}
 			OVERLORD = {
 				set_autonomy = {
-					target = AST
+					target = ROOT
 					autonomy_state = autonomy_free
 				}
 			}
-			NZL = {
+			NZ0 = {
 				country_event = { id = tfv_australia.20 }
 			}
 		}
@@ -4183,23 +4240,19 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_support_the_centre_party
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			if = {
-				limit = { not = { has_government = fascism } }
+			OR = {
 				has_autonomy_state = autonomy_dominion
-			}
-			if = {
-				limit = { has_government = fascism } 
 				has_autonomy_state = autonomy_satellite
 			}
-			MAL = {
-				is_puppet_of = ENG
+			MA0 = {
+				is_puppet_of = EN0
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
@@ -4217,7 +4270,7 @@ focus_tree = {
 		}
 
 		completion_reward = {			
-			ENG = {
+			EN0 = {
 				country_event = { id = tfv_australia.70 }
 			}
 		}
@@ -4232,12 +4285,12 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_support_the_centre_party
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 8
 			modifier = {
-				JAP = { has_capitulated = yes }
+				JA0 = { has_capitulated = yes }
 				factor = 0
 				}
 		}
@@ -4246,19 +4299,15 @@ focus_tree = {
 			OR = {
 				is_subject = no
 				AND = {
-					if = {
-						limit = { not = { has_government = fascism } }
+					OR = {
 						has_autonomy_state = autonomy_dominion
-					}
-					if = {
-						limit = { has_government = fascism } 
 						has_autonomy_state = autonomy_satellite
 					}
 					compare_autonomy_progress_ratio > 0.8
 				}
 			}
-			NOT = { has_war_together_with = ENG }
-			JAP = {
+			NOT = { has_war_together_with = EN0 }
+			JA0 = {
 				has_government = ROOT
 				OR = {
 					is_faction_leader = yes
@@ -4283,17 +4332,17 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = AST_deal_with_japan_tt
 			if = {
-				limit = { is_in_faction_with = ENG }
-				ENG = { remove_from_faction = ROOT }
+				limit = { is_in_faction_with = EN0 }
+				EN0 = { remove_from_faction = ROOT }
 			}
 			OVERLORD = {
 				set_autonomy = {
-					target = AST
+					target = ROOT
 					autonomy_state = autonomy_free
 				}
 			}
 			set_rule = { can_create_factions = yes }
-			JAP = {
+			JA0 = {
 				country_event = { id = tfv_australia.80 }
 			}
 		}
@@ -4308,16 +4357,16 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_support_the_centre_party
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				ENG = { has_capitulated = yes }
+				EN0 = { has_capitulated = yes }
 				factor = 10
 			}
 			modifier = { #power vacuum in SouthPac
-				JAP = { has_capitulated = yes }
+				JA0 = { has_capitulated = yes }
 				factor = 10
 			}
 		}
@@ -4326,18 +4375,14 @@ focus_tree = {
 			OR = {
 				is_subject = no
 				AND = {
-					if = {
-						limit = { not = { has_government = fascism } }
+					OR = {
 						has_autonomy_state = autonomy_dominion
-					}
-					if = {
-						limit = { has_government = fascism } 
 						has_autonomy_state = autonomy_satellite
 					}
 					compare_autonomy_progress_ratio > 0.8
 				}
 			}
-			NOT = { has_war_together_with = ENG }
+			NOT = { has_war_together_with = EN0 }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -4354,10 +4399,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			ENG = { remove_from_faction = ROOT }
+			EN0 = { remove_from_faction = ROOT }
 			OVERLORD = {
 				set_autonomy = {
-					target = AST
+					target = ROOT
 					autonomy_state = autonomy_free
 				}
 			}
@@ -4373,14 +4418,14 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_support_the_centre_party
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 3
 		}
 
 		available = {
-			is_in_faction_with = JAP
+			is_in_faction_with = JA0
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -4398,7 +4443,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_tech_sharing_group = japanese_research
-			JAP = { add_to_tech_sharing_group = japanese_research }
+			JA0 = { add_to_tech_sharing_group = japanese_research }
 		}
 	}
 
@@ -4410,14 +4455,14 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_support_the_centre_party
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			NOT = { is_in_faction_with = JAP }
+			NOT = { is_in_faction_with = JA0 }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -4432,7 +4477,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = JAP
+				target = JA0
 			}
 		}
 	}
@@ -4451,7 +4496,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_abandon_the_westminster_system
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 0.5
@@ -4500,7 +4545,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -4558,14 +4603,14 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			NOT = { has_war_together_with = ENG }
+			NOT = { has_war_together_with = EN0 }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -4578,18 +4623,18 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			ENG = { remove_from_faction = ROOT }
+			EN0 = { remove_from_faction = ROOT }
 			OVERLORD = {
 				set_autonomy = {
-					target = AST
+					target = ROOT
 					autonomy_state = autonomy_free
 				}
 			}
 			if = {
 				limit = {
-					NOT = { has_war_with = SOV }
+					NOT = { has_war_with = SO0 }
 				}
-				SOV = {
+				SO0 = {
 					add_opinion_modifier = {
 						target = ROOT
 						modifier = AST_commitment_to_the_cause
@@ -4598,7 +4643,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = { has_war_with = PRC }
+					NOT = { has_war_with = PR0 }
 				}
 				add_opinion_modifier = {
 					target = event_target:WTT_communist_china
@@ -4643,7 +4688,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 8
@@ -4657,7 +4702,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			PRC = {
+			PR0 = {
 				OR = {
 					exists = no
 					is_puppet = yes
@@ -4690,7 +4735,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -4723,12 +4768,12 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 8
 			modifier = { #let's not tie ourselves to SOV if they are in a bad spot
-				SOV = { surrender_progress > 0.75 }
+				SO0 = { surrender_progress > 0.75 }
 				factor = 0
 			}
 		}
@@ -4756,12 +4801,12 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 			if = {
 				limit = {
-					SOV = {
+					SO0 = {
 						is_faction_leader = yes
 						has_government = communism
 					}	
 				}
-				SOV = {
+				SO0 = {
 					country_event = { id = tfv_australia.50 }
 				}
 			}
@@ -4783,7 +4828,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -4818,14 +4863,14 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			is_in_faction_with = SOV
+			is_in_faction_with = SO0
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -4842,7 +4887,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SOV = { add_to_tech_sharing_group = comintern_research }
+			SO0 = { add_to_tech_sharing_group = comintern_research }
 			add_to_tech_sharing_group = comintern_research
 		}
 	}
@@ -4855,12 +4900,12 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				NZL = { has_government = democratic } 
+				NZ0 = { has_government = democratic } 
 				factor = 10
 			}
 		}
@@ -4882,7 +4927,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			NZL = {
+			NZ0 = {
 				country_event = { id = tfv_australia.60 }
 			}
 		}
@@ -4896,18 +4941,18 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_empower_the_workers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				JAP = { has_government = communism }
+				JA0 = { has_government = communism }
 				factor = 0
 			}
 		}
 
 		available = {
-			NOT = { is_in_faction_with = JAP }
+			NOT = { is_in_faction_with = JA0 }
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -4925,7 +4970,7 @@ focus_tree = {
 
 		completion_reward = {
 			create_wargoal = {
-				target = JAP
+				target = JA0
 				type = puppet_wargoal_focus
 			}
 		}

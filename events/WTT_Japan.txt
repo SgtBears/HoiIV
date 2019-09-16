@@ -27,23 +27,23 @@ country_event = {
 			base = 10
 		}
 		if = {
-			limit = { ROOT = { tag = HOL }
+			limit = { ROOT = { tag = HO0 }
 			}
-			FROM = { puppet = INS }
+			FROM = { puppet = IN0 }
 		}
 
 		if = {
-			limit = { ROOT = { tag = ENG }
+			limit = { ROOT = { tag = EN0 }
 			}
-			FROM = { puppet = MAL }
+			FROM = { puppet = MA0 }
 		}
 
 		if = {
-			limit = { ROOT = { tag = FRA } }
+			limit = { ROOT = { tag = FR0 } }
 			if = {
 				limit = {
 					670 = {
-						is_fully_controlled_by = FRA
+						is_fully_controlled_by = FR0
 					}
 				}
 				FROM = { transfer_state = 670 }
@@ -51,7 +51,7 @@ country_event = {
 			if = {
 				limit = {
 					671 = {
-						is_fully_controlled_by = FRA
+						is_fully_controlled_by = FR0
 					}
 				}
 				FROM = { transfer_state = 671 }
@@ -59,7 +59,7 @@ country_event = {
 			if = {
 				limit = {
 					286 = {
-						is_fully_controlled_by = FRA
+						is_fully_controlled_by = FR0
 					}
 				}
 				FROM = { transfer_state = 286 }
@@ -67,7 +67,7 @@ country_event = {
 			if = {
 				limit = {
 					741 = {
-						is_fully_controlled_by = FRA
+						is_fully_controlled_by = FR0
 					}
 				}
 				FROM = { transfer_state = 741 }
@@ -104,19 +104,19 @@ country_event = {
 		}
 		effect_tooltip = {
 			if = {
-				limit = { FROM = { tag = HOL }
+				limit = { FROM = { tag = HO0 }
 				}
-				puppet = INS
+				puppet = IN0
 			}
 
 			if = {
-				limit = { FROM = { tag = ENG }
+				limit = { FROM = { tag = EN0 }
 				}
-				puppet = MAL
+				puppet = MA0
 			}
 
 			if = {
-				limit = { FROM = { tag = FRA } }
+				limit = { FROM = { tag = FR0 } }
 				if = {
 					limit = { 670 = { is_fully_controlled_by = ROOT } }
 					transfer_state = 670
@@ -310,12 +310,12 @@ country_event = {
 	option = {
 		name = wtt_japan.31.a
 		trigger = {
-			country_exists = MAN
+			country_exists = MA5
 		}
 		ai_chance = {
 			base = 5
 		}
-		MAN = {
+		MA5 = {
 			country_event = { id = wtt_japan.32 }
 			effect_tooltip = {
 				add_ideas = MAN_exiled_imperial_family
@@ -459,7 +459,7 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		JAP = {
+		JA0 = {
 			remove_from_faction = FROM
 		}
 	}
@@ -480,12 +480,14 @@ country_event = {
 			base = 10
 		}
 		effect_tooltip = {
-			JAP = { 
-				send_equipment = {
-					target = MAN
-					equipment = infantry_equipment
-					amount = 2000
-					old_prioritised = yes
+			MA5 = {
+				JA0 = { 
+					send_equipment = {
+						target = PREV
+						equipment = infantry_equipment
+						amount = 2000
+						old_prioritised = yes
+					}
 				}
 			}
 		}
@@ -507,7 +509,7 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		JAP = {
+		JA0 = {
 			add_to_faction = ROOT
 			country_event = { id = wtt_japan.102 days = 1 }
 		}
@@ -519,7 +521,7 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		JAP = {
+		JA0 = {
 			country_event = { id = wtt_japan.103 days = 1 }
 		}
 	}
@@ -569,9 +571,13 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		set_autonomy = { target = PHI autonomy_state = autonomy_free }
-		JAP = { country_event = { id = wtt_japan.105 days = 1 } }
-		"PHI" = { country_event = { id = wtt_japan.107 days = 1 } }
+		PH0 = {
+			ROOT = {
+				set_autonomy = { target = PREV autonomy_state = autonomy_free }
+			}
+		}
+		JA0 = { country_event = { id = wtt_japan.105 days = 1 } }
+		PH0 = { country_event = { id = wtt_japan.107 days = 1 } }
 	}
 
 	# Never!
@@ -580,7 +586,7 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		JAP = { country_event = { id = wtt_japan.106 days = 1 } }
+		JA0 = { country_event = { id = wtt_japan.106 days = 1 } }
 	}
 }
 
@@ -599,7 +605,7 @@ country_event = {
 			base = 1
 		}
 		effect_tooltip = {
-			FROM = { set_autonomy = { target = PHI autonomy_state = autonomy_free } }
+			PH0 = { FROM = { set_autonomy = { target = PREV autonomy_state = autonomy_free } } }
 		}
 	}
 }
@@ -640,7 +646,7 @@ country_event = {
 			base = 1
 		}
 		effect_tooltip = {
-			FROM = { set_autonomy = { target = PHI autonomy_state = autonomy_free } }
+			PH0 = { FROM = { set_autonomy = { target = PREV autonomy_state = autonomy_free } } }
 		}
 		hidden_effect = {
 			news_event = { id = wtt_news.26 hours = 6 }
@@ -883,24 +889,26 @@ country_event = {
 		name = wtt_japan.114.a
 		if = {
 			limit = {
-				MAN = { is_subject_of = ROOT }
+				MA5 = { is_subject_of = ROOT }
 			}
-			set_autonomy = { target = MAN autonomy_state = autonomy_free }
+			MA5 = {
+				ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_free } }
+			}
 			if = {
 				limit = {
-					MEN = { is_subject_of = ROOT }
+					ME5 = { is_subject_of = ROOT }
 				}
-				MAN = { puppet = MEN }
+				MA5 = { puppet = ME5 }
 			}
-			MAN = {
+			MA5 = {
 				set_cosmetic_tag = MAN_kwantung_army
 			}
 		}
 		if = {
 			limit = {
-				MAN = { has_idea = MAN_kwantung_veto }
+				MA5 = { has_idea = MAN_kwantung_veto }
 			}
-			MAN = { remove_ideas = MAN_kwantung_veto }
+			MA5 = { remove_ideas = MAN_kwantung_veto }
 		}
 		add_popularity = { ideology = democratic popularity = 0.1 }
 		start_civil_war = {
@@ -908,15 +916,24 @@ country_event = {
 			ideology = fascism
 			size = 0.5
 		}
+		random_other_country = {
+			limit = {
+				original_tag = JAP
+				has_government = fascism
+			}
+			set_variable = { global.jap_government_tag = THIS.id }
+		}
 		if = {
 			limit = {
 				any_state = {
 					is_controlled_by = ROOT
-					is_core_of = KOR
+					is_core_of = KO0
 				}
 			}
-			release = KOR
-			set_autonomy = { target = KOR autonomy_state = autonomy_free }
+			release = KO0
+			KO0 = {
+				set_autonomy = { target = PREV autonomy_state = autonomy_free }
+			}
 		}
 	}
 }
@@ -939,16 +956,26 @@ country_event = {
 	# Join the war
 	option = {
 		name = wtt_japan.115.a
-		add_to_war = { targeted_alliance = JAP enemy = SOV hostility_reason = ally }
-		JAP = { country_event = { id = wtt_japan.116 hours = 6 } }
+		JA0 = {
+			SO0 = {
+				ROOT = {
+					add_to_war = { targeted_alliance = PREV.PREV enemy = PREV hostility_reason = ally }
+				}
+			}
+		}
+		JA0 = { country_event = { id = wtt_japan.116 hours = 6 } }
 	}
 
 	# Keep the NAP
 	option = {
 		name = wtt_japan.115.b
-		add_opinion_modifier = { target = JAP modifier = unilateral_war }
-		reverse_add_opinion_modifier = { target = JAP modifier = betrayed_alliance }
-		JAP = { country_event = { id = wtt_japan.117 hours = 6 } }
+		JA0 = {
+			ROOT = {
+				add_opinion_modifier = { target = PREV modifier = unilateral_war }
+				reverse_add_opinion_modifier = { target = PREV modifier = betrayed_alliance }
+			}
+		}
+		JA0 = { country_event = { id = wtt_japan.117 hours = 6 } }
 	}
 }
 
@@ -1143,10 +1170,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				SOV = { has_country_flag = sent_volunteers_to_JAP }
+				SO0 = { has_country_flag = sent_volunteers_to_JAP }
 			}
 			effect_tooltip = {
-				SOV = { add_manpower = 105000 }
+				SO0 = { add_manpower = 105000 }
 			}
 			country_event = { id = wtt_japan.124 }
 		}
@@ -1166,10 +1193,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				SOV = { has_country_flag = sent_volunteers_to_JAP }
+				SO0 = { has_country_flag = sent_volunteers_to_JAP }
 			}
 			effect_tooltip = {
-				SOV = { add_manpower = 105000 }
+				SO0 = { add_manpower = 105000 }
 			}
 			country_event = { id = wtt_japan.124 }
 		}
@@ -1230,7 +1257,7 @@ country_event = {
 	
 	option = {
 		name = excellent
-		SOV = { add_manpower = 90143 }
+		SO0 = { add_manpower = 90143 }
 	}
 }
 
@@ -1285,18 +1312,18 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						MAN = {
+						MA5 = {
 							controls_state = 525
 							controls_state = 527
 						}
 					}
 				}
-				FROM = { release = KOR }
+				FROM = { release = KO0 }
 			}
 			if = {
 				limit = {
 					524 = {
-						is_controlled_by = JAP
+						is_controlled_by = JA0
 					}
 				}
 				event_target:WTT_current_china_leader = {
@@ -1319,14 +1346,14 @@ country_event = {
 						limit = {
 							is_controlled_by = PREV
 							OR = {
-								is_owned_by = JAP
+								is_owned_by = JA0
 								AND = {
-									is_owned_by = MEN
-									MEN = { is_subject_of = JAP }
+									is_owned_by = ME5
+									ME5 = { is_subject_of = JA0 }
 								}
 								AND = {
-									is_owned_by = MAN
-									MAN = { is_subject_of = JAP }
+									is_owned_by = MA5
+									MA5 = { is_subject_of = JA0 }
 								}
 							}
 							NOT = {
@@ -1355,14 +1382,14 @@ country_event = {
 						limit = {
 							is_controlled_by = PREV
 							OR = {
-								is_owned_by = JAP
+								is_owned_by = JA0
 								AND = {
-									is_owned_by = MEN
-									MEN = { is_subject_of = JAP }
+									is_owned_by = ME5
+									ME5 = { is_subject_of = JA0 }
 								}
 								AND = {
-									is_owned_by = MAN
-									MAN = { is_subject_of = JAP }
+									is_owned_by = MA5
+									MA5 = { is_subject_of = JA0 }
 								}
 							}
 						}
@@ -1399,8 +1426,8 @@ country_event = {
 			factor = 10
 			modifier = {
 				add = 50
-				USA = {
-					has_war_with = JAP
+				US0 = {
+					has_war_with = JA0
 					NOT = {
 						has_war_with = ROOT
 					}
@@ -1408,8 +1435,8 @@ country_event = {
 			}
 			modifier = {
 				add = 40
-				ENG = {
-					has_war_with = JAP
+				EN0 = {
+					has_war_with = JA0
 					NOT = {
 						has_war_with = ROOT
 					}
@@ -1417,8 +1444,8 @@ country_event = {
 			}
 			modifier = {
 				add = 30
-				SOV = {
-					has_war_with = JAP
+				SO0 = {
+					has_war_with = JA0
 					NOT = {
 						has_war_with = ROOT
 					}
@@ -1426,8 +1453,8 @@ country_event = {
 			}
 			modifier = {
 				add = 20
-				FRA = {
-					has_war_with = JAP
+				FR0 = {
+					has_war_with = JA0
 					NOT = {
 						has_war_with = ROOT
 					}
@@ -1435,8 +1462,8 @@ country_event = {
 			}
 			modifier = {
 				add = 10
-				GER = {
-					has_war_with = JAP
+				GE0 = {
+					has_war_with = JA0
 					NOT = {
 						has_war_with = ROOT
 					}
@@ -1444,8 +1471,8 @@ country_event = {
 			}
 			modifier = {
 				add = 10
-				HOL = {
-					has_war_with = JAP
+				HO0 = {
+					has_war_with = JA0
 					NOT = {
 						has_war_with = ROOT
 					}
@@ -1453,8 +1480,8 @@ country_event = {
 			}
 			modifier = {
 				add = 10
-				ITA = {
-					has_war_with = JAP
+				IT0 = {
+					has_war_with = JA0
 					NOT = {
 						has_war_with = ROOT
 					}
@@ -1479,18 +1506,18 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
-					MAN = {
+					MA5 = {
 						controls_state = 525
 						controls_state = 527
 					}
 				}
 			}
-			release = KOR
+			release = KO0
 		}
 		if = {
 			limit = {
 				524 = {
-					is_controlled_by = JAP
+					is_controlled_by = JA0
 				}
 			}
 			event_target:WTT_current_china_leader = {
@@ -1513,14 +1540,14 @@ country_event = {
 					limit = {
 						is_controlled_by = PREV
 						OR = {
-							is_owned_by = JAP
+							is_owned_by = JA0
 							AND = {
-								is_owned_by = MEN
-								MEN = { is_subject_of = JAP }
+								is_owned_by = ME5
+								ME5 = { is_subject_of = JA0 }
 							}
 							AND = {
-								is_owned_by = MAN
-								MAN = { is_subject_of = JAP }
+								is_owned_by = MA5
+								MA5 = { is_subject_of = JA0 }
 							}
 						}
 					}
@@ -1545,14 +1572,14 @@ country_event = {
 					limit = {
 						is_controlled_by = PREV
 						OR = {
-							is_owned_by = JAP
+							is_owned_by = JA0
 							AND = {
-								is_owned_by = MEN
-								MEN = { is_subject_of = JAP }
+								is_owned_by = ME5
+								ME5 = { is_subject_of = JA0 }
 							}
 							AND = {
-								is_owned_by = MAN
-								MAN = { is_subject_of = JAP }
+								is_owned_by = MA5
+								MA5 = { is_subject_of = JA0 }
 							}
 						}
 					}
@@ -1611,25 +1638,25 @@ country_event = {
 						}
 					}
 				}
-				FROM = { release = KOR }
+				FROM = { release = KO0 }
 			}
 			if = {
 				limit = {
 					524 = {
-						is_controlled_by = JAP
+						is_controlled_by = JA0
 					}
 				}
 				transfer_state = 524
 			}
-			MAN = {
+			MA5 = {
 				every_state = {
 					limit = {
 						is_controlled_by = PREV
 						OR = {
-							is_owned_by = JAP
+							is_owned_by = JA0
 							AND = {
-								is_owned_by = MEN
-								MEN = { is_subject_of = JAP }
+								is_owned_by = ME5
+								ME5 = { is_subject_of = JA0 }
 							}
 						}
 						NOT = {
@@ -1639,13 +1666,15 @@ country_event = {
 					}
 					every_country = {
 						limit = {
-							original_tag = MAN
+							tag = MA5
 							controls_state = PREV
 						}
 						transfer_state = PREV
 					}
 				}
-				white_peace = JAP
+				JA0 = {
+					PREV = { white_peace = PREV }
+				}
 			}
 		}
 		FROM = {
@@ -1687,29 +1716,29 @@ country_event = {
 					}
 				}
 			}
-			release = KOR
+			release = KO0
 		}
 		if = {
 			limit = {
 				524 = {
-					is_controlled_by = JAP
+					is_controlled_by = JA0
 				}
 			}
-			MAN = { transfer_state = 524 }
+			MA5 = { transfer_state = 524 }
 		}
-		MAN = {
+		MA5 = {
 			every_state = {
 				limit = {
 					is_controlled_by = PREV
 					OR = {
-						is_owned_by = JAP
+						is_owned_by = JA0
 						AND = {
-							is_owned_by = MEN
-							MEN = { is_subject_of = JAP }
+							is_owned_by = ME5
+							ME5 = { is_subject_of = JA0 }
 						}
 					}
 				}
-				MAN = {
+				MA5 = {
 					transfer_state = PREV
 				}
 			}

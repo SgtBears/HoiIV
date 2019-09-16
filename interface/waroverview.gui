@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 			name = "waroverview_window"
 			size = { width = 1167 height = 85%%}
-			position = { x=-583 y=-297 }
+			position = { x=-583 y=-400 }		#mod
 			Orientation = center
 			moveable = yes
 			clipping = no

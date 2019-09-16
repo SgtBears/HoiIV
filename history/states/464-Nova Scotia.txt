@@ -2,7 +2,7 @@
 state={
 	id=464
 	name="STATE_464"
-	manpower = 490912
+	manpower = 577962
 	
 	state_category = rural
 
@@ -21,10 +21,11 @@ state={
 			}
 		}
 		add_core_of = CAN
+		add_core_of = NSC
 	}
 
 	provinces={
-		1354 4360 4430 4623 7304 7361 7644 10244 
+		1354 4430 4623 7304 7361 7644 10244 13838 13847
 	}
 	
 }

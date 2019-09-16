@@ -289,6 +289,30 @@ opinion_modifiers = {
 	ita_diplomacy_focus = {
 		value = 20
 	}
+	ita_yug_diplomacy_focus = {
+		value = 20
+	}
+	ita_bul_diplomacy_focus = {
+		value = 20
+	}
+	ita_rom_diplomacy_focus = {
+		value = 20
+	}
+	ita_spr_diplomacy_focus = {
+		value = 20
+	}
+	ita_por_diplomacy_focus = {
+		value = 20
+	}
+	ita_gre_diplomacy_focus = {
+		value = 20
+	}
+	ita_tur_diplomacy_focus = {
+		value = 20
+	}
+	ita_jap_diplomacy_focus = {
+		value = 20
+	}
 
 	ITA_FRA_woo_italy_reject = {
 		value = -20
@@ -572,9 +596,30 @@ opinion_modifiers = {
 	medium_increase = {
 		value = 15
 	}
+	YUG_recognised_soviet_union = {
+		value = 15
+	}
+	POL_anti_german_pro_ussr = {
+		value = 15
+	}
 
 	large_increase = {
 		value = 25
+	}
+	YUG_ITA_friendship_focus = {
+		value = 25
+	}
+	YUG_ENG_friendship_focus = {
+		value = 25
+	}
+	YUG_FRA_friendship_focus = {
+		value = 25
+	}
+	CHI_JAP_support_china = {
+		value = 25
+	}
+	YUG_ITA_ban_slovene_nationalism = {
+		value = 50
 	}
 	
 	huge_increase = {

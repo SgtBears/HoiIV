@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		SUP_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		SUP_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		SUP_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		SUP_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = SUP
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SUP_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		SUP_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SUP_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		SUP_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = SUP
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SUP_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = SUP
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		SUP_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SUP_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SUP_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SUP_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SUP_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		SUP_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = SUP
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		SUP_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		SUP_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = SUP
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

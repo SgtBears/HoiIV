@@ -8,7 +8,7 @@ CHI_anti_imperialism = {
 		icon = generic_nationalism
 
 		available = {
-			country_exists = KOR
+			country_exists = KO0
 		}
 
 		days_mission_timeout = 180
@@ -17,7 +17,7 @@ CHI_anti_imperialism = {
 		activation = {			
 			owns_state = 525
 			owns_state = 527
-			KOR = {
+			KO0 = {
 				exists = no
 			}
 			has_completed_focus = CHI_commit_to_korean_independence
@@ -26,7 +26,7 @@ CHI_anti_imperialism = {
 		visible = {
 			owns_state = 525
 			owns_state = 527
-			KOR = {
+			KO0 = {
 				exists = no
 			}
 			has_completed_focus = CHI_commit_to_korean_independence
@@ -257,7 +257,7 @@ war_measures = {
 				infrastructure > 0
 				any_neighbor_state = {
 					NOT = { is_fully_controlled_by = ROOT }
-					controller = { has_war_with = CHI }
+					controller = { has_war_with = CH0 }
 				}
 			}
 		}
@@ -281,7 +281,7 @@ war_measures = {
 					infrastructure > 0
 					any_neighbor_state = {
 						NOT = { is_fully_controlled_by = ROOT }
-						controller = { has_war_with = CHI }
+						controller = { has_war_with = CH0 }
 					}
 				}
 				damage_building = {
@@ -4833,11 +4833,11 @@ CHI_integrate_the_warlords = {
 			FROM = {
 				is_subject_of = ROOT
 				OR = {
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = SIK
+					original_tag = GXC
+					original_tag = YUN
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = SIK
 				}
 			}
 		}
@@ -4862,7 +4862,7 @@ CHI_integrate_the_warlords = {
 
 			CHI_warlord_integration_up = yes
 			if = {
-				limit = { FROM = { tag = GXC } }
+				limit = { FROM = { original_tag = GXC } }
 				if = {
 					limit = {
 						FROM = {
@@ -4888,7 +4888,7 @@ CHI_integrate_the_warlords = {
 				}
 			}
 			else_if = {
-				limit = { FROM = { tag = YUN } }
+				limit = { FROM = { original_tag = YUN } }
 				if = {
 					limit = {
 						FROM = {
@@ -4914,7 +4914,7 @@ CHI_integrate_the_warlords = {
 				}
 			}
 			else_if = {
-				limit = { FROM = { tag = SHX } }
+				limit = { FROM = { original_tag = SHX } }
 				if = {
 					limit = {
 						FROM = {
@@ -4940,7 +4940,7 @@ CHI_integrate_the_warlords = {
 				}
 			}
 			else_if = {
-				limit = { FROM = { tag = XSM } }
+				limit = { FROM = { original_tag = XSM } }
 				if = {
 					limit = {
 						FROM = {
@@ -4966,7 +4966,7 @@ CHI_integrate_the_warlords = {
 				}
 			}
 			else_if = {
-				limit = { FROM = { tag = SIK } }
+				limit = { FROM = { original_tag = SIK } }
 				if = {
 					limit = {
 						FROM = {
@@ -5020,11 +5020,11 @@ CHI_integrate_the_warlords = {
 				has_country_flag = CHI_integrate_the_army
 				is_subject_of = ROOT
 				OR = {
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = SIK
+					original_tag = GXC
+					original_tag = YUN
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = SIK
 				}
 			}
 		}
@@ -5079,11 +5079,11 @@ CHI_integrate_the_warlords = {
 				has_country_flag = CHI_integrate_the_administration
 				is_subject_of = ROOT
 				OR = {
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = SIK
+					original_tag = GXC
+					original_tag = YUN
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = SIK
 				}
 			}
 		}
@@ -5095,8 +5095,8 @@ CHI_integrate_the_warlords = {
 				limit = {
 					FROM = {
 						OR = {
-							tag = YUN
-							tag = GXC
+							original_tag = YUN
+							original_tag = GXC
 						}
 					}
 				}
@@ -5815,7 +5815,10 @@ foreign_support = {
 	CHI_flying_tigers = {
 		icon = generic_air
 		available = {
-			has_equipment = { fighter_equipment > 149 }
+			OR = { 
+				has_equipment = { fighter_equipment > 149 }
+				has_equipment = { jet_fighter_equipment > 149 }
+			}
 		}
 		visible = {
 			has_country_flag = CHI_flying_tigers
@@ -5833,11 +5836,23 @@ foreign_support = {
 				}
 				custom_effect_tooltip = flying_tigers_tt
 				hidden_effect = {
-					USA = {
-						send_equipment = {
-							target = PREV
-							type = fighter_equipment
-							amount = 150
+					US0 = {
+						if = {
+							limit = {
+								has_equipment = { jet_fighter_equipment > 149 }
+							}
+							send_equipment = {
+								target = PREV
+								type = jet_fighter_equipment
+								amount = 150
+							}
+						}
+						else = {
+							send_equipment = {
+								target = PREV
+								type = fighter_equipment
+								amount = 150
+							}
 						}
 					}
 				}
@@ -5852,8 +5867,24 @@ foreign_support = {
 	CHI_soviet_volunteer_group = {
 		icon = generic_air
 		available = {
-			has_equipment = { fighter_equipment > 99 }
-			has_equipment = { tac_bomber_equipment > 49 }
+			OR = {
+				AND = {
+					has_equipment = { fighter_equipment > 99 }
+					has_equipment = { tac_bomber_equipment > 49 }
+				}
+				AND = {
+					has_equipment = { jet_fighter_equipment > 99 }
+					has_equipment = { tac_bomber_equipment > 49 }
+				}
+				AND = {
+					has_equipment = { fighter_equipment > 99 }
+					has_equipment = { jet_tac_bomber_equipment > 49 }
+				}
+				AND = {
+					has_equipment = { jet_fighter_equipment > 99 }
+					has_equipment = { jet_tac_bomber_equipment > 49 }
+				}
+			}
 		}
 		visible = {
 			has_country_flag = CHI_soviet_volunteer_group
@@ -5871,18 +5902,84 @@ foreign_support = {
 				}
 				custom_effect_tooltip = soviet_volunteers_tt
 				hidden_effect = {
-					SOV = {
-						send_equipment = {
-							target = PREV
-							type = fighter_equipment
-							amount = 100
+					if = {
+						limit = {
+							has_equipment = { jet_fighter_equipment > 99 }
+							has_equipment = { jet_tac_bomber_equipment > 49 }
+						}
+						SO0 = {
+							send_equipment = {
+								target = PREV
+								type = jet_fighter_equipment
+								amount = 100
+							}
+						}
+						SO0 = {
+							send_equipment = {
+								target = PREV
+								type = jet_tac_bomber_equipment
+								amount = 50
+							}
 						}
 					}
-					SOV = {
-						send_equipment = {
-							target = PREV
-							type = tac_bomber_equipment
-							amount = 50
+					else_if = {
+						limit = {
+							has_equipment = { fighter_equipment > 99 }
+							has_equipment = { jet_tac_bomber_equipment > 49 }
+						}
+						SO0 = {
+							send_equipment = {
+								target = PREV
+								type = fighter_equipment
+								amount = 100
+							}
+						}
+						SO0 = {
+							send_equipment = {
+								target = PREV
+								type = jet_tac_bomber_equipment
+								amount = 50
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							has_equipment = { jet_fighter_equipment > 99 }
+							has_equipment = { tac_bomber_equipment > 49 }
+						}
+						SO0 = {
+							send_equipment = {
+								target = PREV
+								type = jet_fighter_equipment
+								amount = 100
+							}
+						}
+						SO0 = {
+							send_equipment = {
+								target = PREV
+								type = tac_bomber_equipment
+								amount = 50
+							}
+						}
+					}
+					else = {
+						limit = {
+							has_equipment = { fighter_equipment > 99 }
+							has_equipment = { tac_bomber_equipment > 49 }
+						}
+						SO0 = {
+							send_equipment = {
+								target = PREV
+								type = fighter_equipment
+								amount = 100
+							}
+						}
+						SO0 = {
+							send_equipment = {
+								target = PREV
+								type = tac_bomber_equipment
+								amount = 50
+							}
 						}
 					}
 				}
@@ -6166,7 +6263,7 @@ foreign_support = {
 				434 = {
 					CONTROLLER = {
 						NOT = {
-							has_war_with = CHI
+							has_war_with = CH0
 						}
 						is_in_faction_with = ROOT
 					}
@@ -6310,21 +6407,21 @@ political_actions = {
 	CHI_join_united_front = {
 		available = {
 			is_literally_china = yes
-			CHI = {
-				is_in_faction_with = PRC
+			CH0 = {
+				is_in_faction_with = PR0
 			}
 			OR = {
-				PRC = {
+				PR0 = {
 					is_faction_leader = yes
 				}
-				CHI = {
+				CH0 = {
 					is_faction_leader = yes
 				}
 			}
 			NOT = {
 				OR = {
-					has_war_with = CHI
-					has_war_with = PRC
+					has_war_with = CH0
+					has_war_with = PR0
 				}
 			}
 			is_in_faction = no
@@ -6340,8 +6437,8 @@ political_actions = {
 		}
 		visible = {
 			is_literally_china = yes
-			CHI = {
-				is_in_faction_with = PRC
+			CH0 = {
+				is_in_faction_with = PR0
 			}
 			is_in_faction = no
 		}
@@ -6349,47 +6446,47 @@ political_actions = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				JAP = {
+				JA0 = {
 					OR = {
-						has_war_with = CHI
-						has_war_with = PRC
+						has_war_with = CH0
+						has_war_with = PR0
 					}
 				}
 				factor = 10
 			}
 			modifier = {
-				has_war_with = JAP
+				has_war_with = JA0
 				factor = 500
 			}
 		}
 		complete_effect = {
-			If = {
+			if = {
 				limit = {
-					CHI = {
+					CH0 = {
 						is_faction_leader = yes
 					}
 				}
-				CHI = {
+				CH0 = {
 					country_event = generic.2
 				}
 				add_ai_strategy = {
 					type = alliance
-					id = "CHI"
+					id = CH0
 					value = 200
 				}
 			}
 			else_if = {
 				limit = {
-					PRC = {
+					PR0 = {
 						is_faction_leader = yes
 					}
 				}
-				PRC = {
+				PR0 = {
 					country_event = generic.2
 				}
 				add_ai_strategy = {
 					type = alliance
-					id = "PRC"
+					id = PR0
 					value = 200
 				}
 			}
@@ -6447,12 +6544,12 @@ CHI_xian_incident = {
 			NOT = {
 				has_global_flag = CHI_xian_fired
 			}
-			CHI = {
+			CH0 = {
 				NOT = {
-					is_in_faction_with = PRC
+					is_in_faction_with = PR0
 				}
 				NOT = {
-					has_war_with = PRC
+					has_war_with = PR0
 				}
 				NOT = {
 					OR = {
@@ -6461,17 +6558,17 @@ CHI_xian_incident = {
 					}
 				}
 			}
-			PRC = {
+			PR0 = {
 				NOT = {
-					has_war_with = CHI
+					has_war_with = CH0
 				}
 				is_in_faction = no
 			}
 			NOT = {
-				has_war_with = CHI
+				has_war_with = CH0
 			}
 			NOT = {
-				has_war_with = PRC
+				has_war_with = PR0
 			}
 		}
 
@@ -6479,14 +6576,14 @@ CHI_xian_incident = {
 			NOT = {
 				has_global_flag = CHI_xian_fired
 			}
-			CHI = {
+			CH0 = {
 				NOT = {
-					is_in_faction_with = PRC
+					is_in_faction_with = PR0
 				}
 			}
-			PRC = {
+			PR0 = {
 				NOT = {
-					has_war_with = PRC
+					has_war_with = PR0
 				}
 			}
 			is_literally_china = yes
@@ -6496,7 +6593,7 @@ CHI_xian_incident = {
 					original_tag = PRC
 				}
 			}
-			event_target:WTT_current_china_leader = { tag = CHI }
+			event_target:WTT_current_china_leader = { original_tag = CHI }
 		}
 		cost = 25
 		fire_only_once = yes
@@ -6508,14 +6605,14 @@ CHI_xian_incident = {
 			}
 			modifier = {
 				NOT = { 	
-					JAP = {
+					JA0 = {
 						has_completed_focus = JAP_greater_east_asian_co_prosperity_sphere
 					}
 				}
 				factor = 0
 			}
 			modifier = {
-				JAP = {
+				JA0 = {
 					NOT = {
 						has_government = fascism
 					}
@@ -6526,7 +6623,7 @@ CHI_xian_incident = {
 		complete_effect = {
 			set_country_flag = CHI_xian_instigator_flag
 			set_global_flag = CHI_xian_fired
-			CHI = {
+			CH0 = {
 				country_event = wtt_xian_incident.1
 			}
 		}

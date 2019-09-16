@@ -127,7 +127,7 @@ ENG_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = convoy
-		value = 100
+		value = 20
 	}
 	
 	ai_strategy = {

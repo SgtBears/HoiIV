@@ -544,6 +544,10 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
+				jet_fighter_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
 				cv_fighter_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
@@ -568,11 +572,19 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
+				jet_tac_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
 				heavy_fighter_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
 				strat_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				jet_strat_bomber_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -705,6 +717,12 @@ ideas = {
 			}
 			
 			available = {
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					has_completed_focus = ROM_appoint_allied_friendly_government
+				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
@@ -1069,6 +1087,9 @@ ideas = {
 				has_completed_focus = ROM_mobile_tank_destroyers
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = ROM_modern_at_guns }
+			}
 			allowed = {
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
@@ -1167,7 +1188,9 @@ ideas = {
 			available = {
 				has_completed_focus = ROM_coastal_defense_navy
 			}
-			
+			visible = {
+				NOT = { has_completed_focus = ROM_black_sea_dominance }
+			}
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -1201,6 +1224,9 @@ ideas = {
 				original_tag = ROM
 			}
 
+			visible = {
+				NOT = { has_completed_focus = ROM_coastal_defense_navy }
+			}
 			available = {
 				has_completed_focus = ROM_black_sea_dominance
 			}
@@ -1243,6 +1269,11 @@ ideas = {
 				has_dlc = "Death or Dishonor"
 			}
 			cost = 75
+			visible = {
+				NOT = { has_completed_focus = ROM_malaxa }
+				NOT = { has_country_flag = USA_mot_chosen }
+				NOT = { has_country_flag = GER_mot_chosen }
+			}
 
 			available = {
 				has_country_flag = ENG_mot_chosen
@@ -1277,6 +1308,11 @@ ideas = {
 			}
 			
 
+			visible = {
+				NOT = { has_completed_focus = ROM_malaxa }
+				NOT = { has_country_flag = GER_mot_chosen }
+				NOT = { has_country_flag = ENG_mot_chosen }
+			}
 			available = {
 				has_country_flag = USA_mot_chosen
 			}
@@ -1363,6 +1399,11 @@ ideas = {
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
 			}
+			visible = {
+				NOT = { has_completed_focus = ROM_malaxa }
+				NOT = { has_country_flag = USA_mot_chosen }
+				NOT = { has_country_flag = ENG_mot_chosen }
+			}
 
 			available = {
 				has_country_flag = GER_mot_chosen
@@ -1446,6 +1487,9 @@ ideas = {
 				fighter_equipment = {
 					air_attack = 0.1
 				}
+				jet_fighter_equipment = {
+					air_attack = 0.1
+				}
 				cv_fighter_equipment = {
 					air_attack = 0.1
 				}
@@ -1480,6 +1524,9 @@ ideas = {
 				fighter_equipment = {
 					air_agility = 0.15
 				}
+				jet_fighter_equipment = {
+					air_agility = 0.15
+				}
 				cv_fighter_equipment = {
 					air_agility = 0.15
 				}
@@ -1509,6 +1556,10 @@ ideas = {
 			equipment_bonus = {
 				
 				tac_bomber_equipment = {
+					air_ground_attack = 0.1
+					build_cost_ic = -0.1
+				}
+				jet_tac_bomber_equipment = {
 					air_ground_attack = 0.1
 					build_cost_ic = -0.1
 				}

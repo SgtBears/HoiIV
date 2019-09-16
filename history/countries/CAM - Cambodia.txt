@@ -94,7 +94,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sisowath Youtévong"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	picture = "gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
 	expire = "1953.3.1"
 	ideology = liberalism
 	traits = {
@@ -113,5 +113,14 @@ create_country_leader = {
 	}
 }
 
-#couldnt find anything historical on fascism
+create_country_leader = {
+	name = "Son Ngoc Thanh" 
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
 

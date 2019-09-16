@@ -2,7 +2,7 @@
 state={
 	id=316
 	name="STATE_316"
-	manpower = 503856
+	manpower = 585856
 	resources={
 		chromium=1 # was: 1
 	}
@@ -17,18 +17,27 @@ state={
 			arms_factory = 1
 			industrial_complex = 2 
 			air_base = 1
-			13087 = {
+			13092 = {
+				naval_base = 1
+			}
+			12878 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = COS
 		victory_points = {
-			13087 3
+			13319 3
+		}
+		victory_points = {
+			13092 1
+		}
+		victory_points = {
+			12878 1
 		}
 
 	}
 
 	provinces={
-		12878 13087 13092 
+		12878 13087 13092 13318 13319 13320
 	}
 }

@@ -270,6 +270,18 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Wilhelmina"
+	desc = "POLITICS_WILHELMINA_DESC"
+	picture = "portrait_hol_wilhelmina.dds"
+	expire = "1965.1.1"
+	ideology = royalism
+	traits = {
+		wilhelmina
+		disdain_for_politicians_1
+		queen_of_the_people
+	}
+}
+create_country_leader = {
 	name = "Willem Schermerhorn"
 	desc = "POLITICS_WIM_SCHERMERHORN_DESC"
 	picture = "GFX_portrait_hol_wim_schermerhorn"

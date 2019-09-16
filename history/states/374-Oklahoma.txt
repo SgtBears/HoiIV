@@ -20,8 +20,12 @@ state={
 			air_base = 2
 		}
 		add_core_of = USA
+		add_core_of = OKL
 		victory_points = {
 			1806 1 
+		}
+		victory_points = {
+			5103 2
 		}
 
 		1939.1.1 = {

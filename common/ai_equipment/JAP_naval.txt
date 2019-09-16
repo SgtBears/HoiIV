@@ -240,8 +240,8 @@ JAP_destroyers = {
 			factor = 500
 			modifier = {
 				OR = {
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = var:global.usa_tag
+					has_war_with = var:global.eng_tag
 				}
 				factor = 10
 			}
@@ -837,8 +837,8 @@ JAP_naval_light_AA_cruiser = {
 		modifier = {
 			factor = 200
 			OR = {
-				has_war_with = USA
-				has_war_with = ENG
+				has_war_with = var:global.usa_tag
+				has_war_with = var:global.eng_tag
 			}
 		}
 	}
@@ -2118,7 +2118,7 @@ JAP_naval_submarine = {
 			factor = 50
 			modifier = {
 				factor = 15
-				has_war_with = USA
+				has_war_with = var:global.usa_tag
 			}
 		}
 		role_icon_index = 6
@@ -2150,7 +2150,7 @@ JAP_naval_submarine = {
 			factor = 500
 			modifier = {
 				factor = 150
-				has_war_with = USA
+				has_war_with = var:global.usa_tag
 			}
 		}
 		role_icon_index = 6

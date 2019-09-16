@@ -1191,7 +1191,7 @@ GER_naval_carrier = {
 		factor = 25
 		modifier = {
 			factor = 0
-			has_war_with = SOV
+			has_war_with = var:global.sov_tag
 		}
 		modifier = {
 			GER_naval_interest_trigger = yes
@@ -1458,9 +1458,9 @@ GER_naval_submarine = {
 			factor = 50
 			modifier = {
 				factor = 15
-				has_war_with = SOV
-				has_war_with = USA
-				has_war_with = ENG
+				has_war_with = var:global.sov_tag
+				has_war_with = var:global.usa_tag
+				has_war_with = var:global.eng_tag
 			}
 		}
 		role_icon_index = 6

@@ -30,7 +30,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -63,7 +63,7 @@ focus_tree = {
 		x = 6
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -280,7 +280,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_secure_internal_politics
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -329,7 +329,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_cooperation_with_the_nationalists
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -400,7 +400,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_cooperation_with_the_nationalists
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -442,7 +442,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_cooperation_with_the_nationalists
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -478,7 +478,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_new_model_province
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -514,7 +514,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_new_model_province
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -549,7 +549,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CHI_new_model_province
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -589,7 +589,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CHI_new_model_province
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -624,7 +624,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CHI_new_model_province
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -682,7 +682,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CHI_new_model_province
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -733,7 +733,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_secure_internal_politics
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -803,7 +803,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_cooperation_with_the_communists
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -843,7 +843,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_land_redistribution
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -882,7 +882,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_land_redistribution
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -917,7 +917,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CHI_land_redistribution
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -952,7 +952,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CHI_land_redistribution
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -987,7 +987,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CHI_land_redistribution
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1060,7 +1060,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CHI_land_redistribution
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1114,7 +1114,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_secure_internal_politics
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1182,7 +1182,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_opposition
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1219,7 +1219,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CHI_opposition
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1254,7 +1254,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_public_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1289,7 +1289,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_public_works
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1324,7 +1324,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_opposition
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1359,7 +1359,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_war_taxes
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1395,7 +1395,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_war_taxes
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1494,7 +1494,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_war_taxes
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1530,7 +1530,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_personal_leadership
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1567,7 +1567,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_personal_leadership
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1602,7 +1602,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CHI_personal_leadership
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1637,7 +1637,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CHI_rural_militias
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1698,7 +1698,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CHI_secure_internal_politics
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -1759,7 +1759,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_industrial_investment
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -1794,7 +1794,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHI_industrial_investment
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -1855,7 +1855,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CHI_industrial_investment
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -1890,7 +1890,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CHI_industrial_investment
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -1930,7 +1930,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CHI_industrial_investment
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1

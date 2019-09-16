@@ -19,11 +19,15 @@ state={
 			}
 		}
 		add_core_of = USA
+		add_core_of = WAS
 		victory_points = {
 			1690 1 
 		}
 		victory_points = {
-			7315 10 
+			7386 10
+		}
+		victory_points = {
+			7315 9
 		}
 	}
 

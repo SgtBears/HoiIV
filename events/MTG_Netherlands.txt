@@ -13,18 +13,18 @@ country_event = {
 	option = {
 		name = mtg_netherlands.1.a
 		effect_tooltip = {
-			VEN = { transfer_state = 695 }
+			VE0 = { transfer_state = 695 }
 		}
-		VEN = { country_event = { id = mtg_netherlands.2 days = 1 random = 3 } }
+		VE0 = { country_event = { id = mtg_netherlands.2 days = 1 random = 3 } }
 	}
 
 	# They're just trying to get the islands for themselves...
 	option = {
 		name = mtg_netherlands.1.b
 		effect_tooltip = {
-			VEN = { add_state_claim = 695 }
+			VE0 = { add_state_claim = 695 }
 		}
-		VEN = { country_event = { id = mtg_netherlands.3 days = 1 random = 3 } }
+		VE0 = { country_event = { id = mtg_netherlands.3 days = 1 random = 3 } }
 		set_global_flag = ven_claims_abc_islands
 	}
 
@@ -32,27 +32,27 @@ country_event = {
 	option = {
 		trigger = {
 			AND = {
-				is_in_faction_with = ENG
-				NOT = { is_in_faction_with = USA }
+				is_in_faction_with = EN0
+				NOT = { is_in_faction_with = US0 }
 			}
 		}
 		name = mtg_netherlands.1.c
 		effect_tooltip = {
-			ENG = { transfer_state = 695 }
+			EN0 = { transfer_state = 695 }
 		}
-		ENG = { country_event = { id = mtg_netherlands.4 days = 1 random = 3 } }
+		EN0 = { country_event = { id = mtg_netherlands.4 days = 1 random = 3 } }
 	}
 
 	# We can ill afford another crisis - give the Americans direct control
 	option = {
 		trigger = {
-			is_in_faction_with = USA
+			is_in_faction_with = US0
 		}
 		name = mtg_netherlands.1.e
 		effect_tooltip = {
-			USA = { transfer_state = 695 }
+			US0 = { transfer_state = 695 }
 		}
-		USA = { country_event = { id = mtg_netherlands.4 days = 1 random = 3 } }
+		US0 = { country_event = { id = mtg_netherlands.4 days = 1 random = 3 } }
 	}
 }
 
@@ -103,13 +103,13 @@ country_event = {
 		effect_tooltip = {
 			transfer_state = 695
 		}
-		HOL = { country_event = { id = mtg_netherlands.5 days = 1 random = 3 } }
+		HO0 = { country_event = { id = mtg_netherlands.5 days = 1 random = 3 } }
 	}
 
 	# Let's not get involved
 	option = {
 		name = mtg_netherlands.4.b
-		HOL = { country_event = { id = mtg_netherlands.6 days = 1 random = 3 } }
+		HO0 = { country_event = { id = mtg_netherlands.6 days = 1 random = 3 } }
 	}
 }
 
@@ -142,18 +142,18 @@ country_event = {
 	option = {
 		name = mtg_netherlands.6.a
 		effect_tooltip = {
-			VEN = { transfer_state = 695 }
+			VE0 = { transfer_state = 695 }
 		}
-		VEN = { country_event = { id = mtg_netherlands.2 days = 1 random = 3 } }
+		VE0 = { country_event = { id = mtg_netherlands.2 days = 1 random = 3 } }
 	}
 
 	# We won't give it up!
 	option = {
 		name = mtg_netherlands.6.b
 		effect_tooltip = {
-			VEN = { add_state_claim = 695 }
+			VE0 = { add_state_claim = 695 }
 		}
-		VEN = { country_event = { id = mtg_netherlands.3 days = 1 random = 3 } }
+		VE0 = { country_event = { id = mtg_netherlands.3 days = 1 random = 3 } }
 		set_global_flag = ven_claims_abc_islands
 	}
 }
@@ -172,7 +172,7 @@ country_event = {
 		name = mtg_netherlands.7.a
 		FROM = { country_event = { id = mtg_netherlands.8 days = 1 random = 3 } }
 		effect_tooltip = {
-			HOL = {
+			HO0 = {
 				set_technology = {
 					basic_ship_hull_heavy = 1
 					antiair2 = 1
@@ -305,16 +305,18 @@ country_event = {
 	option = {
 		name = mtg_netherlands.11.a
 		effect_tooltip = {
-			JAP = {
+			JA0 = {
 				transfer_state = 672
+				transfer_state = 803
 				transfer_state = 335
 				transfer_state = 334
 				transfer_state = 673
 				transfer_state = 667
+				transfer_state = 804
 			}
 			add_offsite_building = { type = arms_factory level = 8 }
 		}
-		JAP = { country_event = { id = mtg_netherlands.12 hours = 6 } }
+		JA0 = { country_event = { id = mtg_netherlands.12 hours = 6 } }
 	}
 
 	# Give them trade
@@ -323,41 +325,55 @@ country_event = {
 		effect_tooltip = {
 			if = {
 				limit = {
-					country_exists = INS
-					INS = { is_subject_of = HOL }
-					672 = { is_owned_and_controlled_by = INS }
-					335 = { is_owned_and_controlled_by = INS }
-					334 = { is_owned_and_controlled_by = INS }
-					673 = { is_owned_and_controlled_by = INS }
-					667 = { is_owned_and_controlled_by = INS }
+					country_exists = IN0
+					IN0 = { is_subject_of = HO0 }
+					672 = { is_owned_and_controlled_by = IN0 }
+					803 = { is_owned_and_controlled_by = IN0 }
+					335 = { is_owned_and_controlled_by = IN0 }
+					334 = { is_owned_and_controlled_by = IN0 }
+					673 = { is_owned_and_controlled_by = IN0 }
+					667 = { is_owned_and_controlled_by = IN0 }
+					804 = { is_owned_and_controlled_by = IN0 }
 				}
-				INS = {
-					give_resource_rights = { receiver = JAP state = 672 }
-					give_resource_rights = { receiver = JAP state = 335 }
-					give_resource_rights = { receiver = JAP state = 334 }
-					give_resource_rights = { receiver = JAP state = 673 }
-					give_resource_rights = { receiver = JAP state = 667 }
+				JA0 = {
+					IN0 = {
+						give_resource_rights = { receiver = PREV state = 672 }
+						give_resource_rights = { receiver = PREV state = 335 }
+						give_resource_rights = { receiver = PREV state = 334 }
+						give_resource_rights = { receiver = PREV state = 673 }
+						give_resource_rights = { receiver = PREV state = 803 }
+						give_resource_rights = { receiver = PREV state = 667 }
+						give_resource_rights = { receiver = PREV state = 804 }
+					}
 				}
 			}
 			else_if = {
 				limit = {
-					672 = { is_owned_and_controlled_by = HOL }
-					335 = { is_owned_and_controlled_by = HOL }
-					334 = { is_owned_and_controlled_by = HOL }
-					673 = { is_owned_and_controlled_by = HOL }
-					667 = { is_owned_and_controlled_by = HOL }
+					672 = { is_owned_and_controlled_by = HO0 }
+					803 = { is_owned_and_controlled_by = HO0 }
+					335 = { is_owned_and_controlled_by = HO0 }
+					334 = { is_owned_and_controlled_by = HO0 }
+					673 = { is_owned_and_controlled_by = HO0 }
+					667 = { is_owned_and_controlled_by = HO0 }
+					804 = { is_owned_and_controlled_by = HO0 }
 				}
-				give_resource_rights = { receiver = JAP state = 672 }
-				give_resource_rights = { receiver = JAP state = 335 }
-				give_resource_rights = { receiver = JAP state = 334 }
-				give_resource_rights = { receiver = JAP state = 673 }
-				give_resource_rights = { receiver = JAP state = 667 }
+				JA0 = {
+					ROOT = {
+						give_resource_rights = { receiver = PREV state = 672 }
+						give_resource_rights = { receiver = PREV state = 335 }
+						give_resource_rights = { receiver = PREV state = 334 }
+						give_resource_rights = { receiver = PREV state = 673 }
+						give_resource_rights = { receiver = PREV state = 667 }
+						give_resource_rights = { receiver = PREV state = 803 }
+						give_resource_rights = { receiver = PREV state = 804 }
+					}
+				}
 			}
 		}
 		effect_tooltip = {
 			add_offsite_building = { type = arms_factory level = 4 }
 		}
-		JAP = { country_event = { id = mtg_netherlands.13 hours = 6 } }
+		JA0 = { country_event = { id = mtg_netherlands.13 hours = 6 } }
 	}
 }
 
@@ -379,6 +395,8 @@ country_event = {
 			transfer_state = 334
 			transfer_state = 673
 			transfer_state = 667
+			transfer_state = 803
+			transfer_state = 804
 			FROM = { add_offsite_building = { type = arms_factory level = 6 } }
 		}
 		FROM = { country_event = { id = mtg_netherlands.23 } }
@@ -410,38 +428,50 @@ country_event = {
 		effect_tooltip = {
 			if = {
 				limit = {
-					country_exists = INS
-					INS = { is_subject_of = HOL }
-					672 = { is_owned_and_controlled_by = INS }
-					335 = { is_owned_and_controlled_by = INS }
-					334 = { is_owned_and_controlled_by = INS }
-					673 = { is_owned_and_controlled_by = INS }
-					667 = { is_owned_and_controlled_by = INS }
+					country_exists = IN0
+					IN0 = { is_subject_of = HO0 }
+					672 = { is_owned_and_controlled_by = IN0 }
+					335 = { is_owned_and_controlled_by = IN0 }
+					334 = { is_owned_and_controlled_by = IN0 }
+					673 = { is_owned_and_controlled_by = IN0 }
+					667 = { is_owned_and_controlled_by = IN0 }
+					803 = { is_owned_and_controlled_by = IN0 }
+					804 = { is_owned_and_controlled_by = IN0 }
 				}
-				INS = {
-					give_resource_rights = { receiver = JAP state = 672 }
-					give_resource_rights = { receiver = JAP state = 335 }
-					give_resource_rights = { receiver = JAP state = 334 }
-					give_resource_rights = { receiver = JAP state = 673 }
-					give_resource_rights = { receiver = JAP state = 667 }
+				JA0 = {
+					IN0 = {
+						give_resource_rights = { receiver = PREV state = 672 }
+						give_resource_rights = { receiver = PREV state = 335 }
+						give_resource_rights = { receiver = PREV state = 334 }
+						give_resource_rights = { receiver = PREV state = 673 }
+						give_resource_rights = { receiver = PREV state = 667 }
+						give_resource_rights = { receiver = PREV state = 803 }
+						give_resource_rights = { receiver = PREV state = 804 }
+					}
 				}
 			}
 			else_if = {
 				limit = {
 					FROM = {
-						672 = { is_owned_and_controlled_by = HOL }
-						335 = { is_owned_and_controlled_by = HOL }
-						334 = { is_owned_and_controlled_by = HOL }
-						673 = { is_owned_and_controlled_by = HOL }
-						667 = { is_owned_and_controlled_by = HOL }
+						672 = { is_owned_and_controlled_by = HO0 }
+						335 = { is_owned_and_controlled_by = HO0 }
+						334 = { is_owned_and_controlled_by = HO0 }
+						673 = { is_owned_and_controlled_by = HO0 }
+						667 = { is_owned_and_controlled_by = HO0 }
+						803 = { is_owned_and_controlled_by = HO0 }
+						804 = { is_owned_and_controlled_by = HO0 }
 					}
 				}
-				FROM = {
-					give_resource_rights = { receiver = JAP state = 672 }
-					give_resource_rights = { receiver = JAP state = 335 }
-					give_resource_rights = { receiver = JAP state = 334 }
-					give_resource_rights = { receiver = JAP state = 673 }
-					give_resource_rights = { receiver = JAP state = 667 }
+				JA0 = {
+					FROM = {
+						give_resource_rights = { receiver = PREV state = 672 }
+						give_resource_rights = { receiver = PREV state = 335 }
+						give_resource_rights = { receiver = PREV state = 334 }
+						give_resource_rights = { receiver = PREV state = 673 }
+						give_resource_rights = { receiver = PREV state = 667 }
+						give_resource_rights = { receiver = PREV state = 803 }
+						give_resource_rights = { receiver = PREV state = 804 }
+					}
 				}
 			}
 			FROM = { add_offsite_building = { type = arms_factory level = 4 } }
@@ -508,8 +538,8 @@ country_event = {
 	# Great idea
 	option = {
 		name = mtg_netherlands.15.a
-		BEL = { country_event = { id = mtg_netherlands.18 } }
-		LUX = { country_event = { id = mtg_netherlands.18 } }
+		BE0 = { country_event = { id = mtg_netherlands.18 } }
+		LU0 = { country_event = { id = mtg_netherlands.18 } }
 		FROM = { country_event = { id = mtg_netherlands.16 days = 1 random = 3 } }
 	}
 
@@ -533,26 +563,28 @@ country_event = {
 	# Hurrah
 	option = {
 		name = mtg_netherlands.16.a
-		BEL = {
+		BE0 = {
 			every_unit_leader = {
 				set_nationality = ROOT
 			}
+			ROOT = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
 		}
-		annex_country = {
-		    target = BEL
-		    transfer_troops = yes
-		}
-		#ENG = { end_exile = BEL }
-		LUX = {
+		LU0 = {
 			every_unit_leader = {
 				set_nationality = ROOT
 			}
+			ROOT = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
 		}
-		annex_country = {
-		    target = LUX
-		    transfer_troops = yes
-		}
-		#ENG = { end_exile = LUX }
 		hidden_effect = { news_event = { id = mtg_news.51 days = 1 } }
 	}
 }
@@ -725,6 +757,8 @@ country_event = {
 			transfer_state = 334
 			transfer_state = 673
 			transfer_state = 667
+			transfer_state = 804
+			transfer_state = 803
 		}
 		add_offsite_building = { type = arms_factory level = 6 }
 		hidden_effect = { news_event = { id = mtg_news.48 days = 1 } }
@@ -745,35 +779,49 @@ country_event = {
 		name = mtg_netherlands.23.a
 		if = {
 			limit = {
-				country_exists = INS
-				INS = { is_subject_of = HOL }
-				672 = { is_owned_and_controlled_by = INS }
-				335 = { is_owned_and_controlled_by = INS }
-				334 = { is_owned_and_controlled_by = INS }
-				673 = { is_owned_and_controlled_by = INS }
-				667 = { is_owned_and_controlled_by = INS }
+				country_exists = IN0
+				IN0 = { is_subject_of = HO0 }
+				672 = { is_owned_and_controlled_by = IN0 }
+				335 = { is_owned_and_controlled_by = IN0 }
+				334 = { is_owned_and_controlled_by = IN0 }
+				673 = { is_owned_and_controlled_by = IN0 }
+				667 = { is_owned_and_controlled_by = IN0 }
+				803 = { is_owned_and_controlled_by = IN0 }
+				804 = { is_owned_and_controlled_by = IN0 }
 			}
-			INS = {
-				give_resource_rights = { receiver = JAP state = 672 }
-				give_resource_rights = { receiver = JAP state = 335 }
-				give_resource_rights = { receiver = JAP state = 334 }
-				give_resource_rights = { receiver = JAP state = 673 }
-				give_resource_rights = { receiver = JAP state = 667 }
+			JA0 = {
+				IN0 = {
+					give_resource_rights = { receiver = PREV state = 672 }
+					give_resource_rights = { receiver = PREV state = 335 }
+					give_resource_rights = { receiver = PREV state = 334 }
+					give_resource_rights = { receiver = PREV state = 673 }
+					give_resource_rights = { receiver = PREV state = 667 }
+					give_resource_rights = { receiver = PREV state = 803 }
+					give_resource_rights = { receiver = PREV state = 804 }
+				}
 			}
 		}
 		else_if = {
 			limit = {
-				672 = { is_owned_and_controlled_by = HOL }
-				335 = { is_owned_and_controlled_by = HOL }
-				334 = { is_owned_and_controlled_by = HOL }
-				673 = { is_owned_and_controlled_by = HOL }
-				667 = { is_owned_and_controlled_by = HOL }
+				672 = { is_owned_and_controlled_by = HO0 }
+				335 = { is_owned_and_controlled_by = HO0 }
+				334 = { is_owned_and_controlled_by = HO0 }
+				673 = { is_owned_and_controlled_by = HO0 }
+				667 = { is_owned_and_controlled_by = HO0 }
+				803 = { is_owned_and_controlled_by = HO0 }
+				804 = { is_owned_and_controlled_by = HO0 }
 			}
-			give_resource_rights = { receiver = JAP state = 672 }
-			give_resource_rights = { receiver = JAP state = 335 }
-			give_resource_rights = { receiver = JAP state = 334 }
-			give_resource_rights = { receiver = JAP state = 673 }
-			give_resource_rights = { receiver = JAP state = 667 }
+			JA0 = {
+				ROOT = {
+					give_resource_rights = { receiver = PREV state = 672 }
+					give_resource_rights = { receiver = PREV state = 335 }
+					give_resource_rights = { receiver = PREV state = 334 }
+					give_resource_rights = { receiver = PREV state = 673 }
+					give_resource_rights = { receiver = PREV state = 667 }
+					give_resource_rights = { receiver = PREV state = 803 }
+					give_resource_rights = { receiver = PREV state = 804 }
+				}
+			}
 		}
 		add_offsite_building = { type = arms_factory level = 4 }
 		hidden_effect = { news_event = { id = mtg_news.49 days = 1 } }
@@ -792,7 +840,7 @@ country_event = {
 	# Ok!
 	option = {
 		name = mtg_netherlands.25.a
-		hidden_effect = { JAP = { set_country_flag = HOL_declare_war_indies_allowed } }
+		hidden_effect = { JA0 = { set_country_flag = HOL_declare_war_indies_allowed } }
 	}
 
 	# Let them 'protect' the East Indies
@@ -802,16 +850,18 @@ country_event = {
 			NOT = { has_country_flag = HOL_jap_rejected_control }
 		}
 		effect_tooltip = {
-			JAP = {
+			JA0 = {
 				transfer_state = 672
 				transfer_state = 335
 				transfer_state = 334
 				transfer_state = 673
 				transfer_state = 667
+				transfer_state = 803
+				transfer_state = 804
 			}
 			add_offsite_building = { type = arms_factory level = 8 }
 		}
-		JAP = { country_event = { id = mtg_netherlands.12 hours = 6 } }
+		JA0 = { country_event = { id = mtg_netherlands.12 hours = 6 } }
 	}
 
 	# Give them trade
@@ -823,41 +873,55 @@ country_event = {
 		effect_tooltip = {
 			if = {
 				limit = {
-					country_exists = INS
-					INS = { is_subject_of = HOL }
-					672 = { is_owned_and_controlled_by = INS }
-					335 = { is_owned_and_controlled_by = INS }
-					334 = { is_owned_and_controlled_by = INS }
-					673 = { is_owned_and_controlled_by = INS }
-					667 = { is_owned_and_controlled_by = INS }
+					country_exists = IN0
+					IN0 = { is_subject_of = HO0 }
+					672 = { is_owned_and_controlled_by = IN0 }
+					335 = { is_owned_and_controlled_by = IN0 }
+					334 = { is_owned_and_controlled_by = IN0 }
+					673 = { is_owned_and_controlled_by = IN0 }
+					667 = { is_owned_and_controlled_by = IN0 }
+					803 = { is_owned_and_controlled_by = IN0 }
+					804 = { is_owned_and_controlled_by = IN0 }
 				}
-				INS = {
-					give_resource_rights = { receiver = JAP state = 672 }
-					give_resource_rights = { receiver = JAP state = 335 }
-					give_resource_rights = { receiver = JAP state = 334 }
-					give_resource_rights = { receiver = JAP state = 673 }
-					give_resource_rights = { receiver = JAP state = 667 }
+				JA0 = {
+					IN0 = {
+						give_resource_rights = { receiver = PREV state = 672 }
+						give_resource_rights = { receiver = PREV state = 335 }
+						give_resource_rights = { receiver = PREV state = 334 }
+						give_resource_rights = { receiver = PREV state = 673 }
+						give_resource_rights = { receiver = PREV state = 667 }
+						give_resource_rights = { receiver = PREV state = 803 }
+						give_resource_rights = { receiver = PREV state = 804 }
+					}
 				}
 			}
 			else_if = {
 				limit = {
-					672 = { is_owned_and_controlled_by = HOL }
-					335 = { is_owned_and_controlled_by = HOL }
-					334 = { is_owned_and_controlled_by = HOL }
-					673 = { is_owned_and_controlled_by = HOL }
-					667 = { is_owned_and_controlled_by = HOL }
+					672 = { is_owned_and_controlled_by = HO0 }
+					335 = { is_owned_and_controlled_by = HO0 }
+					334 = { is_owned_and_controlled_by = HO0 }
+					673 = { is_owned_and_controlled_by = HO0 }
+					667 = { is_owned_and_controlled_by = HO0 }
+					803 = { is_owned_and_controlled_by = HO0 }
+					804 = { is_owned_and_controlled_by = HO0 }
 				}
-				give_resource_rights = { receiver = JAP state = 672 }
-				give_resource_rights = { receiver = JAP state = 335 }
-				give_resource_rights = { receiver = JAP state = 334 }
-				give_resource_rights = { receiver = JAP state = 673 }
-				give_resource_rights = { receiver = JAP state = 667 }
+				JA0 = {
+					ROOT = {
+						give_resource_rights = { receiver = PREV state = 672 }
+						give_resource_rights = { receiver = PREV state = 335 }
+						give_resource_rights = { receiver = PREV state = 334 }
+						give_resource_rights = { receiver = PREV state = 673 }
+						give_resource_rights = { receiver = PREV state = 803 }
+						give_resource_rights = { receiver = PREV state = 667 }
+						give_resource_rights = { receiver = PREV state = 804 }
+					}
+				}
 			}
 		}
 		effect_tooltip = {
 			add_offsite_building = { type = arms_factory level = 4 }
 		}
-		JAP = { country_event = { id = mtg_netherlands.13 hours = 6 } }
+		JA0 = { country_event = { id = mtg_netherlands.13 hours = 6 } }
 	}
 }
 
@@ -875,7 +939,7 @@ country_event = {
 		name = mtg_netherlands.26.a
 		effect_tooltip = {
 			add_war_support = 0.1
-			give_guarantee = HOL
+			give_guarantee = HO0
 		}
 		FROM = { country_event = { id = mtg_netherlands.27 } }
 	}
@@ -902,9 +966,9 @@ country_event = {
 	# Ok!
 	option = {
 		name = mtg_netherlands.27.a
-		USA = {
+		US0 = {
 			add_war_support = 0.1
-			give_guarantee = HOL
+			give_guarantee = HO0
 		}
 		hidden_effect = { news_event = { id = mtg_news.52 days = 1 } }
 	}
@@ -946,7 +1010,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				is_in_faction_with = SOV
+				is_in_faction_with = SO0
 			}
 			modifier = {
 				factor = 0
@@ -954,9 +1018,9 @@ country_event = {
 				has_government = fascism
 				OR = {
 					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
+						HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
+					HO0 = { has_completed_focus = HOL_the_netherlands_first }
 				}
 			}
 			modifier = {
@@ -964,14 +1028,14 @@ country_event = {
 				original_tag = GER
 				has_government = neutrality
 				NOT = {
-					HOL = { has_completed_focus = HOL_oranje_boven }
+					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
 				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -979,8 +1043,8 @@ country_event = {
 				has_government = neutrality
 				NOT = {
 					AND = {
-						GER = { has_government = fascism }
-						HOL = { is_in_faction_with = GER }
+						GE0 = { has_government = fascism }
+						HO0 = { is_in_faction_with = GE0 }
 					}
 				}
 			}
@@ -988,20 +1052,28 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
+				HO0 = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
-				has_opinion = { target = ENG value < -49 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -49 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0
-				has_opinion = { target = ENG value < -99 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -99 }
+					}
+				}
 			}
 		}
 		FROM = { country_event = { id = mtg_netherlands.30 hours = 6 } }
@@ -1027,7 +1099,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				is_in_faction_with = SOV
+				is_in_faction_with = SO0
 			}
 			modifier = {
 				factor = 0
@@ -1035,9 +1107,9 @@ country_event = {
 				has_government = fascism
 				OR = {
 					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
+						HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
+					HO0 = { has_completed_focus = HOL_the_netherlands_first }
 				}
 			}
 			modifier = {
@@ -1045,14 +1117,14 @@ country_event = {
 				original_tag = GER
 				has_government = neutrality
 				NOT = {
-					HOL = { has_completed_focus = HOL_oranje_boven }
+					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
 				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -1060,8 +1132,8 @@ country_event = {
 				has_government = neutrality
 				NOT = {
 					AND = {
-						GER = { has_government = fascism }
-						HOL = { is_in_faction_with = GER }
+						GE0 = { has_government = fascism }
+						HO0 = { is_in_faction_with = GE0 }
 					}
 				}
 			}
@@ -1069,20 +1141,28 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
+				HO0 = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
-				has_opinion = { target = ENG value < -49 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -49 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0
-				has_opinion = { target = ENG value < -99 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -99 }
+					}
+				}
 			}
 		}
 		FROM = { country_event = { id = mtg_netherlands.30 hours = 6 } }
@@ -1108,7 +1188,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				is_in_faction_with = SOV
+				is_in_faction_with = SO0
 			}
 			modifier = {
 				factor = 0
@@ -1116,9 +1196,9 @@ country_event = {
 				has_government = fascism
 				OR = {
 					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
+						HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
+					HO0 = { has_completed_focus = HOL_the_netherlands_first }
 				}
 			}
 			modifier = {
@@ -1126,14 +1206,14 @@ country_event = {
 				original_tag = GER
 				has_government = neutrality
 				NOT = {
-					HOL = { has_completed_focus = HOL_oranje_boven }
+					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
 				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -1141,8 +1221,8 @@ country_event = {
 				has_government = neutrality
 				NOT = {
 					AND = {
-						GER = { has_government = fascism }
-						HOL = { is_in_faction_with = GER }
+						GE0 = { has_government = fascism }
+						HO0 = { is_in_faction_with = GE0 }
 					}
 				}
 			}
@@ -1150,20 +1230,28 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
+				HO0 = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
-				has_opinion = { target = ENG value < -49 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -49 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0
-				has_opinion = { target = ENG value < -99 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -99 }
+					}
+				}
 			}
 		}
 		FROM = { country_event = { id = mtg_netherlands.30 hours = 6 } }
@@ -1290,7 +1378,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				is_in_faction_with = SOV
+				is_in_faction_with = SO0
 			}
 			modifier = {
 				factor = 0
@@ -1298,9 +1386,9 @@ country_event = {
 				has_government = fascism
 				OR = {
 					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
+						HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
+					HO0 = { has_completed_focus = HOL_the_netherlands_first }
 				}
 			}
 			modifier = {
@@ -1308,14 +1396,14 @@ country_event = {
 				original_tag = GER
 				has_government = neutrality
 				NOT = {
-					HOL = { has_completed_focus = HOL_oranje_boven }
+					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
 				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -1323,8 +1411,8 @@ country_event = {
 				has_government = neutrality
 				NOT = {
 					AND = {
-						GER = { has_government = fascism }
-						HOL = { is_in_faction_with = GER }
+						GE0 = { has_government = fascism }
+						HO0 = { is_in_faction_with = GE0 }
 					}
 				}
 			}
@@ -1332,20 +1420,28 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
+				HO0 = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
-				has_opinion = { target = ENG value < -49 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -49 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0
-				has_opinion = { target = ENG value < -99 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -99 }
+					}
+				}
 			}
 		}
 		army_experience = -5
@@ -1360,29 +1456,49 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0.8
-				has_opinion = { target = HOL value > 10 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 10 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.8
-				has_opinion = { target = HOL value > 25 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 25 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.8
-				has_opinion = { target = HOL value > 50 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 50 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.5
-				has_opinion = { target = HOL value > 75 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 75 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.1
-				has_opinion = { target = HOL value > 99 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 99 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0
 				original_tag = GER
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-				ENG = {
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
+				EN0 = {
 					focus_progress = {
 						focus = ENG_benelux_intervention
 						progress > 0
@@ -1393,7 +1509,7 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				has_government = communism
-				HOL = { has_completed_focus = HOL_join_the_french }
+				HO0 = { has_completed_focus = HOL_join_the_french }
 			}
 			modifier = {
 				factor = 0
@@ -1401,17 +1517,17 @@ country_event = {
 					original_tag = FRA
 					original_tag = ENG
 				}
-				GER = {
+				GE0 = {
 					focus_progress = {
 						focus = GER_around_maginot
 						progress > 0
 					}
 				}
-				NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
+				NOT = { HO0 = { has_completed_focus = HOL_cave_to_the_germans } }
 			}
 			modifier = {
 				factor = 0
-				is_in_faction_with = HOL
+				is_in_faction_with = HO0
 			}
 		}
 		FROM = { country_event = { id = mtg_netherlands.34 hours = 6 } }
@@ -1436,19 +1552,19 @@ country_event = {
 		custom_effect_tooltip = mtg_netherlands.33_tt
 		if = {
 			limit = {
-				FROM = { tag = ENG }
+				FROM = { tag = EN0 }
 			}
 			set_country_flag = secret_staff_talks_british_staff_plan
 		}
 		if = {
 			limit = {
-				FROM = { tag = FRA }
+				FROM = { tag = FR0 }
 			}
 			set_country_flag = secret_staff_talks_french_staff_plan
 		}
 		if = {
 			limit = {
-				FROM = { tag = GER }
+				FROM = { tag = GE0 }
 			}
 			set_country_flag = secret_staff_talks_german_staff_plan
 		}
@@ -1486,7 +1602,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				is_in_faction_with = SOV
+				is_in_faction_with = SO0
 			}
 			modifier = {
 				factor = 0
@@ -1494,9 +1610,9 @@ country_event = {
 				has_government = fascism
 				OR = {
 					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
+						HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
+					HO0 = { has_completed_focus = HOL_the_netherlands_first }
 				}
 			}
 			modifier = {
@@ -1504,14 +1620,14 @@ country_event = {
 				original_tag = GER
 				has_government = neutrality
 				NOT = {
-					HOL = { has_completed_focus = HOL_oranje_boven }
+					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
 				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -1519,8 +1635,8 @@ country_event = {
 				has_government = neutrality
 				NOT = {
 					AND = {
-						GER = { has_government = fascism }
-						HOL = { is_in_faction_with = GER }
+						GE0 = { has_government = fascism }
+						HO0 = { is_in_faction_with = GE0 }
 					}
 				}
 			}
@@ -1528,20 +1644,28 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
+				HO0 = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
-				has_opinion = { target = ENG value < -49 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -49 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0
-				has_opinion = { target = ENG value < -99 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -99 }
+					}
+				}
 			}
 		}
 		add_political_power = -25
@@ -1549,27 +1673,27 @@ country_event = {
 		custom_effect_tooltip = mtg_netherlands.35_tt
 		if = {
 			limit = {
-				has_war_with = GER
+				has_war_with = GE0
 			}
 			add_timed_idea = { idea = HOL_shared_intelligence_hol_ger days = 180 }
 		}
 		if = {
 			limit = {
-				has_war_with = FRA
+				has_war_with = FR0
 			}
 			add_timed_idea = { idea = HOL_shared_intelligence_hol_fra days = 180 }
 		}
 		if = {
 			limit = {
-				has_war_with = ENG
+				has_war_with = EN0
 			}
 			add_timed_idea = { idea = HOL_shared_intelligence_hol_eng days = 180 }
 		}
 		if = {
 			limit = {
-				NOT = { has_war_with = GER }
-				NOT = { has_war_with = FRA }
-				NOT = { has_war_with = ENG }
+				NOT = { has_war_with = GE0 }
+				NOT = { has_war_with = FR0 }
+				NOT = { has_war_with = EN0 }
 			}
 			custom_effect_tooltip = mtg_netherlands.35_tt_2
 			set_country_flag = secret_staff_talks_dutch_intelligence
@@ -1583,29 +1707,49 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0.8
-				has_opinion = { target = HOL value > 10 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 10 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.8
-				has_opinion = { target = HOL value > 25 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 25 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.8
-				has_opinion = { target = HOL value > 50 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 50 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.5
-				has_opinion = { target = HOL value > 75 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 75 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.1
-				has_opinion = { target = HOL value > 99 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 99 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0
 				original_tag = GER
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-				ENG = {
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
+				EN0 = {
 					focus_progress = {
 						focus = ENG_benelux_intervention
 						progress > 0
@@ -1616,7 +1760,7 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				has_government = communism
-				HOL = { has_completed_focus = HOL_join_the_french }
+				HO0 = { has_completed_focus = HOL_join_the_french }
 			}
 			modifier = {
 				factor = 0
@@ -1624,17 +1768,17 @@ country_event = {
 					original_tag = FRA
 					original_tag = ENG
 				}
-				GER = {
+				GE0 = {
 					focus_progress = {
 						focus = GER_around_maginot
 						progress > 0
 					}
 				}
-				NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
+				NOT = { HO0 = { has_completed_focus = HOL_cave_to_the_germans } }
 			}
 			modifier = {
 				factor = 0
-				is_in_faction_with = HOL
+				is_in_faction_with = HO0
 			}
 		}
 		FROM = { country_event = { id = mtg_netherlands.37 hours = 6 } }
@@ -1662,19 +1806,19 @@ country_event = {
 		custom_effect_tooltip = mtg_netherlands.35_tt_2
 		if = {
 			limit = {
-				FROM = { tag = ENG }
+				FROM = { tag = EN0 }
 			}
 			set_country_flag = secret_staff_talks_british_intelligence
 		}
 		if = {
 			limit = {
-				FROM = { tag = FRA }
+				FROM = { tag = FR0 }
 			}
 			set_country_flag = secret_staff_talks_french_intelligence
 		}
 		if = {
 			limit = {
-				FROM = { tag = GER }
+				FROM = { tag = GE0 }
 			}
 			set_country_flag = secret_staff_talks_german_intelligence
 		}
@@ -1714,7 +1858,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				is_in_faction_with = SOV
+				is_in_faction_with = SO0
 			}
 			modifier = {
 				factor = 0
@@ -1722,9 +1866,9 @@ country_event = {
 				has_government = fascism
 				OR = {
 					NOT = {
-						HOL = { has_completed_focus = HOL_cave_to_the_germans }
+						HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 					}
-					HOL = { has_completed_focus = HOL_the_netherlands_first }
+					HO0 = { has_completed_focus = HOL_the_netherlands_first }
 				}
 			}
 			modifier = {
@@ -1732,14 +1876,14 @@ country_event = {
 				original_tag = GER
 				has_government = neutrality
 				NOT = {
-					HOL = { has_completed_focus = HOL_oranje_boven }
+					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
 				NOT = { has_government = neutrality }
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
@@ -1747,8 +1891,8 @@ country_event = {
 				has_government = neutrality
 				NOT = {
 					AND = {
-						GER = { has_government = fascism }
-						HOL = { is_in_faction_with = GER }
+						GE0 = { has_government = fascism }
+						HO0 = { is_in_faction_with = GE0 }
 					}
 				}
 			}
@@ -1756,20 +1900,28 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				has_government = democratic
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = FRA
-				HOL = { has_completed_focus = HOL_the_netherlands_first }
+				HO0 = { has_completed_focus = HOL_the_netherlands_first }
 			}
 			modifier = {
 				factor = 0.1
-				has_opinion = { target = ENG value < -49 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -49 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0
-				has_opinion = { target = ENG value < -99 }
+				EN0 = {
+					ROOT = {
+						has_opinion = { target = PREV value < -99 }
+					}
+				}
 			}
 		}
 		army_experience = -5
@@ -1793,29 +1945,49 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0.8
-				has_opinion = { target = HOL value > 10 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 10 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.8
-				has_opinion = { target = HOL value > 25 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 25 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.8
-				has_opinion = { target = HOL value > 50 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 50 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.5
-				has_opinion = { target = HOL value > 75 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 75 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0.1
-				has_opinion = { target = HOL value > 99 }
+				HO0 = {
+					ROOT = {
+						has_opinion = { target = PREV value > 99 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0
 				original_tag = GER
-				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-				ENG = {
+				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
+				EN0 = {
 					focus_progress = {
 						focus = ENG_benelux_intervention
 						progress > 0
@@ -1826,7 +1998,7 @@ country_event = {
 				factor = 0
 				original_tag = FRA
 				has_government = communism
-				HOL = { has_completed_focus = HOL_join_the_french }
+				HO0 = { has_completed_focus = HOL_join_the_french }
 			}
 			modifier = {
 				factor = 0
@@ -1834,17 +2006,17 @@ country_event = {
 					original_tag = FRA
 					original_tag = ENG
 				}
-				GER = {
+				GE0 = {
 					focus_progress = {
 						focus = GER_around_maginot
 						progress > 0
 					}
 				}
-				NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
+				NOT = { HO0 = { has_completed_focus = HOL_cave_to_the_germans } }
 			}
 			modifier = {
 				factor = 0
-				is_in_faction_with = HOL
+				is_in_faction_with = HO0
 			}
 		}
 		FROM = { country_event = { id = mtg_netherlands.43 hours = 6 } }
@@ -2280,9 +2452,10 @@ country_event = {
 					NOT = { is_in_faction_with = ROOT }
 					NOT = { has_war_with = ROOT }
 					NOT = {
-						any_country = {
-							has_war_with = PREV
-							has_war_with = ROOT
+						ROOT = {
+							any_enemy_country = {
+								has_war_with = PREV.PREV
+							}
 						}
 					}
 					is_major = no
@@ -2318,6 +2491,10 @@ country_event = {
 			country_event = { id = mtg_netherlands.59 }
 			set_country_flag = { flag = HOL_bernhard_row_target value = 1 days = 60 }
 		}
+		activate_targeted_decision = {
+			target = event_target:HOL_bernhard_row_target
+			decision = HOL_pursue_diplomatic_grievances
+		}
 		hidden_effect = {
 			country_event = { id = mtg_netherlands.44 days = 60 random = 60 }
 		}
@@ -2347,6 +2524,17 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				remove_targeted_decision = {
+					target = ROOT
+					decision = HOL_pursue_diplomatic_grievances
+				}
+			}
+		}
+	}
 	
 	# Let 'em come
 	option = {
@@ -2796,7 +2984,7 @@ country_event = {
 				}
 				create_unit = {
 					division = "division_template = \"Hare Majesteits Duitse Legioen\" start_experience_factor = 0.5 start_equipment_factor = 0.25"
-					owner = HOL
+					owner = ROOT
 				}
 			}
 		}
@@ -2807,7 +2995,7 @@ country_event = {
 				}
 				create_unit = {
 					division = "division_template = \"Hare Majesteits Duitse Legioen\" start_experience_factor = 0.5 start_equipment_factor = 0.25"
-					owner = HOL
+					owner = ROOT
 				}
 			}
 		}
@@ -2891,7 +3079,7 @@ country_event = {
 	# Good
 	option = {
 		name = mtg_netherlands.73.a
-		GER = {
+		GE0 = {
 			start_civil_war = {
 				ruling_party = fascism
 				ideology = neutrality
@@ -2908,6 +3096,7 @@ country_event = {
 				original_tag = GER
 				has_government = neutrality
 			}
+			set_variable = { global.ger_imperial_tag = ROOT.id }
 			hidden_effect = {
 				set_cosmetic_tag = GER_german_empire
 				every_unit_leader = {
@@ -2919,21 +3108,27 @@ country_event = {
 							has_id = 24
 						}
 					}
-					set_nationality = GER
+					set_nationality = GE1
 				}
 			}
 			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
 			ROOT = {
 				puppet = PREV
-				add_to_war = { 
-				    targeted_alliance = PREV 
-				    enemy = GER
-				    hostility_reason = asked_to_join
+				GE0 = {
+					GE2 = {
+						ROOT = {
+							add_to_war = { 
+								targeted_alliance = PREV 
+								enemy = PREV.PREV
+								hostility_reason = asked_to_join
+							}
+						}
+					}
 				}
 			}
 			if = {
 				limit = {
-					HOL = { NOT = { has_country_flag = HOL_wilhelm_ii_died } }
+					HO0 = { NOT = { has_country_flag = HOL_wilhelm_ii_died } }
 				}
 				create_country_leader = {
 					name = "Wilhelm II"
@@ -2948,7 +3143,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					HOL = { has_country_flag = HOL_wilhelm_ii_died }
+					HO0 = { has_country_flag = HOL_wilhelm_ii_died }
 				}
 				create_country_leader = {
 					name = "Wilhelm III"
@@ -2978,12 +3173,12 @@ country_event = {
 		original_tag = HOL
 		has_government = neutrality
 		has_completed_focus = HOL_wilhelminism
-		NOT = { has_war_with = GER }
+		NOT = { has_war_with = GE0 }
 		is_in_faction = no
-		any_country = {
-			original_tag = GER
+		any_of_scopes = {
+			array = subjects
+			tag = GE2
 			has_government = neutrality
-			is_subject_of = HOL
 		}
 	}
 
@@ -2994,14 +3189,15 @@ country_event = {
 	# OK
 	option = {
 		name = mtg_netherlands.74.a
-		random_country = {
-			limit = {
-				original_tag = GER
-				has_government = neutrality
+		GE2 = {
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_free } }
+				create_faction = GER_central_powers_faction
+				add_to_faction = HO0
 			}
-			ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_free } }
-			create_faction = GER_central_powers_faction
-			add_to_faction = HOL
 		}
 	}
 }
@@ -3019,7 +3215,11 @@ country_event = {
 	option = {
 		name = mtg_netherlands.75.a
 		effect_tooltip = {
-			add_opinion_modifier = { target = HOL modifier = HOL_wilhelminism }
+			HO0 = {
+				ROOT = {
+					add_opinion_modifier = { target = PREV modifier = HOL_wilhelminism }
+				}
+			}
 		}
 	}
 }
@@ -3043,35 +3243,36 @@ country_event = {
 				has_dlc = "Waking the Tiger"
 			}
 			hidden_effect = {
-				random_country = {
-					limit = {
-						original_tag = GER
-						has_government = neutrality
+				GE2 = {
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						load_focus_tree = { tree = german_focus keep_completed = no }
+						unlock_national_focus = GER_oppose_hitler
+						unlock_national_focus = GER_secure_the_new_state
+						unlock_national_focus = GER_revive_the_kaiserreich
+						unlock_national_focus = GER_return_of_the_kaiser
+						unlock_national_focus = GER_focus_on_the_true_enemy
+						unlock_national_focus = GER_four_year_plan
+						unlock_national_focus = GER_west_wall
+						unlock_national_focus = GER_atlantikwall 
+						unlock_national_focus = GER_ostwall
+						unlock_national_focus = GER_grosraumwirtschaft
+						unlock_national_focus = GER_align_romania
+						unlock_national_focus = GER_align_hungary
+						unlock_national_focus = GER_autarky
+						unlock_national_focus = GER_autobahn
+						unlock_national_focus = GER_german_war_economy
+						unlock_national_focus = GER_coal_liquidization
+						unlock_national_focus = GER_synthetic_rubber
+						unlock_national_focus = GER_hermann_goring_werke
+						unlock_national_focus = GER_kdf_wagen
+						complete_national_focus = GER_extra_tech_slot
+						unlock_national_focus = GER_air_innovation
+						unlock_national_focus = GER_army_innovation
+						unlock_national_focus = GER_soviet_treaty
 					}
-					load_focus_tree = { tree = german_focus keep_completed = no }
-					unlock_national_focus = GER_oppose_hitler
-					unlock_national_focus = GER_secure_the_new_state
-					unlock_national_focus = GER_revive_the_kaiserreich
-					unlock_national_focus = GER_return_of_the_kaiser
-					unlock_national_focus = GER_focus_on_the_true_enemy
-					unlock_national_focus = GER_four_year_plan
-					unlock_national_focus = GER_west_wall
-					unlock_national_focus = GER_atlantikwall 
-					unlock_national_focus = GER_ostwall
-					unlock_national_focus = GER_grosraumwirtschaft
-					unlock_national_focus = GER_align_romania
-					unlock_national_focus = GER_align_hungary
-					unlock_national_focus = GER_autarky
-					unlock_national_focus = GER_autobahn
-					unlock_national_focus = GER_german_war_economy
-					unlock_national_focus = GER_coal_liquidization
-					unlock_national_focus = GER_synthetic_rubber
-					unlock_national_focus = GER_hermann_goring_werke
-					unlock_national_focus = GER_kdf_wagen
-					complete_national_focus = GER_extra_tech_slot
-					unlock_national_focus = GER_air_innovation
-					unlock_national_focus = GER_army_innovation
-					unlock_national_focus = GER_soviet_treaty
 				}
 			}
 		}
@@ -3126,29 +3327,33 @@ country_event = {
 			}
 			set_global_flag = HOL_benelux_formed
 			set_cosmetic_tag = HOL_benelux_unified
-			BEL = {
+			BE0 = {
 				every_unit_leader = {
 					set_nationality = ROOT
 				}
+				ROOT = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
 			}
-			LUX = {
+			LU0 = {
 				every_unit_leader = {
 					set_nationality = ROOT
 				}
-			}
-			annex_country = {
-			    target = BEL
-			    transfer_troops = yes
-			}
-			annex_country = {
-			    target = LUX
-			    transfer_troops = yes
+				ROOT = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
 			}
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = BEL
-						is_core_of = LUX
+						is_core_of = BE0
+						is_core_of = LU0
 					}
 				}
 				add_core_of = ROOT

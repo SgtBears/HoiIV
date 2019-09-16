@@ -1,0 +1,21 @@
+state = {
+	id=872
+	name="STATE_872"
+	manpower=4100
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = NZL
+		add_core_of = NIU
+		buildings = {
+			infrastructure = 3
+			14256 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		14256
+	}
+}

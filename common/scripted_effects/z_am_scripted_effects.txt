@@ -1,0 +1,226 @@
+
+clear_release_flags = {
+	clr_country_flag = release_as_imperial_associate
+	clr_country_flag = release_as_imperial_protectorate
+	clr_country_flag = release_as_supervised_state
+	clr_country_flag = release_as_satellite
+	clr_country_flag = release_as_reichsprotectorate
+	clr_country_flag = release_as_reichskommissariat
+	clr_country_flag = release_as_dominion
+	clr_country_flag = release_as_colony
+	clr_country_flag = release_as_puppet
+	clr_country_flag = release_as_integrated_puppet
+	clr_country_flag = release_as_free
+	clr_country_flag = release_as_faction_member
+}
+set_government_to_root = {
+	if = {
+		limit = {
+			ROOT = {
+				has_government = communism
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.60
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_government = fascism
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.60
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_government = neutrality
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.60
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_government = monarchism
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = monarchism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.60
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_government = democratic
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.60
+			}
+		}
+	}
+}
+set_government_to_communism = {
+	hidden_effect = {
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.60
+		}
+	}
+}
+set_state_owner_am = {
+	if = {
+		limit = {
+			FROM = { owns_state = var:SAF.OWNSTATE }
+		}
+		var:SAF.VARTAG = { set_state_owner = var:SAF.OWNSTATE }
+	}
+	clear_variable = VARTAG
+	clear_variable = OWNSTATE
+}
+set_state_owner_am_cape_verde = {
+	if = {
+		limit = {
+			FROM = { owns_state = var:SAF.OWNSTATE }
+			NOT = {
+				FROM = {
+					tag = var:SAF.VARTAG
+					tag = var:SAF.NOTTAG1
+					tag = var:SAF.NOTTAG2
+					tag = var:SAF.NOTTAG3
+				}
+			}
+		}
+		var:SAF.VARTAG = { set_state_owner = var:SAF.OWNSTATE }
+	}
+	clear_variable = VARTAG
+	clear_variable = OWNSTATE
+	clear_variable = NOTTAG1
+	clear_variable = NOTTAG2
+	clear_variable = NOTTAG3
+}
+country_exists_release_offer_communism_2states = {
+	if = {
+		limit = {
+			country_exists = var:SAF.VARTAG
+			var:SAF.VARTAG = { NOT = { has_country_flag = african_union_offer } }
+		}
+		var:SAF.VARTAG = { 
+			country_event = { id = am.south_africa.28 }
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { country_exists = var:SAF.VARTAG }
+			OR = {
+				FROM = { owns_state = var:SAF.OWNSTATE1 }
+				FROM = { owns_state = var:SAF.OWNSTATE2 }
+			}
+		}
+		FROM = { release = var:SAF.VARTAG }
+		var:SAF.VARTAG = { 
+			country_event = { id = am.south_africa.31 }
+		}
+	}
+	if = {
+		limit = {
+			FROM = { owns_state = var:SAF.OWNSTATE1 }
+		}
+		var:SAF.VARTAG = { set_state_owner = var:SAF.OWNSTATE1 }
+	}
+	if = {
+		limit = {
+			FROM = { owns_state = var:SAF.OWNSTATE2 }
+		}
+		var:SAF.VARTAG = { set_state_owner = var:SAF.OWNSTATE2 }
+	}
+	clear_variable = VARTAG
+	clear_variable = OWNSTATE1
+	clear_variable = OWNSTATE2
+}
+country_exists_release_offer_communism = {
+	if = {
+		limit = {
+			country_exists = var:SAF.VARTAG
+			var:SAF.VARTAG = { NOT = { has_country_flag = african_union_offer } }
+		}
+		var:SAF.VARTAG = { 
+			country_event = { id = am.south_africa.28 }
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { country_exists = var:SAF.VARTAG }
+			FROM = { owns_state = var:SAF.OWNSTATE }
+		}
+		FROM = { release = var:SAF.VARTAG }
+		var:SAF.VARTAG = { 
+			country_event = { id = am.south_africa.31 }
+		}
+	}
+	if = {
+		limit = {
+			FROM = { owns_state = var:SAF.OWNSTATE }
+		}
+		var:SAF.VARTAG = { set_state_owner = var:SAF.OWNSTATE }
+	}
+	if = {
+		limit = {
+			FROM = { controls_state = var:SAF.OWNSTATE }
+		}
+		var:SAF.VARTAG = { set_state_controller = var:SAF.OWNSTATE }
+	}
+	else = {
+		var:SAF.OWNSTATE = {
+			CONTROLLER = {
+				country_event = { id = am.south_africa.41 }
+			}
+		}
+	}
+	clear_variable = VARTAG
+	clear_variable = OWNSTATE
+}

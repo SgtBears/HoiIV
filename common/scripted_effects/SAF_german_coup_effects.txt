@@ -73,7 +73,7 @@ SAF_german_coup_equipment_GER_fighters_20 = {
 				add_equipment_to_stockpile = {
 					type = fighter_equipment_1
 					amount = 20
-					producer = GER
+					producer = GE0
 				}
 				add_manpower = 300
 			}
@@ -116,7 +116,7 @@ SAF_german_coup_equipment_GER_light_tank_20 = {
 				add_equipment_to_stockpile = {
 					type = light_tank_equipment_1
 					amount = 20
-					producer = GER
+					producer = GE0
 				}
 				add_manpower = 500
 			}
@@ -173,19 +173,18 @@ SAF_german_coup_inf_GER_equipment_200 = {
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
 				amount = -10
-				producer = GER
 			}
 			SAF = {
 				add_manpower = 1000
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
 					amount = 200
-					producer = GER
+					producer = GE0
 				}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 10
-					producer = GER
+					producer = GE0
 				}
 			}
 			if = {
@@ -255,7 +254,7 @@ SAF_german_coup_equipment_HOL_fighters_20 = {
 				add_equipment_to_stockpile = {
 					type = fighter_equipment_1
 					amount = 20
-					producer = HOL
+					producer = HO0
 				}
 				add_manpower = 300
 			}
@@ -298,7 +297,7 @@ SAF_german_coup_equipment_HOL_light_tank_20 = {
 				add_equipment_to_stockpile = {
 					type = light_tank_equipment_1
 					amount = 20
-					producer = HOL
+					producer = HO0
 				}
 				add_manpower = 500
 			}
@@ -355,19 +354,19 @@ SAF_german_coup_inf_HOL_equipment_200 = {
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
 				amount = -10
-				producer = HOL
+				producer = HO0
 			}
 			SAF = {
 				add_manpower = 1000
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
 					amount = 200
-					producer = HOL
+					producer = HO0
 				}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 10
-					producer = HOL
+					producer = HO0
 				}
 			}
 			if = {

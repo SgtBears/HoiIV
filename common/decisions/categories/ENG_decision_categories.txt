@@ -9,7 +9,7 @@ ENG_organize_the_blackshirts = {
 	picture = GFX_decision_cat_picture_organize_the_blackshirts
 	
 	allowed = {
-		tag = ENG
+		original_tag = ENG
 	}
 
 	on_map_area = {
@@ -46,6 +46,8 @@ ENG_appeal_to_imperial_loyalists = {
 			original_tag = CAN
 			original_tag = SAF
 			original_tag = RAJ
+			original_tag = BAN
+			original_tag = PAK
 			original_tag = AST
 			original_tag = NZL
 		}

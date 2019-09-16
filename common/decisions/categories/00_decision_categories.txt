@@ -20,9 +20,106 @@ MTG_naval_treaties = {
 		}
 	}
 }
+colonial_management_am = {
+	allowed = {
+	}
+	visible = {
+	}
+}
 SAF_anti_colonialist_crusade = {
 	allowed = {
-		original_tag = SAF
+	}
+	visible = {
+		OR = {
+			has_country_flag = release_not_local_rulers
+			has_country_flag = release_local_rulers
+		}
+		OR = {
+			AND = {
+				OR = {
+					AND = {
+						has_government = fascism
+						original_tag = JAP
+					}
+					AND = {
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+						original_tag = MAN
+					}
+				}
+				OR = {
+					has_country_flag = release_as_imperial_associate
+					has_country_flag = release_as_imperial_protectorate
+				}
+			}
+			AND = {
+				has_dlc = "Man the Guns"
+				has_government = democratic 
+				has_country_flag = release_as_supervised_state
+			}
+			AND = {
+				has_dlc = "Death or Dishonor"
+				has_government = fascism
+				if = {
+					limit = { has_dlc = "Waking the Tiger" }
+					NOT = { original_tag = JAP }
+					NOT = { original_tag = MAN }
+				}
+				OR = {
+					has_country_flag = release_as_satellite
+					has_country_flag = release_as_reichsprotectorate
+					has_country_flag = release_as_reichskommissariat
+				}
+			}
+			AND = {
+				if = {
+					limit = { has_dlc = "Death or Dishonor" }
+					NOT = { has_government = fascism }
+				}
+				has_country_flag = release_as_puppet
+			}
+			AND = {
+				has_dlc = "Together for Victory"
+
+				if = {
+					limit = { has_dlc = "Death or Dishonor" }
+					NOT = { has_government = fascism }
+				}
+				OR = {
+					has_country_flag = release_as_dominion
+					has_country_flag = release_as_colony
+				}
+			}
+			AND = {
+				has_dlc = "Together for Victory"
+
+				if = {
+					limit = { has_dlc = "Death or Dishonor" }
+					NOT = { has_government = fascism }
+				}
+				if = {
+					limit = {
+						has_dlc = "Waking the Tiger"
+					}
+					OVERLORD = { not = { tag = JAP } }
+				}
+				has_country_flag = release_as_integrated_puppet
+			}
+			has_country_flag = release_as_free
+			has_country_flag = release_as_faction_member
+		}
+		OR = {
+			AND = {
+				has_completed_focus = ENG_revisit_colonial_policy
+				has_country_flag = release_as_dominion
+				original_tag = ENG
+			}
+			NOT = {
+				original_tag = ENG
+			}
+		}
 	}
 }
 
@@ -72,6 +169,8 @@ fascism_on_the_rise = {
 				has_dlc = "Man the Guns"
 				OR = {
 					original_tag = USA
+					original_tag = CSA
+					original_tag = USB
 					original_tag = MEX
 					original_tag = ENG
 				}
@@ -107,6 +206,8 @@ communism_on_the_rise = {
 				has_dlc = "Man the Guns"
 				OR = {
 					original_tag = USA
+					original_tag = CSA
+					original_tag = USB
 					original_tag = MEX
 					original_tag = ENG
 				}

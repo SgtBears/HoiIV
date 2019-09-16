@@ -82,6 +82,12 @@ set_popularities = {
 }
 
 1939.1.1 = {
+	set_popularities = {
+		democratic = 30
+		fascism = 15
+		communism = 15
+		neutrality = 40
+	}
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1936.6.10"
@@ -104,7 +110,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Antanas Snieckus"
 	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
@@ -115,7 +121,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Augustinas Voldemaras"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

@@ -20,6 +20,7 @@ state={
 			564 3
 		}
 		add_core_of = GER
+		add_core_of = WGR
 
 		1939.1.1 = {
 			buildings = {

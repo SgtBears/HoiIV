@@ -1,0 +1,31 @@
+
+state={
+	id=801
+	name="STATE_801"
+	manpower = 120500
+	resources={
+	}
+	
+	state_category = pastoral
+	
+	history={
+		owner = PAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1 
+			air_base = 1
+			4611 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = PAN
+		victory_points = {
+			13321 1
+		}
+
+	}
+
+	provinces={
+		4611 13321 13327 13323 4624 13322 1633
+	}
+}

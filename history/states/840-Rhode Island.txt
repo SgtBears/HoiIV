@@ -1,0 +1,29 @@
+state={
+	id=840
+	name="STATE_840"
+	resources={
+	}
+
+	state_category = pastoral
+
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+
+		}
+		victory_points = {
+			11830 1
+		}
+		add_core_of = USA
+		add_core_of = RHI
+
+	}
+
+	provinces={
+		11830
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+}

@@ -105,7 +105,7 @@ if = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 36
 	elections_allowed = yes
@@ -114,15 +114,21 @@ set_popularities = {
 	democratic = 20
 	fascism = 30
 	communism = 20
-	neutrality = 30
+	monarchism = 30
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = neutrality
+		ruling_party = monarchism
 		last_election = "1939.1.1"
 		election_frequency = 36
 		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 20
+		fascism = 30
+		communism = 20
+		monarchism = 30
 	}
 }
 set_stability = 0.6
@@ -150,11 +156,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Peter Karadordevic"
+	name = "Peter II"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Peter_II.dds.dds"
 	expire = "1965.1.1"
-	ideology = Despotism
+	ideology = royalism
 	traits = {
 		#
 	}

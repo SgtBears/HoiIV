@@ -1,4 +1,4 @@
-﻿capital = 276
+﻿capital = 854
 
 oob = "CAN_1936"
 if = {
@@ -207,7 +207,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tim Buck"
 	desc = "POLITICS_TIM_BUCK_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -218,7 +218,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "J. S. Woodsworth"
 	desc = "POLITICS_JS_WOODSWORTH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -228,6 +228,21 @@ create_country_leader = {
 
 set_convoys = 100
 set_stability = 0.75
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1935.10.14"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	
+	set_popularities = {
+		democratic = 98
+		fascism = 1
+		communism = 1
+	}
+}
 
 create_corps_commander = {
 	name = "Thomas Victor Anderson"

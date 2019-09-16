@@ -26,3 +26,9 @@ SOV_great_patriotic_war = {
 	}
 		
 }
+SOV_ussr_administration = {
+	allowed = {
+		original_tag = SOV
+	}
+		
+}

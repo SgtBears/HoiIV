@@ -1,0 +1,21 @@
+state = {
+	id=828
+	name="STATE_828"
+	manpower=23400
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = USA
+		add_core_of = PUE
+		buildings = {
+			infrastructure = 4
+			4155 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		4155
+	}
+}

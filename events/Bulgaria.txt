@@ -15,15 +15,15 @@ country_event = {
 	
 	option = {
 		name = bulgaria.1.a
-		BUL = { 
+		BU0 = { 
 			transfer_state = 77
 			add_state_core = 77
 		}
 		if = {
 			limit = {
-				77 = { is_core_of = ROM }
+				77 = { is_core_of = RO0 }
 			}
-			ROM = {
+			RO0 = {
 				remove_state_core = 77
 			}
 		}
@@ -44,10 +44,14 @@ country_event = {
 	
 	option = {
 		name = bulgaria.2.a
-		create_wargoal = {
-			type = take_state_focus
-			target = ROM
-			generator = { 77 }
+		RO0 = {
+			ROOT = {
+				create_wargoal = {
+					type = take_state_focus
+					target = PREV
+					generator = { 77 }
+				}
+			}
 		}
 		#generate wargoal for romania
 	}
@@ -67,11 +71,34 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					106 = { is_owned_by = YUG }
-					106 = { is_owned_by = GER }
+					106 = { is_owned_by = YU0 }
+					106 = { is_owned_by = GE0 }
 				}
 			}
 			transfer_state = 106
+			if = {
+				limit = {
+					OR = {
+						864 = { is_owned_by = YUG }
+						864 = { is_owned_by = GER }
+					}
+					ITA = {
+						NOT = { owns_state = 44 }
+					}
+				}
+				BUL = {
+					transfer_state = 864
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					867 = { is_owned_by = YU0 }
+					867 = { is_owned_by = GE0 }
+				}
+			}
+			transfer_state = 867
 		}
 	}
 }
@@ -84,15 +111,15 @@ country_event = {
 	picture = GFX_report_event_vienna_award_negotiations
 	
 	trigger = {
-		tag = BUL
+		original_tag = BUL
 		NOT = { has_country_flag = bulgaria.4_fired }
-		BUL = {
-			NOT = { is_in_faction_with = ROM }
+		BU0 = {
+			NOT = { is_in_faction_with = RO0 }
 		}
-		BUL = {
-			NOT = { is_subject_of = ROM }
+		BU0 = {
+			NOT = { is_subject_of = RO0 }
 		}
-		ROM = {
+		RO0 = {
 			OR = { 
 				has_country_flag = second_vienna_accepted_north
 				has_country_flag = second_vienna_accepted_all
@@ -108,7 +135,7 @@ country_event = {
 	option = {
 		ai_chance = { factor = 10 }
 		name = bulgaria.4.a
-		GER = { country_event = germany.106 }
+		GE0 = { country_event = germany.106 }
 	}	
 	#dont make demands
 	option = {

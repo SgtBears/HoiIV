@@ -498,6 +498,18 @@ USA_recalc_congress_icon_frames = {
 USA_calc_stars = {
 	if = {
 		limit = {
+			has_cosmetic_tag = USA_52
+		}
+		set_cosmetic_tag = USA_53
+	}
+	if = {
+		limit = {
+			has_cosmetic_tag = USA_51
+		}
+		set_cosmetic_tag = USA_52
+	}
+	if = {
+		limit = {
 			has_cosmetic_tag = USA_50
 		}
 		set_cosmetic_tag = USA_51

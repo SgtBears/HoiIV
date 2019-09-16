@@ -18,6 +18,11 @@ state={
 		}
 		add_core_of = SOV
 		add_core_of = AZR
+		add_core_of = GEO
+		1939.1.1 = {
+			remove_core_of = GEO
+
+		}
 
 	}
 

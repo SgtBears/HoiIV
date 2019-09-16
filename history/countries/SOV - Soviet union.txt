@@ -274,6 +274,10 @@ create_faction = Comintern
 add_to_faction = SOV
 add_to_faction = MON
 add_to_faction = TAN
+set_autonomy = {
+	target = TAN
+	autonomy_state = autonomy_integrated_puppet
+}
 
 
 add_ideas = {
@@ -306,13 +310,23 @@ create_country_leader = {
 create_country_leader = {
 	name = "Alexander Fyodorovich Kerensky"
 	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
-	picture = "Portrait_Soviet_Generic_1.dds"
+	picture = "gfx/leaders/SOV/Portrait_SOV_Alexander_Kerensky.tga"
 	expire = "1953.3.1"
 	ideology = socialism
 	traits = {
 		
 	}
 }
+
+#create_country_leader = {
+#	name = "Alexander Guchkov"
+#	picture = "gfx/leaders/SOV/Portrait_SOV_Alexander_Guchkov.tga"
+#	expire = "1953.3.1"
+#	ideology = oligarchism
+#	traits = {
+#		
+#	}
+#}
 
 add_namespace = {
 	name = "unit_leader_sov"

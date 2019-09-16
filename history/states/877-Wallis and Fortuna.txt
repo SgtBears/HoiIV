@@ -1,0 +1,21 @@
+state = {
+	id=877
+	name="STATE_877"
+	manpower=5000
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = FRA
+		add_core_of = WAF
+		buildings = {
+			infrastructure = 2
+			14270 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		14269 14270
+	}
+}

@@ -1,0 +1,76 @@
+﻿###########################
+# Accurate Map Events
+###########################
+
+add_namespace = am.uzbekistan
+
+
+country_event = {
+	id = am.uzbekistan.1
+	title = am.uzbekistan.1.t
+	desc = am.uzbekistan.1.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	trigger = {
+		tag = UZ0
+		has_global_flag = akmal_irkramov_killed
+		has_country_leader = {
+			name = "Akmal Ikramov"
+			ruling_only = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = { #a great idea!
+		name = am.uzbekistan.1.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Usman Yusupov"
+			picture = "gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			traits = {
+				#
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = am.uzbekistan.2
+	title = am.uzbekistan.2.t
+	desc = am.uzbekistan.2.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SO0
+		OR = {
+			AND = {
+				owns_state = 405
+				NOT = { country_exists = UZ0 }
+			}
+			UZ0 = {
+				is_subject_of = SO0
+			}
+		}
+		OR = {
+			has_country_flag = purge_2_group_a
+			has_country_flag = purge_2_group_b
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = { #a great idea!
+		name = am.uzbekistan.2.a
+		set_global_flag = akmal_irkramov_killed
+	}
+
+}

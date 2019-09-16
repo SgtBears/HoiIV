@@ -65,12 +65,13 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 100
+	democratic = 25
+	neutrality = 75
 }
 
 create_country_leader = {
-	name = "Tiburcio Carías Andino"
-	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
+	name = "Tiburcio Carías Andino" # won election legally and became a dictator later
+	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC" 
 	picture = "GFX_portrait_honduras_portrait_tiburcio_carias_andino"
 	expire = "1965.1.1"
 	ideology = conservatism
@@ -78,12 +79,56 @@ create_country_leader = {
 		#
 	}
 }
+create_country_leader = {
+	name = "Tiburcio Carías Andino" # won election legally and became a dictator later
+	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
+	picture = "GFX_portrait_honduras_portrait_tiburcio_carias_andino"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+#create_country_leader = {
+#	name = "José Ángel Zúñiga Huete" # liberal canditate during elections of Tiburcio Carias Andino
+#	desc = ""
+#	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+#	expire = "1965.1.1"
+#	ideology = liberalism
+#	traits = {
+#		#
+#	}
+#}
+create_country_leader = {
+	name = "Ramos Dionisio Bejarano" # founder of communist party of honduras
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Julio Lozano Díaz" # Not really a fascist but was a dictator
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology 
+	traits = {
+		#
+	}
+}
 
 1939.1.1 = {
+	set_popularities = {
+		democratic = 95
+		neutrality = 5
+	}
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = neutrality
 		last_election = "1936.3.28"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 }

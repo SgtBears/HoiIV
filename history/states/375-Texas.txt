@@ -27,11 +27,15 @@ state={
 			}
 		}
 		add_core_of = USA
+		add_core_of = TEX
 		victory_points = {
-			10337 10
+			10337 9
 		}
 		victory_points = {
-			3960 10 
+			3960 9
+		}
+		victory_points = {
+			1927 10 
 		}
 		victory_points = {
 			12782 1 

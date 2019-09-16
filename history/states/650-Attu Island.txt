@@ -2,12 +2,13 @@ state=
 {
 	id=650
 	name="STATE_650"
-	manpower=20
+	manpower=40
 	state_category = tiny_island
 	
 	history=
 	{
 		owner = USA
+		add_core_of = ALS
 		victory_points = {
 			13067 1 
 		}
@@ -16,9 +17,12 @@ state=
 			13067 = {
 				naval_base = 1
 			}
+			14281 = {
+				naval_base = 1
+			}
 		}
 	}
 	provinces=
 	{
-13067 	}
+13067 14281 	}
 }

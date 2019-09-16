@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		PEN_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		PEN_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		PEN_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		PEN_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = PEN
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PEN_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		PEN_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PEN_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		PEN_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = PEN
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PEN_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = PEN
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		PEN_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		PEN_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PEN_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PEN_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PEN_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		PEN_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = PEN
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		PEN_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		PEN_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = PEN
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

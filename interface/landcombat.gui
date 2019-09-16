@@ -198,9 +198,9 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "landcombatview"
-		position = {x=-512 y=-256}
+		position = {x=-300 y=-450} #mod
 		orientation = center
-		size = { width=567 height=617 } # height sum of topbar and bottom bar. The rest is stretched.
+		size = { width=567 height=853 } # height sum of topbar and bottom bar. The rest is stretched. #mod
 		clipping = no
 		moveable = yes
 		click_to_front = yes		
@@ -541,7 +541,7 @@ guiTypes = {
 				name = "committed_window"
 				position = { x = 0 y = 19 }
 				orientation = upper_left
-				size = {width=280 height=175}
+				size = {width=280 height=334} #mod
 				clipping = yes
 				verticalScrollbar = "left_vertical_slider"
 				margin = {top=10 left=0 bottom=0 right=0}				
@@ -563,7 +563,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "attacker_reserves_label"
-				position = { x = 27 y = 194 }
+				position = { x = 27 y = 350 } #mod
 				font = "hoi_18mbs"
 				maxWidth = 245
 				maxHeight = 20
@@ -573,9 +573,9 @@ guiTypes = {
 			
 			containerWindowType = { 
 				name = "reserves_window"
-				position = { x = 1 y = 215 }
+				position = { x = 1 y = 371 } #mod
 				orientation = upper_left
-				size = {width=270 height=80}
+				size = {width=270 height=160} #mod
 				clipping = yes
 				verticalScrollbar = "left_vertical_slider"
 				margin = {top=0 left=0 bottom=0 right=0}				
@@ -588,7 +588,7 @@ guiTypes = {
 				gridBoxType = {
 					name ="list"
 					position = { x = -55 y = 0 }
-					size = { width=270 height=80}
+					size = { width=270 height=160} #mod
 					slotsize = { width = 119 height = 26 }
 					max_slots_horizontal = 2
 					Orientation = "UPPER_LEFT"
@@ -643,7 +643,7 @@ guiTypes = {
 				name = "committed_window"
 				position = { x = 0 y = 19 }
 				orientation = upper_left
-				size = {width=280 height=175}
+				size = {width=280 height=334} #mod
 				clipping = yes
 				verticalScrollbar = "right_vertical_slider"
 				margin = {top=10 left=0 bottom=0 right=0}				
@@ -665,7 +665,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "defender_reserves_label"
-				position = { x = 10 y = 194 }
+				position = { x = 10 y = 350 } #mod
 				font = "hoi_18mbs"
 				maxWidth = 245
 				maxHeight = 20
@@ -675,9 +675,9 @@ guiTypes = {
 			
 			containerWindowType = { 
 				name = "reserves_window"
-				position = { x = 10 y = 215 }
+				position = { x = 10 y = 371 } #mod
 				orientation = upper_left
-				size = {width=270 height=80}
+				size = {width=270 height=160} #mod
 				clipping = yes
 				verticalScrollbar = "right_vertical_slider"
 				margin = {top=0 left=0 bottom=0 right=0}
@@ -690,7 +690,7 @@ guiTypes = {
 				gridBoxType = {
 					name ="list"
 					position = { x = -83 y = 0 }
-					size = { width=270 height=80}
+					size = { width=270 height=160} #mod
 					slotsize = { width = 119 height = 29 }
 					max_slots_horizontal = 2
 					Orientation = "UPPER_LEFT"

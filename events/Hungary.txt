@@ -29,7 +29,7 @@ country_event = {
 	
 	option = {
 		name = hungary.2.a
-		HUN = { 
+		HU5 = { 
 			transfer_state = 76
 		}
 		hidden_effect = {
@@ -49,7 +49,7 @@ country_event = {
 	
 	option = {
 		name = hungary.2.a
-		HUN = { 
+		HU5 = { 
 			transfer_state = 76
 			transfer_state = 83
 			transfer_state = 84
@@ -109,6 +109,32 @@ country_event = {
 	
 	option = {
 		name = hungary.6.a
-		HUN = { transfer_state = 45 }
+		if = {
+			limit = { 
+				OR = {
+					45 = { is_owned_by = YU0 }
+					45 = { is_owned_by = GE0 }
+				}
+			}
+			HU5 = { transfer_state = 45 }
+		}
+		if = {
+			limit = { 
+				OR = {
+					860 = { is_owned_by = YU0 }
+					860 = { is_owned_by = GE0 }
+				}
+			}
+			HU5 = { transfer_state = 860 }
+		}
+		if = {
+			limit = { 
+				OR = {
+					868 = { is_owned_by = YU0 }
+					868 = { is_owned_by = GE0 }
+				}
+			}
+			HU5 = { transfer_state = 868 }
+		}
 	}
 }

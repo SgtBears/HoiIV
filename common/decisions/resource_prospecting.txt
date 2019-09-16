@@ -21,6 +21,12 @@ prospect_for_resources = {
 		visible = {
 			owns_state = 597
 			controls_state = 597
+			NOT = {
+				focus_progress = {
+					focus = JAP_develop_chinese_resources
+					progress > 0.1
+				}
+			}
 			597 = {
 				NOT = {
 					has_state_flag = shandong_aluminium_developed
@@ -69,6 +75,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = JAP_develop_chinese_resources
+					progress > 0.1
+				}
+			}
 			owns_state = 621
 			controls_state = 621
 			621 = {
@@ -219,6 +231,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = JAP_develop_chinese_resources
+					progress > 0.1
+				}
+			}
 			owns_state = 325
 			controls_state = 325
 			325 = {
@@ -255,7 +273,6 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-			NOT = { tag = MAN }
 		}
 
 		available = {
@@ -269,6 +286,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = MAN_develop_aluminum_sources
+					progress > 0.1
+				}
+			}
 			owns_state = 328
 			controls_state = 328
 			328 = {
@@ -319,6 +342,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = JAP_develop_chinese_resources
+					progress > 0.1
+				}
+			}
 			owns_state = 605
 			controls_state = 605
 			605 = {
@@ -356,7 +385,6 @@ prospect_for_resources = {
 		icon = chromium
 
 		allowed = {
-			
 		}
 
 		available = {
@@ -370,6 +398,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = JAP_exploit_the_southern_resource_area
+					progress > 0.1
+				}
+			}
 			owns_state = 623
 			controls_state = 623
 			623 = {
@@ -422,6 +456,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = JAP_exploit_the_southern_resource_area
+					progress > 0.1
+				}
+			}
 			owns_state = 627
 			controls_state = 627
 			627 = {
@@ -474,6 +514,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = JAP_exploit_the_southern_resource_area
+					progress > 0.1
+				}
+			}
 			owns_state = 625
 			controls_state = 625
 			625 = {
@@ -527,6 +573,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = JAP_exploit_the_southern_resource_area
+					progress > 0.1
+				}
+			}
 			owns_state = 725
 			controls_state = 725
 			725 = {
@@ -548,7 +600,7 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = ENG
+				tag = EN0
 				has_war = no
 				factor = 0
 			}
@@ -584,6 +636,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = JAP_exploit_the_southern_resource_area
+					progress > 0.1
+				}
+			}
 			owns_state = 671
 			controls_state = 671
 			671 = {
@@ -627,18 +685,24 @@ prospect_for_resources = {
 		available = {	
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 336
-			controls_state = 336
+			owns_state = 809
+			controls_state = 809
 		}
 
 		highlight_states = {
-			state = 336
+			state = 809
 		}
 
 		visible = {
-			owns_state = 336
-			controls_state = 336
-			336 = {
+			NOT = {
+				focus_progress = {
+					focus = JAP_exploit_the_southern_resource_area
+					progress > 0.1
+				}
+			}
+			owns_state = 809
+			controls_state = 809
+			809 = {
 				NOT = {
 					has_state_flag = singapore_aluminium_developed
 				}
@@ -659,8 +723,8 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			336 = { set_state_flag = singapore_aluminium_developed }
-			336 = {
+			809 = { set_state_flag = singapore_aluminium_developed }
+			809 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
@@ -673,9 +737,6 @@ prospect_for_resources = {
 		icon = oil
 		
 		allowed = {
-			NOT = {
-				tag = ITA
-			}
 		}
 
 		available = {
@@ -690,6 +751,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = ITA_prospect_for_oil
+					progress > 0.1
+				}
+			}
 			owns_state = 662
 			controls_state = 662
 			662 = {
@@ -729,9 +796,6 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-			NOT = {
-				tag = ITA
-			}
 		}
 
 		available = {
@@ -746,6 +810,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = ITA_libyan_refineries
+					progress > 0.1
+				}
+			}
 			owns_state = 450
 			controls_state = 450
 			has_tech = excavation3
@@ -1096,9 +1166,9 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = ENG
+				tag = EN0
 				has_war = no
-				336 = { CONTROLLER = { is_in_faction_with = ROOT } }
+				809 = { CONTROLLER = { is_in_faction_with = ROOT } }
 				factor = 0
 			}
 		}
@@ -1372,7 +1442,7 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = ENG
+				tag = EN0
 				has_war = no
 				date < 1938.1.1
 				factor = 0
@@ -1585,7 +1655,7 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_new_york_aluminium_deposits = { #358
+	develop_new_york_aluminium_deposits = { #850
 		
 		icon = aluminium
 
@@ -1593,19 +1663,19 @@ prospect_for_resources = {
 
 		}
 		highlight_states = {
-			state = 358
+			state = 850
 		}
 		available = {
 			has_tech = construction2
 			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 358
-			controls_state = 358
+			owns_state = 850
+			controls_state = 850
 		}
 
 		visible = {
-			owns_state = 358
-			controls_state = 358
-			358 = {
+			owns_state = 850
+			controls_state = 850
+			850 = {
 				NOT = {
 					has_state_flag = {
 						flag = new_york_aluminium_developed
@@ -1632,7 +1702,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = USA_new_york_aluminium_duration value = 30 }
-			358 = {
+			850 = {
 				if = {
 					limit = {
 						NOT = {
@@ -1651,7 +1721,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			358 = {
+			850 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
@@ -2437,7 +2507,7 @@ prospect_for_resources = {
 		}
 	}
 
-	develop_california_chromium_deposits = { #378
+	develop_california_chromium_deposits = { #845
 		
 		icon = chromium
 
@@ -2446,21 +2516,21 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
-			state = 378
+			state = 845
 		}
 
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 378
-			controls_state = 378
+			owns_state = 845
+			controls_state = 845
 		}
 
 		visible = {
-			owns_state = 378
-			controls_state = 378
+			owns_state = 845
+			controls_state = 845
 			has_tech = excavation3
-			378 = {
+			845 = {
 				NOT = {
 					has_state_flag = { 
 						flag = california_chromium_developed 
@@ -2487,7 +2557,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = USA_california_chromium_duration value = 30 }
-			378 = {
+			845 = {
 				if = {
 					limit = {
 						NOT = {
@@ -2506,7 +2576,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			378 = {
+			845 = {
 				add_resource = {
 					type = chromium
 					amount = 6
@@ -2658,7 +2728,7 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = ENG
+				tag = EN0
 				has_war = no
 				factor = 0
 			}
@@ -3921,6 +3991,12 @@ prospect_for_resources = {
 		}
 
 		visible = {
+			NOT = {
+				focus_progress = {
+					focus = MAN_expand_showa_steel_works
+					progress > 0.1
+				}
+			}
 			owns_state = 716
 			controls_state = 716
 			716 = {

@@ -1,0 +1,24 @@
+state={
+	id=796
+	name="STATE_796"
+	
+	state_category = wasteland
+
+	history={
+		owner = CAN
+		victory_points = { 7869 1 }
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAN
+		add_core_of = BCL
+
+	}
+
+	provinces={
+		7869 13882 13883
+	}
+	manpower=2457
+	buildings_max_level_factor=1.000
+}

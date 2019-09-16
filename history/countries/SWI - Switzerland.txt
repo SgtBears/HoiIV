@@ -85,6 +85,12 @@ set_popularities = {
 		fascism = 2
 		communism = 3
 	}
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1935.10.27"
+		election_frequency = 48
+		elections_allowed = yes
+	}
 }
 
 add_ideas = {

@@ -328,6 +328,11 @@ ideas = {
 					air_attack = 0.05
 					instant = yes
 				}
+				jet_fighter_equipment = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
 				cv_fighter_equipment = {
 					air_range = 0.1
 					air_attack = 0.05
@@ -358,12 +363,22 @@ ideas = {
 					air_ground_attack = 0.05
 					instant = yes
 				}
+				jet_tac_bomber_equipment = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
 				heavy_fighter_equipment = {
 					air_range = 0.1
 					air_attack = 0.05
 					instant = yes
 				}
 				strat_bomber_equipment = {
+					air_range = 0.1
+					air_bombing = 0.05
+					instant = yes
+				}
+				jet_strat_bomber_equipment = {
 					air_range = 0.1
 					air_bombing = 0.05
 					instant = yes
@@ -562,6 +577,11 @@ ideas = {
 				
 			}
 
+			visible = {
+				NOT = { has_completed_focus = CAN_strengthen_the_commonwealth_ties }
+				NOT = { has_completed_focus = CAN_permanent_joint_defense_board }
+				NOT = { has_completed_focus = CAN_burn_the_royal_portraits }
+			}
 			available = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
@@ -595,6 +615,10 @@ ideas = {
 				
 			}
 
+			visible = {
+				NOT = { has_completed_focus = CAN_swastika_clubs }
+				NOT = { has_completed_focus = CAN_burn_the_royal_portraits }
+			}
 			available = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
@@ -631,6 +655,11 @@ ideas = {
 				
 			}
 
+			visible = {
+				NOT = { has_completed_focus = CAN_strengthen_the_commonwealth_ties }
+				NOT = { has_completed_focus = CAN_permanent_joint_defense_board }
+				NOT = { has_completed_focus = CAN_swastika_clubs }
+			}
 			available = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
@@ -719,6 +748,10 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
+			visible = {
+				NOT = { has_completed_focus = CAN_national_steel_car }
+				NOT = { has_completed_focus = CAN_compromise_with_quebec }
+			}
 			allowed = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"

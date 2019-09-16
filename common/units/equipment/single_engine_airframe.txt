@@ -276,11 +276,13 @@ equipments = {
 		is_convertable = yes
 		picture = archetype_fighter_equipment
 		is_buildable = no
-		type = fighter
+		type = { fighter interceptor }
 		group_by = archetype
 		sprite = jet_plane
 		air_map_icon_frame = 4
 		
+		#Space taken in convoy
+		lend_lease_cost = 8
 		interface_category = interface_category_air
 		
 		# Fighter
@@ -418,7 +420,7 @@ equipments = {
 		
 		air_range = 1200
 		maximum_speed = 950
-		air_agility = 72
+		air_agility = 80
 		air_attack = 36
 		air_defence = 15
 		
@@ -434,7 +436,7 @@ equipments = {
 		
 		air_range = 2200
 		maximum_speed = 1100
-		air_agility = 72
+		air_agility = 80
 		air_attack = 40
 		air_defence = 18
 

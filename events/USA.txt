@@ -14,7 +14,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = USA
+		OR = {
+			original_tag = USA
+			original_tag = USB
+			original_tag = CSA
+		}
 		has_war = yes
 		NOT = { has_global_flag = earhart_disappeared }
 	}
@@ -50,8 +54,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = JAP
-		USA = {
+		original_tag = JAP
+		US0 = {
 			focus_progress = {
 				focus = USA_pearl_harbor_gambit
 				progress > 0.1
@@ -63,7 +67,7 @@ country_event = {
 		days = 21
 		modifier = {
 			factor = 0.5
-			USA = {
+			US0 = {
 				focus_progress = {
 					focus = USA_pearl_harbor_gambit
 					progress > 0.6
@@ -74,13 +78,15 @@ country_event = {
 
 	option = {
 		name = usa.3.a
-		USA = {
+		US0 = {
 			add_war_support = 0.5
-		}
-		create_wargoal = {
-			type = take_state
-			target = USA
-			generator = { 629 } # Hawaii
+			ROOT = {
+				create_wargoal = {
+					type = take_state
+					target = PREV
+					generator = { 629 } # Hawaii
+				}
+			}
 		}
 	}
 }
@@ -100,51 +106,51 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = { not = { has_dlc = "Man the Guns" } }
-				ENG = {	load_oob = "ENG_destroyers_for_bases" }
-				CAN = { load_oob = "CAN_destroyers_for_bases" }
+				EN0 = {	load_oob = "ENG_destroyers_for_bases" }
+				CA0 = { load_oob = "CAN_destroyers_for_bases" }
 			}
 			else = {
-				ENG = {	load_oob = "ENG_destroyers_for_bases_mtg" }
-				CAN = { load_oob = "CAN_destroyers_for_bases_mtg" }
+				EN0 = {	load_oob = "ENG_destroyers_for_bases_mtg" }
+				CA0 = { load_oob = "CAN_destroyers_for_bases_mtg" }
 			}
-			ENG = {
-				if = { limit = { 696 = { is_controlled_by = ENG } }
+			EN0 = {
+				if = { limit = { 696 = { is_controlled_by = EN0 } }
 					remove_state_core = 696
 				}
-				if = { limit = { 331 = { is_controlled_by = ENG } }
+				if = { limit = { 331 = { is_controlled_by = EN0 } }
 					remove_state_core = 331
 				}
-				if = { limit = { 308 = { is_controlled_by = ENG } } 
+				if = { limit = { 308 = { is_controlled_by = EN0 } } 
 					remove_state_core = 308
 				}
-				if = { limit = { 693 = { is_controlled_by = ENG } } 
+				if = { limit = { 693 = { is_controlled_by = EN0 } } 
 					remove_state_core = 693
 				}
-				if = { limit = { 689 = { is_controlled_by = ENG } } 
+				if = { limit = { 689 = { is_controlled_by = EN0 } } 
 					remove_state_core = 689
 				}
-				if = { limit = { 691 = { is_controlled_by = ENG } } 
+				if = { limit = { 691 = { is_controlled_by = EN0 } } 
 					remove_state_core = 691
 				}
 			}
 		}
-		USA = {
-			if = { limit = { 696 = { is_controlled_by = ENG } }
+		US0 = {
+			if = { limit = { 696 = { is_controlled_by = EN0 } }
 				transfer_state = 696
 			}
-			if = { limit = { 331 = { is_controlled_by = ENG } }
+			if = { limit = { 331 = { is_controlled_by = EN0 } }
 				transfer_state = 331
 			}
-			if = { limit = { 308 = { is_controlled_by = ENG } } 
+			if = { limit = { 308 = { is_controlled_by = EN0 } } 
 				transfer_state = 308
 			}
-			if = { limit = { 693 = { is_controlled_by = ENG } } 
+			if = { limit = { 693 = { is_controlled_by = EN0 } } 
 				transfer_state = 693
 			}
-			if = { limit = { 689 = { is_controlled_by = ENG } } 
+			if = { limit = { 689 = { is_controlled_by = EN0 } } 
 				transfer_state = 689
 			}
-			if = { limit = { 691 = { is_controlled_by = ENG } } 
+			if = { limit = { 691 = { is_controlled_by = EN0 } } 
 				transfer_state = 691
 			}
 			add_opinion_modifier = {
@@ -157,7 +163,7 @@ country_event = {
 
 	option = {
 		name = usa.4.b
-		USA = { country_event = { id = usa.5 days = 1 } }
+		US0 = { country_event = { id = usa.5 days = 1 } }
 		ai_chance = { factor = 0 }
 	}
 
@@ -174,6 +180,7 @@ country_event = {
 	
 	option = { 
 		name = usa.401.a
+		set_country_flag = britain_accepted_destroyers_for_bases
 	}
 }
 
@@ -201,7 +208,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = USA
+		original_tag = USA
 		democratic > 0.5
 		date > 1936.1.1
 		date < 1937.1.1
@@ -317,7 +324,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = USA
+		original_tag = USA
 		democratic > 0.5
 		date > 1940.1.1
 		date < 1941.1.1
@@ -408,7 +415,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = USA
+		original_tag = USA
 		democratic > 0.5
 		date > 1940.1.1
 		date < 1941.1.1
@@ -495,7 +502,7 @@ country_event = {
 		}
 	}
 	trigger = {
-		tag = USA
+		original_tag = USA
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
@@ -585,7 +592,7 @@ country_event = {
 		}
 	}
 	trigger = {
-		tag = USA
+		original_tag = USA
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
@@ -659,7 +666,7 @@ country_event = {
 		}
 	}
 	trigger = {
-		tag = USA
+		original_tag = USA
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
@@ -738,7 +745,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = USA
+		original_tag = USA
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
@@ -765,7 +772,7 @@ country_event = {
 	picture = GFX_report_event_usa_funeral
 
 	trigger = {
-		tag = USA
+		original_tag = USA
 		date > 1945.3.29
 		has_idea = new_deal
 		has_government = democratic
@@ -804,7 +811,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = USA
+		original_tag = USA
 		has_government = fascism
 		is_puppet = no
 	}
@@ -824,21 +831,27 @@ country_event = {
 		add_timed_idea = { idea = fascism_defeated days = 730 }
 		if = {
 			limit = {
-				ENG = {
+				EN0 = {
 					is_faction_leader = yes
-					NOT = { has_war_with = USA }
+					NOT = { has_war_with = US0 }
 				}
 			}
-			ENG = { add_to_faction = USA }
-			USA = {
-				add_ai_strategy = {
-					type = alliance
-					id = "ENG"
-					value = 200
+			EN0 = { add_to_faction = US0 }
+			EN0 = {
+				US0 = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 200
+					}
 				}
 			}
 		}
-		add_opinion_modifier = { target = GER modifier = unholy_alliance }
+		GE0 = {
+			ROOT = {
+				add_opinion_modifier = { target = PREV modifier = unholy_alliance }
+			}
+		}
 	}
 
 	option = {
@@ -862,7 +875,7 @@ country_event = {
 
 	immediate = {
 		save_event_target_as = being_attacked
-		USA = {
+		US0 = {
 			country_event = { id = usa.17 }
 		}
 	}
@@ -886,12 +899,10 @@ country_event = {
 			factor = 20			
 			modifier = {
 				factor = 0.2
-				FROM = {
-					FROM = {
-						strength_ratio = {
-							tag = USA
-							ratio > 0.8
-						}
+				FROM.FROM = {
+					strength_ratio = {
+						tag = US0
+						ratio > 0.8
 					}
 				}
 			}		
@@ -909,12 +920,10 @@ country_event = {
 			factor = 5
 			modifier = {
 				factor = 0
-				FROM = {
-					FROM = {
-						strength_ratio = {
-							tag = USA
-							ratio < 0.5
-						}
+				FROM.FROM = {
+					strength_ratio = {
+						tag = US0
+						ratio < 0.5
 					}
 				}
 			}
@@ -940,7 +949,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				strength_ratio = {
-					tag = USA
+					tag = US0
 					ratio < 0.7
 				}
 				is_in_faction = yes
@@ -948,7 +957,7 @@ country_event = {
 			modifier = {
 				factor = 5
 				strength_ratio = {
-					tag = USA
+					tag = US0
 					ratio > 0.7
 				}
 			}
@@ -963,12 +972,6 @@ country_event = {
 				}
 			}
 		}
-
-		#ROOT = {
-		#	declare_war_on = {
-		#		target = FROM
-		#	}
-		#}
 		hidden_effect = {
 			news_event = { id = news.157 days = 2 }
 		}
@@ -983,7 +986,7 @@ country_event = {
 			modifier = {
 				factor = 10
 				strength_ratio = {
-					tag = USA
+					tag = US0
 					ratio < 0.7
 				}
 				is_in_faction = no
@@ -1006,7 +1009,7 @@ country_event = {
 	hidden = yes
 
 	immediate = {
-		USA = {
+		US0 = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = ROOT
@@ -1100,7 +1103,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = USA
+		original_tag = USA
 		has_government = communism 
 		is_puppet = no
 	}
@@ -1120,22 +1123,32 @@ country_event = {
 		add_timed_idea = { idea = communism_defeated days = 730 }
 		if = {
 			limit = {
-				ENG = {
+				EN0 = {
 					is_faction_leader = yes
-					NOT = { has_war_with = USA }
+					NOT = { has_war_with = US0 }
 				}
 			}
-			ENG = { add_to_faction = USA }
-			USA = {
-				add_ai_strategy = {
-					type = alliance
-					id = "ENG"
-					value = 200
+			EN0 = { add_to_faction = US0 }
+			EN0 = {
+				US0 = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 200
+					}
 				}
 			}
 		}
-		add_opinion_modifier = { target = GER modifier = unholy_alliance }
-		add_opinion_modifier = { target = SOV modifier = unholy_alliance }
+		GE0 = {
+			ROOT = {
+				add_opinion_modifier = { target = PREV modifier = unholy_alliance }
+			}
+		}
+		SO0 = {
+			ROOT = {
+				add_opinion_modifier = { target = PREV modifier = unholy_alliance }
+			}
+		}
 	}
 
 	option = {
@@ -1258,7 +1271,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1285,7 +1298,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1314,7 +1327,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1341,7 +1354,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1369,7 +1382,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1396,7 +1409,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1424,7 +1437,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1451,7 +1464,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1476,7 +1489,7 @@ country_event = {
 	Hidden = yes
 	is_triggered_only = yes
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1560,7 +1573,7 @@ country_event = {
 	Hidden = yes
 	is_triggered_only = yes
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1648,7 +1661,7 @@ country_event = {
 	hidden = yes
 	is_triggered_only = yes
 	trigger = {
-		tag = USA
+		original_tag = USA
 		NOT = {
 			OR = {
 				has_completed_focus = USA_voter_registration_act
@@ -1679,19 +1692,1274 @@ country_event = {
 					}
 					factor = 0
 				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = no
+				random_list = {
+					6 = {
+						modifier = {
+							NOT = {
+								386 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						386 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
 						}
 					}
-					
-					save_global_event_target_as = USA_congress_investment_state
-					state_event = { id = usa.61 trigger_for = controller }
+					6 = {
+						modifier = {
+							NOT = {
+								385 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						385 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								379 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						379 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								377 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						377 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								380 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						380 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								381 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						381 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								387 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						387 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								388 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						388 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								376 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						376 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								382 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						382 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								389 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						389 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								390 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						390 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								384 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						384 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								383 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						383 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								391 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						391 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								392 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						392 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								394 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						394 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								373 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						373 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								374 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						374 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								375 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						375 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								372 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						372 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								371 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						371 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								370 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						370 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								368 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						368 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								367 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						367 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								366 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						366 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								365 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						365 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								364 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						364 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								363 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						363 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								362 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						362 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								838 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						838 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								369 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						369 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								396 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						396 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								261 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						261 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								849 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						849 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								837 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						837 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								359 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						359 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								357 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						357 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								839 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						839 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								842 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						842 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								843 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						843 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								841 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						841 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								840 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						840 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								686 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						686 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								629 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						629 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								845 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						845 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								378 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						378 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								395 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						395 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								846 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						846 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								358 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						358 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								850 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						850 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								463 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						463 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								844 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						844 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								851 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						851 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								852 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						852 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								360 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						360 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								has_global_flag = washington_made_state
+								361 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						361 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								848 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						848 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								847 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						847 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								393 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						393 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								848 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						848 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								847 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						847 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								393 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						393 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.61 trigger_for = controller }
+						}
+					}
 				}
 			}
 			25 = {
@@ -1713,18 +2981,1274 @@ country_event = {
 					has_completed_focus = USA_military_construction
 					factor = 2
 				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = no
+				random_list = {
+					6 = {
+						modifier = {
+							NOT = {
+								386 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						386 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
 						}
 					}
-					save_global_event_target_as = USA_congress_investment_state
-					state_event = { id = usa.62 trigger_for = controller }
+					6 = {
+						modifier = {
+							NOT = {
+								385 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						385 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								379 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						379 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								377 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						377 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								380 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						380 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								381 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						381 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								387 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						387 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								388 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						388 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								376 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						376 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								382 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						382 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								389 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						389 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								390 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						390 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								384 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						384 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								383 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						383 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								391 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						391 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								392 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						392 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								394 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						394 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								373 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						373 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								374 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						374 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								375 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						375 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								372 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						372 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								371 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						371 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								370 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						370 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								368 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						368 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								367 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						367 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								366 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						366 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								365 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						365 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								364 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						364 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								363 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						363 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								362 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						362 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								838 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						838 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								369 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						369 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								396 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						396 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								261 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						261 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								849 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						849 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								837 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						837 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								359 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						359 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								357 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						357 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								839 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						839 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								842 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						842 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								843 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						843 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								841 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						841 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								840 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						840 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								686 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						686 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								629 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						629 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								845 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						845 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								378 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						378 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								395 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						395 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								846 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						846 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								358 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						358 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								850 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						850 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								463 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						463 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								844 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						844 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								851 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						851 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								852 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						852 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								360 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						360 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								has_global_flag = washington_made_state
+								361 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						361 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								848 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						848 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								847 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						847 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								393 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						393 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								848 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						848 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								847 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						847 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								393 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						393 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.62 trigger_for = controller }
+						}
+					}
 				}
 			}
 			25 = { 
@@ -1743,18 +4267,1337 @@ country_event = {
 					}
 					factor = 0
 				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = no
+				random_list = {
+					6 = {
+						modifier = {
+							NOT = {
+								386 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						386 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
 						}
 					}
-					save_global_event_target_as = USA_congress_investment_state
-					state_event = { id = usa.64 trigger_for = controller }
+					6 = {
+						modifier = {
+							NOT = {
+								385 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						385 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								379 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						379 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								377 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						377 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								380 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						380 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								381 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						381 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								387 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						387 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								388 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						388 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								376 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						376 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								382 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						382 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								389 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						389 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								390 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						390 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								384 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						384 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								383 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						383 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								391 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						391 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								392 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						392 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								394 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						394 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								373 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						373 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								374 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						374 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								375 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						375 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								372 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						372 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								371 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						371 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								370 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						370 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								368 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						368 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								367 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						367 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								366 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						366 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								365 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						365 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								364 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						364 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								363 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						363 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								362 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						362 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								838 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						838 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								369 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						369 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								396 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						396 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								261 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						261 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								849 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						849 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								837 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						837 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								359 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						359 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								357 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						357 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								839 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						839 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								842 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						842 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								843 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						843 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								841 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						841 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								840 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						840 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								686 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						686 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								629 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						629 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								845 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						845 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								378 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						378 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								395 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						395 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								846 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						846 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								358 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						358 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								850 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						850 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								463 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						463 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								844 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						844 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								851 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						851 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								852 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						852 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								360 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						360 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								has_global_flag = washington_made_state
+								361 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						361 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								848 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						848 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								847 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						847 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								393 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						393 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								848 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						848 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								847 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						847 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								393 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						393 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.64 trigger_for = controller }
+						}
+					}
 				}
 			}
 			25 = {
@@ -1775,18 +5618,1274 @@ country_event = {
 					has_completed_focus = USA_USACE_projects
 					factor = 2
 				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = no
+				random_list = {
+					6 = {
+						modifier = {
+							NOT = {
+								386 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						386 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
 						}
 					}
-					save_global_event_target_as = USA_congress_investment_state
-					state_event = { id = usa.63 trigger_for = controller }
+					6 = {
+						modifier = {
+							NOT = {
+								385 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						385 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								379 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						379 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								377 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						377 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								380 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						380 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								381 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						381 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								387 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						387 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								388 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						388 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								376 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						376 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								382 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						382 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								389 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						389 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								390 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						390 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								384 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						384 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								383 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						383 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								391 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						391 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								392 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						392 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								394 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						394 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								373 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						373 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								374 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						374 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								375 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						375 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								372 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						372 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								371 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						371 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								370 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						370 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								368 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						368 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								367 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						367 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								366 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						366 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								365 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						365 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								364 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						364 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								363 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						363 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								362 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						362 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								838 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						838 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								369 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						369 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								396 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						396 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								261 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						261 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								849 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						849 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								837 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						837 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								359 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						359 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								357 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						357 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								839 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						839 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								842 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						842 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								843 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						843 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								841 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						841 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								840 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						840 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								686 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						686 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								629 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						629 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								845 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						845 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								378 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						378 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								395 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						395 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								846 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						846 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								358 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						358 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								850 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						850 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								463 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						463 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								844 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						844 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								851 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						851 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								852 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						852 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							NOT = {
+								360 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						360 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								has_global_flag = washington_made_state
+								361 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						361 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					6 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								848 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						848 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								847 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						847 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					3 = {
+						modifier = {
+							NOT = {
+								has_global_flag = superior_made_state
+								393 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						393 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								848 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						848 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								847 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						847 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
+					2 = {
+						modifier = {
+							has_global_flag = superior_made_state
+							NOT = {
+								393 = {
+									is_core_of = ROOT
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+								}
+							}
+							factor = 0
+						}
+						393 = {
+							save_global_event_target_as = USA_congress_investment_state
+							state_event = { id = usa.63 trigger_for = controller }
+						}
+					}
 				}
 			}
 		}

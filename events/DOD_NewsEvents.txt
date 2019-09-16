@@ -14,31 +14,31 @@ news_event = {
 	option = {
 		name = dod_news.1.a
 		trigger = {
-			TAG = CZE
+			original_tag = CZE
 		}
 	}
 	option = {
 		name = dod_news.1.b
 		trigger = {
 			OR = {
-				TAG = ROM
-				TAG = YUG
+				original_tag = ROM
+				original_tag = YUG
 			}
 		}
 	}
 	option = {
 		name = dod_news.1.c
 		trigger = {
-			TAG = HUN
+			original_tag = HUN
 		}
 	}
 	option = {
 		name = dod_news.1.e
 		trigger = {
 			OR = {
-				TAG = GER
-				TAG = SOV
-				TAG = ITA
+				original_tag = GER
+				original_tag = SOV
+				original_tag = ITA
 			}
 		}
 	}
@@ -46,13 +46,13 @@ news_event = {
 		name = dod_news.1.f
 		trigger = {
 			NOT = {
-				TAG = GER
-				TAG = SOV
-				TAG = ITA
-				TAG = CZE
-				TAG = ROM
-				TAG = YUG
-				TAG = HUN
+				original_tag = GER
+				original_tag = SOV
+				original_tag = ITA
+				original_tag = CZE
+				original_tag = ROM
+				original_tag = YUG
+				original_tag = HUN
 			}
 		}
 	}
@@ -72,22 +72,22 @@ news_event = {
 	option = {
 		name = dod_news.2.a
 		trigger = {
-			TAG = CZE
+			original_tag = CZE
 		}
 	}
 	option = {
 		name = dod_news.2.b
 		trigger = {
-			is_in_faction_with = CZE
-			NOT = { TAG = CZE }
+			is_in_faction_with = CZ0
+			NOT = { original_tag = CZE }
 		}
 	}
 	option = {
 		name = dod_news.2.c
 		trigger = {
 			NOT = { 
-				TAG = CZE
-				is_in_faction_with = CZE 
+				original_tag = CZE
+				is_in_faction_with = CZ0 
 			}
 		}
 	}
@@ -107,22 +107,22 @@ news_event = {
 	option = {
 		name = dod_news.2.a
 		trigger = {
-			TAG = CZE
+			original_tag = CZE
 		}
 	}
 	option = {
 		name = dod_news.2.b
 		trigger = {
-			is_in_faction_with = CZE
-			NOT = { TAG = CZE }
+			is_in_faction_with = CZ0 
+			NOT = { original_tag = CZE }
 		}
 	}
 	option = {
 		name = dod_news.2.c
 		trigger = {
 			NOT = { 
-				TAG = CZE
-				is_in_faction_with = CZE 
+				original_tag = CZE
+				is_in_faction_with = CZ0
 			}
 		}
 	}
@@ -142,32 +142,32 @@ news_event = {
 	option = {
 		name = dod_news.4.a
 		trigger = {
-			TAG = CZE
+			original_tag = CZE
 		}
 	}
 	option = {
 		name = dod_news.4.b
 		trigger = {
-			TAG = GER
+			original_tag = GER
 		}
 	}
 	option = {
 		name = dod_news.4.c
 		trigger = {
-			is_in_faction_with = GER
+			is_in_faction_with = GE0 
 			NOT = {
-				TAG = GER
+				original_tag = GER
 			}
-			NOT = { TAG = CZE }
+			NOT = { original_tag = CZE }
 		}
 	}
 	option = {
 		name = dod_news.4.e
 		trigger = {
 			NOT = { 
-				TAG = CZE
-				TAG = GER
-				is_in_faction_with = GER
+				original_tag = CZE
+				original_tag = GER
+				is_in_faction_with = GE0
 			}
 		}
 	}

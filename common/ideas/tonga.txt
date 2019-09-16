@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		TON_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		TON_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		TON_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		TON_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = TON
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		TON_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		TON_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		TON_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		TON_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = TON
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		TON_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = TON
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		TON_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		TON_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		TON_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		TON_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		TON_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		TON_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = TON
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		TON_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		TON_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = TON
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

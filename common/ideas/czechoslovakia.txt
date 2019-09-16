@@ -190,6 +190,9 @@ ideas = {
 				fighter_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				jet_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 		
@@ -554,6 +557,10 @@ ideas = {
 			allowed = {
 				original_tag = CZE
 			}
+			visible = {
+				NOT = { has_completed_focus = CZE_go_right }
+				NOT = { has_completed_focus = CZE_go_left }
+			}
 			available = {
 				if = { 
 					limit = { has_dlc = "Death or Dishonor" }
@@ -580,6 +587,10 @@ ideas = {
 				original_tag = CZE
 			}
 
+			visible = {
+				NOT = { has_completed_focus = CZE_go_right }
+				NOT = { has_completed_focus = CZE_democratic_bastion }
+			}
 			available = {
 				if = {
 					limit = { has_dlc = "Death or Dishonor" }
@@ -606,6 +617,10 @@ ideas = {
 				original_tag = CZE
 			}
 
+			visible = {
+				NOT = { has_completed_focus = CZE_go_left }
+				NOT = { has_completed_focus = CZE_democratic_bastion }
+			}
 			available = {
 				if = {
 					limit = { has_dlc = "Death or Dishonor" }

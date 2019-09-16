@@ -1702,9 +1702,33 @@ spriteTypes = {
 		name = "GFX_flexible_line_medium"
 		texturefile = "gfx/interface/technologies/flexible_line.dds"
 	}
+	SpriteType = {
+		name = "GFX_flexible_line_2_medium"
+		texturefile = "gfx/interface/technologies/flexible_line.dds"
+	}
+	SpriteType = {
+		name = "GFX_flexible_line_3_medium"
+		texturefile = "gfx/interface/technologies/flexible_line.dds"
+	}
+	SpriteType = {
+		name = "GFX_flexible_line_4_medium"
+		texturefile = "gfx/interface/technologies/flexible_line.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_streamlined_line_medium"
+		texturefile = "gfx/interface/technologies/streamlined_line.dds"
+	}	
+	SpriteType = {
+		name = "GFX_streamlined_line_2_medium"
+		texturefile = "gfx/interface/technologies/streamlined_line.dds"
+	}	
+	SpriteType = {
+		name = "GFX_streamlined_line_3_medium"
+		texturefile = "gfx/interface/technologies/streamlined_line.dds"
+	}	
+	SpriteType = {
+		name = "GFX_streamlined_line_4_medium"
 		texturefile = "gfx/interface/technologies/streamlined_line.dds"
 	}	
 	

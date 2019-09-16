@@ -1,0 +1,27 @@
+
+state={
+	id=834
+	name="STATE_834"
+	manpower = 122310
+	
+	
+	state_category = pastoral
+	
+	resources={
+	}
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 6
+		}
+		victory_points = {
+			3612 1
+		}
+		add_core_of = SWI
+	}
+
+	provinces={
+		3612
+	}
+}

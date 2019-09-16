@@ -1,0 +1,206 @@
+greenland = {
+	
+	sgr_usa_protectorate = {
+
+		icon = generic_civil_support
+
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_civil_war = yes
+			}
+			SG0 = { is_subject = no }
+			US0 = { is_subject = no }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1941.1.1
+			}
+		}
+
+		visible = {
+			OR = {
+				AND = {
+					US0 = { 
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+					}
+					SG0 = { 
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+					}
+				}
+				AND = {
+					US0 = { 
+						has_government = fascism
+					}
+					SG0 = { 
+						has_government = fascism
+					}
+				}
+				AND = {
+					US0 = { 
+						has_government = communism
+					}
+					SG0 = { 
+						has_government = communism
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			US0 = {
+				country_event = am.greenland.3
+			}
+			custom_effect_tooltip = greenland_to_usa_tooltip
+		}
+	}
+	sgr_den_protectorate = {
+
+		icon = generic_civil_support
+		fire_only_once = yes
+		
+		available = {
+			OR = {
+				is_subject = no
+				is_subject_of = US0
+			}
+			NOT = {
+				has_civil_war = yes
+				has_war = yes
+			}
+			DE0 = {
+				is_subject = no
+				NOT = {
+					has_war = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			OR = {
+				AND = {
+					DE0 = { 
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+					}
+					SG0 = { 
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+					}
+				}
+				AND = {
+					DE0 = { 
+						has_government = fascism
+					}
+					SG0 = { 
+						has_government = fascism
+					}
+				}
+				AND = {
+					DE0 = { 
+						has_government = communism
+					}
+					SG0 = { 
+						has_government = communism
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			DE0 = {
+				country_event = am.greenland.2
+			}
+		}
+	}
+}
+greenland2 = {
+	occupy_greenland = {
+
+		icon = generic_operation
+	
+		allowed = {
+			OR = {
+				original_tag = CAN
+				original_tag = NOR
+				original_tag = ENG
+				original_tag = USA
+				original_tag = USB
+				original_tag = CSA
+			}
+		}
+		
+		available = {
+			US0 = { is_in_faction_with = ROOT }
+			SG0 = { exists = yes }
+			SG0 = {
+				is_subject = no
+			}
+			has_war_with = GE0
+			NO0 = { has_capitulated = yes }
+			OR = {
+				AND = {
+					tag = EN0
+					has_government = democratic
+					is_in_faction_with = NO0
+				}
+				AND = {
+					tag = CA0
+					is_in_faction_with = NO0
+				}
+				AND = {
+					tag = NO0
+					is_in_faction_with = CA0
+				}
+			}
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			OR = {
+				AND = {
+					OR = {
+						original_tag = USB
+						original_tag = CSA
+					}
+					tag = US0
+				}
+				AND = {
+					NOT = {
+						original_tag = USB
+						original_tag = CSA
+					}
+				}
+			}
+			has_war_with = GE0
+			NOT = { SG0 = { is_in_faction_with = ROOT } }
+		}
+		
+		complete_effect = {
+			SG0 = { ROOT = { declare_war_on = { target = PREV type = puppet_wargoal_focus } } }
+			add_popularity = { ideology = democratic popularity = -0.01 }
+		}
+	}
+}

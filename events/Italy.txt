@@ -15,9 +15,13 @@ country_event = {
 	
 	option = {
 		name = italy.1.a
-		annex_country = { target = ALB }
+		AL0 = {
+			ROOT = {
+				annex_country = { target = PREV }
+			}
+		}
 		add_named_threat = { threat = 2 name = ITA_albania_war_goal }
-		USA = {
+		US0 = {
 			set_country_flag = { flag = USA_albania_window days = 60 value = 1 }
 		}
 		hidden_effect = {
@@ -37,10 +41,14 @@ country_event = {
 	
 	option = {
 		name = italy.2.a
-		create_wargoal = {
-			type = take_state_focus
-			target = ALB
-			generator = { 44 }
+		AL0 = {
+			ROOT = {
+				create_wargoal = {
+					type = take_state_focus
+					target = PREV
+					generator = { 44 }
+				}
+			}
 		}
 		hidden_effect = {
 			country_event = { days = 1 id = news.23 }
@@ -66,12 +74,12 @@ country_event = {
 				any_other_country = {
 					OR = {
 						is_major = yes
-						tag = YUG
+						tag = YU0
 					}
-					NOT = { tag = ITA }
+					NOT = { tag = IT0 }
 					OR = {
-						has_guaranteed = ALB
-						is_in_faction_with = ALB
+						has_guaranteed = AL0
+						is_in_faction_with = AL0
 					}
 				}
 			}
@@ -83,7 +91,7 @@ country_event = {
 				}
 			}
 		}
-		ITA = {
+		IT0 = {
 			country_event = { days = 1 id = italy.1 }
 		}
 		custom_effect_tooltip = GAME_OVER_TT
@@ -96,28 +104,30 @@ country_event = {
 				factor = 0
 				OR = {
 					AND = {
-						is_in_faction_with = ITA
-						ITA = { is_faction_leader = yes }
+						is_in_faction_with = IT0
+						IT0 = { is_faction_leader = yes }
 					}
 					is_historical_focus_on = yes
 					AND = {
 						is_in_faction = no 
 						NOT = {
 							any_other_country = {
-								NOT = { tag = ITA }
-								has_guaranteed = ALB
+								NOT = { tag = IT0 }
+								has_guaranteed = AL0
 							} 
 						}
 					}
 				}
 			}
 		}
-		ITA = {
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state_focus
-					target = ALB
-					generator = { 44 }
+		AL0 = {
+			IT0 = {
+				effect_tooltip = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = { 44 }
+					}
 				}
 			}
 			country_event = { days = 1 id = italy.2 }
@@ -186,7 +196,7 @@ country_event = {
 	
 	option = {
 		name = italy.5.a	#sounds good
-		ITA = {
+		IT0 = {
 			country_event = { days = 1 id = italy.6 }
 		}
 		# REVISIT Balance research bonus, also in event below
@@ -206,7 +216,7 @@ country_event = {
 		name = italy.5.b	#no way 
 		ai_chance = { factor = 0 }
 		add_political_power = -10
-		ITA = {
+		IT0 = {
 			country_event = { days = 1 id = italy.7 }
 		}
 	}
@@ -236,9 +246,11 @@ country_event = {
 			uses = 2
 			category = armor
 		}
-		ITA = {
-			add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty }
-		}
+		GE0 = {
+			IT0 = {
+				add_opinion_modifier = { target = PREV modifier = ger_ita_tech_treaty }
+			}
+		}	
 	}
 }
 
@@ -253,8 +265,10 @@ country_event = {
 	
 	option = {
 		name = italy.7.a
-		ITA = {
-			add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty_rejected }
+		GE0 = {
+			IT0 = {
+				add_opinion_modifier = { target = PREV modifier = ger_ita_tech_treaty_rejected }
+			}
 		}
 	}
 }
@@ -270,26 +284,28 @@ country_event = {
 	
 	option = {
 		name = italy.8.a
-		FRA = {
+		FR0 = {
 			if = {
 				limit = { is_in_faction = no }
 				set_rule = { can_create_factions = yes }
 				create_faction = "domination_francaise"
 			}
 		}
-		FRA = {	add_to_faction = ITA }
-		ITA = {
-			add_ai_strategy = {
-				type = alliance
-				id = "FRA"
-				value = 200
-			}
-		}
-		FRA = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ITA"
-				value = 200
+		FR0 = {
+			add_to_faction = IT0
+			IT0 = {
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 200
+				}
+				PREV = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 200
+					}
+				}
 			}
 		}
 		hidden_effect = {
@@ -299,8 +315,10 @@ country_event = {
 	option = {
 		name = italy.8.b
 		ai_chance = { factor = 0 }
-		FRA = {
-			add_opinion_modifier = { target = ITA modifier = ITA_FRA_woo_italy_reject }
+		IT0 = {
+			FR0 = {
+				add_opinion_modifier = { target = PREV modifier = ITA_FRA_woo_italy_reject }
+			}
 		}	
 		hidden_effect = {
 			news_event = { hours = 6 id = news.183 }
@@ -321,8 +339,12 @@ country_event = {
 		name = italy.9.a
 		country_event = { id = italy.10 }
 		effect_tooltip = {
-			ITA = { transfer_state = 177 }
-			remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
+			IT0 = {
+				transfer_state = 177
+				ROOT = {
+					remove_opinion_modifier = { target = PREV modifier = ita_supported_spain_civil_war }
+				}
+			}
 		}
 
 		hidden_effect = {
@@ -334,7 +356,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 		country_event = { id = italy.11 }
 		effect_tooltip = {
-			ITA = { add_state_claim = 177 }
+			IT0 = { add_state_claim = 177 }
 		}
 	}
 }
@@ -350,8 +372,12 @@ country_event = {
 	
 	option = {
 		name = italy.10.a
-		ITA = { transfer_state = 177 }
-		remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
+		IT0 = {
+			transfer_state = 177
+			ROOT = {
+				remove_opinion_modifier = { target = PREV modifier = ita_supported_spain_civil_war }
+			}
+		}
 	}
 }
 
@@ -366,7 +392,7 @@ country_event = {
 	
 	option = {
 		name = italy.11.a
-		ITA = { add_state_claim = 177 }
+		IT0 = { add_state_claim = 177 }
 	}
 }
 
@@ -388,14 +414,14 @@ country_event = {
 			}
 		}
 		name = italy.12.a
-		ITA = {
+		IT0 = {
 			add_political_power = -100
 			if = { limit = { is_faction_leader = yes }
-				add_to_faction = YUG
-				YUG = {
+				add_to_faction = YU0
+				YU0 = {
 					add_ai_strategy = {
 						type = alliance
-						id = "ITA"
+						id = PREV
 						value = 200
 					}
 				}
@@ -411,27 +437,31 @@ country_event = {
 					}
 				}
 				create_faction = italy_empire_faction
-				add_to_faction = YUG
-				YUG = {
-					add_ai_strategy = {
-						type = alliance
-						id = "ITA"
-						value = 200
+				add_to_faction = YU0
+				IT0 = {
+					YU0 = {
+						add_ai_strategy = {
+							type = alliance
+							id = PREV
+							value = 200
+						}
 					}
 				}
 			}			
 		}
-		GER = { country_event = { id = germany.96 hours = 6 } }
-		YUG = { country_event = { id = yugoslavia.6 hours = 6 } }
+		GE0 = { country_event = { id = germany.96 hours = 6 } }
+		YU0 = { country_event = { id = yugoslavia.6 hours = 6 } }
 	}	
 	option = {
 		ai_chance = {
 			factor = 100
 		}	
 		name = italy.12.b
-		YUG = {
-			add_opinion_modifier = { target = ITA modifier = western_betrayal }
-			country_event = { id = yugoslavia.5 hours = 6 }
+		IT0 = {
+			YU0 = {
+				add_opinion_modifier = { target = PREV modifier = western_betrayal }
+				country_event = { id = yugoslavia.5 hours = 6 }
+			}
 		}
 	}
 }
@@ -469,13 +499,77 @@ country_event = {
 	option = {
 		name = italy.13.a
 		if = {
-			limit = { has_completed_focus = ITA_slovenia_dalmatia_claims }
-			ITA = { transfer_state = 103 }
+			limit = {
+				ITA = { owns_state = 44 }
+				OR = {
+					864 = { is_owned_by = YUG }
+					864 = { is_owned_by = GER }
+				}
+			}
+			ITA = {
+				transfer_state = 864
+			}
 		}
 		if = {
-			limit = { owns_state = 44 }
-			ITA = { transfer_state = 105 }
-		}		
+			limit = {
+				ITA = { owns_state = 44 }
+				OR = {
+					866 = { is_owned_by = YUG }
+					866 = { is_owned_by = GER }
+				}
+			}
+			ITA = {
+				transfer_state = 866
+			}
+		}
+		if = {
+			limit = {
+				ITA = { owns_state = 44 }
+				OR = {
+					105 = { is_owned_by = YUG }
+					105 = { is_owned_by = GER }
+				}
+			}
+			ITA = {
+				transfer_state = 105
+			}
+		}
+		if = {
+			limit = {
+				ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+				OR = {
+					865 = { is_owned_by = YUG }
+					865 = { is_owned_by = GER }
+				}
+			}
+			ITA = {
+				transfer_state = 865
+			}
+		}
+		if = {
+			limit = {
+				ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+				OR = {
+					863 = { is_owned_by = YUG }
+					863 = { is_owned_by = GER }
+				}
+			}
+			ITA = {
+				transfer_state = 863
+			}
+		}
+		if = {
+			limit = {
+				ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+				OR = {
+					862 = { is_owned_by = YUG }
+					862 = { is_owned_by = GER }
+				}
+			}
+			ITA = {
+				transfer_state = 862
+			}
+		}	
 	}
 }
 
@@ -493,8 +587,8 @@ country_event = {
 	option = {
 		ai_chance = { factor = 25 }
 		name = italy.14.a
-		GER = { 
-			remove_from_faction = ITA 
+		GE0 = { 
+			remove_from_faction = IT0 
 			country_event = germany.105
 		}
 	}
@@ -534,11 +628,11 @@ country_event = {
 		name = italy.15.a
 		if = {
 			limit = { has_global_flag = ITA_claims_on_france_735 }
-			ITA = { transfer_state = 735 }
+			IT0 = { transfer_state = 735 }
 		}
 		if = {
 			limit = { has_global_flag = ITA_claims_on_france_1 }
-			ITA = { transfer_state = 1 }
+			IT0 = { transfer_state = 1 }
 		}		
 	}
 }

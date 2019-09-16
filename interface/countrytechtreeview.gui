@@ -49,9 +49,9 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "techtree_stripes"
-				position = { x= 0 y= 0 }
+				position = { x= 40 y= 0 }		#mod
 				size = { 
-					width = 1400 height = 1275
+					width = 1400 height = 800		#mod
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -59,13 +59,13 @@ guiTypes = {
 				iconType = {
 					name ="infantry_techtree_bg"
 					spriteType = "GFX_infantry_techtree_bg"
-					position = { x=0 y=0 }
+					position = { x=-40 y=0 }	#mod
 					allwaystransparent = yes
 				}
 				
 				instantTextBoxType = {
 					name = "infantry_subtitle_weapons"
-					position = { x = 30 y = 100 }
+					position = { x = 30 y = 40 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -78,7 +78,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_subtitle_specialists"
-					position = { x = 40 y = 740 }
+					position = { x = 30 y = 500 }	#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -91,7 +91,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_subtitle_motorized"
-					position = { x = 30 y = 510 }
+					position = { x = 30 y = 310 }	#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -104,7 +104,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_year2"
-					position = { x = 130 y = 50 }
+					position = { x = 130 y = 10 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -117,7 +117,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year3"
-					position = { x = 270 y = 50 }
+					position = { x = 270 y = 10 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -130,7 +130,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year5"
-					position = { x = 410 y = 50 }
+					position = { x = 410 y = 10 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1938"
@@ -142,7 +142,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year6"
-					position = { x = 550 y = 50 }
+					position = { x = 550 y = 10 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1939"
@@ -154,7 +154,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year7"
-					position = { x = 690 y = 50 }
+					position = { x = 690 y = 10 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1940"
@@ -166,7 +166,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year8"
-					position = { x = 830 y = 50 }
+					position = { x = 830 y = 10 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1941"
@@ -178,7 +178,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year9"
-					position = { x = 970 y = 50 }
+					position = { x = 970 y = 10 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1942"
@@ -190,7 +190,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year10"
-					position = { x = 1110 y = 50 }
+					position = { x = 1110 y = 10 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1943"
@@ -202,7 +202,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_year11"
-					position = { x = 1250 y = 50 }
+					position = { x = 1250 y = 10 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1944"
@@ -213,7 +213,7 @@ guiTypes = {
 				}						
 				instantTextBoxType = {
 					name = "infantry_year12"
-					position = { x = 1390 y = 50 }
+					position = { x = 1390 y = 10 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1945"
@@ -224,7 +224,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "infantry_year13"
-					position = { x = 1530 y = 50 }
+					position = { x = 1530 y = 10 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1946"
@@ -239,7 +239,7 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "support_weapons_tree"
-				position = { x = 140 y = 210 }
+				position = { x = 165 y = 110 }	#mod
 				#size = { width = 420 height = 500 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -248,50 +248,50 @@ guiTypes = {
 			iconType = {
 				name = "highlight_infantry_1"
 				spriteType = "GFX_tutorial_research_small_item_icon_glow"
-				position = { x=135 y=170}
+				position = { x=235 y=115}	#mod
 				hide = yes
 				alwaystransparent = yes
 			}
 			
 			gridboxtype = {
 				name = "night_vision_tree"
-				position = { x = 140 y = 210 }
+				position = { x = 170 y = 110 }		#mod
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}		
 	
 			gridboxtype = {
 				name = "infantry_weapons_tree"
-				position = { x = 140 y = 325 }
-				slotsize = { width = 70 height = 70 }
+				position = { x = 165 y = 190 }		#mod
+				slotsize = { width = 70 height = 42 }
 				format = "LEFT"
 	
 			}			
 
 			gridboxtype = {
 				name = "motorised_infantry_tree"
-				position = { x = 140 y = 620 }
-				slotsize = { width = 70 height = 70 }
+				position = { x = 165 y = 375 }		#mod
+				slotsize = { width = 70 height = 48 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "marines_tree"
-				position = { x = 140 y = 825 }
+				position = { x = 165 y = 500 }		#mod
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_mountaineers_tree"
-				position = { x = 140 y = 930 }
+				position = { x = 165 y = 575 }		#mod
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "paratroopers_tree"
-				position = { x = 140 y = 1035 }
+				position = { x = 165 y = 650 }		#mod
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -299,8 +299,8 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "tech_special_forces_tree"
-				position = { x = 140 y = 1140 }
-				slotsize = { width = 70 height = 70 }
+				position = { x = 165 y = 715 }		#mod
+				slotsize = { width = 70 height = 45 }
 				format = "LEFT"
 			}
 		}
@@ -337,7 +337,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "support_year2"
-					position = { x = 90 y = 50 }
+					position = { x = 90 y = 10 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -350,7 +350,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_year3"
-					position = { x = 243 y = 50 }
+					position = { x = 243 y = 10 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -363,7 +363,7 @@ guiTypes = {
 
 #				instantTextBoxType = {
 #					name = "support_year5"
-#					position = { x = 370 y = 50 }
+#					position = { x = 370 y = 10 }		#mod
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
 #					text = "1938"
@@ -375,7 +375,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_year6"
-					position = { x = 523 y = 50 }
+					position = { x = 523 y = 10 }		#mod
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1939"
@@ -387,7 +387,7 @@ guiTypes = {
 
 #				instantTextBoxType = {
 #					name = "support_year7"
-#					position = { x = 650 y = 50 }
+#					position = { x = 650 y = 10 }		#mod
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
 #					text = "1940"
@@ -399,7 +399,7 @@ guiTypes = {
 #
 #				instantTextBoxType = {
 #					name = "support_year8"
-#					position = { x = 790 y = 50 }
+#					position = { x = 790 y = 10 }		#mod
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
 #					text = "1941"
@@ -411,7 +411,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_year9"
-					position = { x = 943 y = 50 }
+					position = { x = 943 y = 10 }		#mod
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1942"
@@ -423,7 +423,7 @@ guiTypes = {
 
 #				instantTextBoxType = {
 #					name = "support_year10"
-#					position = { x = 1070 y = 50 }
+#					position = { x = 1070 y = 10 }		#mod
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
 #					text = "1943"
@@ -435,7 +435,7 @@ guiTypes = {
 #				
 #				instantTextBoxType = {
 #					name = "support_year11"
-#					position = { x = 1210 y = 50 }
+#					position = { x = 1210 y = 10 }		#mod
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
 #					text = "1944"
@@ -446,7 +446,7 @@ guiTypes = {
 #				}						
 				instantTextBoxType = {
 					name = "support_year12"
-					position = { x = 1363 y = 50 }
+					position = { x = 1363 y = 10 }		#mod
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1945"
@@ -457,7 +457,7 @@ guiTypes = {
 				}
 #				instantTextBoxType = {
 #					name = "support_year13"
-#					position = { x = 1490 y = 50 }
+#					position = { x = 1490 y = 10 }		#mod
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
 #					text = "1946"
@@ -471,8 +471,8 @@ guiTypes = {
 				
 			containerWindowType = {
 				name = "tiled_research_bg"
-				position = { x=150 y=640 }
-				size = { width = 1340 height = 430 }
+				position = { x=150 y=525 }		#mod
+				size = { width = 1340 height = 375 }
 				clipping = no
 			
 				background = {
@@ -483,8 +483,8 @@ guiTypes = {
 				
 			containerWindowType = {
 				name = "tiled_research_bg_2"
-				position = { x=160 y=920 }
-				size = { width = 1320 height = 140 }
+				position = { x=160 y=755 }		#mod
+				size = { width = 1320 height = 120 }
 				clipping = no
 			
 				background = {
@@ -495,20 +495,20 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "tech_support_tree"
-				position = { x = 100 y = 160 }
-				slotsize = { width = 70 height = 70 }
+				position = { x = 100 y = 120 }		#mod
+				slotsize = { width = 70 height = 58 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "electronic_mechanical_engineering_tree"
-				position = { x= 100 y=160 }
-				slotsize = { width=70 height= 70 }
+				position = { x= 100 y=120 }		#mod
+				slotsize = { width=70 height= 58 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "motorised_infantry_tree"
-				position = { x = 100 y = 160 }
-				slotsize = { width = 70 height = 70 }
+				position = { x = 100 y = 120 }		#mod
+				slotsize = { width = 70 height = 58 }
 				format = "LEFT"
 			}
 
@@ -533,15 +533,15 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 1450 height = 1090 
+					width = 1450 height = 890 
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
 
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_techtree_stripes"
-				}
+				#background = {
+					#name = "Background"
+					#quadTextureSprite ="GFX_techtree_stripes"
+				#}
 
 				iconType = {
 					name ="armortech_bg"
@@ -552,13 +552,13 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "armour_year_right"
-					position = { x=10 y=140 }
+					position = { x=10 y=0 }		#mod
 					size = { width = 80 height = 100%% }
 					orientation = upper_left
 						
 					instantTextBoxType = {
 						name = "armour_year1"
-						position = { x = 60 y = 2 }
+						position = { x = 60 y = 35 }		#mod
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -571,7 +571,7 @@ guiTypes = {
 						
 					instantTextBoxType = {
 						name = "armour_year2"
-						position = { x = 60 y = 140 }
+						position = { x = 60 y = 175 }		#mod
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -584,7 +584,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "armour_year3"
-						position = { x = 60 y = 278 }
+						position = { x = 60 y = 305 }		#mod
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -597,7 +597,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "armour_year4"
-						position = { x = 60 y = 420 }
+						position = { x = 60 y = 440 }		#mod
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -610,7 +610,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "armour_year5"
-						position = { x = 60 y = 560 }
+						position = { x = 60 y = 565 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -651,13 +651,13 @@ guiTypes = {
 					
 				containerWindowType = {
 					name = "armour_year_left"
-					position = { x=-100 y=140 }
+					position = { x=-100 y=0 }		#mod
 					size = { width = 80 height = 100%% }
 					orientation = upper_right
 				
 					instantTextBoxType = {
 						name = "armour_year2_left"
-						position = { x = 0 y = 140 }
+						position = { x = 0 y = 175 }		#mod
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -670,7 +670,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "armour_year3_left"
-						position = { x = 0 y = 278 }
+						position = { x = 0 y = 305 }		#mod
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -683,7 +683,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "armour_year4_left"
-						position = { x = 0 y = 420 }
+						position = { x = 0 y = 440 }		#mod
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -696,7 +696,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "armour_year5_left"
-						position = { x = 0 y = 560 }
+						position = { x = 0 y = 565 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -738,14 +738,14 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "armour_subtitles"
-				position = { x = 0 y = 172 }
+				position = { x = 0 y = 0 }	#mod
 				size = { width = 600 height = 80% }				
 				orientation = center_up
 				origo = center_up
 			
 				instantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = 480 y = 55 }
+					position = { x = 480 y = 75 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -758,7 +758,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 207 y = 335 }
+					position = { x = 200 y = 340 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -771,7 +771,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
-					position = { x = -84 y = 55  }
+					position = { x = -84 y = 75  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -780,7 +780,7 @@ guiTypes = {
 					maxHeight = 62
 					format = center
 					Orientation = "UPPER_LEFT"
-				}
+				}	
 				instantTextBoxType = {
 					name = "armour_subtitle_amphibious"
 					position = { x = -360 y = 335 }
@@ -792,15 +792,15 @@ guiTypes = {
 					maxHeight = 62
 					format = center
 					Orientation = "UPPER_LEFT"
-				}		
+				}						
 			}	
 
 				
 			gridboxtype = {
 				name = "gwtank_tree"
-				position = { x = 10% y = 172 }
+				position = { x = 10% y = 20 }		#mod
 				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
+				slotsize = { width = 70 height = 66 }		#mod
 				format = "UP"
 			}
 		}
@@ -823,15 +823,15 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 1239 height = 1390 
+					width = 1239 height = 800 
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
 
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_techtree_stripes"
-				}
+				#background = {
+					#name = "Background"
+					#quadTextureSprite ="GFX_techtree_stripes"
+				#}
 
 				iconType = {
 					name ="artillery_techtree_bg"
@@ -842,14 +842,14 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "artillery_subtitles"
-				position = { x = 0 y = 50 }
+				position = { x = 0 y = -100 }
 				size = { width = 600 height = 80% }				
 				orientation = center_up
 				origo = center_up
 			
 				instantTextBoxType = {
 					name = "artillery_subtitle_rocket"
-					position = { x = 405 y = 460 }
+					position = { x = 405 y = 425 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -862,7 +862,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_tank"
-					position = { x = 655 y = 160 }
+					position = { x = 645 y = 160 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -902,7 +902,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "artillery_year2"
-					position = { x = 60 y = 140 }
+					position = { x = 60 y = 35 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -915,7 +915,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_year3"
-					position = { x = 60 y = 278 }
+					position = { x = 60 y = 160 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -928,7 +928,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_year4"
-					position = { x = 60 y = 420 }
+					position = { x = 60 y = 285 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -941,7 +941,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_year5"
-					position = { x = 60 y = 560 }
+					position = { x = 60 y = 420 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -954,7 +954,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_year6"
-					position = { x = 60 y = 698 }
+					position = { x = 60 y = 545 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -967,7 +967,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_year7"
-					position = { x = 60 y = 838 }
+					position = { x = 60 y = 670 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -980,7 +980,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_year8"
-					position = { x = 60 y = 978 }
+					position = { x = 60 y = 810 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -993,7 +993,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_year9"
-					position = { x = 60 y = 1118 }
+					position = { x = 60 y = 910 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1006,7 +1006,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_year10"
-					position = { x = 60 y = 1258 }
+					position = { x = 60 y = 1035 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1019,13 +1019,13 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "artillery_year_left"
-					position = { x=-100 y=0 }
+					position = { x=-100 y=0 }		#mod
 					size = { width = 130 height = 100% }
 					orientation = upper_right
 				
 					instantTextBoxType = {
 						name = "artillery_year2"
-						position = { x = 0 y = 140 }
+						position = { x = 0 y = 35 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -1038,7 +1038,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "artillery_year3"
-						position = { x = 0 y = 278 }
+						position = { x = 0 y = 160 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -1051,7 +1051,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "artillery_year4"
-						position = { x = 0 y = 420 }
+						position = { x = 0 y = 285 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -1064,7 +1064,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "artillery_year5"
-						position = { x = 0 y = 560 }
+						position = { x = 0 y = 420 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -1077,7 +1077,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "artillery_year6"
-						position = { x = 0 y = 698 }
+						position = { x = 0 y = 545 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -1090,7 +1090,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "artillery_year7"
-						position = { x = 0 y = 838 }
+						position = { x = 0 y = 670 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -1103,7 +1103,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "artillery_year8"
-						position = { x = 0 y = 978 }
+						position = { x = 0 y = 810 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -1116,7 +1116,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "artillery_year9"
-						position = { x = 0 y = 1118 }
+						position = { x = 0 y = 935 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -1129,7 +1129,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "artillery_year10"
-						position = { x = 0 y = 1258 }
+						position = { x = 0 y = 1060 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -1146,9 +1146,9 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "gw_artillery_tree"
-				position = { x = 10% y = 172 }
+				position = { x = 10% y = 20 }		#mod
 				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
+				slotsize = { width = 70 height = 64 }		#mod
 				format = "UP"
 			}
 		}
@@ -1157,7 +1157,7 @@ guiTypes = {
 			name = "naval_folder"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			margin = { top = 13 left = 13 bottom = 12 right = 25}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
@@ -1182,7 +1182,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_year1"
-					position = { x = 224 y = 20 }
+					position = { x = 164 y = 5 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1195,7 +1195,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_year2"
-					position = { x = 644 y = 20 }
+					position = { x = 584 y = 5 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1208,7 +1208,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "naval_year3"
-					position = { x = 1064 y = 20 }
+					position = { x = 1004 y = 5 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1221,7 +1221,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "naval_year4"
-					position = { x = 1484 y = 20 }
+					position = { x = 1424 y = 5 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1234,7 +1234,7 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "naval_subtitle_destroyer"
-					position = { x = 30 y = 55 }
+					position = { x = 1650 y = 65 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1248,7 +1248,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_cruiser"
-					position = { x = 30 y = 185 }
+					position = { x = 1650 y = 205 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1262,7 +1262,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_battlecruiser"
-					position = { x = 30 y = 465 }
+					position = { x = 1650 y = 350 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1276,7 +1276,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_battleship"
-					position = { x = 30 y = 605 }
+					position = { x = 1650 y = 510 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1290,7 +1290,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_carrier"
-					position = { x = 30 y = 893 }
+					position = { x = 1650 y = 645 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1304,7 +1304,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_sub"
-					position = { x = 30 y = 1032 }
+					position = { x = 1650 y = 745 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1318,7 +1318,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_transport"
-					position = { x = 30 y = 1177 }
+					position = { x = 1650 y = 840 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1333,7 +1333,7 @@ guiTypes = {
 				name = "tiled_window_transparent_transparent"
 				position = { x= 0 y= 0 }
 				size = { 
-					width=1700 height=1300 
+					width=1700 height=900
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -1342,11 +1342,11 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_transparent_transparent"
 				}
-			}
-
+			}			
+			
 			gridboxtype = {
 				name = "early_destroyer_tree"
-				position = { x = 150 y = 60}
+				position = { x = 80 y = 20}		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1362,23 +1362,23 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_light_cruiser_tree"
-				position = { x = 150 y = 260 }
+				position = { x = 80 y = 150 }		#mod
 				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
+				slotsize = { width = 70 height = 50 }		#mod
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "early_heavy_cruiser_tree"
-				position = { x = 150 y = 260 }
+				position = { x = 80 y = 150 }		#mod
 				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
+				slotsize = { width = 70 height = 50 }		#mod
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "transport_tree"
-				position = { x = 150 y = 1180 }
+				position = { x = 80 y = 790 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1386,23 +1386,23 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_battlecruiser_tree"
-				position = { x = 150 y = 540 }
+				position = { x = 80 y = 350 }		#mod
 				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
+				slotsize = { width = 70 height = 50 }		#mod
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "early_battleship_tree"
-				position = { x = 150 y = 540 }
+				position = { x = 80 y = 350 }		#mod
 				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
+				slotsize = { width = 70 height = 50 }		#mod
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "early_carrier_tree"
-				position = { x = 150 y = 900 }
+				position = { x = 80 y = 600 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1410,7 +1410,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_submarine_tree"
-				position = { x = 150 y = 1040 }
+				position = { x = 80 y = 700 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1498,7 +1498,7 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "naval_subtitle_destroyer"
-					position = { x = 30 y = 55 }
+					position = { x = 30 y = 40 }	#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1512,7 +1512,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_cruiser"
-					position = { x = 30 y = 295 }
+					position = { x = 30 y = 270 }	#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1526,7 +1526,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_battleship"
-					position = { x = 30 y = 490 }
+					position = { x = 30 y = 420 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1540,7 +1540,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_carrier"
-					position = { x = 30 y = 693 }
+					position = { x = 30 y = 570 }	#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1554,7 +1554,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_sub"
-					position = { x = 30 y = 795 }
+					position = { x = 30 y = 670 }	#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1567,7 +1567,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "naval_subtitle_armaments"
-					position = { x = 30 y = 1370 }
+					position = { x = 30 y = 1315 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1579,7 +1579,7 @@ guiTypes = {
 				}	
 				instantTextBoxType = {
 					name = "naval_subtitle_damage_control"
-					position = { x = 30 y = 1770 }
+					position = { x = 30 y = 1690 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1591,7 +1591,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "naval_subtitle_fire_control"
-					position = { x = 30 y = 1910 }
+					position = { x = 30 y = 1810 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1603,7 +1603,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "naval_subtitle_transport"
-					position = { x = 30 y = 2030 }
+					position = { x = 30 y = 1930 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1616,7 +1616,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_mines"
-					position = { x = 30 y = 2170 }
+					position = { x = 30 y = 2055 }		#mod
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1644,7 +1644,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_ship_hull_light_tree"
-				position = { x = 150 y = 60}
+				position = { x = 150 y = 40}	#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1652,7 +1652,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_ship_hull_cruiser_tree"
-				position = { x = 150 y = 360 }
+				position = { x = 150 y = 335 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1660,7 +1660,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_ship_hull_heavy_tree"
-				position = { x = 150 y = 560 }
+				position = { x = 150 y = 490 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1670,7 +1670,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_ship_hull_carrier_tree"
-				position = { x = 150 y = 760 }
+				position = { x = 150 y = 640 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1678,28 +1678,28 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_torpedo_tree"
-				position = { x = 150 y = 940 }
+				position = { x = 150 y = 820 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "basic_battery_tree"
-				position = { x = 150 y = 1360 }
+				position = { x = 150 y = 1260 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "basic_secondary_battery_tree"
-				position = { x = 150 y = 1650 }
+				position = { x = 150 y = 1550 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "mtg_transport_tree"
-				position = { x = 150 y = 2050 }
+				position = { x = 150 y = 1940 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1707,7 +1707,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "damage_control_1_tree"
-				position = { x = 150 y = 1800 }
+				position = { x = 150 y = 1700 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1715,7 +1715,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "fire_control_methods_1_tree"
-				position = { x = 150 y = 1920 }
+				position = { x = 150 y = 1820 }		#mod
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1723,9 +1723,9 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_naval_mines_tree"
-				position = { x = 150 y = 2170 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
+				position = { x = 150 y = 2080 }		#mod
+				size = { width = 100 height = 90 }		#mod
+				slotsize = { width = 70 height = 45 }		#mod
 				format = "LEFT"
 			}
 
@@ -1749,15 +1749,15 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 2000 height = 1300
+					width = 1800 height = 800
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
 
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_techtree_stripes"
-				}
+				#background = {
+					#name = "Background"
+					#quadTextureSprite ="GFX_techtree_stripes"
+				#}
 				
 				iconType = {
 					name ="artillery_techtree_bg"
@@ -1770,7 +1770,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year2"
-				position = { x = 60 y = 160 }
+				position = { x = 60 y = 130 }		#mod
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -1783,7 +1783,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year3"
-				position = { x = 60 y = 298 }
+				position = { x = 60 y = 250 }		#mod
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -1796,7 +1796,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year4"
-				position = { x = 60 y = 440 }
+				position = { x = 60 y = 360 }		#mod
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -1809,7 +1809,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year5"
-				position = { x = 60 y = 580 }
+				position = { x = 60 y = 480 }		#mod
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -1822,7 +1822,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year6"
-				position = { x = 60 y = 858 }
+				position = { x = 60 y = 720 }		#mod
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -1835,7 +1835,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year7"
-				position = { x = 60 y = 998 }
+				position = { x = 60 y = 840 }		#mod
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -1848,13 +1848,13 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "airtech_year_left"
-				position = { x=1740 y=0 }
+				position = { x=1640 y=0 }
 				size = { width = 200 height = 100% }
 				orientation = upper_left			
 
 				instantTextBoxType = {
 					name = "airtech_year2"
-					position = { x = 60 y = 160 }
+					position = { x = 60 y = 130 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1867,7 +1867,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "airtech_year3"
-					position = { x = 60 y = 298 }
+					position = { x = 60 y = 250 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1880,7 +1880,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "airtech_year4"
-					position = { x = 60 y = 440 }
+					position = { x = 60 y = 360 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1893,7 +1893,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "airtech_year5"
-					position = { x = 60 y = 580 }
+					position = { x = 60 y = 480 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1906,7 +1906,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "airtech_year6"
-					position = { x = 60 y = 858 }
+					position = { x = 60 y = 720 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1919,7 +1919,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "airtech_year7"
-					position = { x = 60 y = 998 }
+					position = { x = 60 y = 840 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1934,7 +1934,7 @@ guiTypes = {
 				
 			instantTextBoxType = {
 				name = "airtech_subtitle_fighter"
-				position = { x = 385 y = 110 }
+				position = { x = 340 y = 10 }		#mod
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1948,7 +1948,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_cas"
-				position = { x = 110 y = 185 }
+				position = { x = 110 y = 85 }		#mod
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1962,7 +1962,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_nav"
-				position = { x = 675 y = 185 }
+				position = { x = 575 y = 85 }		#mod
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1976,7 +1976,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_h_fighter"
-				position = { x = 985 y = 185 }
+				position = { x = 910 y = 85 }		#mod
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1990,7 +1990,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_tac"
-				position = { x = 1260 y = 90 }
+				position = { x = 1140 y = 10 }		#mod
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2004,7 +2004,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_strat"
-				position = { x = 1560 y = 185 }
+				position = { x = 1460 y = 85 }		#mod
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2019,8 +2019,8 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "tiled_research_bg"
-				position = { x=390 y=807 }
-				size = { width = 1475 height = 350 }
+				position = { x=290 y=670 }		#mod
+				size = { width = 1475 height = 245 }		#mod
 				clipping = no
 	
 				background = {
@@ -2031,33 +2031,33 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "early_fighter_tree"
-				position = { x = 340 y = 32 }
-				size = { width = 400 height = 1000 }
-				slotsize = { width = 70 height = 70 }
+				position = { x = 340 y = 0 }		#mod
+				size = { width = 300 height = 800 }
+				slotsize = { width = 58 height = 58 }		#mod
 				format = "UP"
 			}
 
 			gridboxtype = {
 				name = "early_bomber_tree"
-				position = { x = 1075 y = 32 }
-				size = { width = 400 height = 1000 }
-				slotsize = { width = 70 height = 70 }
+				position = { x = 975 y = 0 }		#mod
+				size = { width = 400 height = 800 }
+				slotsize = { width = 58 height = 58 }		#mod
 				format = "UP"
 			}
 
 			gridboxtype = {
 				name = "strategic_bomber1_tree"
-				position = { x = 1610 y = 32 }
-				size = { width = 200 height = 1000 }
-				slotsize = { width = 70 height = 70 }
+				position = { x = 1510 y = 0 }		#mod
+				size = { width = 200 height = 800 }
+				slotsize = { width = 58 height = 58 }		#mod
 				format = "UP"
 			}
 
 			gridboxtype = {
 				name = "experimental_rockets_tree"
-				position = { x = 640 y = 0 }
+				position = { x = 540 y = 0 }
 				size = { width = 400 height = 400 }
-				slotsize = { width = 70 height = 70 }
+				slotsize = { width = 58 height = 58 }		#mod
 				format = "UP"
 			}
 		}
@@ -2081,7 +2081,7 @@ guiTypes = {
 				name = "size_filler"
 				position = { x=0 y=0 }
 				size = {
-					width = 1550 height = 1000 
+					width = 1350 height = 800 		#mod
 					min = { width = 100%% height = 100%% }
 				}
 				
@@ -2093,7 +2093,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "engineering_year_left"
-				position = { x=100 y=40 }
+				position = { x=100 y=-60 }		#mod
 				size = { width = 130 height = 100% }
 				orientation = upper_left
 			
@@ -2192,8 +2192,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "industry_year_right"
-				position = { x=-100 y=40
-				}
+				position = { x=-100 y= -60	}		#mod
 				size = { width = 80 height = 100% }
 				orientation = upper_right
 			
@@ -2296,7 +2295,7 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "industry_subtitle"
-					position = { x = 610 y = 210 }
+					position = { x = 610 y = 110 }		#mod
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -2309,7 +2308,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_production"
-					position = { x = 260 y = 115  }
+					position = { x = 260 y = 15  }		#mod
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -2322,7 +2321,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_synthetic_oil"
-					position = { x = 1308 y = 115  }
+					position = { x = 1280 y = 15  }		#mod
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -2335,7 +2334,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_construction"
-					position = { x = 871 y = 255  }
+					position = { x = 929 y = 145  }		#mod
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -2348,7 +2347,7 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "basic_machine_tools_tree"
-				position = { x = 100 y = 172 }
+				position = { x = 100 y = 57 }		#mod
 				size = { width = 520 height = 800 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2357,14 +2356,14 @@ guiTypes = {
 			iconType = {
 				name = "highlight_industry_1"
 				spriteType = "GFX_tutorial_research_small_item_icon_glow"
-				position = { x=320 y=172}
+				position = { x=320 y=57}		#mod
 				hide = yes
 				alwaystransparent = yes
 			}
 
 			gridboxtype = {
 				name = "fuel_silos_tree"
-				position = { x = 1250 y = 172 }
+				position = { x = 1250 y = 57 }		#mod
 				size = { width =72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2372,7 +2371,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "construction1_tree"
-				position = { x = 894 y = 312 }
+				position = { x = 950 y = 197 }		#mod
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2381,7 +2380,7 @@ guiTypes = {
 			iconType = {
 				name = "highlight_industry_2"
 				spriteType = "GFX_tutorial_research_small_item_icon_glow"
-				position = { x=890 y=312}
+				position = { x=946 y=197}		#mod
 				hide = yes
 				alwaystransparent = yes
 			}			
@@ -2451,32 +2450,32 @@ guiTypes = {
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
-				size = { width = 2100 height = 100% }
+				size = { width = 1800 height = 100% }		#mod
 			}
 	
 	
 			iconType = {
 				name ="mob_warfare_bg"
 				spriteType = "GFX_mob_warfare_bg"
-				position = { x=85 y=33 }
+				position = { x=0 y=0 }		#mod
 			}			
 				
 			iconType = {
 				name ="sup_firepower_bg"
 				spriteType = "GFX_sup_firepower_bg"
-				position = { x=575 y=33 }
+				position = { x=475 y=0 }		#mod 466
 			}	
 	
 			iconType = {
 				name ="grand_battleplan_bg"
 				spriteType = "GFX_grand_battleplan_bg"
-				position = { x=1050 y=33 }
+				position = { x=947 y=0 }		#mod 932
 			}
 
 			iconType = {
 				name = "highlight_grand_battle_plan"
 				spriteType = "GFX_tutorial_research_small_item_icon_glow"
-				position = { x=1245 y=291}
+				position = { x=1260 y=291}
 				hide = yes
 				alwaystransparent = yes
 			}
@@ -2484,12 +2483,12 @@ guiTypes = {
 			iconType = {
 				name ="mass_assault_bg"
 				spriteType = "GFX_mass_assault_bg"
-				position = { x=1535 y=33 }
+				position = { x=1419 y=0 }		#mod 1398
 			}		
 			
 			instantTextBoxType = {
 				name = "mob_warfare_title"
-				position = { x = 120 y = 35 }
+				position = { x = 40 y = 5 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2502,7 +2501,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "superior_firepower_title"
-				position = { x = 600 y = 35 }
+				position = { x = 500 y = 5 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2515,7 +2514,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "grand_battleplan_title"
-				position = { x = 1080 y = 35 }
+				position = { x = 970 y = 5 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2528,7 +2527,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "mass_assault_title"
-				position = { x = 1560 y = 35 }
+				position = { x = 1440 y = 5 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2541,7 +2540,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "mob_warfare_desc"
-				position = { x = 140 y = 90 }
+				position = { x = 70 y = 30 }		#mod
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
@@ -2554,7 +2553,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "superior_firepower_desc"
-				position = { x = 600 y = 90 }
+				position = { x = 490 y = 30 }		#mod
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
@@ -2567,7 +2566,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "grand_battleplan_desc"
-				position = { x = 1100 y = 90 }
+				position = { x = 990 y = 30 }		#mod
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
@@ -2580,7 +2579,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "mass assault_desc"
-				position = { x = 1606 y = 90 }
+				position = { x = 1490 y = 30 }		#mod
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
@@ -2593,7 +2592,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "mob_warfare_subtitle1"
-				position = { x = 110 y = 435 }
+				position = { x = 50 y = 270 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2607,7 +2606,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "mob_warfare_subtitle2"
-				position = { x = 355 y = 455 }
+				position = { x = 260 y = 290 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2621,7 +2620,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "mob_warfare_subtitle3"
-				position = { x = 110 y = 919 }
+				position = { x = 50 y = 600 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2635,7 +2634,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "mob_warfare_subtitle4"
-				position = { x = 360 y = 919 }
+				position = { x = 290 y = 620 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2649,7 +2648,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "sup_firepower_subtitle1"
-				position = { x = 600 y = 435 }
+				position = { x = 500 y = 280 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2663,7 +2662,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "sup_firepower_subtitle2"
-				position = { x = 850 y = 435 }
+				position = { x = 725 y = 280 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2677,7 +2676,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "sup_firepower_subtitle3"
-				position = { x = 600 y = 795 }
+				position = { x = 490 y = 540 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2691,7 +2690,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "sup_firepower_subtitle4"
-				position = { x = 840 y = 795 }
+				position = { x = 730 y = 540 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2705,7 +2704,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "grand_battleplan_subtitle1"
-				position = { x = 1070 y = 575 }
+				position = { x = 960 y = 380 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2719,7 +2718,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "grand_battleplan_subtitle2"
-				position = { x = 1310 y = 575 }
+				position = { x = 1180 y = 380 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2733,7 +2732,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "mass_assault_subtitle1"
-				position = { x = 1560 y = 435 }
+				position = { x = 1450 y = 300 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2747,7 +2746,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "mass_assault_subtitle2"
-				position = { x = 1816 y = 435 }
+				position = { x = 1685 y = 280 }		#mod
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2761,59 +2760,59 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "mobile_warfare_tree"
-				position = { x=80 y=172 }
-				size = { width = 478 height = 1350 }
-				slotsize = { width=60 height= 60 }
+				position = { x=0 y=110 }		#mod
+				size = { width = 480 height = 800 }		#mod
+				slotsize = { width=60 height= 40 }		#mod
 				format = "UP"
 
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
-				}				
+				 #background = {
+					 #name = "Background"
+					 #quadTextureSprite ="GFX_fullborder_tiled"
+					 #position = { x=-5 y=-114 }		#mod
+				 #}				
 			}
 
 			gridboxtype = {
 				name = "superior_firepower_tree"
-				position = { x=560 y=172 }
-				size = { width = 480 height = 1350 }
-				slotsize = { width=60 height= 60 }
+				position = { x=445 y=110 }		#mod
+				size = { width = 480 height = 800 }
+				slotsize = { width=60 height= 40 }		#mod
 				format = "UP"
 				
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
-				}									
+				 #background = {
+					 #name = "Background"
+					 #quadTextureSprite ="GFX_fullborder_tiled"
+					 #position = { x=24 y=-114 }					
+				 #}									
 			}
 
 			gridboxtype = {
 				name = "trench_warfare_tree"
-				position = { x=1040 y=172 }
-				size = { width = 480 height = 1350 }
-				slotsize = { width=60 height= 60 }
+				position = { x=920 y=110 }		#mod
+				size = { width = 480 height = 800 }
+				slotsize = { width=60 height= 40 }		#mod
 				format = "UP"
 				
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
-				}					
+				 #background = {
+					 #name = "Background"
+					 #quadTextureSprite ="GFX_fullborder_tiled"
+					 #position = { x=23 y=-114 }					
+				 #}					
 				
 			}
 
 			gridboxtype = {
 				name = "mass_assault_tree"
-				position = { x=1520 y=172 }
-				size = { width = 480 height = 1350 }
-				slotsize = { width=60 height= 60 }
+				position = { x=1400 y=110 }		#mod
+				size = { width = 480 height = 800 }
+				slotsize = { width=60 height= 40 }		#mod
 				format = "UP"
 				
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
-				}					
+				 #background = {
+					 #name = "Background"
+					 #quadTextureSprite ="GFX_fullborder_tiled"
+					 #position = { x=17 y=-114 }					
+				 #}					
 				
 			}
 		}
@@ -2822,7 +2821,7 @@ guiTypes = {
 			name = "naval_doctrine_folder"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			margin = { top = 13 left = 13 bottom = 6 right = 25}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
@@ -2841,24 +2840,24 @@ guiTypes = {
 			iconType = {
 				name ="fleet_in_being_bg"
 				spriteType = "GFX_fleet_in_being_bg"
-				position = { x=85 y=33 }
+				position = { x=180 y=0 }
 			}			
 				
 			iconType = {
 				name ="trade_interdiction_bg"
 				spriteType = "GFX_trade_interdiction_bg"
-				position = { x=575 y=33 }
+				position = { x=660 y=0 }
 			}	
 	
 			iconType = {
 				name ="base_strike_bg"
 				spriteType = "GFX_base_strike_bg"
-				position = { x=1052 y=33 }
+				position = { x=1140 y=0 }
 			}			
 			
 			instantTextBoxType = {
 				name = "fleet_in_being_title"
-				position = { x = 120 y = 35 }
+				position = { x = 205 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2871,7 +2870,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "fleet_in_being_desc"
-				position = { x = 130 y = 70 }
+				position = { x = 210 y = 70 }
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
@@ -2884,7 +2883,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "trade_interdiction_title"
-				position = { x = 610 y = 35 }
+				position = { x = 685 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2897,7 +2896,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "trade_interdiction_desc"
-				position = { x = 610 y = 70 }
+				position = { x = 700 y = 70 }
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
@@ -2910,7 +2909,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "base_strike_title"
-				position = { x = 1085 y = 35 }
+				position = { x = 1165 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -2923,7 +2922,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "base_strike_desc"
-				position = { x = 1095 y = 70 }
+				position = { x = 1180 y = 70 }
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
@@ -2936,45 +2935,45 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "fleet_in_being_tree"
-				position = { x=80 y=172 }
-				size = { width = 478 height = 1000 }
-				slotsize = { width=60 height= 60 }
+				position = { x=160 y=135 }		#mod
+				size = { width = 480 height = 800 }
+				slotsize = { width=60 height= 58 }		#mod
 				format = "UP"
 
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
-				}					
+				#background = {
+					#name = "Background"
+					#quadTextureSprite ="GFX_fullborder_tiled"
+					#position = { x=0 y=-150 }					
+				#}					
 				
 			}
 
 			gridboxtype = {
 				name = "trade_interdiction_tree"
-				position = { x=560 y=172 }
-				size = { width = 480 height = 1000 }
-				slotsize = { width=60 height= 60 }
+				position = { x=640 y=135 }		#mod
+				size = { width = 480 height = 800 }
+				slotsize = { width=60 height= 58 }		#mod
 				format = "UP"
 				
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
-				}
+				# background = {
+					# name = "Background"
+					# quadTextureSprite ="GFX_fullborder_tiled"
+					# position = { x=0 y=-150 }					
+				# }
 			}
 
 			gridboxtype = {
 				name = "base_strike_tree"
-				position = { x=1042 y=172 }
-				size = { width = 480 height = 1000 }
-				slotsize = { width=60 height= 60 }
+				position = { x=1120 y=135 }		#mod
+				size = { width = 480 height = 800 }
+				slotsize = { width=60 height= 58 }		#mod
 				format = "UP"
 				
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
-				}
+				#background = {
+					#name = "Background"
+					#quadTextureSprite ="GFX_fullborder_tiled"
+					#position = { x=0 y=-150 }					
+				#}
 			}
 		}
 
@@ -2995,25 +2994,25 @@ guiTypes = {
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
-				size = { width = 1440 height = 1000 }	
+				size = { width = 1440 height = 800 }	
 			}
 
 			iconType = {
 				name ="air_superiority_bg"
 				spriteType = "GFX_strategic_destruction_bg"
-				position = { x=80 y=33 }
+				position = { x=80 y=0 }		#mod
 			}			
 				
 			iconType = {
 				name ="battlefield_destruction_bg"
 				spriteType = "GFX_battlefield_destruction_bg"
-				position = { x=595 y=33 }
+				position = { x=595 y=0 }		#mod
 			}	
 	
 			iconType = {
 				name ="operational_destruction_bg"
 				spriteType = "GFX_operational_destruction_bg"
-				position = { x=1100 y=33 }
+				position = { x=1100 y=0 }		#mod
 			}
 	
 #			iconType = {
@@ -3024,7 +3023,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "strategic_destruction_title"
-				position = { x = 80 y = 35 }
+				position = { x = 95 y = 0 }		#mod
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
 				text = "TITLE_STRATEGIC_DESTRUCTION"
@@ -3036,7 +3035,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "strategic_destruction_desc"
-				position = { x = 108 y = 70 }
+				position = { x = 108 y = 30 }		#mod
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
 				text = "STRATEGIC_DESTRUCTION_DESC"
@@ -3048,7 +3047,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "battlefield_support_title"
-				position = { x = 605 y = 35 }
+				position = { x = 605 y = 0 }		#mod
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
 				text = "TITLE_BATTLEFIELD_SUPPORT"
@@ -3060,7 +3059,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "battlefield_support_desc"
-				position = { x = 620 y = 70 }
+				position = { x = 620 y = 30 }		#mod
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
 				text = "BATTLEFIELD_SUPPORT_DESC"
@@ -3072,7 +3071,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "operational_integrity_title"
-				position = { x = 1105 y = 35 }
+				position = { x = 1105 y = 0 }		#mod
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
 				text = "TITLE_OPERATIONAL_INTEGRITY"
@@ -3084,7 +3083,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "operational_integrity_desc"
-				position = { x = 1120 y = 82 }
+				position = { x = 1120 y = 30 }		#mod
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
 				text = "OPERATIONAL_INTEGRITY_DESC"
@@ -3122,9 +3121,9 @@ guiTypes = {
 			gridboxtype = {
 				#strategic_destruction_tree Needs to be named after first tech (air_superiority)
 				name = "air_superiority_tree"
-				position = { x=80 y=172 }
-				size = { width = 400 height = 1050 }
-				slotsize = { width=60 height= 60 }
+				position = { x=90 y=95 }		#mod
+				size = { width = 400 height = 800 }
+				slotsize = { width=60 height= 41 }		#mod
 				format = "UP"
 
 #				background = {
@@ -3137,9 +3136,9 @@ guiTypes = {
 			gridboxtype = {
 				#battlefield_support_tree Needs to be named after first tech (formation_flying)
 				name = "formation_flying_tree"
-				position = { x=600 y=172 }
-				size = { width = 400 height = 1050 }
-				slotsize = { width=60 height= 60 }
+				position = { x=600 y=95 }		#mod
+				size = { width = 400 height = 800 }
+				slotsize = { width=60 height= 41 }		#mod
 				format = "UP"
 
 #				background = {
@@ -3152,9 +3151,9 @@ guiTypes = {
 			gridboxtype = {
 				#operational_integrity_tree Needs to be named after first tech (force_rotation)
 				name = "force_rotation_tree"
-				position = { x=1100 y=172 }
-				size = { width = 400 height = 1050 }
-				slotsize = { width=60 height= 60 }
+				position = { x=1100 y=95 }		#mod
+				size = { width = 400 height = 800 }
+				slotsize = { width=60 height= 41 }		#mod
 				format = "UP"
 
 #				background = {
@@ -3183,7 +3182,7 @@ guiTypes = {
 				name = "size_filler"
 				position = { x=0 y=0 }
 				size = {
-					width = 710 height = 1100
+					width = 710 height = 800
 					min = { width= 100%% height = 100%% }
 				}
 				
@@ -3204,8 +3203,8 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "wonderweapon_year"
-				position = { x=850 y=40 }
-				size = { width = 130 height = 100% }
+				position = { x=850 y=30 }	#mod
+				size = { width = 130 height = 80% }
 				orientation = upper_left
 			
 #				instantTextBoxType = {
@@ -3223,7 +3222,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year3"
-					position = { x = 0 y = 260 }
+					position = { x = 0 y = 20 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3236,7 +3235,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year4"
-					position = { x = 0 y = 380 }
+					position = { x = 0 y = 140 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3249,7 +3248,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year5"
-					position = { x = 0 y = 500 }
+					position = { x = 0 y = 260 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3262,7 +3261,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year6"
-					position = { x = 0 y = 620 }
+					position = { x = 0 y = 380 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3275,7 +3274,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year7"
-					position = { x = 0 y = 740 }
+					position = { x = 0 y = 500 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3288,7 +3287,7 @@ guiTypes = {
 
 #				instantTextBoxType = {
 #					name = "wonderweapon_year8"
-#					position = { x = 0 y = 860 }
+#					position = { x = 0 y = 710 }
 #					textureFile = ""
 #					font = "hoi_36header"
 #					borderSize = {x = 0 y = 4}
@@ -3301,7 +3300,7 @@ guiTypes = {
 
 #				instantTextBoxType = {
 #					name = "wonderweapon_year9"
-#					position = { x = 0 y = 1100 }
+#					position = { x = 0 y = 846 }
 #					textureFile = ""
 #					font = "hoi_36header"
 #					borderSize = {x = 0 y = 4}
@@ -3314,7 +3313,7 @@ guiTypes = {
 #
 #				instantTextBoxType = {
 #					name = "wonderweapon_year10"
-#					position = { x = 0 y = 1258 }
+#					position = { x = 0 y = 960 }
 #					textureFile = ""
 #					font = "hoi_36header"
 #					borderSize = {x = 0 y = 4}
@@ -3329,13 +3328,13 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "engineering_year_right"
-				position = { x=100 y=40 }
-				size = { width = 130 height = 100% }
+				position = { x=130 y=0 }		#mod
+				size = { width = 130 height = 80% }
 				orientation = upper_left
 			
 				instantTextBoxType = {
 					name = "wonderweapon_year2"
-					position = { x = 0 y = 140 }
+					position = { x = 0 y = 40 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3374,7 +3373,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year5"
-					position = { x = 0 y = 500 }
+					position = { x = 0 y = 390 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3387,7 +3386,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year6"
-					position = { x = 0 y = 620 }
+					position = { x = 0 y = 504 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3400,7 +3399,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year7"
-					position = { x = 0 y = 740 }
+					position = { x = 0 y = 618 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3413,7 +3412,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year8"
-					position = { x = 0 y = 860 }
+					position = { x = 0 y = 732 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3426,7 +3425,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year9"
-					position = { x = 0 y = 980 }
+					position = { x = 0 y = 840 }		#mod
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3437,24 +3436,24 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 
-				instantTextBoxType = {
-					name = "wonderweapon_year10"
-					position = { x = 0 y = 1258 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1945"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}				
+#				instantTextBoxType = {
+#					name = "wonderweapon_year10"
+#					position = { x = 0 y = 960 }		#mod
+#					textureFile = ""
+#					font = "hoi_36header"
+#					borderSize = {x = 0 y = 4}
+#					text = "1945"
+#					maxWidth = 130
+#					maxHeight = 32
+#					format = left
+#					Orientation = "UPPER_LEFT"
+#				}				
 			
 			}
 	
 				instantTextBoxType = {
 					name = "electronic_eng_subtitle"
-					position = { x = 295 y = 100 }
+					position = { x = 295 y = 0 }		#mod
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
 					text = "TITLE_ELECTRONIC_SUBTITLE"
@@ -3466,7 +3465,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "experimental_rockets_subtitle"
-					position = { x = 1095 y = 325 }
+					position = { x = 1095 y = 105 }		#mod
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
 					text = "TITLE_EXP_ROCKETS_SUBTITLE"
@@ -3478,7 +3477,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "atomic_research_subtitle"
-					position = { x = 900 y = 220 }
+					position = { x = 900 y = 0 }		#mod
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
 					text = "TITLE_ATOMIC_RESEARCH_SUBTITLE"
@@ -3490,23 +3489,23 @@ guiTypes = {
 	
 			gridboxtype = {
 				name = "electronic_mechanical_engineering_tree"
-				position = { x=50 y=172 }
+				position = { x=50 y=30 }		#mod
 				size = { width = 680 height = 800 }
-				slotsize = { width=60 height= 60 }
+				slotsize = { width=60 height= 57 }		#mod
 				format = "UP"
 			}
 
 			iconType = {
 				name = "highlight_engineering_1"
 				spriteType = "GFX_tutorial_research_small_item_icon_glow"
-				position = { x=355 y=172}
+				position = { x=355 y=30}		#mod
 				hide = yes
 				alwaystransparent = yes
 			}			
 			
 			gridboxtype = {
 				name = "experimental_rockets_tree"
-				position = { x=950 y=412 }
+				position = { x=950 y=150 }		#mod
 				size = { width = 480 height = 650 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
@@ -3517,7 +3516,7 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "atomic_research_tree"
-				position = { x=655 y=292 }
+				position = { x=655 y=30 }		#mod
 				size = { width = 680 height = 500 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
@@ -3588,14 +3587,14 @@ guiTypes = {
 
 			buttonType = {
 				name = "naval_folder_tab"
-				position = { x = 497 y = 0 }
+				position = { x = 467 y = 0 }		#mod
 				quadTextureSprite = "GFX_naval_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}
 			buttonType = {
 				name = "mtgnavalfolder_tab"
-				position = { x = 497 y = 0 }
+				position = { x = 467 y = 0 }		#mod
 				quadTextureSprite = "GFX_naval_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -3603,14 +3602,14 @@ guiTypes = {
 
 			buttonType = {
 				name = "naval_doctrine_folder_tab"
-				position = { x = 586 y = 0 }
+				position = { x = 556 y = 0 }		#mod
 				quadTextureSprite = "GFX_naval_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}
 			buttonType = {
 				name = "air_techs_folder_tab"
-				position = { x = 705 y = 0 }
+				position = { x = 645 y = 0 }		#mod
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -3618,14 +3617,14 @@ guiTypes = {
 
 			buttonType = {
 				name = "air_doctrine_folder_tab"
-				position = { x = 794 y = 0 }
+				position = { x = 734 y = 0 }		#mod
 				quadTextureSprite = "GFX_air_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}
 
 			buttonType = {
-				position = { x = 913 y = 0 }
+				position = { x = 823 y = 0 }		#mod
 				name = "electronics_folder_tab"
 				quadTextureSprite = "GFX_techtree_engineering_tab"
 				frame = 1
@@ -3635,13 +3634,13 @@ guiTypes = {
 			iconType = {
 				name = "highlight_engineering_folder"
 				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x=913 y=0}
+				position = { x=823 y=0}		#mod
 				hide = yes
 				alwaystransparent = yes
 			}			
 				
 			buttonType = {
-				position = { x = 1002 y = 0 }
+				position = { x = 912 y = 0 }		#mod
 				name = "industry_folder_tab"
 				quadTextureSprite = "GFX_industry_folder_tab"
 				frame = 1
@@ -3652,7 +3651,7 @@ guiTypes = {
 			iconType = {
 				name = "highlight_industry_folder"
 				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x=1002 y=0}
+				position = { x=912 y=0}		#mod
 				hide = yes
 				alwaystransparent = yes
 			}

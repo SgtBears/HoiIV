@@ -2,8 +2,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "navyleader_trait_tree_window"
-		position = { x=-670 y=-350 }
-		size = { width=1190 height=700 }
+		position = { x=-700 y=-460 }		#mod
+		size = { width=1190 height=880 }		#mod
 		orientation = center
 		fade_time = 500
 		fade_type = linear
@@ -17,7 +17,7 @@ guiTypes = {
 			
 		iconType = {
 			name = "Background_icon"		
-			spriteType ="GFX_admiral_trait_tree_bg"
+			spriteType ="GFX_trait_tree_bg"		#mod
 			position = { x = 0 y = 0 }
 			allwaystransparent = yes
 		}
@@ -187,8 +187,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "active_traits"
-			position = {x=20 y=175}
-			size = {width=265 height=540}
+			position = {x=14 y=175}		#mod
+			size = {width=273 height=685}		#mod
 			Orientation = upper_left
 			clipping = yes
 			
@@ -397,7 +397,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "regular_traits"
 				position = {x=24 y=40}
-				size = {width=664 height=@trait_window_height}
+				size = {width=664 height=880}
 				Orientation = upper_left
 				clipping = yes
 				drag_scroll = { left middle }

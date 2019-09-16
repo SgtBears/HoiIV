@@ -62,10 +62,14 @@ country_event = {
 				ROOT = {
 					add_to_faction = FROM
 				}
-				add_ai_strategy = {
-					type = alliance
-					id = "CHI"
-					value = 200
+				CH0 = {
+					ROOT = {
+						add_ai_strategy = {
+							type = alliance
+							id = PREV
+							value = 200
+						}
+					}
 				}
 			}
 		}
@@ -74,10 +78,14 @@ country_event = {
 				FROM = { is_faction_leader = yes }
 			}
 			FROM = { add_to_faction = ROOT }
-			add_ai_strategy = {
-				type = alliance
-				id = "PRC"
-				value = 200
+			PR0 = {
+				ROOT = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 200
+					}
+				}
 			}
 			every_country = {
 				limit = {
@@ -143,10 +151,14 @@ country_event = {
 				add_to_faction = PREV
 			}
 		}
-		add_ai_strategy = {
-			type = alliance
-			id = "PRC"
-			value = 200
+		PR0 = {
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 200
+				}
+			}
 		}
 		
 		FROM = {
@@ -259,25 +271,25 @@ country_event = {
 			limit = {
 				controls_state = 527
 			}
-			KOR = { transfer_state = 527 }
+			KO0 = { transfer_state = 527 }
 		}
 		if = {
 			limit = {
 				controls_state = 525
 			}
-			KOR = { transfer_state = 525 }
+			KO0 = { transfer_state = 525 }
 		}
 		if = {
 			limit = {
-				MAN = {
-					is_subject_of = JAP
+				MA5 = {
+					is_subject_of = JA0
 				}
 			}
 			if = {
 				limit = {
 					controls_state = 609
 				}
-				MAN = {
+				MA5 = {
 					transfer_state = 609
 				}
 			}
@@ -285,11 +297,15 @@ country_event = {
 				limit = {
 					controls_state = 745
 				}
-				MAN = {
+				MA5 = {
 					transfer_state = 745
 				}
 			}
-			set_autonomy = { target = MAN autonomy_state = autonomy_free }
+			MA5 = {
+				ROOT = {
+					set_autonomy = { target = PREV autonomy_state = autonomy_free }
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -316,11 +332,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				MEN = {
-					is_subject_of = JAP
+				ME5 = {
+					is_subject_of = JA0
 				}
 			}
-			set_autonomy = { target = MEN autonomy_state = autonomy_free }
+			ME5 = {
+				ROOT = {
+					set_autonomy = { target = PREV autonomy_state = autonomy_free }
+				}
+			}
 		}
 	}
 }
@@ -347,14 +367,14 @@ country_event = {
 		country_event = { id = wtt_prc.20 days = 2 }
 		if = {
 			limit = {
-				MAN = {
+				MA5 = {
 					OR = {
-						is_subject_of = JAP
+						is_subject_of = JA0
 						has_cosmetic_tag = MAN_kwantung_army
 					}
 				}
 			}
-			MAN = {
+			MA5 = {
 				random_owned_state = {
 					limit = {
 						arms_factory > 0
@@ -369,7 +389,7 @@ country_event = {
 		else_if = {
 			limit = {
 				any_owned_state = {
-					NOT = { is_core_of = JAP }
+					NOT = { is_core_of = JA0 }
 					arms_factory > 0
 				}
 			}
@@ -377,7 +397,7 @@ country_event = {
 				prioritize = { 525 527 }
 				limit = {
 					arms_factory > 0
-					NOT = {	is_core_of = JAP }
+					NOT = {	is_core_of = JA0 }
 				}
 				damage_building = {
 					type = arms_factory
@@ -410,12 +430,12 @@ country_event = {
 		country_event = { id = wtt_prc.20 days = 2 }
 		if = {
 			limit = {
-				MAN = {
-					is_subject_of = JAP
+				MA5 = {
+					is_subject_of = JA0
 					has_cosmetic_tag = MAN_kwantung_army
 				}
 			}
-			MAN = {
+			MA5 = {
 				random_owned_state = {
 					limit = {
 						industrial_complex > 0
@@ -430,7 +450,7 @@ country_event = {
 		else_if = {
 			limit = {
 				any_owned_state = {
-					NOT = { is_core_of = JAP }
+					NOT = { is_core_of = JA0 }
 					industrial_complex > 0
 				}
 			}
@@ -439,7 +459,7 @@ country_event = {
 				limit = {
 					industrial_complex > 0
 					NOT = {
-						is_core_of = JAP
+						is_core_of = JA0
 					}
 				}
 				damage_building = {
@@ -473,12 +493,12 @@ country_event = {
 		country_event = { id = wtt_prc.20 days = 2 }
 		if = {
 			limit = {
-				MAN = {
-					is_subject_of = JAP
+				MA5 = {
+					is_subject_of = JA0
 					has_cosmetic_tag = MAN_kwantung_army
 				}
 			}
-			MAN = {
+			MA5 = {
 				random_owned_state = {
 					damage_building = {
 						type = infrastructure
@@ -527,12 +547,12 @@ country_event = {
 		country_event = { id = wtt_prc.20 days = 2 }
 		if = {
 			limit = {
-				MAN = {
-					is_subject_of = JAP
+				MA5 = {
+					is_subject_of = JA0
 					has_cosmetic_tag = MAN_kwantung_army
 				}
 			}
-			MAN = {
+			MA5 = {
 				add_manpower = -200
 			}
 		}
@@ -626,7 +646,7 @@ country_event = {
 			base = 50
 			modifier = {
 				factor = 0
-				PRC = {
+				PR0 = {
 					is_ai = no
 				}
 			}
@@ -693,16 +713,16 @@ country_event = {
 			if = {
 				limit = {
 					event_target:communist_china = {
-						is_in_faction_with = SOV
+						is_in_faction_with = SO0
 					}
-					SOV = {
+					SO0 = {
 						is_faction_leader = yes
 					}
 					event_target:warlord = {
 						is_in_faction = no
 					}
 				}
-				SOV = {
+				SO0 = {
 					add_to_faction = event_target:warlord
 				}
 			}
@@ -781,7 +801,7 @@ country_event = {
 					limit = {
 						if = {
 							limit = {
-								XSM = {
+								XS0 = {
 									any_neighbor_country = {
 										tag = event_target:warlord
 									}
@@ -790,7 +810,7 @@ country_event = {
 									}
 								}
 							}
-							tag = XSM
+							original_tag = XSM
 							else = {
 								any_neighbor_country = {
 									tag = event_target:warlord
@@ -842,7 +862,7 @@ country_event = {
 		set_cosmetic_tag = CHI_warlord_PRC
 		every_state = {
 			limit = {
-				is_core_of = PRC
+				is_core_of = PR0
 			}
 			add_core_of = ROOT
 		}

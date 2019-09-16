@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = ENG
-		add_core_of = FIJ
+		add_core_of = KIR
 		buildings = {
 			infrastructure = 3
 			13021 = {
@@ -19,7 +19,13 @@ state={
 			7393 = {
 				naval_base = 1
 			}
-			13020 = {
+			14282 = {
+				naval_base = 1
+			}
+			14286 = {
+				naval_base = 1
+			}
+			14287 = {
 				naval_base = 1
 			}
 		}
@@ -30,6 +36,6 @@ state={
 	}
 
 	provinces={
-		4387 7393 13020 13021 13022 
+		4387 7393 13020 13021 13022 14282 14286 14287
 	}
 }

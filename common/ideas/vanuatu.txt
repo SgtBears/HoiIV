@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		NHB_pot = {
+
+			picture = generic_political_advisor_asia_2
+
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		NHB_coi = {
+
+			picture = generic_political_advisor_asia_1
+				
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		NHB_stc = {
+
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		NHB_aco2 = {
+
+			picture = generic_army_asia_4
+			
+			allowed = {
+				original_tag = NHB
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NHB_acd2 = {
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		NHB_acr = {
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NHB_acgs = {
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		NHB_nccr = {
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = NHB
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NHB_ncm = {
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = NHB
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		NHB_ar = {
+			
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		NHB_ai2 = {
+
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NHB_aa2 = {
+
+			picture = generic_army_asia_2
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NHB_acas = {
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NHB_ncs = {
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		NHB_mt = {
+			
+			picture = generic_army_asia_6
+
+			allowed = {
+				original_tag = NHB
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		NHB_nt = {
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		NHB_awt = {
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = NHB
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

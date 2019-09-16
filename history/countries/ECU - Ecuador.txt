@@ -80,10 +80,20 @@ create_country_leader = {
 }
 
 1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1933.12.15"
+		election_frequency = 84
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+	}
+
 	create_country_leader = {
 		name = "Aurelio Mosquera"
 		desc = "POLITICS_AURELIO_MOSQUERA_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
 		expire = "1965.1.1"
 		ideology = liberalism
 		traits = {

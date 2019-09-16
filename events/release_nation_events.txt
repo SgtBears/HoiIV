@@ -1,0 +1,6299 @@
+﻿###########################
+# South-African TFV events Events
+###########################
+
+add_namespace = release_nation_events
+country_event = {
+	id = release_nation_events.60
+	title = release_nation_events.60.t	# Freedom for ANG
+	desc = release_nation_events.60.d	#
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = release_nation_events.60.a
+		if = {
+			limit = { 
+				controls_state = 540 
+			}
+			AN0 = { transfer_state = 540 }
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			AN0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = AN0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = AN0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = AN0 autonomy_state = autonomy_dominion } }
+			AN0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = AN0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = AN0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = AN0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = AN0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = AN0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = AN0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = AN0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			AN0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = AN0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			AN0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.61
+	title = release_nation_events.61.t	# Freedom for MZB
+	desc = release_nation_events.61.d	#
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.61.a
+		if = {
+			limit = { 
+				controls_state = 544
+			}
+			MZ0 = { transfer_state = 544 }
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			MZ0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = MZ0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = MZ0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = MZ0 autonomy_state = autonomy_dominion } }
+			MZ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = MZ0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = MZ0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = MZ0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = MZ0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = MZ0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = MZ0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = MZ0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			MZ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = MZ0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			MZ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.62
+	title = release_nation_events.62.t	# Freedom for COG
+	desc = release_nation_events.62.d	#
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = release_nation_events.62.a
+		if = {
+			limit = { 
+				controls_state = 295 
+				controls_state = 538 
+				controls_state = 718 
+			}
+			CG0 = {
+				transfer_state = 295
+				transfer_state = 538
+				transfer_state = 718
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			CG0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = CG0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = CG0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = CG0 autonomy_state = autonomy_dominion } }
+			CG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = CG0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = CG0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = CG0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = CG0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = CG0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = CG0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = CG0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			CG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = CG0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			CG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}		
+}
+country_event = {
+	id = release_nation_events.63
+	title = release_nation_events.63.t	# Freedom for ZIM
+	desc = release_nation_events.63.d	#
+	picture = GFX_report_event_generic_sign_treaty3
+	
+
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.63.a
+		if = {
+			limit = { 
+				controls_state = 545
+			}
+			ZI0 = {
+				transfer_state = 545
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			ZI0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = ZI0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = ZI0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = ZI0 autonomy_state = autonomy_dominion } }
+			ZI0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = ZI0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = ZI0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = ZI0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = ZI0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = ZI0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = ZI0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = ZI0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			ZI0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = ZI0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			ZI0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+	
+}
+country_event = {
+	id = release_nation_events.64
+	title = release_nation_events.64.t	# Freedom for KEN
+	desc = release_nation_events.64.d	#
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = release_nation_events.64.a
+		if = {
+			limit = { 
+				controls_state = 547
+			}
+			KE0 = {
+				transfer_state = 547
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			KE0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = KE0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = KE0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = KE0 autonomy_state = autonomy_dominion } }
+			KE0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = KE0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = KE0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = KE0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = KE0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = KE0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = KE0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = KE0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			KE0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = KE0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			KE0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.65
+	title = release_nation_events.65.t	# Freedom for MAD
+	desc = release_nation_events.65.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = release_nation_events.65.a
+		if = {
+			limit = { 
+				controls_state = 543
+				controls_state = 706
+				controls_state = 708
+			}
+			MD0 = {
+				transfer_state = 543
+				transfer_state = 706
+				transfer_state = 708
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			MD0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = MD0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = MD0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = MD0 autonomy_state = autonomy_dominion } }
+			MD0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = MD0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = MD0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = MD0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = MD0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = MD0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = MD0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = MD0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			MD0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = MD0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			MD0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.66
+	title = release_nation_events.66.t	# Freedom for BOT
+	desc = release_nation_events.66.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = release_nation_events.66.a
+		if = {
+			limit = { 
+				controls_state = 542
+			}
+			BT0 = {
+				transfer_state = 542
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			BT0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = BT0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = BT0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = BT0 autonomy_state = autonomy_dominion } }
+			BT0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = BT0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = BT0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = BT0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = BT0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = BT0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = BT0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = BT0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			BT0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = BT0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			BT0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.67
+	title = release_nation_events.67.t	# Freedom for ZAM
+	desc = release_nation_events.67.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = release_nation_events.67.a
+		if = {
+			limit = { 
+				controls_state = 771
+			}
+			ZA0 = {
+				transfer_state = 771
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			ZA0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = ZA0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = ZA0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = ZA0 autonomy_state = autonomy_dominion } }
+			ZA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = ZA0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = ZA0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = ZA0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = ZA0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = ZA0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = ZA0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = ZA0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			ZA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = ZA0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			ZA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.68
+	title = release_nation_events.68.t	# Freedom for MLW
+	desc = release_nation_events.68.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = release_nation_events.68.a
+		if = {
+			limit = { 
+				controls_state = 770
+			}
+			MW0 = {
+				transfer_state = 770
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			MW0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = MW0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = MW0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = MW0 autonomy_state = autonomy_dominion } }
+			MW0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = MW0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = MW0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = MW0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = MW0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = MW0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = MW0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = MW0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			MW0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = MW0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			MW0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.69
+	title = release_nation_events.69.t	# Freedom for TZN
+	desc = release_nation_events.69.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = release_nation_events.69.a
+		if = {
+			limit = { 
+				controls_state = 546
+			}
+			TZ0 = {
+				transfer_state = 546
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			TZ0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = TZ0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = TZ0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = TZ0 autonomy_state = autonomy_dominion } }
+			TZ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = TZ0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = TZ0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = TZ0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = TZ0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = TZ0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = TZ0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = TZ0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			TZ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = TZ0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			TZ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.70
+	title = release_nation_events.70.t	# Freedom for UGA
+	desc = release_nation_events.70.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.70.a
+		if = {
+			limit = { 
+				controls_state = 548
+			}
+			UG0 = {
+				transfer_state = 548
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			UG0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = UG0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = UG0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = UG0 autonomy_state = autonomy_dominion } }
+			UG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = UG0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = UG0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = UG0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = UG0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = UG0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = UG0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = UG0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			UG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = UG0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			UG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.71
+	title = release_nation_events.71.t	# Freedom for SUD
+	desc = release_nation_events.71.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.71.a
+		if = {
+			limit = { 
+				controls_state = 549
+				controls_state = 551
+				controls_state = 767
+			}
+			SU0 = {
+				transfer_state = 549
+				transfer_state = 551
+				transfer_state = 767
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			SU0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = SU0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = SU0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = SU0 autonomy_state = autonomy_dominion } }
+			SU0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = SU0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = SU0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = SU0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = SU0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = SU0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = SU0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = SU0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			SU0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = SU0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			SU0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.72
+	title = release_nation_events.72.t	# Freedom for EGY
+	desc = release_nation_events.72.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = release_nation_events.72.a
+		if = {
+			limit = { 
+				controls_state = 552
+				controls_state = 456
+				controls_state = 457
+				controls_state = 447
+				controls_state = 452
+				controls_state = 446
+				controls_state = 453
+			}
+			EG0 = {
+				transfer_state = 552
+				transfer_state = 456
+				transfer_state = 457
+				transfer_state = 447
+				transfer_state = 452
+				transfer_state = 446
+				transfer_state = 453
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			EG0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = EG0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = EG0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = EG0 autonomy_state = autonomy_dominion } }
+			EG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = EG0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = EG0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = EG0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = EG0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = EG0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = EG0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = EG0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			EG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = EG0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			EG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.73
+	title = release_nation_events.73.t	# Freedom for ERI
+	desc = release_nation_events.73.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.73.a
+		if = {
+			limit = { 
+				controls_state = 550
+			}
+			ER0 = {
+				transfer_state = 550
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			ER0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = ER0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = ER0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = ER0 autonomy_state = autonomy_dominion } }
+			ER0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = ER0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = ER0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = ER0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = ER0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = ER0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = ER0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = ER0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			ER0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = ER0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			ER0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+	option = {
+		name = release_nation_events.105.b
+		trigger = {
+			NOT = { original_tag = ET0 }
+			ET0 = {
+				owns_state = 271
+				controls_state = 271
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 550
+			}
+			ER0 = {
+				transfer_state = 550
+			}
+		}
+		ET0 = { set_autonomy = { target = ER0 autonomy_state = autonomy_dominion } }
+		ET0 = { add_opinion_modifier = { target = ROOT modifier = gave_eritrea } }
+	}
+	option = {
+		name = release_nation_events.105.c
+		trigger = {
+			NOT = { original_tag = ET0 }
+			ET0 = {
+				owns_state = 271
+				controls_state = 271
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 550
+			}
+			ET0 = {
+				transfer_state = 550
+			}
+		}
+		ET0 = { add_opinion_modifier = { target = ROOT modifier = gave_eritrea } }
+	}
+}
+country_event = {
+	id = release_nation_events.74
+	title = release_nation_events.74.t	# Freedom for ETH
+	desc = release_nation_events.74.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.74.a
+		if = {
+			limit = { 
+				controls_state = 271
+			}
+			ET0 = {
+				transfer_state = 271
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			ET0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = ET0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = ET0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = ET0 autonomy_state = autonomy_dominion } }
+			ET0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = ET0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = ET0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = ET0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = ET0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = ET0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = ET0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = ET0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			ET0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = ET0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			ET0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.75
+	title = release_nation_events.75.t	# Freedom for DJI
+	desc = release_nation_events.75.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = release_nation_events.75.a
+		if = {
+			limit = { 
+				controls_state = 268
+			}
+			DJ0 = {
+				transfer_state = 268
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			DJ0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = DJ0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = DJ0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = DJ0 autonomy_state = autonomy_dominion } }
+			DJ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = DJ0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = DJ0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = DJ0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = DJ0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = DJ0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = DJ0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = DJ0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			DJ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = DJ0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			DJ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+	option = {
+		name = release_nation_events.75.b
+		trigger = {
+			NOT = { original_tag = SO5 }
+			SO5 = {
+				owns_state = 269
+				controls_state = 269
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 268
+			}
+			SO5 = {
+				transfer_state = 268
+			}
+		}
+		SO5 = { add_opinion_modifier = { target = ROOT modifier = gave_dijibouti } }
+	}
+	option = {
+		name = release_nation_events.75.c
+		trigger = {
+			NOT = { original_tag = SO5 }
+			SO5 = {
+				owns_state = 269
+				controls_state = 269
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		custom_effect_tooltip = hold_referendum_dijibouti_tooltip
+		hidden_effect = {
+			random_list = {
+				80 = {
+					if = {
+						limit = { 
+							controls_state = 268
+						}
+						DJ0 = {
+							transfer_state = 268
+						}
+					}
+					if = {
+						limit = { 
+							has_country_flag = release_not_local_rulers
+						}
+						DJ0 = { set_government_to_root = yes }
+					}
+					DJ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+				}
+				20 = {
+					if = {
+						limit = { 
+							controls_state = 268
+						}
+						SO5 = {
+							transfer_state = 268
+						}
+					}
+					SO5 = { add_opinion_modifier = { target = ROOT modifier = gave_dijibouti } }
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.76
+	title = release_nation_events.76.t	# Freedom for SOM
+	desc = release_nation_events.76.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.76.a
+		if = {
+			limit = { 
+				controls_state = 269
+				controls_state = 559
+			}
+			SO5 = {
+				transfer_state = 269
+				transfer_state = 559
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			SO5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = SO5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = SO5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = SO5 autonomy_state = autonomy_dominion } }
+			SO5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = SO5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = SO5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = SO5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = SO5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = SO5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = SO5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = SO5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			SO5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = SO5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			SO5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.77
+	title = release_nation_events.77.t	# Freedom for RWA
+	desc = release_nation_events.77.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.77.a
+		if = {
+			limit = { 
+				controls_state = 768
+			}
+			RW0 = {
+				transfer_state = 768
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			RW0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = RW0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = RW0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = RW0 autonomy_state = autonomy_dominion } }
+			RW0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = RW0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = RW0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = RW0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = RW0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = RW0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = RW0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = RW0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			RW0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = RW0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			RW0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.78
+	title = release_nation_events.78.t	# Freedom for BRD
+	desc = release_nation_events.78.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.78.a
+		if = {
+			limit = { 
+				controls_state = 769
+			}
+			BD0 = {
+				transfer_state = 769
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			BD0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = BD0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = BD0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = BD0 autonomy_state = autonomy_dominion } }
+			BD0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = BD0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = BD0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = BD0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = BD0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = BD0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = BD0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = BD0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			BD0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = BD0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			BD0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.79
+	title = release_nation_events.79.t	# Freedom for RCG
+	desc = release_nation_events.79.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.79.a
+		if = {
+			limit = { 
+				controls_state = 772
+			}
+			RC0 = {
+				transfer_state = 772
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			RC0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = RC0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = RC0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = RC0 autonomy_state = autonomy_dominion } }
+			RC0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = RC0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = RC0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = RC0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = RC0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = RC0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = RC0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = RC0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			RC0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = RC0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			RC0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.80
+	title = release_nation_events.80.t	# Freedom for GAB
+	desc = release_nation_events.80.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = release_nation_events.80.a
+		if = {
+			limit = { 
+				controls_state = 539
+			}
+			GA5 = {
+				transfer_state = 539
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			GA5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = GA5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = GA5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = GA5 autonomy_state = autonomy_dominion } }
+			GA5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = GA5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = GA5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = GA5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = GA5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = GA5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = GA5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = GA5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			GA5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = GA5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			GA5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.81
+	title = release_nation_events.81.t	# Freedom for EQG
+	desc = release_nation_events.81.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.81.a
+		if = {
+			limit = { 
+				controls_state = 297
+			}
+			EQ0 = {
+				transfer_state = 297
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			EQ0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = EQ0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = EQ0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = EQ0 autonomy_state = autonomy_dominion } }
+			EQ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = EQ0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = EQ0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = EQ0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = EQ0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = EQ0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = EQ0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = EQ0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			EQ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = EQ0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			EQ0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.82
+	title = release_nation_events.82.t	# Freedom for CMR
+	desc = release_nation_events.82.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.82.a
+		if = {
+			limit = { 
+				controls_state = 773
+			}
+			CM0 = {
+				transfer_state = 773
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			CM0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = CM0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = CM0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = CM0 autonomy_state = autonomy_dominion } }
+			CM0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = CM0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = CM0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = CM0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = CM0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = CM0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = CM0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = CM0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			CM0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = CM0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			CM0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.83
+	title = release_nation_events.83.t	# Freedom for CAR
+	desc = release_nation_events.83.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.83.a
+		if = {
+			limit = { 
+				controls_state = 660
+			}
+			CP5 = {
+				transfer_state = 660
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			CP5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = CP5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = CP5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = CP5 autonomy_state = autonomy_dominion } }
+			CP5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = CP5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = CP5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = CP5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = CP5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = CP5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = CP5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = CP5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			CP5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = CP5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			CP5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.84
+	title = release_nation_events.84.t	# Freedom for CHA
+	desc = release_nation_events.84.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.84.a
+		if = {
+			limit = { 
+				controls_state = 774
+				controls_state = 775
+			}
+			CD0 = {
+				transfer_state = 774
+				transfer_state = 775
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			CD0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = CD0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = CD0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = CD0 autonomy_state = autonomy_dominion } }
+			CD0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = CD0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = CD0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = CD0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = CD0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = CD0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = CD0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = CD0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			CD0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = CD0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			CD0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.85
+	title = release_nation_events.85.t	# Freedom for NGA
+	desc = release_nation_events.85.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.85.a
+		if = {
+			limit = { 
+				controls_state = 558
+			}
+			NG5 = {
+				transfer_state = 558
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			NG5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = NG5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = NG5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = NG5 autonomy_state = autonomy_dominion } }
+			NG5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = NG5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = NG5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = NG5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = NG5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = NG5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = NG5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = NG5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			NG5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = NG5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			NG5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.86
+	title = release_nation_events.86.t	# Freedom for NGR
+	desc = release_nation_events.86.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.86.a
+		if = {
+			limit = { 
+				controls_state = 781
+				controls_state = 515
+			}
+			NG0 = {
+				transfer_state = 781
+				transfer_state = 515
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			NG0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = NG0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = NG0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = NG0 autonomy_state = autonomy_dominion } }
+			NG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = NG0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = NG0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = NG0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = NG0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = NG0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = NG0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = NG0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			NG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = NG0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			NG0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.87
+	title = release_nation_events.87.t	# Freedom for DAH
+	desc = release_nation_events.87.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.87.a
+		if = {
+			limit = { 
+				controls_state = 776
+			}
+			DA0 = {
+				transfer_state = 776
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			DA0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = DA0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = DA0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = DA0 autonomy_state = autonomy_dominion } }
+			DA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = DA0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = DA0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = DA0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = DA0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = DA0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = DA0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = DA0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			DA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = DA0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			DA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.88
+	title = release_nation_events.88.t	# Freedom for TOG
+	desc = release_nation_events.88.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.88.a
+		if = {
+			limit = { 
+				controls_state = 777
+			}
+			TO0 = {
+				transfer_state = 777
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			TO0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = TO0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = TO0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = TO0 autonomy_state = autonomy_dominion } }
+			TO0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = TO0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = TO0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = TO0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = TO0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = TO0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = TO0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = TO0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			TO0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = TO0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			TO0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.89
+	title = release_nation_events.89.t	# Freedom for GHA
+	desc = release_nation_events.89.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.89.a
+		if = {
+			limit = { 
+				controls_state = 274
+			}
+			GH0 = {
+				transfer_state = 274
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			GH0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = GH0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = GH0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = GH0 autonomy_state = autonomy_dominion } }
+			GH0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = GH0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = GH0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = GH0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = GH0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = GH0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = GH0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = GH0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			GH0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = GH0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			GH0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.90
+	title = release_nation_events.90.t	# Freedom for IVO
+	desc = release_nation_events.90.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.90.a
+		if = {
+			limit = { 
+				controls_state = 779
+			}
+			IV0 = {
+				transfer_state = 779
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			IV0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = IV0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = IV0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = IV0 autonomy_state = autonomy_dominion } }
+			IV0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = IV0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = IV0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = IV0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = IV0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = IV0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = IV0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = IV0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			IV0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = IV0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			IV0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.91
+	title = release_nation_events.91.t	# Freedom for VOL
+	desc = release_nation_events.91.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.91.a
+		if = {
+			limit = { 
+				controls_state = 778
+			}
+			VO0 = {
+				transfer_state = 778
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			VO0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = VO0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = VO0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = VO0 autonomy_state = autonomy_dominion } }
+			VO0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = VO0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = VO0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = VO0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = VO0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = VO0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = VO0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = VO0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			VO0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = VO0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			VO0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.92
+	title = release_nation_events.92.t	# Freedom for MLI
+	desc = release_nation_events.92.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.92.a
+		if = {
+			limit = { 
+				controls_state = 556
+				controls_state = 782
+			}
+			ML5 = {
+				transfer_state = 556
+				transfer_state = 782
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			ML5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = ML5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = ML5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = ML5 autonomy_state = autonomy_dominion } }
+			ML5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = ML5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = ML5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = ML5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = ML5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = ML5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = ML5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = ML5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			ML5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = ML5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			ML5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.93
+	title = release_nation_events.93.t	# Freedom for SIE
+	desc = release_nation_events.93.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.93.a
+		if = {
+			limit = { 
+				controls_state = 700
+			}
+			SR5 = {
+				transfer_state = 700
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			SR5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = SR5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = SR5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = SR5 autonomy_state = autonomy_dominion } }
+			SR5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = SR5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = SR5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = SR5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = SR5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = SR5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = SR5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = SR5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			SR5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = SR5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			SR5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.94
+	title = release_nation_events.94.t	# Freedom for GNA
+	desc = release_nation_events.94.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.94.a
+		if = {
+			limit = { 
+				controls_state = 780
+			}
+			GN0 = {
+				transfer_state = 780
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			GN0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = GN0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = GN0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = GN0 autonomy_state = autonomy_dominion } }
+			GN0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = GN0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = GN0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = GN0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = GN0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = GN0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = GN0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = GN0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			GN0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = GN0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			GN0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.95
+	title = release_nation_events.95.t	# Freedom for GNB
+	desc = release_nation_events.95.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.95.a
+		if = {
+			limit = { 
+				controls_state = 296
+			}
+			GN5 = {
+				transfer_state = 296
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			GN5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = GN5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = GN5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = GN5 autonomy_state = autonomy_dominion } }
+			GN5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = GN5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = GN5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = GN5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = GN5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = GN5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = GN5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = GN5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			GN5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = GN5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			GN5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.96
+	title = release_nation_events.96.t	# Freedom for SEN
+	desc = release_nation_events.96.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.96.a
+		if = {
+			limit = { 
+				controls_state = 272
+			}
+			SE5 = {
+				transfer_state = 272
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			SE5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = SE5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = SE5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = SE5 autonomy_state = autonomy_dominion } }
+			SE5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = SE5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = SE5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = SE5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = SE5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = SE5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = SE5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = SE5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			SE5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = SE5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			SE5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.97
+	title = release_nation_events.97.t	# Freedom for GAM
+	desc = release_nation_events.97.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.97.a
+		if = {
+			limit = { 
+				controls_state = 701
+			}
+			GA0 = {
+				transfer_state = 701
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			GA0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = GA0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = GA0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = GA0 autonomy_state = autonomy_dominion } }
+			GA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = GA0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = GA0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = GA0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = GA0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = GA0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = GA0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = GA0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			GA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = GA0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			GA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.98
+	title = release_nation_events.98.t	# Freedom for LIB
+	desc = release_nation_events.98.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.98.a
+		if = {
+			limit = { 
+				controls_state = 298
+			}
+			LI5 = {
+				transfer_state = 298
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			LI5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = LI5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = LI5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = LI5 autonomy_state = autonomy_dominion } }
+			LI5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = LI5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = LI5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = LI5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = LI5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = LI5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = LI5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = LI5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			LI5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = LI5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			LI5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.99
+	title = release_nation_events.99.t	# Freedom for MRT
+	desc = release_nation_events.99.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.99.a
+		if = {
+			limit = { 
+				controls_state = 557
+				controls_state = 786
+			}
+			MR0 = {
+				transfer_state = 557
+				transfer_state = 786
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			MR0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = MR0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = MR0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = MR0 autonomy_state = autonomy_dominion } }
+			MR0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = MR0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = MR0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = MR0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = MR0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = MR0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = MR0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = MR0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			MR0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = MR0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			MR0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.100
+	title = release_nation_events.100.t	# Freedom for WES
+	desc = release_nation_events.100.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.100.a
+		if = {
+			limit = { 
+				controls_state = 699
+			}
+			WE0 = {
+				transfer_state = 699
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			WE0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = WE0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = WE0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = WE0 autonomy_state = autonomy_dominion } }
+			WE0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = WE0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = WE0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = WE0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = WE0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = WE0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = WE0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = WE0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			WE0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = WE0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			WE0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.101
+	title = release_nation_events.101.t	# Freedom for ALG
+	desc = release_nation_events.101.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.101.a
+		if = {
+			limit = { 
+				controls_state = 459
+				controls_state = 460
+				controls_state = 513
+				controls_state = 514
+			}
+			AL5 = {
+				transfer_state = 459
+				transfer_state = 460
+				transfer_state = 513
+				transfer_state = 514
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			AL5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = AL5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = AL5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = AL5 autonomy_state = autonomy_dominion } }
+			AL5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = AL5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = AL5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = AL5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = AL5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = AL5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = AL5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = AL5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			AL5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = AL5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			AL5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.102
+	title = release_nation_events.102.t	# Freedom for MOR
+	desc = release_nation_events.102.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.102.a
+		if = {
+			limit = { 
+				controls_state = 290
+				controls_state = 461
+				controls_state = 462
+				controls_state = 783
+			}
+			MO5 = {
+				transfer_state = 290
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 783
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			MO5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = MO5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = MO5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = MO5 autonomy_state = autonomy_dominion } }
+			MO5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = MO5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = MO5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = MO5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = MO5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = MO5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = MO5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = MO5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			MO5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = MO5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			MO5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.103
+	title = release_nation_events.103.t	# Freedom for TUN
+	desc = release_nation_events.103.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.103.a
+		if = {
+			limit = { 
+				controls_state = 458
+				controls_state = 665
+			}
+			TU5 = {
+				transfer_state = 458
+				transfer_state = 665
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			TU5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = TU5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = TU5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = TU5 autonomy_state = autonomy_dominion } }
+			TU5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = TU5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = TU5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = TU5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = TU5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = TU5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = TU5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = TU5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			TU5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = TU5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			TU5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.104
+	title = release_nation_events.104.t	# Freedom for LBA
+	desc = release_nation_events.104.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.104.a
+		if = {
+			limit = { 
+				controls_state = 448
+				controls_state = 449
+				controls_state = 450
+				controls_state = 451
+				controls_state = 661
+				controls_state = 662
+				controls_state = 663
+				controls_state = 273
+			}
+			LB0 = {
+				transfer_state = 448
+				transfer_state = 449
+				transfer_state = 450
+				transfer_state = 451
+				transfer_state = 661
+				transfer_state = 662
+				transfer_state = 663
+				transfer_state = 273
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			LB0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = LB0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = LB0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = LB0 autonomy_state = autonomy_dominion } }
+			LB0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = LB0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = LB0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = LB0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = LB0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = LB0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = LB0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = LB0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			LB0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = LB0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			LB0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.105
+	title = release_nation_events.105.t	# Freedom for NMB
+	desc = release_nation_events.105.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.105.a
+		if = {
+			limit = { 
+				controls_state = 541
+			}
+			NM0 = {
+				transfer_state = 541
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			NM0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = NM0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = NM0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = NM0 autonomy_state = autonomy_dominion } }
+			NM0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = NM0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = NM0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = NM0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = NM0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = NM0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = NM0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = NM0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			NM0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = NM0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			NM0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+	option = {
+		name = release_nation_events.105.b
+		trigger = {
+			NOT = { original_tag = SAF }
+			SA0 = {
+				owns_state = 681
+				controls_state = 681
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 541
+			}
+			SA0 = {
+				transfer_state = 541
+			}
+		}
+		SA0 = { add_opinion_modifier = { target = ROOT modifier = returned_namibia } }
+	}
+	option = {
+		name = release_nation_events.105.c
+		trigger = {
+			NOT = { original_tag = SAF }
+			SA0 = {
+				owns_state = 681
+				controls_state = 681
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		custom_effect_tooltip = hold_referendum_namibia_tooltip
+		hidden_effect = {
+			random_list = {
+				99 = {
+					if = {
+						limit = { 
+							controls_state = 541
+						}
+						NM0 = {
+							transfer_state = 541
+						}
+					}
+					if = {
+						limit = { 
+							has_country_flag = release_not_local_rulers
+						}
+						NM0 = { set_government_to_root = yes }
+					}
+					NM0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+				}
+				1 = {
+					if = {
+						limit = { 
+							controls_state = 541
+						}
+						SA0 = {
+							transfer_state = 541
+						}
+					}
+					SA0 = { add_opinion_modifier = { target = ROOT modifier = returned_namibia } }
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.106
+	title = release_nation_events.106.t	# Freedom for SAF
+	desc = release_nation_events.106.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.106.a
+		if = {
+			limit = { 
+				controls_state = 681
+				controls_state = 275
+				controls_state = 719
+			}
+			SA0 = {
+				transfer_state = 275
+				transfer_state = 681
+				transfer_state = 719
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			SA0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = SA0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = SA0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = SA0 autonomy_state = autonomy_dominion } }
+			SA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = SA0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = SA0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = SA0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = SA0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = SA0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = SA0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = SA0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			SA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = SA0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			SA0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.107
+	title = release_nation_events.107.t	# Freedom for newfoundland and labrador
+	desc = release_nation_events.107.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.107.a
+		if = {
+			limit = { 
+				controls_state = 331
+				controls_state = 332
+			}
+			NF0 = {
+				transfer_state = 331
+				transfer_state = 332
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 855
+				NOT = { original_tag = QUE }
+			}
+			NF0 = {
+				transfer_state = 855
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			NF0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_dominion } }
+			NF0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			NF0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = NF0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			NF0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+	option = {
+		name = release_nation_events.107.b
+		trigger = {
+			NOT = { original_tag = CAN }
+			CA0 = {
+				owns_state = 466
+				controls_state = 466
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 331
+				controls_state = 332
+			}
+			CA0 = {
+				transfer_state = 331
+				transfer_state = 332
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 855
+				NOT = { original_tag = QUE }
+			}
+			CA0 = {
+				transfer_state = 855
+			}
+		}
+		CA0 = {
+			add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+			hidden_effect = {
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = gave_labrador
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = gave_hamilton
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = gave_newfoundland
+				}
+			}
+		}
+	}
+	option = {
+		name = release_nation_events.107.c
+		trigger = {
+			NOT = { original_tag = USA }
+			US0 = {
+				owns_state = 849
+				controls_state = 849
+				has_country_flag = britain_accepted_destroyers_for_bases
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 331
+				controls_state = 332
+			}
+			US0 = {
+				transfer_state = 331
+				transfer_state = 332
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 855
+				NOT = { original_tag = QUE }
+			}
+			US0 = {
+				transfer_state = 855
+			}
+		}
+		US0 = {
+			add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+			hidden_effect = {
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = gave_labrador
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = gave_hamilton
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = gave_newfoundland
+				}
+			}
+		}
+	}
+	option = {
+		name = release_nation_events.107.d
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { original_tag = USA }
+					US0 = {
+						owns_state = 849
+						controls_state = 849
+						has_country_flag = britain_accepted_destroyers_for_bases
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				AND = {
+					NOT = { original_tag = CAN }
+					CA0 = {
+						owns_state = 466
+						controls_state = 466
+						NOT = { has_war_with = ROOT }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { original_tag = USA }
+				US0 = {
+					owns_state = 849
+					controls_state = 849
+					has_country_flag = britain_accepted_destroyers_for_bases
+					NOT = { has_war_with = ROOT }
+				}
+				NOT = { original_tag = CAN }
+				CA0 = {
+					owns_state = 466
+					controls_state = 466
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			custom_effect_tooltip = hold_referendum_newfoundland_and_labrador_tooltip_1
+		}
+		else_if = {
+			limit = {
+				NOT = { original_tag = CAN }
+				CA0 = {
+					owns_state = 466
+					controls_state = 466
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			custom_effect_tooltip = hold_referendum_newfoundland_and_labrador_tooltip_2
+		}
+		else = {
+			custom_effect_tooltip = hold_referendum_newfoundland_and_labrador_tooltip_3
+		}
+		hidden_effect = {
+			random_list = {
+				25 = {
+					if = {
+						limit = { 
+							controls_state = 331
+							controls_state = 332
+						}
+						NF0 = {
+							transfer_state = 331
+							transfer_state = 332
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 855
+							NOT = { original_tag = QUE }
+						}
+						NF0 = {
+							transfer_state = 855
+						}
+					}
+					if = {
+						limit = { 
+							has_country_flag = release_not_local_rulers
+						}
+						NF0 = { set_government_to_root = yes }
+					}
+					NF0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+				}
+				50 = {
+					modifier = {
+						factor = 0
+						OR = {
+							original_tag = CAN
+							CA0 = { has_war_with = ROOT }
+							CA0 = { NOT = { owns_state = 466 } }
+							CA0 = { NOT = { controls_state = 466 } }
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 331
+							controls_state = 332
+						}
+						CA0 = {
+							transfer_state = 331
+							transfer_state = 332
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 855
+							NOT = { original_tag = QUE }
+						}
+						CA0 = {
+							transfer_state = 855
+						}
+					}
+					CA0 = {
+						add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+						hidden_effect = {
+							remove_opinion_modifier = {
+								target = ROOT
+								modifier = gave_labrador
+							}
+							remove_opinion_modifier = {
+								target = ROOT
+								modifier = gave_hamilton
+							}
+							remove_opinion_modifier = {
+								target = ROOT
+								modifier = gave_newfoundland
+							}
+						}
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0
+						OR = {
+							original_tag = USA
+							US0 = { NOT = { has_country_flag = britain_accepted_destroyers_for_bases } }
+							US0 = { has_war_with = ROOT }
+							US0 = { NOT = { owns_state = 849 } }
+							US0 = { NOT = { controls_state = 849 } }
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 331
+							controls_state = 332
+						}
+						US0 = {
+							transfer_state = 331
+							transfer_state = 332
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 855
+							NOT = { original_tag = QUE }
+						}
+						US0 = {
+							transfer_state = 855
+						}
+					}
+					US0 = {
+						add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+						hidden_effect = {
+							remove_opinion_modifier = {
+								target = ROOT
+								modifier = gave_labrador
+							}
+							remove_opinion_modifier = {
+								target = ROOT
+								modifier = gave_hamilton
+							}
+							remove_opinion_modifier = {
+								target = ROOT
+								modifier = gave_newfoundland
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.108
+	title = release_nation_events.108.t	# Freedom for labrador
+	desc = release_nation_events.108.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.108.a
+		if = {
+			limit = { 
+				controls_state = 332
+			}
+			LB5 = {
+				transfer_state = 332
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 855
+				NOT = { original_tag = QUE }
+			}
+			LB5 = {
+				transfer_state = 855
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			LB5 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = LB5 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = LB5 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = LB5 autonomy_state = autonomy_dominion } }
+			LB5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = LB5 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = LB5 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = LB5 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = LB5 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = LB5 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = LB5 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = LB5 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			LB5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = LB5 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			LB5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+	option = {
+		name = release_nation_events.108.b
+		trigger = {
+			NOT = { original_tag = CAN }
+			CA0 = {
+				owns_state = 466
+				controls_state = 466
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 332
+			}
+			CA0 = {
+				transfer_state = 332
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 855
+				NOT = { original_tag = QUE }
+			}
+			CA0 = {
+				transfer_state = 855
+			}
+		}
+		if = {	
+			limit = {
+				CA0 = {
+					has_opinion_modifier = gave_newfoundland
+				}
+			}
+			CA0 = {
+				add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+				hidden_effect = {
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_labrador
+					}
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_hamilton
+					}
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_newfoundland
+					}
+				}
+			}
+		}
+		else = {
+			limit = {
+				CA0 = {
+					NOT = { has_opinion_modifier = gave_newfoundland_and_labrador }
+				}
+			}
+			CA0 = {
+				add_opinion_modifier = { target = ROOT modifier = gave_labrador }
+				hidden_effect = {
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_hamilton
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = release_nation_events.108.c
+		trigger = {
+			NOT = { original_tag = USA }
+			US0 = {
+				owns_state = 849
+				controls_state = 849
+				has_country_flag = britain_accepted_destroyers_for_bases
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 332
+			}
+			US0 = {
+				transfer_state = 332
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 855
+				NOT = { original_tag = QUE }
+			}
+			US0 = {
+				transfer_state = 855
+			}
+		}
+		if = {	
+			limit = {
+				US0 = {
+					has_opinion_modifier = gave_newfoundland
+				}
+			}
+			US0 = {
+				add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+				hidden_effect = {
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_labrador
+					}
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_hamilton
+					}
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_newfoundland
+					}
+				}
+			}
+		}
+		else = {
+			limit = {
+				US0 = {
+					NOT = { has_opinion_modifier = gave_newfoundland_and_labrador }
+				}
+			}
+			US0 = {
+				add_opinion_modifier = { target = ROOT modifier = gave_labrador }
+				hidden_effect = {
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_hamilton
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = release_nation_events.108.d
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { original_tag = USA }
+					US0 = {
+						owns_state = 849
+						controls_state = 849
+						has_country_flag = britain_accepted_destroyers_for_bases
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				AND = {
+					NOT = { original_tag = CAN }
+					CA0 = {
+						owns_state = 466
+						controls_state = 466
+						NOT = { has_war_with = ROOT }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { original_tag = USA }
+				US0 = {
+					owns_state = 849
+					controls_state = 849
+					has_country_flag = britain_accepted_destroyers_for_bases
+					NOT = { has_war_with = ROOT }
+				}
+				NOT = { original_tag = CAN }
+				CA0 = {
+					owns_state = 466
+					controls_state = 466
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			custom_effect_tooltip = hold_referendum_newfoundland_and_labrador_tooltip_1
+		}
+		else_if = {
+			limit = {
+				NOT = { original_tag = CAN }
+				CA0 = {
+					owns_state = 466
+					controls_state = 466
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			custom_effect_tooltip = hold_referendum_newfoundland_and_labrador_tooltip_2
+		}
+		else = {
+			custom_effect_tooltip = hold_referendum_newfoundland_and_labrador_tooltip_3
+		}
+		hidden_effect = {
+			random_list = {
+				25 = {
+					if = {
+						limit = { 
+							controls_state = 332
+						}
+						LB5 = {
+							transfer_state = 332
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 855
+							NOT = { original_tag = QUE }
+						}
+						LB5 = {
+							transfer_state = 855
+						}
+					}
+					if = {
+						limit = { 
+							has_country_flag = release_not_local_rulers
+						}
+						LB5 = { set_government_to_root = yes }
+					}
+					LB5 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+				}
+				50 = {
+					modifier = {
+						factor = 0
+						OR = {
+							original_tag = CAN
+							CA0 = { has_war_with = ROOT }
+							CA0 = { NOT = { owns_state = 466 } }
+							CA0 = { NOT = { controls_state = 466 } }
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 332
+						}
+						CA0 = {
+							transfer_state = 332
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 855
+							NOT = { original_tag = QUE }
+						}
+						CA0 = {
+							transfer_state = 855
+						}
+					}
+					if = {	
+						limit = {
+							CA0 = {
+								has_opinion_modifier = gave_newfoundland
+							}
+						}
+						CA0 = {
+							add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+							hidden_effect = {
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_labrador
+								}
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_hamilton
+								}
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_newfoundland
+								}
+							}
+						}
+					}
+					else = {
+						limit = {
+							CA0 = {
+								NOT = { has_opinion_modifier = gave_newfoundland_and_labrador }
+							}
+						}
+						CA0 = {
+							add_opinion_modifier = { target = ROOT modifier = gave_labrador }
+							hidden_effect = {
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_hamilton
+								}
+							}
+						}
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0
+						OR = {
+							original_tag = USA
+							US0 = { NOT = { has_country_flag = britain_accepted_destroyers_for_bases } }
+							US0 = { has_war_with = ROOT }
+							US0 = { NOT = { owns_state = 849 } }
+							US0 = { NOT = { controls_state = 849 } }
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 332
+						}
+						US0 = {
+							transfer_state = 332
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 855
+							NOT = { original_tag = QUE }
+						}
+						US0 = {
+							transfer_state = 855
+						}
+					}
+					if = {	
+						limit = {
+							US0 = {
+								has_opinion_modifier = gave_newfoundland
+							}
+						}
+						US0 = {
+							add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+							hidden_effect = {
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_labrador
+								}
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_hamilton
+								}
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_newfoundland
+								}
+							}
+						}
+					}
+					else = {
+						limit = {
+							US0 = {
+								NOT = { has_opinion_modifier = gave_newfoundland_and_labrador }
+							}
+						}
+						US0 = {
+							add_opinion_modifier = { target = ROOT modifier = gave_labrador }
+							hidden_effect = {
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_hamilton
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = release_nation_events.109
+	title = release_nation_events.109.t	# Freedom for labrador
+	desc = release_nation_events.109.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = release_nation_events.109.a
+		if = {
+			limit = { 
+				controls_state = 331
+			}
+			NF0 = {
+				transfer_state = 331
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = release_not_local_rulers
+			}
+			NF0 = { set_government_to_root = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = release_as_puppet
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichsprotectorate
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_reichsprotectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_dominion
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_dominion } }
+			NF0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_protectorate
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_wtt_imperial_protectorate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_imperial_associate
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_wtt_imperial_associate } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_supervised_state
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_supervised_state } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_satellite
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_satellite } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_reichskommissariat
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_reichskommissariat } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_colony
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_colony } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_integrated_puppet
+			}
+			ROOT = { set_autonomy = { target = NF0 autonomy_state = autonomy_integrated_puppet } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_faction_member
+			}
+			NF0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+			ROOT = { add_to_faction = NF0 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = release_as_free
+			}
+			NF0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+		}
+	}
+	option = {
+		name = release_nation_events.109.b
+		trigger = {
+			NOT = { original_tag = CAN }
+			CA0 = {
+				owns_state = 466
+				controls_state = 466
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 331
+			}
+			CA0 = {
+				transfer_state = 331
+			}
+		}
+		if = {	
+			limit = {
+				CA0 = {
+					has_opinion_modifier = gave_labrador
+				}
+			}
+			CA0 = {
+				add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+				hidden_effect = {
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_labrador
+					}
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_hamilton
+					}
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_newfoundland
+					}
+				}
+			}
+		}
+		else = {
+			limit = {
+				CA0 = {
+					NOT = { has_opinion_modifier = gave_newfoundland_and_labrador }
+				}
+			}
+			CA0 = {
+				add_opinion_modifier = { target = ROOT modifier = gave_newfoundland }
+			}
+		}
+	}
+	option = {
+		name = release_nation_events.109.c
+		trigger = {
+			NOT = { original_tag = USA }
+			US0 = {
+				owns_state = 849
+				controls_state = 849
+				has_country_flag = britain_accepted_destroyers_for_bases
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 331
+			}
+			US0 = {
+				transfer_state = 331
+			}
+		}
+		if = {	
+			limit = {
+				US0 = {
+					has_opinion_modifier = gave_labrador
+				}
+			}
+			US0 = {
+				add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+				hidden_effect = {
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_labrador
+					}
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_hamilton
+					}
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = gave_newfoundland
+					}
+				}
+			}
+		}
+		else = {
+			limit = {
+				US0 = {
+					NOT = { has_opinion_modifier = gave_newfoundland_and_labrador }
+				}
+			}
+			US0 = {
+				add_opinion_modifier = { target = ROOT modifier = gave_newfoundland }
+			}
+		}
+	}
+	option = {
+		name = release_nation_events.109.d
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { original_tag = USA }
+					US0 = {
+						owns_state = 849
+						controls_state = 849
+						has_country_flag = britain_accepted_destroyers_for_bases
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				AND = {
+					NOT = { original_tag = CAN }
+					CA0 = {
+						owns_state = 466
+						controls_state = 466
+						NOT = { has_war_with = ROOT }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { original_tag = USA }
+				US0 = {
+					owns_state = 849
+					controls_state = 849
+					has_country_flag = britain_accepted_destroyers_for_bases
+					NOT = { has_war_with = ROOT }
+				}
+				NOT = { original_tag = CAN }
+				CA0 = {
+					owns_state = 466
+					controls_state = 466
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			custom_effect_tooltip = hold_referendum_newfoundland_and_labrador_tooltip_1
+		}
+		else_if = {
+			limit = {
+				NOT = { original_tag = CAN }
+				CA0 = {
+					owns_state = 466
+					controls_state = 466
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			custom_effect_tooltip = hold_referendum_newfoundland_and_labrador_tooltip_2
+		}
+		else = {
+			custom_effect_tooltip = hold_referendum_newfoundland_and_labrador_tooltip_3
+		}
+		hidden_effect = {
+			random_list = {
+				25 = {
+					if = {
+						limit = { 
+							controls_state = 331
+						}
+						NF0 = {
+							transfer_state = 331
+						}
+					}
+					if = {
+						limit = { 
+							has_country_flag = release_not_local_rulers
+						}
+						NF0 = { set_government_to_root = yes }
+					}
+					NF0 = { add_opinion_modifier = { target = ROOT modifier = ROOT_released_us } }
+				}
+				50 = {
+					modifier = {
+						factor = 0
+						OR = {
+							original_tag = CAN
+							CA0 = { has_war_with = ROOT }
+							CA0 = { NOT = { owns_state = 466 } }
+							CA0 = { NOT = { controls_state = 466 } }
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 331
+						}
+						CA0 = {
+							transfer_state = 331
+						}
+					}
+					if = {	
+						limit = {
+							CA0 = {
+								has_opinion_modifier = gave_labrador
+							}
+						}
+						CA0 = {
+							add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+							hidden_effect = {
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_labrador
+								}
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_hamilton
+								}
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_newfoundland
+								}
+							}
+						}
+					}
+					else = {
+						limit = {
+							CA0 = {
+								NOT = { has_opinion_modifier = gave_newfoundland_and_labrador }
+							}
+						}
+						CA0 = {
+							add_opinion_modifier = { target = ROOT modifier = gave_newfoundland }
+						}
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0
+						OR = {
+							original_tag = USA
+							US0 = { NOT = { has_country_flag = britain_accepted_destroyers_for_bases } }
+							US0 = { has_war_with = ROOT }
+							US0 = { NOT = { owns_state = 849 } }
+							US0 = { NOT = { controls_state = 849 } }
+						}
+					}
+					if = {
+						limit = { 
+							controls_state = 331
+						}
+						US0 = {
+							transfer_state = 331
+						}
+					}
+					if = {	
+						limit = {
+							US0 = {
+								has_opinion_modifier = gave_labrador
+							}
+						}
+						US0 = {
+							add_opinion_modifier = { target = ROOT modifier = gave_newfoundland_and_labrador }
+							hidden_effect = {
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_labrador
+								}
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_hamilton
+								}
+								remove_opinion_modifier = {
+									target = ROOT
+									modifier = gave_newfoundland
+								}
+							}
+						}
+					}
+					else = {
+						limit = {
+							US0 = {
+								NOT = { has_opinion_modifier = gave_newfoundland_and_labrador }
+							}
+						}
+						US0 = {
+							add_opinion_modifier = { target = ROOT modifier = gave_newfoundland }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = release_nation_events.110
+	title = release_nation_events.110.t	# Hamilton
+	desc = release_nation_events.110.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	immediate = {
+		332 = {
+			OWNER = {
+				save_event_target_as = owner_of_labrador
+			}
+		}
+		466 = {
+			OWNER = {
+				save_event_target_as = owner_of_new_quebec
+			}
+		}
+	}
+	option = {
+		name = release_nation_events.110.a
+		trigger = {
+			NOT = { tag = event_target:owner_of_labrador }
+			event_target:owner_of_labrador = {
+				controls_state = 332
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 855
+				NOT = { original_tag = QUE }
+			}
+			event_target:owner_of_labrador = {
+				transfer_state = 855
+			}
+		}
+		if = {	
+			limit = {
+				event_target:owner_of_labrador = {
+					NOT = { has_opinion_modifier = gave_labrador }
+					NOT = { has_opinion_modifier = gave_newfoundland_and_labrador }
+				}
+			}
+			event_target:owner_of_labrador = {
+				add_opinion_modifier = { target = ROOT modifier = gave_hamilton }
+			}
+		}
+	}
+	option = {
+		name = release_nation_events.110.b
+		trigger = {
+			NOT = { tag = event_target:owner_of_new_quebec }
+			event_target:owner_of_new_quebec = {
+				controls_state = 466
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		if = {
+			limit = { 
+				controls_state = 855
+				NOT = { original_tag = QUE }
+			}
+			event_target:owner_of_new_quebec = {
+				transfer_state = 855
+			}
+		}
+		if = {	
+			limit = {
+				event_target:owner_of_new_quebec = {
+					NOT = { has_opinion_modifier = gave_labrador }
+					NOT = { has_opinion_modifier = gave_newfoundland_and_labrador }
+				}
+			}
+			event_target:owner_of_new_quebec = {
+				add_opinion_modifier = { target = ROOT modifier = gave_hamilton }
+			}
+		}
+	}
+	option = {
+		name = release_nation_events.110.c
+	}
+}

@@ -144,6 +144,10 @@ set_convoys = 20
 set_stability = 0.55
 
 1939.1.1 = {
+	set_popularities = {
+		democratic = 10
+		neutrality = 90
+	}
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1939.2.8"

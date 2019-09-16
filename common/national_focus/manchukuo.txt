@@ -24,7 +24,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -57,7 +57,7 @@ focus_tree = {
 		x = 6
 		y = 0
 
-		cost = 10
+		cost = 69
 
 		ai_will_do = {
 			factor = 1
@@ -94,7 +94,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_pacify_the_countryside
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -129,7 +129,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_army_modernization
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -164,7 +164,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_pacify_the_countryside
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -172,7 +172,7 @@ focus_tree = {
 
 		available = {
 			NOT = { has_idea = MAN_banditry }
-			NOT = { has_war_with = JAP }
+			NOT = { has_war_with = JA0 }
 		}
 
 		bypass = {
@@ -229,7 +229,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_invite_japanese_settlers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -270,7 +270,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_collective_farms
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -305,7 +305,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_law_university
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -316,8 +316,8 @@ focus_tree = {
 				num_of_factories > 50
 				all_state = {
 					OR = {
-						NOT = { is_core_of = CHI }
-						NOT = { is_core_of = PRC }
+						NOT = { is_core_of = CH0 }
+						NOT = { is_core_of = PR0 }
 						OR = {
 							is_controlled_by = ROOT
 							CONTROLLER = { is_in_faction_with = ROOT }
@@ -353,7 +353,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_pacify_the_countryside
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -393,7 +393,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_trade_delegation
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -455,7 +455,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = MAN_army_modernization
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 6
@@ -490,7 +490,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obedience
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -525,7 +525,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obedience
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -560,14 +560,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_first_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
 		}
 
 		available = {
-			NOT = { has_war_with = JAP }
+			NOT = { has_war_with = JA0 }
 		}
 
 		bypass = {
@@ -626,7 +626,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_invite_japanese_investors
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -713,7 +713,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_invite_japanese_investors
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 2
@@ -760,7 +760,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_develop_aluminum_sources
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -803,7 +803,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MAN_invite_japanese_investors
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 8
@@ -840,7 +840,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = MAN_first_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -894,7 +894,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_second_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -929,7 +929,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_first_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -971,7 +971,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_mukden_arsenal
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1009,7 +1009,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_first_five_year_plan
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1050,7 +1050,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_alliance_with_the_kwantung_army
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1085,19 +1085,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_chinese_leadership
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			is_subject_of = JAP
-			NOT = { has_war_with = JAP }
-			NOT = { has_war_with = MEN }
-			MEN = {
+			is_subject_of = JA0
+			NOT = { has_war_with = JA0 }
+			NOT = { has_war_with = ME5 }
+			ME5 = {
 				exists = yes
-				is_subject_of = JAP
+				is_subject_of = JA0
 			}
 		}
 
@@ -1114,7 +1114,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			annex_country = { target = MEN transfer_troops = yes }
+			annex_country = { target = ME5 transfer_troops = yes }
 		}
 	}
 
@@ -1126,7 +1126,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_chinese_leadership
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1150,7 +1150,7 @@ focus_tree = {
 
 		completion_reward = {
 			every_state = {
-				limit = { is_core_of = CHI }
+				limit = { is_core_of = CH0 }
 				add_core_of = ROOT
 			}
 		}
@@ -1165,23 +1165,23 @@ focus_tree = {
 		y = 2
 		relative_position_id = MAN_chinese_leadership
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			is_subject_of = JAP
-			compare_autonomy_state > autonomy_wtt_imperial_protectorate			
-			MAN = { 
+			is_subject_of = JA0
+			compare_autonomy_state > autonomy_wtt_imperial_protectorate
+			ROOT = { 
 				ic_ratio = {
-					tag = JAP
+					tag = JA0
 					ratio > 0.2
 				}
 			}
 			strength_ratio = {
-				tag = JAP
+				tag = JA0
 				ratio > 0.25
 			}
 		}
@@ -1215,7 +1215,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = MAN_trade_delegation
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -1236,9 +1236,9 @@ focus_tree = {
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
 			set_country_flag = MAN_assertiveness
-			JAP = { 
+			JA0 = { 
 				set_autonomy = {
-					target = MAN
+					target = ROOT
 					autonomy_state = autonomy_wtt_imperial_subject
 				}
 			}			
@@ -1253,7 +1253,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_assertiveness
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1337,7 +1337,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_request_control_of_the_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1369,7 +1369,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_staff_the_court_with_manchus
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 3
@@ -1414,19 +1414,19 @@ focus_tree = {
 					prioritize = { 328 }
 					create_unit = {
 						division = "name = \"1. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"2. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"3. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"4. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 				}			
 			}			
@@ -1441,7 +1441,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_expand_the_imperial_guards
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 6
@@ -1523,7 +1523,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_staff_the_court_with_manchus
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -1558,7 +1558,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_request_control_of_the_railways
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1593,7 +1593,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_five_equal_peoples
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 4
@@ -1628,7 +1628,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_five_equal_peoples
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1660,7 +1660,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_white_russian_advisers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -1698,31 +1698,31 @@ focus_tree = {
 					prioritize = { 328 }
 					create_unit = {
 						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
-						owner = MAN
+						owner = ROOT
 					}
 				}			
 			}
@@ -1737,7 +1737,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_bolster_nationalism 
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -1775,7 +1775,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_purge_the_general_affairs_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -1810,12 +1810,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_purge_the_general_affairs_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
 			modifier = {
-				strength_ratio = { tag = JAP ratio < 0.3 }
+				strength_ratio = { tag = JA0 ratio < 0.3 }
 				factor = 0
 			}
 			
@@ -1839,12 +1839,12 @@ focus_tree = {
 			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }			
 			if = {
 				limit = {
-					is_in_faction_with = JAP
+					is_in_faction_with = JA0
 				}
 				leave_faction = yes
 			}
 			declare_war_on = {
-				target = JAP
+				target = JA0
 				type = puppet_wargoal_focus
 			}
 			hidden_effect = {
@@ -1863,7 +1863,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_independence_war
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -1898,7 +1898,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_imperial_divinity
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5
@@ -1934,7 +1934,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_imperial_divinity
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -1970,7 +1970,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_move_capitals
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -2046,7 +2046,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_independence_war
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2072,7 +2072,7 @@ focus_tree = {
 			add_war_support = 0.1
 			set_rule = { can_create_factions = yes }
 			every_state = {
-				limit = { is_core_of = CHI }
+				limit = { is_core_of = CH0 }
 				add_core_of = ROOT
 			}
 		}
@@ -2087,7 +2087,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_reclaim_the_empire
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1
@@ -2133,7 +2133,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_reclaim_the_empire
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 1

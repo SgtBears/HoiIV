@@ -1,0 +1,27 @@
+
+state={
+	id=833
+	name="STATE_833"
+	manpower = 39233
+	
+	
+	state_category = enclave
+	
+	resources={
+	}
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 6
+		}
+		victory_points = {
+			13822 1
+		}
+		add_core_of = SWI
+	}
+
+	provinces={
+		9587 13822
+	}
+}

@@ -3,7 +3,7 @@ guiTypes = {
 	iconType = {
 		name = "minimap_offensive_icon"
 		spriteType = "GFX_minimap_ping_offensive"
-		position = { x=290 y=150 }
+		position = { x=260 y=150 }	#mod
 		scale = 0.8
 		centerPosition = yes
 	}
@@ -11,14 +11,14 @@ guiTypes = {
 	iconType = {
 		name = "minimap_defensive_icon"
 		spriteType = "GFX_minimap_ping_defensive"
-		position = { x=290 y=150 }
+		position = { x=260 y=150 }	#mod
 		scale = 0.8
 		centerPosition = yes
 	}
 
 	containerWindowType =  {
 		name = "mini_map_interface"
-		position = { x=-343 y=-98 }	
+		position = { x=-373 y=-98 }		#mod
 		Orientation = LOWER_RIGHT
 
 		

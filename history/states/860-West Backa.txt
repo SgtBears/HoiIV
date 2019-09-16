@@ -1,0 +1,22 @@
+state={
+	id=860
+	name="STATE_860"
+
+	history={
+		owner = YUG
+		victory_points = { 9608 1 }
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = YUG
+		add_core_of = SER
+
+	}
+
+	provinces={
+		9608
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

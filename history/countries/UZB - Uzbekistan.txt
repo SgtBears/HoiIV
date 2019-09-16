@@ -56,13 +56,25 @@ set_popularities = {
 	neutrality = 9
 }
 
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#}
+create_country_leader = {
+	name = "Akmal Ikramov"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1937.9.21"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	create_country_leader = {
+		name = "Usman Yusupov"
+		picture = "gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+		expire = "1965.1.1"
+		ideology = stalinism
+		traits = {
+			#
+		}
+	}
+}
+

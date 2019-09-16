@@ -12,7 +12,7 @@
 # when the acclimatization reach 100%.
 #
 # "change_camo_when" may contain a keyword "snow" or any scriptable terrain type name. It's possible to have multiple values separated by space.
-#
+#	
 # Modification of the look of the units that has high enough acclimatization (see ACCLIMATIZATION_CAMO_SHOW_AT in 00_graphics.lua), can be done
 # in 2 different ways:
 #   A) Quick texture replacement

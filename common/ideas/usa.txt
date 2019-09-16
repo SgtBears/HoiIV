@@ -787,6 +787,9 @@ ideas = {
 				strat_bomber_equipment = {
 					air_range = 0.5 instant = yes
 				}	
+				jet_strat_bomber_equipment = {
+					air_range = 0.5 instant = yes
+				}	
 			}
 		}
 
@@ -883,6 +886,9 @@ ideas = {
 				fighter_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				jet_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
 				heavy_fighter_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
@@ -908,6 +914,9 @@ ideas = {
 				tac_bomber_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				jet_tac_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 
@@ -925,6 +934,9 @@ ideas = {
 			
 			equipment_bonus = {
 				strat_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				jet_strat_bomber_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -1176,17 +1188,25 @@ ideas = {
 			allowed = {
 				original_tag = "USA"
 			}
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = USA_neutrality_act }
+					NOT = { has_completed_focus = USA_limited_intervention }
+					NOT = { has_completed_focus = USA_reestablish_the_gold_standard }
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
 			available = {
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
 					has_completed_focus = USA_suspend_the_presecution
-					not = { focus_progress = { focus = USA_neutrality_act progress > 0 } }
-					not = { focus_progress = { focus = USA_limited_intervention progress > 0 } }
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
+					NOT = { focus_progress = { focus = USA_neutrality_act progress > 0 } }
+					NOT = { focus_progress = { focus = USA_limited_intervention progress > 0 } }
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -1226,6 +1246,10 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
+			visible = {
+				has_dlc = "Man the Guns"
+				NOT = { has_completed_focus = USA_reestablish_the_gold_standard }
+			}
 			available = {
 				if = {
 					limit = {
@@ -1233,9 +1257,8 @@ ideas = {
 					}
 					has_completed_focus = USA_reach_out_to_the_ware_group
 				}
-				not = { has_idea = USA_henry_morgenthau }
+				NOT = { has_idea = USA_henry_morgenthau }
 			}
-			visible = { has_dlc = "Man the Guns" }
 			
 			traits = { financial_expert }
 			cost = 0
@@ -1256,6 +1279,10 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
+			visible = {
+				has_dlc = "Man the Guns"
+				NOT = { has_completed_focus = USA_reestablish_the_gold_standard }
+			}
 			available = {
 				if = {
 					limit = {
@@ -1264,7 +1291,6 @@ ideas = {
 					has_completed_focus = USA_reach_out_to_the_ware_group
 				}
 			}
-			visible = { has_dlc = "Man the Guns" }
 			
 			traits = { economist }
 			cost = 0
@@ -1285,6 +1311,10 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
+			visible = {
+				has_dlc = "Man the Guns"
+				NOT = { has_completed_focus = USA_reestablish_the_gold_standard }
+			}
 			available = {
 				if = {
 					limit = {
@@ -1293,7 +1323,6 @@ ideas = {
 					has_completed_focus = USA_reach_out_to_the_ware_group
 				}
 			}
-			visible = { has_dlc = "Man the Guns" }
 			
 			traits = { editor }
 			cost = 0
@@ -1314,6 +1343,10 @@ ideas = {
 			allowed_civil_war = {
 				not = { has_government = communism }
 			}
+			visible = {
+				has_dlc = "Man the Guns"
+				NOT = { has_completed_focus = USA_continue_the_new_deal }
+			}
 			available = {
 				if = {
 					limit = {
@@ -1322,7 +1355,6 @@ ideas = {
 					has_completed_focus = USA_america_first
 				}
 			}
-			visible = { has_dlc = "Man the Guns" }
 
 			
 			traits = { editor }
@@ -1344,6 +1376,10 @@ ideas = {
 			allowed_civil_war = {
 				not = { has_government = communism }
 			}
+			visible = {
+				has_dlc = "Man the Guns"
+				NOT = { has_completed_focus = USA_continue_the_new_deal }
+			}
 			available = {
 				if = {
 					limit = {
@@ -1353,7 +1389,6 @@ ideas = {
 				}
 			}
 
-			visible = { has_dlc = "Man the Guns" }
 			traits = { captain_of_industry }
 			cost = 50
 			do_effect = {
@@ -1397,17 +1432,24 @@ ideas = {
 			allowed = {
 				original_tag = "USA"
 			}
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = USA_continue_the_new_deal }
+					NOT = { has_completed_focus = USA_neutrality_act }
+					NOT = { has_completed_focus = USA_limited_intervention }
+				}
+			}
 			available = {
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
 					has_completed_focus = USA_america_first
-					not = { focus_progress = { focus = USA_neutrality_act progress > 0 } }
-					not = { focus_progress = { focus = USA_limited_intervention progress > 0 } }
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
+					NOT = { focus_progress = { focus = USA_neutrality_act progress > 0 } }
+					NOT = { focus_progress = { focus = USA_limited_intervention progress > 0 } }
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -1455,6 +1497,10 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
+			visible = {
+				has_dlc = "Man the Guns"
+				NOT = { has_completed_focus = USA_continue_the_new_deal }
+			}
 			available = {
 				has_completed_focus = USA_empower_the_huac
 			}
@@ -1491,7 +1537,7 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
-				not = { has_idea = harry_white }
+				NOT = { has_idea = harry_white }
 			}
 			
 			traits = { financial_expert }
@@ -1529,6 +1575,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = USA
+			}
+			visible = {
+				not = {
+					has_country_leader = { ruling_only = yes name = "Douglas MacArthur"}
+				}
 			}
 			available = {
 				not = {
@@ -1658,12 +1709,19 @@ ideas = {
 
 			visible = {
 				has_dlc = "Man the Guns"
+				NOT = { has_completed_focus = USA_neutrality_act }
+				NOT = { has_completed_focus = USA_continue_the_new_deal }
+				NOT = { has_completed_focus = USA_limited_intervention }
 			}
 
 			cost = 50
 
 			equipment_bonus = {
 				fighter_equipment = {
+					instant = yes
+					fuel_consumption = -0.1
+				}
+				jet_fighter_equipment = {
 					instant = yes
 					fuel_consumption = -0.1
 				}
@@ -1757,6 +1815,9 @@ ideas = {
 				original_tag = USA
 			}
 			
+			visible = {
+				NOT = { has_country_flag = joseph_stilwell_sent_to_china }
+			}
 			available = {
 				NOT = { has_country_flag = joseph_stilwell_sent_to_china }
 			}
@@ -1928,6 +1989,9 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
+			visible = {
+				NOT = { has_completed_focus = USA_tank_destroyer_doctrine }
+			}
 			available = {
 				has_completed_focus = USA_main_battle_tanks
 			}
@@ -1957,6 +2021,9 @@ ideas = {
 			picture = usa_tank_destroyer_board
 			allowed = {
 				original_tag = USA
+			}
+			visible = {
+				NOT = { has_completed_focus = USA_main_battle_tanks }
 			}
 			available = {
 				has_completed_focus = USA_tank_destroyer_doctrine
@@ -2343,6 +2410,11 @@ ideas = {
 			picture = usa_general_motors
 			allowed = {
 				original_tag = USA
+			}
+			visible = {
+				NOT = { has_completed_focus = USA_limited_intervention }
+				NOT = { has_completed_focus = USA_ally_with_the_silver_shirts }
+				NOT = { has_completed_focus = USA_union_representation_act }
 			}
 			available = {
 				has_completed_focus = USA_wartime_industry

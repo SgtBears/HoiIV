@@ -60,13 +60,16 @@ if = {
 	}
 }
 
-set_popularities = {	democratic = 30	communism = 40	neutrality = 30
+set_popularities = {
+	democratic = 30
+	communism = 40
+	neutrality = 30
 }
 
 create_country_leader = {
 	name = "Mir Jafar Baghirov"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "gfx/leaders/Europe/portrait_europe_generic_6.dds" 
 	expire = "1953.3.1"
 	ideology = stalinism
 	traits = {
@@ -77,7 +80,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mammad Amin Rasulzade"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {

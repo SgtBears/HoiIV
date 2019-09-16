@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		MAS_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		MAS_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		MAS_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		MAS_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = MAS
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MAS_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		MAS_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MAS_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		MAS_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = MAS
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MAS_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = MAS
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		MAS_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MAS_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MAS_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MAS_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MAS_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		MAS_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = MAS
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		MAS_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		MAS_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = MAS
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

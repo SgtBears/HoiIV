@@ -31,6 +31,21 @@ continent = {
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_10.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_12.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_14.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_15.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_16.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_17.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_18.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
+			"gfx/leaders/Europe/Portrait_europe_generic_land_6.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_7.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_8.dds"
 		}
 	}
 	
@@ -39,28 +54,150 @@ continent = {
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_navy_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_navy_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_navy_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_4.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_5.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_6.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_7.dds"
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_4.dds"	
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_5.dds"	
 		}
 	}
 	
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"	
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"   #used
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"   #used
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
 	}
@@ -77,6 +214,20 @@ continent = {
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_10.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_12.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_14.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_15.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_16.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_17.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_18.dds"
+			"gfx/leaders/Europe/Portrait_europe_generic_land_6.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_7.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_8.dds"
 		}
 	}
 	
@@ -85,28 +236,150 @@ continent = {
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_navy_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_navy_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_navy_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_4.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_5.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_6.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_7.dds"
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_4.dds"	
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_5.dds"	
 		}
 	}
 
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"	
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
 	}
@@ -122,6 +395,11 @@ continent = {
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_6.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_7.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_8.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_9.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_10.dds"
 		}
 	}
 	
@@ -135,23 +413,53 @@ continent = {
 	
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_1.dds" #used
+				"gfx/leaders/South America/Portrait_South_America_Generic_4.dds"
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
 			}
 		}
 	}
@@ -168,6 +476,20 @@ continent = {
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_10.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_12.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_14.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_15.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_16.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_17.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_18.dds"
+			"gfx/leaders/Europe/Portrait_europe_generic_land_6.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_7.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_8.dds"
 		}
 	}
 	
@@ -176,28 +498,150 @@ continent = {
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_navy_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_navy_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_navy_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_4.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_5.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_6.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_7.dds"
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_4.dds"	
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_5.dds"	
 		}
 	}
 	
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"	
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
 	}
@@ -213,6 +657,10 @@ continent = {
 			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
 			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
 			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
 		}
 	}
 	
@@ -221,38 +669,59 @@ continent = {
 			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
 			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
 			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
 		}
 	}
 	
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"		
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"		
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
 			}
 		}
 	}
@@ -269,6 +738,19 @@ continent = {
 			"gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 			"gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 			"gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_land_1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_land_2.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_7.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_8.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_9.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_10.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_11.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_12.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_13.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_14.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_6.dds"
 		}
 	}
 	
@@ -277,28 +759,89 @@ continent = {
 			"gfx/leaders/Asia/Portrait_Asia_Generic_navy_1.dds"
 			"gfx/leaders/Asia/Portrait_Asia_Generic_navy_2.dds"
 			"gfx/leaders/Asia/Portrait_Asia_Generic_navy_3.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_navy_1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_navy_2.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_navy_4.dds"
 		}
 	}
 
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds" #used
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_5.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_1.dds"
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"  #used
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"  #used
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds" #used
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds" #used
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
 			}
 		}
 	}	
@@ -312,6 +855,9 @@ continent = {
 			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
 			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
 			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_5.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_6.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_7.dds"
 		}
 	}
 	
@@ -320,34 +866,105 @@ continent = {
 			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_1.dds"
 			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_2.dds"
 			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_4.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_5.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_6.dds"
 		}
 	}
 	
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_communism1.dds"
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
 			}
 		}
 	}
 
 }
 
+DDR = {
+	army = {
+		male = {
+			"gfx/leaders/GER/Portrait_Germany_Generic_land_1.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_land_2.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_land_3.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_land_4.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_land_5.dds"
+			"gfx/leaders/GER/Portrait_Germany_More_Generic_land_1.dds"
+			"gfx/leaders/GER/Portrait_Germany_More_Generic_land_2.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/GER/Portrait_Germany_Generic_navy_1.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_navy_2.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_navy_3.dds"
+		}
+	}
+}
+WGR = {
+	army = {
+		male = {
+			"gfx/leaders/GER/Portrait_Germany_Generic_land_1.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_land_2.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_land_3.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_land_4.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_land_5.dds"
+			"gfx/leaders/GER/Portrait_Germany_More_Generic_land_1.dds"
+			"gfx/leaders/GER/Portrait_Germany_More_Generic_land_2.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/GER/Portrait_Germany_Generic_navy_1.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_navy_2.dds"
+			"gfx/leaders/GER/Portrait_Germany_Generic_navy_3.dds"
+		}
+	}
+}
 GER = {
 	army = {
 		male = {
@@ -356,6 +973,8 @@ GER = {
 			"gfx/leaders/GER/Portrait_Germany_Generic_land_3.dds"
 			"gfx/leaders/GER/Portrait_Germany_Generic_land_4.dds"
 			"gfx/leaders/GER/Portrait_Germany_Generic_land_5.dds"
+			"gfx/leaders/GER/Portrait_Germany_More_Generic_land_1.dds"
+			"gfx/leaders/GER/Portrait_Germany_More_Generic_land_2.dds"
 		}
 	}
 	
@@ -376,6 +995,8 @@ ENG = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_3.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_5.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_3.dds"
 		}
 	}
 	
@@ -384,6 +1005,9 @@ ENG = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_3.dds"
 		}
 	}
 }
@@ -396,6 +1020,8 @@ AST = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_3.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_5.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_3.dds"
 		}
 	}
 	
@@ -404,6 +1030,9 @@ AST = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_3.dds"
 		}
 	}
 }
@@ -416,6 +1045,8 @@ CAN = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_3.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_5.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_3.dds"
 		}
 	}
 	
@@ -424,6 +1055,9 @@ CAN = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_3.dds"
 		}
 	}
 }
@@ -436,6 +1070,8 @@ NZL = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_3.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_5.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_3.dds"
 		}
 	}
 	
@@ -444,6 +1080,9 @@ NZL = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_3.dds"
 		}
 	}
 }
@@ -456,6 +1095,7 @@ FRA = {
 			"gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
 			"gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
 			"gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
+			"gfx/leaders/FRA/Portrait_France_More_Generic_land_1.dds"
 		}
 	}
 	
@@ -529,6 +1169,44 @@ SOV = {
 	}
 }
 
+CSA = {
+	army = {
+		male = {
+			"gfx/leaders/USA/Portrait_USA_Generic_land_1.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_land_2.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_land_3.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_land_4.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_land_5.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/USA/Portrait_USA_Generic_navy_1.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_navy_2.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_navy_3.dds"
+		}
+	}
+}
+USB = {
+	army = {
+		male = {
+			"gfx/leaders/USA/Portrait_USA_Generic_land_1.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_land_2.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_land_3.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_land_4.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_land_5.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/USA/Portrait_USA_Generic_navy_1.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_navy_2.dds"
+			"gfx/leaders/USA/Portrait_USA_Generic_navy_3.dds"
+		}
+	}
+}
 USA = {
 	army = {
 		male = {
@@ -557,6 +1235,8 @@ SAF = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_3.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_5.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_3.dds"
 		}
 	}
 	
@@ -565,6 +1245,144 @@ SAF = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_3.dds"
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"	
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
 		}
 	}
 }
@@ -577,8 +1395,34 @@ SAF_COM = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_3.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_5.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_3.dds"
 			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
 			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_10.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_12.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_14.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_15.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_16.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_17.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_18.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
 		}
 	}
 	
@@ -587,6 +1431,296 @@ SAF_COM = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"	
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"	
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
 		}
 	}
 }
@@ -599,6 +1733,12 @@ RAJ_UK = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_3.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_5.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_3.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			"gfx/leaders/India/portrait_india_generic_land_3.dds"
+			"gfx/leaders/India/portrait_india_generic_land_4.dds"
 		}
 	}
 	
@@ -607,6 +1747,146 @@ RAJ_UK = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_3.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_1.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_2.dds"
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"	
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
 		}
 	}
 }
@@ -619,6 +1899,8 @@ MAL_UK = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_3.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_land_5.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_land_3.dds"
 		}
 	}
 	
@@ -627,6 +1909,144 @@ MAL_UK = {
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
 			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_More_Generic_navy_3.dds"
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
 		}
 	}
 }
@@ -637,87 +2057,601 @@ RAJ = {
 		male = {
 			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
 			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			"gfx/leaders/India/portrait_india_generic_land_3.dds"
+			"gfx/leaders/India/portrait_india_generic_land_4.dds"
 			
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_1.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_2.dds"
 		}
 	}
 	
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic.dds"
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic.dds"
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic.dds"
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic.dds"
 			}
 		}
 	}
 }
 
+NEP = {
+	army = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			"gfx/leaders/India/portrait_india_generic_land_3.dds"
+			"gfx/leaders/India/portrait_india_generic_land_4.dds"
+			
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_1.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_2.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+	}
+}
+BHU = {
+	army = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			"gfx/leaders/India/portrait_india_generic_land_3.dds"
+			"gfx/leaders/India/portrait_india_generic_land_4.dds"
+			
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_1.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_2.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+	}
+}
+MLD = {
+	army = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			"gfx/leaders/India/portrait_india_generic_land_3.dds"
+			"gfx/leaders/India/portrait_india_generic_land_4.dds"
+			
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_1.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_2.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+	}
+}
+BAN = {
+	army = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			"gfx/leaders/India/portrait_india_generic_land_3.dds"
+			"gfx/leaders/India/portrait_india_generic_land_4.dds"
+			
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_1.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_2.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+	}
+}
+SRL = {
+	army = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			"gfx/leaders/India/portrait_india_generic_land_3.dds"
+			"gfx/leaders/India/portrait_india_generic_land_4.dds"
+			
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_1.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_2.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+	}
+}
 PAK = {
 	army = {
 		male = {
 			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
 			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			"gfx/leaders/India/portrait_india_generic_land_3.dds"
+			"gfx/leaders/India/portrait_india_generic_land_4.dds"
 			
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_1.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Generic_navy_2.dds"
 		}
 	}
 	
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+				"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			male = { 
+				"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 			}
 		}
 	}
 }
 
-SPR = {
+PAL = {
 	army = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_5.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_6.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_7.dds"
 		}
 	}
 	
 	navy = {
 		male = {
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_1.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_2.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_4.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_5.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_6.dds"
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_communism1.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
 		}
 	}
 }
+WES = {
+	army = {
+		male = {
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_5.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_6.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_7.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_1.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_2.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_4.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_5.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_6.dds"
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_communism1.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+	}
+}
+JOR = {
+	army = {
+		male = {
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_5.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_6.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_7.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_1.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_2.dds"
+			"gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_4.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_5.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_6.dds"
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_communism1.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_democratic1.dds" 
+				"gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_2.dds" 
+				"gfx/leaders/Arabia/Portrait_Arabia_More_Generic_3.dds" 
+			}
+		}
+	}
+}
+EGY = {
+	army = {
+		male = {
+			"gfx/leaders/EGY/Portrait_Arabia_Generic_land_1.dds"
+			"gfx/leaders/EGY/Portrait_Arabia_Generic_land_2.dds"
+			"gfx/leaders/EGY/Portrait_Arabia_Generic_land_3.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_5.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_6.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_land_7.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/EGY/Portrait_Arabia_Generic_navy_1.dds"
+			"gfx/leaders/EGY/Portrait_Arabia_Generic_navy_2.dds"
+			"gfx/leaders/EGY/Portrait_Arabia_Generic_navy_3.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_4.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_5.dds"
+			"gfx/leaders/Arabia/portrait_arabia_generic_navy_6.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/EGY/Portrait_Arabia_Generic_1.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/EGY/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/EGY/Portrait_Arabia_Generic_3.dds" 
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/EGY/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/EGY/Portrait_Arabia_Generic_2.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/EGY/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/EGY/Portrait_Arabia_Generic_2.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/EGY/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/EGY/Portrait_Arabia_Generic_2.dds"
+			}
+		}
+	}
 
+}
 AFG = {
 	army = {
 		male = {
@@ -726,6 +2660,11 @@ AFG = {
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_6.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_7.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_8.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_9.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_10.dds"
 		}
 	}
 	
@@ -738,23 +2677,32 @@ AFG = {
 	}
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds" 
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds" 
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+				"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
 			}
 		}
 	}
@@ -768,6 +2716,11 @@ MEX = {
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_6.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_7.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_8.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_9.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_10.dds"
 		}
 	}
 	
@@ -777,7 +2730,61 @@ MEX = {
 			"gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
 		}
-	}	
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_4.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
+			}
+		}
+	}
+	
 }
 
 INS_HOL = {
@@ -788,6 +2795,22 @@ INS_HOL = {
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_10.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_12.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_14.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_15.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_16.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_17.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_18.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
+			"gfx/leaders/Europe/Portrait_europe_generic_land_6.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_7.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_8.dds"
 		}
 	}
 	
@@ -796,10 +2819,328 @@ INS_HOL = {
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_4.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_5.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_6.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_7.dds"
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_4.dds"	
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_5.dds"	
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"	
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
 		}
 	}
 }
 
+ISR = {
+	army = {
+		male = {
+			"gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_10.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_12.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_14.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_15.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_16.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_17.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_18.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
+			"gfx/leaders/Europe/Portrait_europe_generic_land_6.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_7.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_8.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_4.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_5.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_6.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_7.dds"
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_4.dds"	
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_5.dds"	
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"	
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+	}
+
+}
 HOL = {
 	army = {
 		male = {
@@ -809,6 +3150,21 @@ HOL = {
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 			"gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_10.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_12.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_14.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_15.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_16.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_17.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_18.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_More_Generic_land_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
+			"gfx/leaders/Europe/Portrait_europe_generic_land_6.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_7.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_land_8.dds"
 		}
 	}
 	
@@ -817,6 +3173,147 @@ HOL = {
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_4.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_5.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_6.dds"
+			"gfx/leaders/Europe/portrait_europe_generic_navy_7.dds"
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_4.dds"	
+			"gfx/leaders/Europe/portrait_europe__more_generic_navy_5.dds"	
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"	
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
 		}
 	}
 
@@ -830,6 +3327,11 @@ TUR = {
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_6.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_7.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_8.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_9.dds"
+			"gfx/leaders/South America/portrait_south_america_generic_land_10.dds"
 		}
 	}
 	
@@ -839,10 +3341,64 @@ TUR = {
 			"gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
 		}
-	}	
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_4.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+				"gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_7.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_8.dds"
+				"gfx/leaders/South America/portrait_south_america_generic_9.dds"
+			}
+		}
+	}
+
 }
 
-GEO = {
+UZB = {
 	army = {
 		male = {
 			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
@@ -850,6 +3406,7 @@ GEO = {
 			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
 			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
 			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
+			"gfx/leaders/SOV/portrait_soviet_pdxcon_magic_winner.dds"
 		}
 	}
 	
@@ -861,20 +3418,454 @@ GEO = {
 		}
 	}
 	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
 		fascism = {
-				male = { 
-					"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
 			}
 		}
-	}	
+	}
+}
+GEO = {
+	army = {
+		male = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
+			"gfx/leaders/SOV/portrait_soviet_pdxcon_magic_winner.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_1.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_2.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_3.dds"
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"	
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+	}
 }
 
-BAH = {
+ARM = {
+	army = {
+		male = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
+			"gfx/leaders/SOV/portrait_soviet_pdxcon_magic_winner.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_1.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_2.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_3.dds"
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_1.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_6.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_1.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"	
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_5.dds"
+				"gfx/leaders/Europe/Portrait_Europe_More_Generic_6.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
+				"gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_2.dds"
+				"gfx/leaders/FRA/Portrait_France_Generic_3.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+				"gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_3.dds"
+				"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_2.dds"
+				"gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_4.dds"	
+				"gfx/leaders/Europe/portrait_europe_generic_5.dds"	
+				"gfx/leaders/Europe/Portrait_europe_generic_7.dds"
+				"gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+	}
+}
+
+HAI = {
 	army = {
 		male = {
 			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
@@ -882,6 +3873,10 @@ BAH = {
 			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
 			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
 			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
 		}
 	}
 	
@@ -890,81 +3885,926 @@ BAH = {
 			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
 			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
 			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
 		}
 	}
 	
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"		
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"		
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
 			}
 		}
 	}
-}
 
-BLZ = {
+
+}
+FIJ = {
 	army = {
 		male = {
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_land_1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_land_2.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_7.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_8.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_9.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_10.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_11.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_12.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_13.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_14.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_6.dds"
 		}
 	}
 	
 	navy = {
 		male = {
-			"gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
-			"gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_navy_1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_navy_2.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_navy_3.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_navy_1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_navy_2.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_navy_4.dds"
+		}
+	}
+
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_5.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_1.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+			}
+		}
+	}	
+
+
+}
+PNG = {
+	army = {
+		male = {
+			"gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_land_1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_land_2.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_7.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_8.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_9.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_10.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_11.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_12.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_13.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_14.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_land_6.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Asia/Portrait_Asia_Generic_navy_1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_navy_2.dds"
+			"gfx/leaders/Asia/Portrait_Asia_Generic_navy_3.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_navy_1.dds"
+			"gfx/leaders/Asia/Portrait_Asia_More_Generic_navy_2.dds"
+			"gfx/leaders/Asia/portrait_asia_generic_navy_4.dds"
+		}
+	}
+
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_5.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_1.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_4.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_3.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_More_Generic_1.dds"
+				"gfx/leaders/Asia/Portrait_Asia__more_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_2.dds"
+				"gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+			}
+		}
+	}	
+
+
+}
+SUD = {
+	army = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
 		}
 	}
 	
 	political = {
 		communism = {
-				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
 			}
 		}
 		democratic = {
-				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"	
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"	
 			}
 		}
 		fascism = {
-				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
 			}
 		}
 		neutrality = {
-				male = { 
-					"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
 			}
 		}
 	}
+
+
+}
+PUE = {
+	army = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"	
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"	
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+	}
+
+}
+GDL = {
+	army = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"		
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+	}
+}
+BAS = {
+	army = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"		
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+	}
+
+
+}
+TRI = {
+	army = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"		
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+	}
+
+
+}
+CRC = {
+	army = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"		
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+	}
+
+}
+JAM = {
+	army = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"	
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"	
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"	
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+	}
+
+
+}
+BAH = {
+	army = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+			"gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_land_4.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_5.dds"
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_6.dds"	
+			"gfx/leaders/Africa/Portrait_Africa_Generic_navy_4.dds"
+		}
+	}
+	
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"	
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"	
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		monarchism = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+				"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/Portrait_Africa_Generic_4.dds"
+			}
+		}
+	}
+
+
 }

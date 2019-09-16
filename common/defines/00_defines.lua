@@ -162,7 +162,7 @@ NDiplomacy = {
 },
 
 NCountry = {
-	EVENT_PROCESS_OFFSET = 20,						-- Events are checked every X day per country or state (1 is ideal, but CPU heavy)
+	EVENT_PROCESS_OFFSET = 5,						-- Events are checked every X day per country or state (1 is ideal, but CPU heavy)
 	BASE_RESEARCH_SLOTS = 2,						-- Base number of research slots per country.
 	VP_TO_SUPPLY_BASE = 1,							-- Bonus to supply from a VP, no matter the level
 	VP_TO_SUPPLY_BONUS_CONVERSION = 0.1,			-- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
@@ -344,7 +344,7 @@ NProduction = {
 	DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 10,
 	CONVOY_MAX_NAV_FACTORIES_PER_LINE = 15,
 	CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 5,
-	MAX_MIL_FACTORIES_PER_LINE = 150,
+	MAX_MIL_FACTORIES_PER_LINE = 500,
 	EFFICIENCY_LOSS_PER_UNUSED_DAY = 1,		-- Daily loss of efficiency for unused factory slots ( efficiency is tracked per factory slot in the production line )
 	RESOURCE_PENALTY_WARNING_CRITICAL_RATIO =  0.8, -- Switch to red progress bar if penalty is over threshold 
 	BASE_FACTORY_SPEED = 5, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
@@ -436,7 +436,7 @@ NBuildings = {
 	SUPPLY_PORT_LEVEL_THROUGHPUT = 3,   -- supply throughput per level of naval base
 	INFRA_TO_SUPPLY = 2,
  	INFRA_TO_SUPPLY_COEFF = 1,
-	MAX_SHARED_SLOTS = 25,				-- Max slots shared by factories
+	MAX_SHARED_SLOTS = 50,				-- Max slots shared by factories
 	OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 0.5, --Scale factor of extra shared slots when state owner change.
 	DESTRUCTION_COOLDOWN_IN_WAR = 30,	-- Number of days cooldown between removal of buildings in war times
 	
@@ -2211,7 +2211,7 @@ NAI = {
 },
 
 NFocus = {
-	FOCUS_POINT_DAYS = 7,						-- Each point takes a week
+	FOCUS_POINT_DAYS = 1,						-- Each point takes a day
 	FOCUS_PROGRESS_PEACE = 1,					-- Progress during peace
 	FOCUS_PROGRESS_WAR = 1,					-- Progress during war
 	MAX_SAVED_FOCUS_PROGRESS = 10,				-- This much progress can be saved while not having a focus selected

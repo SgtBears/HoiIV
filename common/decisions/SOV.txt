@@ -17,12 +17,12 @@ SOV_industry_relocation = {
 
 		available = {
 			219 = { #Moscow
-				is_owned_and_controlled_by = SOV
+				is_owned_and_controlled_by = SO0
 				arms_factory > 5
 				industrial_complex > 1
 			} 
-			573 = { is_owned_and_controlled_by = SOV } #Zlatoust
-			582 = { is_owned_and_controlled_by = SOV } #Magnitogorsk
+			573 = { is_owned_and_controlled_by = SO0 } #Zlatoust
+			582 = { is_owned_and_controlled_by = SO0 } #Magnitogorsk
 		}
 
 		fire_only_once = yes
@@ -147,12 +147,12 @@ SOV_industry_relocation = {
 
 		available = {
 			195 = { #Leningrad
-				is_owned_and_controlled_by = SOV
+				is_owned_and_controlled_by = SO0
 				arms_factory > 4
 				industrial_complex > 0
 			}
-			573 = { is_owned_and_controlled_by = SOV } #Zlatoust
-			582 = { is_owned_and_controlled_by = SOV } #Magnitogorsk
+			573 = { is_owned_and_controlled_by = SO0 } #Zlatoust
+			582 = { is_owned_and_controlled_by = SO0 } #Magnitogorsk
 		}
 
 		fire_only_once = yes
@@ -267,11 +267,11 @@ SOV_industry_relocation = {
 
 		available = {
 			242 = { #Smolensk
-				is_owned_and_controlled_by = SOV
+				is_owned_and_controlled_by = SO0
 				industrial_complex > 1
 			}
-			573 = { is_owned_and_controlled_by = SOV } #Zlatoust
-			582 = { is_owned_and_controlled_by = SOV } #Magnitogorsk
+			573 = { is_owned_and_controlled_by = SO0 } #Zlatoust
+			582 = { is_owned_and_controlled_by = SO0 } #Magnitogorsk
 		}
 
 		fire_only_once = yes
@@ -665,9 +665,13 @@ SOV_great_patriotic_war = {
 		visible = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			any_of = {
-				array = BLR.core_states
-				var:v = { is_controlled_by = SOV }
+			BL0 = {
+				ROOT = {
+					any_of = {
+						array = PREV.core_states
+						var:v = { is_controlled_by = SO0 }
+					}
+				}
 			}
 		}
 
@@ -678,8 +682,8 @@ SOV_great_patriotic_war = {
 			}
 			every_state = {
 				limit = {
-					is_core_of = BLR
-					is_controlled_by = SOV
+					is_core_of = BL0
+					is_controlled_by = SO0
 				}
 				damage_building = {
 					type = infrastructure
@@ -709,9 +713,13 @@ SOV_great_patriotic_war = {
 		visible = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			any_of = {
-				array = UKR.core_states
-				var:v = { is_controlled_by = SOV }
+			UK0 = {
+				ROOT = {
+					any_of = {
+						array = PREV.core_states
+						var:v = { is_controlled_by = SO0 }
+					}
+				}
 			}
 		}
 
@@ -722,8 +730,8 @@ SOV_great_patriotic_war = {
 			}
 			every_state = {
 				limit = {
-					is_core_of = UKR
-					is_controlled_by = SOV
+					is_core_of = UK0
+					is_controlled_by = SO0
 				}
 				damage_building = {
 					type = infrastructure
@@ -753,18 +761,18 @@ SOV_great_patriotic_war = {
 		visible = {
 			has_war = yes
 			OR = {
-				420 = { CONTROLLER = { has_war_with = SOV } }
-				419 = { CONTROLLER = { has_war_with = SOV } }
-				353 = { CONTROLLER = { has_war_with = SOV } }
-				354 = { CONTROLLER = { has_war_with = SOV } }
-				137 = { CONTROLLER = { has_war_with = SOV } }
-				218 = { CONTROLLER = { has_war_with = SOV } }
-				238 = { CONTROLLER = { has_war_with = SOV } }
-				237 = { CONTROLLER = { has_war_with = SOV } }
-				236 = { CONTROLLER = { has_war_with = SOV } }
-				231 = { CONTROLLER = { has_war_with = SOV } }#sneaky QA naval invasion check
-				233 = { CONTROLLER = { has_war_with = SOV } }
-				234 = { CONTROLLER = { has_war_with = SOV } }
+				420 = { CONTROLLER = { has_war_with = SO0 } }
+				419 = { CONTROLLER = { has_war_with = SO0 } }
+				353 = { CONTROLLER = { has_war_with = SO0 } }
+				354 = { CONTROLLER = { has_war_with = SO0 } }
+				137 = { CONTROLLER = { has_war_with = SO0 } }
+				218 = { CONTROLLER = { has_war_with = SO0 } }
+				238 = { CONTROLLER = { has_war_with = SO0 } }
+				237 = { CONTROLLER = { has_war_with = SO0 } }
+				236 = { CONTROLLER = { has_war_with = SO0 } }
+				231 = { CONTROLLER = { has_war_with = SO0 } }#sneaky QA naval invasion check
+				233 = { CONTROLLER = { has_war_with = SO0 } }
+				234 = { CONTROLLER = { has_war_with = SO0 } }
 			}
 			has_country_flag = SOV_scorched_earth
 		}
@@ -776,7 +784,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					229 = { is_controlled_by = SOV}
+					229 = { is_controlled_by = SO0 }
 				}
 				229 = {
 					damage_building = {
@@ -787,7 +795,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					230 = { is_controlled_by = SOV}
+					230 = { is_controlled_by = SO0 }
 				}
 				230 = {
 					damage_building = {
@@ -798,7 +806,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					231 = { is_controlled_by = SOV}
+					231 = { is_controlled_by = SO0 }
 				}
 				231 = {
 					damage_building = {
@@ -809,7 +817,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					232 = { is_controlled_by = SOV}
+					232 = { is_controlled_by = SO0 }
 				}
 				232 = {
 					damage_building = {
@@ -820,7 +828,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					233 = { is_controlled_by = SOV}
+					233 = { is_controlled_by = SO0 }
 				}
 				233 = {
 					damage_building = {
@@ -831,7 +839,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					234 = { is_controlled_by = SOV}
+					234 = { is_controlled_by = SO0 }
 				}
 				234 = {
 					damage_building = {
@@ -842,7 +850,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					235 = { is_controlled_by = SOV}
+					235 = { is_controlled_by = SO0 }
 				}
 				235 = {
 					damage_building = {
@@ -875,16 +883,16 @@ SOV_great_patriotic_war = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
 			OR = {
-				227 = { CONTROLLER = { has_war_with = SOV } }
-				228 = { CONTROLLER = { has_war_with = SOV } }
-				218 = { CONTROLLER = { has_war_with = SOV } }
-				245 = { CONTROLLER = { has_war_with = SOV } }
-				237 = { CONTROLLER = { has_war_with = SOV } }
-				236 = { CONTROLLER = { has_war_with = SOV } }
-				231 = { CONTROLLER = { has_war_with = SOV } }#sneaky QA naval invasion check
-				238 = { CONTROLLER = { has_war_with = SOV } }
-				260 = { CONTROLLER = { has_war_with = SOV } }
-				239 = { CONTROLLER = { has_war_with = SOV } }
+				227 = { CONTROLLER = { has_war_with = SO0 } }
+				228 = { CONTROLLER = { has_war_with = SO0 } }
+				218 = { CONTROLLER = { has_war_with = SO0 } }
+				245 = { CONTROLLER = { has_war_with = SO0 } }
+				237 = { CONTROLLER = { has_war_with = SO0 } }
+				236 = { CONTROLLER = { has_war_with = SO0 } }
+				231 = { CONTROLLER = { has_war_with = SO0 } }#sneaky QA naval invasion check
+				238 = { CONTROLLER = { has_war_with = SO0 } }
+				260 = { CONTROLLER = { has_war_with = SO0 } }
+				239 = { CONTROLLER = { has_war_with = SO0 } }
 			}
 		}
 
@@ -895,7 +903,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					245 = { is_controlled_by = SOV}
+					245 = { is_controlled_by = SO0 }
 				}
 				245 = {
 					damage_building = {
@@ -906,7 +914,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					217 = { is_controlled_by = SOV}
+					217 = { is_controlled_by = SO0 }
 				}
 				217 = {
 					damage_building = {
@@ -917,7 +925,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					218 = { is_controlled_by = SOV}
+					218 = { is_controlled_by = SO0 }
 				}
 				218 = {
 					damage_building = {
@@ -928,7 +936,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					238 = { is_controlled_by = SOV}
+					238 = { is_controlled_by = SO0 }
 				}
 				238 = {
 					damage_building = {
@@ -939,7 +947,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					237 = { is_controlled_by = SOV}
+					237 = { is_controlled_by = SO0 }
 				}
 				237 = {
 					damage_building = {
@@ -950,7 +958,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					236 = { is_controlled_by = SOV}
+					236 = { is_controlled_by = SO0 }
 				}
 				236 = {
 					damage_building = {
@@ -961,7 +969,7 @@ SOV_great_patriotic_war = {
 			}
 			if = {
 				limit = {
-					265 = { is_controlled_by = SOV}
+					265 = { is_controlled_by = SO0 }
 				}
 				265 = {
 					damage_building = {
@@ -994,12 +1002,12 @@ SOV_great_patriotic_war = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
 			OR = {
-				207 = { CONTROLLER = { has_war_with = SOV } }
-				210 = { CONTROLLER = { has_war_with = SOV } }
-				241 = { CONTROLLER = { has_war_with = SOV } }
-				193 = { CONTROLLER = { has_war_with = SOV } }
-				225 = { CONTROLLER = { has_war_with = SOV } }
-				240 = { CONTROLLER = { has_war_with = SOV } }
+				207 = { CONTROLLER = { has_war_with = SO0 } }
+				210 = { CONTROLLER = { has_war_with = SO0 } }
+				241 = { CONTROLLER = { has_war_with = SO0 } }
+				193 = { CONTROLLER = { has_war_with = SO0 } }
+				225 = { CONTROLLER = { has_war_with = SO0 } }
+				240 = { CONTROLLER = { has_war_with = SO0 } }
 			}
 		}
 
@@ -1020,7 +1028,7 @@ SOV_great_patriotic_war = {
 						state = 246
 						state = 219
 					}
-					is_controlled_by = SOV
+					is_controlled_by = SO0
 				}
 				damage_building = {
 						type = infrastructure
@@ -1206,31 +1214,35 @@ operations = {
 		}
 
 		available = {
-			JAP = { has_completed_focus = JAP_pre_emptive_coup }
-			MAN = { is_puppet = no }
+			JA0 = { has_completed_focus = JAP_pre_emptive_coup }
+			MA5 = { is_puppet = no }
 			NOT = {
-				has_war_with = MAN
+				has_war_with = MA5
 			}
 		}
 
 		cost = 25
 		fire_only_once = yes
 		visible = {
-			JAP = { has_completed_focus = JAP_strengthen_civilian_government }
-			MAN = { exists = yes }
+			JA0 = { has_completed_focus = JAP_strengthen_civilian_government }
+			MA5 = { exists = yes }
 		}
 
 		complete_effect = {
-			create_wargoal = {
-				target = MAN
-				type = annex_everything
+			MA5 = {
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
 			}			
 		}
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				MAN = {
+				MA5 = {
 					is_ai = no
 				}
 				factor = 0 #we're mean but not that mean
@@ -1262,7 +1274,7 @@ political_actions = {
 					owns_state = 717
 				}
 				AND = {
-					MAN = { is_puppet_of = SOV }
+					MA5 = { is_puppet_of = SO0 }
 					owns_state = 610
 					owns_state = 716
 					owns_state = 328
@@ -1275,12 +1287,12 @@ political_actions = {
 		cost = 0
 		fire_only_once = yes
 		visible = {
-			JAP = { has_completed_focus = JAP_strengthen_civilian_government }
-			PRC = { exists = yes }
+			JA0 = { has_completed_focus = JAP_strengthen_civilian_government }
+			PR0 = { exists = yes }
 		}
 
 		complete_effect = {
-			PRC = { 
+			PR0 = { 
 				transfer_state = 609
 				transfer_state = 610
 				transfer_state = 716
@@ -1305,7 +1317,7 @@ political_actions = {
 		icon = generic_civil_support
 
 		allowed = {
-			tag = SOV
+			original_tag = SOV
 		}
 
 		icon = generic_political_actions
@@ -1353,7 +1365,7 @@ political_actions = {
 			}
 		}
 
-		targets = { CHI PRC GXC YUN SHX XSM SIK D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+		targets = { CH0 PR0 GX0 YU5 SH0 XS0 SI5 }
 
 		target_trigger = {
 			FROM = { 
@@ -1382,7 +1394,7 @@ political_actions = {
 		icon = generic_civil_support
 
 		allowed = {
-			tag = SOV			
+			original_tag = SOV			
 		}
 
 		icon = generic_political_actions
@@ -1398,7 +1410,7 @@ political_actions = {
 			FROM = { has_country_flag = WTT_support_from_soviet }
 		}
 
-		targets = { CHI PRC GXC YUN SHX XSM SIK D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+		targets = { CH0 PR0 GX0 YU5 SH0 XS0 SI5 }
 
 		target_trigger = {
 			FROM = { has_country_flag = WTT_support_from_soviet }
@@ -1450,6 +1462,2520 @@ political_actions = {
 		complete_effect = {
 			FROM = { country_event = { id = wtt_warlord_vs_prc.31 } }
 		}
-	}	
+	}
+}
+political_actions = {
+	SOV_move_capital_to_moscow = {
 
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			owns_state = 219
+			has_full_control_of_state = 219
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 100
+		visible = {
+			NOT = { has_government = neutrality }
+			capital_scope = {
+				not = { state = 219 }
+			}
+		}
+		complete_effect = {
+			set_capital = 219
+		}
+	}
+
+	SOV_move_capital_to_leningrad = {
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			owns_state = 195
+			has_full_control_of_state = 195
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			has_government = neutrality
+			capital_scope = {
+				not = { state = 195 }
+			}
+		}
+		complete_effect = {
+			set_capital = 195
+		}
+	}
+	SOV_gift_wilno_to_lit = {
+
+		allowed = {
+			original_tag = SOV
+		}
+		fire_only_once = yes
+		available = {
+			has_full_control_of_state = 784
+			LI0 = {
+				NOT = {
+					is_subject_of = SO0
+					has_war = yes
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_full_control_of_state = 784
+			NOT = { LI0 = { owns_state = 784 } }
+			LI0 = {
+				exists = yes
+				NOT = {
+					is_subject_of = SO0
+					has_war = yes
+				}
+			}
+		}
+		complete_effect = {
+			LI0 = {
+				transfer_state = 784
+				add_opinion_modifier = { target = SO0 modifier = ENG_returned_our_territory }
+				give_military_access = SO0
+			}
+			784 = {
+				if = {
+					limit = {
+						NOT = { is_core_of = LI0 }
+					}
+					add_core_of = LI0
+				}
+			}
+		}
+	}
+}
+prospect_for_resources = {
+	develop_kazan_rubber_plantations = { #404
+		
+		icon = rubber
+
+		allowed = {
+		}
+
+		available = {
+			owns_state = 404
+			controls_state = 404
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		highlight_states = {
+			state = 404
+		}
+
+		visible = {
+			has_global_flag = SOV_tranformation_of_nature_decision_flag
+			owns_state = 404
+			controls_state = 404
+			404 = {
+				NOT = {
+					has_state_flag = kazan_rubber_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		days_remove = 45
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			404 = {
+				set_state_flag = kazan_rubber_developed
+			}
+			404 = {
+				add_resource = {
+					type = rubber
+					amount = 6
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	develop_akhtubisnk_rubber_plantations = { #402
+		
+		icon = rubber
+
+		allowed = {
+		}
+
+		available = {
+			owns_state = 402
+			controls_state = 402
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		highlight_states = {
+			state = 402
+		}
+
+		visible = {
+			has_global_flag = SOV_tranformation_of_nature_decision_flag
+			owns_state = 402
+			controls_state = 402
+			402 = {
+				NOT = {
+					has_state_flag = akhtubisnk_rubber_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		days_remove = 45
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			402 = {
+				set_state_flag = akhtubisnk_rubber_developed
+			}
+			402 = {
+				add_resource = {
+					type = rubber
+					amount = 6
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	develop_urgench_rubber_plantations = { #585
+		
+		icon = rubber
+
+		allowed = {
+		}
+
+		available = {
+			owns_state = 585
+			controls_state = 585
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		highlight_states = {
+			state = 585
+		}
+
+		visible = {
+			has_global_flag = SOV_tranformation_of_nature_decision_flag
+			owns_state = 585
+			controls_state = 585
+			585 = {
+				NOT = {
+					has_state_flag = urgench_rubber_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		days_remove = 45
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			585 = {
+				set_state_flag = urgench_rubber_developed
+			}
+			585 = {
+				add_resource = {
+					type = rubber
+					amount = 6
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+SOV_ussr_administration = {
+	SOV_give_wilno_to_lit = {
+
+		
+		available = {
+			OR = {
+				LI0 = {
+					has_full_control_of_state = 784
+				}
+				has_full_control_of_state = 784
+			}
+			LI0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 45
+
+		visible = {
+			NOT = {
+				784 = { is_core_of = LI0 }
+			}
+			OR = {
+				LI0 = {
+					has_full_control_of_state = 784
+				}
+				has_full_control_of_state = 784
+			}
+			LI0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					LI0 = {
+						is_subject_of = SO0
+					}
+				}
+				LI0 = {
+					transfer_state = 784
+				}
+				784 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = LI0 }
+						}
+						add_core_of = LI0
+					}
+				}
+			}
+			else = {
+				784 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = LI0 }
+						}
+						add_core_of = LI0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_southern_bessarabia_to_ukr = {
+
+		
+		available = {
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 766
+				}
+				MV0 = {
+					has_full_control_of_state = 766
+				}
+				has_full_control_of_state = 766
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 45
+
+		visible = {
+			NOT = {
+				766 = { is_core_of = UK0 }
+			}
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 766
+				}
+				MV0 = {
+					has_full_control_of_state = 766
+				}
+				has_full_control_of_state = 766
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					UK0 = {
+						is_subject_of = SO0
+					}
+				}
+				UK0 = {
+					transfer_state = 766
+				}
+				766 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+					if = {
+						limit = {
+							is_core_of = MV0
+						}
+						remove_core_of = MV0
+					}
+				}
+			}
+			else = {
+				766 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+					if = {
+						limit = {
+							is_core_of = MV0
+						}
+						remove_core_of = MV0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_bessarabia_to_mol = {
+
+		
+		available = {
+			OR = {
+				MV0 = {
+					has_full_control_of_state = 78
+				}
+				has_full_control_of_state = 78
+			}
+			MV0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		days_remove = 45
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = {
+				78 = { is_core_of = MV0 }
+			}
+			OR = {
+				MV0 = {
+					has_full_control_of_state = 78
+				}
+				has_full_control_of_state = 78
+			}
+			MV0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					MV0 = {
+						is_subject_of = SO0
+					}
+				}
+				MV0 = {
+					transfer_state = 78
+				}
+				78 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = MV0 }
+						}
+						add_core_of = MV0
+					}
+				}
+			}
+			else = {
+				78 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = MV0 }
+						}
+						add_core_of = MV0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_bucovina_to_ukr = {
+
+		
+		available = {
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 80
+				}
+				has_full_control_of_state = 80
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		days_remove = 45
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = {
+				80 = { is_core_of = UK0 }
+			}
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 80
+				}
+				has_full_control_of_state = 80
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					UK0 = {
+						is_subject_of = SO0
+					}
+				}
+				UK0 = {
+					transfer_state = 80
+				}
+				80 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+				}
+			}
+			else = {
+				80 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_crimea_to_ukr = {
+
+		
+		available = {
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 137
+				}
+				has_full_control_of_state = 137
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		days_remove = 45
+
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			NOT = { 137 = { is_core_of = UK0 } }
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 137
+				}
+				has_full_control_of_state = 137
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					UK0 = {
+						is_subject_of = SO0
+					}
+				}
+				UK0 = {
+					transfer_state = 137
+				}
+				137 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+				}
+			}
+			else = {
+				137 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_stanistawow_to_ukr = {
+
+		
+		available = {
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 89
+				}
+				has_full_control_of_state = 89
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		days_remove = 45
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { 89 = { is_core_of = UK0 } }
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 89
+				}
+				has_full_control_of_state = 89
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					UK0 = {
+						is_subject_of = SO0
+					}
+				}
+				UK0 = {
+					transfer_state = 89
+				}
+				89 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+				}
+			}
+			else = {
+				89 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_lwow_to_ukr = {
+
+		
+		available = {
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 91
+				}
+				has_full_control_of_state = 91
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+
+		days_remove = 45
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = {
+				91 = { is_core_of = UK0 }
+			}
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 91
+				}
+				has_full_control_of_state = 91
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					UK0 = {
+						is_subject_of = SO0
+					}
+				}
+				UK0 = {
+					transfer_state = 91
+				}
+				91 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+				}
+			}
+			else = {
+				91 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_wolyn_to_ukr = {
+
+		
+		available = {
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 93
+				}
+				has_full_control_of_state = 93
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		days_remove = 45
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = {
+				93 = { is_core_of = UK0 }
+			}
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 93
+				}
+				has_full_control_of_state = 93
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					UK0 = {
+						is_subject_of = SO0
+					}
+				}
+				UK0 = {
+					transfer_state = 93
+				}
+				93 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+				}
+			}
+			else = {
+				93 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_polesie_to_blr = {
+
+		
+		available = {
+			OR = {
+				BL0 = {
+					has_full_control_of_state = 94
+				}
+				has_full_control_of_state = 94
+			}
+			BL0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		days_remove = 45
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = {
+				94 = { is_core_of = BL0 }
+			}
+			OR = {
+				BL0 = {
+					has_full_control_of_state = 94
+				}
+				has_full_control_of_state = 94
+			}
+			BL0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					BL0 = {
+						is_subject_of = SO0
+					}
+				}
+				BL0 = {
+					transfer_state = 94
+				}
+				94 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = BL0 }
+						}
+						add_core_of = BL0
+					}
+				}
+			}
+			else = {
+				94 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = BL0 }
+						}
+						add_core_of = BL0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_nowogrodek_to_blr = {
+
+		
+		available = {
+			OR = {
+				BL0 = {
+					has_full_control_of_state = 95
+				}
+				has_full_control_of_state = 95
+			}
+			BL0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		days_remove = 45
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = {
+				95 = { is_core_of = BL0 }
+			}
+			OR = {
+				BL0 = {
+					has_full_control_of_state = 95
+				}
+				has_full_control_of_state = 95
+			}
+			BL0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					BL0 = {
+						is_subject_of = SO0
+					}
+				}
+				BL0 = {
+					transfer_state = 95
+				}
+				95 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = BL0 }
+						}
+						add_core_of = BL0
+					}
+				}
+			}
+			else = {
+				95 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = BL0 }
+						}
+						add_core_of = BL0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_wilejka_to_blr = {
+
+		
+		available = {
+			OR = {
+				BL0 = {
+					has_full_control_of_state = 96
+				}
+				has_full_control_of_state = 96
+			}
+			BL0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 45
+
+		visible = {
+			NOT = {
+				96 = { is_core_of = BL0 }
+			}
+			OR = {
+				BL0 = {
+					has_full_control_of_state = 96
+				}
+				has_full_control_of_state = 96
+			}
+			BL0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					BL0 = {
+						is_subject_of = SO0
+					}
+				}
+				BL0 = {
+					transfer_state = 96
+				}
+				96 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = BL0 }
+						}
+						add_core_of = BL0
+					}
+				}
+			}
+			else = {
+				96 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = BL0 }
+						}
+						add_core_of = BL0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_split_transcaucasia = {
+		
+		fire_only_once = yes
+		available = {
+			OR = {
+				AND = {
+					GE5 = {
+						has_full_control_of_state = 231
+						has_full_control_of_state = 230
+						has_full_control_of_state = 229
+					}
+				}
+				AND = {
+					has_full_control_of_state = 231
+					has_full_control_of_state = 230
+					has_full_control_of_state = 229
+				}
+			}
+			GE5 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					exists = no
+				}
+			}
+		}
+
+		days_remove = 90
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1936.12.4
+			}
+		}
+
+		visible = {
+			OR = {
+				AND = {
+					GE5 = {
+						has_full_control_of_state = 231
+						has_full_control_of_state = 230
+						has_full_control_of_state = 229
+					}
+				}
+				AND = {
+					has_full_control_of_state = 231
+					has_full_control_of_state = 230
+					has_full_control_of_state = 229
+				}
+			}
+			231 = {
+				is_core_of = GE5
+			}
+			230 = {
+				is_core_of = GE5
+			}
+			229 = {
+				is_core_of = GE5
+			}
+			GE5 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			230 = {
+				remove_core_of = GE5
+			}
+			229 = {
+				remove_core_of = GE5
+			}
+			GE5 = {
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					GE5 = {
+						has_autonomy_state = autonomy_integrated_puppet
+					}
+				}
+				GE5 = {
+					release = AR5
+					release = AZ0
+				}
+				set_autonomy = {
+					target = AR5
+					autonomy_state = autonomy_integrated_puppet
+				}
+				set_autonomy = {
+					target = AZ0
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+			if = {
+				limit = {
+					GE5 = {
+						has_autonomy_state = autonomy_puppet
+					}
+				}
+				GE5 = {
+					release = AR5
+					release = AZ0
+				}
+				set_autonomy = {
+					target = AR5
+					autonomy_state = autonomy_puppet
+				}
+				set_autonomy = {
+					target = AZ0
+					autonomy_state = autonomy_puppet
+				}
+			}
+			if = {
+				limit = {
+					GE5 = {
+						has_autonomy_state = autonomy_colony
+					}
+				}
+				GE5 = {
+					release = AR5
+					release = AZ0
+				}
+				set_autonomy = {
+					target = AR5
+					autonomy_state = autonomy_colony
+				}
+				set_autonomy = {
+					target = AZ0
+					autonomy_state = autonomy_colony
+				}
+			}
+			if = {
+				limit = {
+					GE5 = {
+						has_autonomy_state = autonomy_reichskommissariat
+					}
+				}
+				GE5 = {
+					release = AR5
+					release = AZ0
+				}
+				set_autonomy = {
+					target = AR5
+					autonomy_state = autonomy_reichskommissariat
+				}
+				set_autonomy = {
+					target = AZ0
+					autonomy_state = autonomy_reichskommissariat
+				}
+			}
+			if = {
+				limit = {
+					GE5 = {
+						has_autonomy_state = autonomy_reichsprotectorate
+					}
+				}
+				GE5 = {
+					release = AR5
+					release = AZ0
+				}
+				set_autonomy = {
+					target = AR5
+					autonomy_state = autonomy_reichsprotectorate
+				}
+				set_autonomy = {
+					target = AZ0
+					autonomy_state = autonomy_reichsprotectorate
+				}
+			}
+		}
+	}
+	SOV_give_salla_to_kar = {
+
+		available = {
+			OR = {
+				KR0 = {
+					has_full_control_of_state = 147
+				}
+				has_full_control_of_state = 147
+			}
+			KR0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+
+		days_remove = 45
+		
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = {
+				147 = { is_core_of = KR0 }
+			}
+			OR = {
+				KR0 = {
+					has_full_control_of_state = 147
+				}
+				has_full_control_of_state = 147
+			}
+			KR0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					KR0 = {
+						is_subject_of = SO0
+					}
+				}
+				KR0 = {
+					transfer_state = 147
+				}
+				147 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = KR0 }
+						}
+						add_core_of = KR0
+					}
+				}
+			}
+			else = {
+				147 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = KR0 }
+						}
+						add_core_of = KR0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_karjala_to_kar = {
+
+		available = {
+			OR = {
+				KR0 = {
+					has_full_control_of_state = 146
+				}
+				has_full_control_of_state = 146
+			}
+			KR0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		days_remove = 45
+
+		
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = {
+				146 = { is_core_of = KR0 }
+			}
+			OR = {
+				KR0 = {
+					has_full_control_of_state = 146
+				}
+				has_full_control_of_state = 146
+			}
+			KR0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					KR0 = {
+						is_subject_of = SO0
+					}
+				}
+				KR0 = {
+					transfer_state = 146
+				}
+				146 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = KR0 }
+						}
+						add_core_of = KR0
+					}
+				}
+			}
+			else = {
+				146 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = KR0 }
+						}
+						add_core_of = KR0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_give_carpathian_ruthenia_to_ukr = {
+
+		
+		available = {
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 73
+				}
+				has_full_control_of_state = 73
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		days_remove = 45
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = {
+				73 = { is_core_of = UK0 }
+			}
+			OR = {
+				UK0 = {
+					has_full_control_of_state = 73
+				}
+				has_full_control_of_state = 73
+			}
+			UK0 = {
+				OR = {
+					is_subject_of = SO0
+					exists = no
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					UK0 = {
+						is_subject_of = SO0
+					}
+				}
+				UK0 = {
+					transfer_state = 73
+				}
+				73 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+				}
+			}
+			else = {
+				73 = {
+					if = {
+						limit = {
+							NOT = { is_core_of = UK0 }
+						}
+						add_core_of = UK0
+					}
+					if = {
+						limit = {
+							NOT = { is_core_of = SO0 }
+						}
+						add_core_of = SO0
+					}
+				}
+			}
+		}
+	}
+	SOV_annex_ukr = {
+
+		available = {
+			UK0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = UK0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					UK0 = {
+						is_subject_of = SO0
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UK0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = UK0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = UK0
+				}
+				every_state = {
+					limit = {
+						is_core_of = UK0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_blr = {
+
+		available = {
+			BL0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = BL0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					BL0 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BL0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = BL0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = BL0
+				}
+				every_state = {
+					limit = {
+						is_core_of = BL0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_kar = {
+
+		available = {
+			KR0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = KR0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					KR0 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KR0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = KR0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = KR0
+				}
+				every_state = {
+					limit = {
+						is_core_of = KR0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_geo = {
+
+		available = {
+			GE5 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = GE5
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					GE5 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GE5
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = GE5
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = GE5
+				}
+				every_state = {
+					limit = {
+						is_core_of = GE5
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_arm = {
+
+		available = {
+			AR5 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		days_remove = 180
+		visible = {
+			country_exists = AR5
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					AR5 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = AR5
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = AR5
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = AR5
+				}
+				every_state = {
+					limit = {
+						is_core_of = AR5
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_azr = {
+
+		available = {
+			AZ0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = AZ0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					AZ0 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = AZ0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = AZ0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = AZ0
+				}
+				every_state = {
+					limit = {
+						is_core_of = AZ0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_sib = {
+
+		available = {
+			SB0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = SB0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					SB0 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SB0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = SB0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = SB0
+				}
+				every_state = {
+					limit = {
+						is_core_of = SB0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_fer = {
+
+		available = {
+			FE0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = FE0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FE0 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = FE0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = FE0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = FE0
+				}
+				every_state = {
+					limit = {
+						is_core_of = FE0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_tan = {
+
+		available = {
+			TA0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_global_flag = soviet_union_great_purge_unneeded
+			country_exists = TA0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					TA0 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TA0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = TA0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = TA0
+				}
+				every_state = {
+					limit = {
+						is_core_of = TA0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_kaz = {
+
+		available = {
+			KA0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = KA0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					KA0 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KA0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = KA0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = KA0
+				}
+				every_state = {
+					limit = {
+						is_core_of = KA0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_kyr = {
+
+		available = {
+			KY0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+
+		days_remove = 180
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = KY0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					KY0 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KY0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = KY0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = KY0
+				}
+				every_state = {
+					limit = {
+						is_core_of = KY0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_taj = {
+
+		available = {
+			TA5 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = TA5
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					TA5 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TA5
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = TA5
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = TA5
+				}
+				every_state = {
+					limit = {
+						is_core_of = TA5
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_tms = {
+
+		available = {
+			TM0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = TM0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					TM0 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TM0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = TM0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = TM0
+				}
+				every_state = {
+					limit = {
+						is_core_of = TM0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
+	SOV_annex_uzb = {
+
+		available = {
+			UZ0 = {
+				OR = {
+					AND = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+					AND = {
+						exists = yes
+						NOT = { is_subject_of = SO0 }
+					}
+				}
+			}
+		}
+		days_remove = 180
+
+		cost = 300
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			country_exists = UZ0
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					UZ0 = {
+						is_subject_of = SO0
+						NOT = { has_autonomy_state = autonomy_dominion }
+						NOT = { has_autonomy_state = autonomy_satellite }
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UZ0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+				every_unit_leader = {
+					set_nationality = SO0
+				}
+				transfer_navy = {
+					target = SO0
+				}
+				annex_country = {
+					target = UZ0
+					transfer_troops = yes
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = UZ0
+				}
+				every_state = {
+					limit = {
+						is_core_of = UZ0
+						NOT = { is_core_of = SO0 }
+					}
+					add_core_of = SO0
+				}
+			}
+		}
+	}
 }

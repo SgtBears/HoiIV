@@ -7,7 +7,7 @@
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -55,7 +55,7 @@ shared_focus = {
 		}
 	}
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -88,7 +88,7 @@ shared_focus = {
 	x = -10
 	y = 1
 	relative_position_id = CHI_invite_foreign_investors
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -160,7 +160,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_mission_to_germany
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -212,7 +212,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_give_falkenhausen_citizenship
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -260,7 +260,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_chinese_general_staff
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -299,7 +299,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_mission_to_germany
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -340,7 +340,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_closer_ties_with_germany
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -384,13 +384,13 @@ shared_focus = {
 				limit = {
 					has_completed_focus = CHI_closer_ties_with_germany
 				}
-				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 100 producer = GER }
+				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 100 producer = GE0 }
 			}
 			if = {
 				limit = {
 					has_completed_focus = CHI_rapprochement_with_soviet_union
 				}
-				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 100 producer = SOV }
+				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 100 producer = SO0 }
 			}
 		}
 	}
@@ -405,7 +405,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -443,7 +443,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -504,7 +504,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -732,7 +732,7 @@ shared_focus = {
 	y = 4
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -776,7 +776,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -818,7 +818,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -854,7 +854,7 @@ shared_focus = {
 	y = 0
 	relative_position_id = CHI_mission_to_germany
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -926,7 +926,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_mission_to_the_soviet_union
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -964,7 +964,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_mission_to_the_soviet_union
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1019,7 +1019,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_invite_soviet_advisers
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1061,7 +1061,7 @@ shared_focus = {
 	y = 0
 	relative_position_id = CHI_mission_to_the_soviet_union
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1124,7 +1124,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1160,7 +1160,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_small_arms_expertise
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 2
@@ -1236,7 +1236,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_small_arms_expertise
 	
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1280,7 +1280,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1343,7 +1343,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_guarantee_the_hanoi_route
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1383,7 +1383,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1478,7 +1478,7 @@ shared_focus = {
 	y = 5
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1512,7 +1512,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_french_drill
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1566,7 +1566,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_modern_logistics
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1601,7 +1601,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_renegotiate_the_unequal_treaties
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1739,7 +1739,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_one_china_policy
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1772,7 +1772,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_one_china_policy
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1831,7 +1831,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_one_china_policy
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1862,7 +1862,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_one_china_policy
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1924,7 +1924,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_renegotiate_the_unequal_treaties
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -1957,7 +1957,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_anti_imperialism
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2011,7 +2011,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_anti_imperialism
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2095,7 +2095,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_anti_imperialism
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2139,7 +2139,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_indian_cooperation
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2184,7 +2184,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_renegotiate_the_unequal_treaties
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2215,7 +2215,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_imperial_legacy
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2273,7 +2273,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_imperial_legacy
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2305,7 +2305,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_imperial_legacy
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2386,7 +2386,7 @@ shared_focus = {
 	y = 0
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2457,7 +2457,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_british_cooperation
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1		
@@ -2544,7 +2544,7 @@ shared_focus = {
 	y = 5
 	relative_position_id = CHI_british_cooperation
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2630,7 +2630,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_british_cooperation
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2666,7 +2666,7 @@ shared_focus = {
 		hidden_effect = {
 			if = {
 				limit = {
-					not = {
+					NOT = {
 						has_tech = early_fighter
 					}
 				}
@@ -2675,16 +2675,16 @@ shared_focus = {
 			if = {
 				limit = {
 					has_completed_focus = CHI_british_cooperation
-					not = { has_war_with = ENG }
+					NOT = { has_war_with = EN0 }
 				}
-				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = ENG }
+				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = EN0 }
 			}
 			if = {
 				limit = {
 					has_completed_focus = CHI_mission_to_the_us
-					not = { has_war_with = USA }
+					NOT = { has_war_with = US0 }
 				}
-				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = USA }
+				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = US0 }
 			}
 		}
 	}
@@ -2698,7 +2698,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_fighter_purchases
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2745,7 +2745,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_fighter_purchases
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2777,7 +2777,7 @@ shared_focus = {
 	y = 1
 	relative_position_id =  CHI_local_fighter_production
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2810,7 +2810,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_fighter_purchases
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2893,7 +2893,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_the_hump
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2934,7 +2934,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_camco
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -2974,7 +2974,7 @@ shared_focus = {
 	mutually_exclusive = { focus = CHI_collaboration_with_the_japanese }
 	relative_position_id = CHI_british_cooperation
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3040,7 +3040,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_mission_to_the_us
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3079,7 +3079,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_hire_chennault
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3119,7 +3119,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_hire_chennault
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3161,7 +3161,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_mission_to_the_us
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3197,7 +3197,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_light_cruiser_project
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3233,7 +3233,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_heavy_cruiser_project
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3273,7 +3273,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_naval_aviation
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3312,7 +3312,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_mission_to_the_us
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3374,7 +3374,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_investment_into_shipbuilding
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3413,7 +3413,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_investment_into_shipbuilding
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3454,7 +3454,7 @@ shared_focus = {
 	y = 0
 	relative_position_id = CHI_mission_to_the_us
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3516,7 +3516,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_collaboration_with_the_japanese
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1
@@ -3552,7 +3552,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_modern_submarines
 
-	cost = 10
+	cost = 70
 
 	ai_will_do = {
 		factor = 1

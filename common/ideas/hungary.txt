@@ -369,7 +369,18 @@ ideas = {
 				has_dlc = "Death or Dishonor"
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = HUN_economic_intervention }
+				NOT = { has_completed_focus = HUN_elect_a_fascist_king }
+				NOT = { has_completed_focus = HUN_elect_a_democratic_king }
+			}
 			available = {
+				if = {
+					limit = { has_dlc = "Death or Dishonor" }
+					has_completed_focus = HUN_strengthen_the_monarchists
+					NOT = { has_completed_focus = HUN_elect_a_fascist_king }
+					NOT = { has_completed_focus = HUN_elect_a_democratic_king }
+				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
@@ -409,7 +420,15 @@ ideas = {
 				original_tag = HUN
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = HUN_balanced_budget }
+				NOT = { has_completed_focus = HUN_strengthen_fascists }
+			}
 			available = {
+				if = {
+					limit = { has_dlc = "Death or Dishonor" }
+					has_completed_focus = HUN_council_of_peoples_commissars
+				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
@@ -427,7 +446,16 @@ ideas = {
 				original_tag = HUN
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = HUN_economic_intervention }
+				NOT = { has_completed_focus = HUN_elect_a_fascist_king }
+				NOT = { has_completed_focus = HUN_invite_the_habsburg_prince }
+			}
 			available = {
+				if = {
+					limit = { has_dlc = "Death or Dishonor" }
+					has_completed_focus = HUN_elect_a_democratic_king
+				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
@@ -445,7 +473,19 @@ ideas = {
 				original_tag = HUN
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = HUN_council_of_peoples_commissars }
+				NOT = { has_completed_focus = HUN_elect_a_democratic_king }
+				NOT = { has_completed_focus = HUN_invite_the_habsburg_prince }
+			}
 			available = {
+				if = {
+					limit = { has_dlc = "Death or Dishonor" }
+					OR = {
+						has_completed_focus = HUN_elect_a_fascist_king
+						has_completed_focus = HUN_strengthen_fascists
+					}
+				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }

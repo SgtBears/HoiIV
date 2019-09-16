@@ -131,22 +131,37 @@ ideas = {
 		extensive_conscription = {
 			
 			available = {
-				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
-				OR = {
-					has_government = fascism
-					has_government = communism
-					AND = {
+				if = {
+					limit = {
+						original_tag = SWI
+					}
+					OR = {
+						has_government = fascism
+						has_government = communism
+						any_neighbor_country = {
+							has_war = yes
+							NOT = {
+								has_war_with = ET0
+							}
+						}
 						has_war = yes
-						enemies_strength_ratio > 0.5
-						#any_enemy_country = {
-						#	strength_ratio = {
-						#		tag = ROOT 
-						#		ratio > 0.5
-						#	}
-						#}
-					}					
+					}
+					OR = {
+						has_war_support > 0.1
+						surrender_progress > 0
+					}
 				}
-				has_war_support > 0.2
+				else = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+						AND = {
+							has_war = yes
+							enemies_strength_ratio > 0.5
+						}					
+					}
+					has_war_support > 0.2
+				}
 				#Special rules AST in TFV
 				if = {
 					limit = {
@@ -225,23 +240,39 @@ ideas = {
 			
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
-				OR = {
-					has_government = fascism
-					has_government = communism
-					AND = {
+				if = {
+					limit = {
+						original_tag = SWI
+					}
+					OR = {
+						has_government = fascism
+						has_government = communism
+						any_neighbor_country = {
+							has_war = yes
+							NOT = {
+								has_war_with = ET0
+							}
+						}
 						has_war = yes
-						enemies_strength_ratio > 0.6
-						#any_enemy_country = {
-						#	strength_ratio = {
-						#		tag = ROOT 
-						#		ratio > 0.6
-						#	}
-						#}
+					}
+					OR = {
+						has_war_support > 0.4
+						surrender_progress > 0
 					}
 				}
-				OR = {
-					has_war_support > 0.6
-					surrender_progress > 0
+				else = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+						AND = {
+							has_war = yes
+							enemies_strength_ratio > 0.6
+						}
+					}
+					OR = {
+						has_war_support > 0.6
+						surrender_progress > 0
+					}
 				}
 
 				if = {
@@ -349,18 +380,32 @@ ideas = {
 			
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
-				has_war = yes
-				OR = {
-					has_war_support > 0.7
-					surrender_progress > 0
+				if = {
+					limit = {
+						original_tag = SWI
+					}
+					OR = {
+						any_neighbor_country = {
+							has_war = yes
+							NOT = {
+								has_war_with = ET0
+							}
+						}
+						has_war = yes
+					}
+					OR = {
+						has_war_support > 0.4
+						surrender_progress > 0
+					}
 				}
-				enemies_strength_ratio > 0.75
-				#any_enemy_country = {
-				#	strength_ratio = {
-				#		tag = ROOT 
-				#		ratio > 0.75
-				#	}
-				#}
+				else = {
+					has_war = yes
+					OR = {
+						has_war_support > 0.7
+						surrender_progress > 0
+					}
+					enemies_strength_ratio > 0.75
+				}
 
 				if = {
 					limit = {

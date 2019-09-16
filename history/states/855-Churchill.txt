@@ -1,0 +1,26 @@
+
+state={
+	id=855
+	name="STATE_855"
+	manpower = 20
+	
+	state_category = wasteland
+	
+	resources={
+	}
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = QUE
+		add_core_of = NEF
+		add_core_of = LAB
+
+	}
+
+	provinces={
+		13848 13850
+	}
+}

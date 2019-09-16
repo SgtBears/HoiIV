@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = CAN
+		victory_points = { 1869 1 }
 		buildings = {
 			infrastructure = 1
 
@@ -15,12 +16,13 @@ state={
 
 		}
 		add_core_of = CAN
+		add_core_of = BCL
 	}
 
 	provinces={
 		1869
 	}
-	manpower=12684
+	manpower=2684
 	buildings_max_level_factor=1	
 	state_category="small_island"
 }

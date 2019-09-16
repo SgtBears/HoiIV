@@ -2,8 +2,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "unitleader_trait_tree_window"
-		position = { x=-670 y=-350 }
-		size = { width=1340 height=778 }
+		position = { x=-700 y=-460 }		#mod
+		size = { width=1340 height=880 }		#mod y=778
 		orientation = center
 		fade_time = 500
 		fade_type = linear
@@ -187,8 +187,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "active_traits"
-			position = {x=20 y=175}
-			size = {width=265 height=540}
+			position = {x=14 y=175}		#mod
+			size = {width=273 height=685}		#mod
 			Orientation = upper_left
 			clipping = yes
 			
@@ -400,8 +400,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "regular_traits"
-			position = {x=294 y=110}
-			size = {width=636 height=640}
+			position = {x=294 y=100}		#mod
+			size = {width=636 height=880}		#mod y=640
 			Orientation = upper_left
 			clipping = yes
 			

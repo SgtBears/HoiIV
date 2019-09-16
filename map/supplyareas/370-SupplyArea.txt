@@ -1,0 +1,8 @@
+supply_area={
+	id=370
+	name="SUPPLYAREA_370"
+	value=7
+	states={
+		721 804 805
+	}
+}

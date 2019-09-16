@@ -1,0 +1,22 @@
+
+state={
+	id=861
+	name="STATE_861" # Croatia
+	manpower = 149696
+	
+	state_category = pastoral
+
+	history={
+		victory_points = { 11580 1 }
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+	}
+
+	provinces={
+		11580
+	}
+}

@@ -1542,3 +1542,44 @@ SOV_GTC_01 =
 		12 = { "%dya Gvds. Tankovaya Korpus" }
 	}
 }
+SOV_VOL_INF_01 = 
+{
+	name = "Rifle Division"
+
+	for_countries = { SOV }
+
+	can_use = { always = no }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SOV_INF_01 }
+
+	fallback_name = "%dya Volonterskaya Strelkovaya Div."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dya Volonterskaya Strelkovaya Div." }
+		2 = { "%dya Volonterskaya Strelkovaya Div." }
+		3 = { "%dya Volonterskaya Strelkovaya Div." }
+		4 = { "%dya Volonterskaya Strelkovaya Div." }
+		5 = { "%dya Volonterskaya Strelkovaya Div." }
+		6 = { "%dya Volonterskaya Strelkovaya Div." }
+		7 = { "%dya Volonterskaya Strelkovaya Div." }
+		8 = { "%dya Volonterskaya Strelkovaya Div." }
+		9 = { "%dya Volonterskaya Strelkovaya Div." }
+		10 = { "%dya Volonterskaya Strelkovaya Div." }
+		11 = { "%dya Volonterskaya Strelkovaya Div." }
+		12 = { "%dya Volonterskaya Strelkovaya Div." }
+		13 = { "%dya Volonterskaya Strelkovaya Div." }
+		14 = { "%dya Volonterskaya Strelkovaya Div." }
+		15 = { "%dya Volonterskaya Strelkovaya Div." }
+		16 = { "%dya Volonterskaya Strelkovaya Div." }
+		17 = { "%dya Volonterskaya Strelkovaya Div." }
+		18 = { "%dya Volonterskaya Strelkovaya Div." }
+		19 = { "%dya Volonterskaya Strelkovaya Div." }
+		20 = { "%dya Volonterskaya Strelkovaya Div." }
+	}
+}

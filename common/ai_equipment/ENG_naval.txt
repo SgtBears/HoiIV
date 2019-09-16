@@ -796,8 +796,8 @@ ENG_naval_light_AA_cruiser = {
 		modifier = {
 			factor = 20
 			OR = {
-				has_war_with = USA
-				has_war_with = JAP
+				has_war_with = var:global.usa_tag
+				has_war_with = var:global.jap_tag
 			}
 		}
 	}
@@ -1930,7 +1930,7 @@ naval_submarine = {
 			factor = 50
 			modifier = {
 				factor = 15
-				has_war_with = JAP
+				has_war_with = var:global.jap_tag
 			}
 		}
 		role_icon_index = 6

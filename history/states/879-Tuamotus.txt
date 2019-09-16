@@ -1,0 +1,40 @@
+
+state={
+	id=879
+	name="STATE_879"
+	manpower=1957
+	state_category = tiny_island
+
+	history={
+		owner = FRA
+		add_core_of = TAH
+		buildings = {
+			infrastructure = 2
+			14320 = {
+				naval_base = 1
+			}
+			14319 = {
+				naval_base = 1
+			}
+			14304 = {
+				naval_base = 1
+			}
+			14303 = {
+				naval_base = 1
+			}
+			14313 = {
+				naval_base = 1
+			}
+			14302 = {
+				naval_base = 1
+			}
+			14311 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		14302 14303 14304 14305 14306 14307 14308 14309 14310 14311 14312 14313 14314 14315 14316 14317 14318 14319 14320 14321 14322 14323 14324
+	}
+}

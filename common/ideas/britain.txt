@@ -212,6 +212,9 @@ ideas = {
 				fighter_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				jet_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 		
@@ -1757,6 +1760,21 @@ ideas = {
 			allowed = {
 				original_tag = ENG
 			}
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					OR = {
+						has_government = communism
+						AND = {
+							NOT = { has_completed_focus = ENG_organize_the_blackshirts }
+							NOT = { has_completed_focus = ENG_the_kings_party }
+							NOT = { has_completed_focus = ENG_steady_as_she_goes }
+						}
+					}
+				}
+			}
 
 			available = {
 				if = {
@@ -1764,9 +1782,6 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 					has_government = communism
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -1786,15 +1801,20 @@ ideas = {
 			
 		clement_attlee = {
 
-			available = {
+			visible = {
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
 					NOT = { has_completed_focus = ENG_a_change_in_course }
 				}
+			}
+			available = {
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = ENG_a_change_in_course }
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -1822,15 +1842,27 @@ ideas = {
 				original_tag = ENG
 			}
 
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					OR = {
+						has_government = fascism
+						AND = {
+							NOT = { has_completed_focus = ENG_concessions_to_the_trade_unions }
+							NOT = { has_completed_focus = ENG_the_kings_party }
+							NOT = { has_completed_focus = ENG_steady_as_she_goes }
+						}
+					}
+				}
+			}
 			available = {
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
 					has_government = fascism
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -1850,6 +1882,18 @@ ideas = {
 
 		ENG_philip_kerr = {
 
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = { has_completed_focus = ENG_no_further_appeasement }
+					OR = {
+						has_government = democratic
+						NOT = { has_completed_focus = ENG_a_change_in_course }
+					}
+				}
+			}
 			available = {
 				if = {
 					limit = {
@@ -1923,6 +1967,16 @@ ideas = {
 			
 			#picture = generic_political_advisor_europe_2
 
+			visible = {
+				OR = {
+					has_government = fascism
+					AND = {
+						NOT = { has_completed_focus = ENG_concessions_to_the_trade_unions }
+						NOT = { has_completed_focus = ENG_the_kings_party }
+						NOT = { has_completed_focus = ENG_steady_as_she_goes }
+					}
+				}
+			}
 			available = {
 				has_government = fascism
 			}
@@ -1943,12 +1997,19 @@ ideas = {
 			
 			#picture = generic_communist_revolutionary_western_european_2d
 
-			available = {
-				has_government = communism
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
+			visible = {
+				OR = {
+					has_government = communism
+					AND = {
+						NOT = { has_completed_focus = ENG_organize_the_blackshirts }
+						NOT = { has_completed_focus = ENG_the_kings_party }
+						NOT = { has_completed_focus = ENG_steady_as_she_goes }
+					}
 				}
+			}
+			available = {
+				has_government = communism	
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			allowed = {
@@ -1967,6 +2028,16 @@ ideas = {
 			
 			#picture = generic_political_advisor_europe_1
 
+			visible = {
+				OR = {
+					has_government = communism
+					AND = {
+						NOT = { has_completed_focus = ENG_organize_the_blackshirts }
+						NOT = { has_completed_focus = ENG_the_kings_party }
+						NOT = { has_completed_focus = ENG_steady_as_she_goes }
+					}
+				}
+			}
 			available = {
 				has_government = communism
 			}
@@ -1987,13 +2058,15 @@ ideas = {
 			
 			#picture = generic_democratic_reformer_western_european_2d
 
+			visible = {
+				NOT = { has_completed_focus = ENG_organize_the_blackshirts }
+				NOT = { has_completed_focus = ENG_concessions_to_the_trade_unions }
+				NOT = { has_completed_focus = ENG_steady_as_she_goes }
+			}
 			available = {
 				has_government = neutrality
 				has_completed_focus = ENG_the_kings_party
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			allowed = {
@@ -2012,6 +2085,11 @@ ideas = {
 			
 			#picture = generic_political_advisor_europe_3
 
+			visible = {
+				NOT = { has_completed_focus = ENG_organize_the_blackshirts }
+				NOT = { has_completed_focus = ENG_concessions_to_the_trade_unions }
+				NOT = { has_completed_focus = ENG_steady_as_she_goes }
+			}
 			available = {
 				has_government = neutrality
 				has_completed_focus = ENG_the_kings_party
@@ -2033,6 +2111,11 @@ ideas = {
 			
 			#picture = generic_political_advisor_europe_4
 
+			visible = {
+				NOT = { has_completed_focus = ENG_organize_the_blackshirts }
+				NOT = { has_completed_focus = ENG_concessions_to_the_trade_unions }
+				NOT = { has_completed_focus = ENG_steady_as_she_goes }
+			}
 			available = {
 				has_government = neutrality
 				has_completed_focus = ENG_the_kings_party
@@ -2237,26 +2320,9 @@ ideas = {
 		ENG_corgis_2 = { # Dookie
 			
 			picture = generic_political_advisor_europe_5
-
-			available = {
-				has_government = neutrality
-				has_completed_focus = ENG_the_kings_party
-				has_country_leader = {
-				    name = "Elizabeth II"
-				    ruling_only = yes
-				}
-			}
-
-			visible = {
-				has_country_leader = {
-				    name = "Elizabeth II"
-				    ruling_only = yes
-				}
-			}
 			
 			allowed = {
-				original_tag = ENG
-				has_dlc = "Man the Guns"
+				always = no
 			}
 			
 			traits = { heels_nipper }
@@ -2268,26 +2334,9 @@ ideas = {
 		ENG_corgis_3 = { # Jane
 			
 			picture = generic_political_advisor_europe_4
-
-			available = {
-				has_government = neutrality
-				has_completed_focus = ENG_the_kings_party
-				has_country_leader = {
-				    name = "Elizabeth II"
-				    ruling_only = yes
-				}
-			}
-
-			visible = {
-				has_country_leader = {
-				    name = "Elizabeth II"
-				    ruling_only = yes
-				}
-			}
 			
 			allowed = {
-				original_tag = ENG
-				has_dlc = "Man the Guns"
+				always = no
 			}
 			
 			traits = { snuggler }
@@ -2299,26 +2348,9 @@ ideas = {
 		ENG_corgis_1 = { # Crackers
 			
 			picture = generic_political_advisor_europe_3
-
-			available = {
-				has_government = neutrality
-				has_completed_focus = ENG_the_kings_party
-				has_country_leader = {
-				    name = "Elizabeth II"
-				    ruling_only = yes
-				}
-			}
-
-			visible = {
-				has_country_leader = {
-				    name = "Elizabeth II"
-				    ruling_only = yes
-				}
-			}
 			
 			allowed = {
-				original_tag = ENG
-				has_dlc = "Man the Guns"
+				always = no
 			}
 			
 			traits = { face_licker }
@@ -2335,7 +2367,12 @@ ideas = {
 			allowed = {
 				original_tag = ENG
 			}
-			
+			visible = {
+				NOT = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+				
 			available = {
 				NOT = {
 					has_completed_focus = ENG_eliminate_the_upper_class
@@ -2370,6 +2407,11 @@ ideas = {
 				original_tag = ENG
 			}
 			
+			visible = {
+				NOT = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
 			available = {
 				NOT = {
 					has_completed_focus = ENG_eliminate_the_upper_class
@@ -2488,6 +2530,11 @@ ideas = {
 				original_tag = ENG
 			}
 			
+			visible = {
+				NOT = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
 			available = {
 				NOT = {
 					has_completed_focus = ENG_eliminate_the_upper_class
@@ -2582,6 +2629,11 @@ ideas = {
 				original_tag = ENG
 			}
 			
+			visible = {
+				NOT = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
 			available = {
 				NOT = {
 					has_completed_focus = ENG_eliminate_the_upper_class
@@ -2940,6 +2992,11 @@ ideas = {
 				original_tag = ENG
 			}
 
+			visible = {
+				NOT = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
 			available = {
 				NOT = {
 					has_completed_focus = ENG_eliminate_the_upper_class
@@ -2961,6 +3018,11 @@ ideas = {
 				original_tag = ENG
 			}
 			
+			visible = {
+				NOT = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
 			available = {
 				NOT = {
 					has_completed_focus = ENG_eliminate_the_upper_class
@@ -2988,9 +3050,10 @@ ideas = {
 			picture = generic_army_europe_2
 
 			visible = {
-				has_completed_focus = ENG_eliminate_the_upper_class
+				NOT = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
 			}
-
 			available = {
 				has_completed_focus = ENG_eliminate_the_upper_class
 			}
@@ -3012,6 +3075,11 @@ ideas = {
 				original_tag = ENG
 			}
 
+			visible = {
+				NOT = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
 			available = {
 				NOT = {
 					has_completed_focus = ENG_eliminate_the_upper_class
@@ -3104,6 +3172,16 @@ ideas = {
 			
 			picture = generic_army_europe_1
 
+			visible = {
+				OR = {
+					has_government = fascism
+					AND = {
+						NOT = { has_completed_focus = ENG_concessions_to_the_trade_unions }
+						NOT = { has_completed_focus = ENG_the_kings_party }
+						NOT = { has_completed_focus = ENG_steady_as_she_goes }
+					}
+				}
+			}
 			available = {
 				has_government = fascism
 			}

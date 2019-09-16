@@ -20,12 +20,12 @@ country_event = {
 		hidden_effect = {
 			random_list = {
 				60 = {
-					JAP = {
+					JA0 = {
 						country_event = { days = 1 id = japan.3 }
 					}
 				}
 				40 = {
-					JAP = {
+					JA0 = {
 						country_event = { days = 1 id = japan.4 }
 					}
 				}
@@ -45,7 +45,7 @@ country_event = {
 	option = { # Yield
 		name = soviet.1.b
 		ai_chance = { factor = 25 }
-		JAP = {
+		JA0 = {
 			effect_tooltip = {
 				add_stability = 0.05
 			}
@@ -68,11 +68,11 @@ country_event = {
 		if = {
 			limit = {
 				561 = { 
-					is_owned_by = SOV 
+					is_owned_by = SO0 
 					any_neighbor_state = { 
 						OR = {
-							is_owned_by = JAP							
-							is_owned_by = MAN								
+							is_owned_by = JA0							
+							is_owned_by = MA5								
 						}
 					} 
 				}
@@ -83,11 +83,11 @@ country_event = {
 			limit = { 
 				NOT = { 
 					561 = { 
-						is_owned_by = SOV 
+						is_owned_by = SO0 
 						any_neighbor_state = { 
 							OR = {
-								is_owned_by = JAP
-								is_owned_by = MAN
+								is_owned_by = JA0
+								is_owned_by = MA5
 							} 	
 						}
 					}
@@ -97,8 +97,8 @@ country_event = {
 				limit = { 
 					any_neighbor_state = { 
 						OR = {
-							is_owned_by = JAP
-							is_owned_by = MAN
+							is_owned_by = JA0
+							is_owned_by = MA5
 						}
 					} 
 				} 
@@ -123,11 +123,11 @@ country_event = {
 		if = {
 			limit = {
 				561 = { 
-					is_owned_by = SOV 
+					is_owned_by = SO0
 					any_neighbor_state = { 
 						OR = {
-							is_owned_by = JAP
-							is_owned_by = MAN							
+							is_owned_by = JA0
+							is_owned_by = MA5							
 						} 
 					} 
 				}
@@ -138,11 +138,11 @@ country_event = {
 			limit = { 
 				NOT = { 
 					561 = { 
-						is_owned_by = SOV 
+						is_owned_by = SO0
 						any_neighbor_state = { 
 							OR = {
-								is_owned_by = JAP
-								is_owned_by = MAN
+								is_owned_by = JA0
+								is_owned_by = MA5
 							}
 						}
 					}
@@ -152,8 +152,8 @@ country_event = {
 				limit = { 
 					any_neighbor_state = { 
 						OR = {
-							is_owned_by = JAP
-							is_owned_by = MAN
+							is_owned_by = JA0
+							is_owned_by = MA5
 						}
 					} 
 				}
@@ -178,13 +178,13 @@ country_event = {
 	
 	option = {
 		name = soviet.4.a
-		SOV = { 
+		SO0 = { 
 			transfer_state = 78
 			transfer_state = 80
 			transfer_state = 766
 		}
 		hidden_effect = {
-			SOV = {
+			SO0 = {
 				country_event = { days = 1 id = news.10 }
 			}
 			news_event = { id = news.199 }
@@ -203,13 +203,17 @@ country_event = {
 	
 	option = {
 		name = soviet.5.a
-		create_wargoal = {
-			type = take_state
-			target = ROM
-			generator = { 78 }
+		RO0 = {
+			ROOT = {
+				create_wargoal = {
+					type = take_state
+					target = PREV
+					generator = { 78 }
+				}
+			}
 		}
 		hidden_effect = {
-			SOV = {
+			SO0 = {
 				country_event = { days = 1 id = news.11 }
 			}
 		}
@@ -227,7 +231,11 @@ country_event = {
 	
 	option = {
 		name = soviet.6.a
-		annex_country = { target = EST }
+		ES0 = {
+			ROOT = {
+				annex_country = { target = PREV }
+			}
+		}
 	}
 }
 
@@ -242,10 +250,14 @@ country_event = {
 	
 	option = {
 		name = soviet.7.a
-		create_wargoal = {
-			type = annex_everything
-			target = EST
-		}		
+		ES0 = {
+			ROOT = {
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
+		}
 	}
 }
 
@@ -260,7 +272,11 @@ country_event = {
 	
 	option = {
 		name = soviet.8.a
-		annex_country = { target = LAT }
+		LA0 = {
+			ROOT = {
+				annex_country = { target = PREV }
+			}
+		}
 	}
 }
 
@@ -275,10 +291,14 @@ country_event = {
 	
 	option = {
 		name = soviet.9.a
-		create_wargoal = {
-			type = annex_everything
-			target = LAT
-		}		
+		LA0 = {
+			ROOT = {
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
+		}
 	}
 }
 
@@ -293,7 +313,11 @@ country_event = {
 	
 	option = {
 		name = soviet.10.a
-		annex_country = { target = LIT }
+		LI0 = {
+			ROOT = {
+				annex_country = { target = PREV }
+			}
+		}
 	}
 }
 
@@ -308,10 +332,14 @@ country_event = {
 	
 	option = {
 		name = soviet.11.a
-		create_wargoal = {
-			type = annex_everything
-			target = LIT
-		}		
+		LI0 = {
+			ROOT = {
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
+		}
 	}
 }
 
@@ -326,11 +354,11 @@ country_event = {
 	
 	option = {
 		name = soviet.12.a
-		SOV = { 
+		SO0 = { 
 			transfer_state = 146
 		}
 		hidden_effect = {
-			SOV = {
+			SO0 = {
 				country_event = { days = 1 id = news.13 }
 			}
 		}
@@ -348,13 +376,17 @@ country_event = {
 	
 	option = {
 		name = soviet.13.a
-		create_wargoal = {
-			type = take_state
-			target = FIN
-			generator = { 146 }
+		FI0 = {
+			ROOT = {
+				create_wargoal = {
+					type = take_state
+					target = PREV
+					generator = { 146 }
+				}
+			}
 		}				
 		hidden_effect = {
-			SOV = {
+			SO0 = {
 				country_event = { days = 1 id = news.12 }				
 			}
 		}
@@ -373,14 +405,14 @@ country_event = {
 	option = { # Accept
 		name = soviet.14.a
 		ai_chance = { factor = 100 }
-		SOV = {
+		SO0 = {
 			country_event = { id = soviet.16 }
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 	option = { # Refuse
 		name = soviet.14.b
-		SOV = {
+		SO0 = {
 			country_event = { id = soviet.15 }
 		}
 	}
@@ -411,9 +443,13 @@ country_event = {
 	
 	option = {
 		name = soviet.16.a
-		annex_country = { target = TAN }
+		TA0 = {
+			ROOT = {
+				annex_country = { target = PREV }
+			}
+		}
 		hidden_effect = {
-			SOV = {
+			SO0 = {
 				country_event = { days = 1 id = news.14 }
 			}
 		}
@@ -548,7 +584,7 @@ country_event = {
 	
 	trigger = {
 		date > 1936.11.1
-		tag = CHI
+		tag = CH0
 		has_opinion_modifier = hostile_status
 		NOT = { has_dlc = "Waking the Tiger" }
 	}
@@ -562,7 +598,7 @@ country_event = {
 	# Enter negotiations with Communist China
 	option = {
 		name = soviet.18.a
-		PRC = { country_event = { id = soviet.19 days = 1 } }
+		PR0 = { country_event = { id = soviet.19 days = 1 } }
 	}
 
 	# Refuse to negotiate
@@ -587,10 +623,14 @@ country_event = {
 	# Agree to a truce
 	option = {
 		name = soviet.19.a
-		remove_opinion_modifier = { target = CHI modifier = hostile_status }
-		CHI = {
-			remove_opinion_modifier = { target = PRC modifier = hostile_status }
-			country_event = { id = soviet.21 days = 1 }
+		PR0 = {
+			CH0 = {
+				remove_opinion_modifier = { target = PREV modifier = hostile_status }
+				country_event = { id = soviet.21 days = 1 }
+				ROOT = {
+					remove_opinion_modifier = { target = PREV modifier = hostile_status }
+				}
+			}
 		}
 		hidden_effect = {
 			605 = {
@@ -624,7 +664,7 @@ country_event = {
 	# Refuse to negotiate
 	option = {
 		name = soviet.19.b
-		SOV = { country_event = { id = soviet.22 days = 1 } }
+		SO0 = { country_event = { id = soviet.22 days = 1 } }
 		set_global_flag = CHI_no_national_front_flag
 		ai_chance = { factor = 0 }
 		custom_effect_tooltip = CHI_no_united_front
@@ -657,8 +697,12 @@ country_event = {
 	option = {
 		name = soviet.21.a
 		effect_tooltip = {
-			PRC = { remove_opinion_modifier = { target = CHI modifier = hostile_status } }
-			CHI = { remove_opinion_modifier = { target = PRC modifier = hostile_status } }
+			CH0 = {
+				PR0 = {
+					remove_opinion_modifier = { target = PREV modifier = hostile_status }
+					CH0 = { remove_opinion_modifier = { target = PREV modifier = hostile_status } }
+				}
+			}
 		}
 	}
 }
@@ -716,7 +760,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = SOV
+		tag = SO0
 		NOT = { has_completed_focus = SOV_great_purge }
 		focus_progress = {
 			focus = SOV_great_purge
@@ -784,7 +828,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = SOV
+		tag = SO0
 		NOT = { has_completed_focus = SOV_great_purge }
 		focus_progress = {
 			focus = SOV_great_purge
@@ -872,7 +916,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = SOV
+		tag = SO0
 		NOT = { has_completed_focus = SOV_great_purge }
 		focus_progress = {
 			focus = SOV_great_purge
@@ -956,9 +1000,9 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = SOV_soviet.48_trotsky
-		tag = SOV
+		tag = SO0
 		NOT = {
-			MEX = {
+			ME0 = {
 				has_country_leader = { name = "Leon Trotsky" ruling_only = yes }
 			}
 		}
@@ -1019,9 +1063,13 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = soviet.43 days = 146 }				
 		}
+		set_global_flag = soviet_union_great_purge_unneeded
 		start_civil_war = {
 			ideology = neutrality
 			size = 0.18
+			states = {
+				193 201 202 199 198 192 203 197 196 226 200 259 137 225 221 228 227 218 234 238 235 232 237 245 233 230 229 231
+			}
 			keep_unit_leaders = { 401 402 407 410 406 405 403 407 404 }
 		}
 		hidden_effect = {
@@ -1030,6 +1078,10 @@ country_event = {
 					original_tag = SOV
 					has_government = neutrality
 				}
+				inherit_technology = SO0
+				set_cosmetic_tag = SOV_russia_civil_war
+				set_variable = { global.sov_military_tag = THIS.id }
+				set_capital = 202
 				kill_country_leader = yes
 				create_country_leader = {
 					name = "Ivan Konev"
@@ -1039,6 +1091,80 @@ country_event = {
 					ideology = oligarchism
 					traits = {
 					}
+				}
+				202 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				set_popularities = {
+					democratic = 18
+					neutrality = 75
+					fascism = 2
+					communism = 5
+				}
+				GE5 = {
+					add_state_core = 230
+					add_state_core = 229
+				}
+				release = GE5
+				GE5 = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = ROOT
+						hostility_reason = asked_to_join
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.28
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.18
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.62
+					}
+					inherit_technology = SO0
+					give_military_access = PREV
+					set_cosmetic_tag = GEO_transcaucasia
+					load_oob = "GEO_russian_civil_war"
+				}
+				231 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				give_military_access = GE5
+				diplomatic_relation = {
+					country = GE5
+					relation = non_aggression_pact
+					active = yes
 				}
 			}
 			news_event = { hours = 6 id = news.221 }
@@ -1057,12 +1183,14 @@ country_event = {
 		
 	option = {
 		name = soviet.29.a
-		SOV = { add_to_faction = FRA }
-		FRA = {
-			add_ai_strategy = {
-				type = alliance
-				id = "SOV"
-				value = 200
+		SO0 = {
+			add_to_faction = FR0
+			FR0 = {
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 200
+				}
 			}
 		}
 		hidden_effect = {
@@ -1072,10 +1200,12 @@ country_event = {
 	option = {
 		name = soviet.29.b
 		ai_chance = { factor = 0 }
-		FRA = {
-			add_opinion_modifier = {
-				target = SOV
-				modifier = SOV_FRA_join_comintern_reject
+		SO0 = {
+			FR0 = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = SOV_FRA_join_comintern_reject
+				}
 			}
 		}
 	}
@@ -1091,10 +1221,10 @@ country_event = {
 	trigger = {
 		has_idea = comintern_influence
 		has_war = yes
-		SOV = { has_war = yes }
-		NOT = { has_war_with = SOV }
+		SO0 = { has_war = yes }
+		NOT = { has_war_with = SO0 }
 		any_enemy_country = {
-			has_war_with = SOV
+			has_war_with = SO0
 		}
 	}
 	
@@ -1118,12 +1248,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = SOV
-		FROM = { tag = ROM }
+		tag = SO0
+		FROM = { tag = RO0 }
 		NOT = { has_country_flag = bessarabia_demand }
 		78 = {
-			is_claimed_by = SOV
-			is_owned_by = ROM
+			is_claimed_by = SO0
+			is_owned_by = RO0
 		}
 	}
 	
@@ -1131,7 +1261,7 @@ country_event = {
 		
 	option = {
 		name = soviet.30.a
-		ROM = { country_event = { days = 2 id = romania.1 } }
+		RO0 = { country_event = { days = 2 id = romania.1 } }
 	}
 	option = {
 		name = soviet.30.b
@@ -1150,12 +1280,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = SOV
-		FROM = { tag = FIN }
+		tag = SO0
+		FROM = { tag = FI0 }
 		NOT = { has_country_flag = karjala_demand }
 		146 = {
-			is_claimed_by = SOV
-			is_owned_by = FIN
+			is_claimed_by = SO0
+			is_owned_by = FI0
 		}
 	}
 	
@@ -1163,7 +1293,7 @@ country_event = {
 		
 	option = {
 		name = soviet.31.a
-		FIN = { country_event = { days = 2 id = finland.1 } }
+		FI0 = { country_event = { days = 2 id = finland.1 } }
 	}
 	option = {
 		name = soviet.31.b
@@ -1182,10 +1312,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = SOV
+		tag = SO0
 		FROM = {
-			tag = EST
-			any_owned_state = { is_claimed_by = SOV }
+			tag = ES0
+			any_owned_state = { is_claimed_by = SO0 }
 		}
 		NOT = { has_country_flag = estonia_demand }
 	}
@@ -1194,7 +1324,7 @@ country_event = {
 		
 	option = {
 		name = soviet.32.a
-		EST = { country_event = { days = 2 id = baltic.1 } }
+		ES0 = { country_event = { days = 2 id = baltic.1 } }
 	}
 	option = {
 		name = soviet.32.b
@@ -1213,10 +1343,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = SOV
+		tag = SO0
 		FROM = {
-			tag = LAT
-			any_owned_state = { is_claimed_by = SOV }
+			tag = LA0
+			any_owned_state = { is_claimed_by = SO0 }
 		}
 		NOT = { has_country_flag = latvia_demand }
 	}
@@ -1225,7 +1355,7 @@ country_event = {
 		
 	option = {
 		name = soviet.33.a
-		LAT = { country_event = { days = 2 id = baltic.2 } }
+		LA0 = { country_event = { days = 2 id = baltic.2 } }
 	}
 	option = {
 		name = soviet.33.b
@@ -1244,10 +1374,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = SOV
+		tag = SO0
 		FROM = {
-			tag = LIT
-			any_owned_state = { is_claimed_by = SOV }
+			tag = LI0
+			any_owned_state = { is_claimed_by = SO0 }
 		}
 		NOT = { has_country_flag = lithuania_demand }
 	}
@@ -1256,7 +1386,7 @@ country_event = {
 		
 	option = {
 		name = soviet.34.a
-		LIT = { country_event = { days = 2 id = baltic.3 } }
+		LI0 = { country_event = { days = 2 id = baltic.3 } }
 	}
 	option = {
 		name = soviet.34.b
@@ -1280,37 +1410,37 @@ country_event = {
 
 		effect_tooltip = {
 			if = {
-				limit = { FROM = { tag = LIT } }
-			 	SOV = {
+				limit = { FROM = { tag = LI0 } }
+			 	SO0 = {
 			 		annex_country = {
-					target = LIT
+					target = FROM
 					transfer_troops = yes } 
 					add_named_threat = { threat = 2 name = soviet.35_threat_LIT }
 				}
 			}
 			if = {
-				limit = { FROM = { tag = FIN } } 
-			 	SOV = { 
+				limit = { FROM = { tag = FI0 } } 
+			 	SO0 = { 
 			 		annex_country = {
-					target = FIN
+					target = FROM
 					transfer_troops = yes } 
 					add_named_threat = { threat = 5 name = soviet.35_threat_FIN }
 				}
 			}
 			if = {
-				limit = { FROM = { tag = EST } } 
-			 	SOV = { 
+				limit = { FROM = { tag = ES0 } } 
+			 	SO0 = { 
 			 		annex_country = {
-					target = EST
+					target = FROM
 					transfer_troops = yes } 
 					add_named_threat = { threat = 2 name = soviet.35_threat_EST }
 				}
 			}
 			if = {
-				limit = { FROM = { tag = LAT } } 
-			 	SOV = {
+				limit = { FROM = { tag = LA0 } } 
+			 	SO0 = {
 			 		annex_country = {
-					target = LAT
+					target = FROM
 					transfer_troops = yes } 
 					add_named_threat = { threat = 2 name = soviet.35_threat_LAT }
 				}
@@ -1353,23 +1483,23 @@ country_event = {
 			limit = {
 				FROM = { is_puppet = no }
 			}
-			SOV = { puppet = FROM }
+			SO0 = { puppet = FROM }
 		}
 		ai_chance = { factor = 100 }
 			if = {
-				limit = { FROM = { tag = LIT } }
+				limit = { FROM = { tag = LI0 } }
 				add_named_threat = { threat = 1 name = soviet.36_threat_LIT }
 			}	
 			if = {
-				limit = { FROM = { tag = FIN } }
+				limit = { FROM = { tag = FI0 } }
 				add_named_threat = { threat = 2 name = soviet.36_threat_FIN }
 			}			
 			if = {
-				limit = { FROM = { tag = EST } }
+				limit = { FROM = { tag = ES0 } }
 				add_named_threat = { threat = 1 name = soviet.36_threat_EST }
 			}			
 			if = {
-				limit = { FROM = { tag = LAT } }
+				limit = { FROM = { tag = LA0 } }
 				add_named_threat = { threat = 1 name = soviet.36_threat_LAT }
 			}		
 
@@ -1731,7 +1861,7 @@ country_event = {
 
 	trigger = {
 		has_government = communism
-		tag = SOV
+		tag = SO0
 		has_global_flag = SOV_fourth_international_fired
 		NOT = { has_completed_focus = SOV_great_purge }
 	}
@@ -1766,7 +1896,7 @@ country_event = {
 	picture = GFX_report_event_soviet_tanks
 
 	trigger = {
-		tag = SOV
+		tag = SO0
 		has_country_flag = SOV_soviet.48_notrotsky
 	}
 	
@@ -1776,9 +1906,16 @@ country_event = {
 
 	option = {
 		name = soviet.49.a
+		set_global_flag = soviet_union_great_purge_unneeded
+		TA0 = { leave_faction = yes }
+		MO0 = { leave_faction = yes }
+		set_autonomy = { target = TA0 autonomy_state = autonomy_free }
 		start_civil_war = {
 			ideology = neutrality
 			size = 0.5
+			states = { # Belarus, Ukraine, Caucus, Stalingrad
+				207 206 204 194 241 193 201 202 199 198 192 203 197 196 226 200 259 137 225 221 228 227 218 234 238 235 232 237 245 233 230 229 231 220 240 260 265 217 236 407 406 585 584 405 732 742 587 402 583 590 404 588 589 586 579 580 653 572 403 516 577 578 570 571 576 568 569 40 654 575 567 566 565 564 563 644 574 562 637 561 560 657 409 408 655
+			}
 			keep_unit_leaders = { 401 402 407 410 406 405 403 407 408 410 411 404 }
 		}
 		hidden_effect = {
@@ -1788,6 +1925,298 @@ country_event = {
 					original_tag = SOV
 					has_government = neutrality
 				}
+				inherit_technology = SO0
+				set_cosmetic_tag = SOV_russia_civil_war
+				set_popularities = {
+					democratic = 18
+					neutrality = 75
+					fascism = 2
+					communism = 5
+				}
+				set_capital = 217
+				GE5 = {
+					add_state_core = 230
+					add_state_core = 229
+				}
+				release = GE5
+				GE5 = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = ROOT
+						hostility_reason = asked_to_join
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.28
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.18
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.62
+					}
+					inherit_technology = SO0
+					set_cosmetic_tag = GEO_transcaucasia
+					load_oob = "GEO_russian_civil_war"
+				}
+				231 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				KA0 = {
+					add_state_core = 742
+					add_state_core = 732
+					add_state_core = 405
+					add_state_core = 585
+					add_state_core = 584
+					remove_state_core = 407
+					remove_state_core = 406
+				}
+				release = KA0
+				KA0 = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = ROOT
+						hostility_reason = asked_to_join
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.28
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.18
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.62
+					}
+					inherit_technology = SO0
+					add_state_core = 407
+					add_state_core = 406
+					set_cosmetic_tag = KAZ_turkestan
+					load_oob = "KAZ_russian_civil_war"
+				}
+				586 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				release = BL0
+				BL0 = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = ROOT
+						hostility_reason = asked_to_join
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.28
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.18
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.62
+					}
+					inherit_technology = SO0
+					load_oob = "BLR_russian_civil_war"
+				}
+				206 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				release = UK0
+				UK0 = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = ROOT
+						hostility_reason = asked_to_join
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.28
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.18
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.62
+					}
+					inherit_technology = SO0
+					load_oob = "UKR_russian_civil_war"
+				}
+				202 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				release = SB0
+				SB0 = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = ROOT
+						hostility_reason = asked_to_join
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.28
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.18
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.62
+					}
+					inherit_technology = SO0
+					set_cosmetic_tag = SIB_russian_civil_war
+					load_oob = "SIB_russian_civil_war"
+				}
+				571 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				release = FE0
+				FE0 = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = ROOT
+						hostility_reason = asked_to_join
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.28
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.18
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.62
+					}
+					inherit_technology = SO0
+					set_cosmetic_tag = FER_russian_civil_war
+					load_oob = "FER_russian_civil_war"
+					add_ai_strategy = {
+						type = invade
+						id = SO0
+						value = -1000
+					}
+				}
+				563 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				set_variable = { global.sov_military_tag = THIS.id }
 				kill_country_leader = yes
 				create_country_leader = {
 					name = "Andrey Vlasov"
@@ -1798,6 +2227,184 @@ country_event = {
 					traits = {
 					}
 				}
+				217 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				set_autonomy = {
+					target = SB0
+					autonomy_state = autonomy_integrated_puppet
+				}
+				set_autonomy = {
+					target = FE0
+					autonomy_state = autonomy_integrated_puppet
+				}
+				give_military_access = UK0
+				give_military_access = BL0
+				give_military_access = KA0
+				give_military_access = GE5
+				diplomatic_relation = {
+					country = UK0
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = BL0
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = KA0
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = GE5
+					relation = non_aggression_pact
+					active = yes
+				}
+				UK0 = {
+					give_military_access = GE5
+					give_military_access = BL0
+					give_military_access = KA0
+					give_military_access = PREV
+					give_military_access = SB0
+					give_military_access = FE0
+					diplomatic_relation = {
+						country = BL0
+						relation = non_aggression_pact
+						active = yes
+					}
+					diplomatic_relation = {
+						country = KA0
+						relation = non_aggression_pact
+						active = yes
+					}
+					diplomatic_relation = {
+						country = GE5
+						relation = non_aggression_pact
+						active = yes
+					}
+					diplomatic_relation = {
+						country = SB0
+						relation = non_aggression_pact
+						active = yes
+					}
+					diplomatic_relation = {
+						country = FE0
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+				GE5 = {
+					give_military_access = UK0
+					give_military_access = BL0
+					give_military_access = KA0
+					give_military_access = PREV
+					give_military_access = SB0
+					give_military_access = FE0
+					diplomatic_relation = {
+						country = BL0
+						relation = non_aggression_pact
+						active = yes
+					}
+					diplomatic_relation = {
+						country = KA0
+						relation = non_aggression_pact
+						active = yes
+					}
+					diplomatic_relation = {
+						country = SB0
+						relation = non_aggression_pact
+						active = yes
+					}
+					diplomatic_relation = {
+						country = FE0
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+				KA0 = {
+					give_military_access = UK0
+					give_military_access = BL0
+					give_military_access = GE5
+					give_military_access = PREV
+					give_military_access = SB0
+					give_military_access = FE0
+					diplomatic_relation = {
+						country = BL0
+						relation = non_aggression_pact
+						active = yes
+					}
+					diplomatic_relation = {
+						country = SB0
+						relation = non_aggression_pact
+						active = yes
+					}
+					diplomatic_relation = {
+						country = FE0
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+				BL0 = {
+					give_military_access = UK0
+					give_military_access = KA0
+					give_military_access = GE5
+					give_military_access = PREV
+					give_military_access = SB0
+					give_military_access = FE0
+					diplomatic_relation = {
+						country = SB0
+						relation = non_aggression_pact
+						active = yes
+					}
+					diplomatic_relation = {
+						country = FE0
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+				SB0 = {
+					give_military_access = UK0
+					give_military_access = KA0
+					give_military_access = GE5
+					give_military_access = BL0
+					give_military_access = PREV
+					give_military_access = FE0
+					diplomatic_relation = {
+						country = FE0
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+				FE0 = {
+					give_military_access = UK0
+					give_military_access = KA0
+					give_military_access = GE5
+					give_military_access = BL0
+					give_military_access = PREV
+					give_military_access = SB0
+				}
+				load_oob = "RUS_large_russian_civil_war"
+				set_division_template_lock = {
+					division_template = "Volonterskaya Strelkovaya"
+					is_locked = yes
+				}
+			}
+			load_oob = "SOV_russian_civil_war"
+			set_division_template_lock = {
+				division_template = "Volonterskaya Strelkovaya"
+				is_locked = yes
 			}
 			news_event = { hours = 3 id = news.220 }
 		}
@@ -1814,7 +2421,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = SOV
+		tag = SO0
 		has_country_flag = SOV_purged_1
 	}
 
@@ -1823,9 +2430,13 @@ country_event = {
 	option = {
 		name = soviet.50.a
 		remove_unit_leader = 412 #Remove Andrey Vlasov
+		set_global_flag = soviet_union_great_purge_unneeded
 		start_civil_war = {
 			ideology = neutrality
 			size = 0.3
+			states = {
+				207 206 204 194 241 193 201 202 199 198 192 203 197 196 226 200 259 137 225 221 228 227 218 234 238 235 232 237 245 233 230 229 231 220 240 260 265 217 236 407 406
+			}
 			keep_unit_leaders = { 401 402 407 410 406 405 403 407 408 410 411 404 }
 		}
 		hidden_effect = {
@@ -1834,6 +2445,16 @@ country_event = {
 					original_tag = SOV
 					has_government = neutrality
 				}
+				inherit_technology = SO0
+				set_cosmetic_tag = SOV_russia_civil_war
+				set_popularities = {
+					democratic = 18
+					neutrality = 75
+					fascism = 2
+					communism = 5
+				}
+				set_variable = { global.sov_military_tag = THIS.id }
+				set_capital = 217
 				kill_country_leader = yes
 				create_country_leader = {
 					name = "Andrey Vlasov"
@@ -1843,6 +2464,74 @@ country_event = {
 					ideology = moderatism
 					traits = {
 					}
+				}
+				217 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				GE5 = {
+					add_state_core = 230
+					add_state_core = 229
+				}
+				release = GE5
+				GE5 = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = ROOT
+						hostility_reason = asked_to_join
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.28
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.18
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.62
+					}
+					give_military_access = PREV
+					inherit_technology = SO0
+					set_cosmetic_tag = GEO_transcaucasia
+					load_oob = "GEO_russian_civil_war"
+				}
+				give_military_access = GE5
+				diplomatic_relation = {
+					country = GE5
+					relation = non_aggression_pact
+					active = yes
+				}
+				231 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
 				}
 			}
 			news_event = { hours = 3 id = news.220 }
@@ -1860,7 +2549,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = SOV
+		tag = SO0
 		has_country_flag = SOV_purged_2
 	}
 
@@ -1869,9 +2558,13 @@ country_event = {
 	option = {
 		name = soviet.51.a
 		remove_unit_leader = 412 #Remove Andrey Vlasov
+		set_global_flag = soviet_union_great_purge_unneeded
 		start_civil_war = {
 			ideology = neutrality
 			size = 0.25
+			states = { 
+				207 206 204 194 241 193 201 202 199 198 192 203 197 196 226 200 259 137 225 221 228 227 218 234 238 235 232 237 245 233 230 229 231
+			}
 			keep_unit_leaders = { 401 402 407 410 406 405 403 407 408 410 411 404 }
 		}
 		hidden_effect = {
@@ -1880,7 +2573,17 @@ country_event = {
 					original_tag = SOV
 					has_government = neutrality
 				}
+				inherit_technology = SO0
+				set_cosmetic_tag = SOV_russia_civil_war
+				set_popularities = {
+					democratic = 18
+					neutrality = 75
+					fascism = 2
+					communism = 5
+				}
+				set_variable = { global.sov_military_tag = THIS.id }
 				kill_country_leader = yes
+				set_capital = 202
 				create_country_leader = {
 					name = "Andrey Vlasov"
 					desc = "POLITICS_ANDREY_VLASOV_DESC"
@@ -1889,6 +2592,74 @@ country_event = {
 					ideology = moderatism
 					traits = {
 					}
+				}
+				202 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				GE5 = {
+					add_state_core = 230
+					add_state_core = 229
+				}
+				release = GE5
+				GE5 = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = ROOT
+						hostility_reason = asked_to_join
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.28
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.18
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.62
+					}
+					inherit_technology = SO0
+					give_military_access = PREV
+					set_cosmetic_tag = GEO_transcaucasia
+					load_oob = "GEO_russian_civil_war"
+				}
+				231 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				give_military_access = GE5
+				diplomatic_relation = {
+					country = GE5
+					relation = non_aggression_pact
+					active = yes
 				}
 			}
 			news_event = { hours = 3 id = news.220 }
@@ -1906,7 +2677,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = SOV
+		tag = SO0
 		has_country_flag = SOV_purged_3
 	}
 
@@ -1915,9 +2686,13 @@ country_event = {
 	option = {
 		name = soviet.52.a
 		remove_unit_leader = 412 #Remove Andrey Vlasov
+		set_global_flag = soviet_union_great_purge_unneeded
 		start_civil_war = {
 			ideology = neutrality
 			size = 0.2
+			states = { 
+				193 201 202 199 198 192 203 197 196 226 200 259 137 225 221 228 227 218 234 238 235 232 237 245 233 230 229 231
+			}
 			keep_unit_leaders = { 401 402 407 410 406 405 403 407 408 410 411 404 }
 		}
 		hidden_effect = {
@@ -1926,7 +2701,17 @@ country_event = {
 					original_tag = SOV
 					has_government = neutrality
 				}
+				set_cosmetic_tag = SOV_russia_civil_war
+				inherit_technology = SO0
+				set_variable = { global.sov_military_tag = THIS.id }
+				set_capital = 202
 				kill_country_leader = yes
+				set_popularities = {
+					democratic = 18
+					neutrality = 75
+					fascism = 2
+					communism = 5
+				}
 				create_country_leader = {
 					name = "Andrey Vlasov"
 					desc = "POLITICS_ANDREY_VLASOV_DESC"
@@ -1935,6 +2720,74 @@ country_event = {
 					ideology = moderatism
 					traits = {
 					}
+				}
+				202 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				GE5 = {
+					add_state_core = 230
+					add_state_core = 229
+				}
+				release = GE5
+				GE5 = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = ROOT
+						hostility_reason = asked_to_join
+					}
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.28
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.18
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.62
+					}
+					inherit_technology = SO0
+					give_military_access = PREV
+					set_cosmetic_tag = GEO_transcaucasia
+					load_oob = "GEO_russian_civil_war"
+				}
+				231 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}	
+				}
+				give_military_access = GE5
+				diplomatic_relation = {
+					country = GE5
+					relation = non_aggression_pact
+					active = yes
 				}
 			}
 			news_event = { hours = 3 id = news.220 }
@@ -1953,7 +2806,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = SOV
+		tag = SO0
 		has_country_flag = SOV_purged_4
 	}
 
@@ -1990,7 +2843,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = SOV
+		tag = SO0
 		NOT = {
 			has_government = communism
 		}
@@ -2030,13 +2883,13 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = SOV
+		tag = SO0
 		has_global_flag = sov_yes_pact
-		GER = {
+		GE0 = {
 			exists = yes
 			is_subject = no
 		}
-		NOT =  { has_war_with = GER }
+		NOT =  { has_war_with = GE0 }
 		OR = {
 			OR = {
 				owns_state = 88
@@ -2049,7 +2902,7 @@ country_event = {
 				owns_state = 10
 			}
 			AND = {
-				POL = { has_capitulated = yes }
+				PO0 = { has_capitulated = yes }
 				OR = {
 					controls_state = 88
 					controls_state = 92
@@ -2063,8 +2916,8 @@ country_event = {
 			}
 			OR = {
 				any_other_country = {
-					is_in_faction_with = SOV
-					SOV = {
+					is_in_faction_with = SO0
+					SO0 = {
 						is_faction_leader = yes
 					}
 					OR = {
@@ -2077,7 +2930,7 @@ country_event = {
 						owns_state = 98
 						owns_state = 10
 						AND = {
-							POL = { has_capitulated = yes }
+							PO0 = { has_capitulated = yes }
 							OR = {
 								controls_state = 88
 								controls_state = 92
@@ -2105,11 +2958,11 @@ country_event = {
 			modifier = {
 				factor = 0
 				AND = {
-					POL = {
+					PO0 = {
 						is_ai = no
 						has_civil_war = no
 					}
-					is_in_faction_with = POL
+					is_in_faction_with = PO0
 				}
 			}
 		}
@@ -2118,192 +2971,201 @@ country_event = {
 			limit = {
 				88 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 88
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = { transfer_state = 88 }
+			GE0 = { transfer_state = 88 }
 		}
 		if = {
 			limit = {
 				92 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 92
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = { transfer_state = 92 }
+			GE0 = { transfer_state = 92 }
 		}
 		if = {
 			limit = {
 				90 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 90
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = { transfer_state = 90 }
+			GE0 = { transfer_state = 90 }
 		}
 		if = {
 			limit = {
 				86 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 86
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = {
+			GE0 = {
 				transfer_state = 86
 				add_state_core = 86
+			}
+			hidden_effect = {
+				86 = { add_core_of = DDR }
 			}
 		}
 		if = {
 			limit = {
 				87 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 87
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = { transfer_state = 87 }
+			GE0 = { transfer_state = 87 }
 		}
 		if = {
 			limit = {
 				85 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 85
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = {
+			GE0 = {
 				transfer_state = 85
 				add_state_core = 85
+			}
+			hidden_effect = {
+				85 = { add_core_of = DDR }
 			}
 		}
 		if = {
 			limit = {
 				98 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 98
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = { transfer_state = 98 }
+			GE0 = { transfer_state = 98 }
 		}
 		if = {
 			limit = {
 				10 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 10
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = { transfer_state = 10 }
+			GE0 = { transfer_state = 10 }
 		}
 		if = {
 			limit = {
 				70 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 70
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = { transfer_state = 70 }
+			GE0 = { transfer_state = 70 }
 		}
 		if = {
 			limit = {
 				664 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 664
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = { transfer_state = 664 }
+			GE0 = { transfer_state = 664 }
 		}
 		if = {
 			limit = {
 				72 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 72
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = { transfer_state = 72 }
+			GE0 = { transfer_state = 72 }
 		}
 		if = {
 			limit = {
 				762 = {
 					OR = {
-						is_controlled_by = SOV
+						is_controlled_by = SO0
 						any_other_country = {
 							controls_state = 762
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
+							is_in_faction_with = SO0
+							SO0 = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			GER = {
+			GE0 = {
 				transfer_state = 762
 				add_state_core = 762
 			}
+			hidden_effect = {
+				762 = { add_core_of = DDR }
+			}
 		}
-		GER = { country_event = soviet.61 }
+		GE0 = { country_event = soviet.61 }
 	}
 	option = {
 		name = soviet.60.b
@@ -2314,35 +3176,39 @@ country_event = {
 				is_historical_focus_on = yes
 				NOT = {
 					AND = {
-						POL = {
+						PO0 = {
 							is_ai = no
 							has_civil_war = no
 						}
-						is_in_faction_with = POL
+						is_in_faction_with = PO0
 					}
 				}
 			}
 		}
-		GER = { country_event = soviet.62 }
+		GE0 = { country_event = soviet.62 }
 		clr_global_flag = sov_yes_pact
-		diplomatic_relation = {
-			country = GER
-			relation = non_aggression_pact
-			active = no
-		}
-		GER = {
-			add_state_claim = 88
-			add_state_claim = 92
-			add_state_claim = 90
-			add_state_claim = 86
-			add_state_claim = 87
-			add_state_claim = 85
-			add_state_claim = 98
-			add_state_claim = 10
-			effect_tooltip = {
-				create_wargoal = {
-					type = annex_everything
-					target = SOV
+		SO0 = {
+			GE0 = {
+				ROOT = {
+					diplomatic_relation = {
+						country = PREV
+						relation = non_aggression_pact
+						active = no
+					}
+				}
+				add_state_claim = 88
+				add_state_claim = 92
+				add_state_claim = 90
+				add_state_claim = 86
+				add_state_claim = 87
+				add_state_claim = 85
+				add_state_claim = 98
+				add_state_claim = 10
+				effect_tooltip = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
 				}
 			}
 		}
@@ -2362,7 +3228,7 @@ country_event = {
 		name = germany.12.a
 		if = {
 			limit = {
-				GER = {
+				GE0 = {
 					controls_state = 85
 					controls_state = 86
 					controls_state = 87
@@ -2386,9 +3252,13 @@ country_event = {
 	
 	option = {
 		name = soviet.62.a
-		create_wargoal = {
-			type = annex_everything
-			target = SOV
+		SO0 = {
+			ROOT = {
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
 		}
 	}
 }
@@ -2398,17 +3268,17 @@ country_event = {
 	id = soviet.63
 	
 	trigger = {
-		tag = SOV
-		country_exists = UKR
-		country_exists = BLR
-		country_exists = GEO
-		country_exists = AZR
-		country_exists = ARM
-		country_exists = UZB
-		country_exists = TAJ
-		country_exists = KYR
-		country_exists = TMS
-		country_exists = KAZ
+		tag = SO0
+		country_exists = UK0
+		country_exists = BL0
+		country_exists = GE5
+		country_exists = AZ0
+		country_exists = AR5
+		country_exists = UZ0
+		country_exists = TA5
+		country_exists = KY0
+		country_exists = TM0
+		country_exists = KA0
 		NOT = { has_global_flag = SOV_became_russia }
 	}
 
@@ -2427,22 +3297,22 @@ country_event = {
 	id = soviet.64
 	
 	trigger = {
-		tag = SOV
-		NOT = { country_exists = UKR }
-		NOT = { country_exists = BLR }
-		NOT = { country_exists = GEO }
-		NOT = { country_exists = AZR }
-		NOT = { country_exists = ARM }
-		NOT = { country_exists = UZB }
-		NOT = { country_exists = TAJ }
-		NOT = { country_exists = KYR }
-		NOT = { country_exists = TMS }
-		NOT = { country_exists = KAZ }
+		tag = SO0
+		NOT = { country_exists = UK0 }
+		NOT = { country_exists = BL0 }
+		NOT = { country_exists = GE5 }
+		NOT = { country_exists = AZ0 }
+		NOT = { country_exists = AR5 }
+		NOT = { country_exists = UZ0 }
+		NOT = { country_exists = TA5 }
+		NOT = { country_exists = KY0 }
+		NOT = { country_exists = TM0 }
+		NOT = { country_exists = KA0 }
 		NOT = {
 			any_state = {
-				is_core_of = SOV
+				is_core_of = SO0
 				NOT = { state = 329 }
-				NOT = { is_owned_by = SOV }
+				NOT = { is_owned_by = SO0 }
 			}
 		}
 		has_global_flag = SOV_became_russia
@@ -2455,5 +3325,54 @@ country_event = {
 	immediate = {
 		drop_cosmetic_tag = yes
 		clr_global_flag = SOV_became_russia
+	}
+}
+country_event = {
+	id = soviet.65
+	
+	trigger = {
+		tag = GE5
+		country_exists = AZ0
+		country_exists = AR5
+		has_cosmetic_tag = GEO_transcaucasia
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		230 = {
+			remove_core_of = GE5
+		}
+		229 = {
+			remove_core_of = GE5
+		}
+	}
+}
+country_event = {
+	id = soviet.66
+	
+	trigger = {
+		tag = TR0
+		country_exists = JA5
+		country_exists = BS0
+		has_cosmetic_tag = TRI_caribbean_federation
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		every_state = {
+			limit = {
+				is_core_of = TR0
+				NOT = { state = 691 }
+			}
+			remove_core_of = TR0
+		}
 	}
 }

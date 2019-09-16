@@ -32,7 +32,7 @@ country_event = {
 		if = {
 			limit = {
 				FROM = {
-					tag = ENG
+					tag = EN0
 					has_completed_focus = uk_china_focus
 				}
 				tag = event_target:WTT_current_china_leader
@@ -50,7 +50,7 @@ country_event = {
 		if = {
 			limit = {
 				FROM = {
-					tag = ENG
+					tag = EN0
 					has_completed_focus = uk_china_focus
 				}
 				tag = event_target:WTT_current_china_leader

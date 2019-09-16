@@ -356,7 +356,6 @@ ideas = {
 
 			allowed = {
 				always = no
-				country_exists = BUL
 			}
 
 			allowed_civil_war = {
@@ -509,6 +508,10 @@ ideas = {
 					build_cost_ic = 0.1
 					instant = yes
 				}
+				jet_fighter_equipment = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
 			}
 		}
 
@@ -531,6 +534,10 @@ ideas = {
 
 			equipment_bonus = {
 				tac_bomber_equipment = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+				jet_tac_bomber_equipment = {
 					build_cost_ic = 0.1
 					instant = yes
 				}
@@ -959,6 +966,9 @@ ideas = {
 		
 			picture = generic_air_manufacturer_3
 			
+			visible = {
+				NOT = { has_completed_focus = YUG_purchase_foreign }
+			}
 			available = {
 				has_completed_focus = YUG_ikarus
 			}
@@ -1011,6 +1021,9 @@ ideas = {
 
 			picture = generic_air_manufacturer_2
 			
+			visible = {
+				NOT = { has_completed_focus = YUG_purchase_foreign }
+			}
 			available = {
 				has_completed_focus = YUG_rogozarski
 			}
@@ -1063,6 +1076,9 @@ ideas = {
 
 			picture = generic_air_manufacturer_1
 			
+			visible = {
+				NOT = { has_completed_focus = YUG_purchase_foreign }
+			}
 			available = {
 				has_completed_focus = YUG_zmaj				
 			}			

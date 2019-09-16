@@ -210,6 +210,14 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_terrain_glacier"
+		textureFile = "gfx/interface/terrains/terrain_glacier.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_glacier_winter"
+		textureFile = "gfx/interface/terrains/terrain_glacier_winter.dds"
+	}
+	spriteType = {
 		name = "GFX_terrain_plains"
 		textureFile = "gfx/interface/terrains/terrain_plains.dds"
 	}

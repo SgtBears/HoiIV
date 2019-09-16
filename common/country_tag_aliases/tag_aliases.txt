@@ -6,7 +6,7 @@
 #	# you can map an alias directly to an event target or another variable. only use one of the following entries
 #	# if any of these are used, the alias will be mapped to that specific variable/event target and no other check will be done
 #	variable = var_name
-#	global_event_target = event_target_name
+#	var:global.event_target = event_target_name
 #	event_target = event_target_name
 #
 #	# if an alias is not mapped directly to a variable/event target, it will be searched within a list of countries that can be definied below
@@ -44,4 +44,1020 @@
 #	# trigger 3
 #	# ...
 #}
+GE0 = { # GER # Germany
+	variable = var:global.GER_tag
+}
+GE1 = { # GER # Germany Fascist
+	variable = var:global.ger_reich_tag
+}
+GE2 = { # GER # Imperial Germany
+	variable = var:global.ger_imperial_tag
+}
+GE3 = { # GER # Democratic Germany
+	variable = var:global.ger_democratic_tag
+}
+GE4 = { # GER # Wehrmacht Germany
+	variable = var:global.ger_wehrmacht_tag
+}
+EN0 = { # ENG # United Kingdom # England
+	variable = var:global.ENG_tag
+}
+EN1 = { # ENG # United Kingdom Rebels # England Rebels
+	variable = var:global.eng_rebel_tag
+}
+EN2 = { # ENG # United Kingdom Loyalists # England Loyalists
+	variable = var:global.eng_government_tag
+}
+SO0 = { # SOV # Soviet Union # Russia
+	variable = var:global.SOV_tag
+}
+SO1 = { # SOV # Soviet Union Military Revolt # Russia Military Rebels
+	variable = var:global.sov_military_tag
+}
+SO2 = { # SOV # Soviet Union Communist # Russia Communist
+	variable = var:global.sov_soviet_tag
+}
+SW0 = { # SWE # Sweden
+	variable = var:global.SWE_tag
+}
+FR0 = { # FRA # France
+	variable = var:global.FRA_tag
+}
+FR1 = { # FRA # Vichy France
+	variable = var:global.fra_vichy_tag
+}
+FR2 = { # FRA # Free France
+	variable = var:global.fra_free_tag
+}
+FR3 = { # FRA # French Pacifist Rebels
+	variable = var:global.fra_pacifist_tag
+}
+FR4 = { # FRA # French Loyalists
+	variable = var:global.fra_government_tag
+}
+LU0 = { # LUX # Luxembourg
+	variable = var:global.LUX_tag
+}
+BE0 = { # BEL # Belgium
+	variable = var:global.BEL_tag
+}
+BE1 = { # BEL # Belgium Reichskommissariat
+	variable = var:global.bel_reich_tag
+}
+BE2 = { # BEL # Free Belgium
+	variable = var:global.bel_free_tag
+}
+HO0 = { # HOL # Netherlands
+	variable = var:global.HOL_tag
+}
+HO1 = { # HOL # Netherlands Reichskommissariat
+	variable = var:global.hol_reich_tag
+}
+HO2 = { # HOL # Free Netherlands
+	variable = var:global.hol_free_tag
+}
+CZ0 = { # CZE # Czechoslovakia
+	variable = var:global.CZE_tag
+}
+PO0 = { # POL # Poland
+	variable = var:global.POL_tag
+}
+AU0 = { # AUS # Austria
+	variable = var:global.AUS_tag
+}
+LI0 = { # LIT # Lithuania
+	variable = var:global.LIT_tag
+}
+ES0 = { # EST # Estonia
+	variable = var:global.EST_tag
+}
+LA0 = { # LAT # Latvia
+	variable = var:global.LAT_tag
+}
+SP0 = { # SPR # Spain
+	variable = var:global.SPR_tag
+}
+SP1 = { # SPR # Nationalist Spain
+	variable = var:global.spr_nationalist_tag
+}
+SP2 = { # SPR # Republican Spain
+	variable = var:global.spr_republican_tag
+}
+IT0 = { # ITA # Italy
+	variable = var:global.ITA_tag
+}
+RO0 = { # ROM # Romania
+	variable = var:global.ROM_tag
+}
+YU0 = { # YUG # Yugoslavia
+	variable = var:global.YUG_tag
+}
+YU1 = { # YUG # Yugoslavia Rebels
+	variable = var:global.yug_rebel_tag
+}
+YU2 = { # YUG # Yugoslavia Loyalists
+	variable = var:global.yug_government_tag
+}
+SE0 = { # SER # Serbia
+	variable = var:global.SER_tag
+}
+SW5 = { # SWI # Switzerland
+	variable = var:global.SWI_tag
+}
+TU0 = { # TUR # Turkey # Ottoman Empire
+	variable = var:global.TUR_tag
+}
+GR0 = { # GRE # Greece
+	variable = var:global.GRE_tag
+}
+AL0 = { # ALB # Albania
+	variable = var:global.ALB_tag
+}
+NO0 = { # NOR # Norway
+	variable = var:global.NOR_tag
+}
+NO1 = { # NOR # Norway Reichskommissariat
+	variable = var:global.nor_reich_tag
+}
+NO2 = { # NOR # Free Norway
+	variable = var:global.nor_free_tag
+}
+DE0 = { # DEN # Denmark
+	variable = var:global.DEN_tag
+}
+BU0 = { # BUL # Bulgaria
+	variable = var:global.BUL_tag
+}
+PO5 = { # POR # Portugal
+	variable = var:global.POR_tag
+}
+FI0 = { # FIN # Finland
+	variable = var:global.FIN_tag
+}
+IR0 = { # IRE # Ireland
+	variable = var:global.IRE_tag
+}
+HU5 = { # HUN # Hungary
+	variable = var:global.HUN_tag
+}
+HU6 = { # HUN # Democratic Hungary
+	variable = var:global.hun_democratic_tag
+}
+HU7 = { # HUN # Authoritarian Hungary
+	variable = var:global.hun_authoritarian_tag
+} 
+AF0 = { # AFG # Afghanistan
+	variable = var:global.AFG_tag
+}
+AR0 = { # ARG # Argentina
+	variable = var:global.ARG_tag
+}
+AS0 = { # AST # Australia
+	variable = var:global.AST_tag
+}
+AS1 = { # AST # Imperial Australia
+	variable = var:global.ast_imperial_tag
+}
+AS2 = { # AST # Free Australia
+	variable = var:global.ast_free_tag
+}
+BH0 = { # BHU # Bhutan
+	variable = var:global.BHU_tag
+}
+BO0 = { # BOL # Bolivia
+	variable = var:global.BOL_tag
+}
+BR0 = { # BRA # Brazil
+	variable = var:global.BRA_tag
+}
+CA0 = { # CAN # Canada
+	variable = var:global.CAN_tag
+}
+CA1 = { # CAN # Imperial Canada
+	variable = var:global.can_imperial_tag
+}
+CA2 = { # CAN # Free Canada
+	variable = var:global.can_free_tag
+}
+CH0 = { # CHI # Nationalist China
+	variable = var:global.CHI_tag
+}
+CH5 = { # CHL # Chile
+	variable = var:global.CHL_tag
+}
+CO0 = { # COL # Colombia
+	variable = var:global.COL_tag
+}
+CO5 = { # COS # Costa Rica
+	variable = var:global.COS_tag
+}
+EC0 = { # ECU # Ecuador
+	variable = var:global.ECU_tag
+}
+EL0 = { # ELS # El Salvador
+	variable = var:global.ELS_tag
+}
+ET0 = { # ETH # Ethiopia
+	variable = var:global.ETH_tag
+}
+GU0 = { # GUA # Guatemala
+	variable = var:global.GUA_tag
+}
+HN0 = { # HON # Honduras
+	variable = var:global.HON_tag
+}
+IR5 = { # IRQ # Iraq
+	variable = var:global.IRQ_tag
+}
+JA0 = { # JAP # Japan
+	variable = var:global.JAP_tag
+}
+JA1 = { # JAP # Japan Rebels
+	variable = var:global.jap_rebel_tag
+}
+JA2 = { # JAP # Japan Loyalists
+	variable = var:global.jap_government_tag
+}
+KO0 = { # KOR # Korea
+	variable = var:global.KOR_tag
+}
+LI5 = { # LIB # Liberia
+	variable = var:global.LIB_tag
+}
+ME0 = { # MEX # Mexico
+	variable = var:global.MEX_tag
+}
+ME1 = { # MEX # Mexico Rebels
+	variable = var:global.mex_rebel_tag
+}
+ME2 = { # MEX # Mexico Loyalists
+	variable = var:global.mex_government_tag
+}
+ME5 = { # MEN # Mengjiang # Mengkukuo
+	variable = var:global.MEN_tag
+}
+NE0 = { # NEP # Nepal
+	variable = var:global.NEP_tag
+}
+NI0 = { # NIC # Nicaragua
+	variable = var:global.NIC_tag
+}
+NZ0 = { # NZL # New Zealand
+	variable = var:global.NZL_tag
+}
+NZ1 = { # NZL # Imperial New Zealand
+	variable = var:global.nzl_imperial_tag
+}
+NZ2 = { # NZL # Free New Zealand
+	variable = var:global.nzl_free_tag
+}
+PA0 = { # PAN # Panama
+	variable = var:global.PAN_tag
+}
+PE0 = { # PER # Persia
+	variable = var:global.PER_tag
+}
+PH0 = { # PHI # Philippines
+	variable = var:global.PHI_tag
+}
+PR5 = { # PRU # Peru
+	variable = var:global.PRU_tag
+}
+SA0 = { # SAF # South Africa
+	variable = var:global.SAF_tag
+}
+SA1 = { # SAF # Imperial South Africa
+	variable = var:global.saf_imperial_tag
+}
+SA2 = { # SAF # Free South Africa
+	variable = var:global.saf_free_tag
+}
+SA3 = { # SAF # Facist South Africa
+	variable = var:global.saf_fascist_tag
+}
+SA5 = { # SAU # Saudi Arabia
+	variable = var:global.SAU_tag
+}
+SI0 = { # SIA # Siam # Thailand
+	variable = var:global.SIA_tag
+}
+SI5 = { # SIK # Sinkiang # Xinjiang # Siking
+	variable = var:global.SIK_tag
+}
+TI0 = { # TIB # Tibet
+	variable = var:global.TIB_tag
+}
+UR0 = { # URG # Uruguay
+	variable = var:global.URG_tag
+}
+VE0 = { # VEN # Venezuela
+	variable = var:global.VEN_tag
+}
+YU5 = { # YUN # Yunnan
+	variable = var:global.YUN_tag
+}
+US0 = { # USA # United States of America
+	variable = var:global.USA_tag
+}
+US1 = { # USA # Fascist United States of America
+	variable = var:global.usa_fascist_tag
+}
+US2 = { # USA # Democratic United States of America
+	variable = var:global.usa_democratic_tag
+}
+MO0 = { # MON # Mongolia
+	variable = var:global.MON_tag
+}
+TA0 = { # TAN # Tannu Tuva
+	variable = var:global.TAN_tag
+}
+PA5 = { # PAR # Paraguay
+	variable = var:global.PAR_tag
+}
+CU0 = { # CUB # Cuba
+	variable = var:global.CUB_tag
+}
+DO0 = { # DOM # Dominican Republic
+	variable = var:global.DOM_tag
+}
+HA0 = { # HAI # Haiti
+	variable = var:global.HAI_tag
+}
+YE0 = { # YEM # Yemen
+	variable = var:global.YEM_tag
+}
+OM0 = { # OMA # Oman
+	variable = var:global.OMA_tag
+}
+SL0 = { # SLO # Slovakia
+	variable = var:global.SLO_tag
+}
+RA0 = { # RAJ # India
+	variable = var:global.RAJ_tag
+}
+RA1 = { # RAJ # Imperial Raj
+	variable = var:global.raj_imperial_tag
+}
+RA2 = { # RAJ # Free Raj
+	variable = var:global.raj_free_tag
+}
+CR5 = { # CRO # Croatia
+	variable = var:global.CRO_tag
+}
+GX0 = { # GXC # Guangzhou Clique
+	variable = var:global.GXC_tag
+}
+PR0 = { # PRC # Communist China # People's Republic of China
+	variable = var:global.PRC_tag
+}
+SH0 = { # SHX # Shanxi
+	variable = var:global.SHX_tag
+}
+XS0 = { # XSM # Xibei San Ma # Ma Clique
+	variable = var:global.XSM_tag
+}
+IC0 = { # ICE # Iceland
+	variable = var:global.ICE_tag
+}
+LE0 = { # LEB # Lebanon
+	variable = var:global.LEB_tag
+}
+JO0 = { # JOR # Jordan
+	variable = var:global.JOR_tag
+}
+SY0 = { # SYR # Syria
+	variable = var:global.SYR_tag
+}
+EG0 = { # EGY # Egypt
+	variable = var:global.EGY_tag
+}
+LB0 = { # LBA # Libya
+	variable = var:global.LBA_tag
+}
+WG0 = { # WGR # West Germany
+	variable = var:global.WGR_tag
+}
+DD0 = { # DDR # East Germany
+	variable = var:global.DDR_tag
+}
+PL0 = { # PAL # Palestine
+	variable = var:global.PAL_tag
+}
+IS0 = { # ISR # Israel
+	variable = var:global.ISR_tag
+}
+VI0 = { # VIN # Vietnam
+	variable = var:global.VIN_tag
+}
+CA5 = { # CAM # Cambodia
+	variable = var:global.CAM_tag
+}
+MA0 = { # MAL # Malaysia
+	variable = var:global.MAL_tag
+}
+IN0 = { # INS # Indonesia # East Indies
+	variable = var:global.INS_tag
+}
+IN1 = { # INS # Indonesia Rebels # East Indies Rebels
+	variable = var:global.ins_rebel_tag
+}
+IN2 = { # INS # Indonesia Loyalists # East Indies Loyalists
+	variable = var:global.ins_government_tag
+}
+LA5 = { # LAO # Laos
+	variable = var:global.LAO_tag
+}
+MN0 = { # MNT # Montenegro
+	variable = var:global.MNT_tag
+}
+UK0 = { # UKR # Ukraine
+	variable = var:global.UKR_tag
+}
+UK1 = { # UKR # Ukraine Reichskommissariat
+	variable = var:global.ukr_reich_tag
+}
+UK2 = { # UKR # Free Ukraine
+	variable = var:global.ukr_free_tag
+}
+GE5 = { # GEO # Georgia
+	variable = var:global.GEO_tag
+}
+KA0 = { # KAZ # Kazakhstan
+	variable = var:global.KAZ_tag
+}
+AZ0 = { # AZR # Azerbaijan
+	variable = var:global.AZR_tag
+}
+AR5 = { # ARM # Armenia
+	variable = var:global.ARM_tag
+}
 
+BL0 = { # BLR # Belarus # Belorussia # Byelorussia
+	variable = var:global.BLR_tag
+}
+ 
+BL1 = { # BLR # Belarus Reichskommissariat # Belorussia Reichskommissariat # Byelorussia Reichskommissariat
+	variable = var:global.blr_reich_tag
+}
+
+BL2 = { # BLR # Free Belarus # Free Belorussia # Free Byelorussia
+	variable = var:global.blr_free_tag
+}
+
+AN0 = { # ANG # Angola
+	variable = var:global.ANG_tag
+}
+
+MZ0 = { # MZB # Mozambique
+	variable = var:global.MZB_tag
+}
+
+ZI0 = { # ZIM # Zimbabwe # Rhodesia
+	variable = var:global.ZIM_tag
+}
+
+CG0 = { # COG # Democratic Republic of the Congo # Congo-Kinshasa
+	variable = var:global.COG_tag
+}
+
+KE0 = { # KEN # Kenya
+	variable = var:global.KEN_tag
+}
+
+PK0 = { # PAK # Pakistan
+	variable = var:global.PAK_tag
+}
+
+BT0 = { # BOT # Botswana
+	variable = var:global.BOT_tag
+}
+
+MA5 = { # MAN # Manchukuo # Manchuria
+	variable = var:global.MAN_tag
+}
+
+SG0 = { # SGR # Greenland
+	variable = var:global.SGR_tag
+}
+
+FA0 = { # FAE # Faeroe Islands
+	variable = var:global.FAE_tag
+}
+
+BA0 = { # BAH # Bahamas
+	variable = var:global.BAH_tag
+}
+
+BA5 = { # BAN # Bangladesh
+	variable = var:global.BAN_tag
+}
+
+BL5 = { # BLZ # Belize
+	variable = var:global.BLZ_tag
+}
+
+BR5 = { # BRM # Burma
+	variable = var:global.BRM_tag
+}
+
+CR0 = { # CRC # Curacao
+	variable = var:global.CRC_tag
+}
+
+GD0 = { # GDL # Guadalupe
+	variable = var:global.GDL_tag
+}
+
+GY0 = { # GYA # Guayana
+	variable = var:global.GYA_tag
+}
+
+JA5 = { # JAM # Jamaica
+	variable = var:global.JAM_tag
+}
+
+KY0 = { # KYR # Kyrgyzstan
+	variable = var:global.KYR_tag
+}
+
+MD0 = { # MAD # Madagascar
+	variable = var:global.MAD_tag
+}
+
+MV0 = { # MOL # Moldova
+	variable = var:global.MOL_tag
+}
+
+PN0 = { # PNG # Papua New Guinea
+	variable = var:global.PNG_tag
+}
+
+PU0 = { # PUE # Puerto Rico
+	variable = var:global.PUE_tag
+}
+
+QA0 = { # QAT # Qatar
+	variable = var:global.QAT_tag
+}
+
+SC0 = { # SCO # Scotland
+	variable = var:global.SCO_tag
+}
+
+SR0 = { # SRL # Sri Lanka
+	variable = var:global.SRL_tag
+}
+
+SU5 = { # SUR # Suriname
+	variable = var:global.SUR_tag
+}
+
+TA5 = { # TAJ # Tajikistan
+	variable = var:global.TAJ_tag
+}
+
+TR0 = { # TRI # Trinidad and Tobago
+	variable = var:global.TRI_tag
+}
+
+TM0 = { # TMS # Turkmenistan
+	variable = var:global.TMS_tag
+}
+
+UA0 = { # UAE # United Arab Emirates
+	variable = var:global.UAE_tag
+}
+
+UZ0 = { # UZB # Uzbekistan
+	variable = var:global.UZB_tag
+}
+
+KU0 = { # KUW # Kuwait
+	variable = var:global.KUW_tag
+}
+
+CY0 = { # CYP # Cyprus
+	variable = var:global.CYP_tag
+}
+
+MT0 = { # MLT # Malta
+	variable = var:global.MLT_tag
+}
+
+AL5 = { # ALG # Algeria
+	variable = var:global.ALG_tag
+}
+
+MO5 = { # MOR # Morocco
+	variable = var:global.MOR_tag
+}
+
+TU5 = { # TUN # Tunisia
+	variable = var:global.TUN_tag
+}
+
+SU0 = { # SUD # Sudan
+	variable = var:global.SUD_tag
+}
+
+ER0 = { # ERI # Eritrea
+	variable = var:global.ERI_tag
+}
+
+DJ0 = { # DJI # Djibouti
+	variable = var:global.DJI_tag
+}
+
+SO5 = { # SOM # Somalia
+	variable = var:global.SOM_tag
+}
+
+UG0 = { # UGA # Uganda
+	variable = var:global.UGA_tag
+}
+
+RW0 = { # RWA # Rwanda
+	variable = var:global.RWA_tag
+}
+
+BD0 = { # BRD # Burundi
+	variable = var:global.BRD_tag
+}
+
+TZ0 = { # TZN # Tanzania
+	variable = var:global.TZN_tag
+}
+
+ZA0 = { # ZAM # Zambia
+	variable = var:global.ZAM_tag
+}
+
+MW0 = { # MLW # Malawi
+	variable = var:global.MLW_tag
+}
+
+GA5 = { # GAB # Gabon
+	variable = var:global.GAB_tag
+}
+
+RC0 = { # RCG # Republic of the Congo # Congo-Brazzaville
+	variable = var:global.RCG_tag
+}
+
+EQ0 = { # EQG # Equatorial Guinea
+	variable = var:global.EQG_tag
+}
+
+CM0 = { # CMR # Cameroon
+	variable = var:global.CMR_tag
+}
+
+CP5 = { # CAR # Central African Republic
+	variable = var:global.CAR_tag
+}
+CD0 = { # CHA # Chad
+	variable = var:global.CHA_tag
+}
+NG5 = { # NGA # Nigeria
+	variable = var:global.NGA_tag
+}
+DA0 = { # DAH # Dahomey # Benin
+	variable = var:global.DAH_tag
+}
+TO0 = { # TOG # Togo
+	variable = var:global.TOG_tag
+}
+GH0 = { # GHA # Ghana
+	variable = var:global.GHA_tag
+}
+IV0 = { # IVO # Ivory Coast
+	variable = var:global.IVO_tag
+}
+VO0 = { # VOL # Upper Volta # Burkina Faso
+	variable = var:global.VOL_tag
+}
+ML5 = { # MLI # Mali
+	variable = var:global.MLI_tag
+}
+SR5 = { # SIE # Sierra Leone
+	variable = var:global.SIE_tag
+}
+GN0 = { # GNA # Guinea
+	variable = var:global.GNA_tag
+}
+GN5 = { # GNB # Guinea Bissau
+	variable = var:global.GNB_tag
+}
+SE5 = { # SEN # Senegal
+	variable = var:global.SEN_tag
+}
+GA0 = { # GAM # Gambia
+	variable = var:global.GAM_tag
+}
+WL0 = { # WLS # Wales
+	variable = var:global.WLS_tag
+}
+NG0 = { # NGR # Niger 
+	variable = var:global.NGR_tag
+}
+CS0 = { # CSA # Confederate States of America
+	variable = var:global.CSA_tag
+}
+US5 = { # USB # Unaligned States of America
+	variable = var:global.USB_tag
+}
+MR0 = { # MRT # Mauritania
+	variable = var:global.MRT_tag
+}
+NM0 = { # NMB # Namibia
+	variable = var:global.NMB_tag
+}
+WE0 = { # WES # Western Sahara
+	variable = var:global.WES_tag
+}
+BS0 = { # BAS # British Antilles
+	variable = var:global.BAS_tag
+}
+CY5 = { # CAY # Cayenne
+	variable = var:global.CAY_tag
+}
+ML0 = { # MLD # Maldives
+	variable = var:global.MLD_tag
+}
+FI5 = { # FIJ # Fiji
+	variable = var:global.FIJ_tag
+}
+SL5 = { # SLV # Slovenia
+	variable = var:global.SLV_tag
+}
+BO5 = { # BOS # Bosnia
+	variable = var:global.BOS_tag
+}
+MC0 = { # MAC # Macedonia
+	variable = var:global.MAC_tag
+}
+NI5 = { # NIR # Northern Ireland
+	variable = var:global.NIR_tag
+}
+SB0 = { # SIB # Siberia
+	variable = var:global.sib_tag
+}
+FE0 = { # FER # Far Eastern Republic
+	variable = var:global.fer_tag
+}
+KR0 = { # KAR # Karelia
+	variable = var:global.kar_tag
+}
+NH0 = { # NHB # New Hebrides
+	variable = var:global.nhb_tag
+}
+RC5 = { # WTT_current_china_leader
+	event_target = WTT_current_china_leader
+}
+
+AA0 = { # ALA # Alabama
+	variable = var:global.ALA_tag
+}
+AS5 = { # ALS # Alaska
+	variable = var:global.ALS_tag
+}
+AI0 = { # ARI # Arizona
+	variable = var:global.ARI_tag
+}
+AK0 = { # ARK # Arkansas
+	variable = var:global.ARK_tag
+}
+CL0 = { # CAL # California
+	variable = var:global.CAL_tag
+}
+CL5 = { # CLO # Colorado
+	variable = var:global.CLO_tag
+}
+CN0 = { # CNO # Connecticut
+	variable = var:global.CNO_tag
+}
+DE5 = { # DEL # Delaware
+	variable = var:global.DEL_tag
+}
+FL0 = { # FLO # Florida
+	variable = var:global.FLO_tag
+} 
+UG5 = { # USG # Georgia US State
+	variable = var:global.USG_tag
+}
+HA5 = { # HAW # Hawaii
+	variable = var:global.HAW_tag
+}
+ID0 = { # IDA # Idaho
+	variable = var:global.IDA_tag
+}
+IL0 = { # ILL # Illinois
+	variable = var:global.ILL_tag
+}
+IN5 = { # IND # Indiana
+	variable = var:global.IND_tag
+}
+IO0 = { # IOW # Iowa
+	variable = var:global.IOW_tag
+}
+KA5 = { # KAN # Kansas
+	variable = var:global.KAN_tag
+}
+KT0 = { # KTY # Kentucky
+	variable = var:global.KTY_tag
+}
+LO0 = { # LOU # Louisiana
+	variable = var:global.LOU_tag
+}
+MI0 = { # MAI # Maine
+	variable = var:global.MAI_tag
+}
+MR5 = { # MAR # Maryland
+	variable = var:global.MAR_tag
+}
+MS0 = { # MAS # Massachusetts
+	variable = var:global.MAS_tag
+}
+MI5 = { # MIC # Michigan
+	variable = var:global.MIC_tag
+}
+MN5 = { # MIN # Minnesota
+	variable = var:global.MIN_tag
+}
+MS5 = { # MSS # Mississippi
+	variable = var:global.MSS_tag
+}
+MU0 = { # MIS # Missouri
+	variable = var:global.MIS_tag
+}
+MT5 = { # MOT # Montana
+	variable = var:global.MOT_tag
+}
+NE5 = { # NEB # Nebraska
+	variable = var:global.NEB_tag
+}
+NV0 = { # NEV # Nevada
+	variable = var:global.NEV_tag
+}
+NH5 = { # NHA # New Hampshire
+	variable = var:global.NHA_tag
+}
+NJ0 = { # NJE # New Jersey
+	variable = var:global.NJE_tag
+}
+NM5 = { # NME # New Mexico
+	variable = var:global.NME_tag
+}
+NY0 = { # NYO # New York
+	variable = var:global.NYO_tag
+}
+NC0 = { # NCA # North Carolina
+	variable = var:global.NCA_tag
+}
+ND0 = { # NDA # North Dakota
+	variable = var:global.NDA_tag
+}
+OH0 = { # OHI # Ohio
+	variable = var:global.OHI_tag
+}
+OK0 = { # OKL # Oklahoma
+	variable = var:global.OKL_tag
+}
+OR0 = { # ORE # Oregon
+	variable = var:global.ORE_tag
+}
+PE5 = { # PEN # Pennsylvania
+	variable = var:global.PEN_tag
+}
+RH0 = { # RHI # Rhode Island
+	variable = var:global.RHI_tag
+}
+SC5 = { # SCA # South Carolina
+	variable = var:global.SCA_tag
+}
+SD0 = { # SDA # South Dakota
+	variable = var:global.SDA_tag
+}
+TE0 = { # TEN # Tennassee
+	variable = var:global.TEN_tag
+}
+TE5 = { # TEX # Texas
+	variable = var:global.TEX_tag
+}
+UT0 = { # UTA # Utah
+	variable = var:global.UTA_tag
+}
+VE5 = { # VER # Vermont
+	variable = var:global.VER_tag
+}
+VI5 = { # VIR # Virginia
+	variable = var:global.VIR_tag
+}
+WA0 = { # WAS # Washington US State
+	variable = var:global.WAS_tag
+}
+WV0 = { # WVI # West Virginia
+	variable = var:global.WVI_tag
+}
+WI0 = { # WIS # Wisconsin
+	variable = var:global.WIS_tag
+}
+WY0 = { # WYO # Wyoming
+	variable = var:global.WYO_tag
+}
+WD0 = { # WDC # District of Columbia # Washington D.C.
+	variable = var:global.WDC_tag
+}
+SP5 = { # SUP # Superior
+	variable = var:global.SUP_tag
+}
+BC0 = { # BCL # British Colombia
+	variable = var:global.BCL_tag
+}
+AT0 = { # ALT # Alberta
+	variable = var:global.ALT_tag
+}
+VA0 = { # VAN # Vancouver
+	variable = var:global.VAN_tag
+}
+SS0 = { # SAS # Saskatchewan
+	variable = var:global.SAS_tag
+}
+MB0 = { # MAT # Manitoba
+	variable = var:global.MAT_tag
+}
+ON0 = { # ONT # Ontario
+	variable = var:global.ONT_tag
+} 
+QU0 = { # QUE # Quebec
+	variable = var:global.QUE_tag
+}
+LB5 = { # LAB # Labrador
+	variable = var:global.LAB_tag
+}
+NF0 = { # NEF # Newfoundland
+	variable = var:global.NEF_tag
+}
+NB0 = { # NBR # New Brunswick
+	variable = var:global.NBR_tag
+}
+NS0 = { # NSC # Nova Scotia
+	variable = var:global.NSC_tag
+}
+PI0 = { # PEI # Prince Edward Island
+	variable = var:global.PEI_tag
+}
+BV0 = { # BOU # Northern Solomons # Bougainville
+	variable = var:global.BOU_tag
+}
+SM0 = { # SOL # Solomon Islands
+	variable = var:global.SOL_tag
+}
+NC5 = { # NCL # New Caledonia
+	variable = var:global.NCL_tag
+}
+TN0 = { # TON # Tonga
+	variable = var:global.TON_tag
+}
+WA5 = { # WAF # Wallis and Fortuna
+	variable = var:global.WAF_tag
+}
+KI0 = { # KIR # Kiribati
+	variable = var:global.KIR_tag
+}
+TV0 = { # TUV # Tuvalu
+	variable = var:global.TUV_tag
+}
+MH0 = { # MSH # Marshall Islands
+	variable = var:global.MSH_tag
+}
+PL5 = { # PLU # Palau
+	variable = var:global.PLU_tag
+}
+GU5 = { # GUM # Guam
+	variable = var:global.GUM_tag
+}
+NR0 = { # NMI # Northern Mariana Islands
+	variable = var:global.NMI_tag
+}
+MC5 = { # MCR # Micronesia
+	variable = var:global.MCR_tag
+}
+SM5 = { # SAM # Samoa
+	variable = var:global.SAM_tag
+}
+NU0 = { # NIU # Niue
+	variable = var:global.NIU_tag
+}
+CK0 = { # COK # Cook Islands
+	variable = var:global.COK_tag
+}
+TK0 = { # TOK # Tokelau
+	variable = var:global.TOK_tag
+}
+TH0 = { # TAH # Tahiti
+	variable = var:global.TAH_tag
+}
+NA0 = { # NAU # Nauru
+	variable = var:global.NAU_tag
+}

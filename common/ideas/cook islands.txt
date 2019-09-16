@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		COK_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		COK_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		COK_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		COK_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = COK
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COK_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		COK_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COK_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		COK_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = COK
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COK_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = COK
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		COK_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		COK_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COK_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COK_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COK_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		COK_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = COK
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		COK_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		COK_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = COK
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

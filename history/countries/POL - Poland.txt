@@ -194,6 +194,12 @@ set_popularities = {
 		communism = 2
 		neutrality = 78
 	}
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1935.9.8"
+		election_frequency = 36
+		elections_allowed = no
+	}
 }
 
 create_country_leader = {

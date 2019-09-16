@@ -1,0 +1,30 @@
+
+state={
+	id=851
+	name="STATE_851"
+	manpower = 2866021
+	
+	state_category = town
+	
+	resources={
+	}
+
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+		}
+		add_core_of = USA
+		add_core_of = PEN
+		victory_points = {
+			11800 15
+		}
+
+	}
+
+	provinces={
+		3687 9662 6705 6899 11800 880 3802 11789 9789 11648 3880 12405 3850 11769 13894
+	}
+}

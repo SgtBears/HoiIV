@@ -1,0 +1,31 @@
+
+state={
+	id=882
+	name="STATE_882"
+	manpower=21214
+	state_category = small_island
+
+	history={
+		owner = JAP
+		add_core_of = MCR
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			14275 = {
+				naval_base = 6
+				coastal_bunker = 5
+			}
+			14274 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			14275 5 
+		}
+
+	}
+
+	provinces={
+		14274 14275 2489 13033 13032
+	}
+}

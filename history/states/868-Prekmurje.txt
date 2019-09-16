@@ -1,0 +1,24 @@
+state=
+{
+	id=868
+	name="STATE_868"
+	manpower = 44822
+	
+	state_category = pastoral
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+		}
+		victory_points = {
+			6672 1
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+	}
+	provinces={
+		6672
+	}
+}

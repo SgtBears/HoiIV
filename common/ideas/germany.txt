@@ -889,13 +889,22 @@ ideas = {
 				fighter_equipment = {
 					build_cost_ic = -0.25 instant = yes
 				}
+				jet_fighter_equipment = {
+					build_cost_ic = -0.25 instant = yes
+				}
 				CAS_equipment = {
 					build_cost_ic = 0.25 instant = yes
 				}
 				tac_bomber_equipment = {
 					build_cost_ic = 0.25 instant = yes
 				}
+				jet_tac_bomber_equipment = {
+					build_cost_ic = 0.25 instant = yes
+				}
 				strat_bomber_equipment = {
+					build_cost_ic = 0.25 instant = yes
+				}
+				jet_strat_bomber_equipment = {
 					build_cost_ic = 0.25 instant = yes
 				}
 				nav_bomber_equipment = {
@@ -1623,6 +1632,9 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+			visible = {
+				NOT = { has_completed_focus = GER_demand_sudetenland }
+			}
 			available = {
 				has_completed_focus = GER_four_year_plan
 				NOT = { has_completed_focus = GER_demand_sudetenland }
@@ -1682,6 +1694,10 @@ ideas = {
 				original_tag = GER
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = GER_revive_the_kaiserreich }
+				NOT = { has_completed_focus = GER_rhineland }
+			}
 			available = {
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
@@ -1713,6 +1729,12 @@ ideas = {
 				original_tag = GER
 			}
 
+			visible = {
+				OR = {
+					has_government = fascism
+					NOT = { has_completed_focus = GER_oppose_hitler }
+				}
+			}
 			available = {
 				has_government = fascism
 				if = {
@@ -1740,6 +1762,14 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+			visible = {
+				NOT = { has_country_flag = flight_of_hess }
+				OR = {
+					has_government = fascism
+					NOT = { has_completed_focus = GER_oppose_hitler }
+					has_country_flag = GER_reinstated_nazi_leadership
+				}
+			}
 			available = {
 				NOT = { has_country_flag = flight_of_hess }
 				OR = {
@@ -1758,6 +1788,13 @@ ideas = {
 				original_tag = GER
 			}
 
+			visible = {
+				OR = {
+					has_government = fascism
+					NOT = { has_completed_focus = GER_oppose_hitler }
+					has_country_flag = GER_reinstated_nazi_leadership
+				}
+			}
 			available = {
 				OR = {
 					has_government = fascism
@@ -1779,6 +1816,13 @@ ideas = {
 				original_tag = GER
 			}
 
+			visible = {
+				OR = {
+					has_government = fascism
+					NOT = { has_completed_focus = GER_oppose_hitler }
+					has_country_flag = GER_reinstated_nazi_leadership
+				}
+			}
 			available = {
 				OR = {
 					has_government = fascism
@@ -1800,6 +1844,13 @@ ideas = {
 				original_tag = GER
 			}
 
+			visible = {
+				OR = {
+					has_government = fascism
+					NOT = { has_completed_focus = GER_oppose_hitler }
+					has_country_flag = GER_reinstated_nazi_leadership
+				}
+			}
 			available = {
 				OR = {
 					has_government = fascism
@@ -1832,6 +1883,9 @@ ideas = {
 				has_dlc = "Waking the Tiger"
 			}
 
+			visible = {
+				NOT = { has_completed_focus = GER_rhineland }
+			}
 			available = {
 				has_completed_focus = GER_oppose_hitler
 			}
@@ -1851,6 +1905,10 @@ ideas = {
 				has_dlc = "Waking the Tiger"
 			}
 
+			visible = {
+				NOT = { has_completed_focus = GER_rhineland }
+				NOT = { has_completed_focus = GER_reestablish_free_elections }
+			}
 			available = {
 				has_completed_focus = GER_revive_the_kaiserreich
 			}
@@ -1870,6 +1928,10 @@ ideas = {
 				has_dlc = "Waking the Tiger"
 			}
 
+			visible = {
+				NOT = { has_completed_focus = GER_rhineland }
+				NOT = { has_completed_focus = GER_reestablish_free_elections }
+			}
 			available = {
 				has_completed_focus = GER_revive_the_kaiserreich
 			}
@@ -1889,6 +1951,10 @@ ideas = {
 				has_dlc = "Waking the Tiger"
 			}
 
+			visible = {
+				NOT = { has_completed_focus = GER_rhineland }
+				NOT = { has_completed_focus = GER_revive_the_kaiserreich }
+			}
 			available = {
 				has_completed_focus = GER_reestablish_free_elections
 			}
@@ -1908,6 +1974,10 @@ ideas = {
 				has_dlc = "Waking the Tiger"
 			}
 
+			visible = {
+				NOT = { has_completed_focus = GER_rhineland }
+				NOT = { has_completed_focus = GER_revive_the_kaiserreich }
+			}
 			available = {
 				has_completed_focus = GER_reestablish_free_elections
 			}
@@ -2396,6 +2466,12 @@ ideas = {
 				original_tag = GER
 			}
 
+			visible = {
+				OR = {
+					has_government = fascism
+					NOT = { has_completed_focus = GER_oppose_hitler }
+				}
+			}
 			available = {
 				has_government = fascism
 			}
@@ -2449,6 +2525,13 @@ ideas = {
 				original_tag = GER
 			}
 
+			visible = {
+				OR = {
+					has_government = fascism
+					NOT = { has_completed_focus = GER_oppose_hitler }
+					has_country_flag = GER_reinstated_nazi_leadership
+				}
+			}
 			available = {
 				OR = {
 					has_government = fascism
@@ -2594,7 +2677,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-					has_completed_focus = GER_air_innovation
+				has_completed_focus = GER_air_innovation
 			}
 			
 			traits = { air_close_air_support_2 }

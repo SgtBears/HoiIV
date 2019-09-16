@@ -30,11 +30,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0
 				date < 1949.1.1
 			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			} 
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		NOT = {
 			OR = {
@@ -85,11 +96,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0 
 				date < 1949.1.1
 			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			} 
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = no
 		OR = {
@@ -160,11 +182,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0 
 				date < 1949.1.1
 			} 
+			AND = { 
+				tag = SP0  
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			}
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		NOT = { has_idea = fascism_defeated }
 		fascism > 0.15
@@ -220,11 +253,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0 
 				date < 1949.1.1
 			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			} 
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		NOT = { has_idea = communism_defeated }
 		communism > 0.15
@@ -246,7 +290,7 @@ country_event = {
 				factor = 0
 				OR = {
 					AND = {
-						tag = FRA
+						tag = FR0
 						is_historical_focus_on = yes
 						date < 1937.1.1
 					}
@@ -273,7 +317,7 @@ country_event = {
 				add = 1
 				OR = {
 					AND = {
-						tag = FRA
+						tag = FR0
 						is_historical_focus_on = yes
 						date < 1937.1.1
 					}
@@ -302,11 +346,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0 
 				date < 1949.1.1
 			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			} 
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		democratic < 0.5
 		fascism < 0.5
@@ -376,11 +431,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0 
 				date < 1949.1.1
 			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			}
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_country_flag = coalition_with_fascists
 		any_other_country = {
@@ -449,11 +515,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0 
 				date < 1949.1.1
 			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			} 
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_country_flag = coalition_with_communists
 		any_other_country = {
@@ -598,9 +675,21 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = {
-				Tag = USA
+				tag = US0 
 				date < 1949.1.1
-			}
+			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			} 
 		}
 		has_government = democratic
 		has_idea_with_trait = motorized_equipment_manufacturer
@@ -650,11 +739,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0 
 				date < 1949.1.1
 			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			} 
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = yes
 	}
@@ -709,11 +809,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0 
 				date < 1949.1.1
 			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			} 
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = yes
 		any_war_score < 20
@@ -770,11 +881,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0 
 				date < 1949.1.1
 			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
+			} 
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = fascism
 		fascism > 0.5
 	}
@@ -797,11 +919,22 @@ country_event = {
 	trigger = {
 		NOT = { 
 			AND = { 
-				tag = USA 
+				tag = US0 
 				date < 1949.1.1
+			} 
+			AND = { 
+				tag = SP0 
+				date < 1937.1.1
+			} 
+			AND = { 
+				tag = IR0
+				date < 1938.1.1
+			} 
+			AND = { 
+				tag = HN0
+				date < 1937.1.1
 			}
 		}
-		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = fascism
 		NOT = { fascism > 0.5 }
 	}
@@ -810,4 +943,178 @@ country_event = {
 		name = election.17.a
 		add_stability = -0.05
 	}
+}
+country_event = {
+	id = election.18
+	title = election.18.t
+	desc = election.18.desc
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = IR0
+		#date > 1937.7.1
+		has_start_date < 1936.01.02
+		is_subject = yes
+		has_government = democratic
+	}
+	
+	option = { #a great idea!
+		name = election.18.a
+		add_stability = 0.1
+		OVERLORD = {
+			diplomatic_relation = {
+				country = ROOT
+				relation = docking_rights
+				active = yes
+			}
+		}
+		OVERLORD = {
+			set_autonomy = { target = ROOT autonomy_state = autonomy_free }
+		}
+		leave_faction = yes
+		hidden_effect = {
+			news_event = { id = amnews.3 days = 1 }
+		}
+	}
+	option = { #a great idea!
+		name = election.18.b
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.1
+		add_war_support = 0.1
+	}
+
+}
+country_event = {
+	id = election.19
+	title = election.19.t
+	desc = election.19.desc
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	trigger = {
+		tag = HN0
+		#date > 1936.3.28
+		has_start_date < 1936.01.02
+		has_government = democratic
+	}
+	
+	option = { #a great idea!
+		name = election.19.a
+		hidden_effect = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "José Ángel Zúñiga Huete" # liberal canditate during elections of Tiburcio Carias Andino
+				desc = ""
+				picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					#
+				}
+			}
+			set_party_name = { 
+				ideology = democratic 
+				long_name = HON_democratic_party_plh_long 
+				name = HON_democratic_party_plh 
+			}
+		}
+		create_country_leader = {
+			name = "Tiburcio Carías Andino" # won election legally and became a dictator later
+			desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
+			picture = "GFX_portrait_honduras_portrait_tiburcio_carias_andino"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.20
+		}
+	}
+	option = { #a great idea!
+		name = election.19.b
+		ai_chance = {
+			base = 0
+		}
+		hidden_effect = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "José Ángel Zúñiga Huete" # liberal canditate during elections of Tiburcio Carias Andino
+				desc = ""
+				picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					#
+				}
+			}
+			set_party_name = { 
+				ideology = democratic 
+				long_name = HON_democratic_party_plh_long 
+				name = HON_democratic_party_plh 
+			}
+		}
+		create_country_leader = {
+			name = "Tiburcio Carías Andino" # won election legally and became a dictator later
+			desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
+			picture = "GFX_portrait_honduras_portrait_tiburcio_carias_andino"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_stability = -0.2
+		add_ideas = {
+			civilian_economy
+			volunteer_only
+		}
+	}
+	option = { #a great idea!
+		name = election.19.c
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.2
+		retire_country_leader = yes
+		set_party_name = { 
+			ideology = democratic 
+			long_name = HON_democratic_party_plh_long 
+			name = HON_democratic_party_plh 
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.30
+		}
+		create_country_leader = {
+			name = "José Ángel Zúñiga Huete" # liberal canditate during elections of Tiburcio Carias Andino
+			desc = ""
+			picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+	}
+
 }

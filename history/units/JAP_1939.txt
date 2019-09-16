@@ -304,7 +304,7 @@ units = {
 	# 1 Konkyochi Ichigun -- North and Near Pacific #
 	division = {
 		name = "Saipan Kichi Shubitai"
-		location = 3995 #Saipan
+		location = 13024 #Saipan
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -322,7 +322,7 @@ units = {
 	# 2 Konkyochi Ichigun -- Palau and Caroline Islands #
 	division = {
 		name = "Palau Kichi Shubitai"
-		location = 4357 #Palau
+		location = 12103 #Palau
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -330,7 +330,7 @@ units = {
 	}
 	division = {
 		name = "Truk Kichi Shubitai"
-		location = 2489 #Truk
+		location = 14275 #Truk
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3

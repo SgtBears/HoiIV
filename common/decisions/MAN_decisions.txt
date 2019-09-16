@@ -541,11 +541,11 @@ MAN_banditry_category = {
 				prioritize = { 714 }
 				create_unit = {
 					division = "name = \"1. Northern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 				create_unit = {
 					division = "name = \"2. Northern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 			}
 			clr_country_flag = MAN_northern_bandits
@@ -601,11 +601,11 @@ MAN_banditry_category = {
 				prioritize = { 610 }
 				create_unit = {
 					division = "name = \"1. Western Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 				create_unit = {
 					division = "name = \"2. Western Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 			}
 			clr_country_flag = MAN_western_bandits
@@ -661,11 +661,11 @@ MAN_banditry_category = {
 				prioritize = { 717 }
 				create_unit = {
 					division = "name = \"1. Eastern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 				create_unit = {
 					division = "name = \"2. Eastern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 			}
 			clr_country_flag = MAN_eastern_bandits
@@ -720,15 +720,15 @@ MAN_banditry_category = {
 				prioritize = { 328 }
 				create_unit = {
 					division = "name = \"1. Manchu Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 				create_unit = {
 					division = "name = \"2. Manchu Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 				create_unit = {
 					division = "name = \"3. Manchu Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 			}
 		}
@@ -814,23 +814,23 @@ MAN_war_preparations = {
 				prioritize = { 328 }
 				create_unit = {
 					division = "name = \"Yellow Banner \" division_template = \"Manchu Banner\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 				create_unit = {
 					division = "name = \"Red Banner \" division_template = \"Manchu Banner\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 				create_unit = {
 					division = "name = \"White Banner \" division_template = \"Manchu Banner\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 				create_unit = {
 					division = "name = \"Blue Banner \" division_template = \"Manchu Banner\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 				create_unit = {
 					division = "name = \"Black Banner \" division_template = \"Manchu Banner\" start_experience_factor = 0.5" 
-					owner = MAN
+					owner = ROOT
 				}
 			}
 		}
@@ -992,7 +992,7 @@ MAN_war_preparations = {
 	MAN_seize_arms = {
 		available = {
 			has_completed_focus = MAN_independence_war
-			has_war_with = JAP
+			has_war_with = JA0
 		}
 		visible = {
 			check_variable = { var = MAN_seize_arms_prep value = 0 compare = greater_than }
@@ -1013,56 +1013,66 @@ MAN_war_preparations = {
 				limit = {
 					check_variable = { var = MAN_seize_arms_prep value = 10 compare = greater_than_or_equals }
 				}
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 producer = JAP }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 producer = JA0 }
 			}
 			if = {
 				limit = {
 					check_variable = { var = MAN_seize_arms_prep value = 20 compare = greater_than_or_equals }
 				}
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = JAP }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = JA0 }
 			}
 			if = {
 				limit = {
 					check_variable = { var = MAN_seize_arms_prep value = 30 compare = greater_than_or_equals }
 				}
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = JAP }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = JA0 }
 				if = {
 					limit = {
-						JAP = {
+						JA0 = {
 							has_tech = improved_infantry_weapons
 						}
 					}
-					add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 2000 producer = JAP }
+					add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 2000 producer = JA0 }
 				}
 			}
 			if = {
 				limit = {
 					check_variable = { var = MAN_seize_arms_prep value = 40 compare = greater_than_or_equals }
 				}
-				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 50 producer = JAP }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = JAP }
+				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 50 producer = JA0 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = JA0 }
 			}
 			if = {
 				limit = {
 					check_variable = { var = MAN_seize_arms_prep value = 50 compare = greater_than_or_equals }
 				}
-				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = JAP }
 				if = {
 					limit = {
-						JAP = {
+						JA0 = {
 							has_tech = fighter1
 						}
 					}
-					add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 25 producer = JAP }
+					add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 25 producer = JA0 }
+					add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = JA0 }
 				}
-				add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 50 producer = JAP }
+				else = {
+					add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 75 producer = JA0 }
+				}
+				if = {
+					limit = {
+						JA0 = {
+							has_tech = CAS1
+						}
+					}
+					add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 50 producer = JA0 }
+				}
 			}
 			if = {
 				limit = {
 					check_variable = { var = MAN_seize_arms_prep value = 10 compare = greater_than_or_equals }
 					check_variable = { var = MAN_seize_arms_prep value = 20 compare = less_than }
 				}
-				JAP = {
+				JA0 = {
 					add_timed_idea = { idea = MAN_arms_seized_1 days = 30 }
 				}
 			}
@@ -1071,7 +1081,7 @@ MAN_war_preparations = {
 					check_variable = { var = MAN_seize_arms_prep value = 20 compare = greater_than_or_equals }
 					check_variable = { var = MAN_seize_arms_prep value = 30 compare = less_than }
 				}
-				JAP = {
+				JA0 = {
 					add_timed_idea = { idea = MAN_arms_seized_1 days = 60 }
 				}
 			}
@@ -1080,7 +1090,7 @@ MAN_war_preparations = {
 					check_variable = { var = MAN_seize_arms_prep value = 30 compare = greater_than_or_equals }
 					check_variable = { var = MAN_seize_arms_prep value = 40 compare = less_than }
 				}
-				JAP = {
+				JA0 = {
 					add_timed_idea = { idea = MAN_arms_seized_2 days = 60 }
 				}
 			}
@@ -1089,7 +1099,7 @@ MAN_war_preparations = {
 					check_variable = { var = MAN_seize_arms_prep value = 40 compare = greater_than_or_equals }
 					check_variable = { var = MAN_seize_arms_prep value = 50 compare = less_than }
 				}
-				JAP = {
+				JA0 = {
 					add_timed_idea = { idea = MAN_arms_seized_2 days = 90 }
 				}
 			}
@@ -1098,7 +1108,7 @@ MAN_war_preparations = {
 					check_variable = { var = MAN_seize_arms_prep value = 50 compare = greater_than_or_equals }
 					check_variable = { var = MAN_seize_arms_prep value = 60 compare = less_than }
 				}
-				JAP = {
+				JA0 = {
 					add_timed_idea = { idea = MAN_arms_seized_3 days = 90 }
 				}
 			}
@@ -1117,6 +1127,7 @@ prospect_for_resources = {
 		}
 
 		available = {
+			num_of_civilian_factories_available_for_projects > 1
 			has_tech = excavation1
 		}
 		highlight_states = {
@@ -1161,6 +1172,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
+			original_tag = MAN
 
 		}
 
@@ -1169,6 +1181,7 @@ prospect_for_resources = {
 		}
 
 		available = {
+			num_of_civilian_factories_available_for_projects > 1
 			has_tech = construction2
 			has_tech = excavation1
 		}

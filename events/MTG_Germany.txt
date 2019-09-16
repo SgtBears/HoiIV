@@ -27,11 +27,13 @@ country_event = {
 	option = {
 		name = mtg_germany.1.b
 		effect_tooltip = {
-			FROM = {
-				create_wargoal = {
-					type = take_state_focus
-					target = HOL
-					generator = { 7 }
+			HO0 = {
+				FROM = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = { 7 }
+					}
 				}
 			}
 		}
@@ -59,7 +61,6 @@ country_event = {
 	}
 }
 
-# Event for GER saying HOL will join the Axis
 country_event = {
 	id = mtg_germany.3
 	title = mtg_germany.3.t
@@ -68,13 +69,16 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	# Join faction
 	option = {
 		name = mtg_germany.3.a
-		create_wargoal = {
-			type = take_state_focus
-			target = HOL
-			generator = { 7 }
+		HO0 = {
+			ROOT = {
+				create_wargoal = {
+					type = take_state_focus
+					target = PREV
+					generator = { 7 }
+				}
+			}
 		}
 	}
 }

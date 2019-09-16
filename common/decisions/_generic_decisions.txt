@@ -60,7 +60,6 @@ political_actions = {
 			}
 		}
 	}
-
 	improved_worker_conditions = {
 
 		icon = generic_industry
@@ -152,7 +151,7 @@ economy_decisions = {
 		icon = generic_construction
 
 		allowed = {
-			NOT = { OR = { tag = GER tag = FRA } }
+			NOT = { OR = { original_tag = GER original_tag = FRA } }
 		}
 
 		cost = 50
@@ -160,11 +159,15 @@ economy_decisions = {
 
 		days_remove = 200
 
+		ai_will_do = {
+			factor = 0
+		}
+
 		available = {
 			controls_state = 28
 			if = {
 				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+					has_global_flag = maginot_line_extended_flag
 				}
 				controls_state = 18
 				controls_state = 29
@@ -172,12 +175,15 @@ economy_decisions = {
 		}
 
 		visible = {
-			FRA = {
-				any_owned_state = {
-					is_controlled_by = ROOT
+			NOT = { tag = GE0 }
+			controls_state = 28
+			if = {
+				limit = {
+					has_global_flag = maginot_line_extended_flag
 				}
+				controls_state = 18
+				controls_state = 29
 			}
-			NOT = { is_in_faction_with = FRA }
 		}
 
 		modifier = {
@@ -197,7 +203,7 @@ economy_decisions = {
 			}
 			if = {
 				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+					has_global_flag = maginot_line_extended_flag
 				}
 				18 = {
 					set_building_level = {
@@ -980,7 +986,7 @@ operations = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						ENG = {
+						EN0 = {
 							owns_state = 446
 							owns_state = 453
 						}
@@ -1040,7 +1046,7 @@ operations = {
 					}
 				}
 				has_war = yes
-				NOT = { tag = ENG }
+				NOT = { original_tag = ENG }
 			}
 		}
 	}
@@ -1101,7 +1107,6 @@ operations = {
 				limit = {
 					OR = {
 						has_full_control_of_state = 685
-						has_full_control_of_state = 304
 					}
 				}
 				set_country_flag = blew_up_panama
@@ -1111,7 +1116,7 @@ operations = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						USA = { owns_state = 685 }
+						US0 = { owns_state = 685 }
 					}
 					add_war_support = -0.05
 					add_stability = -0.05
@@ -1122,7 +1127,11 @@ operations = {
 			factor = 1
 			modifier = {
 				factor = 0 # Don't blow up the canal as USA. Ever.
-				tag = USA
+				OR = {
+					original_tag = USA
+					original_tag = CSA
+					original_tag = USB
+				}
 			}
 			modifier = {
 				factor = 0 # Don't blow up the canal if enemies have weak navies but you are a strong naval power
@@ -1140,10 +1149,10 @@ operations = {
 			modifier = {
 				factor = 200 # Always blow up the canal as JAP or GER when at war with USA (priority)
 				OR = {
-					is_in_faction_with = JAP
-					is_in_faction_with = GER
+					is_in_faction_with = JA0
+					is_in_faction_with = GE0
 				}
-				has_war_with = USA
+				has_war_with = US0
 			}
 		}
 	}
@@ -1192,7 +1201,7 @@ special_projects = {
 			modifier = {
 				factor = 0 # Don't bother if your navy is weak AND not ENG
 				has_navy_size = { size < 100 }
-				NOT = { tag = ENG }
+				NOT = { original_tag = ENG }
 			}
 			modifier = {
 				factor = 200 # Prioritize if Italy is being invaded and you can't get to the battlefront (no control of Gibraltar strait)
@@ -1204,8 +1213,8 @@ special_projects = {
 						}
 					}
 				}
-				has_war_with = ITA
-				ITA = { surrender_progress > 0.1 }
+				has_war_with = IT0
+				IT0 = { surrender_progress > 0.1 }
 				has_full_control_of_state = 447
 				has_full_control_of_state = 454
 				has_full_control_of_state = 452
@@ -1215,7 +1224,7 @@ special_projects = {
 			}
 			modifier = {
 				factor = 200 # Prioritize if UK
-				tag = ENG
+				original_tag = ENG
 			}
 			modifier = {
 				factor = 10 # Prioritize if not at war
@@ -1233,6 +1242,7 @@ special_projects = {
 			NOT = {
 				any_enemy_country = {
 					controls_state = 304
+					controls_state = 801
 				}
 			}
 			num_of_civilian_factories > 25
@@ -1259,6 +1269,7 @@ special_projects = {
 					NOT = {
 						any_enemy_country = {
 							controls_state = 304
+							controls_state = 801
 						}
 					}
 				}
@@ -1272,18 +1283,26 @@ special_projects = {
 			modifier = {
 				factor = 0 # Don't bother if your navy is weak AND not USA
 				has_navy_size = { size < 50 }
-				NOT = { tag = USA }
+				NOT = {
+					original_tag = USA
+					original_tag = CSA
+					original_tag = USB
+				}
 				has_war = yes
 			}
 			modifier = {
 				factor = 200 # Prioritize if you decisively beat USA's navy
-				has_war_with = USA
-				USA = { has_navy_size = { size < 50 } }
+				has_war_with = US0
+				US0 = { has_navy_size = { size < 50 } }
 				has_navy_size = { size > 100 }
 			}
 			modifier = {
 				factor = 200 # Prioritize if USA
-				tag = USA
+				OR = {
+					original_tag = USA
+					original_tag = USB
+					original_tag = CSA
+				}
 			}
 			modifier = {
 				factor = 10 # Prioritize if not at war
@@ -1447,7 +1466,7 @@ war_measures = {
 		complete_effect = {
 			if = {
 				limit = {
-					tag = CAN
+					original_tag = CAN
 				}
 				country_event = { id = canada_vanilla.1 hours = 6 } # Ronnie the Bren Gun Girl
 			}

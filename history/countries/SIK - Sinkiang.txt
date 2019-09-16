@@ -116,3 +116,15 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		communism = 100
+	}
+}

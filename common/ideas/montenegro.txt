@@ -1,0 +1,211 @@
+ideas = {
+
+	political_advisor = {
+
+		MNT_generic_captain_of_industry = {
+
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { captain_of_industry }
+		}
+		
+		MNT_generic_fortification_engineer = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { fortification_engineer }
+		}
+
+		MNT_generic_war_industrialist = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+
+	army_chief = {
+		
+		MNT_generic_army_chief_off = {
+			
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		MNT_generic_army_chief_def = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+	}
+
+	navy_chief = {		
+
+		MNT_generic_navy_chief_decisive_bat = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		MNT_generic_navy_anti_submarine = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+
+	air_chief = {
+
+		MNT_generic_air_close_air_sup = {
+			
+			picture = generic_air_europe_3
+
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	
+		MNT_generic_air_chief_all_weather = {
+			
+			picture = generic_air_europe_3
+		
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+	}
+
+	high_command = {
+
+			
+		MNT_generic_army_art = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		MNT_generic_army_log = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		MNT_generic_navy_fleet_log = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		MNT_generic_air_air_combat_trainer = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+
+	theorist = {
+
+		MNT_generic_military_theorist = {
+			
+			picture = generic_army_europe_6
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+	
+		MNT_generic_naval_theorist = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		MNT_generic_air_warfare_theorist = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = MNT
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+}

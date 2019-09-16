@@ -5,22 +5,22 @@ HOL_obtain_foreign_colonial_investments = {
 		icon = hol_attract_foreign_investors
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
 			OR = {
 				has_idea = export_focus
 				has_idea = free_trade
-				is_in_faction_with = USA
-				is_in_faction_with = ENG
-				is_in_faction_with = JAP
+				is_in_faction_with = US0
+				is_in_faction_with = EN0
+				is_in_faction_with = JA0
 			}
 			has_war = no
 			OR = {
-				USA = { has_war = no }
-				ENG = { has_war = no }
-				JAP = { has_war = no }
+				US0 = { has_war = no }
+				EN0 = { has_war = no }
+				JA0 = { has_war = no }
 			}
 			335 = {
 				is_fully_controlled_by = controller
@@ -51,6 +51,7 @@ HOL_obtain_foreign_colonial_investments = {
 			}
 			has_full_control_of_state = 695
 			has_full_control_of_state = 309
+			has_full_control_of_state = 820
 		}
 
 		cost = 25
@@ -64,7 +65,6 @@ HOL_obtain_foreign_colonial_investments = {
 		}
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_obtain_foreign_colonial_investments
 		}
 
@@ -81,22 +81,22 @@ HOL_obtain_foreign_colonial_investments = {
 		icon = generic_construction
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
 			OR = {
 				has_idea = export_focus
 				has_idea = free_trade
-				is_in_faction_with = USA
-				is_in_faction_with = ENG
-				is_in_faction_with = JAP
+				is_in_faction_with = US0
+				is_in_faction_with = EN0
+				is_in_faction_with = JA0
 			}
 			has_war = no
 			OR = {
-				USA = { has_war = no }
-				ENG = { has_war = no }
-				JAP = { has_war = no }
+				US0 = { has_war = no }
+				EN0 = { has_war = no }
+				JA0 = { has_war = no }
 			}
 			335 = {
 				is_fully_controlled_by = controller
@@ -127,6 +127,7 @@ HOL_obtain_foreign_colonial_investments = {
 			}
 			has_full_control_of_state = 695
 			has_full_control_of_state = 309
+			has_full_control_of_state = 820
 		}
 
 		cost = 25
@@ -140,7 +141,6 @@ HOL_obtain_foreign_colonial_investments = {
 		}
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_obtain_foreign_colonial_investments
 		}
 
@@ -157,19 +157,19 @@ HOL_obtain_foreign_colonial_investments = {
 		icon = oil
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
 			OR = {
 				has_idea = export_focus
 				has_idea = free_trade
-				is_in_faction_with = USA
-				is_in_faction_with = ENG
+				is_in_faction_with = US0
+				is_in_faction_with = EN0
 			}
-			NOT = { has_war_with = USA }
-			NOT = { has_war_with = ENG }
-			HOL = { has_full_control_of_state = 695 }
+			NOT = { has_war_with = US0 }
+			NOT = { has_war_with = EN0 }
+			HO0 = { has_full_control_of_state = 695 }
 		}
 
 		cost = 30
@@ -179,7 +179,6 @@ HOL_obtain_foreign_colonial_investments = {
 		days_remove = 120
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_obtain_foreign_colonial_investments
 		}
 
@@ -228,18 +227,18 @@ HOL_obtain_foreign_colonial_investments = {
 		icon = oil
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
 			OR = {
 				has_idea = export_focus
 				has_idea = free_trade
-				is_in_faction_with = USA
-				is_in_faction_with = ENG
+				is_in_faction_with = US0
+				is_in_faction_with = EN0
 			}
-			NOT = { has_war_with = USA }
-			NOT = { has_war_with = ENG }
+			NOT = { has_war_with = US0 }
+			NOT = { has_war_with = EN0 }
 			335 = {
 				is_fully_controlled_by = controller
 				controller = {
@@ -367,7 +366,7 @@ HOL_prepare_the_inundation_lines = {
 		icon = hol_inundate_water_lines
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -394,7 +393,7 @@ HOL_prepare_the_inundation_lines = {
 		}
 
 		visible = {
-			HOL = { has_completed_focus = HOL_prepare_the_inundation_lines }
+			HO0 = { has_completed_focus = HOL_prepare_the_inundation_lines }
 			7 = { is_fully_controlled_by = ROOT }
 			NOT = { has_global_flag = HOL_inundation_lines_flooded }
 		}
@@ -480,7 +479,7 @@ HOL_prepare_the_inundation_lines = {
 		icon = hol_drain_water_lines
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -506,7 +505,7 @@ HOL_prepare_the_inundation_lines = {
 		}
 
 		visible = {
-			HOL = { has_completed_focus = HOL_prepare_the_inundation_lines }
+			HO0 = { has_completed_focus = HOL_prepare_the_inundation_lines }
 			7 = { is_fully_controlled_by = ROOT }
 			has_global_flag = HOL_inundation_lines_flooded
 		}
@@ -559,7 +558,7 @@ HOL_war_on_pacifism = {
 		icon = hol_war_on_pacifism
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -594,7 +593,6 @@ HOL_war_on_pacifism = {
 		}
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_war_on_pacifism
 		}
 
@@ -619,7 +617,7 @@ HOL_war_on_pacifism = {
 		icon = hol_war_on_pacifism
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -656,7 +654,6 @@ HOL_war_on_pacifism = {
 		}
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_war_on_pacifism
 		}
 
@@ -680,7 +677,7 @@ HOL_war_on_pacifism = {
 		icon = hol_war_on_pacifism
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -715,7 +712,6 @@ HOL_war_on_pacifism = {
 		}
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_war_on_pacifism
 		}
 
@@ -739,14 +735,14 @@ HOL_secret_staff_talks = {
 		icon = ger_military_buildup
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
 
 		}
 
-		targets = { GER ENG FRA }
+		targets = { GE0 EN0 FR0 }
 
 		target_trigger = {
 			ROOT = { 
@@ -754,6 +750,11 @@ HOL_secret_staff_talks = {
 					is_in_faction = no 
 					is_in_faction_with = FROM
 				}
+			}
+			OR = {
+				tag = GE0
+				original_tag = FRA
+				original_tag = ENG
 			}
 		}
 
@@ -811,14 +812,14 @@ HOL_secret_staff_talks = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
 
 		}
 
-		targets = { GER ENG FRA }
+		targets = { GE0 EN0 FR0 }
 
 		target_trigger = {
 			ROOT = { 
@@ -826,6 +827,11 @@ HOL_secret_staff_talks = {
 					is_in_faction = no 
 					is_in_faction_with = FROM
 				}
+			}
+			OR = {
+				tag = GE0
+				original_tag = FRA
+				original_tag = ENG
 			}
 		}
 
@@ -858,14 +864,14 @@ HOL_secret_staff_talks = {
 		icon = hol_exchange_intelligence_data
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
 
 		}
 
-		targets = { GER ENG FRA }
+		targets = { GE0 EN0 FR0 }
 
 		target_trigger = {
 			ROOT = { 
@@ -874,6 +880,11 @@ HOL_secret_staff_talks = {
 					is_in_faction_with = FROM
 				}
 			}
+			OR = {
+				tag = GE0
+				original_tag = FRA
+				original_tag = ENG
+			}
 		}
 
 		cost = 100
@@ -881,30 +892,29 @@ HOL_secret_staff_talks = {
 		fire_only_once = yes
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
 			FROM = {
 				OR = {
 					AND = {
 						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
+							tag = GE0
+							tag = EN0
+							tag = FR0
 						}
-						HOL = { is_in_faction = no }
+						HO0 = { is_in_faction = no }
 					}
 					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
+						tag = GE0
+						HO0 = { is_in_faction_with = GE0 }
 					}
 					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
+						tag = EN0
+						HO0 = { is_in_faction_with = EN0 }
 					}
 					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
+						tag = FR0
+						HO0 = { is_in_faction_with = FR0 }
 					}
 				}
 			}
@@ -927,7 +937,7 @@ HOL_secret_staff_talks = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -957,14 +967,14 @@ HOL_secret_staff_talks = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
 
 		}
 
-		targets = { GER ENG FRA }
+		targets = { GE0 EN0 FR0 }
 
 		target_trigger = {
 			ROOT = { 
@@ -972,6 +982,11 @@ HOL_secret_staff_talks = {
 					is_in_faction = no 
 					is_in_faction_with = FROM
 				}
+			}
+			OR = {
+				tag = GE0
+				original_tag = FRA
+				original_tag = ENG
 			}
 		}
 
@@ -1013,19 +1028,19 @@ HOL_gateway_to_europe_eng_category = {
 		icon = eng_trade_unions_demand
 
 		allowed = {
-			tag = ENG
+			original_tag = ENG
 		}
 
 		available = {
 			has_government = democratic
-			GER = { has_government = fascism }
+			GE0 = { has_government = fascism }
 		}
 
-		targets = { HOL }
+		targets = { HO0 }
 
 		target_trigger = {
 			FROM = {
-				tag = HOL
+				tag = HO0
 			}
 		}
 
@@ -1051,21 +1066,21 @@ HOL_gateway_to_europe_eng_category = {
 			}
 			modifier = {
 				factor = 2
-				HOL = {
-					check_variable = { var = ENG.eng_gateway_to_europe_influence value = 20 compare = greater_than_or_equals }
+				HO0 = {
+					check_variable = { var = EN0.eng_gateway_to_europe_influence value = 20 compare = greater_than_or_equals }
 					check_variable = { var = eng_temp_trade_influence value = 10 compare = greater_than_or_equals }
 				} 
 			}
 			modifier = {
 				factor = 0
-				HOL = {
+				HO0 = {
 					check_variable = { var = eng_temp_trade_influence value = 10 compare = greater_than_or_equals }
-					NOT = { check_variable = { var = ENG.eng_gateway_to_europe_influence value = 20 compare = greater_than_or_equals } }
+					NOT = { check_variable = { var = EN0.eng_gateway_to_europe_influence value = 20 compare = greater_than_or_equals } }
 				}
 			}
 			modifier = {
 				factor = 0
-				HOL = {
+				HO0 = {
 					focus_progress = {
 						focus = HOL_cave_to_the_germans
 						progress > 0
@@ -1074,7 +1089,7 @@ HOL_gateway_to_europe_eng_category = {
 			}
 			modifier = {
 				factor = 0
-				HOL = {
+				HO0 = {
 					focus_progress = {
 						focus = HOL_cave_to_the_british
 						progress > 0
@@ -1083,7 +1098,7 @@ HOL_gateway_to_europe_eng_category = {
 			}
 			modifier = {
 				factor = 0
-				HOL = {
+				HO0 = {
 					focus_progress = {
 						focus = HOL_maintain_trade_neutrality
 						progress > 0
@@ -1106,11 +1121,11 @@ HOL_gateway_to_europe_eng_category = {
 
 		remove_effect = {
 			add_to_variable = { var = eng_gateway_to_europe_influence value = 5 }
-			HOL = {
-				set_variable = { var = eng_temp_trade_influence value = ENG.eng_gateway_to_europe_influence }
-				subtract_from_variable = { var = eng_temp_trade_influence value = GER.ger_gateway_to_europe_influence }
-				set_variable = { var = ger_temp_trade_influence value = GER.ger_gateway_to_europe_influence }
-				subtract_from_variable = { var = ger_temp_trade_influence value = ENG.eng_gateway_to_europe_influence }
+			HO0 = {
+				set_variable = { var = eng_temp_trade_influence value = EN0.eng_gateway_to_europe_influence }
+				subtract_from_variable = { var = eng_temp_trade_influence value = GE0.ger_gateway_to_europe_influence }
+				set_variable = { var = ger_temp_trade_influence value = GE0.ger_gateway_to_europe_influence }
+				subtract_from_variable = { var = ger_temp_trade_influence value = EN0.eng_gateway_to_europe_influence }
 				add_to_variable = { var = gateway_to_europe_influence_pp_total value = 10 }
 			}
 			hidden_effect = {
@@ -1164,7 +1179,7 @@ HOL_gateway_to_europe_eng_category = {
 				}
 				if = {
 					limit = {
-						HOL = {
+						HO0 = {
 							check_variable = { var = eng_temp_trade_influence value = 0 compare = greater_than }
 							OR = {
 								AND = {
@@ -1175,16 +1190,16 @@ HOL_gateway_to_europe_eng_category = {
 							}
 						}
 					}
-					HOL = {
+					HO0 = {
 						clr_country_flag = HOL_gateway_to_europe_germany_lead_flag
 						set_country_flag = HOL_gateway_to_europe_britain_lead_flag
 					}
-					HOL = { country_event = { id = mtg_netherlands.66 } }
-					GER = { country_event = { id = mtg_netherlands.66 } }
+					HO0 = { country_event = { id = mtg_netherlands.66 } }
+					GE0 = { country_event = { id = mtg_netherlands.66 } }
 				}
 				if = {
 					limit = {
-						HOL = {
+						HO0 = {
 							check_variable = { var = ger_temp_trade_influence value = 0 compare = greater_than }
 							OR = {
 								AND = {
@@ -1195,16 +1210,16 @@ HOL_gateway_to_europe_eng_category = {
 							}
 						}
 					}
-					HOL = {
+					HO0 = {
 						clr_country_flag = HOL_gateway_to_europe_britain_lead_flag
 						set_country_flag = HOL_gateway_to_europe_germany_lead_flag
 					}
-					HOL = { country_event = { id = mtg_netherlands.67 } }
-					ENG = { country_event = { id = mtg_netherlands.67 } }
+					HO0 = { country_event = { id = mtg_netherlands.67 } }
+					EN0 = { country_event = { id = mtg_netherlands.67 } }
 				}
 			}
 			custom_effect_tooltip = HOL_gateway_to_europe_decisions_tt
-			effect_tooltip = { add_political_power = HOL.gateway_to_europe_influence_pp_total }
+			effect_tooltip = { add_political_power = HO0.gateway_to_europe_influence_pp_total }
 		}
 	}
 }
@@ -1216,22 +1231,28 @@ HOL_gateway_to_europe_ger_category = {
 		icon = eng_trade_unions_demand
 
 		allowed = {
-			tag = GER
+			OR = {
+				original_tag = GER
+				original_tag = WGR
+				original_tag = DDR
+			}
 		}
 
 		available = {
 			has_government = fascism
-			ENG = { has_government = democratic }
+			EN0 = { has_government = democratic }
 		}
 
-		targets = { HOL }
+		targets = { HO0 }
 
 		target_trigger = {
 			FROM = {
-				tag = HOL
+				tag = HO0
 			}
 		}
-
+		visible = {
+			tag = GE0
+		}
 		days_remove = 20
 
 		cost = 10
@@ -1250,21 +1271,21 @@ HOL_gateway_to_europe_ger_category = {
 			}
 			modifier = {
 				factor = 2
-				HOL = {
-					check_variable = { var = GER.ger_gateway_to_europe_influence value = 20 compare = greater_than_or_equals }
+				HO0 = {
+					check_variable = { var = GE0.ger_gateway_to_europe_influence value = 20 compare = greater_than_or_equals }
 					check_variable = { var = ger_temp_trade_influence value = 10 compare = greater_than_or_equals }
 				}
 			}
 			modifier = {
 				factor = 0
-				HOL = {
+				HO0 = {
 					check_variable = { var = ger_temp_trade_influence value = 10 compare = greater_than_or_equals }
-					NOT = { check_variable = { var = GER.ger_gateway_to_europe_influence value = 20 compare = greater_than_or_equals } }
+					NOT = { check_variable = { var = Ge0.ger_gateway_to_europe_influence value = 20 compare = greater_than_or_equals } }
 				}
 			}
 			modifier = {
 				factor = 0
-				HOL = {
+				HO0 = {
 					focus_progress = {
 						focus = HOL_cave_to_the_british
 						progress > 0
@@ -1273,7 +1294,7 @@ HOL_gateway_to_europe_ger_category = {
 			}
 			modifier = {
 				factor = 0
-				HOL = {
+				HO0 = {
 					focus_progress = {
 						focus = HOL_cave_to_the_germans
 						progress > 0
@@ -1282,7 +1303,7 @@ HOL_gateway_to_europe_ger_category = {
 			}
 			modifier = {
 				factor = 0
-				HOL = {
+				HO0 = {
 					focus_progress = {
 						focus = HOL_maintain_trade_neutrality
 						progress > 0
@@ -1312,11 +1333,11 @@ HOL_gateway_to_europe_ger_category = {
 
 		remove_effect = {
 			add_to_variable = { var = ger_gateway_to_europe_influence value = 5 }
-			HOL = {
-				set_variable = { var = ger_temp_trade_influence value = GER.ger_gateway_to_europe_influence }
-				subtract_from_variable = { var = ger_temp_trade_influence value = ENG.eng_gateway_to_europe_influence }
-				set_variable = { var = eng_temp_trade_influence value = ENG.eng_gateway_to_europe_influence }
-				subtract_from_variable = { var = eng_temp_trade_influence value = GER.ger_gateway_to_europe_influence }
+			HO0 = {
+				set_variable = { var = ger_temp_trade_influence value = GE0.ger_gateway_to_europe_influence }
+				subtract_from_variable = { var = ger_temp_trade_influence value = EN0.eng_gateway_to_europe_influence }
+				set_variable = { var = eng_temp_trade_influence value = EN0.eng_gateway_to_europe_influence }
+				subtract_from_variable = { var = eng_temp_trade_influence value = GE0.ger_gateway_to_europe_influence }
 				add_to_variable = { var = gateway_to_europe_influence_pp_total value = 10 }
 			}
 			hidden_effect = {
@@ -1350,7 +1371,7 @@ HOL_gateway_to_europe_ger_category = {
 				}
 				if = {
 					limit = {
-						HOL = {
+						HO0 = {
 							check_variable = { var = eng_temp_trade_influence value = 0 compare = greater_than }
 							OR = {
 								NOT = { has_country_flag = HOL_gateway_to_europe_britain_lead_flag }
@@ -1358,16 +1379,16 @@ HOL_gateway_to_europe_ger_category = {
 							}
 						}
 					}
-					HOL = {
+					HO0 = {
 						clr_country_flag = HOL_gateway_to_europe_germany_lead_flag
 						set_country_flag = HOL_gateway_to_europe_britain_lead_flag
 					}
-					HOL = { country_event = { id = mtg_netherlands.66 } }
-					GER = { country_event = { id = mtg_netherlands.66 } }
+					HO0 = { country_event = { id = mtg_netherlands.66 } }
+					GE0 = { country_event = { id = mtg_netherlands.66 } }
 				}
 				if = {
 					limit = {
-						HOL = {
+						HO0 = {
 							check_variable = { var = ger_temp_trade_influence value = 0 compare = greater_than }
 							OR = {
 								NOT = { has_country_flag = HOL_gateway_to_europe_germany_lead_flag }
@@ -1375,16 +1396,16 @@ HOL_gateway_to_europe_ger_category = {
 							}
 						}
 					}
-					HOL = {
+					HO0 = {
 						clr_country_flag = HOL_gateway_to_europe_britain_lead_flag
 						set_country_flag = HOL_gateway_to_europe_germany_lead_flag
 					}
-					HOL = { country_event = { id = mtg_netherlands.67 } }
-					ENG = { country_event = { id = mtg_netherlands.67 } }
+					HO0 = { country_event = { id = mtg_netherlands.67 } }
+					EN0 = { country_event = { id = mtg_netherlands.67 } }
 				}
 			}
 			custom_effect_tooltip = HOL_gateway_to_europe_decisions_tt
-			effect_tooltip = { add_political_power = HOL.gateway_to_europe_influence_pp_total }
+			effect_tooltip = { add_political_power = HO0.gateway_to_europe_influence_pp_total }
 		}
 	}
 }
@@ -1396,22 +1417,22 @@ HOL_gateway_to_europe_hol_category = {
 		icon = eng_trade_unions_support
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
-			HOL = { has_completed_focus = HOL_gateway_to_europe }
-			ENG = {
+			HO0 = { has_completed_focus = HOL_gateway_to_europe }
+			EN0 = {
 				exists = yes
 				has_government = democratic
 			}
 		}
 
-		targets = { ENG }
+		targets = { EN0 }
 
 		target_trigger = {
 			FROM = {
-				tag = ENG
+				tag = EN0
 			}
 		}
 
@@ -1444,7 +1465,7 @@ HOL_gateway_to_europe_hol_category = {
 			}
 			modifier = {
 				factor = 0
-				HOL = {
+				HO0 = {
 					focus_progress = {
 						focus = HOL_maintain_trade_neutrality
 						progress > 0
@@ -1462,11 +1483,11 @@ HOL_gateway_to_europe_hol_category = {
 		}
 
 		remove_effect = {
-			ENG = { add_to_variable = { var = eng_gateway_to_europe_influence value = 5 } }
-			set_variable = { var = eng_temp_trade_influence value = ENG.eng_gateway_to_europe_influence }
-			subtract_from_variable = { var = eng_temp_trade_influence value = GER.ger_gateway_to_europe_influence }
-			set_variable = { var = ger_temp_trade_influence value = GER.ger_gateway_to_europe_influence }
-			subtract_from_variable = { var = ger_temp_trade_influence value = ENG.eng_gateway_to_europe_influence }
+			EN0 = { add_to_variable = { var = eng_gateway_to_europe_influence value = 5 } }
+			set_variable = { var = eng_temp_trade_influence value = EN0.eng_gateway_to_europe_influence }
+			subtract_from_variable = { var = eng_temp_trade_influence value = GE0.ger_gateway_to_europe_influence }
+			set_variable = { var = ger_temp_trade_influence value = GE0.ger_gateway_to_europe_influence }
+			subtract_from_variable = { var = ger_temp_trade_influence value = EN0.eng_gateway_to_europe_influence }
 			add_to_variable = { var = gateway_to_europe_influence_pp_total value = 10 }
 			hidden_effect = {
 				random_list = {
@@ -1494,7 +1515,7 @@ HOL_gateway_to_europe_hol_category = {
 				}
 				if = {
 					limit = {
-						HOL = {
+						HO0 = {
 							check_variable = { var = eng_temp_trade_influence value = 0 compare = greater_than }
 							OR = {
 								NOT = { has_country_flag = HOL_gateway_to_europe_britain_lead_flag }
@@ -1505,11 +1526,11 @@ HOL_gateway_to_europe_hol_category = {
 					clr_country_flag = HOL_gateway_to_europe_germany_lead_flag
 					set_country_flag = HOL_gateway_to_europe_britain_lead_flag
 					country_event = { id = mtg_netherlands.66 }
-					GER = { country_event = { id = mtg_netherlands.66 } }
+					GE0 = { country_event = { id = mtg_netherlands.66 } }
 				}
 				if = {
 					limit = {
-						HOL = {
+						HO0 = {
 							check_variable = { var = ger_temp_trade_influence value = 0 compare = greater_than }
 							OR = {
 								NOT = { has_country_flag = HOL_gateway_to_europe_germany_lead_flag }
@@ -1520,7 +1541,7 @@ HOL_gateway_to_europe_hol_category = {
 					clr_country_flag = HOL_gateway_to_europe_britain_lead_flag
 					set_country_flag = HOL_gateway_to_europe_germany_lead_flag
 					country_event = { id = mtg_netherlands.67 }
-					ENG = { country_event = { id = mtg_netherlands.67 } }
+					EN0 = { country_event = { id = mtg_netherlands.67 } }
 				}
 			}
 		}
@@ -1531,23 +1552,23 @@ HOL_gateway_to_europe_hol_category = {
 		icon = eng_trade_unions_support
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
-			HOL = { has_completed_focus = HOL_gateway_to_europe }
-			GER = {
+			HO0 = { has_completed_focus = HOL_gateway_to_europe }
+			GE0 = {
 				exists = yes
 				has_government = fascism
 				NOT = { has_completed_focus = GER_oppose_hitler }
 			}
 		}
 
-		targets = { GER }
+		targets = { GE0 }
 
 		target_trigger = {
 			FROM = {
-				tag = GER
+				tag = GE0
 			}
 		}
 
@@ -1580,7 +1601,7 @@ HOL_gateway_to_europe_hol_category = {
 			}
 			modifier = {
 				factor = 0
-				HOL = {
+				HO0 = {
 					focus_progress = {
 						focus = HOL_maintain_trade_neutrality
 						progress > 0
@@ -1598,11 +1619,11 @@ HOL_gateway_to_europe_hol_category = {
 		}
 
 		remove_effect = {
-			GER = { add_to_variable = { var = ger_gateway_to_europe_influence value = 5 } }
-			set_variable = { var = ger_temp_trade_influence value = GER.ger_gateway_to_europe_influence }
-			subtract_from_variable = { var = ger_temp_trade_influence value = ENG.eng_gateway_to_europe_influence }
-			set_variable = { var = eng_temp_trade_influence value = ENG.eng_gateway_to_europe_influence }
-			subtract_from_variable = { var = eng_temp_trade_influence value = GER.ger_gateway_to_europe_influence }
+			GE0 = { add_to_variable = { var = ger_gateway_to_europe_influence value = 5 } }
+			set_variable = { var = ger_temp_trade_influence value = GE0.ger_gateway_to_europe_influence }
+			subtract_from_variable = { var = ger_temp_trade_influence value = EN0.eng_gateway_to_europe_influence }
+			set_variable = { var = eng_temp_trade_influence value = EN0.eng_gateway_to_europe_influence }
+			subtract_from_variable = { var = eng_temp_trade_influence value = GE0.ger_gateway_to_europe_influence }
 			add_to_variable = { var = gateway_to_europe_influence_pp_total value = 10 }
 			hidden_effect = {
 				random_list = {
@@ -1630,7 +1651,7 @@ HOL_gateway_to_europe_hol_category = {
 				}
 				if = {
 					limit = {
-						HOL = {
+						HO0 = {
 							check_variable = { var = eng_temp_trade_influence value = 0 compare = greater_than }
 							OR = {
 								NOT = { has_country_flag = HOL_gateway_to_europe_britain_lead_flag }
@@ -1641,11 +1662,11 @@ HOL_gateway_to_europe_hol_category = {
 					clr_country_flag = HOL_gateway_to_europe_germany_lead_flag
 					set_country_flag = HOL_gateway_to_europe_britain_lead_flag
 					country_event = { id = mtg_netherlands.66 }
-					GER = { country_event = { id = mtg_netherlands.66 } }
+					GE0 = { country_event = { id = mtg_netherlands.66 } }
 				}
 				if = {
 					limit = {
-						HOL = {
+						HO0 = {
 							check_variable = { var = ger_temp_trade_influence value = 0 compare = greater_than }
 							OR = {
 								NOT = { has_country_flag = HOL_gateway_to_europe_germany_lead_flag }
@@ -1656,7 +1677,7 @@ HOL_gateway_to_europe_hol_category = {
 					clr_country_flag = HOL_gateway_to_europe_britain_lead_flag
 					set_country_flag = HOL_gateway_to_europe_germany_lead_flag
 					country_event = { id = mtg_netherlands.67 }
-					ENG = { country_event = { id = mtg_netherlands.67 } }
+					EN0 = { country_event = { id = mtg_netherlands.67 } }
 				}
 			}
 		}
@@ -1671,7 +1692,7 @@ HOL_request_allied_favors = {
 		icon = hol_radio_oranje
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -1690,7 +1711,6 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_request_allied_favors
 		}
 
@@ -1712,7 +1732,7 @@ HOL_request_allied_favors = {
 		icon = generic_naval
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -1729,7 +1749,6 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_request_allied_favors
 			check_variable = { var = obtain_dockyard_counter value = 3 compare = less_than }
 		}
@@ -1758,7 +1777,7 @@ HOL_request_allied_favors = {
 		icon = generic_air
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -1774,7 +1793,6 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_request_allied_favors
 		}
 
@@ -1785,10 +1803,72 @@ HOL_request_allied_favors = {
 		}
 
 		remove_effect = {
-			add_equipment_to_stockpile = {
-			    type = fighter_equipment
-			    amount = 50
-			    producer = ENG
+			if = {
+				limit = {
+					EN0 = {
+						has_tech = jet_fighter2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = jet_fighter_equipment_2
+					amount = 50
+					producer = EN0
+				}
+			}
+			else_if = {
+				limit = {
+					EN0 = {
+						has_tech = jet_fighter1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = jet_fighter_equipment_1
+					amount = 50
+					producer = EN0
+				}
+			}
+			else_if = {
+				limit = {
+					EN0 = {
+						has_tech = fighter3
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_3
+					amount = 50
+					producer = EN0
+				}
+			}
+			else_if = {
+				limit = {
+					EN0 = {
+						has_tech = fighter2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_2
+					amount = 50
+					producer = EN0
+				}
+			}
+			else_if = {
+				limit = {
+					EN0 = {
+						has_tech = fighter1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 50
+					producer = EN0
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 50
+					producer = EN0
+				}
 			}
 		}
 
@@ -1799,7 +1879,7 @@ HOL_request_allied_favors = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -1815,7 +1895,6 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_request_allied_favors
 		}
 
@@ -1826,20 +1905,84 @@ HOL_request_allied_favors = {
 		}
 
 		remove_effect = {
-			add_equipment_to_stockpile = {
-			    type = infantry_equipment
-			    amount = 3000
-			    producer = ENG
+			if = {
+				limit = {
+					EN0 = {
+						has_tech = advanced_infantry_weapons
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_3
+					amount = 3000
+					producer = EN0
+				}
+			}
+			else_if = {
+				limit = {
+					EN0 = {
+						has_tech = improved_infantry_weapons
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = 3000
+					producer = EN0
+				}
+			}
+			else_if = {
+				limit = {
+					EN0 = {
+						has_tech = infantry_weapons1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+					producer = EN0
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 3000
+					producer = EN0
+				}
 			}
 			add_equipment_to_stockpile = {
 			    type = support_equipment
 			    amount = 300
-			    producer = ENG
+			    producer = EN0
 			}
-			add_equipment_to_stockpile = {
-			    type = artillery_equipment
-			    amount = 100
-			    producer = ENG
+			if = {
+				limit = {
+					EN0 = {
+						has_tech = artillery4
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_3
+					amount = 100
+					producer = EN0
+				}
+			}
+			else_if = {
+				limit = {
+					EN0 = {
+						has_tech = artillery1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_2
+					amount = 100
+					producer = EN0
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 100
+					producer = EN0
+				}
 			}
 		}
 
@@ -1850,7 +1993,7 @@ HOL_request_allied_favors = {
 		icon = generic_industry
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -1866,7 +2009,6 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_request_allied_favors
 			check_variable = { var = british_industrialists_counter value = 3 compare = less_than }
 		}
@@ -1896,7 +2038,7 @@ HOL_request_allied_favors = {
 		icon = hol_engelandvaarders
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -1912,7 +2054,6 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_request_allied_favors
 		}
 
@@ -1937,7 +2078,7 @@ HOL_bernhard = {
 		icon = generic_army_support
 
 		allowed = {
-			tag = HOL
+			original_tag = HOL
 		}
 
 		available = {
@@ -1949,7 +2090,6 @@ HOL_bernhard = {
 		fire_only_once = yes
 
 		visible = {
-			original_tag = HOL
 			has_completed_focus = HOL_the_only_man_in_the_dutch_government
 		}
 
@@ -2025,9 +2165,12 @@ political_actions = {
 				has_government = fascism
 			}
 			OR = {
-				INS = {
-					is_subject_of = HOL
-					has_autonomy_state = autonomy_integrated_puppet
+				IN0 = {
+					is_subject_of = HO0
+					OR = {
+						has_autonomy_state = autonomy_integrated_puppet
+						has_autonomy_state = autonomy_reichskommissariat
+					}
 					compare_autonomy_progress_ratio < 0.6
 					has_full_control_of_state = 335
 				}
@@ -2040,22 +2183,22 @@ political_actions = {
 		fire_only_once = yes
 
 		visible = {
-			original_tag = HOL
+			always = yes
 		}
 
 		complete_effect = {
 			remove_ideas = HOL_curtail_colonial_autonomy_overlord
-			INS = {
+			IN0 = {
 				every_unit_leader = {
-					set_nationality = HOL
+					set_nationality = HO0
 				}
 			}
 			annex_country = {
-			    target = INS
+			    target = IN0
 			    transfer_troops = yes
 			}
 			set_capital = 335
-			INS = {
+			IN0 = {
 				hidden_effect = {
 					country_event = { id = mtg_netherlands.22 }
 				}
@@ -2073,10 +2216,10 @@ political_actions = {
 		}
 
 		available = {
-			is_in_faction_with = BEL
-			BEL = { has_government = ROOT }
-			is_in_faction_with = LUX
-			LUX = { has_government = ROOT }
+			is_in_faction_with = BE0
+			BE0 = { has_government = ROOT }
+			is_in_faction_with = LU0
+			LU0 = { has_government = ROOT }
 		}
 
 		cost = 300
@@ -2084,46 +2227,45 @@ political_actions = {
 		fire_only_once = yes
 
 		visible = {
-			original_tag = HOL
 			has_completed_focus = HOL_form_the_benelux
 		}
 
 		complete_effect = {
 			effect_tooltip = {
 				set_cosmetic_tag = HOL_benelux_unified
-				BEL = {
+				BE0 = {
 					every_unit_leader = {
 						set_nationality = ROOT
 					}
 				}
-				LUX = {
+				LU0 = {
 					every_unit_leader = {
 						set_nationality = ROOT
 					}
 				}
 				annex_country = {
-				    target = BEL
+				    target = BE0
 				    transfer_troops = yes
 				}
 				annex_country = {
-				    target = LUX
+				    target = LU0
 				    transfer_troops = yes
 				}
 				every_state = {
 					limit = {
 						OR = {
-							is_core_of = BEL
-							is_core_of = LUX
+							is_core_of = BE0
+							is_core_of = LU0
 						}
 					}
 					add_core_of = ROOT
 				}
 			}
 			custom_effect_tooltip = HOL_propose_benelux_unification_tt
-			BEL = {
+			BE0 = {
 				country_event = { id = mtg_netherlands.77 days = 5 random = 3 }
 			}
-			LUX = {
+			LU0 = {
 				country_event = { id = mtg_netherlands.77 days = 1 random = 3 }
 			}
 		}

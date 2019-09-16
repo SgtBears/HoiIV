@@ -24,7 +24,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id =
 #
-#		cost = 10
+#		cost = 70
 #
 #		ai_will_do = {
 #			factor = 1
@@ -61,7 +61,7 @@ focus_tree = {
 		x = 3
 		y = 0
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 200			
@@ -96,18 +96,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_fortification_studies
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
 			modifier = {
 				factor = 0.5
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 			}
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
+			controls_state = 9
 		}
 
 		bypass = {
@@ -142,13 +142,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_fortification_studies
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
 			modifier = {
 				factor = 0.5
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 			}
 			modifier = {
 				factor = 1.5
@@ -157,7 +157,13 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 69 }
+			OR = {
+				controls_state = 69
+				controls_state = 808
+				controls_state = 9
+				controls_state = 74
+				controls_state = 70
+			}
 		}
 
 		bypass = {
@@ -165,8 +171,28 @@ focus_tree = {
 				69 = {
 					any_province_building_level = {
 						province = {
-							all_provinces = yes
-							limit_to_border = yes
+							id = 424
+							id = 469
+							id = 3418
+							id = 3585
+							id = 6470
+							id = 11401
+							id = 11414
+							id = 11432
+						}
+						building = bunker
+						level < 3
+					}
+				}		
+				808 = {
+					any_province_building_level = {
+						province = {
+							id = 9555
+							id = 7857
+							id = 5283
+							id = 543
+							id = 11525
+							id = 557
 						}
 						building = bunker
 						level < 3
@@ -175,9 +201,7 @@ focus_tree = {
 				9 = {
 					any_province_building_level = {
 						province = {
-							id = 445
 							id = 494
-							limit_to_border = yes
 						}
 						building = bunker
 						level < 3
@@ -190,7 +214,6 @@ focus_tree = {
 							id = 6485
 							id = 3414
 							id = 3583
-							limit_to_border = yes
 						}
 						building = bunker
 						level < 3
@@ -201,7 +224,6 @@ focus_tree = {
 						province = {
 							id = 9539
 							id = 9692
-							limit_to_border = yes
 						}
 						building = bunker
 						level < 3
@@ -227,8 +249,32 @@ focus_tree = {
 						type = bunker
 						level = 3
 						province = {
-							all_provinces = yes
-							limit_to_border = yes
+							id = 424
+							id = 469
+							id = 3418
+							id = 3585
+							id = 6470
+							id = 11401
+							id = 11414
+							id = 11432
+							level < 3
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 808 }
+				808 = {
+					set_building_level = {
+						type = bunker
+						level = 3
+						province = {
+							id = 9555
+							id = 7857
+							id = 5283
+							id = 543
+							id = 11525
+							id = 557
 							level < 3
 						}
 					}
@@ -242,9 +288,7 @@ focus_tree = {
 						type = bunker
 						level = 3
 						province = {
-							id = 445
 							id = 494
-							limit_to_border = yes
 							level < 3
 						}
 					}
@@ -262,7 +306,6 @@ focus_tree = {
 							id = 6485
 							id = 3414
 							id = 3583
-							limit_to_border = yes
 							level < 3
 						}
 					}
@@ -278,7 +321,6 @@ focus_tree = {
 						province = {
 							id = 9539
 							id = 9692
-							limit_to_border = yes
 							level < 3
 						}
 					}
@@ -299,13 +341,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_sudeten_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
 			modifier = {
 				factor = 0.5
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 			}
 			modifier = {
 				factor = 1.5
@@ -314,7 +356,13 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 69 }
+			OR = {
+				controls_state = 69
+				controls_state = 808
+				controls_state = 9
+				controls_state = 74
+				controls_state = 70
+			}
 		}
 
 		bypass = {
@@ -322,8 +370,28 @@ focus_tree = {
 				69 = {
 					any_province_building_level = {
 						province = {
-							all_provinces = yes
-							limit_to_border = yes
+							id = 424
+							id = 469
+							id = 3418
+							id = 3585
+							id = 6470
+							id = 11401
+							id = 11414
+							id = 11432
+						}
+						building = bunker
+						level < 5
+					}
+				}		
+				808 = {
+					any_province_building_level = {
+						province = {
+							id = 9555
+							id = 7857
+							id = 5283
+							id = 543
+							id = 11525
+							id = 557
 						}
 						building = bunker
 						level < 5
@@ -332,9 +400,7 @@ focus_tree = {
 				9 = {
 					any_province_building_level = {
 						province = {
-							id = 445
 							id = 494
-							limit_to_border = yes
 						}
 						building = bunker
 						level < 5
@@ -347,7 +413,6 @@ focus_tree = {
 							id = 6485
 							id = 3414
 							id = 3583
-							limit_to_border = yes
 						}
 						building = bunker
 						level < 5
@@ -358,7 +423,6 @@ focus_tree = {
 						province = {
 							id = 9539
 							id = 9692
-							limit_to_border = yes
 						}
 						building = bunker
 						level < 5
@@ -384,8 +448,32 @@ focus_tree = {
 						type = bunker
 						level = 5
 						province = {
-							all_provinces = yes
-							limit_to_border = yes
+							id = 424
+							id = 469
+							id = 3418
+							id = 3585
+							id = 6470
+							id = 11401
+							id = 11414
+							id = 11432
+							level < 5
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 808 }
+				808 = {
+					set_building_level = {
+						type = bunker
+						level = 5
+						province = {
+							id = 9555
+							id = 7857
+							id = 5283
+							id = 543
+							id = 11525
+							id = 557
 							level < 5
 						}
 					}
@@ -399,9 +487,7 @@ focus_tree = {
 						type = bunker
 						level = 5
 						province = {
-							id = 445
 							id = 494
-							limit_to_border = yes
 							level < 5
 						}
 					}
@@ -419,7 +505,6 @@ focus_tree = {
 							id = 6485
 							id = 3414
 							id = 3583
-							limit_to_border = yes
 							level < 5
 						}
 					}
@@ -435,7 +520,6 @@ focus_tree = {
 						province = {
 							id = 9539
 							id = 9692
-							limit_to_border = yes
 							level < 5
 						}
 					}
@@ -456,13 +540,13 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_sudeten_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
 			modifier = {
 				factor = 0.5
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 			}
 			modifier = {
 				factor = 1.5
@@ -471,7 +555,13 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 69 }
+			OR = {
+				controls_state = 69
+				controls_state = 808
+				controls_state = 9
+				controls_state = 74
+				controls_state = 70
+			}
 		}
 
 		bypass = {
@@ -479,8 +569,28 @@ focus_tree = {
 				69 = {
 					any_province_building_level = {
 						province = {
-							all_provinces = yes
-							limit_to_border = yes
+							id = 424
+							id = 469
+							id = 3418
+							id = 3585
+							id = 6470
+							id = 11401
+							id = 11414
+							id = 11432
+						}
+						building = bunker
+						level < 7
+					}
+				}		
+				808 = {
+					any_province_building_level = {
+						province = {
+							id = 9555
+							id = 7857
+							id = 5283
+							id = 543
+							id = 11525
+							id = 557
 						}
 						building = bunker
 						level < 7
@@ -489,7 +599,6 @@ focus_tree = {
 				9 = {
 					any_province_building_level = {
 						province = {
-							id = 445
 							id = 494
 							limit_to_border = yes
 						}
@@ -541,8 +650,32 @@ focus_tree = {
 						type = bunker
 						level = 7
 						province = {
-							all_provinces = yes
-							limit_to_border = yes
+							id = 424
+							id = 469
+							id = 3418
+							id = 3585
+							id = 6470
+							id = 11401
+							id = 11414
+							id = 11432
+							level < 7
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 808 }
+				808 = {
+					set_building_level = {
+						type = bunker
+						level = 7
+						province = {
+							id = 9555
+							id = 7857
+							id = 5283
+							id = 543
+							id = 11525
+							id = 557
 							level < 7
 						}
 					}
@@ -556,9 +689,7 @@ focus_tree = {
 						type = bunker
 						level = 7
 						province = {
-							id = 445
 							id = 494
-							limit_to_border = yes
 							level < 7
 						}
 					}
@@ -576,7 +707,6 @@ focus_tree = {
 							id = 6485
 							id = 3414
 							id = 3583
-							limit_to_border = yes
 							level < 7
 						}
 					}
@@ -592,7 +722,6 @@ focus_tree = {
 						province = {
 							id = 9539
 							id = 9692
-							limit_to_border = yes
 							level < 7
 						}
 					}
@@ -613,27 +742,27 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_sudeten_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
 			modifier = {
 				factor = 0.5
-				is_in_faction_with = GER
+				is_in_faction_with = GE0
 			}
 			modifier = {
 				factor = 0.5
-				is_in_faction_with = HUN
+				is_in_faction_with = HU5
 			}
 			modifier = {
 				factor = 0.5
-				HUN = { exists = no }
+				HU5 = { exists = no }
 			}
 		}
 
 		available = {
-			CZE = { controls_state = 664 }
-			CZE = { controls_state = 73 }
+			controls_state = 664
+			controls_state = 73
 		}
 
 		bypass = {
@@ -674,19 +803,19 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_sudeten_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
 			modifier = {
 				factor = 0.25
-				is_in_faction_with = POL
+				is_in_faction_with = PO0
 			}
 		}
 
 		available = {
-			CZE = { controls_state = 71 }
-			CZE = { controls_state = 72 }
+			controls_state = 71
+			controls_state = 72
 		}
 
 		bypass = {
@@ -725,17 +854,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_fortification_studies
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 70 }
-			CZE = { controls_state = 75 }
-			CZE = { controls_state = 664 }
+			controls_state = 9
+			controls_state = 70
+			controls_state = 75
+			controls_state = 664
 		}
 
 		bypass = {
@@ -779,7 +908,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CZE_fortification_studies
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -815,7 +944,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_industrial_legacy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -830,8 +959,8 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 75 }
+			controls_state = 9
+			controls_state = 75
 		}
 
 		bypass = {
@@ -874,15 +1003,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_favor_czechs_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 75 }
+			controls_state = 9
+			controls_state = 75
 		}
 
 		bypass = {
@@ -925,15 +1054,15 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_favor_czechs_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 75 }
+			controls_state = 9
+			controls_state = 75
 		}
 
 		bypass = {
@@ -977,7 +1106,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_industrial_legacy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -992,8 +1121,8 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 70 }
+			controls_state = 9
+			controls_state = 70
 		}
 
 		bypass = {
@@ -1041,15 +1170,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_balanced_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 71 }
+			controls_state = 9
+			controls_state = 71
 		}
 
 		bypass = {
@@ -1097,15 +1226,15 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_balanced_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 73 }
+			controls_state = 9
+			controls_state = 73
 		}
 
 		bypass = {
@@ -1153,14 +1282,14 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_balanced_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-
+			has_idea = CZE_divided_nation
 		}
 
 		bypass = {
@@ -1191,7 +1320,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_industrial_legacy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -1234,7 +1363,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_arms_exports_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -1277,7 +1406,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_arms_exports_1
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -1323,7 +1452,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CZE_industrial_legacy
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -1359,7 +1488,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_political_direction
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -1391,7 +1520,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
-			#allow communist reformer
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CZE_gustav_husak
 			# relations changes
 			every_other_country = {
 				limit = { 
@@ -1434,7 +1564,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_go_left
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -1474,7 +1604,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_czech_socialism
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -1509,7 +1639,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_go_left
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -1544,7 +1674,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_go_left
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
@@ -1552,20 +1682,20 @@ focus_tree = {
 
 		available = {
 			communism > 0.3
-			SOV = {
+			SO0 = {
 				has_government = communism 
 			}
 			is_in_faction = no
 			NOT = {
 				any_other_country = {
-					is_in_faction_with = SOV
-					has_war_with = CZE
+					is_in_faction_with = SO0
+					has_war_with = ROOT
 				}
 			}
 		}
 
 		bypass = {
-			is_in_faction_with = SOV
+			is_in_faction_with = SO0
 		}
 
 		cancel_if_invalid = yes
@@ -1577,7 +1707,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SOV = { country_event = { hours = 1 id = czech.1 } }
+			SO0 = { country_event = { hours = 1 id = czech.1 } }
 		}
 	}
 
@@ -1589,7 +1719,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_go_left
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -1612,7 +1742,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SOV = { country_event = { hours = 1 id = czech.4 } }
+			SO0 = { country_event = { hours = 1 id = czech.4 } }
 		}
 	}
 
@@ -1624,7 +1754,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CZE_go_left
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -1647,7 +1777,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SOV = { country_event = { hours = 1 id = czech.7 } }
+			SO0 = { country_event = { hours = 1 id = czech.7 } }
 		}
 	}
 
@@ -1660,7 +1790,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_political_direction
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -1689,6 +1819,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 200
 			add_ideas = CZE_democratic_bastion
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CZE_stefan_osusky
 		}
 	}
 
@@ -1700,7 +1832,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_democratic_bastion
 
-		cost = 2
+		cost = 14
 
 		ai_will_do = {
 			factor = 70
@@ -1735,7 +1867,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_democratic_bastion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
@@ -1771,7 +1903,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CZE_democratic_bastion
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
@@ -1805,7 +1937,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_political_direction
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -1832,6 +1964,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CZE_konrad_henlein
 			#allow nazi leader
 			every_other_country = {
 				limit = { 
@@ -1874,7 +2008,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_go_right
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -1909,7 +2043,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_go_right
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -1944,7 +2078,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CZE_go_right
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -1967,7 +2101,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER = { country_event = { hours = 1 id = czech.10 } }
+			GE0 = { country_event = { hours = 1 id = czech.10 } }
 		}
 	}
 
@@ -1980,7 +2114,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_go_right
 
-		cost = 5
+		cost = 35
 
 		ai_will_do = {
 			factor = 40
@@ -2012,14 +2146,8 @@ focus_tree = {
 					has_idea = CZE_divided_nation
 				}
 				remove_ideas = CZE_divided_nation
-				add_timed_idea = { idea = CZE_czech_fascism_idea days = 1095 }
 			}
-			if = {
-				limit = {
-					NOT = { has_idea = CZE_divided_nation }
-				}
-				add_timed_idea = { idea = CZE_czech_fascism_idea days = 1095 }
-			}
+			add_timed_idea = { idea = CZE_czech_fascism_idea days = 1095 }
 			country_event = { days = 6 random = 120 id = czech.14 }			
 		}
 	}
@@ -2033,7 +2161,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_go_right
 
-		cost = 15
+		cost = 105
 
 		ai_will_do = {
 			factor = 40
@@ -2076,7 +2204,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_go_right
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -2088,9 +2216,9 @@ focus_tree = {
 
 		available = {
 			is_in_faction = no
-			GER = { has_government = fascism }
-			GER = { exists = yes }
-			GER = { is_subject = no }
+			GE0 = { has_government = fascism }
+			GE0 = { exists = yes }
+			GE0 = { is_subject = no }
 			has_army_manpower = { size > 249999 } 
 		}
 
@@ -2109,8 +2237,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = CZE_german_minor_ally_tt
 			hidden_effect = {
-				GER = {
-					set_autonomy = { target = CZE autonomy_state = autonomy_satellite }
+				GE0 = {
+					set_autonomy = { target = ROOT autonomy_state = autonomy_satellite }
 				}
 			}
 		}
@@ -2125,7 +2253,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_go_right
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
@@ -2133,20 +2261,20 @@ focus_tree = {
 
 		available = {
 			is_in_faction = no
-			GER = { has_government = fascism }
-			GER = { exists = yes }
-			GER = { is_subject = no }
+			GE0 = { has_government = fascism }
+			GE0 = { exists = yes }
+			GE0 = { is_subject = no }
 			has_army_manpower = { size > 299999 } 
 			NOT = {
 				any_other_country = {
-					is_in_faction_with = GER
-					has_war_with = CZE
+					is_in_faction_with = GE0
+					has_war_with = ROOT
 				}
 			}
 		}
 
 		bypass = {
-			is_in_faction_with = GER
+			is_in_faction_with = GE0
 		}
 
 		cancel_if_invalid = yes
@@ -2158,7 +2286,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER = { country_event = { hours = 1 id = czech.16 } }
+			GE0 = { country_event = { hours = 1 id = czech.16 } }
 		}
 	}
 
@@ -2173,7 +2301,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CZE_political_direction
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -2209,7 +2337,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -2240,7 +2368,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			 GER = { add_opinion_modifier = { target = CZE modifier = CZE_german_leanings } }
+			 GE0 = { add_opinion_modifier = { target = ROOT modifier = CZE_german_leanings } }
 		}
 	}
 
@@ -2253,19 +2381,19 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_german_leanings
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
 		}
 
 		available = {
-			GER = { exists = yes }
-			GER = { is_subject = no }
+			GE0 = { exists = yes }
+			GE0 = { is_subject = no }
 		}
 
 		bypass = {
-			is_subject_of = GER
+			is_subject_of = GE0
 		}
 
 		cancel_if_invalid = yes
@@ -2277,7 +2405,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER = { country_event = { hours = 1 id = czech.19 } }
+			GE0 = { country_event = { hours = 1 id = czech.19 } }
 		}
 	}
 
@@ -2291,7 +2419,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = HUN
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -2299,14 +2427,14 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				is_in_faction_with = HUN
+				is_in_faction_with = HU5
 			}
-			HUN = { exists = yes }
+			HU5 = { exists = yes }
 		}
 
 		bypass = {
-			HUN = { exists = no }
-			HUN = { is_subject_of = CZE}
+			HU5 = { exists = no }
+			HU5 = { is_subject_of = ROOT }
 		}
 
 		cancel_if_invalid = yes
@@ -2320,7 +2448,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = HUN
+				target = HU5
 			}
 		}
 	}
@@ -2333,15 +2461,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_german_leanings
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
 		}
 
 		available = {
-			GER = { exists = yes }
-			GER = { is_subject = no }
+			GE0 = { exists = yes }
+			GE0 = { is_subject = no }
 		}
 
 		bypass = {
@@ -2357,7 +2485,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER = { country_event = { hours = 1 id = czech.22 } }
+			GE0 = { country_event = { hours = 1 id = czech.22 } }
 		}
 	}
 
@@ -2369,14 +2497,14 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_german_leanings
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			GER = { exists = yes }
+			GE0 = { exists = yes }
 		}
 
 		bypass = {
@@ -2405,7 +2533,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -2436,13 +2564,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			ENG = {
+			EN0 = {
 				add_opinion_modifier = { 
 						target = ROOT 
 						modifier =  CZE_trust_in_the_west
 				}
 			}
-			FRA = {
+			FR0 = {
 				add_opinion_modifier = { 
 					target = ROOT 
 					modifier =  CZE_trust_in_the_west
@@ -2450,13 +2578,13 @@ focus_tree = {
 			
 			}
 			diplomatic_relation = {
-				country = YUG
+				country = YU0
 				relation = guarantee
 				active = no
 			}
-			ROM = {
+			RO0 = {
 				diplomatic_relation = {
-					country = CZE
+					country = ROOT
 					relation = guarantee
 					active = no
 				}
@@ -2472,7 +2600,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_trust_in_the_west
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
@@ -2512,7 +2640,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_doctrinal_innovation
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
@@ -2549,7 +2677,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_doctrinal_innovation
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -2592,7 +2720,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_doctrinal_innovation
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -2634,7 +2762,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -2645,7 +2773,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			is_in_faction_with = FRA
+			is_in_faction_with = FR0
 		}
 
 		cancel_if_invalid = yes
@@ -2666,26 +2794,26 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_an_entente_of_our_own
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			YUG = { is_in_faction = no }
-			YUG = { exists = yes }
-			YUG = { is_subject = no }
+			YU0 = { is_in_faction = no }
+			YU0 = { exists = yes }
+			YU0 = { is_subject = no }
 
-			CZE = { is_faction_leader = yes }
+			ROOT = { is_faction_leader = yes }
 		}
 
 		bypass = {
 			OR = {
-				YUG = {
+				YU0 = {
 					is_in_faction = yes
 				}
-				is_in_faction_with = FRA
+				is_in_faction_with = FR0
 			}
 		}
 
@@ -2694,7 +2822,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			YUG = { country_event = { hours = 1 id = czech.25 } }
+			YU0 = { country_event = { hours = 1 id = czech.25 } }
 		}
 	}
 
@@ -2706,25 +2834,25 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_an_entente_of_our_own
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			ROM = { is_in_faction = no }
-			ROM = { exists = yes }
-			ROM = { is_subject = no }			
-			CZE = { is_faction_leader = yes }
+			RO0 = { is_in_faction = no }
+			RO0 = { exists = yes }
+			RO0 = { is_subject = no }			
+			ROOT = { is_faction_leader = yes }
 		}
 
 		bypass = {
 			OR = {
-				ROM = {
+				RO0 = {
 					is_in_faction = yes
 				}
-				is_in_faction_with = FRA
+				is_in_faction_with = FR0
 			}
 		}	
 
@@ -2733,7 +2861,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			ROM = { country_event = { hours = 1 id = czech.28 } }
+			RO0 = { country_event = { hours = 1 id = czech.28 } }
 		}
 	}
 
@@ -2745,7 +2873,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_an_entente_of_our_own
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -2777,7 +2905,7 @@ focus_tree = {
 			add_to_tech_sharing_group = little_entente_research_group
 			every_country = {
 				limit = {
-					is_in_faction_with = CZE
+					is_in_faction_with = ROOT
 				}
 				add_to_tech_sharing_group = little_entente_research_group
 			}
@@ -2792,7 +2920,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_an_entente_of_our_own
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -2839,7 +2967,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_security_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -2847,15 +2975,15 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				is_in_faction_with = HUN
+				is_in_faction_with = HU5
 			}
-			HUN = { exists = yes }
-			HUN = { is_subject = no }
+			HU5 = { exists = yes }
+			HU5 = { is_subject = no }
 		}
 
 		bypass = {
-			HUN = { exists = no }
-			HUN = { is_subject_of = CZE }
+			HU5 = { exists = no }
+			HU5 = { is_subject_of = ROOT }
 		}
 
 		cancel_if_invalid = yes
@@ -2865,7 +2993,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = HUN
+				target = HU5
 			}
 		}
 	}
@@ -2878,7 +3006,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_security_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -2886,10 +3014,10 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				is_in_faction_with = BUL
+				is_in_faction_with = BU0
 			}
-			BUL = { exists = yes }
-			BUL = { is_subject = no }
+			BU0 = { exists = yes }
+			BU0 = { is_subject = no }
 		}
 
 		bypass = {
@@ -2903,7 +3031,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = BUL
+				target = BU0
 			}
 		}
 	}
@@ -2917,7 +3045,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_security_council
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -2925,10 +3053,10 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				is_in_faction_with = HUN
+				is_in_faction_with = HU5
 			}
-			HUN = { exists = yes }
-			HUN = { is_subject = no }
+			HU5 = { exists = yes }
+			HU5 = { is_subject = no }
 		}
 
 		bypass = {
@@ -2944,7 +3072,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			HUN = { country_event = { hours = 1 id = czech.32 } }
+			HU5 = { country_event = { hours = 1 id = czech.32 } }
 		}
 	}
 
@@ -2956,7 +3084,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -2996,7 +3124,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CZE_strategy_decisions
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -3031,7 +3159,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -3072,7 +3200,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -3113,7 +3241,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -3149,12 +3277,12 @@ focus_tree = {
 				#category = military_police_tech
 				category = support_tech	
 			}
-		add_tech_bonus = {
-			name = CZE_support_bonus #@#
-			bonus = 1.0
-			uses = 1
-			technology = support_weapons2
-			technology = support_weapons3
+			add_tech_bonus = {
+				name = CZE_support_bonus #@#
+				bonus = 1.0
+				uses = 1
+				technology = support_weapons2
+				technology = support_weapons3
 			}
 		}
 	}
@@ -3167,7 +3295,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -3209,7 +3337,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
@@ -3249,7 +3377,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -3288,7 +3416,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -3327,7 +3455,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -3367,7 +3495,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 60
@@ -3408,7 +3536,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 100
@@ -3449,7 +3577,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -3494,7 +3622,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CZE_military_research_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -3529,7 +3657,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_military_aeronautical_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -3571,7 +3699,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_import_foreign_fighters
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -3612,7 +3740,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_import_foreign_fighters
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 50
@@ -3652,7 +3780,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_military_aeronautical_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -3689,7 +3817,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_military_aeronautical_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 80
@@ -3729,7 +3857,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_military_aeronautical_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -3771,7 +3899,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_import_foreign_bombers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -3812,7 +3940,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_import_foreign_bombers
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -3855,7 +3983,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CZE_military_aeronautical_institute
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -3892,7 +4020,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_access_to_the_sea
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 70
@@ -3961,7 +4089,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_access_to_the_sea
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -3996,7 +4124,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_access_to_the_sea
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -4035,7 +4163,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_access_to_the_sea
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -4074,7 +4202,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_access_to_the_sea
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 10
@@ -4116,7 +4244,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_access_to_the_sea
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 20
@@ -4158,7 +4286,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_access_to_the_sea
 
-		cost = 10
+		cost = 70
 
 		ai_will_do = {
 			factor = 5

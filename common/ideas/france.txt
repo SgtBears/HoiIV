@@ -357,7 +357,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = "FRA"
-			}			
+			}
+			visible = {
+				NOT = { has_completed_focus = FRA_support_status_quo }
+				NOT = { has_completed_focus = FRA_support_the_right }
+			}	
 			available = {
 				has_completed_focus = FRA_leftist_rhetoric
 				if = {
@@ -386,7 +390,11 @@ ideas = {
 				original_tag = "FRA"
 			}
 			
+			visible = {
+				NOT = { has_completed_focus = FRA_revise_versailles }
+			}	
 			available = {
+				NOT = { has_completed_focus = FRA_revise_versailles }
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
@@ -412,7 +420,11 @@ ideas = {
 			allowed = {
 				original_tag = "FRA"
 			}
-			available ={
+			visible = {
+				NOT = { has_completed_focus = FRA_support_status_quo }
+				NOT = { has_completed_focus = FRA_support_the_left }
+			}	
+			available = {
 				has_completed_focus = FRA_right_wing_rhetoric
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
@@ -585,6 +597,9 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
+			visible = {
+				NOT = { has_completed_focus = FRA_defensive_focus }
+			}	
 			available = {
 				has_completed_focus = FRA_aggressive_focus
 			}
@@ -604,6 +619,9 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
+			visible = {
+				NOT = { has_completed_focus = FRA_aggressive_focus }
+			}	
 			available = {
 				has_completed_focus = FRA_defensive_focus
 			}

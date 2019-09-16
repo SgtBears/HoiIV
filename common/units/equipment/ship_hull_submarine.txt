@@ -114,7 +114,6 @@ equipments = {
 
 		default_modules = {
 			rear_1_custom_slot = empty
-			fixed_ship_engine_slot = sub_ship_engine_2
 		}
 		sub_visibility = 20
 		naval_speed = 14

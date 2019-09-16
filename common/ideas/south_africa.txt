@@ -484,6 +484,11 @@ ideas = {
 					air_attack = 0.05
 					instant = yes
 				}
+				jet_fighter_equipment = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
 				cv_fighter_equipment = {
 					air_range = 0.1
 					air_attack = 0.05
@@ -514,12 +519,22 @@ ideas = {
 					air_ground_attack = 0.05
 					instant = yes
 				}
+				jet_tac_bomber_equipment = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
 				heavy_fighter_equipment = {
 					air_range = 0.1
 					air_attack = 0.05
 					instant = yes
 				}
 				strat_bomber_equipment = {
+					air_range = 0.1
+					air_bombing = 0.05
+					instant = yes
+				}
+				jet_strat_bomber_equipment = {
 					air_range = 0.1
 					air_bombing = 0.05
 					instant = yes
@@ -545,6 +560,9 @@ ideas = {
 				
 			}
 
+			visible = {
+				NOT = { has_completed_focus = SAF_abandon_westminster }
+			}
 			available = {
 				if = {
 					limit = { has_dlc = "Together for Victory"}
@@ -578,8 +596,11 @@ ideas = {
 				original_tag = SAF
 			}
 
+			visible = {
+				NOT = { has_completed_focus = SAF_support_the_afrikaner_broederbond }
+			}
 			available = {
-			if = {
+				if = {
 					limit = { has_dlc = "Together for Victory"}
 					has_completed_focus = SAF_empower_the_workers
 				}
@@ -612,6 +633,9 @@ ideas = {
 				
 			}
 
+			visible = {
+				NOT = { has_completed_focus = SAF_empower_the_workers }
+			}
 			available = {
 				if = {
 					limit = { has_dlc = "Together for Victory"}

@@ -384,7 +384,7 @@ country_event = {
 					has_variable = equipment_amount_for_support_@FROM
 				}
 			}
-			modifier = { tag = SIK  add = 1 }
+			modifier = { tag = SI5  add = 1 }
 		}
 		add_to_variable = { step_increase_from_opinion_ideology_@FROM = increase_from_amount_times_asked_for_support_by_@FROM }
 		set_temp_variable = { temp_extra_PP_amount = step_increase_from_opinion_ideology_@FROM }
@@ -417,7 +417,7 @@ country_event = {
 					has_variable = PP_amount_for_support_@FROM
 				}
 			}
-			modifier = { tag = GXC  add = 1 }
+			modifier = { tag = GX0  add = 1 }
 		}
 		add_to_variable = { step_increase_from_opinion_ideology_@FROM = increase_from_amount_times_asked_for_support_by_@FROM }
 		
@@ -452,7 +452,7 @@ country_event = {
 					has_variable = PP_amount_for_support_@FROM
 				}
 			}
-			modifier = { tag = XSM  add = 1 }
+			modifier = { tag = XS0  add = 1 }
 		}
 
 		add_to_variable = { step_increase_from_opinion_ideology_@FROM = increase_from_amount_times_asked_for_support_by_@FROM }
@@ -647,7 +647,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					tag = CHI
+					original_tag = CHI
 				}
 				set_cosmetic_tag = CHI_power_struggle_defeated
 			}

@@ -3,8 +3,8 @@ state={
 	name="STATE_45"
 
 	history={
-		victory_points = { 619 3 }
 		owner = YUG
+		victory_points = { 619 3 }
 		buildings = {
 			infrastructure = 6
 
@@ -15,9 +15,9 @@ state={
 	}
 
 	provinces={
-		619 3617 3623 9608 9621
+		9621 3617 619 3623
 	}
-	manpower=838621
+	manpower=788621
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 }

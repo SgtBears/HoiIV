@@ -1,0 +1,105 @@
+﻿###########################
+# Accurate Map Events
+###########################
+
+add_namespace = am.greenland
+
+country_event = {
+	id = am.greenland.1
+	title = am.greenland.1.t
+	desc = am.greenland.1.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = { #a great idea!
+		name = am.greenland.1.a
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "Aksel Svane"
+				}
+			}
+			create_country_leader = {
+				name = "Eske Brun"
+				picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				expire = "1965.1.1"
+				ideology = centrism
+				traits = {
+				}
+			}
+		}
+		retire_country_leader = yes
+		effect_tooltip = {
+			SG0 = {
+				US0 = {
+					set_autonomy = { target = PREV autonomy_state = autonomy_colony } 
+				}	
+			}
+		}
+	}
+
+}
+
+
+country_event = {
+	id = am.greenland.2
+	title = am.greenland.2.t
+	desc = am.greenland.2.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = { #a great idea!
+		name = am.greenland.2.a
+		SG0 = {
+			DE0 = {
+				annex_country = { target = PREV }
+			}
+		}
+	}
+
+}
+
+
+country_event = {
+	id = am.greenland.3
+	title = am.greenland.3.t
+	desc = am.greenland.3.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = {
+		name = am.greenland.3.a
+		ai_chance = {
+			factor = 90
+		}
+		SG0 = {
+			country_event = am.greenland.1
+			US0 = {
+				set_autonomy = { target = PREV autonomy_state = autonomy_colony } 
+			}
+		}
+	}
+	option = {
+		name = am.greenland.3.b
+		ai_chance = {
+			factor = 10
+		}
+		SG0 = {
+			country_event = am.greenland.4
+		}
+	}
+
+}
+country_event = {
+	id = am.greenland.4
+	title = am.greenland.4.t
+	desc = am.greenland.4.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = { #a great idea!
+		name = am.greenland.4.a
+	}
+
+}

@@ -1,0 +1,21 @@
+state = {
+	id=871
+	name="STATE_871"
+	manpower=1350
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = NZL
+		add_core_of = COK
+		buildings = {
+			infrastructure = 2
+			14255 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		14255
+	}
+}

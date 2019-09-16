@@ -23,15 +23,15 @@ country_event = {
 					any_other_country = {
 						is_major = yes
 						OR = {
-							is_in_faction_with = FIN
-							has_guaranteed = FIN
+							is_in_faction_with = FI0
+							has_guaranteed = FI0
 						}
 					}
 					has_idea = anti_soviet_pact
 				}
 			}
 		}
-		SOV = {
+		SO0 = {
 			country_event = { days = 5 id = soviet.12 }
 			effect_tooltip = {
 				transfer_state = 146
@@ -41,13 +41,15 @@ country_event = {
 	option = { # Refuse
 		name = finland.1.b
 		ai_chance = { factor = 75 }
-		SOV = {
-			country_event = { days = 5 id = soviet.13 }
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state
-					target = FIN
-					generator = { 146 }
+		FI0 = {
+			SO0 = {
+				country_event = { days = 5 id = soviet.13 }
+				effect_tooltip = {
+					create_wargoal = {
+						type = take_state
+						target = PREV
+						generator = { 146 }
+					}
 				}
 			}
 		}
@@ -64,11 +66,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = FIN
-		has_war_with = SOV
-		SWE = {
-			NOT = { has_war_with = FIN }
-			NOT = { is_in_faction_with = SOV }
+		tag = FI0
+		has_war_with = SO0
+		SW0 = {
+			NOT = { has_war_with = FI0 }
+			NOT = { is_in_faction_with = SO0 }
 			exists = yes
 		}
 	}
@@ -79,7 +81,7 @@ country_event = {
 
 	option = {
 		name = finland.2.a
-		SWE = {
+		SW0 = {
 			country_event = { id = finland.3 }
 		}
 	}
@@ -112,7 +114,7 @@ country_event = {
 			}
 		}
 
-		FIN = {
+		FI0 = {
 			country_event = { id = finland.4 days = 3 }
 			add_opinion_modifier = {
 				target = ROOT
@@ -129,7 +131,7 @@ country_event = {
 			modifier = {
 				factor = 5							
 				has_government = democratic
-				FIN = {
+				FI0 = {
 				 has_government = democratic
 				}
 			}
@@ -151,10 +153,14 @@ country_event = {
 					infantry_equipment > 500
 				}
 			}
-			send_equipment = {
-				target = FIN
-				type = infantry_equipment
-				amount = 500
+			FI0 = {
+				ROOT = {
+					send_equipment = {
+						target = PREV
+						type = infantry_equipment
+						amount = 500
+					}
+				}
 			}
 		}
 		if = {
@@ -163,18 +169,26 @@ country_event = {
 					artillery_equipment > 250
 				}
 			}
-			send_equipment = {
-				target = FIN
-				type = artillery_equipment
-				amount = 250
+			FI0 = {
+				ROOT = {
+					send_equipment = {
+						target = PREV
+						type = artillery_equipment
+						amount = 250
+					}
+				}
 			}
 		}
-		add_ai_strategy = {
-			type = support
-			id = FIN
-			value = 100
+		FI0 = {
+			ROOT = {
+				add_ai_strategy = {
+					type = support
+					id = PREV
+					value = 100
+				}
+			}
 		}
-		FIN = {
+		FI0 = {
 			country_event = { id = finland.5 days = 3 }
 		}
 	}
@@ -194,25 +208,30 @@ country_event = {
 				has_war = no
 				has_government = democratic
 				strength_ratio = {
-					tag = SOV
+					tag = SO0
 					ratio > 0.2
 				}
-				FIN = {
+				FI0 = {
 					has_government = democratic
 					strength_ratio = {
-						tag = SOV 
+						tag = SO0 
 						ratio > 0.3
 					}
 				}
 			}			
 		}
 
-		declare_war_on = {
-			target = SOV
-			type = take_state
-			generator = { 195 208 } # Leningrand and Luga
+		
+		SO0 = {
+			ROOT = {
+				declare_war_on = {
+					target = PREV
+					type = take_state
+					generator = { 195 208 } # Leningrand and Luga
+				}
+			}
 		}
-		FIN = {
+		FI0 = {
 			country_event = { id = finland.6 days = 3 }
 			add_opinion_modifier = {
 				target = ROOT
@@ -247,30 +266,32 @@ country_event = {
 		name = finland.5.a
 		add_manpower = 8402
 		effect_tooltip = {
-			SWE = {
-				add_manpower = -8402
-				if = {
-					limit = {
-						has_equipment = {
-							infantry_equipment > 500
+			FI0 = {
+				SW0 = {
+					add_manpower = -8402
+					if = {
+						limit = {
+							has_equipment = {
+								infantry_equipment > 500
+							}
+						}
+						send_equipment = {
+							target = PREV
+							type = infantry_equipment
+							amount = 500
 						}
 					}
-					send_equipment = {
-						target = FIN
-						type = infantry_equipment
-						amount = 500
-					}
-				}
-				if = {
-					limit = {
-						has_equipment = {
-							artillery_equipment > 250
+					if = {
+						limit = {
+							has_equipment = {
+								artillery_equipment > 250
+							}
 						}
-					}
-					send_equipment = {
-						target = FIN
-						type = artillery_equipment
-						amount = 250
+						send_equipment = {
+							target = PREV
+							type = artillery_equipment
+							amount = 250
+						}
 					}
 				}
 			}
@@ -299,8 +320,8 @@ country_event = {
 	picture = GFX_report_event_soviet_tanks_snow
 	
 	trigger = {
-		tag = FIN
-		has_war_with = SOV
+		tag = FI0
+		has_war_with = SO0
 		surrender_progress > 0.25
 		has_civil_war = no
 		is_in_faction = no
@@ -316,26 +337,28 @@ country_event = {
 		ai_chance = {
 			base = 8
 		}
-		SOV = {
+		SO0 = {
 			country_event = { id = finland.8 }
 		}
 		custom_effect_tooltip = finland.7.a_tt
 		effect_tooltip = {
-			SOV = { 
-				white_peace = {
-					tag = FIN 
-					message = FIN_agree_peace 
-				} 
+			FI0 = {
+				SO0 = { 
+					white_peace = {
+						tag = PREV
+						message = FIN_agree_peace 
+					} 
+				}
 			}
 			transfer_state = 146
 			transfer_state = 147
 			if = {
 				limit = {
 					722 = {
-						is_claimed_by = SOV
+						is_claimed_by = SO0
 					}
 				}
-				SOV = { remove_state_claim = 722 }
+				SO0 = { remove_state_claim = 722 }
 			}
 		}
 	}
@@ -368,46 +391,56 @@ country_event = {
 		ai_chance = {
 			base = 9
 		}
-		white_peace = FIN
+		FI0 = {
+			ROOT = { white_peace = PREV }
+		}
 		transfer_state = 146
 		transfer_state = 147
 		if = {
 			limit = {
 				722 = {
-					is_claimed_by = SOV
+					is_claimed_by = SO0
 				}
 			}
 			remove_state_claim = 722
 		}
-		FIN = {
-			add_ai_strategy = {
-				type = antagonize
-				id = "SOV"			
-				value = 200
+		SO0 = {
+			FI0 = {
+				add_ai_strategy = {
+					type = antagonize
+					id = PREV			
+					value = 200
+				}
 			}
 		}
 		if = {
 			limit = {
-				GER = {
+				GE0 = {
 					is_subject = no
-					not = { is_in_faction_with = SOV}
+					not = { is_in_faction_with = SO0 }
 				}
 			}
-			add_ai_strategy = {
-				type = alliance
-				id = "GER"			
-				value = 200
+			GE0 = {
+				ROOT = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV			
+						value = 200
+					}
+					add_ai_strategy = {
+						type = befriend
+						id = PREV			
+						value = 200
+					}
+				}
 			}
-			add_ai_strategy = {
-				type = befriend
-				id = "GER"			
-				value = 200
-			}
-			GER = {
-				add_ai_strategy = {
-					type = alliance
-					id = "FIN"			
-					value = 200
+			FI0 = {
+				GE0 = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV			
+						value = 200
+					}
 				}
 			}
 		}
@@ -423,7 +456,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}			
 		}
-		FIN = { country_event = { id = finland.9 } }
+		FI0 = { country_event = { id = finland.9 } }
 	}
 }
 

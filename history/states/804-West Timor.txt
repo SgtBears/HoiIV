@@ -1,0 +1,31 @@
+state={
+	id=804
+	name="STATE_804"
+	manpower = 451134
+	
+	state_category = pastoral
+	
+	resources={
+	}
+
+
+	history=
+	{
+		owner = INS
+		add_core_of = INS
+		victory_points = {
+			1355 1 
+		}
+		
+
+		buildings = {
+			infrastructure = 3
+			1355 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		1339 4358 1355 13335 13336
+	}
+}

@@ -253,9 +253,9 @@ FRA_destroyers = {
 			factor = 50
 			modifier = {
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
-					has_war_with = ENG
+					has_war_with = var:global.usa_tag
+					has_war_with = var:global.jap_tag
+					has_war_with = var:global.eng_tag
 				}
 			}
 		}
@@ -622,9 +622,9 @@ FRA_naval_light_AA_cruiser = {
 		modifier = {
 			factor = 10
 			OR = {
-				has_war_with = USA
-				has_war_with = ENG
-				has_war_with = JAP
+				has_war_with = var:global.usa_tag
+				has_war_with = var:global.eng_tag
+				has_war_with = var:global.jap_tag
 			}
 		}
 	}
@@ -1753,7 +1753,7 @@ FRA_naval_submarine = {
 			factor = 50
 			modifier = {
 				factor = 15
-				has_war_with = FRA
+				has_war_with = var:global.fra_tag
 			}
 		}
 		role_icon_index = 6
@@ -1785,7 +1785,7 @@ FRA_naval_submarine = {
 			factor = 50
 			modifier = {
 				factor = 15
-				has_war_with = FRA
+				has_war_with = var:global.fra_tag
 			}
 		}
 		role_icon_index = 6

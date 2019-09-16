@@ -6,7 +6,14 @@ ideas = {
 			
 			
 			allowed = {
-				always = no
+				OR = {
+					original_tag = USA
+					original_tag = CSA
+					original_tag = USB
+				}
+			}
+			available = {
+				always = no	
 			}
 			removal_cost = -1
 		
@@ -42,7 +49,14 @@ ideas = {
 			
 			
 			allowed = {
-				always = no
+				OR = {
+					original_tag = USA
+					original_tag = CSA
+					original_tag = USB
+				}
+			}
+			available = {
+				always = no	
 			}
 			removal_cost = -1
 			

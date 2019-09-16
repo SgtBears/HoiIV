@@ -341,7 +341,7 @@
  ENG_secure_the_italian_alliance:1 "Secure the Italian Alliance"
  ENG_secure_the_italian_alliance_desc:1 "Mussolini has a far more palatable approach to fascism, and has long been admired by Mosley. It is only natural that our two countries should engage in a closer relationship, mutually beneficial to both our peoples."
  ENG_gibraltar_for_spanish_support:1 "Gibraltar for Spanish Support"
- ENG_gibraltar_for_spanish_support_desc:1 "Though long considered an integral part of our nation, perhaps it is worthwhile to arrange the return of Gibraltar to Spanish hands, in return for Franco's support for our cause."
+ ENG_gibraltar_for_spanish_support_desc:1 "Though long considered an integral part of our nation, perhaps it is worthwhile to arrange the return of Gibraltar to Spanish hands, in return for the support of our cause from [SPR.GetLeader]."
  ENG_pre_empt_spanish_alignment:1 "Pre-Empt Spanish Alignment"
  ENG_pre_empt_spanish_alignment_desc:1 "The risk exists that the Spanish will side with the Germans if we take any offensive action towards the latter. This cannot be allowed to happen - we must deal with this potential threat before we move on to [GER.GetName] proper."
  ENG_prevent_a_continental_hegemony:1 "Prevent a Continental Hegemony"

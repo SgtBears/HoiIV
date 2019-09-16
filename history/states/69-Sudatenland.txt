@@ -2,7 +2,7 @@ state=
 {
 	id=69
 	name="STATE_69"
-	manpower = 2830000
+	manpower = 2122500
 	
 	state_category = town
 	
@@ -37,15 +37,7 @@ state=
 			{
 				bunker = 1
 			}
-			5283 =
-			{
-				bunker = 1
-			}
 			6470 =
-			{
-				bunker = 1
-			}
-			9555 =
 			{
 				bunker = 1
 			}
@@ -60,9 +52,11 @@ state=
 		1938.9.30 = {
 			owner = GER
 			controller = GER
+			add_core_of = GER
+			add_core_of = DDR
 		}
 	}
 	provinces=
 	{
-424 469 543 557 3418 3585 5283 6470 7857 9555 11401 11414 11432 11525 	}
+424 469 3418 3585 6470 11401 11414 11432 	}
 }

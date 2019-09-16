@@ -431,11 +431,41 @@ USA_congress = {
 			463 = {
 				not = { is_core_of = ROOT }
 			}
+			650 = {
+				not = { is_core_of = ROOT }
+			}
+			844 = {
+				not = { is_core_of = ROOT }
+			}
+			858 = {
+				not = { is_core_of = ROOT }
+			}
 			political_power_daily > 0.1
 		}
 		visible = {
 			463 = {
-				is_fully_controlled_by = USA
+				is_fully_controlled_by = ROOT
+			}
+			844 = {
+				is_fully_controlled_by = ROOT
+			}
+			650 = {
+				is_fully_controlled_by = ROOT
+			}
+			858 = {
+				is_fully_controlled_by = ROOT
+			}
+			463 = {
+				not = { is_core_of = ROOT }
+			}
+			650 = {
+				not = { is_core_of = ROOT }
+			}
+			844 = {
+				not = { is_core_of = ROOT }
+			}
+			858 = {
+				not = { is_core_of = ROOT }
 			}
 		}
 		ai_will_do = {
@@ -454,7 +484,12 @@ USA_congress = {
 		remove_effect = {
 			USA_congress_add_state = yes
 			add_state_core = 463
-			USA_calc_stars = yes
+			add_state_core = 650
+			add_state_core = 844
+			add_state_core = 858
+			hidden_effect = {
+				USA_calc_stars = yes
+			}
 		}
 	}
 	USA_statehood_for_hawaii = {
@@ -467,7 +502,10 @@ USA_congress = {
 		}
 		visible = {
 			629 = {
-				is_fully_controlled_by = USA
+				is_fully_controlled_by = US0
+			}
+			629 = {
+				not = { is_core_of = ROOT }
 			}
 		}
 		ai_will_do = {
@@ -486,7 +524,9 @@ USA_congress = {
 		remove_effect = {
 			USA_congress_add_state = yes
 			add_state_core = 629
-			USA_calc_stars = yes
+			hidden_effect = {
+				USA_calc_stars = yes
+			}
 		}
 	}
 	USA_statehood_for_puerto_rico = {
@@ -499,7 +539,10 @@ USA_congress = {
 		}
 		visible = {
 			686 = {
-				is_fully_controlled_by = USA
+				is_fully_controlled_by = US0
+			}
+			686 = {
+				not = { is_core_of = ROOT }
 			}
 		}
 		ai_will_do = {
@@ -516,9 +559,87 @@ USA_congress = {
 			political_power_gain = -0.1
 		}
 		remove_effect = {
+			USA_congress_small_opposition = yes 
 			USA_congress_add_state = yes
 			add_state_core = 686
-			USA_calc_stars = yes
+			hidden_effect = {
+				USA_calc_stars = yes
+			}
+		}
+	}
+	USA_statehood_for_washington_dc = {
+		icon = infiltrate_state
+		available = {
+			political_power_daily > 0.1
+		}
+		visible = {
+			361 = {
+				is_fully_controlled_by = US0
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		fire_only_once = yes
+		days_remove = 240
+		cost = 25
+		modifier = {
+			political_power_gain = -0.1
+		}
+		remove_effect = {
+			USA_congress_large_opposition = yes 
+			set_global_flag = washington_made_state
+			USA_congress_add_state = yes
+			361 = {
+				remove_core_of = MR5
+				set_state_name = "New Columbia"
+			}
+			hidden_effect = {
+				USA_calc_stars = yes
+			}
+		}
+	}
+	USA_statehood_for_superior = {
+		icon = infiltrate_state
+		available = {
+			political_power_daily > 0.1
+		}
+		visible = {
+			848 = {
+				is_fully_controlled_by = US0
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		fire_only_once = yes
+		days_remove = 240
+		cost = 25
+		modifier = {
+			political_power_gain = -0.1
+		}
+		remove_effect = {
+			USA_congress_small_opposition = yes 
+			set_global_flag = superior_made_state
+			USA_congress_add_state = yes
+			848 = {
+				remove_core_of = MI5
+				set_state_name = "Superior"
+			}
+			847 = {
+				set_state_name = "Northern Michigan"
+			}
+			hidden_effect = {
+				USA_calc_stars = yes
+			}
 		}
 	}
 	USA_readmit_state = {
@@ -528,7 +649,7 @@ USA_congress = {
 		}
 		visible = {
 			any_owned_state = {
-				is_core_of = CSA
+				is_core_of = CS0
 				not = { is_core_of = ROOT }
 				is_claimed_by = ROOT
 			}
@@ -546,7 +667,7 @@ USA_congress = {
 			random_state = {
 				limit = {
 					is_controlled_by = ROOT
-					is_core_of = CSA
+					is_core_of = CS0
 					not = { is_core_of = ROOT }
 					is_claimed_by = ROOT
 				}

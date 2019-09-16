@@ -5,10 +5,21 @@ state={
 	history={
 		owner = INS
 		add_core_of = INS
+		victory_points = {
+			13339 1
+		}
 		buildings = {
 			infrastructure = 1
 
 			4579 = {
+				naval_base = 1
+
+			}
+			13339 = {
+				naval_base = 1
+
+			}
+			13338 = {
 				naval_base = 1
 
 			}
@@ -19,7 +30,7 @@ state={
 	}
 
 	provinces={
-		4579 
+		4579 13338 13339
 	}
 	manpower=36146
 	buildings_max_level_factor=1	

@@ -98,15 +98,15 @@ country_event = {
 		ai_chance = {
 			base = 10
 			modifier = {
-				tag = JAP
+				tag = JA0
 				add = 80 #TODO_WTT_AI script modifiers for how likely people are to accept puppeting
 			}
 			modifier = {
-				tag = TIB
+				tag = TI0
 				add = 30 #TODO_WTT_AI script modifiers for how likely people are to accept puppeting
 			}
 			modifier = {
-				tag = MON
+				tag = MO0
 				add = 30 #TODO_WTT_AI script modifiers for how likely people are to accept puppeting
 			}
 		}
@@ -755,7 +755,7 @@ country_event = {
 	
 	option = {
 		name = wtt_xian_incident.2.a #ask him to ally with the communists
-		CHI = { country_event = wtt_xian_incident.4 }
+		CH0 = { country_event = wtt_xian_incident.4 }
 	}
 
 }
@@ -812,10 +812,10 @@ country_event = {
 			base = 25
 			modifier = {
 				factor = 4
-				has_war_with = JAP
+				has_war_with = JA0
 			}
 			modifier = {
-				PRC = {
+				PR0 = {
 					has_completed_focus = PRC_social_democracy
 				}
 				factor = 2 #Commies being nice to us
@@ -825,7 +825,7 @@ country_event = {
 				factor = 0
 			}
 		}
-		PRC = { country_event = wtt_xian_incident.5 }
+		PR0 = { country_event = wtt_xian_incident.5 }
 	}
 
 	option = {
@@ -833,13 +833,13 @@ country_event = {
 		ai_chance = {
 			base = 75
 			modifier = {
-				PRC = {
+				PR0 = {
 					has_completed_focus = PRC_focus_on_china #commies being mean to us!
 				}
 				factor = 2
 			}
 			modifier = {
-				JAP = {
+				JA0 = {
 					NOT = {
 						has_government = fascism #Japan doesn't seem interested in China
 					}
@@ -871,31 +871,33 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { is_in_faction_with = CHI }
-				CHI = { is_in_faction = no }
+				NOT = { is_in_faction_with = CH0 }
+				CH0 = { is_in_faction = no }
 			}
-			CHI = {
+			CH0 = {
 				set_rule = { can_create_factions = yes }
 				create_faction = chinese_united_front
 			}
 		}
 		if = {
 			limit = {
-				CHI = { is_faction_leader = yes }
+				CH0 = { is_faction_leader = yes }
 			}
-			CHI = { add_to_faction = PRC }
-			PRC = { 
-				add_ai_strategy = {
-					type = alliance
-					id = "CHI"
-					value = 200
+			CH0 = { add_to_faction = PR0 }
+			CH0 = {
+				PR0 = { 
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 200
+					}
 				}
 			}
 			every_country = {
 				limit = {
-					is_subject_of = CHI
+					is_subject_of = CH0
 				}
-				CHI = { add_to_faction = PREV }
+				CH0 = { add_to_faction = PREV }
 			}
 		}
 		event_target:CHI_xian_instigator = { clr_country_flag = CHI_xian_instigator_flag }
@@ -931,7 +933,7 @@ country_event = {
 		ai_chance = {
 			base = 70
 		}		
-		CHI = { country_event = wtt_xian_incident.8 }
+		CH0 = { country_event = wtt_xian_incident.8 }
 	}
 
 	option = {
@@ -962,7 +964,7 @@ country_event = {
 	option = {
 		trigger = {
 			NOT = {
-				has_war_with = SOV
+				has_war_with = SO0
 			}
 			NOT = {
 				has_country_flag = SOV_xian_refuse
@@ -973,7 +975,7 @@ country_event = {
 			base = 70
 		}
 
-		SOV = { country_event = { id = wtt_xian_incident.9 days = 1 } }
+		SO0 = { country_event = { id = wtt_xian_incident.9 days = 1 } }
 	}
 
 	option = {
@@ -985,7 +987,7 @@ country_event = {
 				factor = 0
 			}
 		}
-		CHI = {
+		CH0 = {
 			kill_country_leader = yes
 			if = {
 				limit = {
@@ -1019,7 +1021,7 @@ country_event = {
 		ai_chance = {
 			base = 30
 		}
-		CHI = {
+		CH0 = {
 			country_event = wtt_xian_incident.10
 		}
 		
@@ -1070,7 +1072,7 @@ country_event = {
 		ai_chance = {
 			base = 70
 		}
-		PRC = { country_event = wtt_xian_incident.7 }
+		PR0 = { country_event = wtt_xian_incident.7 }
 	}
 }
 
@@ -1092,7 +1094,7 @@ country_event = {
 			}
 		}
 		name = wtt_xian_incident.9.a #approve
-		CHI = {
+		CH0 = {
 			kill_country_leader = yes
 			if = {
 				limit = {
@@ -1111,9 +1113,13 @@ country_event = {
 					}
 				}
 			}
-			create_wargoal = {
-				target = PRC
-				type = annex_everything
+			PR0 = {
+				PREV = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
 			}
 		}
 		event_target:CHI_xian_instigator = { clr_country_flag = CHI_xian_instigator_flag }
@@ -1127,7 +1133,7 @@ country_event = {
 		ai_chance = {
 			base = 50
 			modifier = {
-				has_war_with = JAP
+				has_war_with = JA0
 				factor = 3
 			}
 		}
@@ -1158,31 +1164,33 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { is_in_faction_with = CHI }
-				CHI = { is_in_faction = no }
+				NOT = { is_in_faction_with = CH0 }
+				CH0 = { is_in_faction = no }
 			}
-			CHI = {
+			CH0 = {
 				set_rule = { can_create_factions = yes }
 				create_faction = chinese_united_front
 			}
 		}
 		if = {
 			limit = {
-				CHI = { is_faction_leader = yes }
+				CH0 = { is_faction_leader = yes }
 			}
-			CHI = { add_to_faction = PRC }
-			PRC = { 
-				add_ai_strategy = {
-					type = alliance
-					id = "CHI"
-					value = 200
+			CH0 = { add_to_faction = PR0 }
+			CH0 = {
+				PR0 = { 
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 200
+					}
 				}
 			}
 			every_country = {
 				limit = {
-					is_subject_of = CHI
+					is_subject_of = CH0
 				}
-				CHI = { add_to_faction = PREV }
+				CH0 = { add_to_faction = PREV }
 			}
 		}
 		event_target:CHI_xian_instigator = { clr_country_flag = CHI_xian_instigator_flag }
@@ -1298,7 +1306,7 @@ country_event = {
 		ai_chance = {
 			base = 70
 			modifier = {
-				JAP = {
+				JA0 = {
 					NOT = {
 						has_government = fascism
 					}
@@ -1341,8 +1349,8 @@ country_event = {
 		}
 		reverse_add_opinion_modifier = { target = FROM modifier = CHI_refused_support }
 		add_war_support = -0.1
-		JAP = {
-			add_opinion_modifier = { target = USA modifier = large_increase }
+		JA0 = {
+			add_opinion_modifier = { target = US0 modifier = CHI_JAP_support_china }
 		}
 	}
 }
@@ -1388,8 +1396,8 @@ country_event = {
 		}
 		reverse_add_opinion_modifier = { target = FROM modifier = CHI_refused_support }
 		add_war_support = -0.1
-		JAP = {
-			add_opinion_modifier = { target = SOV modifier = large_increase }
+		JA0 = {
+			add_opinion_modifier = { target = SO0 modifier = CHI_JAP_support_china }
 		}
 	}
 }
@@ -1487,7 +1495,7 @@ country_event = {
 	option = { #accept
 		name = wtt_china_shared.13.a
 		effect_tooltip = {
-			USA = {
+			US0 = {
 				event_target:CHI_USA_general = { 
 					set_nationality = FROM.FROM
 				}

@@ -18,38 +18,63 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		ENG = { country_event = { id = tfv_raj.2 } }
+		EN0 = { country_event = { id = tfv_raj.2 } }
 	}
 	option = { 
 		name = tfv_raj.1.b
-		trigger = {
-			has_tech = early_fighter
-			NOT = { has_tech = fighter1}
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = early_fighter 
+					NOT = { has_tech = fighter1 }
+				} 
+			}
+			add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 20 producer = RA0 }
 		}
-		add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 20 producer = RAJ }
-	}
-	option = { 
-		name = tfv_raj.1.b
-		trigger = {
-			has_tech = fighter1
-			NOT = { has_tech = fighter2}
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = fighter1 
+					NOT = { has_tech = fighter2 }
+				} 
+			}
+			add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 20 producer = RA0 }
 		}
-		add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 20 producer = RAJ }
-	}
-	option = { 
-		name = tfv_raj.1.b
-		trigger = {
-			has_tech = fighter2
-			NOT = { has_tech = fighter3}
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = fighter2 
+					NOT = { has_tech = fighter3 }
+				} 
+			}
+			add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 20 producer = RA0 }
 		}
-		add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 20 producer = RAJ }
-	}
-	option = { 
-		name = tfv_raj.1.b
-		trigger = {
-			has_tech = fighter3
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = fighter3 
+					NOT = { has_tech = jet_fighter1 }
+				} 
+			}
+			add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 20 producer = RA0 }
 		}
-		add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 20 producer = RAJ }
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = jet_fighter1 
+					NOT = { has_tech = jet_fighter2 }
+				} 
+			}
+			add_equipment_to_stockpile = { type = jet_fighter_equipment_1 amount = 20 producer = RA0 }
+		}
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = jet_fighter2 
+				} 
+			}
+			add_equipment_to_stockpile = { type = jet_fighter_equipment_2 amount = 20 producer = RA0 }
+		}
 	}
 
 }
@@ -64,34 +89,60 @@ country_event = {
 
 	option = { 
 		name = tfv_raj.2.a
-		trigger = {
-			has_tech = early_fighter
-			NOT = { has_tech = fighter1}
+		
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = early_fighter 
+					NOT = { has_tech = fighter1 }
+				} 
+			}
+			add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 20 producer = RA0 }
 		}
-		add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 20 producer = ENG }
-	}
-	option = { 
-		name = tfv_raj.2.a
-		trigger = {
-			has_tech = fighter1
-			NOT = { has_tech = fighter2}
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = fighter1 
+					NOT = { has_tech = fighter2 }
+				} 
+			}
+			add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 20 producer = RA0 }
 		}
-		add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 20 producer = ENG }
-	}
-	option = { 
-		name = tfv_raj.2.a
-		trigger = {
-			has_tech = fighter2
-			NOT = { has_tech = fighter3}
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = fighter2 
+					NOT = { has_tech = fighter3 }
+				} 
+			}
+			add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 20 producer = RA0 }
 		}
-		add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 20 producer = ENG }
-	}
-	option = { 
-		name = tfv_raj.2.a
-		trigger = {
-			has_tech = fighter3
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = fighter3 
+					NOT = { has_tech = jet_fighter1 }
+				} 
+			}
+			add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 20 producer = RA0 }
 		}
-		add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 20 producer = ENG }
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = jet_fighter1 
+					NOT = { has_tech = jet_fighter2 }
+				} 
+			}
+			add_equipment_to_stockpile = { type = jet_fighter_equipment_1 amount = 20 producer = RA0 }
+		}
+		if = {
+			limit = { 
+				RA0 = { 
+					has_tech = jet_fighter2 
+				} 
+			}
+			add_equipment_to_stockpile = { type = jet_fighter_equipment_2 amount = 20 producer = RA0 }
+		}
 	}
 
 }
@@ -169,7 +220,7 @@ country_event = {
 	fire_only_once = yes
 
 	immediate = {
-		RAJ = {
+		RA0 = {
 			OVERLORD = {
 				save_event_target_as = Britain
 			}
@@ -188,11 +239,11 @@ country_event = {
 			modifier = {
 				factor = 2
 				has_opinion = {
-					target = RAJ
+					target = RA0
 					value > 75
 				}
 				has_opinion = {
-					target = ENG
+					target = EN0
 					value < 0
 				}
 			}
@@ -208,13 +259,13 @@ country_event = {
 		set_global_flag = RAJ_seek_help_from_soviet_promised
 		if = {
 			limit = {
-				RAJ = { NOT = { has_war_together_with = ENG } }
-				NOT = { has_war_with = ENG }
+				RA0 = { NOT = { has_war_together_with = EN0 } }
+				NOT = { has_war_with = EN0 }
 			}
-			ENG = { country_event = { id = tfv_raj.31 hours = 6 } }
+			EN0 = { country_event = { id = tfv_raj.31 hours = 6 } }
 			else = {
 				#Answer event - Accept
-				RAJ = { country_event = { id = tfv_raj.32 } }
+				RA0 = { country_event = { id = tfv_raj.32 } }
 			}
 		}
 	}
@@ -230,7 +281,7 @@ country_event = {
 			}
 		}
 		#Answer event - Reject
-		RAJ = { country_event = { id = tfv_raj.33 } }
+		RA0 = { country_event = { id = tfv_raj.33 } }
 	}
 }
 
@@ -253,13 +304,17 @@ country_event = {
 			base = 0
 		}
 		effect_tooltip = {
-			set_autonomy = {
-				target = RAJ
-				autonomy_state = autonomy_free				
+			RA0 = {
+				ROOT = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_free
+					}
+				}
 			}
-			SOV = { add_to_faction = RAJ }			
+			SO0 = { add_to_faction = RA0 }			
 		}
-		RAJ = { country_event = { id = tfv_raj.34 hours = 6 } }
+		RA0 = { country_event = { id = tfv_raj.34 hours = 6 } }
 		hidden_effect = { news_event = { id = news.281 hours = 12 } }
 	}
 
@@ -270,7 +325,7 @@ country_event = {
 			base = 1
 		}
 		set_global_flag = RAJ_seek_help_from_soviet_ENG_reject
-		RAJ = { country_event = { id = tfv_raj.32 } } #Answer event
+		RA0 = { country_event = { id = tfv_raj.32 } } #Answer event
 	}
 }
 
@@ -338,12 +393,16 @@ country_event = {
 
 	option = {
 		name = tfv_raj.34.a
-		diplomatic_relation = {
-			country = ENG
-			relation = puppet
-			active = no
+		EN0 = {
+			ROOT = {
+				diplomatic_relation = {
+					country = PREV
+					relation = puppet
+					active = no
+				}
+			}
 		}
-		SOV = { add_to_faction = RAJ }
+		SO0 = { add_to_faction = RA0 }
 		add_popularity = {
 			ideology = communism
 			popularity = 0.35
@@ -372,7 +431,7 @@ country_event = {
 	fire_only_once = yes
 
 	immediate = {
-		RAJ = {
+		RA0 = {
 			OVERLORD = {
 				save_event_target_as = Britain
 			}
@@ -391,11 +450,11 @@ country_event = {
 			modifier = {
 				factor = 2
 				has_opinion = {
-					target = RAJ
+					target = RA0
 					value > 75
 				}
 				has_opinion = {
-					target = ENG
+					target = EN0
 					value < 0
 				}
 			}
@@ -411,13 +470,13 @@ country_event = {
 		set_global_flag = RAJ_seek_help_from_germany_promised
 		if = {
 			limit = {
-				RAJ = { NOT = { has_war_together_with = ENG } }
-				NOT = { has_war_with = ENG }
+				RA0 = { NOT = { has_war_together_with = EN0 } }
+				NOT = { has_war_with = EN0 }
 			}
-			ENG = { country_event = { id = tfv_raj.41 hours = 6 } }
+			EN0 = { country_event = { id = tfv_raj.41 hours = 6 } }
 			else = {
 				#Answer event - Accept
-				RAJ = { country_event = { id = tfv_raj.42 } }
+				RA0 = { country_event = { id = tfv_raj.42 } }
 			}
 		}
 	}
@@ -433,7 +492,7 @@ country_event = {
 			}
 		}
 		#Answer event - Reject
-		RAJ = { country_event = { id = tfv_raj.43 } }
+		RA0 = { country_event = { id = tfv_raj.43 } }
 	}
 }
 
@@ -456,13 +515,17 @@ country_event = {
 			base = 0
 		}
 		effect_tooltip = {
-			set_autonomy = {
-				target = RAJ
-				autonomy_state = autonomy_free
+			RA0 = {
+				ROOT = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_free
+					}
+				}
 			}
-			GER = { add_to_faction = RAJ }
+			GE0 = { add_to_faction = RA0 }
 		}
-		RAJ = { country_event = { id = tfv_raj.44 hours = 6 } }
+		RA0 = { country_event = { id = tfv_raj.44 hours = 6 } }
 		hidden_effect = { news_event = { id = news.280 hours = 12 } }
 	}
 
@@ -473,7 +536,7 @@ country_event = {
 			base = 1
 		}
 		set_global_flag = RAJ_seek_help_from_germany_ENG_reject
-		RAJ = { country_event = { id = tfv_raj.42 } } #Answer event
+		RA0 = { country_event = { id = tfv_raj.42 } } #Answer event
 	}
 }
 
@@ -541,12 +604,16 @@ country_event = {
 
 	option = {
 		name = tfv_raj.44.a
-		diplomatic_relation = {
-			country = ENG
-			relation = puppet
-			active = no
+		EN0 = {
+			ROOT = {
+				diplomatic_relation = {
+					country = PREV
+					relation = puppet
+					active = no
+				}
+			}
 		}
-		GER = { add_to_faction = RAJ }
+		GE0 = { add_to_faction = RA0 }
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.35
@@ -576,15 +643,15 @@ country_event = {
 	option = {
 		name = tfv_raj.201.a
 		
-		if = {
-			limit = {
-				RAJ = { is_ai = yes }
-			}
 		
+		effect_tooltip = {
+			if = {
+				limit = { NOT = { has_tech = paratroopers } }
+				set_technology = { paratroopers = 1 }
+			}
 			division_template = {
 				name = "Battaglione Azad Hindoustan" #Hindu paratrooper division created for Italy
-				division_names_group = ITA_PAR_01
-				is_locked = yes
+				division_names_group = RAJ_PAR_01
 				regiments = {
 					paratrooper = { x = 0 y = 0 }
 					paratrooper = { x = 0 y = 1 }
@@ -595,21 +662,12 @@ country_event = {
 					paratrooper = { x = 1 y = 2 }
 				}
 			}
-
 			random_owned_controlled_state = {
 				prioritize = { 2 }
-				
-				custom_effect_tooltip = tfv_raj_focus_paratrooper_tt
-				hidden_effect = {
-					create_unit = { 
-						division = "name = \"Battaglione Azad Hindoustan\" division_template = \"Battaglione Azad Hindoustan\" start_experience_factor = 1.0" 
-						owner = ITA
-					}
+				create_unit = { 
+					division = "name = \"Battaglione Azad Hindoustan\" division_template = \"Battaglione Azad Hindoustan\" start_experience_factor = 1.0" 
+					owner = ROOT
 				}
-			}
-			
-			else = {
-				custom_effect_tooltip = tfv_raj_focus_paratrooper_tt
 			}
 		}
 	}

@@ -1,0 +1,26 @@
+
+state={
+	id=831
+	name="STATE_831" # South Tyrol
+	manpower = 304784
+	
+	state_category = rural
+	
+	resources={
+	}
+	history={
+		victory_points = {
+			9630 1
+		}
+		owner = ITA
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = ITA
+		add_core_of = AUS
+	}
+
+	provinces={
+		11615 9630 6675 13818
+	}
+}

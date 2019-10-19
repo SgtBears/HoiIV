@@ -340,7 +340,7 @@ units = {
 	division= {	# "2ème Div. d'Inf. Nord-Africaine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 42
+			name_order = 2
 		}
 		location = 575
 		division_template = "Division Coloniale" 			# Series A Division (less experience, 2nd tier equip)
@@ -363,7 +363,7 @@ units = {
 	division= {	# "5ème Div. d'Inf. Nord-Africaine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 45
+			name_order = 17
 		}
 		location = 3447
 		division_template = "Division Coloniale" 			# Series A Division (less experience, 2nd tier equip)
@@ -443,7 +443,7 @@ units = {
 	division= {	# "1ère Div. d'Inf. Coloniale"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 1
+			name_order = 5
 		}
 		location = 3560
 		division_template = "Division Coloniale" 			# Series A Division (less experience, 2nd tier equip)
@@ -612,7 +612,7 @@ units = {
 	division= {	# "3ème Div. d'Inf. Nord-Africaine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 43
+			name_order = 3
 		}
 		location = 11502
 		division_template = "Division Coloniale"	 			# Series A Division (less experience, 2nd tier equip)
@@ -722,7 +722,7 @@ units = {
 	division= {	# "3ème Div. d'Inf. Coloniale"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 3
+			name_order = 7
 		}
 		location = 3629
 		division_template = "Division Coloniale"	 			# Series A Division (less experience, 2nd tier equip)
@@ -754,7 +754,7 @@ units = {
 	division= {	# "6ème Div. d'Inf. Coloniale"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 6
+			name_order = 19
 		}
 		location = 9503
 		division_template = "Division Coloniale" 				# Series A Division (less experience, 2nd tier equip)
@@ -765,7 +765,7 @@ units = {
 	division= {	# "4ème Div. d'Inf. Nord-Africaine"
 			division_name = {
 			is_name_ordered = yes
-			name_order = 44
+			name_order = 4
 		}
 	location = 9503
 		division_template = "Division Coloniale"	 			# Series A Division (less experience, 2nd tier equip)
@@ -821,7 +821,7 @@ units = {
 	division= {	# "4ème Div. d'Inf. Coloniale"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 8
 		}
 		location = 6529
 		division_template = "Division Coloniale"	 			# Series A Division (less experience, 2nd tier equip)
@@ -910,7 +910,7 @@ units = {
 	division= {	# "5ème Div. d'Inf. Coloniale"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 5
+			name_order = 17
 		}
 		location = 9523
 		division_template = "Division Coloniale" 			# Series A Division (less experience, 2nd tier equip)
@@ -921,7 +921,7 @@ units = {
 	division= {	# "7ème Div. d'Inf. Coloniale"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 7
+			name_order = 20
 		}
 		location = 9523
 		division_template = "Division Coloniale" 			# Series A Division (less experience, 2nd tier equip)
@@ -1041,7 +1041,7 @@ units = {
 	division= {	# "2ème Div. d'Inf. Coloniale"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 6
 		}
 		location = 3764
 		division_template = "Division Coloniale"	 				# Series A Division (less experience, 2nd tier equip)
@@ -1132,7 +1132,7 @@ units = {
 	division= {	# "1ère Div. d'Inf. Nord-Africaine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 41
+			name_order = 1
 		}
 		location = 3764
 		division_template = "Division Coloniale"	 				# Series A Division (less experience, 2nd tier equip)
@@ -1302,7 +1302,7 @@ units = {
 	division= {	# "2e Division Marocaine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 62
+			name_order = 22
 		}
 		location = 7069
 		division_template = "Division Coloniale" 					# Colonial division (low experience, reserve equipment)
@@ -1314,7 +1314,7 @@ units = {
 	division= {	# "3e Division Marocaine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 63
+			name_order = 23
 		}
 		location = 7069
 		division_template = "Division Coloniale"	 				# Colonial division (low experience, reserve equipment)
@@ -1381,7 +1381,7 @@ units = {
 	division= {	# "Division de Tonkin"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 91
+			name_order = 9
 		}
 		location = 4075
 		division_template = "Division Coloniale" 			# Reserve Division (low experience, reserve equip)
@@ -1393,7 +1393,7 @@ units = {
 	division= {	# "Division de Cochinchine-Cambodge"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 92
+			name_order = 10
 		}
 		location = 4401
 		division_template = "Division Coloniale" 			# Reserve Division (low experience, reserve equip)

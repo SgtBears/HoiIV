@@ -1,0 +1,22 @@
+state={
+	id=885
+	name="STATE_885"
+	manpower = 1884
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = AST
+		add_core_of = QUN
+	}
+
+	provinces={
+		10955 10336 2221 14352
+	}
+}

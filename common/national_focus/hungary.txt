@@ -114,7 +114,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = HUN_hungarian_monarchy
-			set_party_name = { ideology = neutrality long_name = HUN_legitimists_party_long name = HUN_legitimists_party }
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = HUN_gusztav_gratz
 		}
@@ -135,7 +134,7 @@ focus_tree = {
 		}
 
 		available = {
-			neutrality > 0.3
+			monarchism > 0.3
 		}
 
 		bypass = {
@@ -176,7 +175,10 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = neutrality
+			OR = {
+				has_government = neutrality
+				has_government = monarchism
+			}
 		}
 
 		bypass = {
@@ -188,6 +190,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_politics = { ruling_party = monarchism elections_allowed = no }
+			set_party_name = { ideology = democratic long_name = HOL_CHU_party_long name = HOL_CHU_party }
 			create_navy_leader = {
 				name = "Miklós Horthy"
 				gfx = GFX_Portrait_hungary_miklos_horthy_admiral
@@ -198,16 +202,6 @@ focus_tree = {
 				defense_skill = 2
 				maneuvering_skill = 2
 				coordination_skill = 4				
-			}
-			create_country_leader = {
-				name = "Otto von Habsburg"
-				desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
-				picture = GFX_Portrait_hungary_otto_von_hapsburg
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					
-				}
 			}
 			swap_ideas = {
 				add_idea = HUN_habsburg_restored
@@ -1132,7 +1126,8 @@ focus_tree = {
 		available = {
 			OR = {
 				has_government = fascism
-				has_government = neutrality				
+				has_government = monarchism		
+				has_government = neutrality		
 			}
 		}
 
@@ -1152,6 +1147,48 @@ focus_tree = {
 				remove_idea = HUN_hungarian_monarchy_2
 			}
 			set_cosmetic_tag = HUN_MONARCHY
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = { ideology = fascism popularity = 0.05 }
+				create_country_leader = {
+					name = "Friedrich Franz of Mecklenburg-Schwerin"
+					desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
+					picture = GFX_Portrait_hungary_friedrich_franz
+					expire = "1965.1.1"
+					ideology = royalism
+					traits = {
+						fascist_sympathies
+					}
+					id = 504 #Royal Franz
+				}
+				hidden_effect = {
+					create_country_leader = {
+						name = "Friedrich Franz of Mecklenburg-Schwerin"
+						desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
+						picture = GFX_Portrait_hungary_friedrich_franz
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							fascist_sympathies
+						}
+						id = 501 #Neutral Franz
+					}
+				}
+				hidden_effect = {
+					create_country_leader = {
+						name = "Friedrich Franz of Mecklenburg-Schwerin"
+						desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
+						picture = GFX_Portrait_hungary_friedrich_franz
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+						id = 502 #Nazi Franz
+					}
+				}
+			}
 			if = {
 				limit = {
 					has_government = neutrality
@@ -1174,13 +1211,14 @@ focus_tree = {
 						desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
 						picture = GFX_Portrait_hungary_friedrich_franz
 						expire = "1965.1.1"
-						ideology = nazism
+						ideology = royalism
 						traits = {
+							fascist_sympathies
 						}
-						id = 502 #Nazi Franz
+						id = 504 #Royal Franz
 					}
 				}
-				else = {
+				hidden_effect = {
 					create_country_leader = {
 						name = "Friedrich Franz of Mecklenburg-Schwerin"
 						desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
@@ -1191,6 +1229,18 @@ focus_tree = {
 						}
 						id = 502 #Nazi Franz
 					}
+				}
+			}
+			else = {
+				create_country_leader = {
+					name = "Friedrich Franz of Mecklenburg-Schwerin"
+					desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
+					picture = GFX_Portrait_hungary_friedrich_franz
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+					id = 502 #Nazi Franz
 				}
 			}
 			custom_effect_tooltip = available_political_advisor
@@ -1434,11 +1484,13 @@ focus_tree = {
 				NOT = { has_war_with = AU0 }
 				OR = {
 					has_government = neutrality
+					has_government = monarchism
 					has_government = fascism
 				}
 			}
 			AU0 = {
 				OR = {
+					has_government = monarchism
 					has_government = neutrality
 					has_government = fascism
 				}
@@ -4792,6 +4844,12 @@ focus_tree = {
 			add_ideas = HUN_naval_warfare
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = HUN_ganz_danubius
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = generic_naval_aircraft_manufacturer
+			custom_effect_tooltip = available_chief_of_navy
+			show_ideas_tooltip = HUN_reszo_kastner
+			custom_effect_tooltip = available_chief_of_navy
+			show_ideas_tooltip = HUN_francois_deak
 		}
 	}
 

@@ -1,0 +1,32 @@
+political_actions = {
+
+	rename_cities_laayoune = {
+
+		allowed = {
+			
+		}
+		visible = {
+			owns_state = 699
+			has_full_control_of_state = 699
+		}
+		available = {
+			owns_state = 699
+			has_full_control_of_state = 699
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			date > 1940.1.1
+		}
+		complete_effect = {
+			set_province_name = {
+				id = 7979
+				name = "El Aaiún"
+			}
+		}
+	}
+
+}

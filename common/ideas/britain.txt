@@ -1116,7 +1116,7 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.01
-				neutrality_drift = 0.1
+				monarchism_drift = 0.1
 			}
 
 			picture = ast_abandon_the_westminster_system
@@ -1133,7 +1133,7 @@ ideas = {
 			}
 
 			available = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 
 			allowed_civil_war = {
@@ -1141,13 +1141,12 @@ ideas = {
 			}
 
 			modifier = {
-				neutrality_drift = 0.1
+				monarchism_drift = 0.1
 				political_power_factor = 0.15
-				generate_wargoal_tension = -0.5
-				lend_lease_tension = -0.4
-				send_volunteers_tension = -0.4
-				guarantee_tension = -0.4
-				drift_defence_factor = 0.3
+				generate_wargoal_tension = -0.25
+				lend_lease_tension = -0.25
+				send_volunteers_tension = -0.25
+				guarantee_tension = -0.25
 			}
 
 			picture = eng_the_kings_party
@@ -2064,7 +2063,7 @@ ideas = {
 				NOT = { has_completed_focus = ENG_steady_as_she_goes }
 			}
 			available = {
-				has_government = neutrality
+				has_government = monarchism
 				has_completed_focus = ENG_the_kings_party
 				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
@@ -2091,7 +2090,7 @@ ideas = {
 				NOT = { has_completed_focus = ENG_steady_as_she_goes }
 			}
 			available = {
-				has_government = neutrality
+				has_government = monarchism
 				has_completed_focus = ENG_the_kings_party
 			}
 			
@@ -2117,7 +2116,7 @@ ideas = {
 				NOT = { has_completed_focus = ENG_steady_as_she_goes }
 			}
 			available = {
-				has_government = neutrality
+				has_government = monarchism
 				has_completed_focus = ENG_the_kings_party
 			}
 			

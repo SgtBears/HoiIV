@@ -1,0 +1,42 @@
+﻿###########################
+# Accurate Map Events
+###########################
+
+add_namespace = am.test_events
+
+
+country_event = {
+	id = am.test_events.1
+	title = am.test_events.1.t
+	desc = am.test_events.1.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	
+	option = { #a great idea!
+		name = am.test_events.1.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+		}
+	}
+
+}
+country_event = {
+	id = am.test_events.2
+	title = am.test_events.1.t
+	desc = am.test_events.1.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	
+	option = { #a great idea!
+		name = am.test_events.1.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = GER
+		}
+	}
+
+}

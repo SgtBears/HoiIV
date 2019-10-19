@@ -14,6 +14,7 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = USA
+		add_core_of = USB
 		add_core_of = MIC
 		victory_points = {
 			6769 1

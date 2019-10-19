@@ -161,7 +161,7 @@ leader_traits = {
 
 	wallis_fancy_title = {
 		random = no
-		neutrality_drift = 0.05
+		monarchism_drift = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -228,7 +228,7 @@ leader_traits = {
 		sprite = 10
 		political_power_factor = -0.1
 		stability_factor = 0.05
-		neutrality_drift = 0.05
+		monarchism_drift = 0.05
 		consumer_goods_factor = -0.05
 		
 		ai_will_do = {
@@ -259,7 +259,7 @@ leader_traits = {
 
 	humble = {
 		random = no
-		neutrality_drift = 0.05
+		monarchism_drift = 0.05
 		consumer_goods_factor = -0.05
 		
 		ai_will_do = {
@@ -923,6 +923,7 @@ leader_traits = {
 		sprite = 13
 		fascism_drift = 0.1
 		
+		
 		ai_will_do = {
 			factor = 1
 			modifier = { 
@@ -935,7 +936,7 @@ leader_traits = {
 		random = no
 		# Boosts Unaligned
 		sprite = 13
-		neutrality_drift = 0.1
+		monarchism_drift = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -1411,7 +1412,7 @@ leader_traits = {
 		sprite = 13
 
 		war_support_factor = 0.1
-		neutrality_drift = 0.1
+		monarchism_drift = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -1516,7 +1517,7 @@ leader_traits = {
 	monarchist_media_mogul = {
 		sprite = 13
 		random = no
-		neutrality_drift = 0.1
+		monarchism_drift = 0.1
 		
 		ai_will_do = {
 			factor = 2

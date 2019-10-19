@@ -43,32 +43,32 @@ SHX_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { SHX_INF_01 }
 
-	fallback_name = "%d Shanxi Juntuán"
+	fallback_name = "%d. Shanxi Juntuán"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Shanxi Juntuán" }			# fictional warlord corps
-		2 = { "%d Shanxi Juntuán" }			
-		3 = { "%d Shanxi Juntuán" }			
-		4 = { "%d Shanxi Juntuán" }			
-		5 = { "%d Shanxi Juntuán" }			
-		6 = { "%d Shanxi Juntuán" }			
-		7 = { "%d Shanxi Juntuán" }			
-		8 = { "%d Shanxi Juntuán" }			
-		9 = { "%d Shanxi Juntuán" }			
-		10 = { "%d Shanxi Juntuán" }		
-		11 = { "%d Shanxi Juntuán" }		
-		12 = { "%d Shanxi Juntuán" }		
-		13 = { "%d Shanxi Juntuán" }		
-		14 = { "%d Shanxi Juntuán" }		
-		15 = { "%d Shanxi Juntuán" }		
-		16 = { "%d Shanxi Juntuán" }		
-		17 = { "%d Shanxi Juntuán" }		
-		18 = { "%d Shanxi Juntuán" }		
-		19 = { "%d Shanxi Juntuán" }		
-		20 = { "%d Shanxi Juntuán" }		
+		1 = { "%d. Shanxi Juntuán" }			# fictional warlord corps
+		2 = { "%d. Shanxi Juntuán" }			
+		3 = { "%d. Shanxi Juntuán" }			
+		4 = { "%d. Shanxi Juntuán" }			
+		5 = { "%d. Shanxi Juntuán" }			
+		6 = { "%d. Shanxi Juntuán" }			
+		7 = { "%d. Shanxi Juntuán" }			
+		8 = { "%d. Shanxi Juntuán" }			
+		9 = { "%d. Shanxi Juntuán" }			
+		10 = { "%d. Shanxi Juntuán" }		
+		11 = { "%d. Shanxi Juntuán" }		
+		12 = { "%d. Shanxi Juntuán" }		
+		13 = { "%d. Shanxi Juntuán" }		
+		14 = { "%d. Shanxi Juntuán" }		
+		15 = { "%d. Shanxi Juntuán" }		
+		16 = { "%d. Shanxi Juntuán" }		
+		17 = { "%d. Shanxi Juntuán" }		
+		18 = { "%d. Shanxi Juntuán" }		
+		19 = { "%d. Shanxi Juntuán" }		
+		20 = { "%d. Shanxi Juntuán" }		
 	}
 }
 
@@ -85,27 +85,27 @@ SHX_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { CHI_INF_01 }
 
-	fallback_name = "%d Shanxi Qibing Jun"
+	fallback_name = "%d. Shanxi Qibing Jun"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Shanxi Qibing Jun" }			# All fictional warlord cavalry corps
-		2 = { "%d Shanxi Qibing Jun" }
-		3 = { "%d Shanxi Qibing Jun" }
-		4 = { "%d Shanxi Qibing Jun" }
-		6 = { "%d Shanxi Qibing Jun" }
-		5 = { "%d Shanxi Qibing Jun" }
-		7 = { "%d Shanxi Qibing Jun" }
-		8 = { "%d Shanxi Qibing Jun" }
-		9 = { "%d Shanxi Qibing Jun" }
-		10 = { "%d Shanxi Qibing Jun" }
-		11 = { "%d Shanxi Qibing Jun" }
-		12 = { "%d Shanxi Qibing Jun" }
-		13 = { "%d Shanxi Qibing Jun" }
-		14 = { "%d Shanxi Qibing Jun" }
-		15 = { "%d Shanxi Qibing Jun" }
+		1 = { "%d. Shanxi Qibing Jun" }			# All fictional warlord cavalry corps
+		2 = { "%d. Shanxi Qibing Jun" }
+		3 = { "%d. Shanxi Qibing Jun" }
+		4 = { "%d. Shanxi Qibing Jun" }
+		6 = { "%d. Shanxi Qibing Jun" }
+		5 = { "%d. Shanxi Qibing Jun" }
+		7 = { "%d. Shanxi Qibing Jun" }
+		8 = { "%d. Shanxi Qibing Jun" }
+		9 = { "%d. Shanxi Qibing Jun" }
+		10 = { "%d. Shanxi Qibing Jun" }
+		11 = { "%d. Shanxi Qibing Jun" }
+		12 = { "%d. Shanxi Qibing Jun" }
+		13 = { "%d. Shanxi Qibing Jun" }
+		14 = { "%d. Shanxi Qibing Jun" }
+		15 = { "%d. Shanxi Qibing Jun" }
 	}
 }
 
@@ -122,32 +122,32 @@ SHX_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SHX_INF_01 }
 
-	fallback_name = "%d Shanxi Juntuán"
+	fallback_name = "%d. Shanxi Juntuán"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Shanxi Juntuán" }			# fictional warlord corps
-		2 = { "%d Shanxi Juntuán" }			
-		3 = { "%d Shanxi Juntuán" }			
-		4 = { "%d Shanxi Juntuán" }			
-		5 = { "%d Shanxi Juntuán" }			
-		6 = { "%d Shanxi Juntuán" }			
-		7 = { "%d Shanxi Juntuán" }			
-		8 = { "%d Shanxi Juntuán" }			
-		9 = { "%d Shanxi Juntuán" }			
-		10 = { "%d Shanxi Juntuán" }		
-		11 = { "%d Shanxi Juntuán" }		
-		12 = { "%d Shanxi Juntuán" }		
-		13 = { "%d Shanxi Juntuán" }		
-		14 = { "%d Shanxi Juntuán" }		
-		15 = { "%d Shanxi Juntuán" }		
-		16 = { "%d Shanxi Juntuán" }		
-		17 = { "%d Shanxi Juntuán" }		
-		18 = { "%d Shanxi Juntuán" }		
-		19 = { "%d Shanxi Juntuán" }		
-		20 = { "%d Shanxi Juntuán" }		
+		1 = { "%d. Shanxi Juntuán" }			# fictional warlord corps
+		2 = { "%d. Shanxi Juntuán" }			
+		3 = { "%d. Shanxi Juntuán" }			
+		4 = { "%d. Shanxi Juntuán" }			
+		5 = { "%d. Shanxi Juntuán" }			
+		6 = { "%d. Shanxi Juntuán" }			
+		7 = { "%d. Shanxi Juntuán" }			
+		8 = { "%d. Shanxi Juntuán" }			
+		9 = { "%d. Shanxi Juntuán" }			
+		10 = { "%d. Shanxi Juntuán" }		
+		11 = { "%d. Shanxi Juntuán" }		
+		12 = { "%d. Shanxi Juntuán" }		
+		13 = { "%d. Shanxi Juntuán" }		
+		14 = { "%d. Shanxi Juntuán" }		
+		15 = { "%d. Shanxi Juntuán" }		
+		16 = { "%d. Shanxi Juntuán" }		
+		17 = { "%d. Shanxi Juntuán" }		
+		18 = { "%d. Shanxi Juntuán" }		
+		19 = { "%d. Shanxi Juntuán" }		
+		20 = { "%d. Shanxi Juntuán" }		
 	}
 }
 
@@ -164,32 +164,32 @@ SHX_MEC_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SHX_INF_01 }
 
-	fallback_name = "%d Shanxi Juntuán"
+	fallback_name = "%d. Shanxi Juntuán"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Shanxi Juntuán" }			# fictional warlord corps
-		2 = { "%d Shanxi Juntuán" }			
-		3 = { "%d Shanxi Juntuán" }			
-		4 = { "%d Shanxi Juntuán" }			
-		5 = { "%d Shanxi Juntuán" }			
-		6 = { "%d Shanxi Juntuán" }			
-		7 = { "%d Shanxi Juntuán" }			
-		8 = { "%d Shanxi Juntuán" }			
-		9 = { "%d Shanxi Juntuán" }			
-		10 = { "%d Shanxi Juntuán" }		
-		11 = { "%d Shanxi Juntuán" }		
-		12 = { "%d Shanxi Juntuán" }		
-		13 = { "%d Shanxi Juntuán" }		
-		14 = { "%d Shanxi Juntuán" }		
-		15 = { "%d Shanxi Juntuán" }		
-		16 = { "%d Shanxi Juntuán" }		
-		17 = { "%d Shanxi Juntuán" }		
-		18 = { "%d Shanxi Juntuán" }		
-		19 = { "%d Shanxi Juntuán" }		
-		20 = { "%d Shanxi Juntuán" }		
+		1 = { "%d. Shanxi Juntuán" }			# fictional warlord corps
+		2 = { "%d. Shanxi Juntuán" }			
+		3 = { "%d. Shanxi Juntuán" }			
+		4 = { "%d. Shanxi Juntuán" }			
+		5 = { "%d. Shanxi Juntuán" }			
+		6 = { "%d. Shanxi Juntuán" }			
+		7 = { "%d. Shanxi Juntuán" }			
+		8 = { "%d. Shanxi Juntuán" }			
+		9 = { "%d. Shanxi Juntuán" }			
+		10 = { "%d. Shanxi Juntuán" }		
+		11 = { "%d. Shanxi Juntuán" }		
+		12 = { "%d. Shanxi Juntuán" }		
+		13 = { "%d. Shanxi Juntuán" }		
+		14 = { "%d. Shanxi Juntuán" }		
+		15 = { "%d. Shanxi Juntuán" }		
+		16 = { "%d. Shanxi Juntuán" }		
+		17 = { "%d. Shanxi Juntuán" }		
+		18 = { "%d. Shanxi Juntuán" }		
+		19 = { "%d. Shanxi Juntuán" }		
+		20 = { "%d. Shanxi Juntuán" }		
 	}
 }
 
@@ -210,32 +210,32 @@ SHX_MNT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SHX_INF_01 }
 
-	fallback_name = "%d Shanxi Juntuán"
+	fallback_name = "%d. Shanxi Juntuán"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Shanxi Juntuán" }			# fictional warlord corps
-		2 = { "%d Shanxi Juntuán" }			
-		3 = { "%d Shanxi Juntuán" }			
-		4 = { "%d Shanxi Juntuán" }			
-		5 = { "%d Shanxi Juntuán" }			
-		6 = { "%d Shanxi Juntuán" }			
-		7 = { "%d Shanxi Juntuán" }			
-		8 = { "%d Shanxi Juntuán" }			
-		9 = { "%d Shanxi Juntuán" }			
-		10 = { "%d Shanxi Juntuán" }		
-		11 = { "%d Shanxi Juntuán" }		
-		12 = { "%d Shanxi Juntuán" }		
-		13 = { "%d Shanxi Juntuán" }		
-		14 = { "%d Shanxi Juntuán" }		
-		15 = { "%d Shanxi Juntuán" }		
-		16 = { "%d Shanxi Juntuán" }		
-		17 = { "%d Shanxi Juntuán" }		
-		18 = { "%d Shanxi Juntuán" }		
-		19 = { "%d Shanxi Juntuán" }		
-		20 = { "%d Shanxi Juntuán" }		
+		1 = { "%d. Shanxi Juntuán" }			# fictional warlord corps
+		2 = { "%d. Shanxi Juntuán" }			
+		3 = { "%d. Shanxi Juntuán" }			
+		4 = { "%d. Shanxi Juntuán" }			
+		5 = { "%d. Shanxi Juntuán" }			
+		6 = { "%d. Shanxi Juntuán" }			
+		7 = { "%d. Shanxi Juntuán" }			
+		8 = { "%d. Shanxi Juntuán" }			
+		9 = { "%d. Shanxi Juntuán" }			
+		10 = { "%d. Shanxi Juntuán" }		
+		11 = { "%d. Shanxi Juntuán" }		
+		12 = { "%d. Shanxi Juntuán" }		
+		13 = { "%d. Shanxi Juntuán" }		
+		14 = { "%d. Shanxi Juntuán" }		
+		15 = { "%d. Shanxi Juntuán" }		
+		16 = { "%d. Shanxi Juntuán" }		
+		17 = { "%d. Shanxi Juntuán" }		
+		18 = { "%d. Shanxi Juntuán" }		
+		19 = { "%d. Shanxi Juntuán" }		
+		20 = { "%d. Shanxi Juntuán" }		
 	}
 }
 
@@ -252,7 +252,7 @@ SHX_GAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { CHI_INF_01 }
 
-	fallback_name = "%d Shanxi Jingbei"
+	fallback_name = "%d. Shanxi Jingbei"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
@@ -275,16 +275,256 @@ SHX_GAR_01 =
 		135 = { "3 Taiyuan Baoan Ke" }		
 		136 = { "2 Suiyuan Baoan Ke" }		
 		137 = { "3 Suiyuan Baoan Ke" }		
-		1 = { "%d Shanxi Jingbei" }		
-		2 = { "%d Shanxi Jingbei" }		
-		3 = { "%d Shanxi Jingbei" }		
-		4 = { "%d Shanxi Jingbei" }		
-		5 = { "%d Shanxi Jingbei" }		
-		6 = { "%d Shanxi Jingbei" }		
-		7 = { "%d Shanxi Jingbei" }		
-		8 = { "%d Shanxi Jingbei" }		
-		9 = { "%d Shanxi Jingbei" }		
-		10 = { "%d Shanxi Jingbei" }		
+		1 = { "%d. Shanxi Jingbei" }		
+		2 = { "%d. Shanxi Jingbei" }		
+		3 = { "%d. Shanxi Jingbei" }		
+		4 = { "%d. Shanxi Jingbei" }		
+		5 = { "%d. Shanxi Jingbei" }		
+		6 = { "%d. Shanxi Jingbei" }		
+		7 = { "%d. Shanxi Jingbei" }		
+		8 = { "%d. Shanxi Jingbei" }		
+		9 = { "%d. Shanxi Jingbei" }		
+		10 = { "%d. Shanxi Jingbei" }
+		11 = { "%d. Shanxi Jingbei" }
+		12 = { "%d. Shanxi Jingbei" }
+		13 = { "%d. Shanxi Jingbei" }
+		14 = { "%d. Shanxi Jingbei" }
+		15 = { "%d. Shanxi Jingbei" }
+		16 = { "%d. Shanxi Jingbei" }
+		17 = { "%d. Shanxi Jingbei" }
+		18 = { "%d. Shanxi Jingbei" }
+		19 = { "%d. Shanxi Jingbei" }
+		20 = { "%d. Shanxi Jingbei" }
+		21 = { "%d. Shanxi Jingbei" }
+		22 = { "%d. Shanxi Jingbei" }
+		23 = { "%d. Shanxi Jingbei" }
+		24 = { "%d. Shanxi Jingbei" }
+		25 = { "%d. Shanxi Jingbei" }
+		26 = { "%d. Shanxi Jingbei" }
+		27 = { "%d. Shanxi Jingbei" }
+		28 = { "%d. Shanxi Jingbei" }
+		29 = { "%d. Shanxi Jingbei" }
+		30 = { "%d. Shanxi Jingbei" }
+		31 = { "%d. Shanxi Jingbei" }
+		32 = { "%d. Shanxi Jingbei" }
+		33 = { "%d. Shanxi Jingbei" }
+		34 = { "%d. Shanxi Jingbei" }
+		35 = { "%d. Shanxi Jingbei" }
+		36 = { "%d. Shanxi Jingbei" }
+		37 = { "%d. Shanxi Jingbei" }
+		38 = { "%d. Shanxi Jingbei" }
+		39 = { "%d. Shanxi Jingbei" }
+		40 = { "%d. Shanxi Jingbei" }
+		41 = { "%d. Shanxi Jingbei" }
+		42 = { "%d. Shanxi Jingbei" }
+		43 = { "%d. Shanxi Jingbei" }
+		44 = { "%d. Shanxi Jingbei" }
+		45 = { "%d. Shanxi Jingbei" }
+		46 = { "%d. Shanxi Jingbei" }
+		47 = { "%d. Shanxi Jingbei" }
+		48 = { "%d. Shanxi Jingbei" }
+		49 = { "%d. Shanxi Jingbei" }
+		50 = { "%d. Shanxi Jingbei" }
+		51 = { "%d. Shanxi Jingbei" }
+		52 = { "%d. Shanxi Jingbei" }
+		53 = { "%d. Shanxi Jingbei" }
+		54 = { "%d. Shanxi Jingbei" }
+		55 = { "%d. Shanxi Jingbei" }
+		56 = { "%d. Shanxi Jingbei" }
+		57 = { "%d. Shanxi Jingbei" }
+		58 = { "%d. Shanxi Jingbei" }
+		59 = { "%d. Shanxi Jingbei" }
+		60 = { "%d. Shanxi Jingbei" }
+		61 = { "%d. Shanxi Jingbei" }
+		62 = { "%d. Shanxi Jingbei" }
+		63 = { "%d. Shanxi Jingbei" }
+		64 = { "%d. Shanxi Jingbei" }
+		65 = { "%d. Shanxi Jingbei" }
+		66 = { "%d. Shanxi Jingbei" }
+		67 = { "%d. Shanxi Jingbei" }
+		68 = { "%d. Shanxi Jingbei" }
+		69 = { "%d. Shanxi Jingbei" }
+		70 = { "%d. Shanxi Jingbei" }
+		71 = { "%d. Shanxi Jingbei" }
+		72 = { "%d. Shanxi Jingbei" }
+		73 = { "%d. Shanxi Jingbei" }
+		74 = { "%d. Shanxi Jingbei" }
+		75 = { "%d. Shanxi Jingbei" }
+		76 = { "%d. Shanxi Jingbei" }
+		77 = { "%d. Shanxi Jingbei" }
+		78 = { "%d. Shanxi Jingbei" }
+		79 = { "%d. Shanxi Jingbei" }
+		80 = { "%d. Shanxi Jingbei" }
+		81 = { "%d. Shanxi Jingbei" }
+		82 = { "%d. Shanxi Jingbei" }
+		83 = { "%d. Shanxi Jingbei" }
+		84 = { "%d. Shanxi Jingbei" }
+		85 = { "%d. Shanxi Jingbei" }
+		86 = { "%d. Shanxi Jingbei" }
+		87 = { "%d. Shanxi Jingbei" }
+		88 = { "%d. Shanxi Jingbei" }
+		89 = { "%d. Shanxi Jingbei" }
+		90 = { "%d. Shanxi Jingbei" }
+		91 = { "%d. Shanxi Jingbei" }
+		92 = { "%d. Shanxi Jingbei" }
+		93 = { "%d. Shanxi Jingbei" }
+		94 = { "%d. Shanxi Jingbei" }
+		95 = { "%d. Shanxi Jingbei" }
+		96 = { "%d. Shanxi Jingbei" }
+		97 = { "%d. Shanxi Jingbei" }
+		98 = { "%d. Shanxi Jingbei" }
+		99 = { "%d. Shanxi Jingbei" }
+		100 = { "%d. Shanxi Jingbei" }
+		106 = { "101. Shanxi Jingbei" }
+		107 = { "102. Shanxi Jingbei" }
+		108 = { "103. Shanxi Jingbei" }
+		109 = { "104. Shanxi Jingbei" }
+		110 = { "105. Shanxi Jingbei" }
+		116 = { "106. Shanxi Jingbei" }
+		117 = { "107. Shanxi Jingbei" }
+		118 = { "108. Shanxi Jingbei" }
+		119 = { "109. Shanxi Jingbei" }
+		120 = { "110. Shanxi Jingbei" }
+		121 = { "111. Shanxi Jingbei" }
+		122 = { "112. Shanxi Jingbei" }
+		123 = { "113. Shanxi Jingbei" }
+		124 = { "114. Shanxi Jingbei" }
+		125 = { "115. Shanxi Jingbei" }
+		126 = { "116. Shanxi Jingbei" }
+		127 = { "117. Shanxi Jingbei" }
+		128 = { "118. Shanxi Jingbei" }
+		129 = { "119. Shanxi Jingbei" }
+		130 = { "120. Shanxi Jingbei" }
+		138 = { "121. Shanxi Jingbei" }
+		139 = { "122. Shanxi Jingbei" }
+		140 = { "123. Shanxi Jingbei" }
+		141 = { "124. Shanxi Jingbei" }
+		142 = { "125. Shanxi Jingbei" }
+		143 = { "126. Shanxi Jingbei" }
+		144 = { "127. Shanxi Jingbei" }
+		145 = { "128. Shanxi Jingbei" }
+		146 = { "129. Shanxi Jingbei" }
+		147 = { "130. Shanxi Jingbei" }
+		148 = { "131. Shanxi Jingbei" }
+		149 = { "132. Shanxi Jingbei" }
+		150 = { "133. Shanxi Jingbei" }
+		151 = { "134. Shanxi Jingbei" }
+		152 = { "135. Shanxi Jingbei" }
+		153 = { "136. Shanxi Jingbei" }
+		154 = { "137. Shanxi Jingbei" }
+		155 = { "138. Shanxi Jingbei" }
+		156 = { "139. Shanxi Jingbei" }
+		157 = { "140. Shanxi Jingbei" }
+		158 = { "141. Shanxi Jingbei" }
+		159 = { "142. Shanxi Jingbei" }
+		160 = { "143. Shanxi Jingbei" }
+		161 = { "144. Shanxi Jingbei" }
+		162 = { "145. Shanxi Jingbei" }
+		163 = { "146. Shanxi Jingbei" }
+		164 = { "147. Shanxi Jingbei" }
+		165 = { "148. Shanxi Jingbei" }
+		166 = { "149. Shanxi Jingbei" }
+		167 = { "150. Shanxi Jingbei" }
+		168 = { "151. Shanxi Jingbei" }
+		169 = { "152. Shanxi Jingbei" }
+		170 = { "153. Shanxi Jingbei" }
+		171 = { "154. Shanxi Jingbei" }
+		172 = { "155. Shanxi Jingbei" }
+		173 = { "156. Shanxi Jingbei" }
+		174 = { "157. Shanxi Jingbei" }
+		175 = { "158. Shanxi Jingbei" }
+		176 = { "159. Shanxi Jingbei" }
+		177 = { "160. Shanxi Jingbei" }
+		178 = { "161. Shanxi Jingbei" }
+		179 = { "162. Shanxi Jingbei" }
+		180 = { "163. Shanxi Jingbei" }
+		181 = { "164. Shanxi Jingbei" }
+		182 = { "165. Shanxi Jingbei" }
+		183 = { "166. Shanxi Jingbei" }
+		184 = { "167. Shanxi Jingbei" }
+		185 = { "168. Shanxi Jingbei" }
+		186 = { "169. Shanxi Jingbei" }
+		187 = { "170. Shanxi Jingbei" }
+		188 = { "171. Shanxi Jingbei" }
+		189 = { "172. Shanxi Jingbei" }
+		190 = { "173. Shanxi Jingbei" }
+		191 = { "174. Shanxi Jingbei" }
+		192 = { "175. Shanxi Jingbei" }
+		193 = { "176. Shanxi Jingbei" }
+		194 = { "177. Shanxi Jingbei" }
+		195 = { "178. Shanxi Jingbei" }
+		196 = { "179. Shanxi Jingbei" }
+		197 = { "180. Shanxi Jingbei" }
+		198 = { "181. Shanxi Jingbei" }
+		199 = { "182. Shanxi Jingbei" }
+		200 = { "183. Shanxi Jingbei" }
+		201 = { "184. Shanxi Jingbei" }
+		202 = { "185. Shanxi Jingbei" }
+		203 = { "186. Shanxi Jingbei" }
+		204 = { "187. Shanxi Jingbei" }
+		205 = { "188. Shanxi Jingbei" }
+		206 = { "189. Shanxi Jingbei" }
+		207 = { "190. Shanxi Jingbei" }
+		208 = { "191. Shanxi Jingbei" }
+		209 = { "192. Shanxi Jingbei" }
+		210 = { "193. Shanxi Jingbei" }
+		211 = { "194. Shanxi Jingbei" }
+		212 = { "195. Shanxi Jingbei" }
+		213 = { "196. Shanxi Jingbei" }
+		214 = { "197. Shanxi Jingbei" }
+		215 = { "198. Shanxi Jingbei" }
+		216 = { "199. Shanxi Jingbei" }
+		217 = { "200. Shanxi Jingbei" }
+		218 = { "201. Shanxi Jingbei" }
+		219 = { "202. Shanxi Jingbei" }
+		220 = { "203. Shanxi Jingbei" }
+		221 = { "204. Shanxi Jingbei" }
+		222 = { "205. Shanxi Jingbei" }
+		223 = { "206. Shanxi Jingbei" }
+		224 = { "207. Shanxi Jingbei" }
+		225 = { "208. Shanxi Jingbei" }
+		226 = { "209. Shanxi Jingbei" }
+		227 = { "210. Shanxi Jingbei" }
+		228 = { "211. Shanxi Jingbei" }
+		229 = { "212. Shanxi Jingbei" }
+		230 = { "213. Shanxi Jingbei" }
+		231 = { "214. Shanxi Jingbei" }
+		232 = { "215. Shanxi Jingbei" }
+		233 = { "216. Shanxi Jingbei" }
+		234 = { "217. Shanxi Jingbei" }
+		235 = { "218. Shanxi Jingbei" }
+		236 = { "219. Shanxi Jingbei" }
+		237 = { "220. Shanxi Jingbei" }
+		238 = { "221. Shanxi Jingbei" }
+		239 = { "222. Shanxi Jingbei" }
+		240 = { "223. Shanxi Jingbei" }
+		241 = { "224. Shanxi Jingbei" }
+		242 = { "225. Shanxi Jingbei" }
+		243 = { "226. Shanxi Jingbei" }
+		244 = { "227. Shanxi Jingbei" }
+		245 = { "228. Shanxi Jingbei" }
+		246 = { "229. Shanxi Jingbei" }
+		247 = { "230. Shanxi Jingbei" }
+		248 = { "231. Shanxi Jingbei" }
+		249 = { "232. Shanxi Jingbei" }
+		250 = { "233. Shanxi Jingbei" }
+		251 = { "234. Shanxi Jingbei" }
+		252 = { "235. Shanxi Jingbei" }
+		253 = { "236. Shanxi Jingbei" }
+		254 = { "237. Shanxi Jingbei" }
+		255 = { "238. Shanxi Jingbei" }
+		256 = { "239. Shanxi Jingbei" }
+		257 = { "240. Shanxi Jingbei" }
+		258 = { "241. Shanxi Jingbei" }
+		259 = { "242. Shanxi Jingbei" }
+		260 = { "243. Shanxi Jingbei" }
+		261 = { "244. Shanxi Jingbei" }
+		262 = { "245. Shanxi Jingbei" }
+		263 = { "246. Shanxi Jingbei" }
+		264 = { "247. Shanxi Jingbei" }
+		265 = { "248. Shanxi Jingbei" }
+		266 = { "249. Shanxi Jingbei" }
+		267 = { "250. Shanxi Jingbei" }	
 	}
 }
 

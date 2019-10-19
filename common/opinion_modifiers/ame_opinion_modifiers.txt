@@ -37,5 +37,35 @@ opinion_modifiers = {
 	gave_newfoundland = {
 		value = 15
 	}
+	gave_yap = {
+		value = 15
+	}
+	gave_palau = {
+		value = 15
+	}
+	gave_ponape = {
+		value = 15
+	}
+	gave_microneisa = {
+		value = 15
+	}
+	gave_northern_mariana_islands = {
+		value = 15
+	}
+	gave_marshall_islands = {
+		value = 15
+	}
+	gave_truk = {
+		value = 15
+	}
+	gave_truk = {
+		value = 15
+	}
+	gave_kusaie = {
+		value = 15
+	}
+	gave_bougainville = {
+		value = 15
+	}
 
 }	

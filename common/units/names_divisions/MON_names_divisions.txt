@@ -44,32 +44,32 @@ MON_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MON_GAR_01 }
 
-	fallback_name = "%d-p Mongol Strelkovaya Div."
+	fallback_name = "%d-p Yavgan Tsergiin Diviz"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d-r Mongol Strelkovaya Div." }
-		2 = { "%d-p Mongol Strelkovaya Div." }
-		3 = { "%d-p Mongol Strelkovaya Div." }
-		4 = { "%d-p Mongol Strelkovaya Div." }
-		5 = { "%d-p Mongol Strelkovaya Div." }
-		6 = { "%d-p Mongol Strelkovaya Div." }
-		8 = { "%d-p Mongol Strelkovaya Div." }
-		10 = { "%d-p Mongol Strelkovaya Div." }
-		11 = { "%d-p Mongol Strelkovaya Div." }
-		12 = { "%d-p Mongol Strelkovaya Div." }
-		13 = { "%d-p Mongol Strelkovaya Div." }
-		14 = { "%d-p Mongol Strelkovaya Div." }
-		16 = { "%d-p Mongol Strelkovaya Div." }
-		17 = { "%d-p Mongol Strelkovaya Div." }
-		19 = { "%d-p Mongol Strelkovaya Div." }
-		21 = { "%d-p Mongol Strelkovaya Div." }
-		22 = { "%d-p Mongol Strelkovaya Div." }
-		23 = { "%d-p Mongol Strelkovaya Div." }
-		24 = { "%d-p Mongol Strelkovaya Div." }
-		25 = { "%d-p Mongol Strelkovaya Div." }
+		1 = { "%d-r Yavgan Tsergiin Diviz" }
+		2 = { "%d-p Yavgan Tsergiin Diviz" }
+		3 = { "%d-p Yavgan Tsergiin Diviz" }
+		4 = { "%d-p Yavgan Tsergiin Diviz" }
+		5 = { "%d-p Yavgan Tsergiin Diviz" }
+		6 = { "%d-p Yavgan Tsergiin Diviz" }
+		8 = { "%d-p Yavgan Tsergiin Diviz" }
+		10 = { "%d-p Yavgan Tsergiin Diviz" }
+		11 = { "%d-p Yavgan Tsergiin Diviz" }
+		12 = { "%d-p Yavgan Tsergiin Diviz" }
+		13 = { "%d-p Yavgan Tsergiin Diviz" }
+		14 = { "%d-p Yavgan Tsergiin Diviz" }
+		16 = { "%d-p Yavgan Tsergiin Diviz" }
+		17 = { "%d-p Yavgan Tsergiin Diviz" }
+		19 = { "%d-p Yavgan Tsergiin Diviz" }
+		21 = { "%d-p Yavgan Tsergiin Diviz" }
+		22 = { "%d-p Yavgan Tsergiin Diviz" }
+		23 = { "%d-p Yavgan Tsergiin Diviz" }
+		24 = { "%d-p Yavgan Tsergiin Diviz" }
+		25 = { "%d-p Yavgan Tsergiin Diviz" }
 
 	}
 }
@@ -87,22 +87,22 @@ MON_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MON_INF_01 }
 
-	fallback_name = "%d-p Morit Diviziin"
+	fallback_name = "%d-p Morin Tsereg Diviz"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d-r Morit Diviziin" }
-		2 = { "%d-p Morit Diviziin" }
-		3 = { "%d-p Morit Diviziin" }
-		4 = { "%d-p Morit Diviziin" }
-		5 = { "%d-p Morit Diviziin" }
-		6 = { "%d-p Morit Diviziin" }
-		7 = { "%d-p Morit Diviziin" }
-		8 = { "%d-p Morit Diviziin" }
-		9 = { "%d-p Morit Diviziin" }
-		10 = { "%d-p Morit Diviziin" }
+		1 = { "%d-r Morin Tsereg Diviz" }
+		2 = { "%d-p Morin Tsereg Diviz" }
+		3 = { "%d-p Morin Tsereg Diviz" }
+		4 = { "%d-p Morin Tsereg Diviz" }
+		5 = { "%d-p Morin Tsereg Diviz" }
+		6 = { "%d-p Morin Tsereg Diviz" }
+		7 = { "%d-p Morin Tsereg Diviz" }
+		8 = { "%d-p Morin Tsereg Diviz" }
+		9 = { "%d-p Morin Tsereg Diviz" }
+		10 = { "%d-p Morin Tsereg Diviz" }
 
 	}
 }
@@ -120,32 +120,32 @@ MON_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { MON_INF_01 }
 
-	fallback_name = "%d-r Mongol Motorizovannaya Div."
+	fallback_name = "%d-r Motortoi Diviz"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		2 = { "%d-p Mongol Motorizovannaya Div." }
-		1 = { "%d-r Mongol Motorizovannaya Div." }
-		3 = { "%d-p Mongol Motorizovannaya Div." }
-		4 = { "%d-p Mongol Motorizovannaya Div." }
-		5 = { "%d-p Mongol Motorizovannaya Div." }
-		6 = { "%d-p Mongol Motorizovannaya Div." }
-		8 = { "%d-p Mongol Motorizovannaya Div." }
-		10 = { "%d-p Mongol Motorizovannaya Div." }
-		11 = { "%d-p Mongol Motorizovannaya Div." }
-		12 = { "%d-p Mongol Motorizovannaya Div." }
-		13 = { "%d-p Mongol Motorizovannaya Div." }
-		14 = { "%d-p Mongol Motorizovannaya Div." }
-		16 = { "%d-p Mongol Motorizovannaya Div." }
-		17 = { "%d-p Mongol Motorizovannaya Div." }
-		19 = { "%d-p Mongol Motorizovannaya Div." }
-		21 = { "%d-p Mongol Motorizovannaya Div." }
-		22 = { "%d-p Mongol Motorizovannaya Div." }
-		23 = { "%d-p Mongol Motorizovannaya Div." }
-		24 = { "%d-p Mongol Motorizovannaya Div." }
-		25 = { "%d-p Mongol Motorizovannaya Div." }
+		2 = { "%d-p Motortoi Diviz" }
+		1 = { "%d-r Motortoi Diviz" }
+		3 = { "%d-p Motortoi Diviz" }
+		4 = { "%d-p Motortoi Diviz" }
+		5 = { "%d-p Motortoi Diviz" }
+		6 = { "%d-p Motortoi Diviz" }
+		8 = { "%d-p Motortoi Diviz" }
+		10 = { "%d-p Motortoi Diviz" }
+		11 = { "%d-p Motortoi Diviz" }
+		12 = { "%d-p Motortoi Diviz" }
+		13 = { "%d-p Motortoi Diviz" }
+		14 = { "%d-p Motortoi Diviz" }
+		16 = { "%d-p Motortoi Diviz" }
+		17 = { "%d-p Motortoi Diviz" }
+		19 = { "%d-p Motortoi Diviz" }
+		21 = { "%d-p Motortoi Diviz" }
+		22 = { "%d-p Motortoi Diviz" }
+		23 = { "%d-p Motortoi Diviz" }
+		24 = { "%d-p Motortoi Diviz" }
+		25 = { "%d-p Motortoi Diviz" }
 
 	}
 }
@@ -163,22 +163,22 @@ MON_ARM_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MON_INF_01 }
 
-	fallback_name = "%d-p Mongol Tankovaya Div."
+	fallback_name = "%d-p Tankiin Diviz"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d-r Mongol Tankovaya Div." }
-		2 = { "%d-p Mongol Tankovaya Div." }
-		3 = { "%d-p Mongol Tankovaya Div." }
-		4 = { "%d-p Mongol Tankovaya Div." }
-		5 = { "%d-p Mongol Tankovaya Div." }
-		6 = { "%d-p Mongol Tankovaya Div." }
-		7 = { "%d-p Mongol Tankovaya Div." }
-		8 = { "%d-p Mongol Tankovaya Div." }
-		9 = { "%d-p Mongol Tankovaya Div." }
-		10 = { "%d-p Mongol Tankovaya Div." }
+		1 = { "%d-r Tankiin Diviz" }
+		2 = { "%d-p Tankiin Diviz" }
+		3 = { "%d-p Tankiin Diviz" }
+		4 = { "%d-p Tankiin Diviz" }
+		5 = { "%d-p Tankiin Diviz" }
+		6 = { "%d-p Tankiin Diviz" }
+		7 = { "%d-p Tankiin Diviz" }
+		8 = { "%d-p Tankiin Diviz" }
+		9 = { "%d-p Tankiin Diviz" }
+		10 = { "%d-p Tankiin Diviz" }
 
 	}
 }
@@ -196,32 +196,32 @@ MON_MEC_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { MON_INF_01 }
 
-	fallback_name = "%d-p Mongol Motostrelkovaya Div."
+	fallback_name = "%d-p Myekhanikjsan Diviz"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d-r Mongol Motostrelkovaya Div." }
-		2 = { "%d-p Mongol Motostrelkovaya Div." }
-		3 = { "%d-p Mongol Motostrelkovaya Div." }
-		4 = { "%d-p Mongol Motostrelkovaya Div." }
-		5 = { "%d-p Mongol Motostrelkovaya Div." }
-		6 = { "%d-p Mongol Motostrelkovaya Div." }
-		8 = { "%d-p Mongol Motostrelkovaya Div." }
-		10 = { "%d-p Mongol Motostrelkovaya Div." }
-		11 = { "%d-p Mongol Motostrelkovaya Div." }
-		12 = { "%d-p Mongol Motostrelkovaya Div." }
-		13 = { "%d-p Mongol Motostrelkovaya Div." }
-		14 = { "%d-p Mongol Motostrelkovaya Div." }
-		16 = { "%d-p Mongol Motostrelkovaya Div." }
-		17 = { "%d-p Mongol Motostrelkovaya Div." }
-		19 = { "%d-p Mongol Motostrelkovaya Div." }
-		21 = { "%d-p Mongol Motostrelkovaya Div." }
-		22 = { "%d-p Mongol Motostrelkovaya Div." }
-		23 = { "%d-p Mongol Motostrelkovaya Div." }
-		24 = { "%d-p Mongol Motostrelkovaya Div." }
-		25 = { "%d-p Mongol Motostrelkovaya Div." }
+		1 = { "%d-r Myekhanikjsan Diviz" }
+		2 = { "%d-p Myekhanikjsan Diviz" }
+		3 = { "%d-p Myekhanikjsan Diviz" }
+		4 = { "%d-p Myekhanikjsan Diviz" }
+		5 = { "%d-p Myekhanikjsan Diviz" }
+		6 = { "%d-p Myekhanikjsan Diviz" }
+		8 = { "%d-p Myekhanikjsan Diviz" }
+		10 = { "%d-p Myekhanikjsan Diviz" }
+		11 = { "%d-p Myekhanikjsan Diviz" }
+		12 = { "%d-p Myekhanikjsan Diviz" }
+		13 = { "%d-p Myekhanikjsan Diviz" }
+		14 = { "%d-p Myekhanikjsan Diviz" }
+		16 = { "%d-p Myekhanikjsan Diviz" }
+		17 = { "%d-p Myekhanikjsan Diviz" }
+		19 = { "%d-p Myekhanikjsan Diviz" }
+		21 = { "%d-p Myekhanikjsan Diviz" }
+		22 = { "%d-p Myekhanikjsan Diviz" }
+		23 = { "%d-p Myekhanikjsan Diviz" }
+		24 = { "%d-p Myekhanikjsan Diviz" }
+		25 = { "%d-p Myekhanikjsan Diviz" }
 
 	}
 }
@@ -239,32 +239,32 @@ MON_GAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { MON_INF_01 }
 
-	fallback_name = "%d-p Mongol Strelkovaya Div."
+	fallback_name = "%d-p Yavgan Tsergiin Diviz"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d-r Mongol Strelkovaya Div." }
-		2 = { "%d-p Mongol Strelkovaya Div." }
-		3 = { "%d-p Mongol Strelkovaya Div." }
-		4 = { "%d-p Mongol Strelkovaya Div." }
-		5 = { "%d-p Mongol Strelkovaya Div." }
-		6 = { "%d-p Mongol Strelkovaya Div." }
-		8 = { "%d-p Mongol Strelkovaya Div." }
-		10 = { "%d-p Mongol Strelkovaya Div." }
-		11 = { "%d-p Mongol Strelkovaya Div." }
-		12 = { "%d-p Mongol Strelkovaya Div." }
-		13 = { "%d-p Mongol Strelkovaya Div." }
-		14 = { "%d-p Mongol Strelkovaya Div." }
-		16 = { "%d-p Mongol Strelkovaya Div." }
-		17 = { "%d-p Mongol Strelkovaya Div." }
-		19 = { "%d-p Mongol Strelkovaya Div." }
-		21 = { "%d-p Mongol Strelkovaya Div." }
-		22 = { "%d-p Mongol Strelkovaya Div." }
-		23 = { "%d-p Mongol Strelkovaya Div." }
-		24 = { "%d-p Mongol Strelkovaya Div." }
-		25 = { "%d-p Mongol Strelkovaya Div." }
+		1 = { "%d-r Yavgan Tsergiin Diviz" }
+		2 = { "%d-p Yavgan Tsergiin Diviz" }
+		3 = { "%d-p Yavgan Tsergiin Diviz" }
+		4 = { "%d-p Yavgan Tsergiin Diviz" }
+		5 = { "%d-p Yavgan Tsergiin Diviz" }
+		6 = { "%d-p Yavgan Tsergiin Diviz" }
+		8 = { "%d-p Yavgan Tsergiin Diviz" }
+		10 = { "%d-p Yavgan Tsergiin Diviz" }
+		11 = { "%d-p Yavgan Tsergiin Diviz" }
+		12 = { "%d-p Yavgan Tsergiin Diviz" }
+		13 = { "%d-p Yavgan Tsergiin Diviz" }
+		14 = { "%d-p Yavgan Tsergiin Diviz" }
+		16 = { "%d-p Yavgan Tsergiin Diviz" }
+		17 = { "%d-p Yavgan Tsergiin Diviz" }
+		19 = { "%d-p Yavgan Tsergiin Diviz" }
+		21 = { "%d-p Yavgan Tsergiin Diviz" }
+		22 = { "%d-p Yavgan Tsergiin Diviz" }
+		23 = { "%d-p Yavgan Tsergiin Diviz" }
+		24 = { "%d-p Yavgan Tsergiin Diviz" }
+		25 = { "%d-p Yavgan Tsergiin Diviz" }
 
 	}
 }
@@ -282,22 +282,22 @@ MON_MAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MON_INF_01 }
 
-	fallback_name = "%d-p Mongol Morskoi Pekhoty"
+	fallback_name = "%d-p Dalain Diviz"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d-r Mongol Morskoi Pekhoty" }
-		2 = { "%d-p Mongol Morskoi Pekhoty" }
-		3 = { "%d-p Mongol Morskoi Pekhoty" }
-		4 = { "%d-p Mongol Morskoi Pekhoty" }
-		5 = { "%d-p Mongol Morskoi Pekhoty" }
-		6 = { "%d-p Mongol Morskoi Pekhoty" }
-		7 = { "%d-p Mongol Morskoi Pekhoty" }
-		8 = { "%d-p Mongol Morskoi Pekhoty" }
-		9 = { "%d-p Mongol Morskoi Pekhoty" }
-		10 = { "%d-p Mongol Morskoi Pekhoty" }
+		1 = { "%d-r Dalain Diviz" }
+		2 = { "%d-p Dalain Diviz" }
+		3 = { "%d-p Dalain Diviz" }
+		4 = { "%d-p Dalain Diviz" }
+		5 = { "%d-p Dalain Diviz" }
+		6 = { "%d-p Dalain Diviz" }
+		7 = { "%d-p Dalain Diviz" }
+		8 = { "%d-p Dalain Diviz" }
+		9 = { "%d-p Dalain Diviz" }
+		10 = { "%d-p Dalain Diviz" }
 
 	}
 }
@@ -315,22 +315,22 @@ MON_MTN_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MON_INF_01 }
 
-	fallback_name = "%d-p Mongol Gornostrelkovaya Div."
+	fallback_name = "%d-p Uul Diviz"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d-r Mongol Gornostrelkovaya Div." }
-		2 = { "%d-p Mongol Gornostrelkovaya Div." }
-		3 = { "%d-p Mongol Gornostrelkovaya Div." }
-		4 = { "%d-p Mongol Gornostrelkovaya Div." }
-		5 = { "%d-p Mongol Gornostrelkovaya Div." }
-		6 = { "%d-p Mongol Gornostrelkovaya Div." }
-		7 = { "%d-p Mongol Gornostrelkovaya Div." }
-		8 = { "%d-p Mongol Gornostrelkovaya Div." }
-		9 = { "%d-p Mongol Gornostrelkovaya Div." }
-		10 = { "%d-p Mongol Gornostrelkovaya Div." }
+		1 = { "%d-r Uul Diviz" }
+		2 = { "%d-p Uul Diviz" }
+		3 = { "%d-p Uul Diviz" }
+		4 = { "%d-p Uul Diviz" }
+		5 = { "%d-p Uul Diviz" }
+		6 = { "%d-p Uul Diviz" }
+		7 = { "%d-p Uul Diviz" }
+		8 = { "%d-p Uul Diviz" }
+		9 = { "%d-p Uul Diviz" }
+		10 = { "%d-p Uul Diviz" }
 
 	}
 }
@@ -348,22 +348,22 @@ MON_PAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MON_INF_01 }
 
-	fallback_name = "%d-p Mongol Vozdushno-Desantnaya Div."
+	fallback_name = "%d-p Shukherchin Diviz"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d-r Mongol Vozdushno-Desantnaya Div." }
-		2 = { "%d-p Mongol Vozdushno-Desantnaya Div." }
-		3 = { "%d-p Mongol Vozdushno-Desantnaya Div." }
-		4 = { "%d-p Mongol Vozdushno-Desantnaya Div." }
-		5 = { "%d-p Mongol Vozdushno-Desantnaya Div." }
-		6 = { "%d-p Mongol Vozdushno-Desantnaya Div." }
-		7 = { "%d-p Mongol Vozdushno-Desantnaya Div." }
-		8 = { "%d-p Mongol Vozdushno-Desantnaya Div." }
-		9 = { "%d-p Mongol Vozdushno-Desantnaya Div." }
-		10 = { "%d-p Mongol Vozdushno-Desantnaya Div." }
+		1 = { "%d-r Shukherchin Diviz" }
+		2 = { "%d-p Shukherchin Diviz" }
+		3 = { "%d-p Shukherchin Diviz" }
+		4 = { "%d-p Shukherchin Diviz" }
+		5 = { "%d-p Shukherchin Diviz" }
+		6 = { "%d-p Shukherchin Diviz" }
+		7 = { "%d-p Shukherchin Diviz" }
+		8 = { "%d-p Shukherchin Diviz" }
+		9 = { "%d-p Shukherchin Diviz" }
+		10 = { "%d-p Shukherchin Diviz" }
 
 	}
 }

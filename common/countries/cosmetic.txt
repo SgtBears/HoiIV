@@ -1,4 +1,20 @@
 
+ENG_imperialist_canada = {
+    color = rgb { 103 34 26 }
+    color_ui = rgb { 103 34 26 }
+}
+ENG_imperialist_south_africa = {
+    color = rgb { 166 72 128 }
+    color_ui = rgb { 166 72 128 }
+}
+ENG_imperialist_australia = {
+    color = rgb { 33 109 68 }
+    color_ui = rgb { 33 109 68 }
+}
+ENG_imperialist_new_zealand = {
+    color = rgb { 106 83 148 }
+    color_ui = rgb { 106 83 148 }
+}
 MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }
@@ -183,6 +199,10 @@ JAP_showa_restoration = {
 	color_ui = rgb { 230 230 230 }
 }
 
+PLU_south_pacific_mandate = {
+	color = rgb { 224 224 224 }
+	color_ui = rgb { 224 224 224 }
+}
 GER_greater_german_reich = {
 	color = rgb { 54 54 54 }
 	color_ui = rgb { 115 115 115 }
@@ -202,6 +222,10 @@ MEX_cristero = {
 	color = rgb { 140 200 120 }
 	color_ui = rgb { 200 255 200 }
 }
+MEX_unified = {
+	color = rgb { 104 152 83 }
+	color_ui = rgb { 135 198 108 }
+}
 
 ENG_imperial_federation_unified = {
 	color = rgb { 180 0 0 }
@@ -218,11 +242,42 @@ CAN_north_america_dominion = {
 	color_ui = rgb { 235 0 0 }
 }
 
+USA_loyalists = {
+	color = rgb { 145 163 176  }
+	color_ui = rgb { 186 205 219 }
+}
 USA_CSA = {
 	color = rgb { 145 163 176  }
 	color_ui = rgb { 186 205 219 }
 }
-
+USA_49 = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+USA_50 = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+USA_51 = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+USA_52 = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+USA_53 = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+USA_REBEL_WON_WAR = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+USA_constitutionalist = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
 SOV_russia = {
     color = rgb { 72 143 68 }
     color_ui = rgb { 72 143 68 }

@@ -1484,7 +1484,7 @@ focus_tree = {
 		x = 15
 		y = 0
 
-		cost = 70
+		cost = 69
 
 		ai_will_do = {
 			factor = 5
@@ -1812,6 +1812,7 @@ focus_tree = {
 			communism < 0.5
 			fascism < 0.5
 			democratic < 0.5
+			neutrality < 0.5
 		}
 
 		bypass = {
@@ -1824,17 +1825,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
-			create_country_leader = {
-				name = "Carol II"
-				desc = "POLITICS_CAROL_II_DESC"
-				picture = GFX_Portrait_romania_Carol_II				
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					hedonist
-				}
-				id = 550
-			}
 			remove_ideas = neutrality_idea
 		}
 	}
@@ -1879,7 +1869,7 @@ focus_tree = {
 				desc = "POLITICS_MICHAEL_I_DESC"
 				picture = GFX_Portrait_romania_michael_i				
 				expire = "1965.1.1"
-				ideology = despotism
+				ideology = royalism
 				traits = {
 				}
 			}
@@ -1958,7 +1948,7 @@ focus_tree = {
 				}
 			}
 			is_subject = no
-			has_government = neutrality
+			has_government = monarchism
 			custom_trigger_tooltip = {
 				tooltip = ROM_carol_current_leader_trigger
 				has_country_leader = { id = 550 }
@@ -1994,7 +1984,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = neutrality
+			has_government = monarchism
 			custom_trigger_tooltip = {
 				tooltip = ROM_carol_current_leader_trigger
 				has_country_leader = { id = 550 }
@@ -2033,7 +2023,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = neutrality
+			has_government = monarchism
 			custom_trigger_tooltip = {
 				tooltip = ROM_carol_current_leader_trigger
 				has_country_leader = { id = 550 }
@@ -2089,7 +2079,7 @@ focus_tree = {
 		completion_reward = {
 			
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = monarchism
 				elections_allowed = no
 			}
 			add_country_leader_trait = camarilla_leader

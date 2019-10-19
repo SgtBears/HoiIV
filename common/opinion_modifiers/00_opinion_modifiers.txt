@@ -408,6 +408,12 @@ opinion_modifiers = {
 	neutrality_leanings_bad = {
 		value = -30
 	}
+	monarchism_leanings_good = {
+		value = 15
+	}
+	monarchism_leanings_bad = {
+		value = -30
+	}
 	tizard_relations = {
 		value = 25
 	}

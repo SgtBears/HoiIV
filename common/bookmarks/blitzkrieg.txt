@@ -216,7 +216,7 @@ bookmarks = {
 		"ROM"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = monarchism
 			ideas = {
 				ROM_king_carol_ii_hedonist
 				ROM_preserve_greater_romania
@@ -232,7 +232,7 @@ bookmarks = {
 		"YUG"={
 			minor = yes
 			history = "YUG_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = monarchism
 			ideas = {
 				anti_german_military
 				YUG_idea_croatian_opposition

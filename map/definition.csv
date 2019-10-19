@@ -1084,7 +1084,7 @@
 1083;5;78;145;land;false;forest;6
 1084;5;81;5;land;false;plains;6
 1085;5;81;60;land;true;jungle;4
-1086;5;81;210;land;false;desert;7
+1086;5;81;210;land;false;hills;7
 1087;5;84;25;land;false;plains;6
 1088;5;84;70;land;true;plains;7
 1089;5;84;175;land;true;hills;6
@@ -1200,7 +1200,7 @@
 1199;5;204;45;land;false;plains;6
 1200;5;204;90;land;true;hills;6
 1201;5;204;195;land;true;plains;7
-1202;5;207;10;land;true;plains;6
+1202;5;207;10;land;false;plains;6
 1203;5;207;55;land;false;hills;6
 1204;5;207;160;land;true;desert;5
 1205;5;210;20;land;true;hills;1
@@ -1302,7 +1302,7 @@
 1301;6;72;170;land;true;jungle;4
 1302;6;75;30;land;true;hills;6
 1303;6;75;85;land;false;plains;6
-1304;6;75;135;land;true;jungle;6
+1304;6;75;135;land;false;jungle;6
 1305;6;78;50;land;false;plains;6
 1306;6;78;200;land;true;jungle;6
 1307;6;81;15;land;false;forest;6
@@ -2137,7 +2137,7 @@
 2136;10;30;180;land;false;mountain;3
 2137;10;31;232;sea;false;ocean;0
 2138;10;32;240;sea;false;ocean;0
-2139;10;33;145;land;true;plains;4
+2139;10;33;145;land;false;plains;4
 2140;10;33;248;sea;false;ocean;0
 2141;10;34;236;sea;false;ocean;0
 2142;10;36;210;land;false;jungle;3
@@ -4204,7 +4204,7 @@
 4203;47;207;68;land;false;plains;6
 4204;47;207;173;land;false;plains;6
 4205;47;207;218;land;true;hills;6
-4206;47;210;33;land;true;urban;7
+4206;47;210;33;land;true;plains;7
 4207;47;210;138;land;false;mountain;6
 4208;47;210;183;land;false;forest;6
 4209;48;0;8;land;false;forest;6
@@ -8245,7 +8245,7 @@
 8244;94;186;1;land;true;jungle;5
 8245;94;186;206;land;true;plains;5
 8246;94;189;171;land;true;hills;5
-8247;94;192;136;land;true;forest;4
+8247;94;192;136;land;false;forest;4
 8248;94;195;201;land;true;hills;5
 8249;94;198;16;land;false;plains;4
 8250;94;198;166;land;false;mountain;4
@@ -14449,3 +14449,99 @@
 14322;180;5;21;land;true;plains;6
 14323;180;5;71;land;true;plains;6
 14324;180;5;121;land;true;plains;6
+#Northern Territory
+14325;180;5;171;land;false;desert;4
+14326;180;5;221;land;false;desert;4
+14327;180;5;22;land;false;desert;4
+14328;180;5;72;land;false;desert;4
+14329;180;5;122;land;false;desert;4
+# South Australia
+14330;180;5;172;land;false;desert;4
+# NSW
+14331;180;5;222;land;false;mountain;4
+14332;180;5;23;land;false;mountain;4
+14333;180;5;73;land;false;mountain;4
+# North Australian Lakes
+14334;180;5;123;lake;false;lakes;4
+14335;180;5;173;lake;false;lakes;4
+14336;180;5;223;lake;false;lakes;4
+14337;180;5;24;lake;false;lakes;4
+14338;180;5;74;lake;false;lakes;4
+14339;180;5;124;lake;false;lakes;4
+# Western Australian Lakes
+14340;180;5;174;lake;false;lakes;4
+14341;180;5;224;lake;false;lakes;4
+14342;180;5;25;lake;false;lakes;4
+14343;180;5;75;lake;false;lakes;4
+14344;180;5;125;lake;false;lakes;4
+14345;180;5;175;lake;false;lakes;4
+14346;180;5;225;lake;false;lakes;4
+14347;180;5;26;lake;false;lakes;4
+14348;180;5;76;lake;false;lakes;4
+14349;180;5;126;lake;false;lakes;4
+14350;180;5;176;lake;false;lakes;4
+# Queensland Lakes
+14351;180;5;226;lake;false;lakes;4
+14352;180;5;27;lake;false;lakes;4
+# NSW Lakes
+14353;180;5;77;lake;false;lakes;4
+14354;180;5;127;lake;false;lakes;4
+14355;180;5;177;lake;false;lakes;4
+# Victoria Lakes
+14356;180;5;227;lake;false;lakes;4
+14357;180;5;28;lake;false;lakes;4
+# Tasmanian Lakes
+14358;180;5;78;lake;false;lakes;4
+# South Australia Lakes
+14359;180;5;128;lake;false;lakes;4
+14360;180;5;178;lake;false;lakes;4
+# Western Australia
+14361;180;5;228;land;true;forest;4
+14362;180;5;29;lake;false;lakes;4
+14363;180;5;79;lake;false;lakes;4
+14364;180;5;129;land;false;plains;4
+14365;180;5;179;land;false;plains;4
+14366;180;5;229;land;false;plains;4
+14367;180;5;30;land;true;forest;4
+14368;180;5;80;land;false;plains;4
+14369;180;5;130;land;true;forest;4
+14370;180;5;180;land;false;plains;4
+14371;180;5;230;land;false;plains;4
+# South Australia
+14372;180;5;31;land;true;plains;4
+14373;180;5;81;land;true;plains;4
+14374;180;5;131;land;false;plains;4
+14375;180;5;181;land;false;mountain;4
+14376;180;5;231;land;false;hills;4
+14377;180;5;32;land;false;hills;4
+14378;180;5;82;land;true;hills;4
+14379;180;5;132;land;true;plains;4
+14380;180;5;182;land;false;hills;4
+14381;180;5;232;land;false;desert;4
+# Papua new guinea
+14382;180;5;33;land;true;plains;4
+14383;180;5;83;land;true;plains;4
+14384;180;5;133;land;true;plains;4
+14385;180;5;183;sea;true;ocean;0
+# Israel
+14386;180;5;233;land;false;plains;7
+14387;180;5;34;land;false;desert;7
+14388;180;5;84;land;false;desert;7
+14389;180;5;134;land;false;desert;7
+14390;180;5;184;land;false;desert;7
+14391;180;5;234;land;false;urban;7
+14392;180;5;35;land;false;plains;7
+14393;180;5;85;land;false;plains;7
+14394;180;5;135;land;true;plains;7
+14395;180;5;185;land;true;plains;7
+# Washington
+14396;180;5;235;land;true;plains;2
+14397;180;5;36;land;true;plains;2
+# Michigan
+14398;180;5;86;lake;false;lakes;2
+# CanadaUS border
+14399;180;5;136;lake;false;lakes;2
+14400;180;5;186;lake;false;lakes;2
+14401;180;5;236;lake;false;lakes;2
+14402;180;5;37;lake;false;lakes;2
+14403;180;5;87;land;false;hills;2

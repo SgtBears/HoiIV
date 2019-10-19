@@ -746,6 +746,9 @@ ideas = {
 				original_tag = CZE
 			}
 			
+			available = {
+				has_completed_focus = CZE_access_to_the_sea
+			}
 
 			
 			traits = { navy_chief_maneuver_2 }
@@ -763,6 +766,9 @@ ideas = {
 				original_tag = CZE
 			}
 			
+			available = {
+				has_completed_focus = CZE_access_to_the_sea
+			}
 			traits = { navy_naval_air_defense_2 }
 			
 			ai_will_do = {
@@ -938,6 +944,9 @@ ideas = {
 			allowed = {
 				original_tag = CZE
 			}
+			available = {
+				has_completed_focus = CZE_access_to_the_sea
+			}
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -964,7 +973,9 @@ ideas = {
 			allowed = {
 				original_tag = CZE
 			}
-			
+			available = {
+				has_completed_focus = CZE_access_to_the_sea
+			}
 			research_bonus = {
 				air_equipment = 0.15
 			}

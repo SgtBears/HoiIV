@@ -854,7 +854,7 @@ country_event = {
 		}
 		name = tfv_australia.92.a
 		add_stability = 0.025
-		add_popularity = { ideology = neutrality popularity = 0.075 }
+		add_popularity = { ideology = monarchism popularity = 0.075 }
 	}
 
 	option = {
@@ -864,7 +864,7 @@ country_event = {
 		name = tfv_australia.92.b
 		add_manpower = 3000
 		add_war_support = 0.075
-		add_popularity = { ideology = neutrality popularity = 0.025 }
+		add_popularity = { ideology = monarchism popularity = 0.025 }
 		add_stability = -0.05
 	}
 
@@ -874,7 +874,7 @@ country_event = {
 		}
 		name = tfv_australia.92.c
 		add_political_power = 50
-		add_popularity = { ideology = neutrality popularity = 0.05 }
+		add_popularity = { ideology = monarchism popularity = 0.05 }
 		add_stability = -0.025
 	}
 }
@@ -943,7 +943,7 @@ country_event = {
 				set_variable = { IN2 = THIS.id }
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_government = communism
 			}
@@ -960,7 +960,7 @@ country_event = {
 				set_variable = { IN2 = THIS.id }
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_government = neutrality
 			}
@@ -973,6 +973,23 @@ country_event = {
 				limit = {
 					original_tag = INS
 					has_government = neutrality
+				}
+				set_variable = { IN2 = THIS.id }
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = monarchism
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = monarchism
+				size = 0.5
+			}
+			random_other_country = {
+				limit = {
+					original_tag = INS
+					has_government = monarchism
 				}
 				set_variable = { IN2 = THIS.id }
 			}

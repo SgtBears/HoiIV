@@ -16,6 +16,7 @@ state={
 			air_base = 4
 		}
 		add_core_of = USA
+		add_core_of = USB
 		add_core_of = MIC
 		victory_points = {
 			6710 20 

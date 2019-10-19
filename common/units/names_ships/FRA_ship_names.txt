@@ -345,6 +345,7 @@ FRA_PRESIDENTS = {
 
 	can_use = { 
 		NOT = { has_government = neutrality }
+		NOT = { has_government = monarchism }
 	}
 
 	type = ship

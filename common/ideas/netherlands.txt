@@ -1146,20 +1146,20 @@ ideas = {
 
 			available = {
 				OR = {
-					has_government = neutrality
+					has_government = monarchism
 					NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
 				}
 			}
 
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 
 			removal_cost = -1
 
 			modifier = {
-				neutrality_drift = 0.1
+				monarchism_drift = 0.1
 			}
 		}
 
@@ -1175,19 +1175,19 @@ ideas = {
 
 			available = {
 				OR = {
-					has_government = neutrality
+					has_government = monarchism
 					NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
 				}
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 
 			removal_cost = -1
 
 			modifier = {
-				neutrality_drift = 0.2
+				monarchism_drift = 0.2
 				partisan_effect = 0.25
 				army_core_defence_factor = 0.1
 				army_core_attack_factor = 0.1
@@ -1203,7 +1203,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 
 			removal_cost = -1
@@ -1246,7 +1246,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 
 			removal_cost = -1
@@ -1265,7 +1265,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 
 			removal_cost = -1
@@ -1911,7 +1911,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 			
 			removal_cost = -1
@@ -2094,13 +2094,13 @@ ideas = {
 						NOT = { has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }
 					}
 					has_government = democratic
-					has_government = neutrality
+					has_government = monarchism
 				}
 			}
 			available = {
 				OR = {
 					has_government = democratic
-					has_government = neutrality
+					has_government = monarchism
 				}
 			}
 			
@@ -2148,13 +2148,13 @@ ideas = {
 						NOT = { has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }
 					}
 					has_government = democratic
-					has_government = neutrality
+					has_government = monarchism
 				}
 			}
 			available = {
 				OR = {
 					has_government = democratic
-					has_government = neutrality
+					has_government = monarchism
 				}
 
 			}
@@ -2178,14 +2178,14 @@ ideas = {
 						NOT = { has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }
 					}
 					has_government = democratic
-					has_government = neutrality
+					has_government = monarchism
 				}
 			}
 			available = {
 				has_capitulated = yes
 				OR = {
 					has_government = democratic
-					has_government = neutrality
+					has_government = monarchism
 				}
 			}
 			

@@ -1,0 +1,30 @@
+state={
+	id=888
+	name="STATE_888"
+	
+	manpower = 411096
+	
+	state_category = rural
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			12910 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			12910 10 
+		}
+		victory_points = {
+			1773 1
+		}
+		add_core_of = AST
+		add_core_of = SOA
+	}
+	provinces={
+		12910 12918 12924 1773 
+	}
+}

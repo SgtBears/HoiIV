@@ -776,11 +776,11 @@ country_event = {
 						state = 395
 						state = 846
 						state = 391
+						state = 906
 					}
 				}
 				US5 = {
 					transfer_state = PREV
-					add_state_core = PREV
 				}
 				CS0 = {
 					add_state_core = PREV
@@ -838,12 +838,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			US5 = {
-				CS0 = {
-					annex_country = { target = PREV transfer_troops = yes }
-					add_offsite_building = { type = arms_factory level = 3 }
-					add_manpower = 80000
-				}
+			CS0 = {
+				annex_country = { target = US5 transfer_troops = yes }
+				add_offsite_building = { type = arms_factory level = 3 }
+				add_manpower = 80000
 			}
 		}
 	}
@@ -874,12 +872,11 @@ country_event = {
 
 	option = {
 		name = mtg_usa_civil_war_fascists.23.a 
-		US5 = { ROOT = { annex_country = { target = PREV } } }#all your peripherals are belong to us
+		annex_country = { target = US5 } #all your peripherals are belong to us
 		every_owned_state = {
 			limit = {
 				is_core_of = US5
 			}
-			remove_core_of = US5
 			US0 = {
 				add_state_core = PREV
 				USA_congress_add_state = yes
@@ -1506,7 +1503,7 @@ country_event = {
 			country_event = { id = mtg_usa_civil_war_democrats.40 days = 20 }
 			set_global_flag = USA_civil_war_fired_democrats
 
-			set_cosmetic_tag = USA_CSA
+			set_cosmetic_tag = USA_loyalists
 			random_other_country = {
 				limit = {
 					original_tag = USA
@@ -1514,7 +1511,7 @@ country_event = {
 				}
 				set_variable = { global.usa_democratic_tag = THIS.id }
 				save_global_event_target_as = USA_civil_war_democrats
-				set_cosmetic_tag = USA_REBEL
+				set_cosmetic_tag = USA_constitutionalist
 				hidden_effect = {
 					retire_country_leader = yes
 					civil_war_anti_exploiter_punitive_action = yes
@@ -1839,10 +1836,199 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_usa_civil_war_democrats.21 days = 3}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = smuggled_weapons
+			country_event = { id = mtg_usa_civil_war_democrats.21 days = 3 }
+			every_other_country = {
+				limit = {
+					OR = {
+						has_variable = smuggled_weapons_0
+						has_variable = smuggled_weapons_1
+						has_variable = smuggled_weapons_2
+						has_variable = smuggled_weapons_3
+						has_variable = smuggled_artillery_0
+						has_variable = smuggled_artillery_1
+						has_variable = smuggled_artillery_2
+						has_variable = smuggled_tanks_3
+						has_variable = smuggled_tanks_2
+						has_variable = smuggled_tanks_1
+						has_variable = smuggled_tanks_0
+						has_variable = smuggled_jet_fighter2
+						has_variable = smuggled_jet_fighter1
+						has_variable = smuggled_fighter3
+						has_variable = smuggled_fighter2
+						has_variable = smuggled_fighter1
+						has_variable = smuggled_early_fighter
+					}
+				}
+				hidden_effect = {
+					add_equipment_to_stockpile = {
+						type = jet_fighter_equipment_2
+						amount = smuggled_jet_fighter2
+					}
+					add_equipment_to_stockpile = {
+						type = jet_fighter_equipment_1
+						amount = smuggled_jet_fighter1
+					}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_3
+						amount = smuggled_fighter3
+					}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_2
+						amount = smuggled_fighter2
+					}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_1
+						amount = smuggled_fighter1
+					}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_0
+						amount = smuggled_early_fighter
+					}
+					add_equipment_to_stockpile = {
+						type = light_tank_equipment_3
+						amount = smuggled_tanks_3
+					}
+					add_equipment_to_stockpile = {
+						type = light_tank_equipment_2
+						amount = smuggled_tanks_2
+					}
+					add_equipment_to_stockpile = {
+						type = light_tank_equipment_1
+						amount = smuggled_tanks_1
+					}
+					add_equipment_to_stockpile = {
+						type = gw_tank_equipment
+						amount = smuggled_tanks_0
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						amount = smuggled_weapons_0
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_1
+						amount = smuggled_weapons_1
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_2
+						amount = smuggled_weapons_2
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_3
+						amount = smuggled_weapons_3
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment_1
+						amount = smuggled_artillery_0
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment_2
+						amount = smuggled_artillery_1
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment_3
+						amount = smuggled_artillery_2
+					}
+				}
+				send_equipment = {
+					equipment = jet_fighter_equipment_2
+					amount = smuggled_jet_fighter2
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = jet_fighter_equipment_1
+					amount = smuggled_jet_fighter1
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = fighter_equipment_3
+					amount = smuggled_fighter3
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = fighter_equipment_2
+					amount = smuggled_fighter2
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = fighter_equipment_1
+					amount = smuggled_fighter1
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = fighter_equipment_0
+					amount = smuggled_early_fighter
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = infantry_equipment_3
+					amount = smuggled_weapons_3
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = artillery_equipment_1
+					amount = smuggled_artillery_0
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = artillery_equipment_2
+					amount = smuggled_artillery_1
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = artillery_equipment_3
+					amount = smuggled_artillery_2
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = light_tank_equipment_3
+					amount = smuggled_tanks_3
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = gw_tank_equipment
+					amount = smuggled_tanks_0
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = infantry_equipment_0
+					amount = smuggled_weapons_0
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = infantry_equipment_1
+					amount = smuggled_weapons_1
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = infantry_equipment_2
+					amount = smuggled_weapons_2
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = light_tank_equipment_2
+					amount = smuggled_tanks_2
+					target = ROOT
+				}
+				send_equipment = {
+					equipment = light_tank_equipment_1
+					amount = smuggled_tanks_1
+					target = ROOT
+				}
+				
+			}
+			every_other_country = {
+				limit = {
+					has_country_flag = USA_training_camps_approved
+				}
+				ROOT = {
+					army_experience = 10
+					capital_scope = {
+						create_unit = {
+							division = "name = \"Eagle Legion\" division_template = \"Silver Legion\" start_experience_factor = 1" 
+							owner = ROOT
+						}
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -1866,8 +2052,97 @@ country_event = {
 					set_state_flag = bund_midwest
 				}
 			}
-			USA_foreign_support_training_effect = yes
-			USA_foreign_support_pilots_effect = yes
+			every_other_country = {
+				limit = {
+					OR = {
+						has_variable = smuggled_weapons_0
+						has_variable = smuggled_weapons_1
+						has_variable = smuggled_weapons_2
+						has_variable = smuggled_weapons_3
+						has_variable = smuggled_artillery_0
+						has_variable = smuggled_artillery_1
+						has_variable = smuggled_artillery_2
+						has_variable = smuggled_tanks_3
+						has_variable = smuggled_tanks_2
+						has_variable = smuggled_tanks_1
+						has_variable = smuggled_tanks_0
+						has_variable = smuggled_jet_fighter2
+						has_variable = smuggled_jet_fighter1
+						has_variable = smuggled_fighter3
+						has_variable = smuggled_fighter2
+						has_variable = smuggled_fighter1
+						has_variable = smuggled_early_fighter
+					}
+				}
+				add_to_variable = {
+					var = US0.smuggled_jet_fighter2
+					value = smuggled_jet_fighter2
+				}
+				add_to_variable = {
+					var = US0.smuggled_jet_fighter1
+					value = smuggled_jet_fighter1
+				}
+				add_to_variable = {
+					var = US0.smuggled_fighter3
+					value = smuggled_fighter3
+				}
+				add_to_variable = {
+					var = US0.smuggled_fighter2
+					value = smuggled_fighter2
+				}
+				add_to_variable = {
+					var = US0.smuggled_fighter1
+					value = smuggled_fighter1
+				}
+				add_to_variable = {
+					var = US0.smuggled_early_fighter
+					value = smuggled_early_fighter
+				}
+				add_to_variable = {
+					var = US0.smuggled_tanks_3
+					value = smuggled_tanks_3
+				}
+				add_to_variable = {
+					var = US0.smuggled_tanks_2
+					value = smuggled_tanks_2
+				}
+				add_to_variable = {
+					var = US0.smuggled_tanks_1
+					value = smuggled_tanks_1
+				}
+				add_to_variable = {
+					var = US0.smuggled_tanks_0
+					value = smuggled_tanks_0
+				}
+				add_to_variable = {
+					var = US0.smuggled_artillery_2
+					value = smuggled_artillery_2
+				}
+				add_to_variable = {
+					var = US0.smuggled_artillery_1
+					value = smuggled_artillery_1
+				}
+				add_to_variable = {
+					var = US0.smuggled_artillery_0
+					value = smuggled_artillery_0
+				}
+				add_to_variable = {
+					var = US0.smuggled_weapons_3
+					value = smuggled_weapons_3
+				}
+				add_to_variable = {
+					var = US0.smuggled_weapons_2
+					value = smuggled_weapons_2
+				}
+				add_to_variable = {
+					var = US0.smuggled_weapons_1
+					value = smuggled_weapons_1
+				}
+				add_to_variable = {
+					var = US0.smuggled_weapons_0
+					value = smuggled_weapons_0
+				}
+			}
 		}
 	
 	}
@@ -1897,6 +2172,215 @@ country_event = {
 				planning_skill = 1
 				logistics_skill = 1
 				traits = { politically_connected }
+			}
+		}
+		effect_tooltip = {
+			every_other_country = {
+				limit = {
+					OR = {
+						has_variable = smuggled_weapons_0
+						has_variable = smuggled_weapons_1
+						has_variable = smuggled_weapons_2
+						has_variable = smuggled_weapons_3
+						has_variable = smuggled_artillery_0
+						has_variable = smuggled_artillery_1
+						has_variable = smuggled_artillery_2
+						has_variable = smuggled_tanks_3
+						has_variable = smuggled_tanks_2
+						has_variable = smuggled_tanks_1
+						has_variable = smuggled_tanks_0
+						has_variable = smuggled_jet_fighter2
+						has_variable = smuggled_jet_fighter1
+						has_variable = smuggled_fighter3
+						has_variable = smuggled_fighter2
+						has_variable = smuggled_fighter1
+						has_variable = smuggled_early_fighter
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_jet_fighter2 > 0 }
+					}
+					send_equipment = {
+						equipment = jet_fighter_equipment_2
+						amount = US0.smuggled_jet_fighter2
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_jet_fighter1 > 0 }
+					}
+					send_equipment = {
+						equipment = jet_fighter_equipment_1
+						amount = US0.smuggled_jet_fighter1
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_fighter3 > 0 }
+					}
+					send_equipment = {
+						equipment = fighter_equipment_3
+						amount = US0.smuggled_fighter3
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_fighter2 > 0 }
+					}
+					send_equipment = {
+						equipment = fighter_equipment_2
+						amount = US0.smuggled_fighter2
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_fighter1 > 0 }
+					}
+					send_equipment = {
+						equipment = fighter_equipment_1
+						amount = US0.smuggled_fighter1
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_early_fighter > 0 }
+					}
+					send_equipment = {
+						equipment = fighter_equipment_0
+						amount = US0.smuggled_early_fighter
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_weapons_3 > 0 }
+					}
+					send_equipment = {
+						equipment = infantry_equipment_3
+						amount = US0.smuggled_weapons_3
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_artillery_0 > 0 }
+					}
+					send_equipment = {
+						equipment = artillery_equipment_1
+						amount = US0.smuggled_artillery_0
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_artillery_1 > 0 }
+					}
+					send_equipment = {
+						equipment = artillery_equipment_2
+						amount = US0.smuggled_artillery_1
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_artillery_2 > 0 }
+					}
+					send_equipment = {
+						equipment = artillery_equipment_3
+						amount = US0.smuggled_artillery_2
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_tanks_3 > 0 }
+					}
+					send_equipment = {
+						equipment = light_tank_equipment_3
+						amount = US0.smuggled_tanks_3
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_tanks_0 > 0 }
+					}
+					send_equipment = {
+						equipment = gw_tank_equipment
+						amount = US0.smuggled_tanks_0
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_weapons_0 > 0 }
+					}
+					send_equipment = {
+						equipment = infantry_equipment_0
+						amount = US0.smuggled_weapons_0
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_weapons_1 > 0 }
+					}
+					send_equipment = {
+						equipment = infantry_equipment_1
+						amount = US0.smuggled_weapons_1
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_weapons_2 > 0 }
+					}
+					send_equipment = {
+						equipment = infantry_equipment_2
+						amount = US0.smuggled_weapons_2
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_tanks_2 > 0 }
+					}
+					send_equipment = {
+						equipment = light_tank_equipment_2
+						amount = US0.smuggled_tanks_2
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { US0.smuggled_tanks_1 > 0 }
+					}
+					send_equipment = {
+						equipment = light_tank_equipment_1
+						amount = US0.smuggled_tanks_1
+						target = ROOT
+					}
+				}
+			}
+			every_other_country = {
+				limit = {
+					has_country_flag = USA_training_camps_approved
+				}
+				ROOT = {
+					army_experience = 10
+					capital_scope = {
+						create_unit = {
+							division = "name = \"Eagle Legion\" division_template = \"Silver Legion\" start_experience_factor = 1" 
+							owner = ROOT
+						}
+					}
+				}
 			}
 		}
 		
@@ -1962,57 +2446,57 @@ country_event = {
 				}
 				385 = {
 					create_unit = {
-						division = "name = \"Oregon Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Oregonian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"Oregon Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Oregonian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"Oregon Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Oregonian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"Oregon Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Oregonian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 				}
 				386 = {
 					create_unit = {
-						division = "name = \"Washington Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Washingtonian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"Washington Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Washingtonian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"Washington Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Washingtonian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"Washington Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Washingtonian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 				}
 				378 = {
 					create_unit = {
-						division = "name = \"California Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Californian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"California Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Californian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 				}
 				845 = {
 					create_unit = {
-						division = "name = \"California Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Californian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"California Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Californian Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 				}
@@ -2162,19 +2646,23 @@ country_event = {
 			event_target:USA_civil_war_democrats = {
 				387 = {
 					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Idahoan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Idahoan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				388 = {
 					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Montanan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				381 = {
 					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Wyoming Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 				}
@@ -2198,19 +2686,23 @@ country_event = {
 			ROOT = {
 				387 = {
 					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Idahoan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Idahoan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				388 = {
 					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Montanan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				381 = {
 					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Wyoming Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 				}
@@ -2248,19 +2740,25 @@ country_event = {
 			event_target:USA_civil_war_democrats = {
 				380 = {
 					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Utahn Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				382 = {
 					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Coloradan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				377 = {
 					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Arizonan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				376 = {
 					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"New Mexican Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 				}
@@ -2284,19 +2782,25 @@ country_event = {
 			ROOT = {
 				380 = {
 					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Utahn Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				382 = {
 					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Coloradan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				377 = {
 					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Arizonan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				376 = {
 					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"New Mexican Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 				}
@@ -2323,6 +2827,7 @@ country_event = {
 					state = 390
 					state = 384
 					state = 391
+					state = 906
 					state = 392
 				}
 			}
@@ -2334,19 +2839,25 @@ country_event = {
 			event_target:USA_civil_war_democrats = {
 				384 = {
 					create_unit = {
-						division = "name = \"Nebraska Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Nebraskan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				390 = {
 					create_unit = {
-						division = "name = \"Nebraska Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Dakotan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				391 = {
 					create_unit = {
-						division = "name = \"Nebraska Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Minnesotan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				392 = {
 					create_unit = {
-						division = "name = \"Nebraska Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Iowan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 				}
@@ -2370,19 +2881,25 @@ country_event = {
 			ROOT = {
 				384 = {
 					create_unit = {
-						division = "name = \"Nebraska Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Nebraskan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				390 = {
 					create_unit = {
-						division = "name = \"Nebraska Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Dakotan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				391 = {
 					create_unit = {
-						division = "name = \"Nebraska Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Minnesotan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
+				}
+				392 = {
 					create_unit = {
-						division = "name = \"Nebraska Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
+						division = "name = \"Iowan Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
 				}
@@ -3854,7 +4371,13 @@ country_event = {
 		name = mtg_usa_foreign_support.1.a
 		ai_chance = {
 			factor = 70
-			
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
+			}
 		}
 		add_political_power = 25
 		set_country_flag = USA_foreign_support_donations_approved
@@ -3922,17 +4445,72 @@ country_event = {
 		name = mtg_usa_foreign_support.4.a
 		ai_chance = {
 			factor = 50
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
+			}
 			
 		}
 		add_political_power = 25
 		FROM = {
 			country_event = mtg_usa_foreign_support.5
 		}
-		effect_tooltip = {
-			FROM = {
-				add_equipment_to_stockpile = { 
-					type = infantry_equipment
-					amount = 1000
+		if = {
+			limit = {
+				has_tech = advanced_infantry_weapons
+			}
+			hidden_effect = { add_to_variable = { var = smuggled_weapons_3 value = 1000 } }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = infantry_equipment_3
+						amount = 1000
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = improved_infantry_weapons
+			}
+			hidden_effect = { add_to_variable = { var = smuggled_weapons_2 value = 1000 } }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = infantry_equipment_2
+						amount = 1000
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = infantry_weapons1
+			}
+			hidden_effect = { add_to_variable = { var = smuggled_weapons_1 value = 1000 } }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = infantry_equipment_1
+						amount = 1000
+					}
+				}
+			}
+		}
+		else = {
+			limit = {
+				has_tech = infantry_weapons
+			}
+			hidden_effect = { add_to_variable = { var = smuggled_weapons_0 value = 1000 } }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = infantry_equipment_0
+						amount = 1000
+					}
 				}
 			}
 		}
@@ -3941,16 +4519,60 @@ country_event = {
 		name = mtg_usa_foreign_support.4.b
 		ai_chance = {
 			factor = 20	
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
+			}
+		}
+		trigger = {
+			has_tech = gw_artillery
 		}
 		add_political_power = 25
 		FROM = {
 			country_event = mtg_usa_foreign_support.7
 		}
-		effect_tooltip = {
-			FROM = {
-				add_equipment_to_stockpile = { 
-					type = artillery_equipment
-					amount = 50
+		if = {
+			limit = {
+				has_tech = artillery4
+			}
+			add_to_variable = { var = smuggled_artillery_2 value = 50 }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = artillery_equipment_3
+						amount = 50
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = artillery1
+			}
+			add_to_variable = { var = smuggled_artillery_1 value = 50 }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = artillery_equipment_2
+						amount = 50
+					}
+				}
+			}
+		}
+		else = {
+			limit = {
+				has_tech = gw_artillery
+			}
+			add_to_variable = { var = smuggled_artillery_0 value = 50 }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = artillery_equipment_1
+						amount = 50
+					}
 				}
 			}
 		}
@@ -3959,19 +4581,74 @@ country_event = {
 		name = mtg_usa_foreign_support.4.b
 		ai_chance = {
 			factor = 10	
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
+			}
 		}
 		trigger = {
-			has_tech = basic_light_tank
+			has_tech = gwtank
 		}
 		add_political_power = 25
 		FROM = {
 			country_event = mtg_usa_foreign_support.8
 		}
-		effect_tooltip = {
-			FROM = {
-				add_equipment_to_stockpile = { 
-					type = light_tank_equipment
-					amount = 50
+		if = {
+			limit = {
+				has_tech = advanced_light_tank
+			}
+			add_to_variable = { var = smuggled_tanks_3 value = 50 }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = light_tank_equipment_3
+						amount = 50
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = improved_light_tank
+			}
+			add_to_variable = { var = smuggled_tanks_2 value = 50 }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = light_tank_equipment_2
+						amount = 50
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = basic_light_tank
+			}
+			add_to_variable = { var = smuggled_tanks_1 value = 50 }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = light_tank_equipment_1
+						amount = 50
+					}
+				}
+			}
+		}
+		else = {
+			limit = {
+				has_tech = gwtank
+			}
+			add_to_variable = { var = smuggled_tanks_0 value = 50 }
+			effect_tooltip = {
+				FROM = {
+					add_equipment_to_stockpile = { 
+						type = gw_tank_equipment
+						amount = 50
+					}
 				}
 			}
 		}
@@ -4000,7 +4677,7 @@ country_event = {
 		ai_chance = {
 			factor = 70
 		}
-		add_to_variable = { var = smuggled_weapons value = 1000 }
+		#add_to_variable = { var = smuggled_weapons value = 1000 }
 	}
 }
 #event for US, weapons refused
@@ -4031,7 +4708,7 @@ country_event = {
 		ai_chance = {
 			factor = 70
 		}
-		add_to_variable = { var = smuggled_artillery value = 50 }
+		#add_to_variable = { var = smuggled_artillery value = 50 }
 	}
 }
 #event for US, tanks approved
@@ -4047,7 +4724,7 @@ country_event = {
 		ai_chance = {
 			factor = 70
 		}
-		add_to_variable = { var = smuggled_tanks value = 50 }
+		#add_to_variable = { var = smuggled_tanks value = 50 }
 	}
 }
 
@@ -4063,6 +4740,13 @@ country_event = {
 		name = mtg_usa_foreign_support.9.a
 		ai_chance = {
 			factor = 70
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
+			}
 			
 		}
 		add_political_power = 25
@@ -4099,8 +4783,7 @@ country_event = {
 		name = mtg_usa_foreign_support.10.a
 		ai_chance = {
 			factor = 70
-		}
-		set_country_flag = us_training_@FROM	
+		}	
 		FROM = {
 			add_ai_strategy = {
    				type = send_volunteers_desire
@@ -4144,6 +4827,13 @@ country_event = {
 		ai_chance = {
 			factor = 70
 			
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
+			}
 		}
 		add_political_power = 25
 		set_country_flag = us_pilot_training_approved
@@ -4154,6 +4844,42 @@ country_event = {
 			FROM = {
 				custom_effect_tooltip = us_pilot_training_tt
 			}
+		}
+		if = {
+			limit = {
+				has_tech = jet_fighter2
+			}
+			add_to_variable = { var = smuggled_jet_fighter2 value = 25 }
+		}
+		else_if = {
+			limit = {
+				has_tech = jet_fighter1
+			}
+			add_to_variable = { var = smuggled_jet_fighter1 value = 25 }
+		}
+		else_if = {
+			limit = {
+				has_tech = fighter3
+			}
+			add_to_variable = { var = smuggled_fighter3 value = 25 }
+		}
+		else_if = {
+			limit = {
+				has_tech = fighter2
+			}
+			add_to_variable = { var = smuggled_fighter2 value = 25 }
+		}
+		else_if = {
+			limit = {
+				has_tech = fighter1
+			}
+			add_to_variable = { var = smuggled_fighter1 value = 25 }
+		}
+		else = {
+			limit = {
+				has_tech = early_fighter
+			}
+			add_to_variable = { var = smuggled_early_fighter value = 25 }
 		}
 	}
 	option = { #refuse
@@ -4223,6 +4949,13 @@ country_event = {
 		name = mtg_usa_foreign_support.15.a
 		ai_chance = {
 			factor = 70
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
+			}
 			
 		}
 		add_political_power = 25
@@ -4562,6 +5295,9 @@ country_event = {
 				}
 			}
 		}
+		add_state_claim = 882
+		add_state_claim = 884
+		add_state_claim = 883
 		add_state_claim = 633
 		add_state_claim = 684
 		add_state_claim = 645
@@ -4655,6 +5391,9 @@ country_event = {
 				}
 			}
 		}
+		add_state_claim = 882
+		add_state_claim = 884
+		add_state_claim = 883
 		add_state_claim = 633
 		add_state_claim = 684
 		add_state_claim = 645

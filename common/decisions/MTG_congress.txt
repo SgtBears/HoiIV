@@ -681,7 +681,9 @@ USA_congress = {
 				limit = { has_state_flag = USA_state_admit }
 				ROOT = {
 					add_state_core = PREV
+					remove_state_claim = PREV
 				}
+			
 				clr_state_flag = USA_state_admit
 			}			
 		}

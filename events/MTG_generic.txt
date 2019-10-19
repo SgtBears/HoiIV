@@ -162,6 +162,23 @@ country_event = {
 		if = {
 			limit = {
 				FROM = {
+					has_government = monarchism
+				}
+			}
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = political_turmoil
+					days = 365
+				}
+				set_politics = {
+					ruling_party = monarchism
+					elections_allowed = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
 					has_government = neutrality
 				}
 			}

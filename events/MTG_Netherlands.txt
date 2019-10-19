@@ -1026,7 +1026,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = neutrality
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
 				NOT = {
 					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
@@ -1034,13 +1037,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				NOT = { has_government = neutrality }
+				NOT = { has_government = monarchism }
 				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				has_government = neutrality
+				has_government = monarchism
 				NOT = {
 					AND = {
 						GE0 = { has_government = fascism }
@@ -1115,7 +1118,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = neutrality
+				OR = {
+					has_government = monarchism
+					has_government = neutrality
+				}
 				NOT = {
 					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
@@ -1123,13 +1129,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				NOT = { has_government = neutrality }
+				NOT = { has_government = monarchism }
 				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				has_government = neutrality
+				has_government = monarchism
 				NOT = {
 					AND = {
 						GE0 = { has_government = fascism }
@@ -1204,7 +1210,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = neutrality
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
 				NOT = {
 					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
@@ -1212,13 +1221,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				NOT = { has_government = neutrality }
+				NOT = { has_government = monarchism }
 				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				has_government = neutrality
+				has_government = monarchism
 				NOT = {
 					AND = {
 						GE0 = { has_government = fascism }
@@ -1394,7 +1403,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = neutrality
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
 				NOT = {
 					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
@@ -1402,13 +1414,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				NOT = { has_government = neutrality }
+				NOT = { has_government = monarchism }
 				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				has_government = neutrality
+				has_government = monarchism
 				NOT = {
 					AND = {
 						GE0 = { has_government = fascism }
@@ -1618,7 +1630,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = neutrality
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
 				NOT = {
 					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
@@ -1626,13 +1641,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				NOT = { has_government = neutrality }
+				NOT = { has_government = monarchism }
 				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				has_government = neutrality
+				has_government = monarchism
 				NOT = {
 					AND = {
 						GE0 = { has_government = fascism }
@@ -1874,7 +1889,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				has_government = neutrality
+				OR = {
+					has_government = neutrality
+					has_government = monarchism
+				}
 				NOT = {
 					HO0 = { has_completed_focus = HOL_oranje_boven }
 				}
@@ -1882,13 +1900,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				NOT = { has_government = neutrality }
+				NOT = { has_government = monarchism }
 				HO0 = { has_completed_focus = HOL_cave_to_the_germans }
 			}
 			modifier = {
 				factor = 0
 				original_tag = ENG
-				has_government = neutrality
+				has_government = monarchism
 				NOT = {
 					AND = {
 						GE0 = { has_government = fascism }
@@ -3029,7 +3047,7 @@ country_event = {
 	
 	trigger = {
 		original_tag = HOL
-		has_government = neutrality
+		has_government = monarchism
 		has_completed_focus = HOL_wilhelminism
 		NOT = {
 			any_country = {
@@ -3069,7 +3087,7 @@ country_event = {
 			random_country = {
 				limit = {
 					original_tag = GER
-					has_government = neutrality
+					has_government = monarchism
 				}
 				save_global_event_target_as = HOL_kaiserreich_germany
 			}
@@ -3082,7 +3100,7 @@ country_event = {
 		GE0 = {
 			start_civil_war = {
 				ruling_party = fascism
-				ideology = neutrality
+				ideology = monarchism
 				size = 0.05
 				states = all
 				states_filter = {
@@ -3094,7 +3112,7 @@ country_event = {
 		random_country = {
 			limit = {
 				original_tag = GER
-				has_government = neutrality
+				has_government = monarchism
 			}
 			set_variable = { global.ger_imperial_tag = ROOT.id }
 			hidden_effect = {
@@ -3111,7 +3129,6 @@ country_event = {
 					set_nationality = GE1
 				}
 			}
-			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
 			ROOT = {
 				puppet = PREV
 				GE0 = {
@@ -3135,7 +3152,7 @@ country_event = {
 					desc = "POLITICS_WILHELM_II_DESC"
 					picture = GFX_portrait_ger_wilhelm_ii
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = royalism
 					traits = {
 						anti_democrat imperial_connections
 					}
@@ -3150,7 +3167,7 @@ country_event = {
 					desc = "POLITICS_WILHELM_III_DESC"
 					picture = GFX_portrait_ger_wilhelm_iii
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = royalism
 					traits = {
 						popular_figurehead2
 					}
@@ -3171,14 +3188,14 @@ country_event = {
 	
 	trigger = {
 		original_tag = HOL
-		has_government = neutrality
+		has_government = monarchism
 		has_completed_focus = HOL_wilhelminism
 		NOT = { has_war_with = GE0 }
 		is_in_faction = no
 		any_of_scopes = {
 			array = subjects
 			tag = GE2
-			has_government = neutrality
+			has_government = monarchism
 		}
 	}
 
@@ -3192,7 +3209,7 @@ country_event = {
 		GE2 = {
 			if = {
 				limit = {
-					has_government = neutrality
+					has_government = monarchism
 				}
 				ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_free } }
 				create_faction = GER_central_powers_faction
@@ -3246,7 +3263,7 @@ country_event = {
 				GE2 = {
 					if = {
 						limit = {
-							has_government = neutrality
+							has_government = monarchism
 						}
 						load_focus_tree = { tree = german_focus keep_completed = no }
 						unlock_national_focus = GER_oppose_hitler

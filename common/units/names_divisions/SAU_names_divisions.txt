@@ -44,31 +44,31 @@ SAU_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { GER_Gar_01 }
 
-	fallback_name = "Alfurqat al-%dr"
+	fallback_name = "Katibat almsha %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfurqat Ar Riyad" }
-		2 = { "Alfurqat Jiddah" }
-		3 = { "Alfurqat al-%di" }
-		4 = { "Alfurqat al-%di" }
-		5 = { "Alfurqat al-%di" }
-		6 = { "Alfurqat al-%di" }
-		7 = { "Alfurqat al-%di" }
-		8 = { "Alfurqat al-%di" }
-		9 = { "Alfurqat al-%di" }
-		10 = { "Alfurqat al-%di" }
-		12 = { "Alfurqat al-%dr" }
-		13 = { "Alfurqat al-%dr" }
-		14 = { "Alfurqat al-%dr" }
-		15 = { "Alfurqat al-%dr" }
-		16 = { "Alfurqat al-%dr" }
-		17 = { "Alfurqat al-%dr" }
-		18 = { "Alfurqat al-%dr" }
-		19 = { "Alfurqat al-%dr" }
-		20 = { "Alfurqat al-%dr" }
+		1 = { "Katibat almsha %d. Riyad" }
+		2 = { "Katibat almsha %d. Jiddah" }
+		3 = { "Katibat almsha %d" }
+		4 = { "Katibat almsha %d" }
+		5 = { "Katibat almsha %d" }
+		6 = { "Katibat almsha %d" }
+		7 = { "Katibat almsha %d" }
+		8 = { "Katibat almsha %d" }
+		9 = { "Katibat almsha %d" }
+		10 = { "Katibat almsha %d" }
+		12 = { "Katibat almsha %d" }
+		13 = { "Katibat almsha %d" }
+		14 = { "Katibat almsha %d" }
+		15 = { "Katibat almsha %d" }
+		16 = { "Katibat almsha %d" }
+		17 = { "Katibat almsha %d" }
+		18 = { "Katibat almsha %d" }
+		19 = { "Katibat almsha %d" }
+		20 = { "Katibat almsha %d" }
 
 		# Adapted from combining the names of the HoI4 division template name and the HoI3 SAU division lists.
 	}
@@ -87,32 +87,32 @@ SAU_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { GER_Gar_01 }
 
-	fallback_name = "Alfursan Almalika al-%dr"
+	fallback_name = "Katibat alfursan %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfursan Almalika 'Medina'" }
-		2 = { "Alfursan Almalika al-%di" }
-		3 = { "Alfursan Almalika al-%di" }
-		4 = { "Alfursan Almalika al-%di" }
-		5 = { "Alfursan Almalika al-%di" }
-		6 = { "Alfursan Almalika al-%di" }
-		7 = { "Alfursan Almalika al-%di" }
-		8 = { "Alfursan Almalika al-%di" }
-		9 = { "Alfursan Almalika al-%di" }
-		10 = { "Alfursan Almalika al-%di" }
-		11 = { "Alfursan Almalika al-%dr" }
-		12 = { "Alfursan Almalika al-%dr" }
-		13 = { "Alfursan Almalika al-%dr" }
-		14 = { "Alfursan Almalika al-%dr" }
-		15 = { "Alfursan Almalika al-%dr" }
-		16 = { "Alfursan Almalika al-%dr" }
-		17 = { "Alfursan Almalika al-%dr" }
-		18 = { "Alfursan Almalika al-%dr" }
-		19 = { "Alfursan Almalika al-%dr" }
-		20 = { "Alfursan Almalika al-%dr" }
+		1 = { "Katibat alfursan %d. Medina" }
+		2 = { "Katibat alfursan %d" }
+		3 = { "Katibat alfursan %d" }
+		4 = { "Katibat alfursan %d" }
+		5 = { "Katibat alfursan %d" }
+		6 = { "Katibat alfursan %d" }
+		7 = { "Katibat alfursan %d" }
+		8 = { "Katibat alfursan %d" }
+		9 = { "Katibat alfursan %d" }
+		10 = { "Katibat alfursan %d" }
+		11 = { "Katibat alfursan %d" }
+		12 = { "Katibat alfursan %d" }
+		13 = { "Katibat alfursan %d" }
+		14 = { "Katibat alfursan %d" }
+		15 = { "Katibat alfursan %d" }
+		16 = { "Katibat alfursan %d" }
+		17 = { "Katibat alfursan %d" }
+		18 = { "Katibat alfursan %d" }
+		19 = { "Katibat alfursan %d" }
+		20 = { "Katibat alfursan %d" }
 
 		# Adapted from combining the names of the HoI4 division template name and the HoI3 SAU division lists. As they were the same as the Cav division names, have had the numbers linked.
 	}
@@ -131,31 +131,31 @@ SAU_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SAU_INF_01 }
 
-	fallback_name = "Alfurqat al-%di"
+	fallback_name = "Katibat almashat alaly %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfurqat Ar Riyad" }
-		2 = { "Alfurqat Jiddah" }
-		3 = { "Alfurqat al-%di" }
-		4 = { "Alfurqat al-%di" }
-		5 = { "Alfurqat al-%di" }
-		6 = { "Alfurqat al-%di" }
-		7 = { "Alfurqat al-%di" }
-		8 = { "Alfurqat al-%di" }
-		9 = { "Alfurqat al-%di" }
-		10 = { "Alfurqat al-%di" }
-		12 = { "Alfurqat al-%dr" }
-		13 = { "Alfurqat al-%dr" }
-		14 = { "Alfurqat al-%dr" }
-		15 = { "Alfurqat al-%dr" }
-		16 = { "Alfurqat al-%dr" }
-		17 = { "Alfurqat al-%dr" }
-		18 = { "Alfurqat al-%dr" }
-		19 = { "Alfurqat al-%dr" }
-		20 = { "Alfurqat al-%dr" }
+		1 = { "Katibat almashat alaly %d. Riyad" }
+		2 = { "Katibat almashat alaly %d. Jiddah" }
+		3 = { "Katibat almashat alaly %d" }
+		4 = { "Katibat almashat alaly %d" }
+		5 = { "Katibat almashat alaly %d" }
+		6 = { "Katibat almashat alaly %d" }
+		7 = { "Katibat almashat alaly %d" }
+		8 = { "Katibat almashat alaly %d" }
+		9 = { "Katibat almashat alaly %d" }
+		10 = { "Katibat almashat alaly %d" }
+		12 = { "Katibat almashat alaly %d" }
+		13 = { "Katibat almashat alaly %d" }
+		14 = { "Katibat almashat alaly %d" }
+		15 = { "Katibat almashat alaly %d" }
+		16 = { "Katibat almashat alaly %d" }
+		17 = { "Katibat almashat alaly %d" }
+		18 = { "Katibat almashat alaly %d" }
+		19 = { "Katibat almashat alaly %d" }
+		20 = { "Katibat almashat alaly %d" }
 
 		# Adapted from combining the names of the HoI4 division template name and the HoI3 SAU division lists. As they were the same as the inf division names, have had the numbers linked.
 	}
@@ -174,32 +174,32 @@ SAU_ARM_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SAU_CAV_01 }
 
-	fallback_name = "Alfursan Almalika al-%dr"
+	fallback_name = "Katibat alfursan %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfursan Almalika 'Medina'" }
-		2 = { "Alfursan Almalika al-%di" }
-		3 = { "Alfursan Almalika al-%di" }
-		4 = { "Alfursan Almalika al-%di" }
-		5 = { "Alfursan Almalika al-%di" }
-		6 = { "Alfursan Almalika al-%di" }
-		7 = { "Alfursan Almalika al-%di" }
-		8 = { "Alfursan Almalika al-%di" }
-		9 = { "Alfursan Almalika al-%di" }
-		10 = { "Alfursan Almalika al-%di" }
-		11 = { "Alfursan Almalika al-%dr" }
-		12 = { "Alfursan Almalika al-%dr" }
-		13 = { "Alfursan Almalika al-%dr" }
-		14 = { "Alfursan Almalika al-%dr" }
-		15 = { "Alfursan Almalika al-%dr" }
-		16 = { "Alfursan Almalika al-%dr" }
-		17 = { "Alfursan Almalika al-%dr" }
-		18 = { "Alfursan Almalika al-%dr" }
-		19 = { "Alfursan Almalika al-%dr" }
-		20 = { "Alfursan Almalika al-%dr" }
+		1 = { "Katibat Mudarie %d. Medina" }
+		2 = { "Katibat Mudarie %d" }
+		3 = { "Katibat Mudarie %d" }
+		4 = { "Katibat Mudarie %d" }
+		5 = { "Katibat Mudarie %d" }
+		6 = { "Katibat Mudarie %d" }
+		7 = { "Katibat Mudarie %d" }
+		8 = { "Katibat Mudarie %d" }
+		9 = { "Katibat Mudarie %d" }
+		10 = { "Katibat Mudarie %d" }
+		11 = { "Katibat Mudarie %d" }
+		12 = { "Katibat Mudarie %d" }
+		13 = { "Katibat Mudarie %d" }
+		14 = { "Katibat Mudarie %d" }
+		15 = { "Katibat Mudarie %d" }
+		16 = { "Katibat Mudarie %d" }
+		17 = { "Katibat Mudarie %d" }
+		18 = { "Katibat Mudarie %d" }
+		19 = { "Katibat Mudarie %d" }
+		20 = { "Katibat Mudarie %d" }
 
 		# Adapted from combining the names of the HoI4 division template name and the HoI3 SAU division lists. As they were the same as the Cav division names, have had the numbers linked.
 	}
@@ -218,31 +218,31 @@ SAU_MEC_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SAU_INF_01 }
 
-	fallback_name = "Alfurqat al-%dr"
+	fallback_name = "Katibat almashat alaly %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfurqat Ar Riyad" }
-		2 = { "Alfurqat Jiddah" }
-		3 = { "Alfurqat al-%di" }
-		4 = { "Alfurqat al-%di" }
-		5 = { "Alfurqat al-%di" }
-		6 = { "Alfurqat al-%di" }
-		7 = { "Alfurqat al-%di" }
-		8 = { "Alfurqat al-%di" }
-		9 = { "Alfurqat al-%di" }
-		10 = { "Alfurqat al-%di" }
-		12 = { "Alfurqat al-%dr" }
-		13 = { "Alfurqat al-%dr" }
-		14 = { "Alfurqat al-%dr" }
-		15 = { "Alfurqat al-%dr" }
-		16 = { "Alfurqat al-%dr" }
-		17 = { "Alfurqat al-%dr" }
-		18 = { "Alfurqat al-%dr" }
-		19 = { "Alfurqat al-%dr" }
-		20 = { "Alfurqat al-%dr" }
+		1 = { "Katibat almashat alaly %d Ar Riyad" }
+		2 = { "Katibat almashat alaly %d Jiddah" }
+		3 = { "Katibat almashat alaly %d" }
+		4 = { "Katibat almashat alaly %d" }
+		5 = { "Katibat almashat alaly %d" }
+		6 = { "Katibat almashat alaly %d" }
+		7 = { "Katibat almashat alaly %d" }
+		8 = { "Katibat almashat alaly %d" }
+		9 = { "Katibat almashat alaly %d" }
+		10 = { "Katibat almashat alaly %d" }
+		12 = { "Katibat almashat alaly %d" }
+		13 = { "Katibat almashat alaly %d" }
+		14 = { "Katibat almashat alaly %d" }
+		15 = { "Katibat almashat alaly %d" }
+		16 = { "Katibat almashat alaly %d" }
+		17 = { "Katibat almashat alaly %d" }
+		18 = { "Katibat almashat alaly %d" }
+		19 = { "Katibat almashat alaly %d" }
+		20 = { "Katibat almashat alaly %d" }
 
 		# Adapted from combining the names of the HoI4 division template name and the HoI3 SAU division lists. As they were the same as the inf division names, have had the numbers linked.
 	}
@@ -261,31 +261,31 @@ SAU_GAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SAU_INF_01 }
 
-	fallback_name = "Alfurqat al-%dr"
+	fallback_name = "Quwwat alhamia %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfurqat Ar Riyad" }
-		2 = { "Alfurqat Jiddah" }
-		3 = { "Alfurqat al-%di" }
-		4 = { "Alfurqat al-%di" }
-		5 = { "Alfurqat al-%di" }
-		6 = { "Alfurqat al-%di" }
-		7 = { "Alfurqat al-%di" }
-		8 = { "Alfurqat al-%di" }
-		9 = { "Alfurqat al-%di" }
-		10 = { "Alfurqat al-%di" }
-		12 = { "Alfurqat al-%dr" }
-		13 = { "Alfurqat al-%dr" }
-		14 = { "Alfurqat al-%dr" }
-		15 = { "Alfurqat al-%dr" }
-		16 = { "Alfurqat al-%dr" }
-		17 = { "Alfurqat al-%dr" }
-		18 = { "Alfurqat al-%dr" }
-		19 = { "Alfurqat al-%dr" }
-		20 = { "Alfurqat al-%dr" }
+		1 = { "Quwwat alhamia %d Ar Riyad" }
+		2 = { "Quwwat alhamia %d Jiddah" }
+		3 = { "Quwwat alhamia %d" }
+		4 = { "Quwwat alhamia %d" }
+		5 = { "Quwwat alhamia %d" }
+		6 = { "Quwwat alhamia %d" }
+		7 = { "Quwwat alhamia %d" }
+		8 = { "Quwwat alhamia %d" }
+		9 = { "Quwwat alhamia %d" }
+		10 = { "Quwwat alhamia %d" }
+		12 = { "Quwwat alhamia %d" }
+		13 = { "Quwwat alhamia %d" }
+		14 = { "Quwwat alhamia %d" }
+		15 = { "Quwwat alhamia %d" }
+		16 = { "Quwwat alhamia %d" }
+		17 = { "Quwwat alhamia %d" }
+		18 = { "Quwwat alhamia %d" }
+		19 = { "Quwwat alhamia %d" }
+		20 = { "Quwwat alhamia %d" }
 
 		# Adapted from combining the names of the HoI4 division template name and the HoI3 SAU division lists. As they were the same as the inf division names, have had the numbers linked.
 	}
@@ -304,23 +304,32 @@ SAU_MAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { SAU_MAR_01 }
 
-	fallback_name = "al-Mushati al-%dr"
+	fallback_name = "Katibat jundiin mushat albhry %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		20 = { "al-Mushati al-%dr" }
-		21 = { "al-Mushati al-%dr" }
-		22 = { "al-Mushati al-%dr" }
-		23 = { "al-Mushati al-%dr" }
-		24 = { "al-Mushati al-%dr" }
-		25 = { "al-Mushati al-%dr" }
-		26 = { "al-Mushati al-%dr" }
-		27 = { "al-Mushati al-%dr" }
-		28 = { "al-Mushati al-%dr" }
-		29 = { "al-Mushati al-%dr" }
-		30 = { "al-Mushati al-%dr" }
+		1 = { "Katibat jundiin mushat albhry %d" }
+		2 = { "Katibat jundiin mushat albhry %d" }
+		3 = { "Katibat jundiin mushat albhry %d" }
+		4 = { "Katibat jundiin mushat albhry %d" }
+		5 = { "Katibat jundiin mushat albhry %d" }
+		6 = { "Katibat jundiin mushat albhry %d" }
+		7 = { "Katibat jundiin mushat albhry %d" }
+		8 = { "Katibat jundiin mushat albhry %d" }
+		9 = { "Katibat jundiin mushat albhry %d" }
+		10 = { "Katibat jundiin mushat albhry %d" }
+		11 = { "Katibat jundiin mushat albhry %d" }
+		12 = { "Katibat jundiin mushat albhry %d" }
+		13 = { "Katibat jundiin mushat albhry %d" }
+		14 = { "Katibat jundiin mushat albhry %d" }
+		15 = { "Katibat jundiin mushat albhry %d" }
+		16 = { "Katibat jundiin mushat albhry %d" }
+		17 = { "Katibat jundiin mushat albhry %d" }
+		18 = { "Katibat jundiin mushat albhry %d" }
+		19 = { "Katibat jundiin mushat albhry %d" }
+		20 = { "Katibat jundiin mushat albhry %d" }
 
 		# Taken from HoI3 division lists.
 	}
@@ -339,23 +348,32 @@ SAU_MTN_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SAU_MAR_01 }
 
-	fallback_name = "al-Mushati al-%dr"
+	fallback_name = "Katibat kutlat dakhma %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		20 = { "al-Mushati al-%dr" }
-		21 = { "al-Mushati al-%dr" }
-		22 = { "al-Mushati al-%dr" }
-		23 = { "al-Mushati al-%dr" }
-		24 = { "al-Mushati al-%dr" }
-		25 = { "al-Mushati al-%dr" }
-		26 = { "al-Mushati al-%dr" }
-		27 = { "al-Mushati al-%dr" }
-		28 = { "al-Mushati al-%dr" }
-		29 = { "al-Mushati al-%dr" }
-		30 = { "al-Mushati al-%dr" }
+		1 = { "Katibat kutlat dakhma %d" }
+		2 = { "Katibat kutlat dakhma %d" }
+		3 = { "Katibat kutlat dakhma %d" }
+		4 = { "Katibat kutlat dakhma %d" }
+		5 = { "Katibat kutlat dakhma %d" }
+		6 = { "Katibat kutlat dakhma %d" }
+		7 = { "Katibat kutlat dakhma %d" }
+		8 = { "Katibat kutlat dakhma %d" }
+		9 = { "Katibat kutlat dakhma %d" }
+		10 = { "Katibat kutlat dakhma %d" }
+		11 = { "Katibat kutlat dakhma %d" }
+		12 = { "Katibat kutlat dakhma %d" }
+		13 = { "Katibat kutlat dakhma %d" }
+		14 = { "Katibat kutlat dakhma %d" }
+		15 = { "Katibat kutlat dakhma %d" }
+		16 = { "Katibat kutlat dakhma %d" }
+		17 = { "Katibat kutlat dakhma %d" }
+		18 = { "Katibat kutlat dakhma %d" }
+		19 = { "Katibat kutlat dakhma %d" }
+		20 = { "Katibat kutlat dakhma %d" }
 
 		# Taken from HoI3 division lists. As they were the same as the MAR division names, have had the numbers linked.
 	}
@@ -374,23 +392,32 @@ SAU_PAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SAU_MAR_01 }
 
-	fallback_name = "al-Mushati al-%dr"
+	fallback_name = "Katibat mazali %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		20 = { "al-Mushati al-%dr" }
-		21 = { "al-Mushati al-%dr" }
-		22 = { "al-Mushati al-%dr" }
-		23 = { "al-Mushati al-%dr" }
-		24 = { "al-Mushati al-%dr" }
-		25 = { "al-Mushati al-%dr" }
-		26 = { "al-Mushati al-%dr" }
-		27 = { "al-Mushati al-%dr" }
-		28 = { "al-Mushati al-%dr" }
-		29 = { "al-Mushati al-%dr" }
-		30 = { "al-Mushati al-%dr" }
+		1 = { "Katibat mazali %d" }
+		2 = { "Katibat mazali %d" }
+		3 = { "Katibat mazali %d" }
+		4 = { "Katibat mazali %d" }
+		5 = { "Katibat mazali %d" }
+		6 = { "Katibat mazali %d" }
+		7 = { "Katibat mazali %d" }
+		8 = { "Katibat mazali %d" }
+		9 = { "Katibat mazali %d" }
+		10 = { "Katibat mazali %d" }
+		11 = { "Katibat mazali %d" }
+		12 = { "Katibat mazali %d" }
+		13 = { "Katibat mazali %d" }
+		14 = { "Katibat mazali %d" }
+		15 = { "Katibat mazali %d" }
+		16 = { "Katibat mazali %d" }
+		17 = { "Katibat mazali %d" }
+		18 = { "Katibat mazali %d" }
+		19 = { "Katibat mazali %d" }
+		20 = { "Katibat mazali %d" }
 
 		# Taken from HoI3 division lists. As they were the same as the MAR division names, have had the numbers linked.
 	}

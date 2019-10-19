@@ -4784,7 +4784,7 @@ focus_tree = {
 				division_template = {
 					name = "KNIL Divisie"
 					priority = 1
-					division_names_group = INS_INF_01
+					division_names_group = HOL_INF_02
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -4799,35 +4799,35 @@ focus_tree = {
 				}
 				7 = {
 					create_unit = {
-						division = "name = \"1. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"1se KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"2. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"2se KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"3. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"3se KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"4. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"4se KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"5. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"5se KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"6. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"6se KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"7. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"7se KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"8. KNIL Divisie 'Celebes'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"8se KNIL Divisie 'Celebes'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
 						owner = HOL
 					}
 				}
@@ -5449,7 +5449,7 @@ focus_tree = {
 			has_war = yes
 		}
 		bypass = {
-			has_government = neutrality
+			has_government = monarchism
 		}
 		icon = GFX_goal_generic_political_pressure
 		x = 1
@@ -5490,7 +5490,7 @@ focus_tree = {
 	focus = {
 		id = HOL_the_only_man_in_the_dutch_government
 		available = {
-			neutrality > 0.45
+			monarchism > 0.45
 			NOT = { has_completed_focus = HOL_curtail_colonial_autonomy }
 		}
 		prerequisite = { focus = HOL_symbol_of_resistance }
@@ -5504,20 +5504,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = neutrality elections_allowed = no }
+			set_politics = { ruling_party = monarchism elections_allowed = no }
 			remove_ideas = HOL_wilhelmina
-			create_country_leader = {
-				name = "Wilhelmina"
-				desc = "POLITICS_WILHELMINA_DESC"
-				picture = "portrait_hol_wilhelmina.dds"
-				expire = "1965.1.1"
-				ideology = centrism
-				traits = {
-					wilhelmina
-					disdain_for_politicians_1
-					queen_of_the_people
-				}
-			}
 			custom_effect_tooltip = available_political_advisor
 		    show_ideas_tooltip = HOL_prince_bernhard
 		}

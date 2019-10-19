@@ -1624,8 +1624,8 @@ ENG_appeal_to_imperial_loyalists = {
 			has_equipment = { artillery_equipment > 249 }
 			OR = {
 				AND = {
-					has_government = neutrality
-					FROM = { NOT = { has_government = neutrality } }
+					has_government = monarchism
+					FROM = { NOT = { has_government = monarchism } }
 				}
 				AND = {
 					has_government = fascism
@@ -1646,9 +1646,9 @@ ENG_appeal_to_imperial_loyalists = {
 				NOT = { is_subject_of = ROOT }
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					NOT = { has_government = neutrality }
+					NOT = { has_government = monarchism }
 				}
 				if = {
 					limit = {
@@ -1691,10 +1691,10 @@ ENG_appeal_to_imperial_loyalists = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
-						FROM = { NOT = { has_government = neutrality } }
+						ROOT = { has_government = monarchism }
+						FROM = { NOT = { has_government = monarchism } }
 					}
-					FROM = { start_civil_war = { ideology = neutrality size = 0.4 } }
+					FROM = { start_civil_war = { ideology = monarchism size = 0.4 } }
 				}
 				if = {
 					limit = {
@@ -1743,14 +1743,14 @@ ENG_appeal_to_imperial_loyalists = {
 		timeout_effect = {
 			if = {
 				limit = {
-					EN0 = { has_government = neutrality }
-					CA2 = { NOT = { has_government = neutrality } }
+					EN0 = { has_government = monarchism }
+					CA2 = { NOT = { has_government = monarchism } }
 				}
-				CA2 = { start_civil_war = { ideology = neutrality size = 0.4 } }
+				CA2 = { start_civil_war = { ideology = monarchism size = 0.4 } }
 				random_other_country = {
 					limit = {
 						original_tag = CAN
-						has_government = neutrality
+						has_government = monarchism
 					}
 					set_variable = { global.can_imperial_tag = THIS.id }
 					add_opinion_modifier = { target = EN0 modifier = ENG_imperial_loyalist }
@@ -1894,8 +1894,8 @@ ENG_appeal_to_imperial_loyalists = {
 			has_equipment = { artillery_equipment > 124 }
 			OR = {
 				AND = {
-					has_government = neutrality
-					FROM = { NOT = { has_government = neutrality } }
+					has_government = monarchism
+					FROM = { NOT = { has_government = monarchism } }
 				}
 				AND = {
 					has_government = fascism
@@ -1915,9 +1915,9 @@ ENG_appeal_to_imperial_loyalists = {
 				tag = CA2
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					NOT = { has_government = neutrality }
+					NOT = { has_government = monarchism }
 				}
 				if = {
 					limit = {
@@ -1963,10 +1963,10 @@ ENG_appeal_to_imperial_loyalists = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
-						FROM = { NOT = { has_government = neutrality } }
+						ROOT = { has_government = monarchism }
+						FROM = { NOT = { has_government = monarchism } }
 					}
-					FROM = { start_civil_war = { ideology = neutrality size = 0.4 } }
+					FROM = { start_civil_war = { ideology = monarchism size = 0.4 } }
 				}
 				if = {
 					limit = {
@@ -1997,8 +1997,8 @@ ENG_appeal_to_imperial_loyalists = {
 			has_equipment = { artillery_equipment > 249 }
 			OR = {
 				AND = {
-					has_government = neutrality
-					FROM = { NOT = { has_government = neutrality } }
+					has_government = monarchism
+					FROM = { NOT = { has_government = monarchism } }
 				}
 				AND = {
 					has_government = fascism
@@ -2019,9 +2019,9 @@ ENG_appeal_to_imperial_loyalists = {
 				NOT = { is_subject_of = ROOT }
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					NOT = { has_government = neutrality }
+					NOT = { has_government = monarchism }
 				}
 				if = {
 					limit = {
@@ -2064,10 +2064,10 @@ ENG_appeal_to_imperial_loyalists = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
-						FROM = { NOT = { has_government = neutrality } }
+						ROOT = { has_government = monarchism }
+						FROM = { NOT = { has_government = monarchism } }
 					}
-					FROM = { start_civil_war = { ideology = neutrality size = 0.4 } }
+					FROM = { start_civil_war = { ideology = monarchism size = 0.4 } }
 				}
 				if = {
 					limit = {
@@ -2116,14 +2116,14 @@ ENG_appeal_to_imperial_loyalists = {
 		timeout_effect = {
 			if = {
 				limit = {
-					EN0 = { has_government = neutrality }
-					SA2 = { NOT = { has_government = neutrality } }
+					EN0 = { has_government = monarchism }
+					SA2 = { NOT = { has_government = monarchism } }
 				}
-				SA2 = { start_civil_war = { ideology = neutrality size = 0.4 } }
+				SA2 = { start_civil_war = { ideology = monarchism size = 0.4 } }
 				random_other_country = {
 					limit = {
 						original_tag = SAF
-						has_government = neutrality
+						has_government = monarchism
 					}
 					set_variable = { global.saf_imperial_tag = THIS.id }
 					add_opinion_modifier = { target = EN0 modifier = ENG_imperial_loyalist }
@@ -2267,8 +2267,8 @@ ENG_appeal_to_imperial_loyalists = {
 			has_equipment = { artillery_equipment > 124 }
 			OR = {
 				AND = {
-					has_government = neutrality
-					FROM = { NOT = { has_government = neutrality } }
+					has_government = monarchism
+					FROM = { NOT = { has_government = monarchism } }
 				}
 				AND = {
 					has_government = fascism
@@ -2288,9 +2288,9 @@ ENG_appeal_to_imperial_loyalists = {
 				tag = SA2
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					NOT = { has_government = neutrality }
+					NOT = { has_government = monarchism }
 				}
 				if = {
 					limit = {
@@ -2336,14 +2336,14 @@ ENG_appeal_to_imperial_loyalists = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
-						FROM = { NOT = { has_government = neutrality } }
+						ROOT = { has_government = monarchism }
+						FROM = { NOT = { has_government = monarchism } }
 					}
-					FROM = { start_civil_war = { ideology = neutrality size = 0.4 } }
+					FROM = { start_civil_war = { ideology = monarchism size = 0.4 } }
 					random_other_country = {
 						limit = {
 							original_tag = SAF
-							has_government = neutrality
+							has_government = monarchism
 						}
 						add_opinion_modifier = { target = ROOT modifier = ENG_imperial_loyalist }
 					}
@@ -2384,8 +2384,8 @@ ENG_appeal_to_imperial_loyalists = {
 			has_equipment = { artillery_equipment > 249 }
 			OR = {
 				AND = {
-					has_government = neutrality
-					FROM = { NOT = { has_government = neutrality } }
+					has_government = monarchism
+					FROM = { NOT = { has_government = monarchism } }
 				}
 				AND = {
 					has_government = fascism
@@ -2406,9 +2406,9 @@ ENG_appeal_to_imperial_loyalists = {
 				NOT = { is_subject_of = ROOT }
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					NOT = { has_government = neutrality }
+					NOT = { has_government = monarchism }
 				}
 				if = {
 					limit = {
@@ -2451,10 +2451,10 @@ ENG_appeal_to_imperial_loyalists = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
-						FROM = { NOT = { has_government = neutrality } }
+						ROOT = { has_government = monarchism }
+						FROM = { NOT = { has_government = monarchism } }
 					}
-					FROM = { start_civil_war = { ideology = neutrality size = 0.4 } }
+					FROM = { start_civil_war = { ideology = monarchism size = 0.4 } }
 				}
 				if = {
 					limit = {
@@ -2503,28 +2503,18 @@ ENG_appeal_to_imperial_loyalists = {
 		timeout_effect = {
 			if = {
 				limit = {
-					EN0 = { has_government = neutrality }
-					AS2 = { NOT = { has_government = neutrality } }
+					EN0 = { has_government = monarchism }
+					AS2 = { NOT = { has_government = monarchism } }
 				}
-				AS2 = { start_civil_war = { ideology = neutrality size = 0.4 } }
+				AS2 = { start_civil_war = { ideology = monarchism size = 0.4 } }
 				random_other_country = {
 					limit = {
 						original_tag = AST
-						has_government = neutrality
+						has_government = monarchism
 					}
 					set_variable = { global.ast_imperial_tag = THIS.id }
 					add_opinion_modifier = { target = EN0 modifier = ENG_imperial_loyalist }
 					set_cosmetic_tag = ENG_imperialist_australia
-					create_country_leader = {
-						name = "William Birdwood"
-						desc = "POLITICS_WILLIAM_BIRDWOOD_DESC"
-						picture = "gfx/leaders/ENG/portrait_eng_william_birdwood.dds"
-						expire = "1965.1.1"
-						ideology = centrism
-						traits = {
-							
-						}
-					}
 				}
 				AS2 = { hidden_effect = { news_event = { id = mtg_news.26 days = 1 } } }
 			}
@@ -2664,8 +2654,8 @@ ENG_appeal_to_imperial_loyalists = {
 			has_equipment = { artillery_equipment > 124 }
 			OR = {
 				AND = {
-					has_government = neutrality
-					FROM = { NOT = { has_government = neutrality } }
+					has_government = monarchism
+					FROM = { NOT = { has_government = monarchism } }
 				}
 				AND = {
 					has_government = fascism
@@ -2685,9 +2675,9 @@ ENG_appeal_to_imperial_loyalists = {
 				tag = AS2
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					NOT = { has_government = neutrality }
+					NOT = { has_government = monarchism }
 				}
 				if = {
 					limit = {
@@ -2733,14 +2723,14 @@ ENG_appeal_to_imperial_loyalists = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
-						FROM = { NOT = { has_government = neutrality } }
+						ROOT = { has_government = monarchism }
+						FROM = { NOT = { has_government = monarchism } }
 					}
-					FROM = { start_civil_war = { ideology = neutrality size = 0.4 } }
+					FROM = { start_civil_war = { ideology = monarchism size = 0.4 } }
 					random_other_country = {
 						limit = {
 							original_tag = AST
-							has_government = neutrality
+							has_government = monarchism
 						}
 						add_opinion_modifier = { target = ROOT modifier = ENG_imperial_loyalist }
 					}
@@ -2781,8 +2771,8 @@ ENG_appeal_to_imperial_loyalists = {
 			has_equipment = { artillery_equipment > 249 }
 			OR = {
 				AND = {
-					has_government = neutrality
-					FROM = { NOT = { has_government = neutrality } }
+					has_government = monarchism
+					FROM = { NOT = { has_government = monarchism } }
 				}
 				AND = {
 					has_government = fascism
@@ -2803,9 +2793,9 @@ ENG_appeal_to_imperial_loyalists = {
 				NOT = { is_subject_of = ROOT }
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					NOT = { has_government = neutrality }
+					NOT = { has_government = monarchism }
 				}
 				if = {
 					limit = {
@@ -2848,14 +2838,14 @@ ENG_appeal_to_imperial_loyalists = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
-						FROM = { NOT = { has_government = neutrality } }
+						ROOT = { has_government = monarchism }
+						FROM = { NOT = { has_government = monarchism } }
 					}
-					FROM = { start_civil_war = { ideology = neutrality size = 0.4 } }
+					FROM = { start_civil_war = { ideology = monarchism size = 0.4 } }
 					random_other_country = {
 						limit = {
 							original_tag = NZL
-							has_government = neutrality
+							has_government = monarchism
 						}
 						add_opinion_modifier = { target = ROOT modifier = ENG_imperial_loyalist }
 					}
@@ -2914,14 +2904,14 @@ ENG_appeal_to_imperial_loyalists = {
 		timeout_effect = {
 			if = {
 				limit = {
-					EN0 = { has_government = neutrality }
-					NZ2 = { NOT = { has_government = neutrality } }
+					EN0 = { has_government = monarchism }
+					NZ2 = { NOT = { has_government = monarchism } }
 				}
-				NZ2 = { start_civil_war = { ideology = neutrality size = 0.4 } }
+				NZ2 = { start_civil_war = { ideology = monarchism size = 0.4 } }
 				random_other_country = {
 					limit = {
 						original_tag = NZL
-						has_government = neutrality
+						has_government = monarchism
 					}
 					set_variable = { global.nzl_imperial_tag = THIS.id }
 					add_opinion_modifier = { target = EN0 modifier = ENG_imperial_loyalist }
@@ -3065,8 +3055,8 @@ ENG_appeal_to_imperial_loyalists = {
 			has_equipment = { artillery_equipment > 124 }
 			OR = {
 				AND = {
-					has_government = neutrality
-					NZ2 = { NOT = { has_government = neutrality } }
+					has_government = monarchism
+					NZ2 = { NOT = { has_government = monarchism } }
 				}
 				AND = {
 					has_government = fascism
@@ -3086,9 +3076,9 @@ ENG_appeal_to_imperial_loyalists = {
 				tag = NZ2
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					NOT = { has_government = neutrality }
+					NOT = { has_government = monarchism }
 				}
 				if = {
 					limit = {
@@ -3134,10 +3124,10 @@ ENG_appeal_to_imperial_loyalists = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
-						FROM = { NOT = { has_government = neutrality } }
+						ROOT = { has_government = monarchism }
+						FROM = { NOT = { has_government = monarchism } }
 					}
-					FROM = { start_civil_war = { ideology = neutrality size = 0.5 } }
+					FROM = { start_civil_war = { ideology = monarchism size = 0.5 } }
 				}
 				if = {
 					limit = {
@@ -3180,9 +3170,9 @@ ENG_appeal_to_imperial_loyalists = {
 				has_civil_war = yes
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					has_government = neutrality
+					has_government = monarchism
 				}
 				if = {
 					limit = {
@@ -3200,9 +3190,9 @@ ENG_appeal_to_imperial_loyalists = {
 			FROM = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					has_government = neutrality
+					has_government = monarchism
 				}
 				if = {
 					limit = {
@@ -3285,9 +3275,9 @@ ENG_appeal_to_imperial_loyalists = {
 				has_civil_war = yes
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					has_government = neutrality
+					has_government = monarchism
 				}
 				if = {
 					limit = {
@@ -3305,9 +3295,9 @@ ENG_appeal_to_imperial_loyalists = {
 			FROM = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					has_government = neutrality
+					has_government = monarchism
 				}
 				if = {
 					limit = {
@@ -3390,9 +3380,9 @@ ENG_appeal_to_imperial_loyalists = {
 				has_civil_war = yes
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					has_government = neutrality
+					has_government = monarchism
 				}
 				if = {
 					limit = {
@@ -3410,9 +3400,9 @@ ENG_appeal_to_imperial_loyalists = {
 			FROM = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					has_government = neutrality
+					has_government = monarchism
 				}
 				if = {
 					limit = {
@@ -3495,9 +3485,9 @@ ENG_appeal_to_imperial_loyalists = {
 				has_civil_war = yes
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					has_government = neutrality
+					has_government = monarchism
 				}
 				if = {
 					limit = {
@@ -3515,9 +3505,9 @@ ENG_appeal_to_imperial_loyalists = {
 			FROM = {
 				if = {
 					limit = {
-						ROOT = { has_government = neutrality }
+						ROOT = { has_government = monarchism }
 					}
-					has_government = neutrality
+					has_government = monarchism
 				}
 				if = {
 					limit = {
@@ -7660,9 +7650,11 @@ ENG_move_to_secure_the_dominions = {
 
 		available = {
 			NOT = { army_manpower_in_state = { state = 522 amount < 9600 } }
+			NOT = { army_manpower_in_state = { state = 888 amount < 9600 } }
 			NOT = { army_manpower_in_state = { state = 521 amount < 19200 } }
-			NOT = { army_manpower_in_state = { state = 517 amount < 38400 } }
-			NOT = { army_manpower_in_state = { state = 285 amount < 48000 } }
+			NOT = { army_manpower_in_state = { state = 517 amount < 28800‬ } }
+			NOT = { army_manpower_in_state = { state = 285 amount < 28800‬ } }
+			NOT = { army_manpower_in_state = { state = 896 amount < 9600 } }
 		}
 
 		targets = { AS2 }
@@ -7740,9 +7732,11 @@ ENG_move_to_secure_the_dominions = {
 
 		available = {
 			NOT = { army_manpower_in_state = { state = 522 amount < 9600 } }
+			NOT = { army_manpower_in_state = { state = 888 amount < 9600 } }
 			NOT = { army_manpower_in_state = { state = 521 amount < 19200 } }
-			NOT = { army_manpower_in_state = { state = 517 amount < 38400 } }
-			NOT = { army_manpower_in_state = { state = 285 amount < 48000 } }
+			NOT = { army_manpower_in_state = { state = 517 amount < 28800‬ } }
+			NOT = { army_manpower_in_state = { state = 285 amount < 28800‬ } }
+			NOT = { army_manpower_in_state = { state = 896 amount < 9600 } }
 			FROM = { has_country_flag = ENG_cannot_leave_faction }
 		}
 
@@ -7811,9 +7805,11 @@ ENG_move_to_secure_the_dominions = {
 
 		available = {
 			NOT = { army_manpower_in_state = { state = 522 amount < 9600 } }
+			NOT = { army_manpower_in_state = { state = 888 amount < 9600 } }
 			NOT = { army_manpower_in_state = { state = 521 amount < 19200 } }
-			NOT = { army_manpower_in_state = { state = 517 amount < 38400 } }
-			NOT = { army_manpower_in_state = { state = 285 amount < 48000 } }
+			NOT = { army_manpower_in_state = { state = 517 amount < 28800‬ } }
+			NOT = { army_manpower_in_state = { state = 285 amount < 28800‬ } }
+			NOT = { army_manpower_in_state = { state = 896 amount < 9600 } }
 			FROM = {
 				has_country_flag = ENG_cannot_leave_faction
 				fascism > 0.2
@@ -7871,9 +7867,11 @@ ENG_move_to_secure_the_dominions = {
 
 		available = {
 			NOT = { army_manpower_in_state = { state = 522 amount < 9600 } }
+			NOT = { army_manpower_in_state = { state = 888 amount < 9600 } }
 			NOT = { army_manpower_in_state = { state = 521 amount < 19200 } }
-			NOT = { army_manpower_in_state = { state = 517 amount < 38400 } }
-			NOT = { army_manpower_in_state = { state = 285 amount < 48000 } }
+			NOT = { army_manpower_in_state = { state = 517 amount < 28800‬ } }
+			NOT = { army_manpower_in_state = { state = 285 amount < 28800‬ } }
+			NOT = { army_manpower_in_state = { state = 896 amount < 9600 } }
 			FROM = {
 				has_country_flag = ENG_cannot_leave_faction
 				communism > 0.2
@@ -8675,6 +8673,7 @@ political_actions = {
 				OR = {
 					has_government = ROOT
 					has_government = neutrality
+					has_government = monarchism
 				}
 			}
 			PO5 = { is_in_faction = no }
@@ -8719,6 +8718,7 @@ political_actions = {
 				OR = {
 					has_government = ROOT
 					has_government = neutrality
+					has_government = monarchism
 				}
 			}
 			PO5 = { is_in_faction = no }
@@ -8945,16 +8945,16 @@ political_actions = {
 					set_cosmetic_tag = USA_wallis_simpson
 				}
 				add_popularity = {
-				    ideology = neutrality
+				    ideology = monarchism
 				    popularity = 0.5
 				}
-				set_politics = { ruling_party = neutrality elections_allowed = no }
+				set_politics = { ruling_party = monarchism elections_allowed = no }
 				create_country_leader = {
 					name = "Wallis I"
 					desc = "POLITICS_WALLIS_I_DESC"
 					picture = GFX_portrait_eng_wallis_simpson
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = royalism
 					traits = {
 						unpopular_monarch socialite_connections wallis_fancy_title
 					}
@@ -9000,16 +9000,16 @@ political_actions = {
 					set_cosmetic_tag = USA_wallis_simpson
 				}
 				add_popularity = {
-				    ideology = neutrality
+				    ideology = monarchism
 				    popularity = 0.5
 				}
-				set_politics = { ruling_party = neutrality elections_allowed = no }
+				set_politics = { ruling_party = monarchism elections_allowed = no }
 				create_country_leader = {
 					name = "Wallis I"
 					desc = "POLITICS_WALLIS_I_DESC"
 					picture = GFX_portrait_eng_wallis_simpson
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = royalism
 					traits = {
 						unpopular_monarch socialite_connections wallis_fancy_title
 					}
@@ -9223,13 +9223,93 @@ operations = {
 		visible = {
 			tag = EN0
 			has_war_with = GE0
-			IR0 = { exists = yes }
+			IR0 = {
+				exists = yes
+				OR = {
+					owns_state = 113
+					owns_state = 134
+					owns_state = 135
+					owns_state = 119
+					owns_state = 120
+					owns_state = 793
+					owns_state = 792
+					owns_state = 791
+					owns_state = 136
+					owns_state = 121
+					owns_state = 133
+					owns_state = 131
+					owns_state = 130
+					owns_state = 132
+					owns_state = 128
+					owns_state = 129
+					owns_state = 125
+					owns_state = 126
+					owns_state = 127
+					owns_state = 338
+					owns_state = 123
+					owns_state = 122
+				}
+			}
+			
 		}
 		
 		complete_effect = {
-			add_state_claim = 113
-			add_state_claim = 134
-			add_state_claim = 135
+			if = {
+				limit = {
+					113 = {
+						NOT = { is_claimed_by = ROOT }
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				add_state_claim = 113
+			}
+			if = {
+				limit = {
+					134 = {
+						NOT = { is_claimed_by = ROOT }
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				add_state_claim = 134
+			}
+			if = {
+				limit = {
+					135 = {
+						NOT = { is_claimed_by = ROOT }
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				add_state_claim = 135
+			}
+			if = {
+				limit = {
+					119 = {
+						NOT = { is_claimed_by = ROOT }
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				add_state_claim = 119
+			}
 			declare_war_on = { target = IR0 type = annex_everything }
 			add_popularity = { ideology = democratic popularity = -0.03 }
 		}

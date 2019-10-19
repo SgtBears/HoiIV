@@ -8,6 +8,7 @@ state=
 	{
 		owner = JAP
 		add_core_of = NMI
+		add_core_of = PLU
 		buildings = {
 			infrastructure = 3
 			air_base = 3

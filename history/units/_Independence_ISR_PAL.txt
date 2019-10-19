@@ -1,0 +1,81 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Hish"					# Infantry Division
+
+	division_names_group = ISR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 990
+		}
+		location = 1065
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 991
+		}
+		location = 1201
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 992
+		}
+		location = 14394
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 993
+		}
+		location = 4206
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 994
+		}
+		location = 14391
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 995
+		}
+		location = 14393
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 996
+		}
+		location = 14394
+		division_template = "Infantry Division"
+		start_experience_factor = 1
+	}
+}

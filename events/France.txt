@@ -187,6 +187,7 @@ country_event = {
 			OR = {
 				is_faction_leader = yes
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		has_civil_war = no
@@ -692,7 +693,10 @@ country_event = {
 			factor = 50
 		}
 		trigger = {
-			has_government = neutrality
+			OR = {
+				has_government = neutrality
+				has_government = monarchism
+			}
 		}
 		#Set same cosmetic tag they would get on capitulation
 		FR0 = {
@@ -1736,7 +1740,7 @@ country_event = {
 					}
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_government = fascism
 				}
@@ -1752,7 +1756,7 @@ country_event = {
 					}
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_government = communism
 				}
@@ -1768,9 +1772,12 @@ country_event = {
 					}
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
-					has_government = neutrality
+					OR = {
+						has_government = neutrality
+						has_government = monarchism
+					}
 				}
 				FR0 = {
 					set_politics = {

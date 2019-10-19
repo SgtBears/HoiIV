@@ -1,0 +1,27 @@
+
+state={
+	id=905
+	name="STATE_905" #Palestine
+	manpower = 933142
+	
+	state_category = wasteland
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			1015 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			14390 1
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+	}
+
+	provinces={
+		7176 1015 14390 14389 14388 11970
+	}
+}

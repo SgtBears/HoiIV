@@ -224,3 +224,41 @@ country_exists_release_offer_communism = {
 	clear_variable = VARTAG
 	clear_variable = OWNSTATE
 }
+MCR_add_stars = {
+	if = {
+		limit = {
+			has_cosmetic_tag = MCR_6_states
+		}
+		set_cosmetic_tag = MCR_7_states
+	}
+	if = {
+		limit = {
+			has_cosmetic_tag = MCR_5_states
+		}
+		set_cosmetic_tag = MCR_6_states
+	}
+	if = {
+		limit = {
+			has_cosmetic_tag = MCR_4_states
+		}
+		set_cosmetic_tag = MCR_5_states
+	}
+	else_if = {
+		limit = {
+			has_cosmetic_tag = MCR_3_states
+		}
+		set_cosmetic_tag = MCR_4_states
+	}
+	else_if = {
+		limit = {
+			has_cosmetic_tag = MCR_2_states
+		}
+		set_cosmetic_tag = MCR_3_states
+	}
+	else_if = {
+		limit = {
+			has_cosmetic_tag = MCR_ponape
+		}
+		set_cosmetic_tag = MCR_2_states
+	}
+}

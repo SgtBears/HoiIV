@@ -55,11 +55,11 @@ ideas = {
 		HUN_hungarian_monarchy = {
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 			
 			modifier = {
-				neutrality_drift = 0.02
+				monarchism_drift = 0.02
 			}
 		}
 
@@ -68,11 +68,11 @@ ideas = {
 			picture = HUN_hungarian_monarchy
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 			
 			modifier = {
-				neutrality_drift = 0.02
+				monarchism_drift = 0.02
 				stability_factor = 0.1
 			}
 		}
@@ -146,18 +146,17 @@ ideas = {
 			picture = HUN_hungarian_monarchy_habsburg
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 
 			available = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 			
 			modifier = {
-				neutrality_drift = 0.02
+				monarchism_drift = 0.02
 				stability_factor = 0.1
 				political_power_factor = 0.2
-				generate_wargoal_tension = -0.25
 			}
 		}
 
@@ -587,6 +586,12 @@ ideas = {
 			}
 			
 
+			available = {
+				if = {
+					limit = { has_dlc = "Death or Dishonor" }
+					has_completed_focus = HUN_naval_warfare
+				}
+			}
 			
 			traits = { navy_chief_reform_2 }
 			
@@ -603,6 +608,12 @@ ideas = {
 				original_tag = HUN
 			}
 			
+			available = {
+				if = {
+					limit = { has_dlc = "Death or Dishonor" }
+					has_completed_focus = HUN_naval_warfare
+				}
+			}
 
 			
 			traits = { navy_chief_maneuver_2 }

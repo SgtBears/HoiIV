@@ -1,0 +1,54 @@
+political_actions = {
+
+	ISR_move_capital_to_jeruasalem = {
+
+		allowed = {
+			original_tag = ISR
+		}
+
+		available = {
+			owns_state = 904
+			has_full_control_of_state = 904
+			NOT = { country_exists = PAL }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			capital_scope = {
+				not = { state = 904 }
+			}
+		}
+		complete_effect = {
+			set_capital = 904
+		}
+	}
+	PAL_move_capital_to_jeruasalem = {
+
+		allowed = {
+			original_tag = PAL
+		}
+
+		available = {
+			owns_state = 904
+			has_full_control_of_state = 904
+			NOT = { country_exists = ISR }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			capital_scope = {
+				not = { state = 904 }
+			}
+		}
+		complete_effect = {
+			set_capital = 904
+		}
+	}
+
+}

@@ -1735,6 +1735,13 @@ focus_tree = {
 						country_exists = GE0
 					}
 				}
+				AND = {
+					has_government = monarchism
+					GE0 = { 
+						has_government = monarchism
+						country_exists = GE0
+					}
+				}
 			}
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}

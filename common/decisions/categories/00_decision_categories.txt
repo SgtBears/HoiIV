@@ -45,6 +45,7 @@ SAF_anti_colonialist_crusade = {
 						OR = {
 							has_government = fascism
 							has_government = neutrality
+							has_government = monarchism
 						}
 						original_tag = MAN
 					}

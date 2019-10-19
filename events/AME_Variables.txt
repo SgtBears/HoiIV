@@ -1958,14 +1958,91 @@ country_event = {
 				NOT = { has_civil_war = yes }		
 			}			
 			set_variable = { global.TAH_tag = ROOT.id }	
-		}				
+		}
 		else_if = {				
 			limit = {			
 				original_tag = NAU	
 				NOT = { has_civil_war = yes }		
 			}			
 			set_variable = { global.NAU_tag = ROOT.id }	
-		}				
+		}
+		else_if = {				
+			limit = {			
+				original_tag = CHU	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.CHU_tag = ROOT.id }	
+		}
+		else_if = {				
+			limit = {			
+				original_tag = POH	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.POH_tag = ROOT.id }	
+		}
+		else_if = {				
+			limit = {			
+				original_tag = KOS	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.KOS_tag = ROOT.id }	
+		}
+		else_if = {				
+			limit = {			
+				original_tag = QUN	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.QUN_tag = ROOT.id }	
+		}
+		else_if = {				
+			limit = {			
+				original_tag = NSW	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.NSW_tag = ROOT.id }	
+		}
+		else_if = {				
+			limit = {			
+				original_tag = TAS	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.TAS_tag = ROOT.id }	
+		}
+		else_if = {				
+			limit = {			
+				original_tag = VIC	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.VIC_tag = ROOT.id }	
+		}
+		else_if = {				
+			limit = {			
+				original_tag = NOA	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.NOA_tag = ROOT.id }	
+		}
+		else_if = {				
+			limit = {			
+				original_tag = WAU	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.WAU_tag = ROOT.id }	
+		}
+		else_if = {				
+			limit = {			
+				original_tag = SOA	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.SOA_tag = ROOT.id }	
+		}
+		else_if = {				
+			limit = {			
+				original_tag = CBR	
+				NOT = { has_civil_war = yes }		
+			}			
+			set_variable = { global.CBR_tag = ROOT.id }	
+		}
 		if = {
 			limit = {
 				original_tag = WGR

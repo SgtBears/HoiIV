@@ -1,4 +1,4 @@
-﻿capital = 454
+﻿capital = 904
 
 # Starting tech
 set_technology = {
@@ -87,17 +87,6 @@ create_country_leader = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Prince Henry"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Britain_George_VI.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
 create_country_leader = {
 	name = "Bulus Farah"
 	desc = ""

@@ -45,13 +45,13 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10342;1437;sea;4899;-1;-1;-1;-1;;Obi-Bacan
 7413;1437;sea;4899;-1;-1;-1;-1;;Halmahera-Bacan
 4509;7542;sea;2585;-1;-1;-1;-1;;Papua-Japen
-10251;1329;sea;430;-1;-1;-1;-1;;Papua-New Britain
+14382;1329;sea;14385;-1;-1;-1;-1;;Papua-New Britain
+10251;14382;sea;14385;-1;-1;-1;-1;;Papua-New Britain
 7251;4421;sea;7010;-1;-1;-1;-1;;New Britain-Latangai
 13021;13022;sea;8673;-1;-1;-1;-1;;Gilbert Islands
 4268;4231;sea;5741;-1;-1;-1;-1;;New Caledonia 1
 12632;1814;sea;5637;-1;-1;-1;-1;;North-South NZ Islands
 10231;10248;sea;430;-1;-1;-1;-1;;New Guinea-Fergusson
-12246;10288;sea;5513;-1;-1;-1;-1;;Cobourg-Australia
 1042;7437;sea;6819;-1;-1;-1;-1;;San Cristobal-Guadalcanal
 4292;10319;sea;5868;-1;-1;-1;-1;;Guadalcanal-Munda
 4292;1269;sea;5868;-1;-1;-1;-1;;Guadalcanal-Munda
@@ -91,7 +91,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14284;13044;sea;7287;-1;-1;-1;-1;;Carolines 1
 13042;13043;sea;2414;-1;-1;-1;-1;;Carolines 2
 10276;7669;sea;5263;-1;-1;-1;-1;;Tiwi-Darwin
-12910;7567;sea;5771;-1;-1;-1;-1;;Adelaide-Kangaroo Island
+12910;14372;sea;5771;-1;-1;-1;-1;;Adelaide-Kangaroo Island
+14373;14372;sea;5771;-1;-1;-1;-1;;Adelaide-Kangaroo Island
 4526;153;sea;2571;-1;-1;-1;-1;;Curacao-Zulia
 10767;3284;sea;2597;-1;-1;-1;-1;;Miranda-Trinidad
 13012;3284;sea;2597;-1;-1;-1;-1;;Tobago-Trinidad
@@ -234,7 +235,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13642;13644;sea;5660;-1;-1;-1;-1;;Vanuatu
 13645;13642;sea;5660;-1;-1;-1;-1;;Vanuatu
 13641;1237;sea;5660;-1;-1;-1;-1;;Vanuatu
-10233;5205;sea;13200;-1;-1;-1;-1;;Michigan
 9758;11900;sea;8492;-1;-1;-1;-1;;philadelphia
 677;3678;sea;5430;-1;-1;-1;-1;;california
 677;9671;sea;5430;-1;-1;-1;-1;;california
@@ -315,4 +315,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14310;14309;sea;1942;-1;-1;-1;-1;;Tuamotus
 14307;14308;sea;1942;-1;-1;-1;-1;;Tuamotus
 14309;14307;sea;1942;-1;-1;-1;-1;;Tuamotus
+4296;14397;sea;5257;-1;-1;-1;-1;;washington
+7386;14397;sea;5257;-1;-1;-1;-1;;washington
+14396;14397;sea;5257;-1;-1;-1;-1;;washington
+14396;4296;sea;5257;-1;-1;-1;-1;;washington
+14396;10157;sea;5257;-1;-1;-1;-1;;washington
+14396;7315;sea;5257;-1;-1;-1;-1;;washington
+14397;7315;sea;5257;-1;-1;-1;-1;;washington
 -1;-1;;-1;-1;-1;-1;-1;-1

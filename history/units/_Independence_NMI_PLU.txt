@@ -1,0 +1,10 @@
+﻿units = {
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = no
+		}
+		location = 13024
+		division_template = "Infantry Division"
+		start_experience_factor = 0
+	}
+}

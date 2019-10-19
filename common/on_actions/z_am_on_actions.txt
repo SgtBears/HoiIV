@@ -255,6 +255,35 @@ on_actions = {
 			set_variable = { global.VAN_tag = VAN.id }
 			set_variable = { global.ALT_tag = ALT.id }
 			set_variable = { global.BCL_tag = BCL.id }
+			set_variable = { global.BOU_tag = BOU.id }
+			set_variable = { global.SOL_tag = SOL.id }
+			set_variable = { global.NCL_tag = NCL.id }
+			set_variable = { global.TON_tag = TON.id }
+			set_variable = { global.WAF_tag = WAF.id }
+			set_variable = { global.KIR_tag = KIR.id }
+			set_variable = { global.TUV_tag = TUV.id }
+			set_variable = { global.MSH_tag = MSH.id }
+			set_variable = { global.PLU_tag = PLU.id }
+			set_variable = { global.GUM_tag = GUM.id }
+			set_variable = { global.NMI_tag = NMI.id }
+			set_variable = { global.MCR_tag = MCR.id }
+			set_variable = { global.SAM_tag = SAM.id }
+			set_variable = { global.NIU_tag = NIU.id }
+			set_variable = { global.COK_tag = COK.id }
+			set_variable = { global.TOK_tag = TOK.id }
+			set_variable = { global.TAH_tag = TAH.id }
+			set_variable = { global.NAU_tag = NAU.id }
+			set_variable = { global.CHU_tag = CHU.id }
+			set_variable = { global.POH_tag = POH.id }
+			set_variable = { global.KOS_tag = KOS.id }
+			set_variable = { global.QUN_tag = QUN.id }
+			set_variable = { global.NSW_tag = NSW.id }
+			set_variable = { global.TAS_tag = TAS.id }
+			set_variable = { global.VIC_tag = VIC.id }
+			set_variable = { global.NOA_tag = NOA.id }
+			set_variable = { global.WAU_tag = WAU.id }
+			set_variable = { global.SOA_tag = SOA.id }
+			set_variable = { global.CBR_tag = CBR.id }
 			every_country = {
 				country_event = { id = am.variables.1 }
 			}
@@ -516,6 +545,35 @@ on_actions = {
 			set_variable = { global.VAN_tag = VAN.id }
 			set_variable = { global.ALT_tag = ALT.id }
 			set_variable = { global.BCL_tag = BCL.id }
+			set_variable = { global.BOU_tag = BOU.id }
+			set_variable = { global.SOL_tag = SOL.id }
+			set_variable = { global.NCL_tag = NCL.id }
+			set_variable = { global.TON_tag = TON.id }
+			set_variable = { global.WAF_tag = WAF.id }
+			set_variable = { global.KIR_tag = KIR.id }
+			set_variable = { global.TUV_tag = TUV.id }
+			set_variable = { global.MSH_tag = MSH.id }
+			set_variable = { global.PLU_tag = PLU.id }
+			set_variable = { global.GUM_tag = GUM.id }
+			set_variable = { global.NMI_tag = NMI.id }
+			set_variable = { global.MCR_tag = MCR.id }
+			set_variable = { global.SAM_tag = SAM.id }
+			set_variable = { global.NIU_tag = NIU.id }
+			set_variable = { global.COK_tag = COK.id }
+			set_variable = { global.TOK_tag = TOK.id }
+			set_variable = { global.TAH_tag = TAH.id }
+			set_variable = { global.NAU_tag = NAU.id }
+			set_variable = { global.CHU_tag = CHU.id }
+			set_variable = { global.POH_tag = POH.id }
+			set_variable = { global.KOS_tag = KOS.id }
+			set_variable = { global.QUN_tag = QUN.id }
+			set_variable = { global.NSW_tag = NSW.id }
+			set_variable = { global.TAS_tag = TAS.id }
+			set_variable = { global.VIC_tag = VIC.id }
+			set_variable = { global.NOA_tag = NOA.id }
+			set_variable = { global.WAU_tag = WAU.id }
+			set_variable = { global.SOA_tag = SOA.id }
+			set_variable = { global.CBR_tag = CBR.id }
 			hidden_effect = {
 				every_country = {
 					country_event = { id = am.variables.1 }
@@ -581,12 +639,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = NHB
-				}
-				drop_cosmetic_tag = yes
-			}
-			if = {
-				limit = {
 					country_exists = AZ0
 					country_exists = AR5
 					GE5 = {
@@ -633,7 +685,8 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = NHB
+					tag = NH0
+					has_cosmetic_tag = NHB_COL
 				}
 				drop_cosmetic_tag = yes
 			}
@@ -685,7 +738,8 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = NHB
+					tag = NH0
+					has_cosmetic_tag = NHB_COL
 				}
 				drop_cosmetic_tag = yes
 			}

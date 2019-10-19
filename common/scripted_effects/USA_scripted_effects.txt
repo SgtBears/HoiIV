@@ -321,110 +321,7 @@ USA_flip_support = {
 	set_variable = { representatives_support = representatives_temp }
 	USA_recalc_congress_icon_frames = yes
 }
-USA_foreign_support_training_effect = {
-	division_template = {
-		name = "Exiles"
-		priority = 2
-		is_locked = yes
-		division_names_group = USA_INF_01
-		regiments = {
-			infantry = { x = 0 y = 0 }
-			infantry = { x = 0 y = 1 }
-			infantry = { x = 0 y = 2 }
-			
-			infantry = { x = 1 y = 0 }
-			infantry = { x = 1 y = 1 }
-			infantry = { x = 1 y = 2 }
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = us_training_GER
-		}
-		366 = {
-			create_unit = {
-				division = "name = \"Eagle Legion\" division_template = \"Exiles\" start_experience_factor = 1.0" 
-				owner = ROOT
-			}
-		}
-		army_experience = 10
-	}
-	if = {
-		limit = {
-			has_country_flag = us_training_ITA
-		}
-		366 = {
-			create_unit = {
-				division = "name = \"Eagle Legion\" division_template = \"Exiles\" start_experience_factor = 1.0" 
-				owner = ROOT
-			}
-		}
-		army_experience = 10
-	}
-	if = {
-		limit = {
-			has_country_flag = us_training_FRA
-		}
-		366 = {
-			create_unit = {
-				division = "name = \"Eagle Legion\" division_template = \"Exiles\" start_experience_factor = 1.0" 
-				owner = ROOT
-			}
-		}
-		army_experience = 10
-	}
-	if = {
-		limit = {
-			has_country_flag = us_training_ENG
-		}
-		366 = {
-			create_unit = {
-				division = "name = \"Eagle Legion\" division_template = \"Exiles\" start_experience_factor = 1.0" 
-				owner = ROOT
-			}
-		}
-		army_experience = 10
-	}
-	if = {
-		limit = {
-			NOT = {
-				OR = {
-					has_country_flag = us_training_ENG
-					has_country_flag = us_training_FRA
-					has_country_flag = us_training_GER
-					has_country_flag = us_training_ITA
-				}
-			}
-		}
-		delete_unit_template_and_units = { division_template = "Exiles" }
-	}
-}
 
-USA_foreign_support_pilots_effect = {
-	every_country = {
-		limit = {
-			has_country_flag = us_pilot_training_approved
-		}
-		if = {
-			limit = {
-				has_equipment = { fighter_equipment > 24 }
-			}
-			send_equipment = {
-				equipment = fighter_equipment
-    			amount = 25
-    			target = ROOT
-			}
-		}
-		else = {
-			ROOT = {
-				add_equipment_to_stockpile = {
-					type = fighter_equipment_0
-					amount = 25
-				}
-			}
-		}
-	}
-}
 USA_spawn_citizen_militia = {
 	division_template = {
 		name = "Citizen Militia"
@@ -520,7 +417,11 @@ USA_calc_stars = {
 		}
 		set_cosmetic_tag = USA_50
 	}
-	else = {
+	else_if = {
+		limit = {
+			NOT = { has_cosmetic_tag = USA_loyalists }
+			NOT = { has_cosmetic_tag = USA_CSA }
+		}
 		set_cosmetic_tag = USA_49
 	}
 }

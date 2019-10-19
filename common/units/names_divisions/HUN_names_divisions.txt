@@ -39,7 +39,10 @@ HUN_INF_01 =
 
 	can_use = {
 		OR = {
-			tag = HUN
+			AND = {
+				tag = HUN
+				has_completed_focus = HUN_army_maneuvers
+			}
 			has_cosmetic_tag = HUN_EMPIRE
 		}
 	}
@@ -98,12 +101,15 @@ HUN_INF_02 =
 
 	can_use = {
 		OR = {
-			tag = HUN
+			AND = {
+				tag = HUN
+				NOT = { has_completed_focus = HUN_army_maneuvers }
+			}
 			has_cosmetic_tag = HUN_EMPIRE
 		}
 	}
 
-	division_types = { "cavalry" }
+	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { HUN_INF_01 HUN_GAR_01 }
@@ -150,6 +156,129 @@ HUN_INF_02 =
 	}
 }
 
+HUN_INF_03 = 
+{
+	name = "Infantry Divisions"
+
+	for_countries = { AUS HUN CZE }
+
+	can_use = {
+		OR = {
+			AND = {
+				tag = HUN
+				NOT = { has_completed_focus = HUN_army_maneuvers }
+			}
+			has_cosmetic_tag = HUN_EMPIRE
+		}
+	}
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { HUN_INF_02 HUN_GAR_01 }
+
+	fallback_name = "%d. gyaloghadosztály"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		6 = { "%d. gyaloghadosztály" }
+		7 = { "%d. gyaloghadosztály" }
+		10 = { "%d. gyaloghadosztály" }
+		12 = { "%d. gyaloghadosztály" }
+		13 = { "%d. gyaloghadosztály" }
+		16 = { "%d. gyaloghadosztály" }
+		20 = { "%d. gyaloghadosztály" }
+		24 = { "%d. gyaloghadosztály" }
+		25 = { "%d. gyaloghadosztály" }
+		26 = { "%d. gyaloghadosztály" }
+		27 = { "%d. 'Szekel' gyaloghadosztály" }
+		28 = { "%d. gyaloghadosztály" }
+		29 = { "%d. gyaloghadosztály" }
+		30 = { "%d. gyaloghadosztály" }
+		31 = { "%d. gyaloghadosztály" }
+		32 = { "%d. gyaloghadosztály" }
+		36 = { "%d. gyaloghadosztály" }
+		37 = { "%d. gyaloghadosztály" }
+		38 = { "%d. gyaloghadosztály" }
+		39 = { "%d. gyaloghadosztály" }
+		40 = { "%d. gyaloghadosztály" }
+		41 = { "%d. gyaloghadosztály" }
+		42 = { "%d. gyaloghadosztály" }
+		43 = { "%d. gyaloghadosztály" }
+		44 = { "%d. gyaloghadosztály" }
+		45 = { "%d. gyaloghadosztály" }
+		46 = { "%d. gyaloghadosztály" }
+		47 = { "%d. gyaloghadosztály" }
+		48 = { "%d. gyaloghadosztály" }
+		49 = { "%d. gyaloghadosztály" }
+		50 = { "%d. gyaloghadosztály" }
+		51 = { "%d. gyaloghadosztály" }
+	}
+}
+HUN_INF_04 = 
+{
+	name = "Infantry Brigades"
+
+	for_countries = { AUS HUN CZE }
+
+	can_use = {
+		OR = {
+			AND = {
+				tag = HUN
+				has_completed_focus = HUN_army_maneuvers
+			}
+			has_cosmetic_tag = HUN_EMPIRE
+		}
+	}
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { HUN_INF_01 HUN_GAR_01 }
+
+	fallback_name = "%d. Gyalogdandár"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Gyalogdandár" }
+		2 = { "%d. Gyalogdandár" }
+		3 = { "%d. Gyalogdandár" }
+		4 = { "%d. Gyalogdandár" }
+		5 = { "%d. Gyalogdandár" }
+		6 = { "%d. Gyalogdandár" }
+		7 = { "%d. Gyalogdandár" }
+		8 = { "%d. Gyalogdandár" }
+		9 = { "%d. Gyalogdandár" }
+		10 = { "%d. Gyalogdandár" }
+		11 = { "%d. Gyalogdandár" }
+		12 = { "%d. Gyalogdandár" }
+		13 = { "%d. Gyalogdandár" }
+		14 = { "%d. Gyalogdandár" }
+		15 = { "%d. Gyalogdandár" }
+		16 = { "%d. Gyalogdandár" }
+		17 = { "%d. Gyalogdandár" }
+		18 = { "%d. Gyalogdandár" }
+		19 = { "%d. Gyalogdandár" }
+		20 = { "%d. Gyalogdandár" }
+		21 = { "%d. Gyalogdandár" }
+		22 = { "%d. Gyalogdandár" }
+		23 = { "%d. Gyalogdandár" }
+		24 = { "%d. Gyalogdandár" }
+		25 = { "%d. Gyalogdandár" }
+		26 = { "%d. Gyalogdandár" }
+		27 = { "%d. Gyalogdandár" }
+		102 = { "%d. Gyalogdandár" }
+		105 = { "%d. Gyalogdandár" }
+		108 = { "%d. Gyalogdandár" }
+		124 = { "%d. Gyalogdandár" }
+
+		# HUN starts off with 20 large brigades with a different naming structure to their divisions (which they switch to in 1940).  This list is for their starting units, the core INF list for players once they're making division-sized divisons.  If it's ever scriptable for the AI to change division lists, switching from this to INF_01 in 1940 or so would be good.
+	}
+}
 HUN_CAV_01 = 
 {
 	name = "Cavalry Divisions"
@@ -430,7 +559,7 @@ HUN_GAR_01 =
 		}
 	}
 
-	division_types = { "infantry" }
+	division_types = { "cavalry" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { HUN_INF_01 }

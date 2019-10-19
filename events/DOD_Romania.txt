@@ -986,7 +986,15 @@ country_event = {
 					102 = { is_owned_by = YU0 }
 					102 = { is_owned_by = CR5 }
 				}
-				NOT = { 102 = { is_claimed_by = GE0 } }
+				102 = {
+					NOT = { is_core_of = GE0 }
+					NOT = { is_owned_by = GE0 }
+					NOT = { is_claimed_by = GE0 }
+					OWNER = {
+						NOT = { is_subject_of = GE0 }
+						NOT = { is_in_faction_with = GE0 }
+					}
+				}
 			}
 			add_state_claim = 102
 		}
@@ -996,7 +1004,15 @@ country_event = {
 					868 = { is_owned_by = YU0 }
 					868 = { is_owned_by = CR5 }
 				}
-				NOT = { 868 = { is_claimed_by = GE0 } }
+				868 = {
+					NOT = { is_core_of = GE0 }
+					NOT = { is_owned_by = GE0 }
+					NOT = { is_claimed_by = GE0 }
+					OWNER = {
+						NOT = { is_subject_of = GE0 }
+						NOT = { is_in_faction_with = GE0 }
+					}
+				}
 				NOT = { HU5 = { is_subject_of = RO0 } }
 				NOT = { HU5 = { is_in_faction_with = RO0 } }
 			}
@@ -1008,7 +1024,15 @@ country_event = {
 					865 = { is_owned_by = YU0 }
 					865 = { is_owned_by = CR5 }
 				}
-				NOT = { 865 = { is_claimed_by = GE0 } }
+				865 = {
+					NOT = { is_core_of = GE0 }
+					NOT = { is_owned_by = GE0 }
+					NOT = { is_claimed_by = GE0 }
+					OWNER = {
+						NOT = { is_subject_of = GE0 }
+						NOT = { is_in_faction_with = GE0 }
+					}
+				}
 			}
 			custom_effect_tooltip = add_state_claim_tooltip_865
 		}
@@ -1050,7 +1074,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 865 = { is_claimed_by = IT0 } }
+				865 = {
+					NOT = { is_core_of = IT0 }
+					NOT = { is_owned_by = IT0 }
+					NOT = { is_claimed_by = IT0 }
+					OWNER = {
+						NOT = { is_subject_of = IT0 }
+						NOT = { is_in_faction_with = IT0 }
+					}
+				}
 				OR = {
 					865 = { is_owned_by = YU0 }
 					865 = { is_owned_by = CR5 }
@@ -1060,7 +1092,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 862 = { is_claimed_by = IT0 } }
+				862 = {
+					NOT = { is_core_of = IT0 }
+					NOT = { is_owned_by = IT0 }
+					NOT = { is_claimed_by = IT0 }
+					OWNER = {
+						NOT = { is_subject_of = IT0 }
+						NOT = { is_in_faction_with = IT0 }
+					}
+				}
 				OR = {
 					862 = { is_owned_by = YU0 }
 					862 = { is_owned_by = CR5 }
@@ -1070,7 +1110,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 863 = { is_claimed_by = IT0 } }
+				863 = {
+					NOT = { is_core_of = IT0 }
+					NOT = { is_owned_by = IT0 }
+					NOT = { is_claimed_by = IT0 }
+					OWNER = {
+						NOT = { is_subject_of = IT0 }
+						NOT = { is_in_faction_with = IT0 }
+					}
+				}
 				OR = {
 					863 = { is_owned_by = YU0 }
 					863 = { is_owned_by = CR5 }
@@ -1080,7 +1128,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 105 = { is_claimed_by = IT0 } }
+				105 = {
+					NOT = { is_core_of = IT0 }
+					NOT = { is_owned_by = IT0 }
+					NOT = { is_claimed_by = IT0 }
+					OWNER = {
+						NOT = { is_subject_of = IT0 }
+						NOT = { is_in_faction_with = IT0 }
+					}
+				}
 				IT0 = { owns_state = 44 }
 				OR = {
 					105 = { is_owned_by = YU0 }
@@ -1091,7 +1147,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 866 = { is_claimed_by = IT0 } }
+				866 = {
+					NOT = { is_core_of = IT0 }
+					NOT = { is_owned_by = IT0 }
+					NOT = { is_claimed_by = IT0 }
+					OWNER = {
+						NOT = { is_subject_of = IT0 }
+						NOT = { is_in_faction_with = IT0 }
+					}
+				}
 				IT0 = { owns_state = 44 }
 				OR = {
 					866 = { is_owned_by = YU0 }
@@ -1102,7 +1166,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 864 = { is_claimed_by = IT0 } }
+				864 = {
+					NOT = { is_core_of = IT0 }
+					NOT = { is_owned_by = IT0 }
+					NOT = { is_claimed_by = IT0 }
+					OWNER = {
+						NOT = { is_subject_of = IT0 }
+						NOT = { is_in_faction_with = IT0 }
+					}
+				}
 				IT0 = { owns_state = 44 }
 				OR = {
 					864 = { is_owned_by = YU0 }
@@ -1922,6 +1994,7 @@ country_event = {
 				add = -10
 				AND = {
 					neutrality < 0.5
+					monarchism < 0.5
 					has_war = no
 					NOT = { has_idea = ROM_mihail_sturdza }
 					NOT = { has_idea = generic_democratic_reformer }
@@ -2387,18 +2460,45 @@ country_event = {
 		if = {
 			limit = {
 				CZ0 = { owns_state = 70 }
+				70 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
 			}
 			add_state_claim = 70
 		}
 		if = {
 			limit = {
 				CZ0 = { owns_state = 71 }
+				71 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
 			}
 			add_state_claim = 71
 		}
 		if = {
 			limit = {
 				CZ0 = { owns_state = 73 }
+				73 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
 			}
 			add_state_claim = 73
 			if = {
@@ -2423,13 +2523,31 @@ country_event = {
 						is_in_faction_with = RO0
 					}
 				}
-				NOT = { 664 = { is_claimed_by = HU5 } }
+				664 = {
+					NOT = { is_core_of = HU5 }
+					NOT = { is_owned_by = HU5 }
+					NOT = { is_claimed_by = HU5 }
+					OWNER = {
+						NOT = { is_subject_of = HU5 }
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
 			}
 			HU5 = { add_state_claim = 664 }
 		}
 		else = {
 			limit = {
 				CZ0 = { owns_state = 664 }
+				664 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
 			}
 			add_state_claim = 664
 		}
@@ -2640,36 +2758,90 @@ country_event = {
 			if = {
 				limit = {
 					CZ0 = { owns_state = 69 }
+					69 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				add_state_claim = 69
 			}
 			if = {
 				limit = {
 					CZ0 = { owns_state = 808 }
+					808 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				add_state_claim = 808
 			}
 			if = {
 				limit = {
 					CZ0 = { owns_state = 9 }
+					9 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				add_state_claim = 9
 			}
 			if = {
 				limit = {
 					CZ0 = { owns_state = 74 }
+					74 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				add_state_claim = 74
 			}
 			if = {
 				limit = {
 					CZ0 = { owns_state = 72 }
+					72 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				add_state_claim = 72
 			}
 			if = {
 				limit = {
 					CZ0 = { owns_state = 75 }
+					75 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				add_state_claim = 75
 			}
@@ -2681,18 +2853,45 @@ country_event = {
 			if = {
 				limit = {
 					CZ0 = { owns_state = 70 }
+					70 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				add_state_claim = 70
 			}
 			if = {
 				limit = {
 					CZ0 = { owns_state = 71 }
+					71 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				add_state_claim = 71
 			}
 			if = {
 				limit = {
 					CZ0 = { owns_state = 73 }
+					73 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				add_state_claim = 73
 				if = {
@@ -2717,13 +2916,31 @@ country_event = {
 							is_in_faction_with = RO0
 						}
 					}
-					NOT = { 664 = { is_claimed_by = HU5 } }
+					664 = {
+						NOT = { is_core_of = HU5 }
+						NOT = { is_owned_by = HU5 }
+						NOT = { is_claimed_by = HU5 }
+						OWNER = {
+							NOT = { is_subject_of = HU5 }
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				HU5 = { add_state_claim = 664 }
 			}
 			else = {
 				limit = {
 					CZ0 = { owns_state = 664 }
+					664 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
 				}
 				add_state_claim = 664
 			}
@@ -3239,7 +3456,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {# Select German Plane
-		name = DOD_hungary.152.a
+		name = DOD_hungary.151.a
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -3291,7 +3508,7 @@ country_event = {
 	}
 
 	option = {# select italian plane
-		name = DOD_hungary.152.b
+		name = DOD_hungary.151.b
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -3343,7 +3560,7 @@ country_event = {
 	}
 
 	option = {# select french plane
-		name = DOD_hungary.152.c
+		name = DOD_hungary.151.c
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -3395,7 +3612,7 @@ country_event = {
 		FR0 = { country_event = DOD_romania.154 }	
 	}
 	option = {# select british plane
-		name = DOD_hungary.152.d
+		name = DOD_hungary.151.d
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -3446,7 +3663,7 @@ country_event = {
 		EN0 = { country_event = DOD_romania.154 }	
 	}
 	option = {# select american plane
-		name = DOD_hungary.152.e
+		name = DOD_hungary.151.e
 		ai_chance = {
 			factor = 30
 			modifier = {

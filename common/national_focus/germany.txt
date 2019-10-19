@@ -1655,6 +1655,14 @@ focus_tree = {
 			}	
 			if = {
 				limit = {
+					has_government = monarchism
+				}
+				HUN = {
+					add_timed_idea = { idea = GER_align_hungary_monarchism days = 730 }
+				}
+			}	
+			if = {
+				limit = {
 					has_government = neutrality
 				}
 				HUN = {
@@ -1714,6 +1722,14 @@ focus_tree = {
 				}
 				ROM = {
 					add_timed_idea = { idea = GER_align_romania days = 730 }
+				}
+			}	
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				ROM = {
+					add_timed_idea = { idea = GER_align_romania_monarchism days = 730 }
 				}
 			}	
 			if = {
@@ -5889,6 +5905,10 @@ focus_tree = {
 			custom_effect_tooltip = GER_oppose_hitler_civil_war
 			effect_tooltip = {
 				GER_remove_mefo_bills = yes
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
 			}
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
@@ -5953,10 +5973,41 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			hidden_effect = {
+				set_variable = { german_neutrality_popularity = party_popularity@neutrality }
+				set_variable = { german_negative_neutrality_popularity = party_popularity@neutrality }
+				subtract_from_variable = {
+					var = german_negative_neutrality_popularity
+					value = german_neutrality_popularity
+				}
+				subtract_from_variable = {
+					var = german_negative_neutrality_popularity
+					value = german_neutrality_popularity
+				}
+			}
+			if = {
+				limit = {
+					neutrality > 0.01
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = var.german_negative_neutrality_popularity
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = german_neutrality_popularity
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = monarchism
+					popularity = 0.1
+				}
+			}
 			add_ideas = GER_revive_the_kaiserreich
+			add_popularity = { ideology = monarchism popularity = 0.1 }
 			custom_effect_tooltip = GER_revive_the_kaiserreich_tt
 			hidden_effect = { set_cosmetic_tag = GER_german_empire }
-			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
 			set_rule = { can_send_volunteers = yes }
 			add_named_threat = { threat = 5 name = GER_revive_the_kaiserreich }
 			custom_effect_tooltip = available_political_advisor
@@ -6117,7 +6168,7 @@ focus_tree = {
 		prerequisite = { focus = GER_revive_the_kaiserreich }
 		available = {
 			is_puppet = no
-			neutrality > 0.4
+			monarchism > 0.4
 			has_country_leader = { ruling_only = yes name = "August von Mackensen" }
 		}
 		bypass = {
@@ -6133,6 +6184,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_popularity = { ideology = monarchism popularity = 0.1 }
+			set_politics = { ruling_party = monarchism elections_allowed = no }
 			add_named_threat = { threat = 5 name = GER_return_of_the_kaiser }
 			HOL = {
 				country_event = { id = wtt_germany.3 }
@@ -6529,6 +6582,9 @@ focus_tree = {
 			add_state_claim = 546
 			add_state_claim = 737
 			add_state_claim = 684
+			add_state_claim = 882
+			add_state_claim = 883
+			add_state_claim = 884
 			add_state_claim = 633
 			add_state_claim = 646
 			add_state_claim = 647
@@ -6729,7 +6785,10 @@ focus_tree = {
 					ITA = { 
 						is_puppet = no
 						is_in_faction = no
-						has_government = neutrality
+						OR = {
+							has_government = monarchism
+							has_government = neutrality
+						}
 						NOT = { has_war_with = GER }
 					}					
 				}
@@ -6740,7 +6799,10 @@ focus_tree = {
 					HUN = { 
 						is_puppet = no
 						is_in_faction = no
-						has_government = neutrality
+						OR = {
+							has_government = monarchism
+							has_government = neutrality
+						}
 						NOT = { has_war_with = GER }
 					}					
 					NOT = { country_exists = AUS }
@@ -6753,7 +6815,10 @@ focus_tree = {
 						exists = yes
 						is_puppet = no
 						is_in_faction = no
-						has_government = neutrality
+						OR = {
+							has_government = monarchism
+							has_government = neutrality
+						}
 						NOT = { has_war_with = GER }
 					}		
 					NOT = { country_exists = HUN }			
@@ -6766,7 +6831,10 @@ focus_tree = {
                         exists = yes
                         is_subject = no
                         is_in_faction = no
-                        has_government = neutrality
+						OR = {
+							has_government = monarchism
+							has_government = neutrality
+						}
                         NOT = { has_war_with = GER }
                     }
                 }
@@ -6829,23 +6897,13 @@ focus_tree = {
 			}
 			effect_tooltip = {
 				ITA = {
-					set_politics = { ruling_party = neutrality elections_allowed = no }
-					add_popularity = { ideology = neutrality popularity = 0.1 }
+					set_politics = { ruling_party = monarchism elections_allowed = no }
+					add_popularity = { ideology = monarchism popularity = 0.1 }
 					swap_ideas = {
 						remove_idea = GER_preparing_ITA_coup
 						add_idea = GER_preparing_ITA_coup2
 					}
 					kill_country_leader = yes
-					create_country_leader = {
-						name = "Victor Emmanuel III"
-						desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
-						picture = "GFX_portrait_italy_victor_emmanuel_iii"
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-			
-						}
-					}
 					hidden_effect = { remove_ideas = victor_emmanuel }
 					GER = {
 						add_to_faction = ITA
@@ -7551,6 +7609,7 @@ focus_tree = {
 					}
 					OR = {
 						has_government = neutrality 
+						has_government = monarchism 
 						AND = {
 							is_neighbor_of = SOV
 							NOT = { has_government = communism }
@@ -7703,7 +7762,6 @@ focus_tree = {
 				idea = GER_reestablish_free_elections
 				days = 720
 			}
-			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = kurt_schumacher
 			custom_effect_tooltip = available_political_advisor

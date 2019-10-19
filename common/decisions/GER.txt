@@ -1148,13 +1148,13 @@ political_actions = {
 		visible = {
 			tag = GE0
 			has_war = no
-			has_government = neutrality
+			has_government = monarchism
 			has_country_flag = backed_down_netherlands_kaiser
 		}
 
 		complete_effect = {
 			add_stability = -0.10
-			add_popularity = { ideology = neutrality popularity = -0.05 }
+			add_popularity = { ideology = monarchism popularity = -0.05 }
 			custom_effect_tooltip = reinstate_wilhelm_iv_succession_rights_tt
 			hidden_effect = {
 				set_country_flag = reinstated_wilhelm_iv_succession_rights
@@ -1188,7 +1188,7 @@ political_actions = {
 		visible = {
 			tag = GE0
 			has_war = no
-			has_government = neutrality
+			has_government = monarchism
 			has_country_flag = reinstated_wilhelm_iv_succession_rights
 		}
 
@@ -1267,7 +1267,10 @@ political_actions = {
 
 		visible = {
 			tag = GE0
-			has_government = neutrality
+			OR = {
+				has_government = monarchism
+				has_government = neutrality
+			}
 		}
 
 		complete_effect = {
@@ -1309,7 +1312,7 @@ foreign_politics = {
 
 		visible = {
 			has_war = no
-			has_government = neutrality
+			has_government = monarchism
 			has_completed_focus = GER_ally_the_shade
 			has_country_flag = modernized_succession_laws
 		}
@@ -1888,20 +1891,20 @@ GER_austro_hungarian_empire = {
 		available = {
 			AU0 = {
 				OR = {
-					has_government = neutrality
-					neutrality > 0.4
+					has_government = monarchism
+					monarchism > 0.4
 				}
 			}
 			HU5 = {
 				OR = {
-					has_government = neutrality
-					neutrality > 0.4
+					has_government = monarchism
+					monarchism > 0.4
 				}
 			}
 			CZ0 = {
 				OR = {
-					has_government = neutrality
-					neutrality > 0.4
+					has_government = monarchism
+					monarchism > 0.4
 				}
 			}
 		}
@@ -1909,7 +1912,7 @@ GER_austro_hungarian_empire = {
 		visible = {
 			GE0 = { 
 				has_completed_focus = GER_rekindle_imperial_sentiment 
-				has_government = neutrality
+				has_government = monarchism
 			}
 			AU0 = {
 				exists = yes

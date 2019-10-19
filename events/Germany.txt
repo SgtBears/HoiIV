@@ -212,26 +212,286 @@ country_event = {
 			add_opinion_modifier = { target = GE0 modifier = MR_pact }# pact	
 		}
 		custom_effect_tooltip = germany.11.a.tt
-		add_state_claim = 96
-		add_state_claim = 11
-		add_state_claim = 12
-		add_state_claim = 13
-		add_state_claim = 190
-		add_state_claim = 191
-		add_state_claim = 146
-		add_state_claim = 147
-		add_state_claim = 722
-		add_state_claim = 189
-		add_state_claim = 78
-		add_state_claim = 89
-		add_state_claim = 91
-		add_state_claim = 93
-		add_state_claim = 94
-		add_state_claim = 95
-		add_state_claim = 96
-		add_state_claim = 97
-		add_state_claim = 80
-		add_state_claim = 784
+		if = {
+			limit = {
+				96 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 96
+		}
+		if = {
+			limit = {
+				11 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 11
+		}
+		if = {
+			limit = {
+				12 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 12
+		}
+		if = {
+			limit = {
+				13 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 13
+		}
+		if = {
+			limit = {
+				190 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 190
+		}
+		if = {
+			limit = {
+				191 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 191
+		}
+		if = {
+			limit = {
+				146 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 146
+		}
+		if = {
+			limit = {
+				147 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 147
+		}
+		if = {
+			limit = {
+				722 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 722
+		}
+		if = {
+			limit = {
+				189 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 189
+		}
+		if = {
+			limit = {
+				78 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 78
+		}
+		if = {
+			limit = {
+				89 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 89
+		}
+		if = {
+			limit = {
+				91 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 91
+		}
+		if = {
+			limit = {
+				93 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 93
+		}
+		if = {
+			limit = {
+				94 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 94
+		}
+		if = {
+			limit = {
+				95 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 95
+		}
+		if = {
+			limit = {
+				96 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 96
+		}
+		if = {
+			limit = {
+				97 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 97
+		}
+		if = {
+			limit = {
+				80 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 80
+		}
+		if = {
+			limit = {
+				784 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 784
+		}
 		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
 		GE0 = {
 			country_event = { days = 1 id = germany.12 }
@@ -576,22 +836,125 @@ country_event = {
 					active = no
 				}
 			}
-		}		
-		GE0 = {
-			SO0 = {
-				add_state_claim = 96
-				add_state_claim = 95
-				add_state_claim = 94
-				add_state_claim = 93
-				add_state_claim = 91
-				add_state_claim = 97
-				add_state_claim = 89
-				add_state_claim = 784
-				effect_tooltip = {
-					create_wargoal = {
-						type = annex_everything
-						target = PREV
+		}
+		SO0 = {
+			
+			if = {
+				limit = {
+					96 = {
+						NOT = { is_core_of = SO0 }
+						NOT = { is_owned_by = SO0 }
+						NOT = { is_claimed_by = SO0 }
+						OWNER = {
+							NOT = { is_subject_of = SO0 }
+							NOT = { is_in_faction_with = SO0 }
+						}
 					}
+				}
+				add_state_claim = 96
+			}
+			if = {
+				limit = {
+					95 = {
+						NOT = { is_core_of = SO0 }
+						NOT = { is_owned_by = SO0 }
+						NOT = { is_claimed_by = SO0 }
+						OWNER = {
+							NOT = { is_subject_of = SO0 }
+							NOT = { is_in_faction_with = SO0 }
+						}
+					}
+				}
+				add_state_claim = 95
+			}
+			if = {
+				limit = {
+					94 = {
+						NOT = { is_core_of = SO0 }
+						NOT = { is_owned_by = SO0 }
+						NOT = { is_claimed_by = SO0 }
+						OWNER = {
+							NOT = { is_subject_of = SO0 }
+							NOT = { is_in_faction_with = SO0 }
+						}
+					}
+				}
+				add_state_claim = 94
+			}
+			if = {
+				limit = {
+					93 = {
+						NOT = { is_core_of = SO0 }
+						NOT = { is_owned_by = SO0 }
+						NOT = { is_claimed_by = SO0 }
+						OWNER = {
+							NOT = { is_subject_of = SO0 }
+							NOT = { is_in_faction_with = SO0 }
+						}
+					}
+				}
+				add_state_claim = 93
+			}
+			if = {
+				limit = {
+					91 = {
+						NOT = { is_core_of = SO0 }
+						NOT = { is_owned_by = SO0 }
+						NOT = { is_claimed_by = SO0 }
+						OWNER = {
+							NOT = { is_subject_of = SO0 }
+							NOT = { is_in_faction_with = SO0 }
+						}
+					}
+				}
+				add_state_claim = 91
+			}
+			if = {
+				limit = {
+					97 = {
+						NOT = { is_core_of = SO0 }
+						NOT = { is_owned_by = SO0 }
+						NOT = { is_claimed_by = SO0 }
+						OWNER = {
+							NOT = { is_subject_of = SO0 }
+							NOT = { is_in_faction_with = SO0 }
+						}
+					}
+				}
+				add_state_claim = 97
+			}
+			if = {
+				limit = {
+					89 = {
+						NOT = { is_core_of = SO0 }
+						NOT = { is_owned_by = SO0 }
+						NOT = { is_claimed_by = SO0 }
+						OWNER = {
+							NOT = { is_subject_of = SO0 }
+							NOT = { is_in_faction_with = SO0 }
+						}
+					}
+				}
+				add_state_claim = 89
+			}
+			if = {
+				limit = {
+					784 = {
+						NOT = { is_core_of = SO0 }
+						NOT = { is_owned_by = SO0 }
+						NOT = { is_claimed_by = SO0 }
+						OWNER = {
+							NOT = { is_subject_of = SO0 }
+							NOT = { is_in_faction_with = SO0 }
+						}
+					}
+				}
+				add_state_claim = 784
+			}
+			effect_tooltip = {
+				create_wargoal = {
+					type = annex_everything
+					target = GE0
 				}
 			}
 		}
@@ -1032,9 +1395,48 @@ country_event = {
 				remove_from_faction = AU0
 			}
 			effect_tooltip = {
-				add_state_claim = 4
-				add_state_claim = 152
-				add_state_claim = 153
+				if = {
+					limit = {
+						4 = {
+							NOT = { is_core_of = GE0 }
+							NOT = { is_owned_by = GE0 }
+							NOT = { is_claimed_by = GE0 }
+							OWNER = {
+								NOT = { is_subject_of = GE0 }
+								NOT = { is_in_faction_with = GE0 }
+							}
+						}
+					}
+					add_state_claim = 4
+				}
+				if = {
+					limit = {
+						152 = {
+							NOT = { is_core_of = GE0 }
+							NOT = { is_owned_by = GE0 }
+							NOT = { is_claimed_by = GE0 }
+							OWNER = {
+								NOT = { is_subject_of = GE0 }
+								NOT = { is_in_faction_with = GE0 }
+							}
+						}
+					}
+					add_state_claim = 152
+				}
+				if = {
+					limit = {
+						153 = {
+							NOT = { is_core_of = GE0 }
+							NOT = { is_owned_by = GE0 }
+							NOT = { is_claimed_by = GE0 }
+							OWNER = {
+								NOT = { is_subject_of = GE0 }
+								NOT = { is_in_faction_with = GE0 }
+							}
+						}
+					}
+					add_state_claim = 153
+				}
 				AU0 = {
 					PREV = {
 						create_wargoal = {
@@ -1063,6 +1465,12 @@ country_event = {
 		every_state = {
 			limit = {
 				is_owned_by = AU0
+				NOT = { is_core_of = GE0 }
+				NOT = { is_claimed_by = GE0 }
+				OWNER = {
+					NOT = { is_subject_of = GE0 }
+					NOT = { is_in_faction_with = GE0 }
+				}
 			}
 			add_claim_by = GE0
 		}
@@ -3987,7 +4395,10 @@ country_event = {
 			if = {
 				limit = {
 					original_tag = GER
-					has_government = neutrality
+					OR = {
+						has_government = neutrality
+						has_government = monarchism
+					}
 				}
 				country_event = { id = germany.127 days = 7 random = 7 }
 			}
@@ -6485,6 +6896,7 @@ country_event = {
 				add = 1
 				OR = {
 					has_government = neutrality
+					has_government = monarchism
 					has_government = fascism
 				}
 			}

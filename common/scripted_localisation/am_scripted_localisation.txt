@@ -1,0 +1,227 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+defined_text = {
+	name = GetFactionWithRelease
+	text = {
+		trigger = {
+			is_in_faction_with = FROM
+			is_subject = no
+		}
+		localization_key = LOCAL_TXT_FACTION_FROM
+	}
+	text = {
+		localization_key = LOCAL_TXT_FACTION_FROM_NOT
+	}
+}
+defined_text = {
+	name = GetCelebratesGivenLoc
+	text = {
+		trigger = {
+			is_subject = yes
+			NOT = {	has_autonomy_state = autonomy_supervised_state }
+		}
+		localization_key = LOCAL_TXT_GIVEN
+	}
+	text = {
+		localization_key = LOCAL_TXT_CELEBRATES
+	}
+}
+defined_text = {
+	name = GetIndependenceAutonomyReleaseMasterIsrael
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = release_as_integrated_puppet
+				has_country_flag = release_as_puppet
+				has_country_flag = release_as_colony
+				has_country_flag = release_as_dominion
+				has_country_flag = release_as_reichskommissariat
+				has_country_flag = release_as_reichsprotectorate
+				has_country_flag = release_as_satellite
+				has_country_flag = release_as_imperial_associate
+				has_country_flag = release_as_imperial_protectorate
+			}
+		}
+		localization_key = LOCAL_TXT_SUBJECT_MASTER_ISRAEL
+	}
+	text = {
+		localization_key = LOCAL_TXT_INDEPENDENT_MASTER_ISRAEL
+	}
+}
+defined_text = {
+	name = GetIndependenceAutonomyReleaseMaster
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = release_as_integrated_puppet
+				has_country_flag = release_as_puppet
+				has_country_flag = release_as_colony
+				has_country_flag = release_as_dominion
+				has_country_flag = release_as_reichskommissariat
+				has_country_flag = release_as_reichsprotectorate
+				has_country_flag = release_as_satellite
+				has_country_flag = release_as_imperial_associate
+				has_country_flag = release_as_imperial_protectorate
+			}
+		}
+		localization_key = LOCAL_TXT_SUBJECT_MASTER
+	}
+	text = {
+		localization_key = LOCAL_TXT_INDEPENDENT_MASTER
+	}
+}
+defined_text = {
+	name = GetIndependenceAutonomyRelease
+	text = {
+		trigger = {
+			is_subject = yes
+			NOT = {	has_autonomy_state = autonomy_supervised_state }
+		}
+		localization_key = LOCAL_TXT_SUBJECT
+	}
+	text = {
+		localization_key = LOCAL_TXT_INDEPENDENT
+	}
+}
+defined_text = {
+	name = GetIndependenceAutonomyReleaseInterimText
+	text = {
+		trigger = {
+			OR = {
+				has_autonomy_state = autonomy_supervised_state
+				has_autonomy_state = autonomy_dominion
+				has_autonomy_state = autonomy_colony
+				has_autonomy_state = autonomy_satellite
+				has_autonomy_state = autonomy_reichsprotectorate
+				has_autonomy_state = autonomy_reichskommissariat
+				has_autonomy_state = autonomy_puppet
+			}
+		}
+		localization_key = LOCAL_TXT_SUBJECT_INTERIM_TEXT_A
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_autonomy_state = autonomy_wtt_imperial_subject
+				has_autonomy_state = autonomy_wtt_imperial_protectorate
+				has_autonomy_state = autonomy_wtt_imperial_associate
+				has_autonomy_state = autonomy_integrated_puppet
+			}
+		}
+		localization_key = LOCAL_TXT_SUBJECT_INTERIM_TEXT_AN
+	}
+	text = {
+		localization_key = LOCAL_TXT_INDEPENDENT_INTERIM_TEXT
+	}
+}
+defined_text = {
+	name = GetAutonomyLevelRelease
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_dominion
+		}
+		localization_key = AUTONOMY_DOMINION_LOC_TXT
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_colony
+		}
+		localization_key = AUTONOMY_COLONY_LOC_TXT
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_wtt_imperial_subject
+		}
+		localization_key = AUTONOMY_IMPERIAL_SUBJECT_LOC_TXT
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_wtt_imperial_protectorate
+		}
+		localization_key = AUTONOMY_IMPERIAL_PROTECTORATE_LOC_TXT
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_wtt_imperial_associate
+		}
+		localization_key = AUTONOMY_IMPERIAL_ASSOCIATE_LOC_TXT
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_supervised_state
+		}
+		localization_key = AUTONOMY_SUPERVISED_STATE_LOC_TXT
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_satellite
+		}
+		localization_key = AUTONOMY_SATELLITE_LOC_TXT
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_reichsprotectorate
+		}
+		localization_key = AUTONOMY_REICHSPROTECTORATE_LOC_TXT
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_reichskommissariat
+		}
+		localization_key = AUTONOMY_REICHSKOMMISSARIAT_LOC_TXT
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_integrated_puppet
+		}
+		localization_key = AUTONOMY_INTEGRATED_PUPPET_LOC_TXT
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_puppet
+		}
+		localization_key = AUTONOMY_PUPPET_LOC_TXT
+	}
+	text = {
+		localization_key = LOCAL_TXT_INDEPENDENT_INTERIM_TEXT
+	}
+}
+defined_text = {
+	name = GetRulingIdeologyCapAM
+	text = {
+		trigger = {
+			has_government = neutrality
+		}
+		localization_key = RULING_IDEOLOGY_CAP_AM_NEU
+	}
+	text = {
+		trigger = {
+			has_government = democratic
+		}
+		localization_key = RULING_IDEOLOGY_CAP_AM_DEM
+	}
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = RULING_IDEOLOGY_CAP_AM_COM
+	}
+	text = {
+		trigger = {
+			has_government = fascism
+		}
+		localization_key = RULING_IDEOLOGY_CAP_AM_FAS
+	}
+	text = {
+		localization_key = RULING_IDEOLOGY_CAP_AM_MON
+	}
+}
+

@@ -422,7 +422,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 285 517 }
+				prioritize = { 853 854 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory

@@ -1040,7 +1040,7 @@ GU5 = { # GUM # Guam
 NR0 = { # NMI # Northern Mariana Islands
 	variable = var:global.NMI_tag
 }
-MC5 = { # MCR # Micronesia
+MC5 = { # MCR # Pohnpei # Ponape # Micronesia
 	variable = var:global.MCR_tag
 }
 SM5 = { # SAM # Samoa
@@ -1060,4 +1060,38 @@ TH0 = { # TAH # Tahiti
 }
 NA0 = { # NAU # Nauru
 	variable = var:global.NAU_tag
+}
+CK5 = { # CHU # Chuuk # Truk
+	variable = var:global.CHU_tag
+}
+PH5 = { # POH # Yap
+	variable = var:global.POH_tag
+}
+KS0 = { # KOS # Kosrae # Kusaie
+	variable = var:global.KOS_tag
+}
+
+QN0 = { # QUN # Queensland
+	variable = var:global.QUN_tag
+}
+NS5 = { # NSW # New South Wales
+	variable = var:global.NSW_tag
+}
+TS0 = { # TAS # Tasmania
+	variable = var:global.TAS_tag
+}
+VC0 = { # VIC # Victoria
+	variable = var:global.VIC_tag
+}
+NO5 = { # NOA # North Australia # Northern Territory # Northern Australia
+	variable = var:global.NOA_tag
+}
+WU0 = { # WAU # Western Australia
+	variable = var:global.WAU_tag
+}
+SS5 = { # SOA # South Australia
+	variable = var:global.SOA_tag
+}
+CB0 = { # CBR # Canberra
+	variable = var:global.CBR_tag
 }

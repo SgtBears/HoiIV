@@ -67,6 +67,7 @@ FIN_INF_01 =
 		15 = { "%d. Divisioona" }
 		17 = { "%d. Divisioona" }
 		18 = { "%d. Divisioona" }
+		16 = { "%d. Divisioona" }
 		19 = { "%d. Divisioona" }
 		20 = { "%d. Divisioona" }
 		21 = { "%d. Divisioona" }
@@ -124,7 +125,7 @@ FIN_CAV_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Ratsuväkiprikaati" }
+		1 = { "%d. Ratsuväkiprikaati" }
 		2 = { "%d. Ratsuväkiprikaati" }
 		3 = { "%d. Ratsuväkiprikaati" }
 		4 = { "%d. Ratsuväkiprikaati" }
@@ -199,7 +200,7 @@ FIN_MOT_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Jääkäridivisioona" }
+		1 = { "%d. Jääkäridivisioona" }
 		2 = { "%d. Jääkäridivisioona" }
 		3 = { "%d. Jääkäridivisioona" }
 		4 = { "%d. Jääkäridivisioona" }
@@ -255,7 +256,7 @@ FIN_ARM_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Panssaridiv. 'Lagus'" }
+		1 = { "%d. Panssaridivisioona. 'Lagus'" }
 		2 = { "%d. Panssaridivisioona" }
 		3 = { "%d. Panssaridivisioona" }
 		4 = { "%d. Panssaridivisioona" }
@@ -312,7 +313,7 @@ FIN_MEC_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "PsJääkäridivisioona" }
+		1 = { "%d. PsJääkäridivisioona" }
 		2 = { "%d. PsJääkäridivisioona" }
 		3 = { "%d. PsJääkäridivisioona" }
 		4 = { "%d. PsJääkäridivisioona" }
@@ -386,6 +387,7 @@ FIN_GAR_01 =
 		15 = { "Lipolan Ryhmä" }
 		17 = { "Muolaan Ryhmä" }
 		18 = { "Uudenkirkon Ryhmä" }
+		16 = { "%d. Ryhmä" }
 		19 = { "%d. Ryhmä" }
 		20 = { "%d. Ryhmä" }
 		21 = { "%d. Ryhmä" }
@@ -444,7 +446,7 @@ FIN_MAR_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Rannikkojääkäridiv" }
+		1 = { "%d. Rannikkojääkäridiv" }
 		2 = { "%d. Rannikkojääkäridiv" }
 		3 = { "%d. Rannikkojääkäridiv" }
 		4 = { "%d. Rannikkojääkäridiv" }
@@ -498,7 +500,7 @@ FIN_MTN_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Sissidivisioona" }
+		1 = { "%d. Sissidivisioona" }
 		2 = { "%d. Sissidivisioona" }
 		3 = { "%d. Sissidivisioona" }
 		4 = { "%d. Sissidivisioona" }
@@ -574,7 +576,7 @@ FIN_PAR_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Laskuvarjojääkäridiv." }
+		1 = { "%d. Laskuvarjojääkäridiv." }
 		2 = { "%d. Laskuvarjojääkäridiv." }
 		3 = { "%d. Laskuvarjojääkäridiv." }
 		4 = { "%d. Laskuvarjojääkäridiv." }

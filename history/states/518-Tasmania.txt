@@ -2,7 +2,7 @@ state=
 {
 	id=518
 	name="STATE_518"
-	manpower = 224000
+	manpower = 154433
 	
 	state_category = small_island
 
@@ -10,7 +10,7 @@ state=
 	{
 		owner = AST
 		victory_points = {
-			2189 1 
+			2189 3 
 		}
 		buildings = {
 			infrastructure = 5
@@ -19,8 +19,9 @@ state=
 			}
 		}
 		add_core_of = AST
+		add_core_of = TAS
 	}
 	provinces={
-		2183 2189 5181 5187 10665 12645 13586 13587 13596
+		2183 2189 5181 5187 10665 12645 13586 13587 13596 14358
 	}
 }

@@ -111,6 +111,10 @@ technology_sharing_group = {
 					USA = { has_government = neutrality }
 					ENG = { has_government = neutrality } 
 				}
+				AND = {
+					USA = { has_government = monarchism }
+					ENG = { has_government = monarchism } 
+				}
 			}
 			NOT = { ENG = { has_war_with = USA } }
 			country_exists = USA

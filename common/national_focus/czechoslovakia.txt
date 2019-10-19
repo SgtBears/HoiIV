@@ -4009,6 +4009,14 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
+			custom_effect_tooltip = available_chief_of_navy
+			show_ideas_tooltip = CZE_antonin_hasal
+			custom_effect_tooltip = available_chief_of_navy
+			show_ideas_tooltip = CZE_klement_gottwald
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = CZE_skoda_shipyards
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = CZE_ckd_praga
 		}
 	}
 

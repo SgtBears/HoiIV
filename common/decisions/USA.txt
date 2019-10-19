@@ -122,28 +122,28 @@ war_measures = {
 			}
 			capital_scope = {
 				create_unit = {
-					division = "name = \"1. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
+					division = "name = \"Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
 					owner = ROOT
 				}
 				create_unit = {
-					division = "name = \"2. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
+					division = "name = \"Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
 					owner = ROOT
 				}
 				create_unit = {
-					division = "name = \"3. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
+					division = "name = \"Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
 					owner = ROOT
 				}
 
 				create_unit = {
-					division = "name = \"4. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7"  
+					division = "name = \"Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7"  
 					owner = ROOT
 				}
 				create_unit = {
-					division = "name = \"5. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7"  
+					division = "name = \"Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7"  
 					owner = ROOT
 				}
 				create_unit = {
-					division = "name = \"6. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
+					division = "name = \"Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
 					owner = ROOT
 				}
 			}
@@ -156,7 +156,7 @@ war_measures = {
 			OR = {
 				AND = {
 					has_war = yes
-					has_cosmetic_tag = USA_CSA
+					has_cosmetic_tag = USA_loyalists
 				}
 				has_civil_war = yes
 			}
@@ -1663,6 +1663,7 @@ USA_foreign_support = {
 		visible = {
 			has_completed_focus = USA_invite_foreign_support
 			has_war = no
+			NOT = { has_country_flag = US_civil_war_over_flag }
 		}
 
 		target_root_trigger = {
@@ -1675,7 +1676,19 @@ USA_foreign_support = {
 				is_major = yes
 				exists = yes
 				has_war = no
-				has_government = fascism
+				OR = {
+					has_government = fascism
+					AND = {
+						OR = {
+							has_government = neutrality
+							has_government = monarchism
+						}
+						any_allied_country = {
+							is_major = yes
+							has_government = fascism
+						}
+					}
+				}
 			}
 		}
 		cost = 25
@@ -1698,6 +1711,7 @@ USA_foreign_support = {
 		visible = {
 			has_completed_focus = USA_invite_foreign_support
 			has_war = no
+			NOT = { has_country_flag = US_civil_war_over_flag }
 		}
 
 		target_root_trigger = {
@@ -1709,7 +1723,19 @@ USA_foreign_support = {
 			FROM = {
 				exists = yes
 				is_major = yes
-				has_government = fascism
+				OR = {
+					has_government = fascism
+					AND = {
+						OR = {
+							has_government = neutrality
+							has_government = monarchism
+						}
+						any_allied_country = {
+							is_major = yes
+							has_government = fascism
+						}
+					}
+				}
 				has_war = no
 				has_country_flag = USA_foreign_support_donations_approved
 			}
@@ -1733,6 +1759,7 @@ USA_foreign_support = {
 		visible = {
 			has_completed_focus = USA_invite_foreign_support
 			has_war = no
+			NOT = { has_country_flag = US_civil_war_over_flag }
 		}
 
 		target_root_trigger = {
@@ -1745,7 +1772,19 @@ USA_foreign_support = {
 				is_major = yes
 				exists = yes
 				has_war = no
-				has_government = fascism
+				OR = {
+					has_government = fascism
+					AND = {
+						OR = {
+							has_government = neutrality
+							has_government = monarchism
+						}
+						any_allied_country = {
+							is_major = yes
+							has_government = fascism
+						}
+					}
+				}
 				not = { has_country_flag = USA_training_camps_approved }
 				has_country_flag = USA_foreign_support_donations_approved
 			}
@@ -1769,6 +1808,7 @@ USA_foreign_support = {
 		visible = {
 			has_completed_focus = USA_invite_foreign_support
 			has_war = no
+			NOT = { has_country_flag = US_civil_war_over_flag }
 		}
 
 		target_root_trigger = {
@@ -1781,7 +1821,19 @@ USA_foreign_support = {
 				exists = yes
 				is_major = yes
 				has_war = no
-				has_government = fascism
+				OR = {
+					has_government = fascism
+					AND = {
+						OR = {
+							has_government = neutrality
+							has_government = monarchism
+						}
+						any_allied_country = {
+							is_major = yes
+							has_government = fascism
+						}
+					}
+				}
 				has_tech = fighter1
 				not = { has_country_flag = usa_pilot_training }
 				has_country_flag = USA_foreign_support_donations_approved
@@ -1807,6 +1859,7 @@ USA_foreign_support = {
 		visible = {
 			has_completed_focus = USA_invite_foreign_support
 			has_war = no
+			NOT = { has_country_flag = US_civil_war_over_flag }
 		}
 
 		target_root_trigger = {
@@ -1819,7 +1872,20 @@ USA_foreign_support = {
 				exists = yes
 				is_major = yes
 				has_war = no
-				has_government = fascism
+				num_of_naval_factories > 10
+				OR = {
+					has_government = fascism
+					AND = {
+						OR = {
+							has_government = neutrality
+							has_government = monarchism
+						}
+						any_allied_country = {
+							is_major = yes
+							has_government = fascism
+						}
+					}
+				}
 				has_country_flag = USA_foreign_support_donations_approved
 			}
 		}
@@ -1850,7 +1916,6 @@ USA_honor_the_confederacy = {
 		complete_effect = {
 			add_stability = 0.05
 			add_popularity = { ideology = fascism popularity = 0.05 }
-			set_cosmetic_tag = USA_CSA
 			if = {
 				limit = {
 					not = {
@@ -1913,7 +1978,10 @@ USA_honor_the_confederacy = {
 	USA_secure_state_rights = {
 		icon = generic_nationalism
 		available = {
-			has_cosmetic_tag = USA_CSA 
+			OR = {
+				has_cosmetic_tag = USA_CSA
+				has_cosmetic_tag = USA_loyalists
+			}
 		}
 		visible = {
 			
@@ -1948,7 +2016,10 @@ USA_honor_the_confederacy = {
 	USA_permit_confederate_flags = {
 		icon = generic_nationalism
 		available = {
-			has_cosmetic_tag = USA_CSA
+			OR = {
+				has_cosmetic_tag = USA_CSA
+				has_cosmetic_tag = USA_loyalists
+			}
 		}
 		visible = {
 			has_country_flag = {
@@ -1994,7 +2065,10 @@ USA_honor_the_confederacy = {
 				flag = USA_CSA_legitimacy
 				value > 2
 			}
-			has_cosmetic_tag = USA_CSA
+			OR = {
+				has_cosmetic_tag = USA_CSA
+				has_cosmetic_tag = USA_loyalists
+			}
 		}
 		cost = 100
 		fire_only_once = yes
@@ -2006,6 +2080,7 @@ USA_honor_the_confederacy = {
 			add_war_support = 0.05
 			add_popularity = { ideology = fascism popularity = 0.05 }
 			set_politics = { ruling_party = fascism }
+			set_cosmetic_tag = USA_CSA
 		}
 	}
 

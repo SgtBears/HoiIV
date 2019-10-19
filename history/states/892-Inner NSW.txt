@@ -1,0 +1,22 @@
+state={
+	id=892
+	name="STATE_892"
+	manpower = 287
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = AST
+		add_core_of = NSW
+	}
+
+	provinces={
+		10991
+	}
+}

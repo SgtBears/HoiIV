@@ -1,4 +1,4 @@
-﻿capital = 285
+﻿capital = 896
 
 oob = "AST_1936"
 set_stability = 0.8
@@ -226,6 +226,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "William Birdwood"
+	desc = "POLITICS_WILLIAM_BIRDWOOD_DESC"
+	picture = "gfx/leaders/ENG/portrait_eng_william_birdwood.dds"
+	expire = "1965.1.1"
+	ideology = royalism
+	traits = {
+		
+	}
+}
 #create_country_leader = {
 #	name = "Rod Hull"
 #	desc = ""

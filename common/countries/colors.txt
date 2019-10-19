@@ -24,14 +24,17 @@ LUX = {
 	color = rgb { 65 175 179 }
 	color_ui = rgb { 85 228 233 }
 }
-BEL = { color 	 = rgb { 193 171 8  }
-		color_ui = rgb { 251 222 10 }
-	  }
-HOL = {	color = rgb { 203 138 74 }
-		color_ui = rgb { 255 179 96 }
+BEL = {
+	color = rgb { 193 171 8  }
+	color_ui = rgb { 251 222 10 }
 }
-CZE = {	color = rgb { 54 167 156 }
-		color_ui = rgb { 70 217 203 }
+HOL = {
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 255 179 96 }
+}
+CZE = {
+	color = rgb { 54 167 156 }
+	color_ui = rgb { 70 217 203 }
 }
 POL = {
 	color = rgb { 197 92 106 }
@@ -886,4 +889,48 @@ TAH = {
 NAU = {	
     color = rgb { 248 133 57 }
     color_ui = rgb { 248 133 57 }
+}
+CHU = {	
+    color = rgb { 66 220 233 }
+    color_ui = rgb { 66 220 233 }
+}	
+POH = {	
+    color = rgb { 56 152 205 }
+    color_ui = rgb { 56 152 205 }
+}	
+KOS = {	
+    color = rgb { 216 159 66 }
+    color_ui = rgb { 216 159 66 }
+}	
+CBR = {	
+    color = rgb { 228 164 49 }
+    color_ui = rgb { 228 164 49 }
+}	
+SOA = {	
+    color = rgb { 149 67 122 }
+    color_ui = rgb { 149 67 122 }
+}	
+WAU = {	
+    color = rgb { 48 64 115 }
+    color_ui = rgb { 48 64 115 }
+}	
+NOA = {	
+    color = rgb { 102 130 156 }
+    color_ui = rgb { 102 130 156 }
+}	
+VIC = {	
+    color = rgb { 53 207 76 }
+    color_ui = rgb { 53 207 76 }
+}	
+TAS = {	
+    color = rgb { 165 23 246 }
+    color_ui = rgb { 165 23 246 }
+}	
+NSW = {	
+    color = rgb { 207 65 0 }
+    color_ui = rgb { 207 65 0 }
+}	
+QUN = {	
+    color = rgb { 174 161 113 }
+    color_ui = rgb { 174 161 113 }
 }	

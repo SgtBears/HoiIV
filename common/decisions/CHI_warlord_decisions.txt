@@ -261,6 +261,10 @@ CHI_seek_japanese_support = {
 				limit = { JA0 = { has_government = neutrality } }
 				neutrality > 0.4
 			}
+			if = {
+				limit = { JA0 = { has_government = monarchism } }
+				monarchism > 0.4
+			}
 		}
 
 		visible = {

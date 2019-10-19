@@ -131,7 +131,25 @@ country_event = {
 			}
 			GE0 = { add_popularity = { ideology = fascism popularity = 0.05 } }
 		}
-		if = {
+		else_if = {
+			limit = {
+				GE0 = { has_government = monarchism }
+			}
+			GE0 = { add_popularity = { ideology = monarchism popularity = 0.05 } }
+		}
+		else_if = {
+			limit = {
+				GE0 = { has_government = communism }
+			}
+			GE0 = { add_popularity = { ideology = communism popularity = 0.05 } }
+		}
+		else_if = {
+			limit = {
+				GE0 = { has_government = democratic }
+			}
+			GE0 = { add_popularity = { ideology = democratic popularity = 0.05 } }
+		}
+		else_if = {
 			limit = {
 				GE0 = { has_government = neutrality }
 			}

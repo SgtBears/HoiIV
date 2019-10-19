@@ -44,31 +44,32 @@ YEM_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { YEM_GAR_01 }
 
-	fallback_name = "Yemeni al-Mushati al-%dr"
+	fallback_name = "Yemeni Katibat almsha %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfurqat Alfursan Almalika" }
-		2 = { "Yemeni al-Mushati al-%di" }
-		3 = { "Yemeni al-Mushati al-%di" }
-		4 = { "Yemeni al-Mushati al-%di" }
-		5 = { "Yemeni al-Mushati al-%di" }
-		6 = { "Yemeni al-Mushati al-%di" }
-		7 = { "Yemeni al-Mushati al-%di" }
-		8 = { "Yemeni al-Mushati al-%di" }
-		9 = { "Yemeni al-Mushati al-%di" }
-		10 = { "Yemeni al-Mushati al-%di" }
-		12 = { "Yemeni al-Mushati al-%dr" }
-		13 = { "Yemeni al-Mushati al-%dr" }
-		14 = { "Yemeni al-Mushati al-%dr" }
-		15 = { "Yemeni al-Mushati al-%dr" }
-		16 = { "Yemeni al-Mushati al-%dr" }
-		17 = { "Yemeni al-Mushati al-%dr" }
-		18 = { "Yemeni al-Mushati al-%dr" }
-		19 = { "Yemeni al-Mushati al-%dr" }
-		20 = { "Yemeni al-Mushati al-%dr" }
+		1 = { "Yemeni Katibat almsha %d" }
+		2 = { "Yemeni Katibat almsha %d" }
+		3 = { "Yemeni Katibat almsha %d" }
+		4 = { "Yemeni Katibat almsha %d" }
+		5 = { "Yemeni Katibat almsha %d" }
+		6 = { "Yemeni Katibat almsha %d" }
+		7 = { "Yemeni Katibat almsha %d" }
+		8 = { "Yemeni Katibat almsha %d" }
+		9 = { "Yemeni Katibat almsha %d" }
+		10 = { "Yemeni Katibat almsha %d" }
+		11 = { "Yemeni Katibat almsha %d" }
+		12 = { "Yemeni Katibat almsha %d" }
+		13 = { "Yemeni Katibat almsha %d" }
+		14 = { "Yemeni Katibat almsha %d" }
+		15 = { "Yemeni Katibat almsha %d" }
+		16 = { "Yemeni Katibat almsha %d" }
+		17 = { "Yemeni Katibat almsha %d" }
+		18 = { "Yemeni Katibat almsha %d" }
+		19 = { "Yemeni Katibat almsha %d" }
+		20 = { "Yemeni Katibat almsha %d" }
 
 	}
 }
@@ -86,27 +87,27 @@ YEM_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { GER_Gar_01 }
 
-	fallback_name = "Yemeni Sipahis al-%dr"
+	fallback_name = "Yemeni Katibat alfursan %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfurqat Almasha Almalika" }
-		2 = { "Yemeni Sipahis al-%di" }
-		3 = { "Yemeni Sipahis al-%di" }
-		4 = { "Yemeni Sipahis al-%di" }
-		5 = { "Yemeni Sipahis al-%di" }
-		6 = { "Yemeni Sipahis al-%di" }
-		7 = { "Yemeni Sipahis al-%di" }
-		8 = { "Yemeni Sipahis al-%di" }
-		9 = { "Yemeni Sipahis al-%di" }
-		10 = { "Yemeni Sipahis al-%di" }
-		11 = { "Yemeni Sipahis al-%dr" }
-		12 = { "Yemeni Sipahis al-%dr" }
-		13 = { "Yemeni Sipahis al-%dr" }
-		14 = { "Yemeni Sipahis al-%dr" }
-		15 = { "Yemeni Sipahis al-%dr" }
+		1 = { "Yemeni Katibat alfursan %d" }
+		2 = { "Yemeni Katibat alfursan %d" }
+		3 = { "Yemeni Katibat alfursan %d" }
+		4 = { "Yemeni Katibat alfursan %d" }
+		5 = { "Yemeni Katibat alfursan %d" }
+		6 = { "Yemeni Katibat alfursan %d" }
+		7 = { "Yemeni Katibat alfursan %d" }
+		8 = { "Yemeni Katibat alfursan %d" }
+		9 = { "Yemeni Katibat alfursan %d" }
+		10 = { "Yemeni Katibat alfursan %d" }
+		11 = { "Yemeni Katibat alfursan %d" }
+		12 = { "Yemeni Katibat alfursan %d" }
+		13 = { "Yemeni Katibat alfursan %d" }
+		14 = { "Yemeni Katibat alfursan %d" }
+		15 = { "Yemeni Katibat alfursan %d" }
 
 	}
 }
@@ -124,31 +125,31 @@ YEM_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { YEM_INF_01 }
 
-	fallback_name = "Yemeni al-Mushati al-%dr"
+	fallback_name = "Yemeni Katibat almashat alaly %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfurqat Alfursan Almalika" }
-		2 = { "Yemeni al-Mushati al-%di" }
-		3 = { "Yemeni al-Mushati al-%di" }
-		4 = { "Yemeni al-Mushati al-%di" }
-		5 = { "Yemeni al-Mushati al-%di" }
-		6 = { "Yemeni al-Mushati al-%di" }
-		7 = { "Yemeni al-Mushati al-%di" }
-		8 = { "Yemeni al-Mushati al-%di" }
-		9 = { "Yemeni al-Mushati al-%di" }
-		10 = { "Yemeni al-Mushati al-%di" }
-		12 = { "Yemeni al-Mushati al-%dr" }
-		13 = { "Yemeni al-Mushati al-%dr" }
-		14 = { "Yemeni al-Mushati al-%dr" }
-		15 = { "Yemeni al-Mushati al-%dr" }
-		16 = { "Yemeni al-Mushati al-%dr" }
-		17 = { "Yemeni al-Mushati al-%dr" }
-		18 = { "Yemeni al-Mushati al-%dr" }
-		19 = { "Yemeni al-Mushati al-%dr" }
-		20 = { "Yemeni al-Mushati al-%dr" }
+		1 = { "Yemeni Katibat almashat alaly %d" }
+		2 = { "Yemeni Katibat almashat alaly %d" }
+		3 = { "Yemeni Katibat almashat alaly %d" }
+		4 = { "Yemeni Katibat almashat alaly %d" }
+		5 = { "Yemeni Katibat almashat alaly %d" }
+		6 = { "Yemeni Katibat almashat alaly %d" }
+		7 = { "Yemeni Katibat almashat alaly %d" }
+		8 = { "Yemeni Katibat almashat alaly %d" }
+		9 = { "Yemeni Katibat almashat alaly %d" }
+		10 = { "Yemeni Katibat almashat alaly %d" }
+		12 = { "Yemeni Katibat almashat alaly %d" }
+		13 = { "Yemeni Katibat almashat alaly %d" }
+		14 = { "Yemeni Katibat almashat alaly %d" }
+		15 = { "Yemeni Katibat almashat alaly %d" }
+		16 = { "Yemeni Katibat almashat alaly %d" }
+		17 = { "Yemeni Katibat almashat alaly %d" }
+		18 = { "Yemeni Katibat almashat alaly %d" }
+		19 = { "Yemeni Katibat almashat alaly %d" }
+		20 = { "Yemeni Katibat almashat alaly %d" }
 
 	}
 }
@@ -166,27 +167,27 @@ YEM_ARM_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { YEM_CAV_01 }
 
-	fallback_name = "Yemeni Sipahis al-%dr"
+	fallback_name = "Yemeni Katibat Mudarie %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfurqat Almasha Almalika" }
-		2 = { "Yemeni Sipahis al-%di" }
-		3 = { "Yemeni Sipahis al-%di" }
-		4 = { "Yemeni Sipahis al-%di" }
-		5 = { "Yemeni Sipahis al-%di" }
-		6 = { "Yemeni Sipahis al-%di" }
-		7 = { "Yemeni Sipahis al-%di" }
-		8 = { "Yemeni Sipahis al-%di" }
-		9 = { "Yemeni Sipahis al-%di" }
-		10 = { "Yemeni Sipahis al-%di" }
-		11 = { "Yemeni Sipahis al-%dr" }
-		12 = { "Yemeni Sipahis al-%dr" }
-		13 = { "Yemeni Sipahis al-%dr" }
-		14 = { "Yemeni Sipahis al-%dr" }
-		15 = { "Yemeni Sipahis al-%dr" }
+		1 = { "Yemeni Katibat Mudarie %d" }
+		2 = { "Yemeni Katibat Mudarie %d" }
+		3 = { "Yemeni Katibat Mudarie %d" }
+		4 = { "Yemeni Katibat Mudarie %d" }
+		5 = { "Yemeni Katibat Mudarie %d" }
+		6 = { "Yemeni Katibat Mudarie %d" }
+		7 = { "Yemeni Katibat Mudarie %d" }
+		8 = { "Yemeni Katibat Mudarie %d" }
+		9 = { "Yemeni Katibat Mudarie %d" }
+		10 = { "Yemeni Katibat Mudarie %d" }
+		11 = { "Yemeni Katibat Mudarie %d" }
+		12 = { "Yemeni Katibat Mudarie %d" }
+		13 = { "Yemeni Katibat Mudarie %d" }
+		14 = { "Yemeni Katibat Mudarie %d" }
+		15 = { "Yemeni Katibat Mudarie %d" }
 
 	}
 }
@@ -204,31 +205,32 @@ YEM_MEC_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { YEM_INF_01 }
 
-	fallback_name = "Yemeni al-Mushati al-%dr"
+	fallback_name = "Yemeni Katibat almashat alaly %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfurqat Alfursan Almalika" }
-		2 = { "Yemeni al-Mushati al-%di" }
-		3 = { "Yemeni al-Mushati al-%di" }
-		4 = { "Yemeni al-Mushati al-%di" }
-		5 = { "Yemeni al-Mushati al-%di" }
-		6 = { "Yemeni al-Mushati al-%di" }
-		7 = { "Yemeni al-Mushati al-%di" }
-		8 = { "Yemeni al-Mushati al-%di" }
-		9 = { "Yemeni al-Mushati al-%di" }
-		10 = { "Yemeni al-Mushati al-%di" }
-		12 = { "Yemeni al-Mushati al-%dr" }
-		13 = { "Yemeni al-Mushati al-%dr" }
-		14 = { "Yemeni al-Mushati al-%dr" }
-		15 = { "Yemeni al-Mushati al-%dr" }
-		16 = { "Yemeni al-Mushati al-%dr" }
-		17 = { "Yemeni al-Mushati al-%dr" }
-		18 = { "Yemeni al-Mushati al-%dr" }
-		19 = { "Yemeni al-Mushati al-%dr" }
-		20 = { "Yemeni al-Mushati al-%dr" }
+		1 = { "Yemeni Katibat almashat alaly %d" }
+		2 = { "Yemeni Katibat almashat alaly %d" }
+		3 = { "Yemeni Katibat almashat alaly %d" }
+		4 = { "Yemeni Katibat almashat alaly %d" }
+		5 = { "Yemeni Katibat almashat alaly %d" }
+		6 = { "Yemeni Katibat almashat alaly %d" }
+		7 = { "Yemeni Katibat almashat alaly %d" }
+		8 = { "Yemeni Katibat almashat alaly %d" }
+		9 = { "Yemeni Katibat almashat alaly %d" }
+		10 = { "Yemeni Katibat almashat alaly %d" }
+		11 = { "Yemeni Katibat almashat alaly %d" }
+		12 = { "Yemeni Katibat almashat alaly %d" }
+		13 = { "Yemeni Katibat almashat alaly %d" }
+		14 = { "Yemeni Katibat almashat alaly %d" }
+		15 = { "Yemeni Katibat almashat alaly %d" }
+		16 = { "Yemeni Katibat almashat alaly %d" }
+		17 = { "Yemeni Katibat almashat alaly %d" }
+		18 = { "Yemeni Katibat almashat alaly %d" }
+		19 = { "Yemeni Katibat almashat alaly %d" }
+		20 = { "Yemeni Katibat almashat alaly %d" }
 
 	}
 }
@@ -246,31 +248,32 @@ YEM_GAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { YEM_INF_01 }
 
-	fallback_name = "Yemeni al-Mushati al-%dr"
+	fallback_name = "Yemeni Quwwat alhamia %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Alfurqat Alfursan Almalika" }
-		2 = { "Yemeni al-Mushati al-%di" }
-		3 = { "Yemeni al-Mushati al-%di" }
-		4 = { "Yemeni al-Mushati al-%di" }
-		5 = { "Yemeni al-Mushati al-%di" }
-		6 = { "Yemeni al-Mushati al-%di" }
-		7 = { "Yemeni al-Mushati al-%di" }
-		8 = { "Yemeni al-Mushati al-%di" }
-		9 = { "Yemeni al-Mushati al-%di" }
-		10 = { "Yemeni al-Mushati al-%di" }
-		12 = { "Yemeni al-Mushati al-%dr" }
-		13 = { "Yemeni al-Mushati al-%dr" }
-		14 = { "Yemeni al-Mushati al-%dr" }
-		15 = { "Yemeni al-Mushati al-%dr" }
-		16 = { "Yemeni al-Mushati al-%dr" }
-		17 = { "Yemeni al-Mushati al-%dr" }
-		18 = { "Yemeni al-Mushati al-%dr" }
-		19 = { "Yemeni al-Mushati al-%dr" }
-		20 = { "Yemeni al-Mushati al-%dr" }
+		1 = { "Yemeni Quwwat alhamia %d" }
+		2 = { "Yemeni Quwwat alhamia %d" }
+		3 = { "Yemeni Quwwat alhamia %d" }
+		4 = { "Yemeni Quwwat alhamia %d" }
+		5 = { "Yemeni Quwwat alhamia %d" }
+		6 = { "Yemeni Quwwat alhamia %d" }
+		7 = { "Yemeni Quwwat alhamia %d" }
+		8 = { "Yemeni Quwwat alhamia %d" }
+		9 = { "Yemeni Quwwat alhamia %d" }
+		10 = { "Yemeni Quwwat alhamia %d" }
+		11 = { "Yemeni Quwwat alhamia %d" }
+		12 = { "Yemeni Quwwat alhamia %d" }
+		13 = { "Yemeni Quwwat alhamia %d" }
+		14 = { "Yemeni Quwwat alhamia %d" }
+		15 = { "Yemeni Quwwat alhamia %d" }
+		16 = { "Yemeni Quwwat alhamia %d" }
+		17 = { "Yemeni Quwwat alhamia %d" }
+		18 = { "Yemeni Quwwat alhamia %d" }
+		19 = { "Yemeni Quwwat alhamia %d" }
+		20 = { "Yemeni Quwwat alhamia %d" }
 
 	}
 }
@@ -288,23 +291,23 @@ YEM_MAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { YEM_INF_01 }
 
-	fallback_name = "Yemeni al-Mushati al-%dr"
+	fallback_name = "Yemeni Katibat jundiin mushat albhry %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		20 = { "Yemeni al-Mushati al-%dr" }
-		21 = { "Yemeni al-Mushati al-%dr" }
-		22 = { "Yemeni al-Mushati al-%dr" }
-		23 = { "Yemeni al-Mushati al-%dr" }
-		24 = { "Yemeni al-Mushati al-%dr" }
-		25 = { "Yemeni al-Mushati al-%dr" }
-		26 = { "Yemeni al-Mushati al-%dr" }
-		27 = { "Yemeni al-Mushati al-%dr" }
-		28 = { "Yemeni al-Mushati al-%dr" }
-		29 = { "Yemeni al-Mushati al-%dr" }
-		30 = { "Yemeni al-Mushati al-%dr" }
+		20 = { "Yemeni Katibat jundiin mushat albhry %d" }
+		21 = { "Yemeni Katibat jundiin mushat albhry %d" }
+		22 = { "Yemeni Katibat jundiin mushat albhry %d" }
+		23 = { "Yemeni Katibat jundiin mushat albhry %d" }
+		24 = { "Yemeni Katibat jundiin mushat albhry %d" }
+		25 = { "Yemeni Katibat jundiin mushat albhry %d" }
+		26 = { "Yemeni Katibat jundiin mushat albhry %d" }
+		27 = { "Yemeni Katibat jundiin mushat albhry %d" }
+		28 = { "Yemeni Katibat jundiin mushat albhry %d" }
+		29 = { "Yemeni Katibat jundiin mushat albhry %d" }
+		30 = { "Yemeni Katibat jundiin mushat albhry %d" }
 
 	}
 }
@@ -322,23 +325,23 @@ YEM_MTN_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { YEM_INF_01 }
 
-	fallback_name = "Yemeni al-Mushati al-%dr"
+	fallback_name = "Yemeni Katibat kutlat dakhma %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		20 = { "Yemeni al-Mushati al-%dr" }
-		21 = { "Yemeni al-Mushati al-%dr" }
-		22 = { "Yemeni al-Mushati al-%dr" }
-		23 = { "Yemeni al-Mushati al-%dr" }
-		24 = { "Yemeni al-Mushati al-%dr" }
-		25 = { "Yemeni al-Mushati al-%dr" }
-		26 = { "Yemeni al-Mushati al-%dr" }
-		27 = { "Yemeni al-Mushati al-%dr" }
-		28 = { "Yemeni al-Mushati al-%dr" }
-		29 = { "Yemeni al-Mushati al-%dr" }
-		30 = { "Yemeni al-Mushati al-%dr" }
+		20 = { "Yemeni Katibat kutlat dakhma %d" }
+		21 = { "Yemeni Katibat kutlat dakhma %d" }
+		22 = { "Yemeni Katibat kutlat dakhma %d" }
+		23 = { "Yemeni Katibat kutlat dakhma %d" }
+		24 = { "Yemeni Katibat kutlat dakhma %d" }
+		25 = { "Yemeni Katibat kutlat dakhma %d" }
+		26 = { "Yemeni Katibat kutlat dakhma %d" }
+		27 = { "Yemeni Katibat kutlat dakhma %d" }
+		28 = { "Yemeni Katibat kutlat dakhma %d" }
+		29 = { "Yemeni Katibat kutlat dakhma %d" }
+		30 = { "Yemeni Katibat kutlat dakhma %d" }
 
 	}
 }
@@ -356,23 +359,23 @@ YEM_PAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { YEM_INF_01 }
 
-	fallback_name = "Yemeni al-Mushati al-%dr"
+	fallback_name = "Yemeni Katibat mazali %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		20 = { "Yemeni al-Mushati al-%dr" }
-		21 = { "Yemeni al-Mushati al-%dr" }
-		22 = { "Yemeni al-Mushati al-%dr" }
-		23 = { "Yemeni al-Mushati al-%dr" }
-		24 = { "Yemeni al-Mushati al-%dr" }
-		25 = { "Yemeni al-Mushati al-%dr" }
-		26 = { "Yemeni al-Mushati al-%dr" }
-		27 = { "Yemeni al-Mushati al-%dr" }
-		28 = { "Yemeni al-Mushati al-%dr" }
-		29 = { "Yemeni al-Mushati al-%dr" }
-		30 = { "Yemeni al-Mushati al-%dr" }
+		20 = { "Yemeni Katibat mazali %d" }
+		21 = { "Yemeni Katibat mazali %d" }
+		22 = { "Yemeni Katibat mazali %d" }
+		23 = { "Yemeni Katibat mazali %d" }
+		24 = { "Yemeni Katibat mazali %d" }
+		25 = { "Yemeni Katibat mazali %d" }
+		26 = { "Yemeni Katibat mazali %d" }
+		27 = { "Yemeni Katibat mazali %d" }
+		28 = { "Yemeni Katibat mazali %d" }
+		29 = { "Yemeni Katibat mazali %d" }
+		30 = { "Yemeni Katibat mazali %d" }
 
 	}
 }

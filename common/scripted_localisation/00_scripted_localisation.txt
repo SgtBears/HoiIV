@@ -13,7 +13,10 @@ defined_text = { # Country
 	text = {
 		trigger = {
 			original_tag = GER
-			has_government = neutrality
+			OR = {
+				has_government = neutrality
+				has_government = monarchism
+			}
 		}
 		localization_key = GER_KAISER_WAGEN_NAME
 	}
@@ -37,7 +40,10 @@ defined_text = { # Country
 	text = {
 		trigger = {
 			original_tag = GER
-			has_government = neutrality
+			OR = {
+				has_government = neutrality
+				has_government = monarchism
+			}
 		}
 		localization_key = GER_HERMANN_GORING_WERKE_NAME_KAISER
 	}
@@ -371,6 +377,7 @@ defined_text = {
 				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		localization_key = ENG_ROYAL_TANK_REGIMENT_NAME_HISTORICAL
@@ -393,6 +400,7 @@ defined_text = {
 				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		localization_key = ENG_ROYAL_TANK_REGIMENT_DESC_HISTORICAL
@@ -415,6 +423,7 @@ defined_text = {
 				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		localization_key = ENG_ROYAL_ORDNANCE_FACTORIES_NAME_HISTORICAL
@@ -437,6 +446,7 @@ defined_text = {
 				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		localization_key = ENG_ROYAL_ORDNANCE_FACTORIES_DESC_HISTORICAL
@@ -459,6 +469,7 @@ defined_text = {
 				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		localization_key = ENG_BSA_COMPANY_DESC_HISTORICAL
@@ -499,6 +510,7 @@ defined_text = {
 				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		localization_key = ENG_AIR_REARMAMENT_DESC_HISTORICAL
@@ -521,6 +533,7 @@ defined_text = {
 				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		localization_key = ENG_NAVAL_REARMAMENT_DESC_HISTORICAL
@@ -543,6 +556,7 @@ defined_text = {
 				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		localization_key = ENG_COASTAL_COMMAND_DESC_HISTORICAL
@@ -565,6 +579,7 @@ defined_text = {
 				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		localization_key = ENG_BRITANNIA_RULES_THE_WAVES_DESC_HISTORICAL
@@ -587,6 +602,7 @@ defined_text = {
 				has_government = democratic
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		localization_key = ENG_VANGUARD_DESC_HISTORICAL

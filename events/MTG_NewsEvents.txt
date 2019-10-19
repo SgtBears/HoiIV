@@ -57,6 +57,7 @@ news_event = {
 			OR = {
 				has_government = democratic
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 	}
@@ -110,7 +111,10 @@ news_event = {
 			NOT = { original_tag = CSA }
 			NOT = { original_tag = USA }
 			NOT = { original_tag = USB }
-			has_government = democratic
+			OR = {
+				has_government = democratic
+				has_government = monarchism
+			}
 		}
 	}
 }
@@ -174,6 +178,7 @@ news_event = {
 			OR = {
 				has_government = democratic
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 	}
@@ -249,6 +254,7 @@ news_event = {
 			OR = {
 				has_government = democratic
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 	}
@@ -280,7 +286,10 @@ news_event = {
 			NOT = { original_tag = CSA }
 			NOT = { original_tag = USA }
 			NOT = { original_tag = USB }
-			has_government = fascism
+			OR = {
+				has_government = fascism
+				has_government = monarchism
+			}
 		}
 	}
 	option = {
@@ -354,6 +363,7 @@ news_event = {
 			OR = {
 				has_government = democratic
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 	}
@@ -379,6 +389,12 @@ news_event = {
 				original_tag = USB
 			}
 		}
+		if = {
+			limit = {
+				has_template = "Silver Legion"
+			}
+			delete_unit_template_and_units = { division_template = "Silver Legion" }
+		}
 	}
 	option = {
 		name = mtg_news.7.b
@@ -387,6 +403,12 @@ news_event = {
 			NOT = { original_tag = USA }
 			NOT = { original_tag = USB }
 			has_government = fascism
+		}
+		if = {
+			limit = {
+				has_template = "Silver Legion"
+			}
+			delete_unit_template_and_units = { division_template = "Silver Legion" }
 		}
 	}
 	option = {
@@ -397,6 +419,12 @@ news_event = {
 			NOT = { original_tag = USB }
 			has_government = communism
 		}
+		if = {
+			limit = {
+				has_template = "Silver Legion"
+			}
+			delete_unit_template_and_units = { division_template = "Silver Legion" }
+		}
 	}
 	option = {
 		name = mtg_news.7.d
@@ -405,6 +433,12 @@ news_event = {
 			NOT = { original_tag = USA }
 			NOT = { original_tag = USB }
 			has_government = democratic
+		}
+		if = {
+			limit = {
+				has_template = "Silver Legion"
+			}
+			delete_unit_template_and_units = { division_template = "Silver Legion" }
 		}
 	}
 }
@@ -3154,7 +3188,7 @@ news_event = {
 				desc = "POLITICS_WALLIS_I_DESC"
 				picture = GFX_portrait_eng_wallis_simpson
 				expire = "1965.1.1"
-				ideology = despotism
+				ideology = royalism
 				traits = {
 					unpopular_monarch socialite_connections wallis_fancy_title
 				}

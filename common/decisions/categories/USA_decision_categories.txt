@@ -32,9 +32,9 @@ USA_foreign_support = {
 		OR = {
 			AND = {
 				has_completed_focus = USA_invite_foreign_support
-				tag = US0
+				original_tag = USA
 			}
-			tag = CS0
+			original_tag = CSA
 		}
 	}
 }

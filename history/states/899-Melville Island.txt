@@ -1,0 +1,25 @@
+state={
+	id=899
+	name="STATE_899"
+	manpower = 200
+	
+	state_category = tiny_island
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = AST
+		add_core_of = NOA
+		add_core_of = SOA
+		victory_points = {
+			10276 1 
+		}
+	}
+
+	provinces={
+		10276 14334
+	}
+}

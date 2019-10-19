@@ -64,7 +64,20 @@ country_event = {
 				transfer_state = 608
 				transfer_state = 597
 				transfer_state = 614
-				add_state_claim = 613
+				if = {
+					limit = {
+						613 = {
+							NOT = { is_core_of = JA0 }
+							NOT = { is_owned_by = JA0 }
+							NOT = { is_claimed_by = JA0 }
+							OWNER = {
+								NOT = { is_subject_of = JA0 }
+								NOT = { is_in_faction_with = JA0 }
+							}
+						}
+					}
+					613 = { add_claim_by = JA0 }
+				}
 				if = {
 					limit = {
 						ROOT = { controls_state = 743 }

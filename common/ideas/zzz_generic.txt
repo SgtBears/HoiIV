@@ -233,6 +233,24 @@ ideas = {
 				neutrality_acceptance = 85
 			}
 		}
+		monarchism_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = monarchism
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				monarchism_drift = 0.1
+				monarchism_acceptance = 85
+			}
+		}
 		
 		soviet_german_friendship = {
 			allowed = {
@@ -363,6 +381,24 @@ ideas = {
 			
 			modifier = {
 				neutrality_drift = 0.1
+				mobilization_speed = 0.15
+			}
+		}
+		military_parade_monarchism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = monarchism
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				monarchism_drift = 0.1
 				mobilization_speed = 0.15
 			}
 		}
@@ -1482,6 +1518,15 @@ ideas = {
 			
 			picture = generic_naval_manufacturer_2
 
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+						original_tag = HUN
+					}
+					has_completed_focus = HUN_naval_warfare
+				}
+			}
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = YUG } }
 				NOT = {

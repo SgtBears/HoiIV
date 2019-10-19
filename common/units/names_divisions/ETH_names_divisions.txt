@@ -24,7 +24,7 @@
 #           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
 #           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
 #           1st argument = The name. It must contain either: 
-#                          %d (for decimal number placement)
+#                          %d. (for decimal number placement)
 #                          %s (for string number placement - ROMAN numbers like XIV).
 #           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
 #                                      where you choose the historical division name.
@@ -43,21 +43,20 @@ ETH_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { ETH_INF_01 }
 
-	fallback_name = "%d Yekilili Sefari"
+	fallback_name = "%d. Yekilili Sefari"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Kebur Zabagna" }
-		2 = { "1 Gojjam Sefari" }
-		3 = { "2 Gojjam Sefari" }
+		2 = { "1. Gojjam Sefari" }
+		3 = { "2. Gojjam Sefari" }
 		4 = { "Wolqayt-Semien Sefari" }
 		5 = { "Walega-Ardjo Sefari" }
-		6 = { "1 Tigray Sefari" }
-		7 = { "2 Tigray Sefari" }
-		8 = { "1 Begemder Sefari" }
-		9 = { "2 Begemder Sefari" }
+		6 = { "1. Tigray Sefari" }
+		7 = { "2. Tigray Sefari" }
+		8 = { "1. Begemder Sefari" }
+		9 = { "2. Begemder Sefari" }
 		10 = { "Wag Sefari" }
 		11 = { "Ogaden Sefari" }
 		12 = { "Arusi Sefari" }
@@ -82,6 +81,256 @@ ETH_INF_01 =
 		31 = { "Kula Sefari" }
 		32 = { "Bale Sefari" }
 		33 = { "Mahel Sefari" }
+		1 = { "%d. Yekilili Sefari" }
+		34 = { "2. Yekilili Sefari" }
+		35 = { "3. Yekilili Sefari" }
+		36 = { "4. Yekilili Sefari" }
+		37 = { "5. Yekilili Sefari" }
+		38 = { "6. Yekilili Sefari" }
+		39 = { "7. Yekilili Sefari" }
+		40 = { "8. Yekilili Sefari" }
+		41 = { "9. Yekilili Sefari" }
+		42 = { "10. Yekilili Sefari" }
+		43 = { "11. Yekilili Sefari" }
+		44 = { "12. Yekilili Sefari" }
+		45 = { "13. Yekilili Sefari" }
+		46 = { "14. Yekilili Sefari" }
+		47 = { "15. Yekilili Sefari" }
+		48 = { "16. Yekilili Sefari" }
+		49 = { "17. Yekilili Sefari" }
+		50 = { "18. Yekilili Sefari" }
+		51 = { "19. Yekilili Sefari" }
+		52 = { "20. Yekilili Sefari" }
+		53 = { "21. Yekilili Sefari" }
+		54 = { "22. Yekilili Sefari" }
+		55 = { "23. Yekilili Sefari" }
+		56 = { "24. Yekilili Sefari" }
+		57 = { "25. Yekilili Sefari" }
+		58 = { "26. Yekilili Sefari" }
+		59 = { "27. Yekilili Sefari" }
+		60 = { "28. Yekilili Sefari" }
+		61 = { "29. Yekilili Sefari" }
+		62 = { "30. Yekilili Sefari" }
+		63 = { "31. Yekilili Sefari" }
+		64 = { "32. Yekilili Sefari" }
+		65 = { "33. Yekilili Sefari" }
+		66 = { "34. Yekilili Sefari" }
+		67 = { "35. Yekilili Sefari" }
+		68 = { "36. Yekilili Sefari" }
+		69 = { "37. Yekilili Sefari" }
+		70 = { "38. Yekilili Sefari" }
+		71 = { "39. Yekilili Sefari" }
+		72 = { "40. Yekilili Sefari" }
+		73 = { "41. Yekilili Sefari" }
+		74 = { "42. Yekilili Sefari" }
+		75 = { "43. Yekilili Sefari" }
+		76 = { "44. Yekilili Sefari" }
+		77 = { "45. Yekilili Sefari" }
+		78 = { "46. Yekilili Sefari" }
+		79 = { "47. Yekilili Sefari" }
+		80 = { "48. Yekilili Sefari" }
+		81 = { "49. Yekilili Sefari" }
+		82 = { "50. Yekilili Sefari" }
+		83 = { "51. Yekilili Sefari" }
+		84 = { "52. Yekilili Sefari" }
+		85 = { "53. Yekilili Sefari" }
+		86 = { "54. Yekilili Sefari" }
+		87 = { "55. Yekilili Sefari" }
+		88 = { "56. Yekilili Sefari" }
+		89 = { "57. Yekilili Sefari" }
+		90 = { "58. Yekilili Sefari" }
+		91 = { "59. Yekilili Sefari" }
+		92 = { "60. Yekilili Sefari" }
+		93 = { "61. Yekilili Sefari" }
+		94 = { "62. Yekilili Sefari" }
+		95 = { "63. Yekilili Sefari" }
+		96 = { "64. Yekilili Sefari" }
+		97 = { "65. Yekilili Sefari" }
+		98 = { "66. Yekilili Sefari" }
+		99 = { "67. Yekilili Sefari" }
+		100 = { "68. Yekilili Sefari" }
+		101 = { "69. Yekilili Sefari" }
+		102 = { "70. Yekilili Sefari" }
+		103 = { "71. Yekilili Sefari" }
+		104 = { "72. Yekilili Sefari" }
+		105 = { "73. Yekilili Sefari" }
+		106 = { "74. Yekilili Sefari" }
+		107 = { "75. Yekilili Sefari" }
+		108 = { "76. Yekilili Sefari" }
+		109 = { "77. Yekilili Sefari" }
+		110 = { "78. Yekilili Sefari" }
+		111 = { "79. Yekilili Sefari" }
+		112 = { "80. Yekilili Sefari" }
+		113 = { "81. Yekilili Sefari" }
+		114 = { "82. Yekilili Sefari" }
+		115 = { "83. Yekilili Sefari" }
+		116 = { "84. Yekilili Sefari" }
+		117 = { "85. Yekilili Sefari" }
+		118 = { "86. Yekilili Sefari" }
+		119 = { "87. Yekilili Sefari" }
+		120 = { "88. Yekilili Sefari" }
+		121 = { "89. Yekilili Sefari" }
+		122 = { "90. Yekilili Sefari" }
+		123 = { "91. Yekilili Sefari" }
+		124 = { "92. Yekilili Sefari" }
+		125 = { "93. Yekilili Sefari" }
+		126 = { "94. Yekilili Sefari" }
+		127 = { "95. Yekilili Sefari" }
+		128 = { "96. Yekilili Sefari" }
+		129 = { "97. Yekilili Sefari" }
+		130 = { "98. Yekilili Sefari" }
+		131 = { "99. Yekilili Sefari" }
+		132 = { "100. Yekilili Sefari" }
+		133 = { "101. Yekilili Sefari" }
+		134 = { "102. Yekilili Sefari" }
+		135 = { "103. Yekilili Sefari" }
+		136 = { "104. Yekilili Sefari" }
+		137 = { "105. Yekilili Sefari" }
+		138 = { "106. Yekilili Sefari" }
+		139 = { "107. Yekilili Sefari" }
+		140 = { "108. Yekilili Sefari" }
+		141 = { "109. Yekilili Sefari" }
+		142 = { "110. Yekilili Sefari" }
+		143 = { "111. Yekilili Sefari" }
+		144 = { "112. Yekilili Sefari" }
+		145 = { "113. Yekilili Sefari" }
+		146 = { "114. Yekilili Sefari" }
+		147 = { "115. Yekilili Sefari" }
+		148 = { "116. Yekilili Sefari" }
+		149 = { "117. Yekilili Sefari" }
+		150 = { "118. Yekilili Sefari" }
+		151 = { "119. Yekilili Sefari" }
+		152 = { "120. Yekilili Sefari" }
+		153 = { "121. Yekilili Sefari" }
+		154 = { "122. Yekilili Sefari" }
+		155 = { "123. Yekilili Sefari" }
+		156 = { "124. Yekilili Sefari" }
+		157 = { "125. Yekilili Sefari" }
+		158 = { "126. Yekilili Sefari" }
+		159 = { "127. Yekilili Sefari" }
+		160 = { "128. Yekilili Sefari" }
+		161 = { "129. Yekilili Sefari" }
+		162 = { "130. Yekilili Sefari" }
+		163 = { "131. Yekilili Sefari" }
+		164 = { "132. Yekilili Sefari" }
+		165 = { "133. Yekilili Sefari" }
+		166 = { "134. Yekilili Sefari" }
+		167 = { "135. Yekilili Sefari" }
+		168 = { "136. Yekilili Sefari" }
+		169 = { "137. Yekilili Sefari" }
+		170 = { "138. Yekilili Sefari" }
+		171 = { "139. Yekilili Sefari" }
+		172 = { "140. Yekilili Sefari" }
+		173 = { "141. Yekilili Sefari" }
+		174 = { "142. Yekilili Sefari" }
+		175 = { "143. Yekilili Sefari" }
+		176 = { "144. Yekilili Sefari" }
+		177 = { "145. Yekilili Sefari" }
+		178 = { "146. Yekilili Sefari" }
+		179 = { "147. Yekilili Sefari" }
+		180 = { "148. Yekilili Sefari" }
+		181 = { "149. Yekilili Sefari" }
+		182 = { "150. Yekilili Sefari" }
+		183 = { "151. Yekilili Sefari" }
+		184 = { "152. Yekilili Sefari" }
+		185 = { "153. Yekilili Sefari" }
+		186 = { "154. Yekilili Sefari" }
+		187 = { "155. Yekilili Sefari" }
+		188 = { "156. Yekilili Sefari" }
+		189 = { "157. Yekilili Sefari" }
+		190 = { "158. Yekilili Sefari" }
+		191 = { "159. Yekilili Sefari" }
+		192 = { "160. Yekilili Sefari" }
+		193 = { "161. Yekilili Sefari" }
+		194 = { "162. Yekilili Sefari" }
+		195 = { "163. Yekilili Sefari" }
+		196 = { "164. Yekilili Sefari" }
+		197 = { "165. Yekilili Sefari" }
+		198 = { "166. Yekilili Sefari" }
+		199 = { "167. Yekilili Sefari" }
+		200 = { "168. Yekilili Sefari" }
+		201 = { "169. Yekilili Sefari" }
+		202 = { "170. Yekilili Sefari" }
+		203 = { "171. Yekilili Sefari" }
+		204 = { "172. Yekilili Sefari" }
+		205 = { "173. Yekilili Sefari" }
+		206 = { "174. Yekilili Sefari" }
+		207 = { "175. Yekilili Sefari" }
+		208 = { "176. Yekilili Sefari" }
+		209 = { "177. Yekilili Sefari" }
+		210 = { "178. Yekilili Sefari" }
+		211 = { "179. Yekilili Sefari" }
+		212 = { "180. Yekilili Sefari" }
+		213 = { "181. Yekilili Sefari" }
+		214 = { "182. Yekilili Sefari" }
+		215 = { "183. Yekilili Sefari" }
+		216 = { "184. Yekilili Sefari" }
+		217 = { "185. Yekilili Sefari" }
+		218 = { "186. Yekilili Sefari" }
+		219 = { "187. Yekilili Sefari" }
+		220 = { "188. Yekilili Sefari" }
+		221 = { "189. Yekilili Sefari" }
+		222 = { "190. Yekilili Sefari" }
+		223 = { "191. Yekilili Sefari" }
+		224 = { "192. Yekilili Sefari" }
+		225 = { "193. Yekilili Sefari" }
+		226 = { "194. Yekilili Sefari" }
+		227 = { "195. Yekilili Sefari" }
+		228 = { "196. Yekilili Sefari" }
+		229 = { "197. Yekilili Sefari" }
+		230 = { "198. Yekilili Sefari" }
+		231 = { "199. Yekilili Sefari" }
+		232 = { "200. Yekilili Sefari" }
+		233 = { "201. Yekilili Sefari" }
+		234 = { "202. Yekilili Sefari" }
+		235 = { "203. Yekilili Sefari" }
+		236 = { "204. Yekilili Sefari" }
+		237 = { "205. Yekilili Sefari" }
+		238 = { "206. Yekilili Sefari" }
+		239 = { "207. Yekilili Sefari" }
+		240 = { "208. Yekilili Sefari" }
+		241 = { "209. Yekilili Sefari" }
+		242 = { "210. Yekilili Sefari" }
+		243 = { "211. Yekilili Sefari" }
+		244 = { "212. Yekilili Sefari" }
+		245 = { "213. Yekilili Sefari" }
+		246 = { "214. Yekilili Sefari" }
+		247 = { "215. Yekilili Sefari" }
+		248 = { "216. Yekilili Sefari" }
+		249 = { "217. Yekilili Sefari" }
+		250 = { "218. Yekilili Sefari" }
+		251 = { "219. Yekilili Sefari" }
+		252 = { "220. Yekilili Sefari" }
+		253 = { "221. Yekilili Sefari" }
+		254 = { "222. Yekilili Sefari" }
+		255 = { "223. Yekilili Sefari" }
+		256 = { "224. Yekilili Sefari" }
+		257 = { "225. Yekilili Sefari" }
+		258 = { "226. Yekilili Sefari" }
+		259 = { "227. Yekilili Sefari" }
+		260 = { "228. Yekilili Sefari" }
+		261 = { "229. Yekilili Sefari" }
+		262 = { "230. Yekilili Sefari" }
+		263 = { "231. Yekilili Sefari" }
+		264 = { "232. Yekilili Sefari" }
+		265 = { "233. Yekilili Sefari" }
+		266 = { "234. Yekilili Sefari" }
+		267 = { "235. Yekilili Sefari" }
+		268 = { "236. Yekilili Sefari" }
+		269 = { "237. Yekilili Sefari" }
+		270 = { "238. Yekilili Sefari" }
+		271 = { "239. Yekilili Sefari" }
+		272 = { "240. Yekilili Sefari" }
+		273 = { "241. Yekilili Sefari" }
+		274 = { "242. Yekilili Sefari" }
+		275 = { "243. Yekilili Sefari" }
+		276 = { "244. Yekilili Sefari" }
+		277 = { "245. Yekilili Sefari" }
+		278 = { "246. Yekilili Sefari" }
+		279 = { "247. Yekilili Sefari" }
+		280 = { "248. Yekilili Sefari" }
+		281 = { "249. Yekilili Sefari" }
+		282 = { "250. Yekilili Sefari" }
 	}
 }
 
@@ -96,47 +345,24 @@ ETH_CAV_01 =
 	division_types = { "cavalry" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ETH_INF_01 }
+	#link_numbering_with = { ETH_INF_01 }
 
-	fallback_name = "%d Yekilili Sefari"
+	fallback_name = "%d. Feresenya Yet'ori Kifili"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Kebur Zabagna" }
-		2 = { "1 Gojjam Sefari" }
-		3 = { "2 Gojjam Sefari" }
-		4 = { "Wolqayt-Semien Sefari" }
-		5 = { "Walega-Ardjo Sefari" }
-		6 = { "1 Tigray Sefari" }
-		7 = { "2 Tigray Sefari" }
-		8 = { "1 Begemder Sefari" }
-		9 = { "2 Begemder Sefari" }
-		10 = { "Wag Sefari" }
-		11 = { "Ogaden Sefari" }
-		12 = { "Arusi Sefari" }
-		13 = { "Illubabor Sefari" }
-		14 = { "1 Sidamo Sefari" }
-		15 = { "2 Sidamo Sefari" }
-		16 = { "Amino Sefari" }
-		17 = { "Gubba Sefari" }
-		18 = { "Jimma Sefari" }
-		19 = { "Mui Sefari" }
-		20 = { "Om Hajer Sefari" }
-		21 = { "Sela Sefari" }
-		22 = { "Sodo Sefari" }
-		23 = { "Welega Sefari" }
-		24 = { "Yejju Sefari" }
-		25 = { "Danakil Sefari" }
-		26 = { "Ifrata Sefari" }
-		27 = { "Kaffa Sefari" }
-		28 = { "Wollo Sefari" }
-		29 = { "Hararghe Sefari" }
-		30 = { "Gemu Gofa Sefari" }
-		31 = { "Kula Sefari" }
-		32 = { "Bale Sefari" }
-		33 = { "Mahel Sefari" }
+		1 = { "%d. Feresenya Yet'ori Kifili" }
+		2 = { "%d. Feresenya Yet'ori Kifili" }
+		3 = { "%d. Feresenya Yet'ori Kifili" }
+		4 = { "%d. Feresenya Yet'ori Kifili" }
+		5 = { "%d. Feresenya Yet'ori Kifili" }
+		6 = { "%d. Feresenya Yet'ori Kifili" }
+		7 = { "%d. Feresenya Yet'ori Kifili" }
+		8 = { "%d. Feresenya Yet'ori Kifili" }
+		9 = { "%d. Feresenya Yet'ori Kifili" }
+		10 = { "%d. Feresenya Yet'ori Kifili" }
 	}
 }
 
@@ -151,47 +377,24 @@ ETH_MOT_01 =
 	division_types = { "motorized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ETH_INF_01 }
+	#link_numbering_with = { ETH_INF_01 }
 
-	fallback_name = "%d Yekilili Sefari"
+	fallback_name = "%d. Moteri Yet'ori Kifili"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Kebur Zabagna" }
-		2 = { "1 Gojjam Sefari" }
-		3 = { "2 Gojjam Sefari" }
-		4 = { "Wolqayt-Semien Sefari" }
-		5 = { "Walega-Ardjo Sefari" }
-		6 = { "1 Tigray Sefari" }
-		7 = { "2 Tigray Sefari" }
-		8 = { "1 Begemder Sefari" }
-		9 = { "2 Begemder Sefari" }
-		10 = { "Wag Sefari" }
-		11 = { "Ogaden Sefari" }
-		12 = { "Arusi Sefari" }
-		13 = { "Illubabor Sefari" }
-		14 = { "1 Sidamo Sefari" }
-		15 = { "2 Sidamo Sefari" }
-		16 = { "Amino Sefari" }
-		17 = { "Gubba Sefari" }
-		18 = { "Jimma Sefari" }
-		19 = { "Mui Sefari" }
-		20 = { "Om Hajer Sefari" }
-		21 = { "Sela Sefari" }
-		22 = { "Sodo Sefari" }
-		23 = { "Welega Sefari" }
-		24 = { "Yejju Sefari" }
-		25 = { "Danakil Sefari" }
-		26 = { "Ifrata Sefari" }
-		27 = { "Kaffa Sefari" }
-		28 = { "Wollo Sefari" }
-		29 = { "Hararghe Sefari" }
-		30 = { "Gemu Gofa Sefari" }
-		31 = { "Kula Sefari" }
-		32 = { "Bale Sefari" }
-		33 = { "Mahel Sefari" }
+		1 = { "%d. Moteri Yet'ori Kifili" }
+		2 = { "%d. Moteri Yet'ori Kifili" }
+		3 = { "%d. Moteri Yet'ori Kifili" }
+		4 = { "%d. Moteri Yet'ori Kifili" }
+		5 = { "%d. Moteri Yet'ori Kifili" }
+		6 = { "%d. Moteri Yet'ori Kifili" }
+		7 = { "%d. Moteri Yet'ori Kifili" }
+		8 = { "%d. Moteri Yet'ori Kifili" }
+		9 = { "%d. Moteri Yet'ori Kifili" }
+		10 = { "%d. Moteri Yet'ori Kifili" }
 	}
 }
 
@@ -206,47 +409,24 @@ ETH_MEC_01 =
 	division_types = { "mechanized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ETH_INF_01 }
+	link_numbering_with = { ETH_MOT_01 }
 
-	fallback_name = "%d Yekilili Sefari"
+	fallback_name = "%d. Moteri Yet'ori Kifili"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Kebur Zabagna" }
-		2 = { "1 Gojjam Sefari" }
-		3 = { "2 Gojjam Sefari" }
-		4 = { "Wolqayt-Semien Sefari" }
-		5 = { "Walega-Ardjo Sefari" }
-		6 = { "1 Tigray Sefari" }
-		7 = { "2 Tigray Sefari" }
-		8 = { "1 Begemder Sefari" }
-		9 = { "2 Begemder Sefari" }
-		10 = { "Wag Sefari" }
-		11 = { "Ogaden Sefari" }
-		12 = { "Arusi Sefari" }
-		13 = { "Illubabor Sefari" }
-		14 = { "1 Sidamo Sefari" }
-		15 = { "2 Sidamo Sefari" }
-		16 = { "Amino Sefari" }
-		17 = { "Gubba Sefari" }
-		18 = { "Jimma Sefari" }
-		19 = { "Mui Sefari" }
-		20 = { "Om Hajer Sefari" }
-		21 = { "Sela Sefari" }
-		22 = { "Sodo Sefari" }
-		23 = { "Welega Sefari" }
-		24 = { "Yejju Sefari" }
-		25 = { "Danakil Sefari" }
-		26 = { "Ifrata Sefari" }
-		27 = { "Kaffa Sefari" }
-		28 = { "Wollo Sefari" }
-		29 = { "Hararghe Sefari" }
-		30 = { "Gemu Gofa Sefari" }
-		31 = { "Kula Sefari" }
-		32 = { "Bale Sefari" }
-		33 = { "Mahel Sefari" }
+		1 = { "%d. Moteri Yet'ori Kifili" }
+		2 = { "%d. Moteri Yet'ori Kifili" }
+		3 = { "%d. Moteri Yet'ori Kifili" }
+		4 = { "%d. Moteri Yet'ori Kifili" }
+		5 = { "%d. Moteri Yet'ori Kifili" }
+		6 = { "%d. Moteri Yet'ori Kifili" }
+		7 = { "%d. Moteri Yet'ori Kifili" }
+		8 = { "%d. Moteri Yet'ori Kifili" }
+		9 = { "%d. Moteri Yet'ori Kifili" }
+		10 = { "%d. Moteri Yet'ori Kifili" }
 	}
 }
 
@@ -261,47 +441,24 @@ ETH_ARM_01 =
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ETH_INF_01 }
+	#link_numbering_with = { ETH_INF_01 }
 
-	fallback_name = "%d Yekilili Sefari"
+	fallback_name = "%d. Taniki Yet'ori Kifili"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Kebur Zabagna" }
-		2 = { "1 Gojjam Sefari" }
-		3 = { "2 Gojjam Sefari" }
-		4 = { "Wolqayt-Semien Sefari" }
-		5 = { "Walega-Ardjo Sefari" }
-		6 = { "1 Tigray Sefari" }
-		7 = { "2 Tigray Sefari" }
-		8 = { "1 Begemder Sefari" }
-		9 = { "2 Begemder Sefari" }
-		10 = { "Wag Sefari" }
-		11 = { "Ogaden Sefari" }
-		12 = { "Arusi Sefari" }
-		13 = { "Illubabor Sefari" }
-		14 = { "1 Sidamo Sefari" }
-		15 = { "2 Sidamo Sefari" }
-		16 = { "Amino Sefari" }
-		17 = { "Gubba Sefari" }
-		18 = { "Jimma Sefari" }
-		19 = { "Mui Sefari" }
-		20 = { "Om Hajer Sefari" }
-		21 = { "Sela Sefari" }
-		22 = { "Sodo Sefari" }
-		23 = { "Welega Sefari" }
-		24 = { "Yejju Sefari" }
-		25 = { "Danakil Sefari" }
-		26 = { "Ifrata Sefari" }
-		27 = { "Kaffa Sefari" }
-		28 = { "Wollo Sefari" }
-		29 = { "Hararghe Sefari" }
-		30 = { "Gemu Gofa Sefari" }
-		31 = { "Kula Sefari" }
-		32 = { "Bale Sefari" }
-		33 = { "Mahel Sefari" }
+		1 = { "%d. Taniki Yet'ori Kifili" }
+		2 = { "%d. Taniki Yet'ori Kifili" }
+		3 = { "%d. Taniki Yet'ori Kifili" }
+		4 = { "%d. Taniki Yet'ori Kifili" }
+		5 = { "%d. Taniki Yet'ori Kifili" }
+		6 = { "%d. Taniki Yet'ori Kifili" }
+		7 = { "%d. Taniki Yet'ori Kifili" }
+		8 = { "%d. Taniki Yet'ori Kifili" }
+		9 = { "%d. Taniki Yet'ori Kifili" }
+		10 = { "%d. Taniki Yet'ori Kifili" }
 	}
 }
 
@@ -316,47 +473,24 @@ ETH_PAR_01 =
 	division_types = { "paratrooper" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ETH_INF_01 }
+	#link_numbering_with = { ETH_INF_01 }
 
-	fallback_name = "%d Yekilili Sefari"
+	fallback_name = "%d. Pararoperri Yet'ori Kifili"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Kebur Zabagna" }
-		2 = { "1 Gojjam Sefari" }
-		3 = { "2 Gojjam Sefari" }
-		4 = { "Wolqayt-Semien Sefari" }
-		5 = { "Walega-Ardjo Sefari" }
-		6 = { "1 Tigray Sefari" }
-		7 = { "2 Tigray Sefari" }
-		8 = { "1 Begemder Sefari" }
-		9 = { "2 Begemder Sefari" }
-		10 = { "Wag Sefari" }
-		11 = { "Ogaden Sefari" }
-		12 = { "Arusi Sefari" }
-		13 = { "Illubabor Sefari" }
-		14 = { "1 Sidamo Sefari" }
-		15 = { "2 Sidamo Sefari" }
-		16 = { "Amino Sefari" }
-		17 = { "Gubba Sefari" }
-		18 = { "Jimma Sefari" }
-		19 = { "Mui Sefari" }
-		20 = { "Om Hajer Sefari" }
-		21 = { "Sela Sefari" }
-		22 = { "Sodo Sefari" }
-		23 = { "Welega Sefari" }
-		24 = { "Yejju Sefari" }
-		25 = { "Danakil Sefari" }
-		26 = { "Ifrata Sefari" }
-		27 = { "Kaffa Sefari" }
-		28 = { "Wollo Sefari" }
-		29 = { "Hararghe Sefari" }
-		30 = { "Gemu Gofa Sefari" }
-		31 = { "Kula Sefari" }
-		32 = { "Bale Sefari" }
-		33 = { "Mahel Sefari" }
+		1 = { "%d. Pararoperri Yet'ori Kifili" }
+		2 = { "%d. Pararoperri Yet'ori Kifili" }
+		3 = { "%d. Pararoperri Yet'ori Kifili" }
+		4 = { "%d. Pararoperri Yet'ori Kifili" }
+		5 = { "%d. Pararoperri Yet'ori Kifili" }
+		6 = { "%d. Pararoperri Yet'ori Kifili" }
+		7 = { "%d. Pararoperri Yet'ori Kifili" }
+		8 = { "%d. Pararoperri Yet'ori Kifili" }
+		9 = { "%d. Pararoperri Yet'ori Kifili" }
+		10 = { "%d. Pararoperri Yet'ori Kifili" }
 	}
 }
 
@@ -371,47 +505,24 @@ ETH_MAR_01 =
 	division_types = { "marine" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ETH_INF_01 }
+	#link_numbering_with = { ETH_INF_01 }
 
-	fallback_name = "%d Yekilili Sefari"
+	fallback_name = "%d. Merikebochi Yet'ori Kifili"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Kebur Zabagna" }
-		2 = { "1 Gojjam Sefari" }
-		3 = { "2 Gojjam Sefari" }
-		4 = { "Wolqayt-Semien Sefari" }
-		5 = { "Walega-Ardjo Sefari" }
-		6 = { "1 Tigray Sefari" }
-		7 = { "2 Tigray Sefari" }
-		8 = { "1 Begemder Sefari" }
-		9 = { "2 Begemder Sefari" }
-		10 = { "Wag Sefari" }
-		11 = { "Ogaden Sefari" }
-		12 = { "Arusi Sefari" }
-		13 = { "Illubabor Sefari" }
-		14 = { "1 Sidamo Sefari" }
-		15 = { "2 Sidamo Sefari" }
-		16 = { "Amino Sefari" }
-		17 = { "Gubba Sefari" }
-		18 = { "Jimma Sefari" }
-		19 = { "Mui Sefari" }
-		20 = { "Om Hajer Sefari" }
-		21 = { "Sela Sefari" }
-		22 = { "Sodo Sefari" }
-		23 = { "Welega Sefari" }
-		24 = { "Yejju Sefari" }
-		25 = { "Danakil Sefari" }
-		26 = { "Ifrata Sefari" }
-		27 = { "Kaffa Sefari" }
-		28 = { "Wollo Sefari" }
-		29 = { "Hararghe Sefari" }
-		30 = { "Gemu Gofa Sefari" }
-		31 = { "Kula Sefari" }
-		32 = { "Bale Sefari" }
-		33 = { "Mahel Sefari" }
+		1 = { "%d. Merikebochi Yet'ori Kifili" }
+		2 = { "%d. Merikebochi Yet'ori Kifili" }
+		3 = { "%d. Merikebochi Yet'ori Kifili" }
+		4 = { "%d. Merikebochi Yet'ori Kifili" }
+		5 = { "%d. Merikebochi Yet'ori Kifili" }
+		6 = { "%d. Merikebochi Yet'ori Kifili" }
+		7 = { "%d. Merikebochi Yet'ori Kifili" }
+		8 = { "%d. Merikebochi Yet'ori Kifili" }
+		9 = { "%d. Merikebochi Yet'ori Kifili" }
+		10 = { "%d. Merikebochi Yet'ori Kifili" }
 	}
 }
 
@@ -426,47 +537,24 @@ ETH_MNT_01 =
 	division_types = { "mountaineers" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { ETH_INF_01 }
+	link_numbering_with = { ETH_INF_01 }
 
-	fallback_name = "%d Yekilili Sefari"
+	fallback_name = "%d. Terara Yet'ori Kifili"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Kebur Zabagna" }
-		2 = { "1 Gojjam Sefari" }
-		3 = { "2 Gojjam Sefari" }
-		4 = { "Wolqayt-Semien Sefari" }
-		5 = { "Walega-Ardjo Sefari" }
-		6 = { "1 Tigray Sefari" }
-		7 = { "2 Tigray Sefari" }
-		8 = { "1 Begemder Sefari" }
-		9 = { "2 Begemder Sefari" }
-		10 = { "Wag Sefari" }
-		11 = { "Ogaden Sefari" }
-		12 = { "Arusi Sefari" }
-		13 = { "Illubabor Sefari" }
-		14 = { "1 Sidamo Sefari" }
-		15 = { "2 Sidamo Sefari" }
-		16 = { "Amino Sefari" }
-		17 = { "Gubba Sefari" }
-		18 = { "Jimma Sefari" }
-		19 = { "Mui Sefari" }
-		20 = { "Om Hajer Sefari" }
-		21 = { "Sela Sefari" }
-		22 = { "Sodo Sefari" }
-		23 = { "Welega Sefari" }
-		24 = { "Yejju Sefari" }
-		25 = { "Danakil Sefari" }
-		26 = { "Ifrata Sefari" }
-		27 = { "Kaffa Sefari" }
-		28 = { "Wollo Sefari" }
-		29 = { "Hararghe Sefari" }
-		30 = { "Gemu Gofa Sefari" }
-		31 = { "Kula Sefari" }
-		32 = { "Bale Sefari" }
-		33 = { "Mahel Sefari" }
+		1 = { "%d. Terara Yet'ori Kifili" }
+		2 = { "%d. Terara Yet'ori Kifili" }
+		3 = { "%d. Terara Yet'ori Kifili" }
+		4 = { "%d. Terara Yet'ori Kifili" }
+		5 = { "%d. Terara Yet'ori Kifili" }
+		6 = { "%d. Terara Yet'ori Kifili" }
+		7 = { "%d. Terara Yet'ori Kifili" }
+		8 = { "%d. Terara Yet'ori Kifili" }
+		9 = { "%d. Terara Yet'ori Kifili" }
+		10 = { "%d. Terara Yet'ori Kifili" }
 	}
 }
 
@@ -481,47 +569,55 @@ ETH_GAR_01 =
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { ETH_INF_01 }
+	#link_numbering_with = { ETH_INF_01 }
 
-	fallback_name = "%d Yekilili Sefari"
+	fallback_name = "%d. Gariseni Yet'ori Kifili"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Kebur Zabagna" }
-		2 = { "1 Gojjam Sefari" }
-		3 = { "2 Gojjam Sefari" }
-		4 = { "Wolqayt-Semien Sefari" }
-		5 = { "Walega-Ardjo Sefari" }
-		6 = { "1 Tigray Sefari" }
-		7 = { "2 Tigray Sefari" }
-		8 = { "1 Begemder Sefari" }
-		9 = { "2 Begemder Sefari" }
-		10 = { "Wag Sefari" }
-		11 = { "Ogaden Sefari" }
-		12 = { "Arusi Sefari" }
-		13 = { "Illubabor Sefari" }
-		14 = { "1 Sidamo Sefari" }
-		15 = { "2 Sidamo Sefari" }
-		16 = { "Amino Sefari" }
-		17 = { "Gubba Sefari" }
-		18 = { "Jimma Sefari" }
-		19 = { "Mui Sefari" }
-		20 = { "Om Hajer Sefari" }
-		21 = { "Sela Sefari" }
-		22 = { "Sodo Sefari" }
-		23 = { "Welega Sefari" }
-		24 = { "Yejju Sefari" }
-		25 = { "Danakil Sefari" }
-		26 = { "Ifrata Sefari" }
-		27 = { "Kaffa Sefari" }
-		28 = { "Wollo Sefari" }
-		29 = { "Hararghe Sefari" }
-		30 = { "Gemu Gofa Sefari" }
-		31 = { "Kula Sefari" }
-		32 = { "Bale Sefari" }
-		33 = { "Mahel Sefari" }
+		1 = { "%d. Gariseni Yet'ori Kifili" }
+		2 = { "%d. Gariseni Yet'ori Kifili" }
+		3 = { "%d. Gariseni Yet'ori Kifili" }
+		4 = { "%d. Gariseni Yet'ori Kifili" }
+		5 = { "%d. Gariseni Yet'ori Kifili" }
+		6 = { "%d. Gariseni Yet'ori Kifili" }
+		7 = { "%d. Gariseni Yet'ori Kifili" }
+		8 = { "%d. Gariseni Yet'ori Kifili" }
+		9 = { "%d. Gariseni Yet'ori Kifili" }
+		10 = { "%d. Gariseni Yet'ori Kifili" }
 	}
 }
 
+ETH_IMPERIAL_01 = 
+{
+	name = "Imperial Guard"
+
+	for_countries = { ETH }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ETH_INF_01 }
+
+	fallback_name = "%d. Kebur Zabagna"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Kebur Zabagna" }
+		2 = { "%d. Kebur Zabagna" }
+		3 = { "%d. Kebur Zabagna" }
+		4 = { "%d. Kebur Zabagna" }
+		5 = { "%d. Kebur Zabagna" }
+		6 = { "%d. Kebur Zabagna" }
+		7 = { "%d. Kebur Zabagna" }
+		8 = { "%d. Kebur Zabagna" }
+		9 = { "%d. Kebur Zabagna" }
+		10 = { "%d. Kebur Zabagna" }
+	}
+}

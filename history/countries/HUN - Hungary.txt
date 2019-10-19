@@ -193,6 +193,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Otto von Habsburg"
+	desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+	picture = GFX_Portrait_hungary_otto_von_hapsburg
+	expire = "1965.1.1"
+	ideology = royalism
+	traits = {
+		
+	}
+}
 1939.1.1 = {
 	if = {
 		limit = {

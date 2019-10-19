@@ -199,6 +199,53 @@ foreign_influence = {
 		}
 	}
 	
+	military_parade_monarchism = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			FROM = {
+				is_puppet_of = ROOT
+				monarchism < 0.9
+			}
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 60
+			}
+		}
+
+		visible = {
+			has_government = monarchism
+			FROM = {
+				is_puppet_of = ROOT
+				monarchism < 0.99
+			}
+		}
+
+		target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_timed_idea = { idea = military_parade_monarchism days = 120 }
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.5
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	military_parade = {
 
 		icon = eng_propaganda_campaigns
@@ -458,6 +505,60 @@ foreign_influence = {
 		}
 	}
 	
+	establish_monarchy = {
+
+		icon = generic_prepare_civil_war
+		
+		cost = 50
+		
+		available = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+			FROM = {
+				monarchism > 0.6
+			}
+			FROM = {
+				NOT = { has_government = monarchism }
+			}
+		}
+
+		visible = {
+			has_government = monarchism
+			FROM = {
+				is_puppet_of = ROOT
+				NOT = { has_government = monarchism }
+			}
+		}
+
+		target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			FROM = { country_event = { id = mtg_generic.1 } }
+			FROM = {
+				add_timed_idea = {
+					idea = political_turmoil
+					days = 365
+				}
+			}
+			FROM = {
+				set_politics = {
+					ruling_party = monarchism
+					elections_allowed = no
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	military_dictatorship = {
 
 		icon = generic_prepare_civil_war

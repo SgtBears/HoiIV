@@ -24,7 +24,7 @@
 #           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
 #           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
 #           1st argument = The name. It must contain either: 
-#                          %d (for decimal number placement)
+#                          %d. (for decimal number placement)
 #                          %s (for string number placement - ROMEN numbers like XIV).
 #           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
 #                                      where you choose the historical division name.
@@ -43,42 +43,42 @@ MEN_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MEN_INF_01 }
 
-	fallback_name = "%d Mengjiang Juntuán"
+	fallback_name = "%d. Mengjiang Juntuán"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Mengjiang Juntuán" }			# All fictional names
-		2 = { "%d Mengjiang Juntuán" }
-		3 = { "%d Mengjiang Juntuán" }
-		4 = { "%d Mengjiang Juntuán" }
-		5 = { "%d Mengjiang Juntuán" }			
-		6 = { "%d Mengjiang Juntuán" }			
-		7 = { "%d Mengjiang Juntuán" }			
-		8 = { "%d Mengjiang Juntuán" }			
-		9 = { "%d Mengjiang Juntuán" }			
-		10 = { "%d Mengjiang Juntuán" }			
-		11 = { "%d Mengjiang Juntuán" }			
-		12 = { "%d Mengjiang Juntuán" }			
-		13 = { "%d Mengjiang Juntuán" }			
-		14 = { "%d Mengjiang Juntuán" }			
-		15 = { "%d Mengjiang Juntuán" }			
-		16 = { "%d Mengjiang Juntuán" }			
-		17 = { "%d Mengjiang Juntuán" }			
-		18 = { "%d Mengjiang Juntuán" }			
-		19 = { "%d Mengjiang Juntuán" }			
-		20 = { "%d Mengjiang Juntuán" }			
-		21 = { "%d Mengjiang Juntuán" }			
-		22 = { "%d Mengjiang Juntuán" }			
-		23 = { "%d Mengjiang Juntuán" }			
-		24 = { "%d Mengjiang Juntuán" }			
-		25 = { "%d Mengjiang Juntuán" }			
-		26 = { "%d Mengjiang Juntuán" }			
-		27 = { "%d Mengjiang Juntuán" }			
-		28 = { "%d Mengjiang Juntuán" }			
-		29 = { "%d Mengjiang Juntuán" }			
-		30 = { "%d Mengjiang Juntuán" }			
+		1 = { "%d. Mengjiang Juntuán" }			# All fictional names
+		2 = { "%d. Mengjiang Juntuán" }
+		3 = { "%d. Mengjiang Juntuán" }
+		4 = { "%d. Mengjiang Juntuán" }
+		5 = { "%d. Mengjiang Juntuán" }			
+		6 = { "%d. Mengjiang Juntuán" }			
+		7 = { "%d. Mengjiang Juntuán" }			
+		8 = { "%d. Mengjiang Juntuán" }			
+		9 = { "%d. Mengjiang Juntuán" }			
+		10 = { "%d. Mengjiang Juntuán" }			
+		11 = { "%d. Mengjiang Juntuán" }			
+		12 = { "%d. Mengjiang Juntuán" }			
+		13 = { "%d. Mengjiang Juntuán" }			
+		14 = { "%d. Mengjiang Juntuán" }			
+		15 = { "%d. Mengjiang Juntuán" }			
+		16 = { "%d. Mengjiang Juntuán" }			
+		17 = { "%d. Mengjiang Juntuán" }			
+		18 = { "%d. Mengjiang Juntuán" }			
+		19 = { "%d. Mengjiang Juntuán" }			
+		20 = { "%d. Mengjiang Juntuán" }			
+		21 = { "%d. Mengjiang Juntuán" }			
+		22 = { "%d. Mengjiang Juntuán" }			
+		23 = { "%d. Mengjiang Juntuán" }			
+		24 = { "%d. Mengjiang Juntuán" }			
+		25 = { "%d. Mengjiang Juntuán" }			
+		26 = { "%d. Mengjiang Juntuán" }			
+		27 = { "%d. Mengjiang Juntuán" }			
+		28 = { "%d. Mengjiang Juntuán" }			
+		29 = { "%d. Mengjiang Juntuán" }			
+		30 = { "%d. Mengjiang Juntuán" }			
 	}
 }
 
@@ -95,27 +95,27 @@ MEN_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MEN_INF_01 }
 
-	fallback_name = "%d Mengjiang Qibing Jun"
+	fallback_name = "%d. Mengjiang Qibing Jun"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Mengjiang Qibing Jun" }
-		2 = { "%d Mengjiang Qibing Jun" }
-		3 = { "%d Mengjiang Qibing Jun" }
-		4 = { "%d Mengjiang Qibing Jun" }
-		5 = { "%d Mengjiang Qibing Jun" }
-		6 = { "%d Mengjiang Qibing Jun" }
-		7 = { "%d Mengjiang Qibing Jun" }
-		8 = { "%d Mengjiang Qibing Jun" }
-		9 = { "%d Mengjiang Qibing Jun" }
-		10 = { "%d Mengjiang Qibing Jun" }
-		11 = { "%d Mengjiang Qibing Jun" }
-		12 = { "%d Mengjiang Qibing Jun" }
-		13 = { "%d Mengjiang Qibing Jun" }
-		14 = { "%d Mengjiang Qibing Jun" }
-		15 = { "%d Mengjiang Qibing Jun" }
+		1 = { "%d. Mengjiang Qibing Jun" }
+		2 = { "%d. Mengjiang Qibing Jun" }
+		3 = { "%d. Mengjiang Qibing Jun" }
+		4 = { "%d. Mengjiang Qibing Jun" }
+		5 = { "%d. Mengjiang Qibing Jun" }
+		6 = { "%d. Mengjiang Qibing Jun" }
+		7 = { "%d. Mengjiang Qibing Jun" }
+		8 = { "%d. Mengjiang Qibing Jun" }
+		9 = { "%d. Mengjiang Qibing Jun" }
+		10 = { "%d. Mengjiang Qibing Jun" }
+		11 = { "%d. Mengjiang Qibing Jun" }
+		12 = { "%d. Mengjiang Qibing Jun" }
+		13 = { "%d. Mengjiang Qibing Jun" }
+		14 = { "%d. Mengjiang Qibing Jun" }
+		15 = { "%d. Mengjiang Qibing Jun" }
 	}
 }
 
@@ -132,27 +132,27 @@ MEN_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { MEN_INF_01 }
 
-	fallback_name = "%d Mengjiang Jidonghua Juntuán"
+	fallback_name = "%d. Mengjiang Jidonghua Juntuán"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Mengjiang Jidonghua Juntuán" }		
-		2 = { "%d Mengjiang Jidonghua Juntuán" }		
-		3 = { "%d Mengjiang Jidonghua Juntuán" }		
-		4 = { "%d Mengjiang Jidonghua Juntuán" }		
-		5 = { "%d Mengjiang Jidonghua Juntuán" }		
-		6 = { "%d Mengjiang Jidonghua Juntuán" }		
-		7 = { "%d Mengjiang Jidonghua Juntuán" }		
-		8 = { "%d Mengjiang Jidonghua Juntuán" }		
-		9 = { "%d Mengjiang Jidonghua Juntuán" }		
-		10 = { "%d Mengjiang Jidonghua Juntuán" }		
-		11 = { "%d Mengjiang Jidonghua Juntuán" }		
-		12 = { "%d Mengjiang Jidonghua Juntuán" }		
-		13 = { "%d Mengjiang Jidonghua Juntuán" }		
-		14 = { "%d Mengjiang Jidonghua Juntuán" }		
-		15 = { "%d Mengjiang Jidonghua Juntuán" }		
+		1 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		2 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		3 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		4 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		5 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		6 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		7 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		8 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		9 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		10 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		11 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		12 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		13 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		14 = { "%d. Mengjiang Jidonghua Juntuán" }		
+		15 = { "%d. Mengjiang Jidonghua Juntuán" }		
 	}
 }
 
@@ -169,27 +169,27 @@ MEN_MEC_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { MEN_INF_01 }
 
-	fallback_name = "%d Mengjiang Jixiehua Juntuán"
+	fallback_name = "%d. Mengjiang Jixiehua Juntuán"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Mengjiang Jixiehua Juntuán" }				
-		2 = { "%d Mengjiang Jixiehua Juntuán" }		
-		3 = { "%d Mengjiang Jixiehua Juntuán" }		
-		4 = { "%d Mengjiang Jixiehua Juntuán" }		
-		5 = { "%d Mengjiang Jixiehua Juntuán" }		
-		6 = { "%d Mengjiang Jixiehua Juntuán" }		
-		7 = { "%d Mengjiang Jixiehua Juntuán" }		
-		8 = { "%d Mengjiang Jixiehua Juntuán" }		
-		9 = { "%d Mengjiang Jixiehua Juntuán" }		
-		10 = { "%d Mengjiang Jixiehua Juntuán" }		
-		11 = { "%d Mengjiang Jixiehua Juntuán" }		
-		12 = { "%d Mengjiang Jixiehua Juntuán" }		
-		13 = { "%d Mengjiang Jixiehua Juntuán" }		
-		14 = { "%d Mengjiang Jixiehua Juntuán" }		
-		15 = { "%d Mengjiang Jixiehua Juntuán" }		
+		1 = { "%d. Mengjiang Jixiehua Juntuán" }				
+		2 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		3 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		4 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		5 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		6 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		7 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		8 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		9 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		10 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		11 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		12 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		13 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		14 = { "%d. Mengjiang Jixiehua Juntuán" }		
+		15 = { "%d. Mengjiang Jixiehua Juntuán" }		
 	}
 }
 
@@ -206,27 +206,27 @@ MEN_ARM_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MEN_INF_01 }
 
-	fallback_name = "%d Mengjiang Zhuangjia Shi"
+	fallback_name = "%d. Mengjiang Zhuangjia Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Mengjiang Zhuangjia Shi" }
-		2 = { "%d Mengjiang Zhuangjia Shi" }
-		3 = { "%d Mengjiang Zhuangjia Shi" }
-		4 = { "%d Mengjiang Zhuangjia Shi" }
-		5 = { "%d Mengjiang Zhuangjia Shi" }
-		6 = { "%d Mengjiang Zhuangjia Shi" }
-		7 = { "%d Mengjiang Zhuangjia Shi" }
-		8 = { "%d Mengjiang Zhuangjia Shi" }
-		9 = { "%d Mengjiang Zhuangjia Shi" }
-		10 = { "%d Mengjiang Zhuangjia Shi" }
-		11 = { "%d Mengjiang Zhuangjia Shi" }
-		12 = { "%d Mengjiang Zhuangjia Shi" }
-		13 = { "%d Mengjiang Zhuangjia Shi" }
-		14 = { "%d Mengjiang Zhuangjia Shi" }
-		15 = { "%d Mengjiang Zhuangjia Shi" }
+		1 = { "%d. Mengjiang Zhuangjia Shi" }
+		2 = { "%d. Mengjiang Zhuangjia Shi" }
+		3 = { "%d. Mengjiang Zhuangjia Shi" }
+		4 = { "%d. Mengjiang Zhuangjia Shi" }
+		5 = { "%d. Mengjiang Zhuangjia Shi" }
+		6 = { "%d. Mengjiang Zhuangjia Shi" }
+		7 = { "%d. Mengjiang Zhuangjia Shi" }
+		8 = { "%d. Mengjiang Zhuangjia Shi" }
+		9 = { "%d. Mengjiang Zhuangjia Shi" }
+		10 = { "%d. Mengjiang Zhuangjia Shi" }
+		11 = { "%d. Mengjiang Zhuangjia Shi" }
+		12 = { "%d. Mengjiang Zhuangjia Shi" }
+		13 = { "%d. Mengjiang Zhuangjia Shi" }
+		14 = { "%d. Mengjiang Zhuangjia Shi" }
+		15 = { "%d. Mengjiang Zhuangjia Shi" }
 	}
 }
 
@@ -243,22 +243,22 @@ MEN_PAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MEN_INF_01 }
 
-	fallback_name = "%d Mengjiang Sanbing Shi"
+	fallback_name = "%d. Mengjiang Sanbing Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Mengjiang Sanbing Shi" }
-		2 = { "%d Mengjiang Sanbing Shi" }
-		3 = { "%d Mengjiang Sanbing Shi" }
-		4 = { "%d Mengjiang Sanbing Shi" }
-		5 = { "%d Mengjiang Sanbing Shi" }
-		6 = { "%d Mengjiang Sanbing Shi" }
-		7 = { "%d Mengjiang Sanbing Shi" }
-		8 = { "%d Mengjiang Sanbing Shi" }
-		9 = { "%d Mengjiang Sanbing Shi" }
-		10 = { "%d Mengjiang Sanbing Shi" }
+		1 = { "%d. Mengjiang Sanbing Shi" }
+		2 = { "%d. Mengjiang Sanbing Shi" }
+		3 = { "%d. Mengjiang Sanbing Shi" }
+		4 = { "%d. Mengjiang Sanbing Shi" }
+		5 = { "%d. Mengjiang Sanbing Shi" }
+		6 = { "%d. Mengjiang Sanbing Shi" }
+		7 = { "%d. Mengjiang Sanbing Shi" }
+		8 = { "%d. Mengjiang Sanbing Shi" }
+		9 = { "%d. Mengjiang Sanbing Shi" }
+		10 = { "%d. Mengjiang Sanbing Shi" }
 	}
 }
 
@@ -275,22 +275,22 @@ MEN_MAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MEN_INF_01 }
 
-	fallback_name = "%d Mengjiang Luzhan Dui Shi"
+	fallback_name = "%d. Mengjiang Luzhan Dui Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Mengjiang Luzhan Dui Shi" }
-		2 = { "%d Mengjiang Luzhan Dui Shi" }
-		3 = { "%d Mengjiang Luzhan Dui Shi" }
-		4 = { "%d Mengjiang Luzhan Dui Shi" }
-		5 = { "%d Mengjiang Luzhan Dui Shi" }
-		6 = { "%d Mengjiang Luzhan Dui Shi" }
-		7 = { "%d Mengjiang Luzhan Dui Shi" }
-		8 = { "%d Mengjiang Luzhan Dui Shi" }
-		9 = { "%d Mengjiang Luzhan Dui Shi" }
-		10 = { "%d Mengjiang Luzhan Dui Shi" }
+		1 = { "%d. Mengjiang Luzhan Dui Shi" }
+		2 = { "%d. Mengjiang Luzhan Dui Shi" }
+		3 = { "%d. Mengjiang Luzhan Dui Shi" }
+		4 = { "%d. Mengjiang Luzhan Dui Shi" }
+		5 = { "%d. Mengjiang Luzhan Dui Shi" }
+		6 = { "%d. Mengjiang Luzhan Dui Shi" }
+		7 = { "%d. Mengjiang Luzhan Dui Shi" }
+		8 = { "%d. Mengjiang Luzhan Dui Shi" }
+		9 = { "%d. Mengjiang Luzhan Dui Shi" }
+		10 = { "%d. Mengjiang Luzhan Dui Shi" }
 	}
 }
 
@@ -307,42 +307,42 @@ MEN_MNT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { MEN_INF_01 }
 
-	fallback_name = "%d Mengjiang Juntuán"
+	fallback_name = "%d. Mengjiang Juntuán"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Mengjiang Juntuán" }			# All fictional names
-		2 = { "%d Mengjiang Juntuán" }
-		3 = { "%d Mengjiang Juntuán" }
-		4 = { "%d Mengjiang Juntuán" }
-		5 = { "%d Mengjiang Juntuán" }			
-		6 = { "%d Mengjiang Juntuán" }			
-		7 = { "%d Mengjiang Juntuán" }			
-		8 = { "%d Mengjiang Juntuán" }			
-		9 = { "%d Mengjiang Juntuán" }			
-		10 = { "%d Mengjiang Juntuán" }			
-		11 = { "%d Mengjiang Juntuán" }			
-		12 = { "%d Mengjiang Juntuán" }			
-		13 = { "%d Mengjiang Juntuán" }			
-		14 = { "%d Mengjiang Juntuán" }			
-		15 = { "%d Mengjiang Juntuán" }			
-		16 = { "%d Mengjiang Juntuán" }			
-		17 = { "%d Mengjiang Juntuán" }			
-		18 = { "%d Mengjiang Juntuán" }			
-		19 = { "%d Mengjiang Juntuán" }			
-		20 = { "%d Mengjiang Juntuán" }			
-		21 = { "%d Mengjiang Juntuán" }			
-		22 = { "%d Mengjiang Juntuán" }			
-		23 = { "%d Mengjiang Juntuán" }			
-		24 = { "%d Mengjiang Juntuán" }			
-		25 = { "%d Mengjiang Juntuán" }			
-		26 = { "%d Mengjiang Juntuán" }			
-		27 = { "%d Mengjiang Juntuán" }			
-		28 = { "%d Mengjiang Juntuán" }			
-		29 = { "%d Mengjiang Juntuán" }			
-		30 = { "%d Mengjiang Juntuán" }			
+		1 = { "%d. Mengjiang Juntuán" }			# All fictional names
+		2 = { "%d. Mengjiang Juntuán" }
+		3 = { "%d. Mengjiang Juntuán" }
+		4 = { "%d. Mengjiang Juntuán" }
+		5 = { "%d. Mengjiang Juntuán" }			
+		6 = { "%d. Mengjiang Juntuán" }			
+		7 = { "%d. Mengjiang Juntuán" }			
+		8 = { "%d. Mengjiang Juntuán" }			
+		9 = { "%d. Mengjiang Juntuán" }			
+		10 = { "%d. Mengjiang Juntuán" }			
+		11 = { "%d. Mengjiang Juntuán" }			
+		12 = { "%d. Mengjiang Juntuán" }			
+		13 = { "%d. Mengjiang Juntuán" }			
+		14 = { "%d. Mengjiang Juntuán" }			
+		15 = { "%d. Mengjiang Juntuán" }			
+		16 = { "%d. Mengjiang Juntuán" }			
+		17 = { "%d. Mengjiang Juntuán" }			
+		18 = { "%d. Mengjiang Juntuán" }			
+		19 = { "%d. Mengjiang Juntuán" }			
+		20 = { "%d. Mengjiang Juntuán" }			
+		21 = { "%d. Mengjiang Juntuán" }			
+		22 = { "%d. Mengjiang Juntuán" }			
+		23 = { "%d. Mengjiang Juntuán" }			
+		24 = { "%d. Mengjiang Juntuán" }			
+		25 = { "%d. Mengjiang Juntuán" }			
+		26 = { "%d. Mengjiang Juntuán" }			
+		27 = { "%d. Mengjiang Juntuán" }			
+		28 = { "%d. Mengjiang Juntuán" }			
+		29 = { "%d. Mengjiang Juntuán" }			
+		30 = { "%d. Mengjiang Juntuán" }			
 	}
 }
 
@@ -359,32 +359,32 @@ MEN_GAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MEN_INF_01 }
 
-	fallback_name = "%d Qu Jun"
+	fallback_name = "%d. Qu Jun"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Qu Jun" }
-		2 = { "%d Qu Jun" }
-		3 = { "%d Qu Jun" }
-		4 = { "%d Qu Jun" }
-		5 = { "%d Qu Jun" }
-		6 = { "%d Qu Jun" }
-		7 = { "%d Qu Jun" }
-		8 = { "%d Qu Jun" }
-		9 = { "%d Qu Jun" }
-		10 = { "%d Qu Jun" }
-		11 = { "%d Qu Jun" }
-		12 = { "%d Qu Jun" }
-		13 = { "%d Qu Jun" }
-		14 = { "%d Qu Jun" }
-		15 = { "%d Qu Jun" }
-		16 = { "%d Qu Jun" }
-		17 = { "%d Qu Jun" }
-		18 = { "%d Qu Jun" }
-		19 = { "%d Qu Jun" }
-		20 = { "%d Qu Jun" }
+		1 = { "%d. Qu Jun" }
+		2 = { "%d. Qu Jun" }
+		3 = { "%d. Qu Jun" }
+		4 = { "%d. Qu Jun" }
+		5 = { "%d. Qu Jun" }
+		6 = { "%d. Qu Jun" }
+		7 = { "%d. Qu Jun" }
+		8 = { "%d. Qu Jun" }
+		9 = { "%d. Qu Jun" }
+		10 = { "%d. Qu Jun" }
+		11 = { "%d. Qu Jun" }
+		12 = { "%d. Qu Jun" }
+		13 = { "%d. Qu Jun" }
+		14 = { "%d. Qu Jun" }
+		15 = { "%d. Qu Jun" }
+		16 = { "%d. Qu Jun" }
+		17 = { "%d. Qu Jun" }
+		18 = { "%d. Qu Jun" }
+		19 = { "%d. Qu Jun" }
+		20 = { "%d. Qu Jun" }
 	}
 }
 

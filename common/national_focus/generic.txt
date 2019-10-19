@@ -1659,6 +1659,7 @@ focus_tree = {
 				has_government = fascism
 				has_government = communism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		x = -1
@@ -1697,6 +1698,7 @@ focus_tree = {
 			OR = {
 				has_government = fascism
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		x = -2
@@ -1793,6 +1795,7 @@ focus_tree = {
 			OR = {
 				has_government = democratic
 				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		x = 1

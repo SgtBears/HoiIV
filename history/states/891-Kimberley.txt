@@ -1,0 +1,24 @@
+state={
+	id=891
+	name="STATE_891"
+	manpower = 9372
+	
+	state_category = pastoral
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = AST
+		add_core_of = WAU
+		victory_points = {
+			8209 1
+		}
+	}
+
+	provinces={
+		5207 13133 10937 8247 11016 8209 10958 14361 14362 14363 14364 14365 14366 14367 14368 14369 14370 14371
+	}
+}

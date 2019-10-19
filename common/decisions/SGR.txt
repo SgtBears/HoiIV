@@ -22,36 +22,10 @@ greenland = {
 		}
 
 		visible = {
-			OR = {
-				AND = {
-					US0 = { 
-						OR = {
-							has_government = democratic
-							has_government = neutrality
-						}
-					}
-					SG0 = { 
-						OR = {
-							has_government = democratic
-							has_government = neutrality
-						}
-					}
-				}
-				AND = {
-					US0 = { 
-						has_government = fascism
-					}
-					SG0 = { 
-						has_government = fascism
-					}
-				}
-				AND = {
-					US0 = { 
-						has_government = communism
-					}
-					SG0 = { 
-						has_government = communism
-					}
+			US0 = { 
+				OR = {
+					has_government = ROOT
+					has_government = neutrality
 				}
 			}
 		}
@@ -90,36 +64,10 @@ greenland = {
 		}
 
 		visible = {
-			OR = {
-				AND = {
-					DE0 = { 
-						OR = {
-							has_government = democratic
-							has_government = neutrality
-						}
-					}
-					SG0 = { 
-						OR = {
-							has_government = democratic
-							has_government = neutrality
-						}
-					}
-				}
-				AND = {
-					DE0 = { 
-						has_government = fascism
-					}
-					SG0 = { 
-						has_government = fascism
-					}
-				}
-				AND = {
-					DE0 = { 
-						has_government = communism
-					}
-					SG0 = { 
-						has_government = communism
-					}
+			DE0 = { 
+				OR = {
+					has_government = ROOT
+					has_government = neutrality
 				}
 			}
 		}

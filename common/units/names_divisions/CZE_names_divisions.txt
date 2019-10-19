@@ -261,6 +261,12 @@ CZE_ARM_01 =
 		2 = { "%d. rychlá divize ONDŘEJ" }
 		3 = { "%d. rychlá divize DAVID" }
 		4 = { "%d. rychlá divize VOJTĚCH" }
+		5 = { "%d. rychlá divize" }
+		6 = { "%d. rychlá divize" }
+		7 = { "%d. rychlá divize" }
+		8 = { "%d. rychlá divize" }
+		9 = { "%d. rychlá divize" }
+		10 = { "%d. rychlá divize" }
 	}
 }
 
@@ -287,6 +293,12 @@ CZE_ALTARM_01 =
 		2 = { "%d. tanková divize" }
 		3 = { "%d. tanková divize" }
 		4 = { "%d. tanková divize" }
+		5 = { "%d. tanková divize" }
+		6 = { "%d. tanková divize" }
+		7 = { "%d. tanková divize" }
+		8 = { "%d. tanková divize" }
+		9 = { "%d. tanková divize" }
+		10 = { "%d. tanková divize" }
 	}
 }
 

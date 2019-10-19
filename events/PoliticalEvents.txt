@@ -509,7 +509,7 @@ country_event = {
 				size = 0.5
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_government = communism
 			}
@@ -519,13 +519,23 @@ country_event = {
 				size = 0.5
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_government = neutrality
 			}
 			start_civil_war = {
 				ruling_party = fascism
 				ideology = neutrality
+				size = 0.5
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = monarchism
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = monarchism
 				size = 0.5
 			}
 		}
@@ -605,7 +615,7 @@ country_event = {
 				size = 0.5
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_government = fascism
 			}
@@ -615,13 +625,23 @@ country_event = {
 				size = 0.5
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_government = neutrality
 			}
 			start_civil_war = {
 				ruling_party = communism
 				ideology = neutrality
+				size = 0.5
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = monarchism
+			}
+			start_civil_war = {
+				ruling_party = communism
+				ideology = monarchism
 				size = 0.5
 			}
 		}
@@ -697,7 +717,7 @@ country_event = {
 				size = 0.5
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_government = fascism
 			}
@@ -708,7 +728,7 @@ country_event = {
 				size = 0.5
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_government = communism
 			}
@@ -716,6 +736,16 @@ country_event = {
 			start_civil_war = {
 				ruling_party = democratic
 				ideology = communism
+				size = 0.5
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = monarchism
+			}
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = monarchism
 				size = 0.5
 			}
 		}

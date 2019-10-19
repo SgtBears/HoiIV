@@ -150,7 +150,7 @@ units = {
 	division= {	# "2ème Div. d'Inf. Nord-Africaine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 42
+			name_order = 2
 		}
 		location = 5291
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
@@ -212,7 +212,7 @@ units = {
 	division= {	# "4ème Div. d'Inf. Nord-Africaine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 44
+			name_order = 4
 		}
 		location = 549
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
@@ -350,7 +350,7 @@ units = {
 	division= {	# "3ème Div. d'Inf. Nord-Africaine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 43
+			name_order = 3
 		}
 		location = 3671
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
@@ -403,7 +403,7 @@ units = {
 #	division= {	# "3ème Div. d'Inf. Coloniale"			# missing from OOB, insterted code but commented out -- balance?
 #		division_name = {
 #			is_name_ordered = yes
-#			name_order = 3
+#			name_order = 7
 #		}
 #		location = 11506
 #		division_template = "Division Coloniale"	 	# Second line, reserve equipment
@@ -585,7 +585,7 @@ units = {
 	division= {	# "4ème Div. d'Inf. Coloniale"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 8
 		}
 		location = 6766
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
@@ -607,7 +607,7 @@ units = {
 	division= {	# "1ère Div. d'Inf. Coloniale"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 1
+			name_order = 5
 		}
 		location = 6657
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
@@ -640,7 +640,7 @@ units = {
 	division= {	# "1ère Div. d'Inf. Nord-Africaine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 41
+			name_order = 1
 		}
 		location = 3764
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
@@ -670,7 +670,7 @@ units = {
 	division= {	# "2ème Div. d'Inf. Coloniale"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 6
 		}
 		location = 11834
 		division_template = "Division Coloniale"		 	# Second line, reserve equipment
@@ -773,7 +773,7 @@ units = {
 	division= {	# "Division de Tunise"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 93
+			name_order = 11
 		}
 		location = 11969
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
@@ -785,7 +785,7 @@ units = {
 	division= {	# "Division de Sousse"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 94
+			name_order = 12
 		}
 		location = 9994
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
@@ -799,7 +799,7 @@ units = {
 	division= {	# "Division de Meknès"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 98
+			name_order = 16
 		}
 		location = 7069
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
@@ -811,7 +811,7 @@ units = {
 	division= {	# "Division de Casablanca"	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 95
+			name_order = 13
 		}
 		location = 7069
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
@@ -823,7 +823,7 @@ units = {
 	division= {	# "Division de Fès"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 96
+			name_order = 14
 		}
 		location = 7100
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
@@ -835,7 +835,7 @@ units = {
 	division= {	# "Division de Marrakech"	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 97
+			name_order = 15
 		}
 		location = 7069
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
@@ -904,7 +904,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 91
 		}
-		location = 4401
+		location = 9
 		division_template = "Division Coloniale"	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
@@ -914,7 +914,7 @@ units = {
 	division= {	# "Division de Cochinchine-Cambodge"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 92
+			name_order = 10
 		}
 		location = 4075
 		division_template = "Division Coloniale" 	# Colonial unit, reserve equipment

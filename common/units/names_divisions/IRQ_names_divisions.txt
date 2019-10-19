@@ -44,31 +44,31 @@ IRQ_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { IRQ_GAR_01 }
 
-	fallback_name = "Iraqi al-Mushati al-%dr"
+	fallback_name = "Iraqi Katibat almsha %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Iraqi al-Mushati al-%di" }
-		2 = { "Iraqi al-Mushati al-%di" }
-		3 = { "Iraqi al-Mushati al-%di" }
-		4 = { "Iraqi al-Mushati al-%di" }
-		5 = { "Iraqi al-Mushati al-%di" }
-		6 = { "Iraqi al-Mushati al-%di" }
-		7 = { "Iraqi al-Mushati al-%di" }
-		8 = { "Iraqi al-Mushati al-%di" }
-		9 = { "Iraqi al-Mushati al-%di" }
-		10 = { "Iraqi al-Mushati al-%di" }
-		12 = { "Iraqi al-Mushati al-%dr" }
-		13 = { "Iraqi al-Mushati al-%dr" }
-		14 = { "Iraqi al-Mushati al-%dr" }
-		15 = { "Iraqi al-Mushati al-%dr" }
-		16 = { "Iraqi al-Mushati al-%dr" }
-		17 = { "Iraqi al-Mushati al-%dr" }
-		18 = { "Iraqi al-Mushati al-%dr" }
-		19 = { "Iraqi al-Mushati al-%dr" }
-		20 = { "Iraqi al-Mushati al-%dr" }
+		1 = { "Iraqi Katibat almsha %d" }
+		2 = { "Iraqi Katibat almsha %d" }
+		3 = { "Iraqi Katibat almsha %d" }
+		4 = { "Iraqi Katibat almsha %d" }
+		5 = { "Iraqi Katibat almsha %d" }
+		6 = { "Iraqi Katibat almsha %d" }
+		7 = { "Iraqi Katibat almsha %d" }
+		8 = { "Iraqi Katibat almsha %d" }
+		9 = { "Iraqi Katibat almsha %d" }
+		10 = { "Iraqi Katibat almsha %d" }
+		12 = { "Iraqi Katibat almsha %d" }
+		13 = { "Iraqi Katibat almsha %d" }
+		14 = { "Iraqi Katibat almsha %d" }
+		15 = { "Iraqi Katibat almsha %d" }
+		16 = { "Iraqi Katibat almsha %d" }
+		17 = { "Iraqi Katibat almsha %d" }
+		18 = { "Iraqi Katibat almsha %d" }
+		19 = { "Iraqi Katibat almsha %d" }
+		20 = { "Iraqi Katibat almsha %d" }
 
 	}
 }
@@ -86,27 +86,27 @@ IRQ_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { GER_Gar_01 }
 
-	fallback_name = "Iraqi Sipahis al-%dr"
+	fallback_name = "Iraqi Katibat alfursan %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Iraqi Sipahis al-%di" }
-		2 = { "Iraqi Sipahis al-%di" }
-		3 = { "Iraqi Sipahis al-%di" }
-		4 = { "Iraqi Sipahis al-%di" }
-		5 = { "Iraqi Sipahis al-%di" }
-		6 = { "Iraqi Sipahis al-%di" }
-		7 = { "Iraqi Sipahis al-%di" }
-		8 = { "Iraqi Sipahis al-%di" }
-		9 = { "Iraqi Sipahis al-%di" }
-		10 = { "Iraqi Sipahis al-%di" }
-		11 = { "Iraqi Sipahis al-%dr" }
-		12 = { "Iraqi Sipahis al-%dr" }
-		13 = { "Iraqi Sipahis al-%dr" }
-		14 = { "Iraqi Sipahis al-%dr" }
-		15 = { "Iraqi Sipahis al-%dr" }
+		1 = { "Iraqi Katibat alfursan %d" }
+		2 = { "Iraqi Katibat alfursan %d" }
+		3 = { "Iraqi Katibat alfursan %d" }
+		4 = { "Iraqi Katibat alfursan %d" }
+		5 = { "Iraqi Katibat alfursan %d" }
+		6 = { "Iraqi Katibat alfursan %d" }
+		7 = { "Iraqi Katibat alfursan %d" }
+		8 = { "Iraqi Katibat alfursan %d" }
+		9 = { "Iraqi Katibat alfursan %d" }
+		10 = { "Iraqi Katibat alfursan %d" }
+		11 = { "Iraqi Katibat alfursan %d" }
+		12 = { "Iraqi Katibat alfursan %d" }
+		13 = { "Iraqi Katibat alfursan %d" }
+		14 = { "Iraqi Katibat alfursan %d" }
+		15 = { "Iraqi Katibat alfursan %d" }
 
 	}
 }
@@ -124,31 +124,31 @@ IRQ_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { IRQ_INF_01 }
 
-	fallback_name = "Iraqi al-Mushati al-%dr"
+	fallback_name = "Iraqi Katibat almashat alaly %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Iraqi al-Mushati al-%di" }
-		2 = { "Iraqi al-Mushati al-%di" }
-		3 = { "Iraqi al-Mushati al-%di" }
-		4 = { "Iraqi al-Mushati al-%di" }
-		5 = { "Iraqi al-Mushati al-%di" }
-		6 = { "Iraqi al-Mushati al-%di" }
-		7 = { "Iraqi al-Mushati al-%di" }
-		8 = { "Iraqi al-Mushati al-%di" }
-		9 = { "Iraqi al-Mushati al-%di" }
-		10 = { "Iraqi al-Mushati al-%di" }
-		12 = { "Iraqi al-Mushati al-%dr" }
-		13 = { "Iraqi al-Mushati al-%dr" }
-		14 = { "Iraqi al-Mushati al-%dr" }
-		15 = { "Iraqi al-Mushati al-%dr" }
-		16 = { "Iraqi al-Mushati al-%dr" }
-		17 = { "Iraqi al-Mushati al-%dr" }
-		18 = { "Iraqi al-Mushati al-%dr" }
-		19 = { "Iraqi al-Mushati al-%dr" }
-		20 = { "Iraqi al-Mushati al-%dr" }
+		1 = { "Iraqi Katibat almashat alaly %d" }
+		2 = { "Iraqi Katibat almashat alaly %d" }
+		3 = { "Iraqi Katibat almashat alaly %d" }
+		4 = { "Iraqi Katibat almashat alaly %d" }
+		5 = { "Iraqi Katibat almashat alaly %d" }
+		6 = { "Iraqi Katibat almashat alaly %d" }
+		7 = { "Iraqi Katibat almashat alaly %d" }
+		8 = { "Iraqi Katibat almashat alaly %d" }
+		9 = { "Iraqi Katibat almashat alaly %d" }
+		10 = { "Iraqi Katibat almashat alaly %d" }
+		12 = { "Iraqi Katibat almashat alaly %d" }
+		13 = { "Iraqi Katibat almashat alaly %d" }
+		14 = { "Iraqi Katibat almashat alaly %d" }
+		15 = { "Iraqi Katibat almashat alaly %d" }
+		16 = { "Iraqi Katibat almashat alaly %d" }
+		17 = { "Iraqi Katibat almashat alaly %d" }
+		18 = { "Iraqi Katibat almashat alaly %d" }
+		19 = { "Iraqi Katibat almashat alaly %d" }
+		20 = { "Iraqi Katibat almashat alaly %d" }
 
 	}
 }
@@ -166,27 +166,27 @@ IRQ_ARM_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { IRQ_CAV_01 }
 
-	fallback_name = "Iraqi Sipahis al-%dr"
+	fallback_name = "Iraqi Katibat Mudarie %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Iraqi Sipahis al-%di" }
-		2 = { "Iraqi Sipahis al-%di" }
-		3 = { "Iraqi Sipahis al-%di" }
-		4 = { "Iraqi Sipahis al-%di" }
-		5 = { "Iraqi Sipahis al-%di" }
-		6 = { "Iraqi Sipahis al-%di" }
-		7 = { "Iraqi Sipahis al-%di" }
-		8 = { "Iraqi Sipahis al-%di" }
-		9 = { "Iraqi Sipahis al-%di" }
-		10 = { "Iraqi Sipahis al-%di" }
-		11 = { "Iraqi Sipahis al-%dr" }
-		12 = { "Iraqi Sipahis al-%dr" }
-		13 = { "Iraqi Sipahis al-%dr" }
-		14 = { "Iraqi Sipahis al-%dr" }
-		15 = { "Iraqi Sipahis al-%dr" }
+		1 = { "Iraqi Katibat Mudarie %d" }
+		2 = { "Iraqi Katibat Mudarie %d" }
+		3 = { "Iraqi Katibat Mudarie %d" }
+		4 = { "Iraqi Katibat Mudarie %d" }
+		5 = { "Iraqi Katibat Mudarie %d" }
+		6 = { "Iraqi Katibat Mudarie %d" }
+		7 = { "Iraqi Katibat Mudarie %d" }
+		8 = { "Iraqi Katibat Mudarie %d" }
+		9 = { "Iraqi Katibat Mudarie %d" }
+		10 = { "Iraqi Katibat Mudarie %d" }
+		11 = { "Iraqi Katibat Mudarie %d" }
+		12 = { "Iraqi Katibat Mudarie %d" }
+		13 = { "Iraqi Katibat Mudarie %d" }
+		14 = { "Iraqi Katibat Mudarie %d" }
+		15 = { "Iraqi Katibat Mudarie %d" }
 
 	}
 }
@@ -204,31 +204,31 @@ IRQ_MEC_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { IRQ_INF_01 }
 
-	fallback_name = "Iraqi al-Mushati al-%dr"
+	fallback_name = "Iraqi Katibat almashat alaly %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Iraqi al-Mushati al-%di" }
-		2 = { "Iraqi al-Mushati al-%di" }
-		3 = { "Iraqi al-Mushati al-%di" }
-		4 = { "Iraqi al-Mushati al-%di" }
-		5 = { "Iraqi al-Mushati al-%di" }
-		6 = { "Iraqi al-Mushati al-%di" }
-		7 = { "Iraqi al-Mushati al-%di" }
-		8 = { "Iraqi al-Mushati al-%di" }
-		9 = { "Iraqi al-Mushati al-%di" }
-		10 = { "Iraqi al-Mushati al-%di" }
-		12 = { "Iraqi al-Mushati al-%dr" }
-		13 = { "Iraqi al-Mushati al-%dr" }
-		14 = { "Iraqi al-Mushati al-%dr" }
-		15 = { "Iraqi al-Mushati al-%dr" }
-		16 = { "Iraqi al-Mushati al-%dr" }
-		17 = { "Iraqi al-Mushati al-%dr" }
-		18 = { "Iraqi al-Mushati al-%dr" }
-		19 = { "Iraqi al-Mushati al-%dr" }
-		20 = { "Iraqi al-Mushati al-%dr" }
+		1 = { "Iraqi Katibat almashat alaly %d" }
+		2 = { "Iraqi Katibat almashat alaly %d" }
+		3 = { "Iraqi Katibat almashat alaly %d" }
+		4 = { "Iraqi Katibat almashat alaly %d" }
+		5 = { "Iraqi Katibat almashat alaly %d" }
+		6 = { "Iraqi Katibat almashat alaly %d" }
+		7 = { "Iraqi Katibat almashat alaly %d" }
+		8 = { "Iraqi Katibat almashat alaly %d" }
+		9 = { "Iraqi Katibat almashat alaly %d" }
+		10 = { "Iraqi Katibat almashat alaly %d" }
+		12 = { "Iraqi Katibat almashat alaly %d" }
+		13 = { "Iraqi Katibat almashat alaly %d" }
+		14 = { "Iraqi Katibat almashat alaly %d" }
+		15 = { "Iraqi Katibat almashat alaly %d" }
+		16 = { "Iraqi Katibat almashat alaly %d" }
+		17 = { "Iraqi Katibat almashat alaly %d" }
+		18 = { "Iraqi Katibat almashat alaly %d" }
+		19 = { "Iraqi Katibat almashat alaly %d" }
+		20 = { "Iraqi Katibat almashat alaly %d" }
 
 	}
 }
@@ -246,31 +246,31 @@ IRQ_GAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { IRQ_INF_01 }
 
-	fallback_name = "Iraqi al-Mushati al-%dr"
+	fallback_name = "Iraqi Quwwat alhamia"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Iraqi al-Mushati al-%di" }
-		2 = { "Iraqi al-Mushati al-%di" }
-		3 = { "Iraqi al-Mushati al-%di" }
-		4 = { "Iraqi al-Mushati al-%di" }
-		5 = { "Iraqi al-Mushati al-%di" }
-		6 = { "Iraqi al-Mushati al-%di" }
-		7 = { "Iraqi al-Mushati al-%di" }
-		8 = { "Iraqi al-Mushati al-%di" }
-		9 = { "Iraqi al-Mushati al-%di" }
-		10 = { "Iraqi al-Mushati al-%di" }
-		12 = { "Iraqi al-Mushati al-%dr" }
-		13 = { "Iraqi al-Mushati al-%dr" }
-		14 = { "Iraqi al-Mushati al-%dr" }
-		15 = { "Iraqi al-Mushati al-%dr" }
-		16 = { "Iraqi al-Mushati al-%dr" }
-		17 = { "Iraqi al-Mushati al-%dr" }
-		18 = { "Iraqi al-Mushati al-%dr" }
-		19 = { "Iraqi al-Mushati al-%dr" }
-		20 = { "Iraqi al-Mushati al-%dr" }
+		1 = { "Iraqi Quwwat alhamia" }
+		2 = { "Iraqi Quwwat alhamia" }
+		3 = { "Iraqi Quwwat alhamia" }
+		4 = { "Iraqi Quwwat alhamia" }
+		5 = { "Iraqi Quwwat alhamia" }
+		6 = { "Iraqi Quwwat alhamia" }
+		7 = { "Iraqi Quwwat alhamia" }
+		8 = { "Iraqi Quwwat alhamia" }
+		9 = { "Iraqi Quwwat alhamia" }
+		10 = { "Iraqi Quwwat alhamia" }
+		12 = { "Iraqi Quwwat alhamia" }
+		13 = { "Iraqi Quwwat alhamia" }
+		14 = { "Iraqi Quwwat alhamia" }
+		15 = { "Iraqi Quwwat alhamia" }
+		16 = { "Iraqi Quwwat alhamia" }
+		17 = { "Iraqi Quwwat alhamia" }
+		18 = { "Iraqi Quwwat alhamia" }
+		19 = { "Iraqi Quwwat alhamia" }
+		20 = { "Iraqi Quwwat alhamia" }
 
 	}
 }
@@ -288,23 +288,23 @@ IRQ_MAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { IRQ_INF_01 }
 
-	fallback_name = "Iraqi al-Mushati al-%dr"
+	fallback_name = "Iraqi Katibat jundiin mushat albhry %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		20 = { "Iraqi al-Mushati al-%dr" }
-		21 = { "Iraqi al-Mushati al-%dr" }
-		22 = { "Iraqi al-Mushati al-%dr" }
-		23 = { "Iraqi al-Mushati al-%dr" }
-		24 = { "Iraqi al-Mushati al-%dr" }
-		25 = { "Iraqi al-Mushati al-%dr" }
-		26 = { "Iraqi al-Mushati al-%dr" }
-		27 = { "Iraqi al-Mushati al-%dr" }
-		28 = { "Iraqi al-Mushati al-%dr" }
-		29 = { "Iraqi al-Mushati al-%dr" }
-		30 = { "Iraqi al-Mushati al-%dr" }
+		20 = { "Iraqi Katibat jundiin mushat albhry %d" }
+		21 = { "Iraqi Katibat jundiin mushat albhry %d" }
+		22 = { "Iraqi Katibat jundiin mushat albhry %d" }
+		23 = { "Iraqi Katibat jundiin mushat albhry %d" }
+		24 = { "Iraqi Katibat jundiin mushat albhry %d" }
+		25 = { "Iraqi Katibat jundiin mushat albhry %d" }
+		26 = { "Iraqi Katibat jundiin mushat albhry %d" }
+		27 = { "Iraqi Katibat jundiin mushat albhry %d" }
+		28 = { "Iraqi Katibat jundiin mushat albhry %d" }
+		29 = { "Iraqi Katibat jundiin mushat albhry %d" }
+		30 = { "Iraqi Katibat jundiin mushat albhry %d" }
 
 	}
 }
@@ -322,31 +322,31 @@ IRQ_MTN_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { IRQ_INF_01 }
 
-	fallback_name = "Iraqi al-Mushati al-%dr"
+	fallback_name = "Iraqi Katibat kutlat dakhma %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Iraqi al-Mushati al-%di" }
-		2 = { "Iraqi al-Mushati al-%di" }
-		3 = { "Iraqi al-Mushati al-%di" }
-		4 = { "Iraqi al-Mushati al-%di" }
-		5 = { "Iraqi al-Mushati al-%di" }
-		6 = { "Iraqi al-Mushati al-%di" }
-		7 = { "Iraqi al-Mushati al-%di" }
-		8 = { "Iraqi al-Mushati al-%di" }
-		9 = { "Iraqi al-Mushati al-%di" }
-		10 = { "Iraqi al-Mushati al-%di" }
-		12 = { "Iraqi al-Mushati al-%dr" }
-		13 = { "Iraqi al-Mushati al-%dr" }
-		14 = { "Iraqi al-Mushati al-%dr" }
-		15 = { "Iraqi al-Mushati al-%dr" }
-		16 = { "Iraqi al-Mushati al-%dr" }
-		17 = { "Iraqi al-Mushati al-%dr" }
-		18 = { "Iraqi al-Mushati al-%dr" }
-		19 = { "Iraqi al-Mushati al-%dr" }
-		20 = { "Iraqi al-Mushati al-%dr" }
+		1 = { "Iraqi Katibat kutlat dakhma %d" }
+		2 = { "Iraqi Katibat kutlat dakhma %d" }
+		3 = { "Iraqi Katibat kutlat dakhma %d" }
+		4 = { "Iraqi Katibat kutlat dakhma %d" }
+		5 = { "Iraqi Katibat kutlat dakhma %d" }
+		6 = { "Iraqi Katibat kutlat dakhma %d" }
+		7 = { "Iraqi Katibat kutlat dakhma %d" }
+		8 = { "Iraqi Katibat kutlat dakhma %d" }
+		9 = { "Iraqi Katibat kutlat dakhma %d" }
+		10 = { "Iraqi Katibat kutlat dakhma %d" }
+		12 = { "Iraqi Katibat kutlat dakhma %d" }
+		13 = { "Iraqi Katibat kutlat dakhma %d" }
+		14 = { "Iraqi Katibat kutlat dakhma %d" }
+		15 = { "Iraqi Katibat kutlat dakhma %d" }
+		16 = { "Iraqi Katibat kutlat dakhma %d" }
+		17 = { "Iraqi Katibat kutlat dakhma %d" }
+		18 = { "Iraqi Katibat kutlat dakhma %d" }
+		19 = { "Iraqi Katibat kutlat dakhma %d" }
+		20 = { "Iraqi Katibat kutlat dakhma %d" }
 
 	}
 }
@@ -364,23 +364,23 @@ IRQ_PAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { IRQ_INF_01 }
 
-	fallback_name = "Iraqi al-Mushati al-%dr"
+	fallback_name = "Iraqi Katibat mazali %d"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		20 = { "Iraqi al-Mushati al-%dr" }
-		21 = { "Iraqi al-Mushati al-%dr" }
-		22 = { "Iraqi al-Mushati al-%dr" }
-		23 = { "Iraqi al-Mushati al-%dr" }
-		24 = { "Iraqi al-Mushati al-%dr" }
-		25 = { "Iraqi al-Mushati al-%dr" }
-		26 = { "Iraqi al-Mushati al-%dr" }
-		27 = { "Iraqi al-Mushati al-%dr" }
-		28 = { "Iraqi al-Mushati al-%dr" }
-		29 = { "Iraqi al-Mushati al-%dr" }
-		30 = { "Iraqi al-Mushati al-%dr" }
+		20 = { "Iraqi Katibat mazali %d" }
+		21 = { "Iraqi Katibat mazali %d" }
+		22 = { "Iraqi Katibat mazali %d" }
+		23 = { "Iraqi Katibat mazali %d" }
+		24 = { "Iraqi Katibat mazali %d" }
+		25 = { "Iraqi Katibat mazali %d" }
+		26 = { "Iraqi Katibat mazali %d" }
+		27 = { "Iraqi Katibat mazali %d" }
+		28 = { "Iraqi Katibat mazali %d" }
+		29 = { "Iraqi Katibat mazali %d" }
+		30 = { "Iraqi Katibat mazali %d" }
 
 	}
 }

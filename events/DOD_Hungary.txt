@@ -413,16 +413,146 @@ country_event = {
 
 	option = { #say no
 		name = DOD_hungary.13.a
-		add_state_claim = 69
-		add_state_claim = 808
-		add_state_claim = 9
-		add_state_claim = 75
-		add_state_claim = 70
-		add_state_claim = 74
-		add_state_claim = 71
-		add_state_claim = 73
-		add_state_claim = 72
-		add_state_claim = 664
+		if = {
+			limit = {
+				69 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 69
+		}
+		if = {
+			limit = {
+				808 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 808
+		}
+		if = {
+			limit = {
+				9 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 9
+		}
+		if = {
+			limit = {
+				75 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 75
+		}
+		if = {
+			limit = {
+				70 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 70
+		}
+		if = {
+			limit = {
+				74 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 74
+		}
+		if = {
+			limit = {
+				71 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 71
+		}
+		if = {
+			limit = {
+				73 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 73
+		}
+		if = {
+			limit = {
+				72 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 72
+		}
+		if = {
+			limit = {
+				664 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 664
+		}
 	}
 
 }
@@ -1453,9 +1583,24 @@ country_event = {
 		}
 		add_stability = -0.2
 		add_war_support = -0.1
-		remove_state_claim = 76
-		remove_state_claim = 83
-		remove_state_claim = 84
+		if = {
+			limit = {
+				76 = { is_claimed_by = ROOT }
+			}
+			remove_state_claim = 76
+		}
+		if = {
+			limit = {
+				83 = { is_claimed_by = ROOT }
+			}
+			remove_state_claim = 83
+		}
+		if = {
+			limit = {
+				84 = { is_claimed_by = ROOT }
+			}
+			remove_state_claim = 84
+		}
 		add_threat = -1
 	}
 
@@ -1612,9 +1757,24 @@ country_event = {
 			}
 		}
 		add_stability = -0.15
-		remove_state_claim = 76
-		remove_state_claim = 83
-		remove_state_claim = 84
+		if = {
+			limit = {
+				76 = { is_claimed_by = ROOT }
+			}
+			remove_state_claim = 76
+		}
+		if = {
+			limit = {
+				83 = { is_claimed_by = ROOT }
+			}
+			remove_state_claim = 83
+		}
+		if = {
+			limit = {
+				84 = { is_claimed_by = ROOT }
+			}
+			remove_state_claim = 84
+		}
 		add_threat = -1
 		RO0 = {	country_event = { id = DOD_hungary.57 } }
 		remove_ideas = HUN_war_preparation
@@ -3468,9 +3628,48 @@ country_event = {
 			limit = {
 				original_tag = GER
 			}
-			add_state_claim = 102#Slovenia
-			add_state_claim = 865#Slovenia
-			add_state_claim = 868#Slovenia
+			if = {
+				limit = {
+					102 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				add_state_claim = 102#Slovenia
+			}
+			if = {
+				limit = {
+					865 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				add_state_claim = 865#Slovenia
+			}
+			if = {
+				limit = {
+					868 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				add_state_claim = 868#Slovenia
+			}
 			if = {
 				limit = {
 					HU5 = {
@@ -3492,9 +3691,48 @@ country_event = {
 			limit = {
 				original_tag = ITA
 			}
-			add_state_claim = 103#Dalmatia
-			add_state_claim = 862
-			add_state_claim = 863
+			if = {
+				limit = {
+					103 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				add_state_claim = 103#Dalmatia
+			}
+			if = {
+				limit = {
+					862 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				add_state_claim = 862#Dalmatia
+			}
+			if = {
+				limit = {
+					863 = {
+						NOT = { is_core_of = ROOT }
+						NOT = { is_owned_by = ROOT }
+						NOT = { is_claimed_by = ROOT }
+						OWNER = {
+							NOT = { is_subject_of = ROOT }
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				add_state_claim = 863#Dalmatia
+			}
 			HU5 = { country_event = { id = DOD_hungary.94 hours = 6 } }
 		}
 
@@ -4808,15 +5046,132 @@ country_event = {
 			factor = 0 #makes pretty much no sense
 		}
 		GE0 = { country_event = DOD_hungary.130 }
-		add_state_claim = 70
-		add_state_claim = 71
-		add_state_claim = 72
-		add_state_claim = 73
-		add_state_claim = 9
-		add_state_claim = 69
-		add_state_claim = 808
-		add_state_claim = 75
-		add_state_claim = 74
+		if = {
+			limit = {
+				70 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 70
+		}
+		if = {
+			limit = {
+				71 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 71
+		}
+		if = {
+			limit = {
+				72 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 72
+		}
+		if = {
+			limit = {
+				73 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 73
+		}
+		if = {
+			limit = {
+				9 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 9
+		}
+		if = {
+			limit = {
+				69 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 69
+		}
+		if = {
+			limit = {
+				808 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 808
+		}
+		if = {
+			limit = {
+				75 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 75
+		}
+		if = {
+			limit = {
+				74 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 74
+		}
 	}
 }
 
@@ -4838,9 +5193,48 @@ country_event = {
 	option = {# we shall consider force
 		name = DOD_hungary.128.b
 		ai_chance = { factor = 90 }
-		add_state_claim = 70
-		add_state_claim = 71
-		add_state_claim = 73
+		if = {
+			limit = {
+				70 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 70
+		}
+		if = {
+			limit = {
+				71 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 71
+		}
+		if = {
+			limit = {
+				73 = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+					NOT = { is_claimed_by = ROOT }
+					OWNER = {
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_state_claim = 73
+		}
 	}
 }
 

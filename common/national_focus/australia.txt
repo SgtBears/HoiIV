@@ -1686,11 +1686,21 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			random_state = {
+				limit = {
+					has_state_flag = AST_standard_gauge_railway_Inf3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 285 }
+				prioritize = { 517 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -1710,7 +1720,7 @@ focus_tree = {
 			}
 
 			random_owned_controlled_state = {
-				prioritize = { 674 }
+				prioritize = { 888 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -1727,6 +1737,25 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = AST_standard_gauge_railway_Inf2
+			}
+			random_owned_controlled_state = {
+				prioritize = { 519 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					free_building_slots = { # avoid wastelands
+						building = industrial_complex
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = AST_standard_gauge_railway_Inf3
 			}
 		}
 	}
@@ -1815,6 +1844,26 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			random_owned_controlled_state = {
+				limit = {
+					has_state_flag = AST_western_australian_government_railways_Inf3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					has_state_flag = AST_western_australian_government_railways_Inf4
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 
 		completion_reward = {
@@ -1837,9 +1886,9 @@ focus_tree = {
 				}
 				set_state_flag = AST_western_australian_government_railways_Inf1
 			}
-
+			
 			random_owned_controlled_state = {
-				prioritize = { 674 }
+				prioritize = { 890 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -1852,6 +1901,37 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = AST_western_australian_government_railways_Inf2
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 891 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = AST_western_australian_government_railways_Inf3
+			}
+			random_owned_controlled_state = {
+				prioritize = { 889 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = AST_western_australian_government_railways_Inf4
 			}
 		}
 	}
@@ -1885,12 +1965,23 @@ focus_tree = {
 		complete_tooltip = {
 			random_state = {
 				limit = {
-					has_state_flag = AST_south_australian_housing_trust_IC
+					has_state_flag = AST_south_australian_housing_trust_IC1
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = AST_south_australian_housing_trust_IC2
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1906,13 +1997,30 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
-				set_state_flag = AST_south_australian_housing_trust_IC
+				set_state_flag = AST_south_australian_housing_trust_IC1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 888 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = AST_south_australian_housing_trust_IC2
 			}
 		}
 	}

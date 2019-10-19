@@ -43,32 +43,32 @@ AUS_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "%d. Division"
+	fallback_name = "%d. Infanterie-Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d. Division" }
-		2 = { "%d. Division" }
-		3 = { "%d. Division" }
-		4 = { "%d. Division" }
-		5 = { "%d. Division" }
-		6 = { "%d. Division" }
-		7 = { "%d. Division" }
-		8 = { "%d. Division" }
-		9 = { "%d. Division" }
-		10 = { "%d. Division" }
-		11 = { "%d. Division" }
-		12 = { "%d. Division" }
-		13 = { "%d. Division" }
-		14 = { "%d. Division" }
-		15 = { "%d. Division" }
-		16 = { "%d. Division" }
-		17 = { "%d. Division" }
-		18 = { "%d. Division" }
-		19 = { "%d. Division" }
-		20 = { "%d. Division" }
+		1 = { "%d. Infanterie-Division" }
+		2 = { "%d. Infanterie-Division" }
+		3 = { "%d. Infanterie-Division" }
+		4 = { "%d. Infanterie-Division" }
+		5 = { "%d. Infanterie-Division" }
+		6 = { "%d. Infanterie-Division" }
+		7 = { "%d. Infanterie-Division" }
+		8 = { "%d. Infanterie-Division" }
+		9 = { "%d. Infanterie-Division" }
+		10 = { "%d. Infanterie-Division" }
+		11 = { "%d. Infanterie-Division" }
+		12 = { "%d. Infanterie-Division" }
+		13 = { "%d. Infanterie-Division" }
+		14 = { "%d. Infanterie-Division" }
+		15 = { "%d. Infanterie-Division" }
+		16 = { "%d. Infanterie-Division" }
+		17 = { "%d. Infanterie-Division" }
+		18 = { "%d. Infanterie-Division" }
+		19 = { "%d. Infanterie-Division" }
+		20 = { "%d. Infanterie-Division" }
 	}
 }
 
@@ -85,22 +85,22 @@ AUS_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "%d. Schnelle Division"
+	fallback_name = "%d. Kavallerie-Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d. Schnelle Division" }
-		2 = { "%d. Schnelle Division" }
-		3 = { "%d. Schnelle Division" }
-		4 = { "%d. Schnelle Division" }
-		5 = { "%d. Schnelle Division" }
-		6 = { "%d. Schnelle Division" }
-		7 = { "%d. Schnelle Division" }
-		8 = { "%d. Schnelle Division" }
-		9 = { "%d. Schnelle Division" }
-		10 = { "%d. Schnelle Division" }
+		1 = { "%d. Kavallerie-Division" }
+		2 = { "%d. Kavallerie-Division" }
+		3 = { "%d. Kavallerie-Division" }
+		4 = { "%d. Kavallerie-Division" }
+		5 = { "%d. Kavallerie-Division" }
+		6 = { "%d. Kavallerie-Division" }
+		7 = { "%d. Kavallerie-Division" }
+		8 = { "%d. Kavallerie-Division" }
+		9 = { "%d. Kavallerie-Division" }
+		10 = { "%d. Kavallerie-Division" }
 	}
 }
 
@@ -147,24 +147,24 @@ AUS_MEC_01 =
 	division_types = { "mechanized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_CAV_01 }
+	#link_numbering_with = { AUS_CAV_01 }
 
-	fallback_name = "%d. Schnelle Division"
+	fallback_name = "%d. Mechanisch-Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d. Schnelle Division" }
-		2 = { "%d. Schnelle Division" }
-		3 = { "%d. Schnelle Division" }
-		4 = { "%d. Schnelle Division" }
-		5 = { "%d. Schnelle Division" }
-		6 = { "%d. Schnelle Division" }
-		7 = { "%d. Schnelle Division" }
-		8 = { "%d. Schnelle Division" }
-		9 = { "%d. Schnelle Division" }
-		10 = { "%d. Schnelle Division" }
+		1 = { "%d. Mechanisch-Division" }
+		2 = { "%d. Mechanisch-Division" }
+		3 = { "%d. Mechanisch-Division" }
+		4 = { "%d. Mechanisch-Division" }
+		5 = { "%d. Mechanisch-Division" }
+		6 = { "%d. Mechanisch-Division" }
+		7 = { "%d. Mechanisch-Division" }
+		8 = { "%d. Mechanisch-Division" }
+		9 = { "%d. Mechanisch-Division" }
+		10 = { "%d. Mechanisch-Division" }
 	}
 }
 
@@ -277,22 +277,22 @@ AUS_MNT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "%d. Division"
+	fallback_name = "%d. Infanterie-Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d. Division" }
-		2 = { "%d. Division" }
-		3 = { "%d. Division" }
-		4 = { "%d. Division" }
-		5 = { "%d. Division" }
-		6 = { "%d. Division" }
-		7 = { "%d. Division" }
-		8 = { "%d. Division" }
-		9 = { "%d. Division" }
-		10 = { "%d. Division" }
+		1 = { "%d. Infanterie-Division" }
+		2 = { "%d. Infanterie-Division" }
+		3 = { "%d. Infanterie-Division" }
+		4 = { "%d. Infanterie-Division" }
+		5 = { "%d. Infanterie-Division" }
+		6 = { "%d. Infanterie-Division" }
+		7 = { "%d. Infanterie-Division" }
+		8 = { "%d. Infanterie-Division" }
+		9 = { "%d. Infanterie-Division" }
+		10 = { "%d. Infanterie-Division" }
 	}
 }
 
@@ -333,7 +333,247 @@ AUS_GAR_01 =
 		7 = { "%d. Sicherungs-Division" }
 		8 = { "%d. Sicherungs-Division" }
 		9 = { "%d. Sicherungs-Division" }
-		10 = { "%d. Sicherungs-Division" }		
+		10 = { "%d. Sicherungs-Division" }
+		11 = { "%d. Sicherungs-Division" }
+		12 = { "%d. Sicherungs-Division" }
+		13 = { "%d. Sicherungs-Division" }
+		14 = { "%d. Sicherungs-Division" }
+		15 = { "%d. Sicherungs-Division" }
+		16 = { "%d. Sicherungs-Division" }
+		17 = { "%d. Sicherungs-Division" }
+		18 = { "%d. Sicherungs-Division" }
+		19 = { "%d. Sicherungs-Division" }
+		20 = { "%d. Sicherungs-Division" }
+		21 = { "%d. Sicherungs-Division" }
+		22 = { "%d. Sicherungs-Division" }
+		23 = { "%d. Sicherungs-Division" }
+		24 = { "%d. Sicherungs-Division" }
+		25 = { "%d. Sicherungs-Division" }
+		26 = { "%d. Sicherungs-Division" }
+		27 = { "%d. Sicherungs-Division" }
+		28 = { "%d. Sicherungs-Division" }
+		29 = { "%d. Sicherungs-Division" }
+		30 = { "%d. Sicherungs-Division" }
+		31 = { "%d. Sicherungs-Division" }
+		32 = { "%d. Sicherungs-Division" }
+		33 = { "%d. Sicherungs-Division" }
+		34 = { "%d. Sicherungs-Division" }
+		35 = { "%d. Sicherungs-Division" }
+		36 = { "%d. Sicherungs-Division" }
+		37 = { "%d. Sicherungs-Division" }
+		38 = { "%d. Sicherungs-Division" }
+		39 = { "%d. Sicherungs-Division" }
+		40 = { "%d. Sicherungs-Division" }
+		41 = { "%d. Sicherungs-Division" }
+		42 = { "%d. Sicherungs-Division" }
+		43 = { "%d. Sicherungs-Division" }
+		44 = { "%d. Sicherungs-Division" }
+		45 = { "%d. Sicherungs-Division" }
+		46 = { "%d. Sicherungs-Division" }
+		47 = { "%d. Sicherungs-Division" }
+		48 = { "%d. Sicherungs-Division" }
+		49 = { "%d. Sicherungs-Division" }
+		50 = { "%d. Sicherungs-Division" }
+		51 = { "%d. Sicherungs-Division" }
+		52 = { "%d. Sicherungs-Division" }
+		53 = { "%d. Sicherungs-Division" }
+		54 = { "%d. Sicherungs-Division" }
+		55 = { "%d. Sicherungs-Division" }
+		56 = { "%d. Sicherungs-Division" }
+		57 = { "%d. Sicherungs-Division" }
+		58 = { "%d. Sicherungs-Division" }
+		59 = { "%d. Sicherungs-Division" }
+		60 = { "%d. Sicherungs-Division" }
+		61 = { "%d. Sicherungs-Division" }
+		62 = { "%d. Sicherungs-Division" }
+		63 = { "%d. Sicherungs-Division" }
+		64 = { "%d. Sicherungs-Division" }
+		65 = { "%d. Sicherungs-Division" }
+		66 = { "%d. Sicherungs-Division" }
+		67 = { "%d. Sicherungs-Division" }
+		68 = { "%d. Sicherungs-Division" }
+		69 = { "%d. Sicherungs-Division" }
+		70 = { "%d. Sicherungs-Division" }
+		71 = { "%d. Sicherungs-Division" }
+		72 = { "%d. Sicherungs-Division" }
+		73 = { "%d. Sicherungs-Division" }
+		74 = { "%d. Sicherungs-Division" }
+		75 = { "%d. Sicherungs-Division" }
+		76 = { "%d. Sicherungs-Division" }
+		77 = { "%d. Sicherungs-Division" }
+		78 = { "%d. Sicherungs-Division" }
+		79 = { "%d. Sicherungs-Division" }
+		80 = { "%d. Sicherungs-Division" }
+		81 = { "%d. Sicherungs-Division" }
+		82 = { "%d. Sicherungs-Division" }
+		83 = { "%d. Sicherungs-Division" }
+		84 = { "%d. Sicherungs-Division" }
+		85 = { "%d. Sicherungs-Division" }
+		86 = { "%d. Sicherungs-Division" }
+		87 = { "%d. Sicherungs-Division" }
+		88 = { "%d. Sicherungs-Division" }
+		89 = { "%d. Sicherungs-Division" }
+		90 = { "%d. Sicherungs-Division" }
+		91 = { "%d. Sicherungs-Division" }
+		92 = { "%d. Sicherungs-Division" }
+		93 = { "%d. Sicherungs-Division" }
+		94 = { "%d. Sicherungs-Division" }
+		95 = { "%d. Sicherungs-Division" }
+		96 = { "%d. Sicherungs-Division" }
+		97 = { "%d. Sicherungs-Division" }
+		98 = { "%d. Sicherungs-Division" }
+		99 = { "%d. Sicherungs-Division" }
+		100 = { "%d. Sicherungs-Division" }
+		110 = { "101. Sicherungs-Division" }
+		111 = { "102. Sicherungs-Division" }
+		112 = { "103. Sicherungs-Division" }
+		113 = { "104. Sicherungs-Division" }
+		114 = { "105. Sicherungs-Division" }
+		115 = { "106. Sicherungs-Division" }
+		116 = { "107. Sicherungs-Division" }
+		117 = { "108. Sicherungs-Division" }
+		118 = { "109. Sicherungs-Division" }
+		119 = { "110. Sicherungs-Division" }
+		120 = { "111. Sicherungs-Division" }
+		121 = { "112. Sicherungs-Division" }
+		122 = { "113. Sicherungs-Division" }
+		123 = { "114. Sicherungs-Division" }
+		124 = { "115. Sicherungs-Division" }
+		125 = { "116. Sicherungs-Division" }
+		126 = { "117. Sicherungs-Division" }
+		127 = { "118. Sicherungs-Division" }
+		128 = { "119. Sicherungs-Division" }
+		129 = { "120. Sicherungs-Division" }
+		130 = { "121. Sicherungs-Division" }
+		131 = { "122. Sicherungs-Division" }
+		132 = { "123. Sicherungs-Division" }
+		133 = { "124. Sicherungs-Division" }
+		134 = { "125. Sicherungs-Division" }
+		135 = { "126. Sicherungs-Division" }
+		136 = { "127. Sicherungs-Division" }
+		137 = { "128. Sicherungs-Division" }
+		138 = { "129. Sicherungs-Division" }
+		139 = { "130. Sicherungs-Division" }
+		140 = { "131. Sicherungs-Division" }
+		141 = { "132. Sicherungs-Division" }
+		142 = { "133. Sicherungs-Division" }
+		143 = { "134. Sicherungs-Division" }
+		144 = { "135. Sicherungs-Division" }
+		145 = { "136. Sicherungs-Division" }
+		146 = { "137. Sicherungs-Division" }
+		147 = { "138. Sicherungs-Division" }
+		148 = { "139. Sicherungs-Division" }
+		149 = { "140. Sicherungs-Division" }
+		150 = { "141. Sicherungs-Division" }
+		151 = { "142. Sicherungs-Division" }
+		152 = { "143. Sicherungs-Division" }
+		153 = { "144. Sicherungs-Division" }
+		154 = { "145. Sicherungs-Division" }
+		155 = { "146. Sicherungs-Division" }
+		156 = { "147. Sicherungs-Division" }
+		157 = { "148. Sicherungs-Division" }
+		158 = { "149. Sicherungs-Division" }
+		159 = { "150. Sicherungs-Division" }
+		160 = { "151. Sicherungs-Division" }
+		161 = { "152. Sicherungs-Division" }
+		162 = { "153. Sicherungs-Division" }
+		163 = { "154. Sicherungs-Division" }
+		164 = { "155. Sicherungs-Division" }
+		165 = { "156. Sicherungs-Division" }
+		166 = { "157. Sicherungs-Division" }
+		167 = { "158. Sicherungs-Division" }
+		168 = { "159. Sicherungs-Division" }
+		169 = { "160. Sicherungs-Division" }
+		170 = { "161. Sicherungs-Division" }
+		171 = { "162. Sicherungs-Division" }
+		172 = { "163. Sicherungs-Division" }
+		173 = { "164. Sicherungs-Division" }
+		174 = { "165. Sicherungs-Division" }
+		175 = { "166. Sicherungs-Division" }
+		176 = { "167. Sicherungs-Division" }
+		177 = { "168. Sicherungs-Division" }
+		178 = { "169. Sicherungs-Division" }
+		179 = { "170. Sicherungs-Division" }
+		180 = { "171. Sicherungs-Division" }
+		181 = { "172. Sicherungs-Division" }
+		182 = { "173. Sicherungs-Division" }
+		183 = { "174. Sicherungs-Division" }
+		184 = { "175. Sicherungs-Division" }
+		185 = { "176. Sicherungs-Division" }
+		186 = { "177. Sicherungs-Division" }
+		187 = { "178. Sicherungs-Division" }
+		188 = { "179. Sicherungs-Division" }
+		189 = { "180. Sicherungs-Division" }
+		190 = { "181. Sicherungs-Division" }
+		191 = { "182. Sicherungs-Division" }
+		192 = { "183. Sicherungs-Division" }
+		193 = { "184. Sicherungs-Division" }
+		194 = { "185. Sicherungs-Division" }
+		195 = { "186. Sicherungs-Division" }
+		196 = { "187. Sicherungs-Division" }
+		197 = { "188. Sicherungs-Division" }
+		198 = { "189. Sicherungs-Division" }
+		199 = { "190. Sicherungs-Division" }
+		200 = { "191. Sicherungs-Division" }
+		201 = { "192. Sicherungs-Division" }
+		202 = { "193. Sicherungs-Division" }
+		203 = { "194. Sicherungs-Division" }
+		204 = { "195. Sicherungs-Division" }
+		205 = { "196. Sicherungs-Division" }
+		206 = { "197. Sicherungs-Division" }
+		207 = { "198. Sicherungs-Division" }
+		208 = { "199. Sicherungs-Division" }
+		209 = { "200. Sicherungs-Division" }
+		210 = { "201. Sicherungs-Division" }
+		211 = { "202. Sicherungs-Division" }
+		212 = { "203. Sicherungs-Division" }
+		213 = { "204. Sicherungs-Division" }
+		214 = { "205. Sicherungs-Division" }
+		215 = { "206. Sicherungs-Division" }
+		216 = { "207. Sicherungs-Division" }
+		217 = { "208. Sicherungs-Division" }
+		218 = { "209. Sicherungs-Division" }
+		219 = { "210. Sicherungs-Division" }
+		220 = { "211. Sicherungs-Division" }
+		221 = { "212. Sicherungs-Division" }
+		222 = { "213. Sicherungs-Division" }
+		223 = { "214. Sicherungs-Division" }
+		224 = { "215. Sicherungs-Division" }
+		225 = { "216. Sicherungs-Division" }
+		226 = { "217. Sicherungs-Division" }
+		227 = { "218. Sicherungs-Division" }
+		228 = { "219. Sicherungs-Division" }
+		229 = { "220. Sicherungs-Division" }
+		230 = { "221. Sicherungs-Division" }
+		231 = { "222. Sicherungs-Division" }
+		232 = { "223. Sicherungs-Division" }
+		233 = { "224. Sicherungs-Division" }
+		234 = { "225. Sicherungs-Division" }
+		235 = { "226. Sicherungs-Division" }
+		236 = { "227. Sicherungs-Division" }
+		237 = { "228. Sicherungs-Division" }
+		238 = { "229. Sicherungs-Division" }
+		239 = { "230. Sicherungs-Division" }
+		240 = { "231. Sicherungs-Division" }
+		241 = { "232. Sicherungs-Division" }
+		242 = { "233. Sicherungs-Division" }
+		243 = { "234. Sicherungs-Division" }
+		244 = { "235. Sicherungs-Division" }
+		245 = { "236. Sicherungs-Division" }
+		246 = { "237. Sicherungs-Division" }
+		247 = { "238. Sicherungs-Division" }
+		248 = { "239. Sicherungs-Division" }
+		249 = { "240. Sicherungs-Division" }
+		250 = { "241. Sicherungs-Division" }
+		251 = { "242. Sicherungs-Division" }
+		252 = { "243. Sicherungs-Division" }
+		253 = { "244. Sicherungs-Division" }
+		254 = { "245. Sicherungs-Division" }
+		255 = { "246. Sicherungs-Division" }
+		256 = { "247. Sicherungs-Division" }
+		257 = { "248. Sicherungs-Division" }
+		258 = { "249. Sicherungs-Division" }
+		259 = { "250. Sicherungs-Division" }	
 	}
 }
 

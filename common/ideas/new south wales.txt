@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		NSW_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		NSW_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		NSW_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		NSW_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = NSW
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NSW_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		NSW_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NSW_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		NSW_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = NSW
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NSW_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = NSW
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		NSW_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		NSW_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NSW_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NSW_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NSW_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		NSW_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = NSW
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		NSW_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		NSW_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = NSW
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

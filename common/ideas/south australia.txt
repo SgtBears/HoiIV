@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		SOA_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		SOA_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		SOA_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		SOA_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = SOA
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SOA_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		SOA_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SOA_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		SOA_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = SOA
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SOA_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = SOA
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		SOA_ar = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SOA_ai2 = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SOA_aa2 = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SOA_acas = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SOA_ncs = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		SOA_mt = {
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = SOA
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		SOA_nt = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		SOA_awt = {
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = SOA
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

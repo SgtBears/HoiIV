@@ -14,6 +14,7 @@ news_event = {
 		name = am.news.1.a
 	}
 }
+#Faroes Independence
 news_event = {
 	id = am.news.2
 	title = am.news.2.t
@@ -64,7 +65,7 @@ news_event = {
 		}
 	}
 }
-#Bulgaria Submits to Romanian Ultimatum
+#Hungary Submits to Romanian Ultimatum
 news_event = {
 	id = am.news.4
 	title = am.news.4.t
@@ -98,7 +99,7 @@ news_event = {
 	}
 }
 
-#Bulgaria Rejects Romanian Ultimatum - War might start
+#Hungary Rejects Romanian Ultimatum - War might start
 news_event = {
 	id = am.news.5
 	title = am.news.5.t
@@ -128,6 +129,4239 @@ news_event = {
 				original_tag = ROM
 				original_tag = HUN
 			}
+		}
+	}
+}
+#Angolan Freedom
+news_event = {
+	id = am.news.6
+	title = am.news.6.t
+	desc = am.news.6.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.6.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.6.b
+		trigger = { 
+			original_tag = ANG
+		}
+	}
+	option = {
+		name = am.news.6.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = ANG }
+		}
+	}
+}
+#MZB Freedom
+news_event = {
+	id = am.news.7
+	title = am.news.7.t
+	desc = am.news.7.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.7.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.7.b
+		trigger = { 
+			original_tag = MZB
+		}
+	}
+	option = {
+		name = am.news.7.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MZB }
+		}
+	}
+}
+#COG Freedom
+news_event = {
+	id = am.news.8
+	title = am.news.8.t
+	desc = am.news.8.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.8.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.8.b
+		trigger = { 
+			original_tag = COG
+		}
+	}
+	option = {
+		name = am.news.8.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = COG }
+		}
+	}
+}
+#ZIM Freedom
+news_event = {
+	id = am.news.9
+	title = am.news.9.t
+	desc = am.news.9.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.9.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.9.b
+		trigger = { 
+			original_tag = ZIM
+		}
+	}
+	option = {
+		name = am.news.9.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = ZIM }
+		}
+	}
+}
+#KEN Freedom
+news_event = {
+	id = am.news.10
+	title = am.news.10.t
+	desc = am.news.10.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.10.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.10.b
+		trigger = { 
+			original_tag = KEN
+		}
+	}
+	option = {
+		name = am.news.10.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = KEN }
+		}
+	}
+}
+#MAD Freedom
+news_event = {
+	id = am.news.11
+	title = am.news.11.t
+	desc = am.news.11.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.11.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.11.b
+		trigger = { 
+			original_tag = MAD
+		}
+	}
+	option = {
+		name = am.news.11.c
+		trigger = {
+			NOT = { tag = FROM }
+			NOT = { original_tag = MAD }
+		}
+	}
+}
+#BOT Freedom
+news_event = {
+	id = am.news.12
+	title = am.news.12.t
+	desc = am.news.12.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.12.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.12.b
+		trigger = { 
+			original_tag = BOT
+		}
+	}
+	option = {
+		name = am.news.12.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = BOT }
+		}
+	}
+}
+#ZAM Freedom
+news_event = {
+	id = am.news.13
+	title = am.news.13.t
+	desc = am.news.13.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.13.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.13.b
+		trigger = { 
+			original_tag = ZAM
+		}
+	}
+	option = {
+		name = am.news.13.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = ZAM }
+		}
+	}
+}
+#MLW Freedom
+news_event = {
+	id = am.news.14
+	title = am.news.14.t
+	desc = am.news.14.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.14.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.14.b
+		trigger = { 
+			original_tag = MLW
+		}
+	}
+	option = {
+		name = am.news.14.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MLW }
+		}
+	}
+}
+#TZN Freedom
+news_event = {
+	id = am.news.15
+	title = am.news.15.t
+	desc = am.news.15.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.15.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.15.b
+		trigger = { 
+			original_tag = TZN
+		}
+	}
+	option = {
+		name = am.news.15.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = TZN }
+		}
+	}
+}
+#UGA Freedom
+news_event = {
+	id = am.news.16
+	title = am.news.16.t
+	desc = am.news.16.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.16.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.16.b
+		trigger = { 
+			original_tag = UGA
+		}
+	}
+	option = {
+		name = am.news.16.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = UGA }
+		}
+	}
+}
+#SUD Freedom
+news_event = {
+	id = am.news.17
+	title = am.news.17.t
+	desc = am.news.17.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.17.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.17.b
+		trigger = { 
+			original_tag = SUD
+		}
+	}
+	option = {
+		name = am.news.17.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SUD }
+		}
+	}
+}
+#EGY Freedom
+news_event = {
+	id = am.news.18
+	title = am.news.18.t
+	desc = am.news.18.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.18.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.18.b
+		trigger = { 
+			original_tag = EGY
+		}
+	}
+	option = {
+		name = am.news.18.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = EGY }
+		}
+	}
+}
+#ERI Freedom
+news_event = {
+	id = am.news.19
+	title = am.news.19.t
+	desc = am.news.19.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.19.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.19.b
+		trigger = { 
+			original_tag = ERI
+		}
+	}
+	option = {
+		name = am.news.19.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = ERI }
+		}
+	}
+}
+#ERI autonomy under ethiopia
+news_event = {
+	id = am.news.20
+	title = am.news.20.t
+	desc = am.news.20.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.20.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.20.b
+		trigger = { 
+			original_tag = ERI
+		}
+	}
+	option = {
+		name = am.news.20.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = ERI }
+			NOT = { original_tag = ETH }
+		}
+	}
+	option = {
+		name = am.news.20.d
+		trigger = { 
+			original_tag = ETH
+		}
+	}
+}
+#ERI transfered to ethoipia
+news_event = {
+	id = am.news.21
+	title = am.news.21.t
+	desc = am.news.21.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.21.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.21.b
+		trigger = { 
+			original_tag = ETH
+		}
+	}
+	option = {
+		name = am.news.21.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = ETH }
+		}
+	}
+}
+#ETH Freedom
+news_event = {
+	id = am.news.22
+	title = am.news.22.t
+	desc = am.news.22.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.22.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.22.b
+		trigger = { 
+			original_tag = ETH
+		}
+	}
+	option = {
+		name = am.news.22.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = ETH }
+		}
+	}
+}
+#DJI Freedom
+news_event = {
+	id = am.news.23
+	title = am.news.23.t
+	desc = am.news.23.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.23.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.23.b
+		trigger = { 
+			original_tag = DJI
+		}
+	}
+	option = {
+		name = am.news.23.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = DJI }
+		}
+	}
+}
+#DJI Freedom
+news_event = {
+	id = am.news.24
+	title = am.news.24.t
+	desc = am.news.24.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.24.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.24.b
+		trigger = { 
+			original_tag = SOM
+		}
+	}
+	option = {
+		name = am.news.24.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SOM }
+		}
+	}
+}
+#SOM Freedom
+news_event = {
+	id = am.news.25
+	title = am.news.25.t
+	desc = am.news.25.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.25.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.25.b
+		trigger = { 
+			original_tag = SOM
+		}
+	}
+	option = {
+		name = am.news.25.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SOM }
+		}
+	}
+}
+#RWA Freedom
+news_event = {
+	id = am.news.26
+	title = am.news.26.t
+	desc = am.news.26.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.26.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.26.b
+		trigger = { 
+			original_tag = RWA
+		}
+	}
+	option = {
+		name = am.news.26.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = RWA }
+		}
+	}
+}
+#BRD Freedom
+news_event = {
+	id = am.news.27
+	title = am.news.27.t
+	desc = am.news.27.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.27.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.27.b
+		trigger = { 
+			original_tag = BRD
+		}
+	}
+	option = {
+		name = am.news.27.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = BRD }
+		}
+	}
+}
+#RCG Freedom
+news_event = {
+	id = am.news.28
+	title = am.news.28.t
+	desc = am.news.28.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.28.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.28.b
+		trigger = { 
+			original_tag = RCG
+		}
+	}
+	option = {
+		name = am.news.28.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = RCG }
+		}
+	}
+}
+#GAB Freedom
+news_event = {
+	id = am.news.29
+	title = am.news.29.t
+	desc = am.news.29.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.29.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.29.b
+		trigger = { 
+			original_tag = GAB
+		}
+	}
+	option = {
+		name = am.news.29.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = GAB }
+		}
+	}
+}
+#EQG Freedom
+news_event = {
+	id = am.news.30
+	title = am.news.30.t
+	desc = am.news.30.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.30.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.30.b
+		trigger = { 
+			original_tag = EQG
+		}
+	}
+	option = {
+		name = am.news.30.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = EQG }
+		}
+	}
+}
+#CMR Freedom
+news_event = {
+	id = am.news.31
+	title = am.news.31.t
+	desc = am.news.31.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.31.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.31.b
+		trigger = { 
+			original_tag = CMR
+		}
+	}
+	option = {
+		name = am.news.31.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = CMR }
+		}
+	}
+}
+#CAR Freedom
+news_event = {
+	id = am.news.32
+	title = am.news.32.t
+	desc = am.news.32.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.32.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.32.b
+		trigger = { 
+			original_tag = CAR
+		}
+	}
+	option = {
+		name = am.news.32.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = CAR }
+		}
+	}
+}
+#CHA Freedom
+news_event = {
+	id = am.news.33
+	title = am.news.33.t
+	desc = am.news.33.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.33.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.33.b
+		trigger = { 
+			original_tag = CHA
+		}
+	}
+	option = {
+		name = am.news.33.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = CHA }
+		}
+	}
+}
+#NGA Freedom
+news_event = {
+	id = am.news.34
+	title = am.news.34.t
+	desc = am.news.34.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.34.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.34.b
+		trigger = { 
+			original_tag = NGA
+		}
+	}
+	option = {
+		name = am.news.34.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NGA }
+		}
+	}
+}
+#NGR Freedom
+news_event = {
+	id = am.news.35
+	title = am.news.35.t
+	desc = am.news.35.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.35.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.35.b
+		trigger = { 
+			original_tag = NGR
+		}
+	}
+	option = {
+		name = am.news.35.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NGR }
+		}
+	}
+}
+#DAH Freedom
+news_event = {
+	id = am.news.36
+	title = am.news.36.t
+	desc = am.news.36.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.36.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.36.b
+		trigger = { 
+			original_tag = DAH
+		}
+	}
+	option = {
+		name = am.news.36.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = DAH }
+		}
+	}
+}
+#TOG Freedom
+news_event = {
+	id = am.news.37
+	title = am.news.37.t
+	desc = am.news.37.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.37.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.37.b
+		trigger = { 
+			original_tag = TOG
+		}
+	}
+	option = {
+		name = am.news.37.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = TOG }
+		}
+	}
+}
+#GHA Freedom
+news_event = {
+	id = am.news.38
+	title = am.news.38.t
+	desc = am.news.38.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.38.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.38.b
+		trigger = { 
+			original_tag = GHA
+		}
+	}
+	option = {
+		name = am.news.38.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = GHA }
+		}
+	}
+}
+#IVO Freedom
+news_event = {
+	id = am.news.39
+	title = am.news.39.t
+	desc = am.news.39.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.39.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.39.b
+		trigger = { 
+			original_tag = IVO
+		}
+	}
+	option = {
+		name = am.news.39.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = IVO }
+		}
+	}
+}
+#VOL Freedom
+news_event = {
+	id = am.news.40
+	title = am.news.40.t
+	desc = am.news.40.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.40.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.40.b
+		trigger = { 
+			original_tag = VOL
+		}
+	}
+	option = {
+		name = am.news.40.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = VOL }
+		}
+	}
+}
+#MLI Freedom
+news_event = {
+	id = am.news.41
+	title = am.news.41.t
+	desc = am.news.41.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.41.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.41.b
+		trigger = { 
+			original_tag = MLI
+		}
+	}
+	option = {
+		name = am.news.41.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MLI }
+		}
+	}
+}
+#SIE Freedom
+news_event = {
+	id = am.news.42
+	title = am.news.42.t
+	desc = am.news.42.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.42.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.42.b
+		trigger = { 
+			original_tag = SIE
+		}
+	}
+	option = {
+		name = am.news.42.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SIE }
+		}
+	}
+}
+#GNA Freedom
+news_event = {
+	id = am.news.43
+	title = am.news.43.t
+	desc = am.news.43.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.43.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.43.b
+		trigger = { 
+			original_tag = GNA
+		}
+	}
+	option = {
+		name = am.news.43.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = GNA }
+		}
+	}
+}
+#GNB Freedom
+news_event = {
+	id = am.news.44
+	title = am.news.44.t
+	desc = am.news.44.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.44.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.44.b
+		trigger = { 
+			original_tag = GNB
+		}
+	}
+	option = {
+		name = am.news.44.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = GNB }
+		}
+	}
+}
+#SEN Freedom
+news_event = {
+	id = am.news.45
+	title = am.news.45.t
+	desc = am.news.45.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.45.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.45.b
+		trigger = { 
+			original_tag = SEN
+		}
+	}
+	option = {
+		name = am.news.45.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SEN }
+		}
+	}
+}
+#GAM Freedom
+news_event = {
+	id = am.news.46
+	title = am.news.46.t
+	desc = am.news.46.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.46.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.46.b
+		trigger = { 
+			original_tag = GAM
+		}
+	}
+	option = {
+		name = am.news.46.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = GAM }
+		}
+	}
+}
+#LIB Freedom
+news_event = {
+	id = am.news.47
+	title = am.news.47.t
+	desc = am.news.47.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.47.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.47.b
+		trigger = { 
+			original_tag = LIB
+		}
+	}
+	option = {
+		name = am.news.47.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = LIB }
+		}
+	}
+}
+#MRT Freedom
+news_event = {
+	id = am.news.48
+	title = am.news.48.t
+	desc = am.news.48.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.48.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.48.b
+		trigger = { 
+			original_tag = MRT
+		}
+	}
+	option = {
+		name = am.news.48.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MRT }
+		}
+	}
+}
+#WES Freedom
+news_event = {
+	id = am.news.49
+	title = am.news.49.t
+	desc = am.news.49.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.49.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.49.b
+		trigger = { 
+			original_tag = WES
+		}
+	}
+	option = {
+		name = am.news.49.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = WES }
+		}
+	}
+}
+#ALG Freedom
+news_event = {
+	id = am.news.50
+	title = am.news.50.t
+	desc = am.news.50.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.50.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.50.b
+		trigger = { 
+			original_tag = ALG
+		}
+	}
+	option = {
+		name = am.news.50.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = ALG }
+		}
+	}
+}
+#MOR Freedom
+news_event = {
+	id = am.news.51
+	title = am.news.51.t
+	desc = am.news.51.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.51.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.51.b
+		trigger = { 
+			original_tag = MOR
+		}
+	}
+	option = {
+		name = am.news.51.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MOR }
+		}
+	}
+}
+#TUN Freedom
+news_event = {
+	id = am.news.52
+	title = am.news.52.t
+	desc = am.news.52.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.52.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.52.b
+		trigger = { 
+			original_tag = TUN
+		}
+	}
+	option = {
+		name = am.news.52.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = TUN }
+		}
+	}
+}
+#LBA Freedom
+news_event = {
+	id = am.news.53
+	title = am.news.53.t
+	desc = am.news.53.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.53.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.53.b
+		trigger = { 
+			original_tag = LBA
+		}
+	}
+	option = {
+		name = am.news.53.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = LBA }
+		}
+	}
+}
+#NMB Freedom
+news_event = {
+	id = am.news.54
+	title = am.news.54.t
+	desc = am.news.54.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.54.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.54.b
+		trigger = { 
+			original_tag = NMB
+		}
+	}
+	option = {
+		name = am.news.54.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NMB }
+		}
+	}
+}
+news_event = {
+	id = am.news.55
+	title = am.news.55.t
+	desc = am.news.55.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.55.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.55.b
+		trigger = { 
+			original_tag = SAF
+		}
+	}
+	option = {
+		name = am.news.55.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SAF }
+		}
+	}
+}
+#SA0 Freedom
+news_event = {
+	id = am.news.56
+	title = am.news.56.t
+	desc = am.news.56.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.56.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.56.b
+		trigger = { 
+			original_tag = SA0
+		}
+	}
+	option = {
+		name = am.news.56.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SA0 }
+		}
+	}
+}
+#NEF Freedom
+news_event = {
+	id = am.news.57
+	title = am.news.57.t
+	desc = am.news.57.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.57.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.57.b
+		trigger = { 
+			original_tag = NEF
+		}
+	}
+	option = {
+		name = am.news.57.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NEF }
+		}
+	}
+}
+#NEF Freedom
+news_event = {
+	id = am.news.58
+	title = am.news.58.t
+	desc = am.news.58.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.58.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.58.b
+		trigger = { 
+			original_tag = CAN
+		}
+	}
+	option = {
+		name = am.news.58.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = CAN }
+		}
+	}
+}
+#NEF Freedom
+news_event = {
+	id = am.news.59
+	title = am.news.59.t
+	desc = am.news.59.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.59.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.59.b
+		trigger = { 
+			original_tag = USA
+		}
+	}
+	option = {
+		name = am.news.59.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = USA }
+		}
+	}
+}
+#LAB Freedom
+news_event = {
+	id = am.news.60
+	title = am.news.60.t
+	desc = am.news.60.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.60.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.60.b
+		trigger = { 
+			original_tag = LAB
+		}
+	}
+	option = {
+		name = am.news.60.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = LAB }
+		}
+	}
+}
+#LAB Freedom
+news_event = {
+	id = am.news.61
+	title = am.news.61.t
+	desc = am.news.61.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.61.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.61.b
+		trigger = { 
+			original_tag = CAN
+		}
+	}
+	option = {
+		name = am.news.61.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = CAN }
+		}
+	}
+}
+#LAB Freedom
+news_event = {
+	id = am.news.62
+	title = am.news.62.t
+	desc = am.news.62.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.62.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.62.b
+		trigger = { 
+			original_tag = USA
+		}
+	}
+	option = {
+		name = am.news.62.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = USA }
+		}
+	}
+}
+#NEF Freedom
+news_event = {
+	id = am.news.63
+	title = am.news.63.t
+	desc = am.news.63.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.63.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.63.b
+		trigger = { 
+			original_tag = NEF
+		}
+	}
+	option = {
+		name = am.news.63.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NEF }
+		}
+	}
+}
+#NEF Freedom
+news_event = {
+	id = am.news.64
+	title = am.news.64.t
+	desc = am.news.64.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.64.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.64.b
+		trigger = { 
+			original_tag = CAN
+		}
+	}
+	option = {
+		name = am.news.64.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = CAN }
+		}
+	}
+}
+#NEF Freedom
+news_event = {
+	id = am.news.65
+	title = am.news.65.t
+	desc = am.news.65.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.65.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.65.b
+		trigger = { 
+			original_tag = USA
+		}
+	}
+	option = {
+		name = am.news.65.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = USA }
+		}
+	}
+}
+#hamilton Freedom
+news_event = {
+	id = am.news.66
+	title = am.news.66.t
+	desc = am.news.66.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	immediate = {
+		332 = {
+			OWNER = {
+				save_event_target_as = owner_of_labrador
+			}
+		}
+		466 = {
+			OWNER = {
+				save_event_target_as = owner_of_new_quebec
+			}
+		}
+	}
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.66.a
+		trigger = { 
+			tag = event_target:owner_of_labrador
+		}
+	}
+	option = {
+		name = am.news.66.b
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { tag = event_target:owner_of_labrador }
+		}
+	}
+}
+#hamilton Freedom
+news_event = {
+	id = am.news.67
+	title = am.news.67.t
+	desc = am.news.67.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	immediate = {
+		332 = {
+			OWNER = {
+				save_event_target_as = owner_of_labrador
+			}
+		}
+		466 = {
+			OWNER = {
+				save_event_target_as = owner_of_new_quebec
+			}
+		}
+	}
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.67.a
+		trigger = { 
+			tag = event_target:owner_of_new_quebec
+		}
+	}
+	option = {
+		name = am.news.67.b
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { tag = event_target:owner_of_new_quebec }
+		}
+	}
+}
+#south pacific Freedom
+news_event = {
+	id = am.news.68
+	title = am.news.68.t
+	desc = am.news.68.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.68.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.68.b
+		trigger = { 
+			original_tag = PLU
+		}
+	}
+	option = {
+		name = am.news.68.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+#south pacific Freedom
+news_event = {
+	id = am.news.69
+	title = am.news.69.t
+	desc = am.news.69.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.69.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.69.b
+		trigger = { 
+			original_tag = MCR
+		}
+	}
+	option = {
+		name = am.news.69.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+		}
+	}
+}
+#south pacific Freedom
+news_event = {
+	id = am.news.70
+	title = am.news.70.t
+	desc = am.news.70.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.70.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.70.b
+		trigger = { 
+			OR = {
+				original_tag = PLU
+				original_tag = NMI
+				original_tag = MSH
+			}
+		}
+	}
+	option = {
+		name = am.news.70.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = NMI }
+			NOT = { original_tag = MSH }
+		}
+	}
+}
+#south pacific Freedom
+news_event = {
+	id = am.news.71
+	title = am.news.71.t
+	desc = am.news.71.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.71.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.71.b
+		trigger = { 
+			original_tag = PLU
+		}
+	}
+	option = {
+		name = am.news.71.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+news_event = {
+	id = am.news.72
+	title = am.news.72.t
+	desc = am.news.72.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.72.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.72.b
+		trigger = { 
+			OR = {
+				original_tag = PLU
+				original_tag = MSH
+			}
+		}
+	}
+	option = {
+		name = am.news.72.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = MSH }
+		}
+	}
+}
+news_event = {
+	id = am.news.73
+	title = am.news.73.t
+	desc = am.news.73.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.73.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.73.b
+		trigger = { 
+			OR = {
+				original_tag = PLU
+				original_tag = NMI
+			}
+		}
+	}
+	option = {
+		name = am.news.73.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = NMI }
+		}
+	}
+}
+#south pacific Freedom
+news_event = {
+	id = am.news.74
+	title = am.news.74.t
+	desc = am.news.74.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.74.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.74.b
+		trigger = { 
+			original_tag = MCR
+		}
+	}
+	option = {
+		name = am.news.74.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+		}
+	}
+}
+#south pacific Freedom
+news_event = {
+	id = am.news.75
+	title = am.news.75.t
+	desc = am.news.75.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.75.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.75.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = MSH
+			}
+		}
+	}
+	option = {
+		name = am.news.75.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = MSH }
+		}
+	}
+}
+news_event = {
+	id = am.news.76
+	title = am.news.76.t
+	desc = am.news.76.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.76.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.76.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = PLU
+			}
+		}
+	}
+	option = {
+		name = am.news.76.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+news_event = {
+	id = am.news.77
+	title = am.news.77.t
+	desc = am.news.77.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.77.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.77.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = NMI
+			}
+		}
+	}
+	option = {
+		name = am.news.77.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = NMI }
+		}
+	}
+}
+#south pacific Freedom
+news_event = {
+	id = am.news.78
+	title = am.news.78.t
+	desc = am.news.78.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.78.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.78.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = MSH
+				original_tag = NMI
+			}
+		}
+	}
+	option = {
+		name = am.news.78.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = MSH }
+			NOT = { original_tag = NMI }
+		}
+	}
+}
+#south pacific Freedom
+news_event = {
+	id = am.news.79
+	title = am.news.79.t
+	desc = am.news.79.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.79.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.79.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = MSH
+				original_tag = PLU
+			}
+		}
+	}
+	option = {
+		name = am.news.79.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = MSH }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+news_event = {
+	id = am.news.80
+	title = am.news.80.t
+	desc = am.news.80.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.80.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.80.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = PLU
+				original_tag = NMI
+			}
+		}
+	}
+	option = {
+		name = am.news.80.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = NMI }
+		}
+	}
+}
+news_event = {
+	id = am.news.81
+	title = am.news.81.t
+	desc = am.news.81.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.81.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.81.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = NMI
+				original_tag = PLU
+				original_tag = MSH
+			}
+		}
+	}
+	option = {
+		name = am.news.81.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = NMI }
+			NOT = { original_tag = MSH }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+#south pacific Freedom
+news_event = {
+	id = am.news.82
+	title = am.news.82.t
+	desc = am.news.82.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.82.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.82.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = MSH
+				original_tag = NMI
+				original_tag = PLU
+				original_tag = POH
+			}
+		}
+	}
+	option = {
+		name = am.news.82.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = MSH }
+			NOT = { original_tag = NMI }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = POH }
+		}
+	}
+}
+#south pacific Freedom
+news_event = {
+	id = am.news.83
+	title = am.news.83.t
+	desc = am.news.83.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.83.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.83.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = MSH
+				original_tag = NMI
+				original_tag = PLU
+				original_tag = KOS
+			}
+		}
+	}
+	option = {
+		name = am.news.83.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = MSH }
+			NOT = { original_tag = NMI }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = KOS }
+		}
+	}
+}
+news_event = {
+	id = am.news.84
+	title = am.news.84.t
+	desc = am.news.84.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.84.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.84.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = MSH
+				original_tag = NMI
+				original_tag = PLU
+				original_tag = CHU
+			}
+		}
+	}
+	option = {
+		name = am.news.84.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = NMI }
+			NOT = { original_tag = MSH }
+			NOT = { original_tag = CHU }
+		}
+	}
+}
+news_event = {
+	id = am.news.85
+	title = am.news.85.t
+	desc = am.news.85.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.85.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.85.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = MSH
+				original_tag = NMI
+				original_tag = PLU
+				original_tag = KOS
+				original_tag = POH
+			}
+		}
+	}
+	option = {
+		name = am.news.85.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = NMI }
+			NOT = { original_tag = MSH }
+			NOT = { original_tag = KOS }
+			NOT = { original_tag = POH }
+		}
+	}
+}
+news_event = {
+	id = am.news.86
+	title = am.news.86.t
+	desc = am.news.86.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.86.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.86.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = MSH
+				original_tag = NMI
+				original_tag = PLU
+				original_tag = KOS
+				original_tag = CHU
+			}
+		}
+	}
+	option = {
+		name = am.news.86.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = NMI }
+			NOT = { original_tag = MSH }
+			NOT = { original_tag = KOS }
+			NOT = { original_tag = CHU }
+		}
+	}
+}
+news_event = {
+	id = am.news.87
+	title = am.news.87.t
+	desc = am.news.87.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.87.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.87.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = MSH
+				original_tag = NMI
+				original_tag = PLU
+				original_tag = POH
+				original_tag = CHU
+			}
+		}
+	}
+	option = {
+		name = am.news.87.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = NMI }
+			NOT = { original_tag = MSH }
+			NOT = { original_tag = POH }
+			NOT = { original_tag = CHU }
+		}
+	}
+}
+news_event = {
+	id = am.news.88
+	title = am.news.88.t
+	desc = am.news.88.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.88.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.88.b
+		trigger = { 
+			OR = {
+				original_tag = MCR
+				original_tag = MSH
+				original_tag = NMI
+				original_tag = PLU
+				original_tag = POH
+				original_tag = CHU
+				original_tag = KOS
+			}
+		}
+	}
+	option = {
+		name = am.news.88.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+			NOT = { original_tag = PLU }
+			NOT = { original_tag = NMI }
+			NOT = { original_tag = MSH }
+			NOT = { original_tag = POH }
+			NOT = { original_tag = CHU }
+			NOT = { original_tag = KOS }
+		}
+	}
+}
+#PLU Freedom
+news_event = {
+	id = am.news.89
+	title = am.news.89.t
+	desc = am.news.89.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.89.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.89.b
+		trigger = { 
+			original_tag = PLU
+		}
+	}
+	option = {
+		name = am.news.89.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+#PLU Freedom
+news_event = {
+	id = am.news.90
+	title = am.news.90.t
+	desc = am.news.90.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.90.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.90.b
+		trigger = { 
+			original_tag = MCR
+		}
+	}
+	option = {
+		name = am.news.90.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+		}
+	}
+}
+#MCR Freedom
+news_event = {
+	id = am.news.91
+	title = am.news.91.t
+	desc = am.news.91.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.91.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.91.b
+		trigger = { 
+			original_tag = MCR
+		}
+	}
+	option = {
+		name = am.news.91.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+		}
+	}
+}
+#SOM Freedom
+news_event = {
+	id = am.news.92
+	title = am.news.92.t
+	desc = am.news.92.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.92.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.92.b
+		trigger = { 
+			original_tag = SOM
+		}
+	}
+	option = {
+		name = am.news.92.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SOM }
+		}
+	}
+}
+#MCR Freedom
+news_event = {
+	id = am.news.93
+	title = am.news.93.t
+	desc = am.news.93.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.93.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.93.b
+		trigger = { 
+			original_tag = PLU
+		}
+	}
+	option = {
+		name = am.news.93.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+#CHU Freedom
+news_event = {
+	id = am.news.94
+	title = am.news.94.t
+	desc = am.news.94.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.94.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.94.b
+		trigger = { 
+			original_tag = CHU
+		}
+	}
+	option = {
+		name = am.news.94.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = CHU }
+		}
+	}
+}
+#CHU Freedom
+news_event = {
+	id = am.news.95
+	title = am.news.95.t
+	desc = am.news.95.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.95.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.95.b
+		trigger = { 
+			original_tag = MCR
+		}
+	}
+	option = {
+		name = am.news.95.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+		}
+	}
+}
+#CHU Freedom
+news_event = {
+	id = am.news.96
+	title = am.news.96.t
+	desc = am.news.96.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.96.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.96.b
+		trigger = { 
+			original_tag = PLU
+		}
+	}
+	option = {
+		name = am.news.96.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+#KOS Freedom
+news_event = {
+	id = am.news.97
+	title = am.news.97.t
+	desc = am.news.97.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.97.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.97.b
+		trigger = { 
+			original_tag = KOS
+		}
+	}
+	option = {
+		name = am.news.97.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = KOS }
+		}
+	}
+}
+#KOS Freedom
+news_event = {
+	id = am.news.98
+	title = am.news.98.t
+	desc = am.news.98.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.98.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.98.b
+		trigger = { 
+			original_tag = MCR
+		}
+	}
+	option = {
+		name = am.news.98.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+		}
+	}
+}
+#KOS Freedom
+news_event = {
+	id = am.news.99
+	title = am.news.99.t
+	desc = am.news.99.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.99.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.99.b
+		trigger = { 
+			original_tag = PLU
+		}
+	}
+	option = {
+		name = am.news.99.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+#POH Freedom
+news_event = {
+	id = am.news.100
+	title = am.news.100.t
+	desc = am.news.100.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.100.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.100.b
+		trigger = { 
+			original_tag = POH
+		}
+	}
+	option = {
+		name = am.news.100.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = POH }
+		}
+	}
+}
+#POH Freedom
+news_event = {
+	id = am.news.101
+	title = am.news.101.t
+	desc = am.news.101.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.101.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.101.b
+		trigger = { 
+			original_tag = MCR
+		}
+	}
+	option = {
+		name = am.news.101.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+		}
+	}
+}
+#POH Freedom
+news_event = {
+	id = am.news.102
+	title = am.news.102.t
+	desc = am.news.102.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.102.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.102.b
+		trigger = { 
+			original_tag = PLU
+		}
+	}
+	option = {
+		name = am.news.102.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+#MSH Freedom
+news_event = {
+	id = am.news.103
+	title = am.news.103.t
+	desc = am.news.103.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.103.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.103.b
+		trigger = { 
+			original_tag = MSH
+		}
+	}
+	option = {
+		name = am.news.103.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MSH }
+		}
+	}
+}
+#MSH Freedom
+news_event = {
+	id = am.news.104
+	title = am.news.104.t
+	desc = am.news.104.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.104.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.104.b
+		trigger = { 
+			original_tag = MCR
+		}
+	}
+	option = {
+		name = am.news.104.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+		}
+	}
+}
+#MSH Freedom
+news_event = {
+	id = am.news.105
+	title = am.news.105.t
+	desc = am.news.105.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.105.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.105.b
+		trigger = { 
+			original_tag = PLU
+		}
+	}
+	option = {
+		name = am.news.105.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+#NMI Freedom
+news_event = {
+	id = am.news.106
+	title = am.news.106.t
+	desc = am.news.106.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.106.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.106.b
+		trigger = { 
+			original_tag = NMI
+		}
+	}
+	option = {
+		name = am.news.106.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NMI }
+		}
+	}
+}
+#NMI Freedom
+news_event = {
+	id = am.news.107
+	title = am.news.107.t
+	desc = am.news.107.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.107.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.107.b
+		trigger = { 
+			original_tag = MCR
+		}
+	}
+	option = {
+		name = am.news.107.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+		}
+	}
+}
+#NMI Freedom
+news_event = {
+	id = am.news.108
+	title = am.news.108.t
+	desc = am.news.108.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.108.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.108.b
+		trigger = { 
+			original_tag = PLU
+		}
+	}
+	option = {
+		name = am.news.108.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+#MCR Freedom
+news_event = {
+	id = am.news.109
+	title = am.news.109.t
+	desc = am.news.109.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.109.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.109.b
+		trigger = { 
+			original_tag = MCR
+		}
+	}
+	option = {
+		name = am.news.109.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = MCR }
+		}
+	}
+}
+#MCR Freedom
+news_event = {
+	id = am.news.110
+	title = am.news.110.t
+	desc = am.news.110.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.110.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.110.b
+		trigger = { 
+			original_tag = PLU
+		}
+	}
+	option = {
+		name = am.news.110.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PLU }
+		}
+	}
+}
+#NAU Freedom
+news_event = {
+	id = am.news.111
+	title = am.news.111.t
+	desc = am.news.111.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.111.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.111.b
+		trigger = { 
+			original_tag = NAU
+		}
+	}
+	option = {
+		name = am.news.111.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NAU }
+		}
+	}
+}
+#KIR Freedom
+news_event = {
+	id = am.news.112
+	title = am.news.112.t
+	desc = am.news.112.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.112.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.112.b
+		trigger = { 
+			original_tag = KIR
+		}
+	}
+	option = {
+		name = am.news.112.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = KIR }
+		}
+	}
+}
+#FIJ Freedom
+news_event = {
+	id = am.news.113
+	title = am.news.113.t
+	desc = am.news.113.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.113.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.113.b
+		trigger = { 
+			original_tag = FIJ
+		}
+	}
+	option = {
+		name = am.news.113.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = FIJ }
+		}
+	}
+}
+#NCL Freedom
+news_event = {
+	id = am.news.114
+	title = am.news.114.t
+	desc = am.news.114.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.114.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.114.b
+		trigger = { 
+			original_tag = NCL
+		}
+	}
+	option = {
+		name = am.news.114.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NCL }
+		}
+	}
+}
+#TON Freedom
+news_event = {
+	id = am.news.115
+	title = am.news.115.t
+	desc = am.news.115.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.115.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.115.b
+		trigger = { 
+			original_tag = TON
+		}
+	}
+	option = {
+		name = am.news.115.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = TON }
+		}
+	}
+}
+#NIU Freedom
+news_event = {
+	id = am.news.116
+	title = am.news.116.t
+	desc = am.news.116.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.116.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.116.b
+		trigger = { 
+			original_tag = NIU
+		}
+	}
+	option = {
+		name = am.news.116.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NIU }
+		}
+	}
+}
+#WAF Freedom
+news_event = {
+	id = am.news.117
+	title = am.news.117.t
+	desc = am.news.117.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.117.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.117.b
+		trigger = { 
+			original_tag = WAF
+		}
+	}
+	option = {
+		name = am.news.117.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = WAF }
+		}
+	}
+}
+#TOK Freedom
+news_event = {
+	id = am.news.118
+	title = am.news.118.t
+	desc = am.news.118.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.118.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.118.b
+		trigger = { 
+			original_tag = TOK
+		}
+	}
+	option = {
+		name = am.news.118.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = TOK }
+		}
+	}
+}
+#TUV Freedom
+news_event = {
+	id = am.news.119
+	title = am.news.119.t
+	desc = am.news.119.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.119.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.119.b
+		trigger = { 
+			original_tag = TUV
+		}
+	}
+	option = {
+		name = am.news.119.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = TUV }
+		}
+	}
+}
+#BOU Freedom
+news_event = {
+	id = am.news.120
+	title = am.news.120.t
+	desc = am.news.120.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.120.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.120.b
+		trigger = { 
+			original_tag = BOU
+		}
+	}
+	option = {
+		name = am.news.120.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = BOU }
+		}
+	}
+}
+#BOU Freedom
+news_event = {
+	id = am.news.121
+	title = am.news.121.t
+	desc = am.news.121.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.121.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.121.b
+		trigger = { 
+			original_tag = SOL
+		}
+	}
+	option = {
+		name = am.news.121.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SOL }
+		}
+	}
+}
+#BOU Freedom
+news_event = {
+	id = am.news.122
+	title = am.news.122.t
+	desc = am.news.122.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.122.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.122.b
+		trigger = { 
+			original_tag = PNG
+		}
+	}
+	option = {
+		name = am.news.122.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PNG }
+		}
+	}
+}
+#SOL Freedom
+news_event = {
+	id = am.news.123
+	title = am.news.123.t
+	desc = am.news.123.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.123.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.123.b
+		trigger = { 
+			original_tag = SOL
+		}
+	}
+	option = {
+		name = am.news.123.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SOL }
+		}
+	}
+}
+#SAM Freedom
+news_event = {
+	id = am.news.124
+	title = am.news.124.t
+	desc = am.news.124.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.124.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.124.b
+		trigger = { 
+			original_tag = SAM
+		}
+	}
+	option = {
+		name = am.news.124.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SAM }
+		}
+	}
+}
+#TAS Freedom
+news_event = {
+	id = am.news.125
+	title = am.news.125.t
+	desc = am.news.125.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.125.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.125.b
+		trigger = { 
+			original_tag = TAS
+		}
+	}
+	option = {
+		name = am.news.125.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = TAS }
+		}
+	}
+}
+#VIC Freedom
+news_event = {
+	id = am.news.126
+	title = am.news.126.t
+	desc = am.news.126.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.126.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.126.b
+		trigger = { 
+			original_tag = VIC
+		}
+	}
+	option = {
+		name = am.news.126.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = VIC }
+		}
+	}
+}
+#CBR Freedom
+news_event = {
+	id = am.news.127
+	title = am.news.127.t
+	desc = am.news.127.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.127.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.127.b
+		trigger = { 
+			original_tag = CBR
+		}
+	}
+	option = {
+		name = am.news.127.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = CBR }
+		}
+	}
+}
+#NSW Freedom
+news_event = {
+	id = am.news.128
+	title = am.news.128.t
+	desc = am.news.128.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.128.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.128.b
+		trigger = { 
+			original_tag = NSW
+		}
+	}
+	option = {
+		name = am.news.128.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NSW }
+		}
+	}
+}
+#QUN Freedom
+news_event = {
+	id = am.news.129
+	title = am.news.129.t
+	desc = am.news.129.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.129.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.129.b
+		trigger = { 
+			original_tag = QUN
+		}
+	}
+	option = {
+		name = am.news.129.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = QUN }
+		}
+	}
+}
+#NOA Freedom
+news_event = {
+	id = am.news.130
+	title = am.news.130.t
+	desc = am.news.130.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.130.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.130.b
+		trigger = { 
+			original_tag = NOA
+		}
+	}
+	option = {
+		name = am.news.130.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = NOA }
+		}
+	}
+}
+#SOA Freedom
+news_event = {
+	id = am.news.131
+	title = am.news.131.t
+	desc = am.news.131.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.131.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.131.b
+		trigger = { 
+			original_tag = SOA
+		}
+	}
+	option = {
+		name = am.news.131.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = SOA }
+		}
+	}
+}
+#WAU Freedom
+news_event = {
+	id = am.news.132
+	title = am.news.132.t
+	desc = am.news.132.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.132.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.132.b
+		trigger = { 
+			original_tag = WAU
+		}
+	}
+	option = {
+		name = am.news.132.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = WAU }
+		}
+	}
+}
+#AST Freedom
+news_event = {
+	id = am.news.133
+	title = am.news.133.t
+	desc = am.news.133.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.133.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.133.b
+		trigger = { 
+			original_tag = AST
+		}
+	}
+	option = {
+		name = am.news.133.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = AST }
+		}
+	}
+}
+#PNG Freedom
+news_event = {
+	id = am.news.134
+	title = am.news.134.t
+	desc = am.news.134.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.134.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.134.b
+		trigger = { 
+			original_tag = PNG
+		}
+	}
+	option = {
+		name = am.news.134.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PNG }
+		}
+	}
+}
+#ISR Freedom
+news_event = {
+	id = am.news.135
+	title = am.news.135.t
+	desc = am.news.135.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.135.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.135.b
+		trigger = { 
+			original_tag = ISR
+		}
+	}
+	option = {
+		name = am.news.135.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = ISR }
+		}
+	}
+}
+news_event = {
+	id = am.news.136
+	title = am.news.136.t
+	desc = am.news.136.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.136.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.136.b
+		trigger = { 
+			original_tag = PAL
+		}
+	}
+	option = {
+		name = am.news.136.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PAL }
+		}
+	}
+}
+news_event = {
+	id = am.news.137
+	title = am.news.137.t
+	desc = am.news.137.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = am.news.137.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = am.news.137.b
+		trigger = { 
+			OR = {
+				original_tag = PAL
+				original_tag = ISR
+			}
+		}
+	}
+	option = {
+		name = am.news.137.c
+		trigger = { 
+			NOT = { tag = FROM }
+			NOT = { original_tag = PAL }
+			NOT = { original_tag = ISR }
 		}
 	}
 }

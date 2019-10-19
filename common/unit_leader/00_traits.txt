@@ -1327,9 +1327,11 @@ leader_traits = {
 	ironside = {
 		type = navy
 		gain_xp = {
-			capital_ship > 0.0
-			opponent = {
+			OR = {
 				capital_ship > 0.0
+				opponent = {
+					capital_ship > 0.0
+				}
 			}
 		}
 		custom_gain_xp_trigger_tooltip = IRONSIDE_TRIGGER_TT

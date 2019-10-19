@@ -2705,7 +2705,7 @@ form_hre_category = {
 		visible = {
 			tag = GE0
 			AND = {
-				has_government = neutrality
+				has_government = monarchism
 				has_country_leader = { ruling_only = yes name = "Victoria" }
 			}
 			NOT = { has_global_flag = form_hre_flag }

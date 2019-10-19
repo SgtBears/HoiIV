@@ -44,7 +44,7 @@ SLO_INF_01 =
 	# Number reservation system will tie to another group.
 	# link_numbering_with = { SLO_MTN_01 SLO_GAR_01 SLO_MOT_01 SLO_MEC_01 }
 
-	fallback_name = "%d. Pesadijska Divizija"
+	fallback_name = "%d. Pesi Divize"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.

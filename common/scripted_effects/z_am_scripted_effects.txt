@@ -262,3 +262,1085 @@ MCR_add_stars = {
 		set_cosmetic_tag = MCR_2_states
 	}
 }
+set_history_file_government = {
+	if = {
+		limit = {
+			check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.01
+		}
+		if = {
+			limit = {
+				check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.01
+				}
+				if = {
+					limit = {
+						check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.01
+					}
+					if = {
+						limit = {
+							check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+						}
+						add_popularity = {
+							ideology = neutrality
+							popularity = 0.01
+						}
+						if = {
+							limit = {
+								check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+							}
+							add_popularity = {
+								ideology = neutrality
+								popularity = 0.01
+							}
+							if = {
+								limit = {
+									check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+								}
+								add_popularity = {
+									ideology = neutrality
+									popularity = 0.01
+								}
+								if = {
+									limit = {
+										check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+									}
+									add_popularity = {
+										ideology = neutrality
+										popularity = 0.01
+									}
+									if = {
+										limit = {
+											check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+										}
+										add_popularity = {
+											ideology = neutrality
+											popularity = 0.01
+										}
+										if = {
+											limit = {
+												check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+											}
+											add_popularity = {
+												ideology = neutrality
+												popularity = 0.01
+											}
+											if = {
+												limit = {
+													check_variable = { party_popularity@neutrality < puppet_neutrality_popularity }
+												}
+												add_popularity = {
+													ideology = neutrality
+													popularity = 0.01
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.01
+		}
+		if = {
+			limit = {
+				check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.01
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.01
+				}
+				if = {
+					limit = {
+						check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.01
+					}
+					if = {
+						limit = {
+							check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+						}
+						add_popularity = {
+							ideology = democratic
+							popularity = 0.01
+						}
+						if = {
+							limit = {
+								check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+							}
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.01
+							}
+							if = {
+								limit = {
+									check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+								}
+								add_popularity = {
+									ideology = democratic
+									popularity = 0.01
+								}
+								if = {
+									limit = {
+										check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+									}
+									add_popularity = {
+										ideology = democratic
+										popularity = 0.01
+									}
+									if = {
+										limit = {
+											check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+										}
+										add_popularity = {
+											ideology = democratic
+											popularity = 0.01
+										}
+										if = {
+											limit = {
+												check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+											}
+											add_popularity = {
+												ideology = democratic
+												popularity = 0.01
+											}
+											if = {
+												limit = {
+													check_variable = { party_popularity@democratic < puppet_democratic_popularity }
+												}
+												add_popularity = {
+													ideology = democratic
+													popularity = 0.01
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { party_popularity@communism < puppet_communism_popularity }
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+		if = {
+			limit = {
+				check_variable = { party_popularity@communism < puppet_communism_popularity }
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@communism < puppet_communism_popularity }
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.01
+				}
+				if = {
+					limit = {
+						check_variable = { party_popularity@communism < puppet_communism_popularity }
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.01
+					}
+					if = {
+						limit = {
+							check_variable = { party_popularity@communism < puppet_communism_popularity }
+						}
+						add_popularity = {
+							ideology = communism
+							popularity = 0.01
+						}
+						if = {
+							limit = {
+								check_variable = { party_popularity@communism < puppet_communism_popularity }
+							}
+							add_popularity = {
+								ideology = communism
+								popularity = 0.01
+							}
+							if = {
+								limit = {
+									check_variable = { party_popularity@communism < puppet_communism_popularity }
+								}
+								add_popularity = {
+									ideology = communism
+									popularity = 0.01
+								}
+								if = {
+									limit = {
+										check_variable = { party_popularity@communism < puppet_communism_popularity }
+									}
+									add_popularity = {
+										ideology = communism
+										popularity = 0.01
+									}
+									if = {
+										limit = {
+											check_variable = { party_popularity@communism < puppet_communism_popularity }
+										}
+										add_popularity = {
+											ideology = communism
+											popularity = 0.01
+										}
+										if = {
+											limit = {
+												check_variable = { party_popularity@communism < puppet_communism_popularity }
+											}
+											add_popularity = {
+												ideology = communism
+												popularity = 0.01
+											}
+											if = {
+												limit = {
+													check_variable = { party_popularity@communism < puppet_communism_popularity }
+												}
+												add_popularity = {
+													ideology = communism
+													popularity = 0.01
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+		}
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.01
+		}
+		if = {
+			limit = {
+				check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.01
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = 0.01
+				}
+				if = {
+					limit = {
+						check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+					}
+					add_popularity = {
+						ideology = monarchism
+						popularity = 0.01
+					}
+					if = {
+						limit = {
+							check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+						}
+						add_popularity = {
+							ideology = monarchism
+							popularity = 0.01
+						}
+						if = {
+							limit = {
+								check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+							}
+							add_popularity = {
+								ideology = monarchism
+								popularity = 0.01
+							}
+							if = {
+								limit = {
+									check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+								}
+								add_popularity = {
+									ideology = monarchism
+									popularity = 0.01
+								}
+								if = {
+									limit = {
+										check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+									}
+									add_popularity = {
+										ideology = monarchism
+										popularity = 0.01
+									}
+									if = {
+										limit = {
+											check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+										}
+										add_popularity = {
+											ideology = monarchism
+											popularity = 0.01
+										}
+										if = {
+											limit = {
+												check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+											}
+											add_popularity = {
+												ideology = monarchism
+												popularity = 0.01
+											}
+											if = {
+												limit = {
+													check_variable = { party_popularity@monarchism < puppet_monarchism_popularity }
+												}
+												add_popularity = {
+													ideology = monarchism
+													popularity = 0.01
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.01
+		}
+		if = {
+			limit = {
+				check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.01
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.01
+				}
+				if = {
+					limit = {
+						check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.01
+					}
+					if = {
+						limit = {
+							check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+						}
+						add_popularity = {
+							ideology = fascism
+							popularity = 0.01
+						}
+						if = {
+							limit = {
+								check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+							}
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.01
+							}
+							if = {
+								limit = {
+									check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+								}
+								add_popularity = {
+									ideology = fascism
+									popularity = 0.01
+								}
+								if = {
+									limit = {
+										check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+									}
+									add_popularity = {
+										ideology = fascism
+										popularity = 0.01
+									}
+									if = {
+										limit = {
+											check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+										}
+										add_popularity = {
+											ideology = fascism
+											popularity = 0.01
+										}
+										if = {
+											limit = {
+												check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+											}
+											add_popularity = {
+												ideology = fascism
+												popularity = 0.01
+											}
+											if = {
+												limit = {
+													check_variable = { party_popularity@fascism < puppet_fascism_popularity }
+												}
+												add_popularity = {
+													ideology = fascism
+													popularity = 0.01
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.01
+		}
+		if = {
+			limit = {
+				check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.01
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.01
+				}
+				if = {
+					limit = {
+						check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = -0.01
+					}
+					if = {
+						limit = {
+							check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+						}
+						add_popularity = {
+							ideology = neutrality
+							popularity = -0.01
+						}
+						if = {
+							limit = {
+								check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+							}
+							add_popularity = {
+								ideology = neutrality
+								popularity = -0.01
+							}
+							if = {
+								limit = {
+									check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+								}
+								add_popularity = {
+									ideology = neutrality
+									popularity = -0.01
+								}
+								if = {
+									limit = {
+										check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+									}
+									add_popularity = {
+										ideology = neutrality
+										popularity = -0.01
+									}
+									if = {
+										limit = {
+											check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+										}
+										add_popularity = {
+											ideology = neutrality
+											popularity = -0.01
+										}
+										if = {
+											limit = {
+												check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+											}
+											add_popularity = {
+												ideology = neutrality
+												popularity = -0.01
+											}
+											if = {
+												limit = {
+													check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+												}
+												add_popularity = {
+													ideology = neutrality
+													popularity = -0.01
+												}
+												if = {
+													limit = {
+														check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+													}
+													add_popularity = {
+														ideology = neutrality
+														popularity = -0.01
+													}
+													if = {
+														limit = {
+															check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+														}
+														add_popularity = {
+															ideology = neutrality
+															popularity = -0.01
+														}
+														if = {
+															limit = {
+																check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+															}
+															add_popularity = {
+																ideology = neutrality
+																popularity = -0.01
+															}
+															if = {
+																limit = {
+																	check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+																}
+																add_popularity = {
+																	ideology = neutrality
+																	popularity = -0.01
+																}
+																if = {
+																	limit = {
+																		check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+																	}
+																	add_popularity = {
+																		ideology = neutrality
+																		popularity = -0.01
+																	}
+																	if = {
+																		limit = {
+																			check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+																		}
+																		add_popularity = {
+																			ideology = neutrality
+																			popularity = -0.01
+																		}
+																		if = {
+																			limit = {
+																				check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+																			}
+																			add_popularity = {
+																				ideology = neutrality
+																				popularity = -0.01
+																			}
+																			if = {
+																				limit = {
+																					check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+																				}
+																				add_popularity = {
+																					ideology = neutrality
+																					popularity = -0.01
+																				}
+																				if = {
+																					limit = {
+																						check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+																					}
+																					add_popularity = {
+																						ideology = neutrality
+																						popularity = -0.01
+																					}
+																					if = {
+																						limit = {
+																							check_variable = { party_popularity@neutrality > puppet_neutrality_popularity }
+																						}
+																						add_popularity = {
+																							ideology = neutrality
+																							popularity = -0.01
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.01
+		}
+		if = {
+			limit = {
+				check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.01
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.01
+				}
+				if = {
+					limit = {
+						check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = -0.01
+					}
+					if = {
+						limit = {
+							check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+						}
+						add_popularity = {
+							ideology = democratic
+							popularity = -0.01
+						}
+						if = {
+							limit = {
+								check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+							}
+							add_popularity = {
+								ideology = democratic
+								popularity = -0.01
+							}
+							if = {
+								limit = {
+									check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+								}
+								add_popularity = {
+									ideology = democratic
+									popularity = -0.01
+								}
+								if = {
+									limit = {
+										check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+									}
+									add_popularity = {
+										ideology = democratic
+										popularity = -0.01
+									}
+									if = {
+										limit = {
+											check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+										}
+										add_popularity = {
+											ideology = democratic
+											popularity = -0.01
+										}
+										if = {
+											limit = {
+												check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+											}
+											add_popularity = {
+												ideology = democratic
+												popularity = -0.01
+											}
+											if = {
+												limit = {
+													check_variable = { party_popularity@democratic > puppet_democratic_popularity }
+												}
+												add_popularity = {
+													ideology = democratic
+													popularity = -0.01
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { party_popularity@communism > puppet_communism_popularity }
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.01
+		}
+		if = {
+			limit = {
+				check_variable = { party_popularity@communism > puppet_communism_popularity }
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.01
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@communism > puppet_communism_popularity }
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.01
+				}
+				if = {
+					limit = {
+						check_variable = { party_popularity@communism > puppet_communism_popularity }
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = -0.01
+					}
+					if = {
+						limit = {
+							check_variable = { party_popularity@communism > puppet_communism_popularity }
+						}
+						add_popularity = {
+							ideology = communism
+							popularity = -0.01
+						}
+						if = {
+							limit = {
+								check_variable = { party_popularity@communism > puppet_communism_popularity }
+							}
+							add_popularity = {
+								ideology = communism
+								popularity = -0.01
+							}
+							if = {
+								limit = {
+									check_variable = { party_popularity@communism > puppet_communism_popularity }
+								}
+								add_popularity = {
+									ideology = communism
+									popularity = -0.01
+								}
+								if = {
+									limit = {
+										check_variable = { party_popularity@communism > puppet_communism_popularity }
+									}
+									add_popularity = {
+										ideology = communism
+										popularity = -0.01
+									}
+									if = {
+										limit = {
+											check_variable = { party_popularity@communism > puppet_communism_popularity }
+										}
+										add_popularity = {
+											ideology = communism
+											popularity = -0.01
+										}
+										if = {
+											limit = {
+												check_variable = { party_popularity@communism > puppet_communism_popularity }
+											}
+											add_popularity = {
+												ideology = communism
+												popularity = -0.01
+											}
+											if = {
+												limit = {
+													check_variable = { party_popularity@communism > puppet_communism_popularity }
+												}
+												add_popularity = {
+													ideology = communism
+													popularity = -0.01
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+		}
+		add_popularity = {
+			ideology = monarchism
+			popularity = -0.01
+		}
+		if = {
+			limit = {
+				check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = -0.01
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.01
+				}
+				if = {
+					limit = {
+						check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+					}
+					add_popularity = {
+						ideology = monarchism
+						popularity = -0.01
+					}
+					if = {
+						limit = {
+							check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+						}
+						add_popularity = {
+							ideology = monarchism
+							popularity = -0.01
+						}
+						if = {
+							limit = {
+								check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+							}
+							add_popularity = {
+								ideology = monarchism
+								popularity = -0.01
+							}
+							if = {
+								limit = {
+									check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+								}
+								add_popularity = {
+									ideology = monarchism
+									popularity = -0.01
+								}
+								if = {
+									limit = {
+										check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+									}
+									add_popularity = {
+										ideology = monarchism
+										popularity = -0.01
+									}
+									if = {
+										limit = {
+											check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+										}
+										add_popularity = {
+											ideology = monarchism
+											popularity = -0.01
+										}
+										if = {
+											limit = {
+												check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+											}
+											add_popularity = {
+												ideology = monarchism
+												popularity = -0.01
+											}
+											if = {
+												limit = {
+													check_variable = { party_popularity@monarchism > puppet_monarchism_popularity }
+												}
+												add_popularity = {
+													ideology = monarchism
+													popularity = -0.01
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.01
+		}
+		if = {
+			limit = {
+				check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.01
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.01
+				}
+				if = {
+					limit = {
+						check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = -0.01
+					}
+					if = {
+						limit = {
+							check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+						}
+						add_popularity = {
+							ideology = fascism
+							popularity = -0.01
+						}
+						if = {
+							limit = {
+								check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+							}
+							add_popularity = {
+								ideology = fascism
+								popularity = -0.01
+							}
+							if = {
+								limit = {
+									check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+								}
+								add_popularity = {
+									ideology = fascism
+									popularity = -0.01
+								}
+								if = {
+									limit = {
+										check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+									}
+									add_popularity = {
+										ideology = fascism
+										popularity = -0.01
+									}
+									if = {
+										limit = {
+											check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+										}
+										add_popularity = {
+											ideology = fascism
+											popularity = -0.01
+										}
+										if = {
+											limit = {
+												check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+											}
+											add_popularity = {
+												ideology = fascism
+												popularity = -0.01
+											}
+											if = {
+												limit = {
+													check_variable = { party_popularity@fascism > puppet_fascism_popularity }
+												}
+												add_popularity = {
+													ideology = fascism
+													popularity = -0.01
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

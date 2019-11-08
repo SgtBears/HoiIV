@@ -1,0 +1,63 @@
+political_actions = {
+
+	PAK_buy_gwadar = {
+
+		allowed = {
+			OR = {
+				original_tag = PAK
+				original_tag = RAJ
+			}
+		}
+
+		available = {
+			owns_state = 444
+			controls_state = 444
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			920 = {
+				is_owned_by = OMA
+			}
+			is_subject = no
+		}
+		complete_effect = {
+			OM0 = {
+				custom_effect_tooltip = needs_approval 
+				country_event = am.pakistan.1
+			}
+			effect_tooltip = {
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				OM0 = {
+					random_owned_controlled_state = {
+						prioritize = { 294 }
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

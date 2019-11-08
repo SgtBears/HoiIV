@@ -1,0 +1,24 @@
+state={
+	id=934
+	name="STATE_934"
+
+	state_category = pastoral
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = UGA
+		add_core_of = BUG
+		victory_points = {
+			12989 1
+		}
+	}
+
+	provinces={
+		14504 12989
+	}
+	manpower=1021386
+	buildings_max_level_factor=1.000
+}

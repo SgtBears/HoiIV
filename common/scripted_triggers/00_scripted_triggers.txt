@@ -262,6 +262,7 @@ is_csa_state = {
 		state = 367
 		state = 370
 		state = 362
+		state = 907
 		state = 363
 		state = 364
 		state = 371

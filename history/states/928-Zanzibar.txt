@@ -1,0 +1,27 @@
+state={
+	id=928
+	name="STATE_928"
+	
+	state_category = pastoral
+	history={
+		owner = ENG
+		add_core_of = ZAN
+		victory_points = {
+			14495 1
+		}
+		buildings = {
+			infrastructure = 3
+			14495 = {
+				naval_base = 1
+
+			}
+
+		}
+	}
+
+	provinces={
+		14495 14494
+	}
+	manpower=124323
+	buildings_max_level_factor=1.000
+}

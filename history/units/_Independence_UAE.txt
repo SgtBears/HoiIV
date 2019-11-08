@@ -1,0 +1,25 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Katibat almsha"					# Infantry Division
+
+	division_names_group = EGY_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Katibat almsha"
+		start_experience_factor = 0
+	}
+}

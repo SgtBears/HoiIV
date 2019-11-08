@@ -1,0 +1,26 @@
+state={
+	id=926
+	name="STATE_926"
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = MAP
+		victory_points = {
+			14436 1
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1581 14435 14436
+	}
+	manpower=748959
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
+3.813016481069042

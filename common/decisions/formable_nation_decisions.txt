@@ -2393,11 +2393,15 @@ form_arabia_category = {
 				controls_state = 457
 				controls_state = 453
 				controls_state = 551
+				controls_state = 917
+				controls_state = 916
 				controls_state = 454
 				controls_state = 455
 				controls_state = 656
 				controls_state = 658
 				controls_state = 659
+				controls_state = 918
+				controls_state = 909
 			}
 		}
 
@@ -2458,11 +2462,15 @@ form_arabia_category = {
 				457 = { add_core_of = ROOT }
 				453 = { add_core_of = ROOT }
 				551 = { add_core_of = ROOT }
+				917 = { add_core_of = ROOT }
+				916 = { add_core_of = ROOT }
 				454 = { add_core_of = ROOT }
 				455 = { add_core_of = ROOT }
 				656 = { add_core_of = ROOT }
 				658 = { add_core_of = ROOT }
 				659 = { add_core_of = ROOT }
+				918 = { add_core_of = ROOT }
+				909 = { add_core_of = ROOT }
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.67 hours = 6 }

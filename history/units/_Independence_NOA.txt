@@ -21,7 +21,7 @@ division_template = {
 units = {
 	division = {
 		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = no
+			is_name_ordered = yes
 		}
 		location = 7669
 		division_template = "Infantry Division"

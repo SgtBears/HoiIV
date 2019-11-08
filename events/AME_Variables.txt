@@ -1392,656 +1392,770 @@ country_event = {
 			}
 			set_variable = { global.NHB_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = ALA	
+		else_if = {
+			limit = {
+				original_tag = ALA
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.ALA_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = ALS	
+		else_if = {
+			limit = {
+				original_tag = ALS
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.ALS_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = ARI	
+		else_if = {
+			limit = {
+				original_tag = ARI
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.ARI_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = ARK	
+		else_if = {
+			limit = {
+				original_tag = ARK
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.ARK_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = CAL	
+		else_if = {
+			limit = {
+				original_tag = CAL
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.CAL_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = CLO	
+		else_if = {
+			limit = {
+				original_tag = CLO
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.CLO_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = CNO	
+		else_if = {
+			limit = {
+				original_tag = CNO
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.CNO_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = DEL	
+		else_if = {
+			limit = {
+				original_tag = DEL
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.DEL_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = FLO	
+		else_if = {
+			limit = {
+				original_tag = FLO
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.FLO_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = USG	
+		else_if = {
+			limit = {
+				original_tag = USG
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.USG_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = HAW	
+		else_if = {
+			limit = {
+				original_tag = HAW
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.HAW_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = IDA	
+		else_if = {
+			limit = {
+				original_tag = IDA
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.IDA_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = ILL	
+		else_if = {
+			limit = {
+				original_tag = ILL
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.ILL_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = IND	
+		else_if = {
+			limit = {
+				original_tag = IND
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.IND_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = IOW	
+		else_if = {
+			limit = {
+				original_tag = IOW
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.IOW_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = KAN	
+		else_if = {
+			limit = {
+				original_tag = KAN
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.KAN_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = KTY	
+		else_if = {
+			limit = {
+				original_tag = KTY
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.KTY_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = LOU	
+		else_if = {
+			limit = {
+				original_tag = LOU
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.LOU_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = MAI	
+		else_if = {
+			limit = {
+				original_tag = MAI
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.MAI_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = MAR	
+		else_if = {
+			limit = {
+				original_tag = MAR
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.MAR_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = MAS	
+		else_if = {
+			limit = {
+				original_tag = MAS
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.MAS_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = MIC	
+		else_if = {
+			limit = {
+				original_tag = MIC
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.MIC_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = MIN	
+		else_if = {
+			limit = {
+				original_tag = MIN
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.MIN_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = MSS	
+		else_if = {
+			limit = {
+				original_tag = MSS
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.MSS_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = MIS	
+		else_if = {
+			limit = {
+				original_tag = MIS
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.MIS_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = MOT	
+		else_if = {
+			limit = {
+				original_tag = MOT
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.MOT_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NEB	
+		else_if = {
+			limit = {
+				original_tag = NEB
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NEB_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NEV	
+		else_if = {
+			limit = {
+				original_tag = NEV
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NEV_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NHA	
+		else_if = {
+			limit = {
+				original_tag = NHA
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NHA_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NJE	
+		else_if = {
+			limit = {
+				original_tag = NJE
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NJE_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NME	
+		else_if = {
+			limit = {
+				original_tag = NME
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NME_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NYO	
+		else_if = {
+			limit = {
+				original_tag = NYO
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NYO_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NCA	
+		else_if = {
+			limit = {
+				original_tag = NCA
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NCA_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NDA	
+		else_if = {
+			limit = {
+				original_tag = NDA
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NDA_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = OHI	
+		else_if = {
+			limit = {
+				original_tag = OHI
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.OHI_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = OKL	
+		else_if = {
+			limit = {
+				original_tag = OKL
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.OKL_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = ORE	
+		else_if = {
+			limit = {
+				original_tag = ORE
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.ORE_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = PEN	
+		else_if = {
+			limit = {
+				original_tag = PEN
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.PEN_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = RHI	
+		else_if = {
+			limit = {
+				original_tag = RHI
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.RHI_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = SCA	
+		else_if = {
+			limit = {
+				original_tag = SCA
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.SCA_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = SDA	
+		else_if = {
+			limit = {
+				original_tag = SDA
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.SDA_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = TEN	
+		else_if = {
+			limit = {
+				original_tag = TEN
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.TEN_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = TEX	
+		else_if = {
+			limit = {
+				original_tag = TEX
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.TEX_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = UTA	
+		else_if = {
+			limit = {
+				original_tag = UTA
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.UTA_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = VER	
+		else_if = {
+			limit = {
+				original_tag = VER
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.VER_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = VIR	
+		else_if = {
+			limit = {
+				original_tag = VIR
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.VIR_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = WAS	
+		else_if = {
+			limit = {
+				original_tag = WAS
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.WAS_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = WVI	
+		else_if = {
+			limit = {
+				original_tag = WVI
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.WVI_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = WIS	
+		else_if = {
+			limit = {
+				original_tag = WIS
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.WIS_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = WYO	
+		else_if = {
+			limit = {
+				original_tag = WYO
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.WYO_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = WDC	
+		else_if = {
+			limit = {
+				original_tag = WDC
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.WDC_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = SUP	
+		else_if = {
+			limit = {
+				original_tag = SUP
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.SUP_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = BCL	
+		else_if = {
+			limit = {
+				original_tag = BCL
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.BCL_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = ALT	
+		else_if = {
+			limit = {
+				original_tag = ALT
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.ALT_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = VAN	
+		else_if = {
+			limit = {
+				original_tag = VAN
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.VAN_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = SAS	
+		else_if = {
+			limit = {
+				original_tag = SAS
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.SAS_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = MAT	
+		else_if = {
+			limit = {
+				original_tag = MAT
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.MAT_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = ONT	
+		else_if = {
+			limit = {
+				original_tag = ONT
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.ONT_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = QUE	
+		else_if = {
+			limit = {
+				original_tag = QUE
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.QUE_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = LAB	
+		else_if = {
+			limit = {
+				original_tag = LAB
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.LAB_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NEF	
+		else_if = {
+			limit = {
+				original_tag = NEF
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NEF_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NBR	
+		else_if = {
+			limit = {
+				original_tag = NBR
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NBR_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NSC	
+		else_if = {
+			limit = {
+				original_tag = NSC
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.NSC_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
+		else_if = {
+			limit = {
 				original_tag = PEI
 				NOT = { has_civil_war = yes }
 			}
 			set_variable = { global.PEI_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = BOU	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.BOU_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = SOL	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.SOL_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = NCL	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.NCL_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = TON	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.TON_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = WAF	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.WAF_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = KIR	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.KIR_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = TUV	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.TUV_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = MSH	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.MSH_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = PLU	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.PLU_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = GUM	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.GUM_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = NMI	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.NMI_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = MCR	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.MCR_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = SAM	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.SAM_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = NIU	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.NIU_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = COK	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.COK_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = TOK	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.TOK_tag = ROOT.id }	
-		}				
-		else_if = {				
-			limit = {			
-				original_tag = TAH	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.TAH_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = BOU
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.BOU_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NAU	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.NAU_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = SOL
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.SOL_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = CHU	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.CHU_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = NCL
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.NCL_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = POH	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.POH_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = TON
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.TON_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = KOS	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.KOS_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = WAF
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.WAF_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = QUN	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.QUN_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = KIR
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.KIR_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NSW	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.NSW_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = TUV
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.TUV_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = TAS	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.TAS_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = MSH
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.MSH_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = VIC	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.VIC_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = PLU
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.PLU_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = NOA	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.NOA_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = GUM
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.GUM_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = WAU	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.WAU_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = NMI
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.NMI_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = SOA	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.SOA_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = MCR
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.MCR_tag = ROOT.id }
 		}
-		else_if = {				
-			limit = {			
-				original_tag = CBR	
-				NOT = { has_civil_war = yes }		
-			}			
-			set_variable = { global.CBR_tag = ROOT.id }	
+		else_if = {
+			limit = {
+				original_tag = SAM
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.SAM_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = NIU
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.NIU_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = COK
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.COK_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = TOK
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.TOK_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = TAH
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.TAH_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = NAU
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.NAU_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = CHU
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.CHU_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = POH
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.POH_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = KOS
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.KOS_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = QUN
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.QUN_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = NSW
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.NSW_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = TAS
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.TAS_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = VIC
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.VIC_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = NOA
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.NOA_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = WAU
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.WAU_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = SOA
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.SOA_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = CBR
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.CBR_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = SAR
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.SAR_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = ADE
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.ADE_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = BHR
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.BHR_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = SML
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.SML_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = OMN
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.OMN_tag = ROOT.id }
+		}
+		
+		else_if = {
+			limit = {
+				original_tag = JAK
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.JAK_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = TRP
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.TRP_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = MAP
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.MAP_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = HYD
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.HYD_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = JUN
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.JUN_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = KAL
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.KAL_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = SKK
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.SKK_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = AMB
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.AMB_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = ZAN
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.ZAN_tag = ROOT.id }
+		}
+		else_if = {
+			limit = {
+				original_tag = AND
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.AND_tag = ROOT.id }
+		}
+		
+		else_if = {
+			limit = {
+				original_tag = BUG
+				NOT = { has_civil_war = yes }
+			}
+			set_variable = { global.BUG_tag = ROOT.id }
 		}
 		if = {
 			limit = {
@@ -2098,40 +2212,100 @@ country_event = {
 			set_variable = { global.usa_fascist_tag = ROOT.id }
 			set_variable = { global.usa_democratic_tag = ROOT.id }
 		}
-		if = {
-			limit = {
-				original_tag = PAK
-				NOT = { has_civil_war = yes }
-				NOT = {
-					country_exists = RA0
-				}
+		PL0 = {
+			clear_array = potentional_allies
+			add_to_array = {
+				array = potentional_allies
+				value = EG0
 			}
-			set_variable = { global.RAJ_tag = ROOT.id }
-			set_variable = { global.raj_imperial_tag = ROOT.id }
-			set_variable = { global.raj_free_tag = ROOT.id }
-		}
-		if = {
-			limit = {
-				original_tag = BAN
-				NOT = { has_civil_war = yes }
-				NOT = {
-					country_exists = RA0
-					country_exists = PK0
-				}
+			add_to_array = {
+				array = potentional_allies
+				value = SY0
 			}
-			set_variable = { global.RAJ_tag = ROOT.id }
-			set_variable = { global.raj_imperial_tag = ROOT.id }
-			set_variable = { global.raj_free_tag = ROOT.id }
-		}
-		if = {
-			limit = {
-				original_tag = BAN
-				NOT = { has_civil_war = yes }
-				NOT = {
-					country_exists = PK0
-				}
+			add_to_array = {
+				array = potentional_allies
+				value = JO0
 			}
-			set_variable = { global.PAK_tag = ROOT.id }
+			add_to_array = {
+				array = potentional_allies
+				value = LE0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = LB0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = IR5
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = PE0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = YE0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = OM0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = MO5
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = UA0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = KU0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = AL5
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = TU5
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = SU0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = SO5
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = TU0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = QA0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = PK0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = BA5
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = AF0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = DJ0
+			}
+			add_to_array = {
+				array = potentional_allies
+				value = MR0
+			}
 		}
 	}
 }

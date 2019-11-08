@@ -2,7 +2,7 @@
 state={
 	id=428
 	name="STATE_428"
-	manpower = 10590200
+	manpower = 10108668
 	
 	
 	state_category = town
@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = RAJ
+		add_core_of = RAJ
 		victory_points = {
 			9975 1 
 		}
@@ -21,11 +22,14 @@ state={
 			9975 = {
 				naval_base = 2
 			}
+			14426 = {
+				naval_base = 1
+			}
 		}
 
 	}
 
 	provinces={
-		1061 1103 1144 1190 4064 4090 4132 4187 7020 7150 7165 7207 9975 10118 11952 12037 12092 
+		1061 1103 1144 1190 4064 4090 4132 4187 7020 7150 7165 7207 9975 10118 11952 12037 12092 14424 14426
 	}
 }

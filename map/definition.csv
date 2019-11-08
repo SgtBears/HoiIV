@@ -14524,24 +14524,150 @@
 14384;180;5;133;land;true;plains;4
 14385;180;5;183;sea;true;ocean;0
 # Israel
-14386;180;5;233;land;false;plains;7
+14386;180;5;233;land;false;urban;7
 14387;180;5;34;land;false;desert;7
 14388;180;5;84;land;false;desert;7
 14389;180;5;134;land;false;desert;7
 14390;180;5;184;land;false;desert;7
 14391;180;5;234;land;false;urban;7
 14392;180;5;35;land;false;plains;7
-14393;180;5;85;land;false;plains;7
-14394;180;5;135;land;true;plains;7
+14393;180;5;85;land;false;urban;7
+14394;180;5;135;land;true;urban;7
 14395;180;5;185;land;true;plains;7
 # Washington
 14396;180;5;235;land;true;plains;2
 14397;180;5;36;land;true;plains;2
-# Michigan
-14398;180;5;86;lake;false;lakes;2
+# Middle East
+14398;180;5;86;land;true;desert;7
 # CanadaUS border
 14399;180;5;136;lake;false;lakes;2
 14400;180;5;186;lake;false;lakes;2
 14401;180;5;236;lake;false;lakes;2
 14402;180;5;37;lake;false;lakes;2
 14403;180;5;87;land;false;hills;2
+# Bahrain
+14404;180;5;137;land;true;desert;7
+# Qatar
+14405;180;5;187;land;true;desert;7
+# Iran
+14406;180;5;237;land;true;plains;7
+# Oman
+14407;180;5;38;land;true;desert;7
+# Israel
+14408;180;5;88;land;false;plains;7
+14409;180;5;138;land;false;hills;7
+14410;180;5;188;land;false;plains;7
+14411;180;5;238;land;false;plains;7
+# Halibab
+14412;180;5;39;land;false;desert;5
+# Yemen
+14413;180;5;89;land;true;mountain;7
+# Oman
+14414;180;5;139;land;true;desert;7
+14415;180;5;189;land;true;urban;7
+14416;180;5;239;land;true;desert;7
+14417;180;5;40;land;false;mountain;7
+14418;180;5;90;land;false;desert;7
+14419;180;5;140;land;false;desert;7
+14420;180;5;190;land;false;desert;7
+14421;180;5;240;land;false;mountain;7
+14422;180;5;41;land;false;desert;7
+14423;180;5;91;land;false;desert;7
+# India
+14424;180;5;141;land;false;plains;6
+14425;180;5;191;land;true;plains;6
+14426;180;5;241;land;true;plains;6
+14427;180;5;42;land;false;plains;6
+14428;180;5;92;land;false;plains;6
+14429;180;5;142;land;false;plains;6
+14430;180;5;192;land;false;plains;6
+14431;180;5;242;land;true;plains;6
+14432;180;5;43;land;false;mountain;6
+14433;180;5;93;land;false;plains;6
+14434;180;5;143;land;false;plains;6
+14435;180;5;193;land;false;mountain;6
+14436;180;5;243;land;false;mountain;6
+# Papua New Guinea
+14437;180;5;44;lake;false;lakes;4
+14438;180;5;94;lake;false;lakes;4
+14439;180;5;144;lake;false;lakes;4
+14440;180;5;194;lake;false;lakes;4
+14441;180;5;244;lake;false;lakes;4
+14442;180;5;45;lake;false;lakes;4
+14443;180;5;95;lake;false;lakes;4
+# New Zealand
+14444;180;5;145;lake;false;lakes;4
+14445;180;5;195;lake;false;lakes;4
+14446;180;5;245;lake;false;lakes;4
+14447;180;5;46;lake;false;lakes;4
+14448;180;5;96;lake;false;lakes;4
+14449;180;5;146;lake;false;lakes;4
+14450;180;5;196;lake;false;lakes;4
+14451;180;5;246;lake;false;lakes;4
+14452;180;5;47;lake;false;lakes;4
+14453;180;5;97;lake;false;lakes;4
+14454;180;5;147;lake;false;lakes;4
+14455;180;5;197;lake;false;lakes;4
+14456;180;5;247;lake;false;lakes;4
+14457;180;5;48;lake;false;lakes;4
+14458;180;5;98;lake;false;lakes;4
+14459;180;5;148;lake;false;lakes;4
+14460;180;5;198;lake;false;lakes;4
+14461;180;5;248;lake;false;lakes;4
+# Phillippines
+14462;180;5;49;lake;false;lakes;6
+14463;180;5;99;lake;false;lakes;6
+# Madagascar
+14464;180;5;149;lake;false;lakes;5
+14465;180;5;199;lake;false;lakes;5
+# Gambia
+14466;180;5;249;lake;false;lakes;5
+14467;180;6;0;lake;false;lakes;5
+# Senegal
+14468;180;6;50;lake;false;lakes;5
+14469;180;6;100;lake;false;lakes;5
+14470;180;6;150;lake;false;lakes;5
+14471;180;6;200;lake;false;lakes;5
+# Ivory Coast
+14472;180;6;1;lake;false;lakes;5
+14473;180;6;51;lake;false;lakes;5
+14474;180;6;101;lake;false;lakes;5
+14475;180;6;151;lake;false;lakes;5
+14476;180;6;201;lake;false;lakes;5
+# Ghana
+14477;180;6;2;lake;false;lakes;5
+14478;180;6;52;lake;false;lakes;5
+14479;180;6;102;lake;false;lakes;5
+# Nigeria
+14480;180;6;152;lake;false;lakes;5
+14481;180;6;202;lake;false;lakes;5
+14482;180;6;3;lake;false;lakes;5
+14483;180;6;53;lake;false;lakes;5
+# Mali
+14484;180;6;103;lake;false;lakes;5
+# Cameroon
+14485;180;6;153;lake;false;lakes;5
+# Gabon
+14486;180;6;203;lake;false;lakes;5
+14487;180;6;4;lake;false;lakes;5
+14488;180;6;54;lake;false;lakes;5
+14489;180;6;104;lake;false;lakes;5
+# Congo
+14490;180;6;154;lake;false;lakes;5
+14491;180;6;204;lake;false;lakes;5
+14492;180;6;5;lake;false;lakes;5
+14493;180;6;55;lake;false;lakes;5
+# Tanzania
+14494;180;6;105;land;true;plains;5
+14495;180;6;155;land;true;plains;5
+14496;180;6;205;land;true;plains;5
+# Cameroon
+14497;180;6;6;land;true;jungle;5
+14498;180;6;56;land;false;forest;5
+14499;180;6;106;land;false;plains;5
+14500;180;6;156;land;false;forest;5
+14501;180;6;206;land;false;forest;5
+14502;180;6;7;land;false;plains;5
+14503;180;6;57;land;true;jungle;5
+# Uganda
+14504;180;6;107;land;false;forest;5

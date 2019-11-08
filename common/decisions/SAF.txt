@@ -398,7 +398,7 @@ colonial_management_am = {
 						has_government = monarchism
 					}
 					original_tag = MAN
-				}			
+				}
 			}
 			NOT = { has_country_flag = release_as_imperial_associate }
 			NOT = { has_completed_focus = ENG_revisit_colonial_policy }
@@ -426,7 +426,6 @@ colonial_management_am = {
 
 		visible = {
 			NOT = { has_country_flag = release_as_faction_member }
-			is_in_faction = yes
 		}
 
 		cost = 0
@@ -930,12 +929,9 @@ SAF_anti_colonialist_crusade = {
 		icon = generic_independence
 	
 		visible = {
-			AND = {
-				ROOT = {
-					controls_state = 546
-				}
-				TZ0 = { exists = no }
-			}
+			controls_state = 546
+			controls_state = 933
+			TZ0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -980,12 +976,9 @@ SAF_anti_colonialist_crusade = {
 		icon = generic_independence
 	
 		visible = {
-			AND = {
-				ROOT = {
-					controls_state = 548
-				}
-				UG0 = { exists = no }
-			}
+			controls_state = 548
+			controls_state = 934
+			UG0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -1034,7 +1027,6 @@ SAF_anti_colonialist_crusade = {
 				ROOT = {
 					controls_state = 549
 					controls_state = 551
-					controls_state = 767
 				}
 				SU0 = { exists = no }
 			}
@@ -1084,7 +1076,6 @@ SAF_anti_colonialist_crusade = {
 		visible = {
 			AND = {
 				ROOT = {
-					controls_state = 552
 					controls_state = 456
 					controls_state = 457
 					controls_state = 447
@@ -1099,7 +1090,7 @@ SAF_anti_colonialist_crusade = {
 			OR = {
 				AND = {
 					original_tag = ENG
-					has_completed_focus = ENG_self_government_for_africa
+					has_completed_focus = ENG_self_government_for_the_middle_east
 				}
 				NOT = { original_tag = ENG }
 			}
@@ -1113,7 +1104,7 @@ SAF_anti_colonialist_crusade = {
 			modifier = {
 				factor = 0
 				NOT = { has_completed_focus = SAF_anti_colonialist_crusade }
-				NOT = { has_completed_focus = ENG_self_government_for_africa }
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
 			}
 		}
 		days_remove = 0
@@ -1141,6 +1132,7 @@ SAF_anti_colonialist_crusade = {
 			AND = {
 				ROOT = {
 					controls_state = 550
+					controls_state = 915
 				}
 				ER0 = { exists = no }
 			}
@@ -1288,11 +1280,23 @@ SAF_anti_colonialist_crusade = {
 		icon = generic_independence
 	
 		visible = {
-			AND = {
-				ROOT = {
+			OR = {
+				AND = {
+					SO5 = { exists = no }
 					controls_state = 559
 				}
-				SO5 = { exists = no }
+				AND = {
+					LL0 = { exists = no }
+					controls_state = 269
+				}
+				AND = {
+					tag = LL0
+					controls_state = 559
+				}
+				AND = {
+					tag = SO5
+					controls_state = 269
+				}
 			}
 		}
 		available = {
@@ -1328,55 +1332,6 @@ SAF_anti_colonialist_crusade = {
 			}
 			else = {
 				country_event = { id = release_nation_events.76 }
-			}
-		}
-		
-	}
-	liberate_somaliland = {
-
-		icon = generic_independence
-	
-		visible = {
-			AND = {
-				ROOT = {
-					controls_state = 269
-				}
-				SO5 = { exists = no }
-			}
-		}
-		available = {
-			OR = {
-				AND = {
-					original_tag = ENG
-					has_completed_focus = ENG_self_government_for_africa
-				}
-				NOT = { original_tag = ENG }
-			}
-		}
-
-		cost = 0
-		fire_only_once = no
-		
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				NOT = { has_completed_focus = SAF_anti_colonialist_crusade }
-				NOT = { has_completed_focus = ENG_self_government_for_africa }
-			}
-		}
-		days_remove = 0
-		remove_effect = {
-			if = {
-				limit = {
-					ROOT = {
-						has_completed_focus = SAF_anti_colonialist_crusade
-					}
-				}
-				country_event = { id = tfv_south_africa.76 }
-			}
-			else = {
-				country_event = { id = release_nation_events.112 }
 			}
 		}
 		
@@ -1740,7 +1695,6 @@ SAF_anti_colonialist_crusade = {
 			AND = {
 				ROOT = {
 					controls_state = 774
-					controls_state = 775
 				}
 				CD0 = { exists = no }
 			}
@@ -1841,7 +1795,6 @@ SAF_anti_colonialist_crusade = {
 			AND = {
 				ROOT = {
 					controls_state = 781
-					controls_state = 515
 				}
 				NG0 = { exists = no }
 			}
@@ -2142,7 +2095,6 @@ SAF_anti_colonialist_crusade = {
 			AND = {
 				ROOT = {
 					controls_state = 556
-					controls_state = 782
 				}
 				ML5 = { exists = no }
 			}
@@ -2493,7 +2445,6 @@ SAF_anti_colonialist_crusade = {
 			AND = {
 				ROOT = {
 					controls_state = 557
-					controls_state = 786
 				}
 				MR0 = { exists = no }
 			}
@@ -2596,7 +2547,6 @@ SAF_anti_colonialist_crusade = {
 					controls_state = 459
 					controls_state = 460
 					controls_state = 513
-					controls_state = 514
 				}
 				AL5 = { exists = no }
 			}
@@ -2646,10 +2596,13 @@ SAF_anti_colonialist_crusade = {
 		visible = {
 			AND = {
 				ROOT = {
-					controls_state = 290
-					controls_state = 461
-					controls_state = 462
-					controls_state = 783
+					OR = {
+						controls_state = 290
+						controls_state = 461
+						controls_state = 462
+						controls_state = 783
+						controls_state = 901
+					}
 				}
 				MO5 = { exists = no }
 			}
@@ -2757,7 +2710,6 @@ SAF_anti_colonialist_crusade = {
 					controls_state = 661
 					controls_state = 662
 					controls_state = 663
-					controls_state = 273
 				}
 				LB0 = { exists = no }
 			}
@@ -2893,13 +2845,23 @@ SAF_anti_colonialist_crusade = {
 		icon = generic_independence
 	
 		visible = {
-			AND = {
-				ROOT = {
+			OR = {
+				AND = {
+					controls_state = 332
+					LB5 = { exists = no }
+				}
+				AND = {
 					controls_state = 331
+					NF0 = { exists = no }
+				}
+				AND = {
+					tag = LB5
+					controls_state = 331
+				}
+				AND = {
+					tag = NF0
 					controls_state = 332
 				}
-				NF0 = { exists = no }
-				LB5 = { exists = no }
 			}
 		}
 		available = {
@@ -2928,88 +2890,12 @@ SAF_anti_colonialist_crusade = {
 		}
 		
 	}
-	liberate_labrador = {
-
-		icon = generic_independence
-	
-		visible = {
-			AND = {
-				ROOT = {
-					controls_state = 332
-				}
-				LB5 = { exists = no }
-			}
-		}
-		available = {
-			OR = {
-				AND = {
-					original_tag = ENG
-					has_completed_focus = ENG_self_government_for_the_americas
-				}
-				NOT = { original_tag = ENG }
-			}
-		}
-
-		cost = 0
-		fire_only_once = no
-		
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				NOT = { has_completed_focus = ENG_self_government_for_the_americas }
-			}
-		}
-		days_remove = 0
-		remove_effect = {
-			country_event = { id = release_nation_events.108 }
-		}
-		
-	}
-	liberate_newfoundland = {
-
-		icon = generic_independence
-	
-		visible = {
-			AND = {
-				ROOT = {
-					controls_state = 331
-					NOT = { controls_state = 332 }
-				}
-				NF0 = { exists = no }
-			}
-		}
-		available = {
-			OR = {
-				AND = {
-					original_tag = ENG
-					has_completed_focus = ENG_self_government_for_the_americas
-				}
-				NOT = { original_tag = ENG }
-			}
-		}
-
-		cost = 0
-		fire_only_once = no
-		
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				NOT = { has_completed_focus = ENG_self_government_for_the_americas }
-			}
-		}
-		days_remove = 0
-		remove_effect = {
-			country_event = { id = release_nation_events.109 }
-		}
-		
-	}
 	liberate_hamilton = {
 
 		icon = generic_independence
 	
 		visible = {
+			NOT = { original_tag = QUE }
 			controls_state = 855
 			OR = {
 				AND = {
@@ -3071,13 +2957,13 @@ SAF_anti_colonialist_crusade = {
 					controls_state = 883
 					controls_state = 633
 				}
-				CHU = { exists = no }
-				POH = { exists = no }
-				KOS = { exists = no }
-				MCR = { exists = no }
-				NMI = { exists = no }
-				PLU = { exists = no }
-				MSH = { exists = no }
+				CK5 = { exists = no }
+				PH5 = { exists = no }
+				KS0 = { exists = no }
+				MC5 = { exists = no }
+				NR0 = { exists = no }
+				PL5 = { exists = no }
+				MH0 = { exists = no }
 			}
 		}
 		available = {
@@ -3094,11 +2980,7 @@ SAF_anti_colonialist_crusade = {
 		fire_only_once = no
 		
 		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				always = yes
-			}
+			factor = 0
 		}
 		days_remove = 0
 		remove_effect = {
@@ -3118,10 +3000,10 @@ SAF_anti_colonialist_crusade = {
 					controls_state = 884
 					controls_state = 883
 				}
-				CHU = { exists = no }
-				POH = { exists = no }
-				KOS = { exists = no }
-				MCR = { exists = no }
+				CK5 = { exists = no }
+				PH5 = { exists = no }
+				KS0 = { exists = no }
+				MC5 = { exists = no }
 			}
 		}
 		available = {
@@ -3158,7 +3040,7 @@ SAF_anti_colonialist_crusade = {
 			ROOT = {
 				controls_state = 646
 			}
-			NMI = { exists = no }
+			NR0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3194,7 +3076,7 @@ SAF_anti_colonialist_crusade = {
 			ROOT = {
 				controls_state = 647
 			}
-			PLU = { exists = no }
+			PL5 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3229,7 +3111,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 684
-			MCR = { exists = no }
+			MC5 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3263,7 +3145,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 882
-			CHU = { exists = no }
+			CK5 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3298,7 +3180,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 884
-			POH = { exists = no }
+			PH5 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3333,7 +3215,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 883
-			KOS = { exists = no }
+			KS0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3368,7 +3250,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 633
-			MSH = { exists = no }
+			MH0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3402,7 +3284,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 725
-			NAU = { exists = no }
+			NA0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3436,7 +3318,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 639
-			KIR = { exists = no }
+			KI0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3470,7 +3352,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 636
-			FIJ = { exists = no }
+			FI5 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3504,7 +3386,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 829
-			NCL = { exists = no }
+			NC5 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3538,7 +3420,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 875
-			TON = { exists = no }
+			TN0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3572,7 +3454,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 872
-			NIU = { exists = no }
+			NU0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3606,7 +3488,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 877
-			WAF = { exists = no }
+			WA5 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3640,7 +3522,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 873
-			TOK = { exists = no }
+			TK0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3674,7 +3556,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 643
-			TUV = { exists = no }
+			TV0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3708,7 +3590,7 @@ SAF_anti_colonialist_crusade = {
 	
 		visible = {
 			controls_state = 806
-			BOU = { exists = no }
+			BV0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -3743,7 +3625,7 @@ SAF_anti_colonialist_crusade = {
 		visible = {
 			controls_state = 634
 			controls_state = 734
-			SOL = { exists = no }
+			SM0 = { exists = no }
 		}
 		available = {
 			OR = {
@@ -4185,6 +4067,11 @@ SAF_anti_colonialist_crusade = {
 			controls_state = 903
 			controls_state = 904
 			controls_state = 905
+			controls_state = 910
+			controls_state = 911
+			controls_state = 912
+			controls_state = 913
+			controls_state = 914
 		}
 		available = {
 			OR = {
@@ -4209,6 +4096,884 @@ SAF_anti_colonialist_crusade = {
 		days_remove = 0
 		remove_effect = {
 			country_event = { id = release_nation_events.143 }
+		}
+		
+	}
+	liberate_new_zealand = {
+
+		icon = generic_independence
+	
+		visible = {
+			NZ0 = { exists = no }
+			controls_state = 284
+			controls_state = 723
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_asia
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_asia }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.146 }
+		}
+		
+	}
+	liberate_cook_islands = {
+
+		icon = generic_independence
+	
+		visible = {
+			CK0 = { exists = no }
+			controls_state = 284
+			controls_state = 723
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_asia
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_asia }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.147 }
+		}
+		
+	}
+	liberate_tahiti = {
+
+		icon = generic_independence
+	
+		visible = {
+			TH0 = { exists = no }
+			controls_state = 641
+			controls_state = 879
+			controls_state = 881
+			controls_state = 880
+			controls_state = 878
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_asia
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_asia }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.148 }
+		}
+		
+	}
+	liberate_hawaii = {
+
+		icon = generic_independence
+	
+		visible = {
+			HA5 = { exists = no }
+			controls_state = 629
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_asia
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_asia }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.149 }
+		}
+		
+	}
+	liberate_oman = {
+
+		icon = generic_independence
+	
+		visible = {
+			OR = {
+				AND = {
+					controls_state = 294
+					controls_state = 922
+					OM0 = { exists = no }
+				}
+				AND = {
+					controls_state = 919
+					OM5 = { exists = no }
+				}
+				AND = {
+					tag = OM5
+					controls_state = 294
+					controls_state = 922
+				}
+				AND = {
+					tag = OM0
+					controls_state = 919
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.151 }
+		}
+		
+	}
+	liberate_yemen = {
+
+		icon = generic_independence
+	
+		visible = {
+			OR = {
+				AND = {
+					YE0 = { exists = no }
+					controls_state = 293
+				}
+				AND = {
+					SB5 = { exists = no }
+					controls_state = 918
+				}
+				AND = {
+					AD0 = { exists = no }
+					controls_state = 659
+				}
+				AND = {
+					tag = YE0
+					OR = {
+						controls_state = 659
+						controls_state = 918
+					}
+				}
+				AND = {
+					tag = SB5
+					OR = {
+						controls_state = 659
+						controls_state = 293
+					}
+				}
+				AND = {
+					tag = AD0
+					OR = {
+						controls_state = 918
+						controls_state = 293
+					}
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.152 }
+		}
+		
+	}
+	liberate_saudi_arabia = {
+
+		icon = generic_independence
+	
+		visible = {
+			SA5 = { exists = no }
+			controls_state = 292
+			controls_state = 679
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.153 }
+		}
+		
+	}
+	liberate_bahrain = {
+
+		icon = generic_independence
+	
+		visible = {
+			BH5 = { exists = no }
+			controls_state = 908
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.154 }
+		}
+		
+	}
+	liberate_qatar = {
+
+		icon = generic_independence
+	
+		visible = {
+			QA0 = { exists = no }
+			controls_state = 765
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.158 }
+		}
+		
+	}
+	liberate_uae = {
+
+		icon = generic_independence
+	
+		visible = {
+			UA0 = { exists = no }
+			controls_state = 658
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.159 }
+		}
+		
+	}
+	liberate_kuwait = {
+
+		icon = generic_independence
+	
+		visible = {
+			KU0 = { exists = no }
+			controls_state = 656
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.160 }
+		}
+		
+	}
+	liberate_iraq = {
+
+		icon = generic_independence
+	
+		visible = {
+			IR5 = { exists = no }
+			controls_state = 676
+			controls_state = 291
+			controls_state = 675
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.161 }
+		}
+		
+	}
+	liberate_syria = {
+
+		icon = generic_independence
+	
+		visible = {
+			SY0 = { exists = no }
+			controls_state = 680
+			controls_state = 677
+			controls_state = 554
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.162 }
+		}
+		
+	}
+	liberate_lebanon = {
+
+		icon = generic_independence
+	
+		visible = {
+			LE0 = { exists = no }
+			controls_state = 553
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.163 }
+		}
+		
+	}
+	liberate_jordan = {
+
+		icon = generic_independence
+	
+		visible = {
+			JO0 = { exists = no }
+			controls_state = 455
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.164 }
+		}
+		
+	}
+	liberate_trucial_coast = {
+
+		icon = generic_independence
+	
+		visible = {
+			UA0 = { exists = no }
+			QA0 = { exists = no }
+			BH5 = { exists = no }
+			controls_state = 658
+			controls_state = 765
+			controls_state = 908
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.166 }
+		}
+		
+	}
+	liberate_iran = {
+
+		icon = generic_independence
+	
+		visible = {
+			PE0 = { exists = no }
+			controls_state = 419
+			controls_state = 420
+			controls_state = 421
+			controls_state = 417
+			controls_state = 266
+			controls_state = 418
+			controls_state = 416
+			controls_state = 414
+			controls_state = 411
+			controls_state = 413
+			controls_state = 412
+			controls_state = 410
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.167 }
+		}
+		
+	}
+	liberate_turkey = {
+
+		icon = generic_independence
+	
+		visible = {
+			TU0 = { exists = no }
+			controls_state = 347
+			controls_state = 340
+			controls_state = 339
+			controls_state = 49
+			controls_state = 343
+			controls_state = 342
+			controls_state = 346
+			controls_state = 345
+			controls_state = 356
+			controls_state = 348
+			controls_state = 344
+			controls_state = 355
+			controls_state = 352
+			controls_state = 350
+			controls_state = 353
+			controls_state = 354
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_middle_east
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_middle_east }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.168 }
+		}
+		
+	}
+	liberate_cyprus = {
+
+		icon = generic_independence
+	
+		visible = {
+			CY0 = { exists = no }
+			controls_state = 183
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_mediterranean
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_mediterranean }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.169 }
+		}
+		
+	}
+	liberate_malta = {
+
+		icon = generic_independence
+	
+		visible = {
+			MT0 = { exists = no }
+			controls_state = 116
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_the_mediterranean
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_the_mediterranean }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.170 }
+		}
+		
+	}
+	liberate_western_cameroon = {
+
+		icon = generic_independence
+	
+		visible = {
+			AM0 = { exists = no }
+			controls_state = 929
+			controls_state = 930
+			controls_state = 931
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_africa
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_africa }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.171 }
+		}
+		
+	}
+	liberate_east_african_federation = {
+
+		icon = generic_independence
+	
+		visible = {
+			TZ0 = { exists = no }
+			UG0 = { exists = no }
+			KE0 = { exists = no }
+			controls_state = 546
+			controls_state = 547
+			controls_state = 548
+			controls_state = 934
+			controls_state = 933
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_africa
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_africa }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.173 }
+		}
+		
+	}
+	liberate_zanzibar = {
+
+		icon = generic_independence
+	
+		visible = {
+			ZA5 = { exists = no }
+			controls_state = 928
+		}
+		available = {
+			OR = {
+				AND = {
+					original_tag = ENG
+					has_completed_focus = ENG_self_government_for_africa
+				}
+				NOT = { original_tag = ENG }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = ENG_self_government_for_africa }
+			}
+		}
+		days_remove = 0
+		remove_effect = {
+			country_event = { id = release_nation_events.174 }
 		}
 		
 	}

@@ -14,7 +14,7 @@ opinion_modifiers = {
 		value = 50
 	}
 	ROOT_released_us = {
-		value = 25
+		value = 50
 	}
 	returned_namibia = {
 		value = 25
@@ -66,6 +66,24 @@ opinion_modifiers = {
 	}
 	gave_bougainville = {
 		value = 15
+	}
+	gave_british_somaliland = {
+		value = 15
+	}
+	didnt_give_oman = {
+		value = -15
+	}
+	gave_oman = {
+		value = 15
+	}
+	gave_northern_australia = {
+		value = 15
+	}
+	gave_eritrea_little = {
+		value = 10
+	}
+	gave_western_eritrea = {
+		value = 5
 	}
 
 }	

@@ -1,6 +1,6 @@
 ﻿##### Division Templates #####
 division_template = {
-	name = "Hish"					# Infantry Division
+	name = "Hish"					# Infantry division
 
 	division_names_group = ISR_INF_01
 
@@ -21,7 +21,7 @@ units = {
 			name_order = 990
 		}
 		location = 1065
-		division_template = "Infantry Division"
+		division_template = "Hish"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -30,7 +30,7 @@ units = {
 			name_order = 991
 		}
 		location = 1201
-		division_template = "Infantry Division"
+		division_template = "Hish"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -39,7 +39,7 @@ units = {
 			name_order = 992
 		}
 		location = 14394
-		division_template = "Infantry Division"
+		division_template = "Hish"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -48,7 +48,7 @@ units = {
 			name_order = 993
 		}
 		location = 4206
-		division_template = "Infantry Division"
+		division_template = "Hish"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -57,7 +57,7 @@ units = {
 			name_order = 994
 		}
 		location = 14391
-		division_template = "Infantry Division"
+		division_template = "Hish"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -66,7 +66,7 @@ units = {
 			name_order = 995
 		}
 		location = 14393
-		division_template = "Infantry Division"
+		division_template = "Hish"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -75,7 +75,7 @@ units = {
 			name_order = 996
 		}
 		location = 14394
-		division_template = "Infantry Division"
+		division_template = "Hish"
 		start_experience_factor = 1
 	}
 }

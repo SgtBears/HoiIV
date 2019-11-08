@@ -1,0 +1,26 @@
+
+state={
+	id=921
+	name="STATE_921"
+	manpower = 2616
+	
+	state_category = wasteland
+
+	history={
+		owner = OMA
+		buildings = {
+			infrastructure = 2
+			14414 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			14414 1
+		}
+		add_core_of = OMA
+	}
+
+	provinces={
+		14414
+	}
+}

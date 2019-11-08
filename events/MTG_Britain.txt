@@ -34,6 +34,7 @@ country_event = {
 		}
 		add_stability = 0.05
 		set_country_flag = ENG_edward_abdicating
+		set_global_flag = ENG_edward_abdicating_global
 		country_event = { id = mtg_britain.14 days = 5 random = 5 }
 	}
 
@@ -3580,6 +3581,8 @@ country_event = {
 				NOT = { original_tag = ERI }
 				owns_state = 550
 				has_full_control_of_state = 550
+				owns_state = 915
+				has_full_control_of_state = 915
 			}
 			release = ER0
 		}
@@ -8364,6 +8367,7 @@ country_event = {
 				popular_figurehead stammer humble
 			}
 		}
+		set_global_flag = edward_viii_died_in_bombing
 		hidden_effect = { news_event = { id = mtg_news.55 days = 1 } }
 	}
 }
@@ -8390,6 +8394,7 @@ country_event = {
 	option = {
 		name = mtg_britain.1000.a
 		kill_country_leader = yes
+		set_global_flag = george_vi_died
 		create_country_leader = {
 			name = "Elizabeth II"
 			desc = "POLITICS_ELIZABETH_II_DESC"

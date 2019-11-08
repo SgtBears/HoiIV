@@ -1,0 +1,25 @@
+state={
+	id=925
+	name="STATE_925"
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = SKK
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			4435 1 
+		}
+
+	}
+
+	provinces={
+		4435
+	}
+	manpower=125660
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

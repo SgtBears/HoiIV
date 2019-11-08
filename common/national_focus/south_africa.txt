@@ -521,8 +521,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = needs_approval 
 			EN0 = {
+				custom_effect_tooltip = needs_approval 
 				country_event = tfv_south_africa.1
 			}
 		}
@@ -1591,8 +1591,11 @@ focus_tree = {
 						owns_state = 552
 						owns_state = 767
 						owns_state = 551
+						owns_state = 917
+						owns_state = 916
 						owns_state = 549
 						owns_state = 550
+						owns_state = 915
 						owns_state = 271
 						owns_state = 268
 						owns_state = 269
@@ -2309,6 +2312,26 @@ focus_tree = {
 					}
 				}
 				NOT = {
+					917 = {
+						is_owned_by = SU0
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					916 = {
+						is_owned_by = SU0
+						is_owned_by = EG0
+						is_owned_by = ROOT
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
 					552 = {
 						is_owned_by = EG0
 						is_owned_by = ROOT
@@ -2670,6 +2693,16 @@ focus_tree = {
 			OR = {
 				NOT = {
 					550 = {
+						is_owned_by = ROOT
+						is_owned_by = ET0
+						is_owned_by = ER0
+						OWNER = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				NOT = {
+					915 = {
 						is_owned_by = ROOT
 						is_owned_by = ET0
 						is_owned_by = ER0
@@ -3279,8 +3312,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = needs_approval
 			SO0 = {
+				custom_effect_tooltip = needs_approval
 				country_event = { id = tfv_south_africa.40 } #tech sharing
 			}
 		}
@@ -3324,7 +3357,7 @@ focus_tree = {
 		completion_reward = {
 			FR0 = {
 				custom_effect_tooltip = needs_approval
-					country_event = { id = tfv_south_africa.30 hours = 12 }
+				country_event = { id = tfv_south_africa.30 hours = 12 }
 			}
 			hidden_effect = {
 				news_event = { id = news.265 }

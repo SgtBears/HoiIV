@@ -361,23 +361,23 @@ country_event = {
 		name = britain.11.a
 		add_war_support = 0.1
 		every_other_country = {
-				limit = {
-					NOT = { has_war_with = EN0 }
-					is_in_faction = no
-					has_government = democratic
-					is_puppet = no
-					OR = {
-						capital_scope = {
-								is_on_continent = europe
-						}
-						capital_scope = {
-								is_on_continent = asia
-						}
-						num_of_factories > 30
+			limit = {
+				NOT = { has_war_with = EN0 }
+				is_in_faction = no
+				has_government = democratic
+				is_puppet = no
+				OR = {
+					capital_scope = {
+							is_on_continent = europe
 					}
+					capital_scope = {
+							is_on_continent = asia
+					}
+					num_of_factories > 30
 				}
-				country_event = britain.12
 			}
+			country_event = britain.12
+		}
 	}
 	
 	option = {
@@ -609,7 +609,13 @@ country_event = {
 		original_tag = ENG
 		has_start_date < 1936.01.02
 		date > 1936.1.19
-		has_idea = george_v
+		OR = {
+			has_idea = george_v
+			has_country_leader = {
+				name = "George VI"
+				ruling_only = yes
+			}
+		}
 	}	
 
 	fire_only_once = yes
@@ -619,8 +625,28 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = ENG_king_died
+			set_global_flag = ENG_king_died_global
 			remove_ideas = george_v
 			add_ideas = ENG_king_edward
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "George VI"
+						ruling_only = yes
+					}
+				}
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Edward VIII"
+					desc = "POLITICS_EDWARD_EDWARD_DESC"
+					picture = "Portrait_Britain_Edward_VIII.dds"
+					expire = "1965.1.1"
+					ideology = royalism
+					traits = {
+						inexperienced_imperialist
+					}
+				}
+			}
 		}		
 	}
 	
@@ -982,4 +1008,112 @@ country_event = {
 			set_state_flag = shadow_scheme_2AF
 		}
     }
+}
+country_event = {
+    id = britain.23
+    title = britain.23.t
+    desc = britain.23.d
+    picture = GFX_report_event_royal_parade
+ 
+	hidden = yes
+    trigger = {
+        original_tag = ENG
+		has_country_leader = {
+			name = "George V"
+			ruling_only = yes
+		}
+		has_global_flag = ENG_king_died_global
+    }
+
+    mean_time_to_happen = {
+        days = 2
+    }
+
+    option = {
+        name = britain.23.a
+        kill_country_leader = yes
+		create_country_leader = {
+			name = "Edward VIII"
+			desc = "POLITICS_EDWARD_EDWARD_DESC"
+			picture = "Portrait_Britain_Edward_VIII.dds"
+			expire = "1965.1.1"
+			ideology = royalism
+			traits = {
+				inexperienced_imperialist
+			}
+		}
+	}
+}
+country_event = {
+    id = britain.24
+    title = britain.24.t
+    desc = britain.24.d
+    picture = GFX_report_event_royal_parade
+ 
+	hidden = yes
+    trigger = {
+        original_tag = ENG
+		has_country_leader = {
+			name = "Edward VIII"
+			ruling_only = yes
+		}
+		OR = {
+			has_global_flag = ENG_edward_abdicating_global
+			has_global_flag = edward_viii_died_in_bombing
+		}
+    }
+
+    mean_time_to_happen = {
+        days = 2
+    }
+
+    option = {
+        name = britain.24.a
+        kill_country_leader = yes
+		create_country_leader = {
+			name = "George VI"
+			desc = "POLITICS_GEORGE_VI_DESC"
+			picture = "gfx/leaders/PAL/Portrait_Britain_George_VI.dds"
+			expire = "1965.1.1"
+			ideology = royalism
+			traits = {
+				popular_figurehead stammer humble
+			}
+		}
+	}
+}
+country_event = {
+    id = britain.25
+    title = britain.25.t
+    desc = britain.25.d
+    picture = GFX_report_event_royal_parade
+ 
+	hidden = yes
+    trigger = {
+        original_tag = ENG
+		has_country_leader = {
+			name = "George VI"
+			ruling_only = yes
+		}
+		has_global_flag = george_vi_died
+    }
+
+    mean_time_to_happen = {
+        days = 2
+    }
+
+    option = {
+        name = britain.25.a
+        kill_country_leader = yes
+		create_country_leader = {
+			name = "Elizabeth II"
+			desc = "POLITICS_ELIZABETH_II_DESC"
+			picture = "GFX_portrait_eng_elizabeth_ii"
+			expire = "1965.1.1"
+			ideology = royalism
+			traits = {
+				inexperienced_monarch headstrong popular_queen
+			}
+		}
+	}
 }

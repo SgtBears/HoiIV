@@ -1,0 +1,30 @@
+
+state={
+	id=907
+	name="STATE_907"
+	manpower = 131861
+	
+	state_category = enclave
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			3917 = {
+				naval_base = 1
+
+			}
+		}
+		victory_points = {
+			3917 1
+		}
+		add_core_of = USA
+		add_core_of = CSA
+		add_core_of = VIR
+
+	}
+
+	provinces={
+		3917
+	}
+}

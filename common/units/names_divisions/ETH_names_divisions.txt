@@ -596,7 +596,9 @@ ETH_IMPERIAL_01 =
 
 	for_countries = { ETH }
 
-	can_use = { always = yes }
+	can_use = {
+		NOT = { has_government = communism }
+	}
 
 	division_types = { "infantry" }
 

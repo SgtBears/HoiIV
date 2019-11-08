@@ -1,0 +1,668 @@
+﻿
+add_namespace = pal_foreign_support
+
+##event for FROM, PAL wants donations
+country_event = {
+	id = pal_foreign_support.1
+	title = pal_foreign_support.1.t
+	desc = pal_foreign_support.1.desc
+	picture = GFX_report_event_german_politician_speech
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.1.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.3
+				OR = {
+					original_tag = LB0
+					original_tag = PE0
+					original_tag = OM0
+					original_tag = UA0
+					original_tag = KU0
+					original_tag = AL5
+					original_tag = TU5
+					original_tag = SO5
+					original_tag = TU0
+					original_tag = QA0
+					original_tag = BA5
+					original_tag = AF0
+					original_tag = DJ0
+					original_tag = MR0
+					has_government = democratic
+				}
+			}
+		}
+		add_political_power = 25
+		set_country_flag = PAL_foreign_support_donations_approved
+		FROM = {
+			country_event = pal_foreign_support.2
+		}
+		effect_tooltip = {
+			FROM = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+	}
+	option = { #refuse
+		name = pal_foreign_support.1.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				OR = {
+					original_tag = EG0
+					original_tag = SY0
+					original_tag = IR5
+					original_tag = LE0
+					original_tag = JO0
+				}
+				NOT = { has_government = democratic }
+			}
+		}
+		add_political_power = -25
+		FROM = {
+			country_event = pal_foreign_support.3
+		}
+	}
+}
+#event for PAL, donations approved
+country_event = {
+	id = pal_foreign_support.2
+	title = pal_foreign_support.2.t
+	desc = pal_foreign_support.2.desc
+	picture = GFX_report_event_hitler_handshake
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.2.a
+		ai_chance = {
+			factor = 70
+		}
+		add_offsite_building = { type = industrial_complex level = 1 }	
+		add_to_variable = { palestinian_donations = -1 } 
+	}
+}
+#event for PAL, donations refused
+country_event = {
+	id = pal_foreign_support.3
+	title = pal_foreign_support.3.t
+	desc = pal_foreign_support.3.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.3.a
+		ai_chance = {
+			factor = 70
+		}
+	}
+}
+
+##event for FROM, PAL wants to smuggle in weapons
+country_event = {
+	id = pal_foreign_support.4
+	title = pal_foreign_support.4.t
+	desc = pal_foreign_support.4.desc
+	picture = GFX_report_event_generic_lend_lease
+
+	is_triggered_only = yes
+	option = { #agree to send some rifles
+		name = pal_foreign_support.4.a
+		ai_chance = {
+			factor = 50
+			
+		}
+		trigger = {
+			OR = {
+				has_equipment = {
+					infantry_equipment_3 > 499
+				}
+				has_equipment = {
+					infantry_equipment_2 > 499
+				}
+				has_equipment = 4
+					infantry_equipment_1 > 499
+				}
+				has_equipment = 4
+					infantry_equipment_0 > 499
+				}
+			}
+		}
+		add_political_power = 25
+		FROM = {
+			country_event = pal_foreign_support.5
+		}
+		if = {
+			limit = {
+				has_tech = advanced_infantry_weapons
+			}
+			set_variable = {
+				var = infantry_variable
+				value = 4
+			}
+			send_equipment = {
+				equipment = infantry_equipment_3
+				amount = 500
+				target = FROM
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = improved_infantry_weapons
+			}
+			set_variable = {
+				var = infantry_variable
+				value = 3
+			}
+			send_equipment = {
+				equipment = infantry_equipment_2
+				amount = 500
+				target = FROM
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = infantry_weapons1
+			}
+			set_variable = {
+				var = infantry_variable
+				value = 2
+			}
+			send_equipment = {
+				equipment = infantry_equipment_1
+				amount = 500
+				target = FROM
+			}
+		}
+		else = {
+			limit = {
+				has_tech = infantry_weapons
+			}
+			set_variable = {
+				var = infantry_variable
+				value = 1
+			}
+			send_equipment = {
+				equipment = infantry_equipment_0
+				amount = 500
+				target = FROM
+			}
+		}
+	}
+	option = { #agree to send artillery
+		name = pal_foreign_support.4.b
+		ai_chance = {
+			factor = 20
+		}
+		trigger = {
+			has_tech = gw_artillery
+			OR = {
+				has_equipment = {
+					artillery_equipment_3 > 49
+				}
+				has_equipment = {
+					artillery_equipment_2 > 49
+				}
+				has_equipment = 4
+					artillery_equipment_1 > 49
+				}
+			}
+		}
+		add_political_power = 25
+		FROM = {
+			country_event = pal_foreign_support.7
+		}
+		if = {
+			limit = {
+				has_tech = artillery4
+			}
+			set_variable = {
+				var = infantry_variable
+				value = 5
+			}
+			send_equipment = {
+				equipment = artillery_equipment_3
+				amount = 50
+				target = FROM
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = artillery1
+			}
+			set_variable = {
+				var = infantry_variable
+				value = 6
+			}
+			send_equipment = {
+				equipment = artillery_equipment_2
+				amount = 50
+				target = FROM
+			}
+		}
+		else = {
+			limit = {
+				has_tech = gw_artillery
+			}
+			set_variable = {
+				var = infantry_variable
+				value = 7
+			}
+			send_equipment = {
+				equipment = artillery_equipment_1
+				amount = 50
+				target = FROM
+			}
+		}
+	}
+	option = { #refuse
+		name = pal_foreign_support.4.d
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -25
+		FROM = {
+			country_event = pal_foreign_support.6
+		}
+	}
+}
+#event for PAL, weapons approved
+country_event = {
+	id = pal_foreign_support.5
+	title = pal_foreign_support.5.t
+	desc = pal_foreign_support.5.desc
+	picture = GFX_report_event_generic_rifles
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.5.a
+		ai_chance = {
+			factor = 70
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = FROM.infantry_variable
+					value = 4
+					compare = equals
+				}
+			}
+			effect_tooltip = {
+				FROM = {
+					send_equipment = {
+						equipment = infantry_equipment_3
+						amount = 500
+						target = ROOT
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = FROM.infantry_variable
+					value = 3
+					compare = equals
+				}
+			}
+			effect_tooltip = {
+				FROM = {
+					send_equipment = {
+						equipment = infantry_equipment_2
+						amount = 500
+						target = ROOT
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = FROM.infantry_variable
+					value = 2
+					compare = equals
+				}
+			}
+			effect_tooltip = {
+				FROM = {
+					send_equipment = {
+						equipment = infantry_equipment_1
+						amount = 500
+						target = ROOT
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = FROM.infantry_variable
+					value = 1
+					compare = equals
+				}
+			}
+			effect_tooltip = {
+				FROM = {
+					send_equipment = {
+						equipment = infantry_equipment_0
+						amount = 500
+						target = ROOT
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = FROM.infantry_variable
+					value = 5
+					compare = equals
+				}
+			}
+			effect_tooltip = {
+				FROM = {
+					send_equipment = {
+						equipment = artillery_equipment_3
+						amount = 50
+						target = ROOT
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = FROM.infantry_variable
+					value = 6
+					compare = equals
+				}
+			}
+			effect_tooltip = {
+				FROM = {
+					send_equipment = {
+						equipment = artillery_equipment_2
+						amount = 50
+						target = ROOT
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = FROM.infantry_variable
+					value = 7
+					compare = equals
+				}
+			}
+			effect_tooltip = {
+				FROM = {
+					send_equipment = {
+						equipment = artillery_equipment_1
+						amount = 50
+						target = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+#event for PAL, weapons refused
+country_event = {
+	id = pal_foreign_support.6
+	title = pal_foreign_support.6.t
+	desc = pal_foreign_support.6.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.6.a
+		ai_chance = {
+			factor = 70
+		}
+	}
+}
+#event for PAL, artillery approved
+country_event = {
+	id = pal_foreign_support.7
+	title = pal_foreign_support.7.t
+	desc = pal_foreign_support.7.desc
+	picture = GFX_report_event_british_artillery
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.7.a
+		ai_chance = {
+			factor = 70
+		}
+		#add_to_variable = { var = smuggled_artillery value = 50 }
+	}
+}
+
+##event for FROM, PAL wants to build training camps
+country_event = {
+	id = pal_foreign_support.9
+	title = pal_foreign_support.9.t
+	desc = pal_foreign_support.9.desc
+	picture = GFX_report_event_aid_pact
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.9.a
+		ai_chance = {
+			factor = 70
+			
+		}
+		add_political_power = 25
+		set_country_flag = PAL_training_camps_approved
+		FROM = {
+			country_event = pal_foreign_support.10
+		}
+		effect_tooltip = {
+			FROM = {
+				army_experience = 10
+			}
+		}
+	}
+	option = { #refuse
+		name = pal_foreign_support.9.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -25
+		FROM = {
+			country_event = pal_foreign_support.11
+		}
+	}
+}
+#event for PAL, training camps approved
+country_event = {
+	id = pal_foreign_support.10
+	title = pal_foreign_support.10.t
+	desc = pal_foreign_support.10.desc
+	picture = GFX_report_event_chinese_army_training
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.10.a
+		ai_chance = {
+			factor = 70
+		}	
+		FROM = {
+			add_ai_strategy = {
+   				type = send_volunteers_desire
+   				id = PREV
+   				value = 200
+   			}
+   			add_ai_strategy = {
+   				type = support
+   				id = PREV
+   				value = 200
+   			}
+		}
+	}
+}
+#event for PAL, training camps refused
+country_event = {
+	id = pal_foreign_support.11
+	title = pal_foreign_support.11.t
+	desc = pal_foreign_support.11.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.11.a
+		ai_chance = {
+			factor = 70
+		}
+	}
+}
+##event for FROM, PAL wants to build training camps
+country_event = {
+	id = pal_foreign_support.12
+	title = pal_foreign_support.12.t
+	desc = pal_foreign_support.12.desc
+	picture = GFX_report_event_aid_pact
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.12.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { tag = EG0 }
+				NOT = { tag = SY0 }
+				NOT = { tag = JO0 }
+				NOT = { tag = LE0 }
+				NOT = { tag = IR5 }
+			}
+		}
+		add_political_power = 25
+		set_country_flag = PAL_gain_allies_flag
+		FROM = {
+			country_event = pal_foreign_support.13
+		}
+	}
+	option = { #refuse
+		name = pal_foreign_support.12.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					tag = EG0
+					tag = SY0
+					tag = JO0
+					tag = LE0
+					tag = IR5
+				}
+			}
+		}
+		add_political_power = -25
+		FROM = {
+			country_event = pal_foreign_support.14
+		}
+	}
+}
+#event for PAL, training camps approved
+country_event = {
+	id = pal_foreign_support.13
+	title = pal_foreign_support.13.t
+	desc = pal_foreign_support.13.desc
+	picture = GFX_report_event_chinese_army_training
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.13.a
+		ai_chance = {
+			factor = 70
+		}	
+	}
+}
+#event for PAL, training camps refused
+country_event = {
+	id = pal_foreign_support.14
+	title = pal_foreign_support.14.t
+	desc = pal_foreign_support.14.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.14.a
+		ai_chance = {
+			factor = 70
+		}
+	}
+}
+# war end
+country_event = {
+	id = pal_foreign_support.15
+	title = pal_foreign_support.15.t
+	desc = pal_foreign_support.15.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	option = { #agree
+		name = pal_foreign_support.14.a
+		delete_unit_template_and_units = {
+			division_template = "Arab Liberation Army"
+		}
+		add_offsite_building = { type = industrial_complex level = palestinian_donations }	
+		clear_variable = palestinian_donations
+	}
+}
+country_event = {
+	id = pal_foreign_support.16
+	title = pal_foreign_support.16.t
+	desc = pal_foreign_support.16.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	option = { #agree
+		name = pal_foreign_support.14.a
+		declare_war_on = {
+			target = IS0
+			type = annex_everything
+		}
+		every_other_country = {
+			limit = {
+				has_country_flag = PAL_gain_allies_flag
+			}
+			declare_war_on = {
+				target = IS0
+				type = annex_everything
+			}
+		}
+		division_template = {
+			name = "Arab Liberation Army"
+			priority = 0
+			division_names_group = EGY_INF_01
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+			}
+		}
+		every_other_country = {
+			limit = {
+				has_country_flag = PAL_training_camps_approved
+			}
+			ROOT = {
+				army_experience = 10
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Arab Liberation Army\" division_template = \"Arab Liberation Army\" start_experience_factor = 0.3" 
+						owner = ROOT
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			news_event = { id = am.news.140 days = 1 }
+		}
+	}
+}

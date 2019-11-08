@@ -1,0 +1,27 @@
+
+state={
+	id=929
+	name="STATE_929" # Cameroon
+	manpower = 442623
+	
+	state_category = pastoral
+
+	history={
+		owner = ENG
+		add_core_of = AMB
+		victory_points = {
+			14497 2
+		}
+		buildings = {
+			infrastructure = 3
+			14497 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+		14497 14500
+	}
+}

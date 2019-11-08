@@ -1984,6 +1984,8 @@ news_event = {
 						AND = {
 							owns_state = 550
 							has_full_control_of_state = 550
+							owns_state = 915
+							has_full_control_of_state = 915
 						}
 						AND = {
 							owns_state = 559
@@ -2404,6 +2406,8 @@ news_event = {
 							AND = {
 								owns_state = 550
 								has_full_control_of_state = 550
+								owns_state = 915
+								has_full_control_of_state = 915
 							}
 							AND = {
 								owns_state = 559

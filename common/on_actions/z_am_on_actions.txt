@@ -284,6 +284,22 @@ on_actions = {
 			set_variable = { global.WAU_tag = WAU.id }
 			set_variable = { global.SOA_tag = SOA.id }
 			set_variable = { global.CBR_tag = CBR.id }
+			set_variable = { global.SAR_tag = SAR.id }
+			set_variable = { global.ADE_tag = ADE.id }
+			set_variable = { global.SML_tag = SML.id }
+			set_variable = { global.BHR_tag = BHR.id }
+			set_variable = { global.OMN_tag = OMN.id }
+			set_variable = { global.JAK_tag = JAK.id }
+			set_variable = { global.TRP_tag = TRP.id }
+			set_variable = { global.MAP_tag = MAP.id }
+			set_variable = { global.HYD_tag = HYD.id }
+			set_variable = { global.JUN_tag = JUN.id }
+			set_variable = { global.KAL_tag = KAL.id }
+			set_variable = { global.SKK_tag = SKK.id }
+			set_variable = { global.AMB_tag = AMB.id }
+			set_variable = { global.ZAN_tag = ZAN.id }
+			set_variable = { global.AND_tag = AND.id }
+			set_variable = { global.BUG_tag = BUG.id }
 			every_country = {
 				country_event = { id = am.variables.1 }
 			}
@@ -574,6 +590,22 @@ on_actions = {
 			set_variable = { global.WAU_tag = WAU.id }
 			set_variable = { global.SOA_tag = SOA.id }
 			set_variable = { global.CBR_tag = CBR.id }
+			set_variable = { global.SAR_tag = SAR.id }
+			set_variable = { global.ADE_tag = ADE.id }
+			set_variable = { global.SML_tag = SML.id }
+			set_variable = { global.BHR_tag = BHR.id }
+			set_variable = { global.OMN_tag = OMN.id }
+			set_variable = { global.JAK_tag = JAK.id }
+			set_variable = { global.TRP_tag = TRP.id }
+			set_variable = { global.MAP_tag = MAP.id }
+			set_variable = { global.HYD_tag = HYD.id }
+			set_variable = { global.JUN_tag = JUN.id }
+			set_variable = { global.KAL_tag = KAL.id }
+			set_variable = { global.SKK_tag = SKK.id }
+			set_variable = { global.AMB_tag = AMB.id }
+			set_variable = { global.ZAN_tag = ZAN.id }
+			set_variable = { global.AND_tag = AND.id }
+			set_variable = { global.BUG_tag = BUG.id }
 			hidden_effect = {
 				every_country = {
 					country_event = { id = am.variables.1 }
@@ -787,6 +819,23 @@ on_actions = {
 			hidden_effect = {
 				every_country = {
 					country_event = { id = am.variables.1 }
+				}
+			}
+		}
+	}
+	on_peaceconference_ended = {
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						ROOT = {
+							tag = PL0
+						}
+						FROM = {
+							tag = IS0
+						}
+					}
+					country_event = { id = pal_foreign_support.15 hours = 48 }
 				}
 			}
 		}

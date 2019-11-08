@@ -1,0 +1,18 @@
+state={
+	id=916
+	name="STATE_916"
+	manpower = 1111
+	
+	state_category = enclave
+	history = {
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+		}
+
+		add_core_of = SUD
+	}
+	provinces={
+		1977
+	}
+}

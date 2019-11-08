@@ -12,8 +12,9 @@ defined_text = {
 	name = GetFactionWithRelease
 	text = {
 		trigger = {
-			is_in_faction_with = FROM
-			is_subject = no
+			FROM = {
+				has_country_flag = release_as_faction_member
+			}
 		}
 		localization_key = LOCAL_TXT_FACTION_FROM
 	}
@@ -76,6 +77,18 @@ defined_text = {
 	}
 	text = {
 		localization_key = LOCAL_TXT_INDEPENDENT_MASTER
+	}
+}
+defined_text = {
+	name = GetIndependenceFreeorMilitary
+	text = {
+		trigger = {
+			FROM = { NOT = { has_country_flag = release_as_free } }
+		}
+		localization_key = LOCAL_TXT_MILITARY_HELP
+	}
+	text = {
+		localization_key = LOCAL_TXT_NO_MILITARY_HELP
 	}
 }
 defined_text = {
@@ -222,6 +235,47 @@ defined_text = {
 	}
 	text = {
 		localization_key = RULING_IDEOLOGY_CAP_AM_MON
+	}
+}
+defined_text = {
+	name = GetFromLocalorPartyrelease
+	text = {
+		trigger = {
+			has_government = neutrality
+			has_country_flag = release_not_local_rulers
+		}
+		localization_key = RULING_IDEOLOGY_CAP_AM_NEU
+	}
+	text = {
+		trigger = {
+			has_government = democratic
+			has_country_flag = release_not_local_rulers
+		}
+		localization_key = RULING_IDEOLOGY_CAP_AM_DEM
+	}
+	text = {
+		trigger = {
+			has_government = communism
+			has_country_flag = release_not_local_rulers
+		}
+		localization_key = RULING_IDEOLOGY_CAP_AM_COM
+	}
+	text = {
+		trigger = {
+			has_government = fascism
+			has_country_flag = release_not_local_rulers
+		}
+		localization_key = RULING_IDEOLOGY_CAP_AM_FAS
+	}
+	text = {
+		trigger = {
+			has_government = monarchism
+			has_country_flag = release_not_local_rulers
+		}
+		localization_key = RULING_IDEOLOGY_CAP_AM_MON
+	}
+	text = {
+		localization_key = RULING_IDEOLOGY_CAP_AM_LOCAL
 	}
 }
 

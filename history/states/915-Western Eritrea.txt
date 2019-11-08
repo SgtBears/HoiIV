@@ -1,0 +1,20 @@
+state=
+{
+	id=915
+	name="STATE_915"
+	manpower = 242116
+	
+	state_category = pastoral
+	
+	history=
+	{
+		owner = ITA
+		add_core_of = ERI
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces={
+		5017 12723 5047 5091
+	}
+}

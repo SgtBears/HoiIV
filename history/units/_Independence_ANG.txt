@@ -1,0 +1,38 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"					# Infantry Division
+
+	division_names_group = BRA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+
+units = {
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+		}
+		location = 8248
+		division_template = "Infantry Division"
+		start_experience_factor = 0
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+		}
+		location = 8248
+		division_template = "Infantry Division"
+		start_experience_factor = 0
+	}
+}

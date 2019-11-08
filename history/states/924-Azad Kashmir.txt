@@ -1,0 +1,24 @@
+
+state={
+	id=924
+	name="STATE_924"
+	manpower = 502994
+	
+	state_category = pastoral
+
+	history={
+		victory_points = {
+			14433 1
+		}
+		owner = RAJ
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = JAK
+		add_core_of = PAK
+	}
+
+	provinces={
+		14433 14432 14434
+	}
+}

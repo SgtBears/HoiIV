@@ -2,24 +2,24 @@
 state={
 	id=765
 	name="STATE_765"
-	manpower = 51600
+	manpower = 25000
 	state_category = pastoral
 
 	history={
 		add_core_of = QAT
 		owner = ENG
 		victory_points = {
-			8051 1
+			14405 1
 		}
 		buildings = {
 			infrastructure = 2
-			8051 = {
+			14405 = {
 				naval_base = 2
 			}
 		}
 	}
 
 	provinces={
-		8051
+		8051 14405
 	}
 }

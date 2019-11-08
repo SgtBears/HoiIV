@@ -1,0 +1,21 @@
+
+state={
+	id=912
+	name="STATE_912" #Palestine
+	manpower = 933142
+	
+	state_category = enclave
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+	}
+
+	provinces={
+		11970
+	}
+}

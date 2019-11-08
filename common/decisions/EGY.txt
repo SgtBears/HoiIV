@@ -1,0 +1,33 @@
+political_actions = {
+
+	EGY_claim_halaib = {
+
+		allowed = {
+			original_tag = EGY
+		}
+
+		available = {
+			has_full_control_of_state = 916
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			NOT = {
+				916 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			add_state_core = 916
+			remove_state_core = 917
+			SU0 = {
+				add_state_core = 917
+			}
+		}
+	}
+
+}

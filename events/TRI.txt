@@ -1,0 +1,28 @@
+﻿
+add_namespace = trinidad
+
+country_event = {
+	id = trinidad.1
+	
+	trigger = {
+		tag = TR0
+		country_exists = JA5
+		country_exists = BS0
+		has_cosmetic_tag = TRI_caribbean_federation
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		every_state = {
+			limit = {
+				is_core_of = TR0
+				NOT = { state = 691 }
+			}
+			remove_core_of = TR0
+		}
+	}
+}

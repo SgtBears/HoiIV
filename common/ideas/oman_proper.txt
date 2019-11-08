@@ -1,0 +1,266 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		OMN_pot = {
+
+			picture = generic_political_advisor_african_2
+
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		OMN_coi = {
+
+			picture = generic_political_advisor_african_1
+				
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		OMN_stc = {
+
+			picture = generic_political_advisor_african_3
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		OMN_aco2 = {
+
+			picture = generic_army_african_4
+			
+			allowed = {
+				original_tag = OMN
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		OMN_acd2 = {
+
+			picture = generic_army_african_1
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		OMN_acr = {
+
+			picture = generic_air_african_3
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		OMN_acgs = {
+
+			picture = generic_air_african_3
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		OMN_nccr = {
+
+			picture = generic_navy_african_2
+			
+			allowed = {
+				original_tag = OMN
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		OMN_ncm = {
+
+			picture = generic_navy_african_3
+			
+			allowed = {
+				original_tag = OMN
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		OMN_ar = {
+			
+			picture = generic_army_african_5
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		OMN_ai2 = {
+
+			picture = generic_army_african_3
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		OMN_aa2 = {
+
+			picture = generic_army_african_2
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		OMN_acas = {
+
+			picture = generic_air_african_2
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		OMN_ncs = {
+
+			picture = generic_navy_african_2
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		OMN_mt = {
+			
+			picture = generic_army_african_6
+
+			allowed = {
+				original_tag = OMN
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		OMN_nt = {
+
+			picture = generic_navy_african_3
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		OMN_awt = {
+
+			picture = generic_air_african_2
+			
+			allowed = {
+				original_tag = OMN
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

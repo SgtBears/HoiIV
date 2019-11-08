@@ -990,22 +990,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			US0 = { 
+			every_other_country = { 
 				if = {
-					limit = { NOT = { has_government = fascism } }
+					limit = {
+						NOT = { has_government = neutrality }
+						NOT = { has_government = fascism }
+						is_major = yes
+						NOT = { has_war_with = ROOT }
+					}
 					add_opinion_modifier = { target = ROOT modifier = anti_fascist_diplomacy_focus }
-				}
-			}
-			EN0 = { 
-				if = {
-					limit = { NOT = { has_government = fascism } }
-					add_opinion_modifier = { target = ROOT modifier = anti_fascist_diplomacy_focus } 
-				}
-			}
-			FR0 = { 
-				if = {
-					limit = { NOT = { has_government = fascism } }
-					add_opinion_modifier = { target = ROOT modifier = anti_fascist_diplomacy_focus } 
 				}
 			}
 			every_other_country = {
@@ -1014,23 +1007,6 @@ focus_tree = {
 			}
 		}
 	}
-
-#	focus = {
-#		id = SOV_xian_incident
-#		icon = GFX_goal_generic_political_pressure
-#		prerequisite = { focus = SOV_anti_fascist_diplomacy }
-#		x = -1
-#		y = -1
-#		relative_position_id = SOV_anti_fascist_diplomacy
-#		cost = 70
-#		ai_will_do = {
-#			factor = 1
-#		}	
-#		completion_reward = {
-#			CH0 = { country_event = { id = soviet.18 days = 1 } }
-#			custom_effect_tooltip = SOV_xian_incident_tt
-#		}
-#	}
 
 	focus = {
 		id = SOV_far_east_fortification
@@ -2026,27 +2002,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			every_other_country = { 
+				if = {
+					limit = {
+						NOT = { has_government = democratic }
+						NOT = { has_government = neutrality }
+						is_major = yes
+						NOT = { has_war_with = ROOT }
+					}
+					add_opinion_modifier = { target = ROOT modifier = anti_capitalist_diplomacy_focus }
+				}
+			}
 			every_other_country = {
-				limit = { has_government = fascism }
-				add_opinion_modifier = { target = ROOT modifier = anti_capitalist_diplomacy_focus }
-			}
-			US0 = { 
-				if = {
-					limit = { NOT = { has_government = communism } }
-					add_opinion_modifier = { target = ROOT modifier = anti_capitalist_diplomacy_capitalists } 
+				limit = {
+					has_government = democratic
 				}
-			}
-			EN0 = {
-				if = { 
-					limit = { NOT = { has_government = communism } }
-					add_opinion_modifier = { target = ROOT modifier = anti_capitalist_diplomacy_capitalists } 
-				}
-			}
-			FR0 = { 
-				if = {
-					limit = { NOT = { has_government = communism } }
-					add_opinion_modifier = { target = ROOT modifier = anti_capitalist_diplomacy_capitalists } 
-				}
+				add_opinion_modifier = { target = ROOT modifier = anti_capitalist_diplomacy_capitalists }
 			}
 		}
 	}

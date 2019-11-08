@@ -314,7 +314,7 @@ NZ2 = { # NZL # Free New Zealand
 PA0 = { # PAN # Panama
 	variable = var:global.PAN_tag
 }
-PE0 = { # PER # Persia
+PE0 = { # PER # Persia # Iran
 	variable = var:global.PER_tag
 }
 PH0 = { # PHI # Philippines
@@ -386,7 +386,7 @@ HA0 = { # HAI # Haiti
 YE0 = { # YEM # Yemen
 	variable = var:global.YEM_tag
 }
-OM0 = { # OMA # Oman
+OM0 = { # OMA # Muscat and Oman
 	variable = var:global.OMA_tag
 }
 SL0 = { # SLO # Slovakia
@@ -422,7 +422,7 @@ IC0 = { # ICE # Iceland
 LE0 = { # LEB # Lebanon
 	variable = var:global.LEB_tag
 }
-JO0 = { # JOR # Jordan
+JO0 = { # JOR # Jordan # Transjordan # Trans-Jordan
 	variable = var:global.JOR_tag
 }
 SY0 = { # SYR # Syria
@@ -965,7 +965,7 @@ WI0 = { # WIS # Wisconsin
 WY0 = { # WYO # Wyoming
 	variable = var:global.WYO_tag
 }
-WD0 = { # WDC # District of Columbia # Washington D.C.
+WD0 = { # WDC # District of Columbia # Washington D.C. # New Columbia
 	variable = var:global.WDC_tag
 }
 SP5 = { # SUP # Superior
@@ -1094,4 +1094,53 @@ SS5 = { # SOA # South Australia
 }
 CB0 = { # CBR # Canberra
 	variable = var:global.CBR_tag
+}
+SB5 = { # SAR # Protectorate of South Arabia # Eastern Yemen # Eastern Aden
+	variable = var:global.SAR_tag
+}
+AD0 = { # ADE # Federation of South Arabia # South Yemen # Aden
+	variable = var:global.ADE_tag
+}
+BH5 = { # BHR # Bahrain
+	variable = var:global.BHR_tag
+}
+LL0 = { # SML # Somaliland
+	variable = var:global.SML_tag
+}
+OM5 = { # OMN # Oman Proper # Imamate of Oman
+	variable = var:global.OMN_tag
+}
+
+JK0 = { # JAK # Jammu and Kashmir
+	variable = var:global.JAK_tag
+}
+TR5 = { # TRP # Tripura
+	variable = var:global.TRP_tag
+}
+MP0 = { # MAP # Manipur
+	variable = var:global.MAP_tag
+}
+HY0 = { # HYD # Hyderabad
+	variable = var:global.HYD_tag
+}
+JU0 = { # JUN # Junagadh
+	variable = var:global.SML_tag
+}
+KL0 = { # KAL # Kalat
+	variable = var:global.KAL_tag
+}
+SK0 = { # SKK # Sikkim
+	variable = var:global.SKK_tag
+}
+AM0 = { # AMB # Ambazonia
+	variable = var:global.AMB_tag
+}
+ZA5 = { # ZAN # Zanzibar
+	variable = var:global.ZAN_tag
+}
+AN5 = { # AND # Andaman and Nicobar
+	variable = var:global.AND_tag
+}
+BU5 = { # BUG # Buganda
+	variable = var:global.BUG_tag
 }

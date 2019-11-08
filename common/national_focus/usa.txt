@@ -2398,7 +2398,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = extensive_conscription
 		}
 		completion_reward = {
 			random_owned_controlled_state = {

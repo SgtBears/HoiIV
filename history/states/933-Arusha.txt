@@ -1,0 +1,25 @@
+state={
+	id=933
+	name="STATE_933"
+	
+	state_category = pastoral
+	history={
+		owner = ENG
+		victory_points = {
+			2206 2
+		}
+		victory_points = {
+			10932 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = TZN
+	}
+
+	provinces={
+		4171 8144 2176 10988 5180 10932 12911 5224 2206 11017 2308 2281
+	}
+	manpower=3726870
+	buildings_max_level_factor=1.000
+}

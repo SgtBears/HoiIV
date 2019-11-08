@@ -109,7 +109,7 @@ add_ideas = {
 	george_v
 }
 	
-give_guarantee = NHB
+give_guarantee = BHU
 
 set_convoys = 800
 
@@ -124,6 +124,10 @@ if = {
 	set_autonomy = {
 		target = MAL
 		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = OMA
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
 		target = RAJ
@@ -153,6 +157,7 @@ if = {
 	else = {
 		puppet = MAL
 		puppet = RAJ
+		puppet = OMA
 	}
 }
 
@@ -346,19 +351,20 @@ add_to_faction = SAF
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
 add_to_faction = MAL
+add_to_faction = NEP
+add_to_faction = OMA
 
 #give_guarantee = CZE
 
 # Order matters - here Chamberlain becomes starting leader
 
 create_country_leader = {
-	name = "Edward VIII"
+	name = "George V"
 	desc = "POLITICS_EDWARD_EDWARD_DESC"
 	picture = "Portrait_Britain_Edward_VIII.dds"
 	expire = "1965.1.1"
 	ideology = royalism
 	traits = {
-		inexperienced_imperialist
 	}
 }
 create_country_leader = {

@@ -1,0 +1,43 @@
+﻿
+add_namespace = oman
+
+country_event = {
+	id = oman.1
+	
+	trigger = {
+		tag = OM0
+		OR = {
+			country_exists = OM5
+			NOT = { owns_state = 919 }
+		}
+		NOT = { has_cosmetic_tag = OMA_muscat }
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		set_cosmetic_tag = OMA_muscat
+	}
+}
+
+country_event = {
+	id = oman.2
+	
+	trigger = {
+		tag = OM0
+		owns_state = 294
+		owns_state = 922
+		owns_state = 919
+		has_cosmetic_tag = OMA_muscat
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+	}
+}

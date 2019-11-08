@@ -1,0 +1,27 @@
+﻿
+add_namespace = georgia
+
+country_event = {
+	id = georgia.1
+	
+	trigger = {
+		tag = GE5
+		country_exists = AZ0
+		country_exists = AR5
+		has_cosmetic_tag = GEO_transcaucasia
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		230 = {
+			remove_core_of = GE5
+		}
+		229 = {
+			remove_core_of = GE5
+		}
+	}
+}

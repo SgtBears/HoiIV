@@ -1,0 +1,18 @@
+################
+##### Accurate Map ######
+################
+
+greenland = {
+	allowed = {
+		original_tag = SGR
+	}
+}
+greenland2 = {
+	allowed = {
+	}
+}
+PAL_foreign_support = {
+	allowed = {
+		original_tag = PAL
+	}
+}

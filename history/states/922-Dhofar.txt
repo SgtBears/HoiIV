@@ -1,0 +1,27 @@
+
+state={
+	id=922
+	name="STATE_922"
+	manpower = 38809
+	
+	state_category = pastoral
+
+	history={
+		owner = OMA
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			2103 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			2103 1
+		}
+		add_core_of = OMA
+	}
+
+	provinces={
+		14416 8002 2103
+	}
+}

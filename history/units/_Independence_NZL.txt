@@ -1,0 +1,43 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "District Force"					# Infantry division
+
+	division_names_group = NZL_MIL_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+
+units = {
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+		}
+		location = 4543
+		division_template = "District Force"
+		start_experience_factor = 0
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+		}
+		location = 1814
+		division_template = "District Force"
+		start_experience_factor = 0
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+		}
+		location = 2197
+		division_template = "District Force"
+		start_experience_factor = 0
+	}
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=932
+	name="STATE_932" # Cameroon
+	manpower = 29246
+	
+	state_category = enclave
+
+	history={
+		owner = ENG
+		add_core_of = AMB
+		buildings = {
+			infrastructure = 3
+			14503 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+		14503
+	}
+}

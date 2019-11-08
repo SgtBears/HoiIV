@@ -1,0 +1,24 @@
+
+state={
+	id=931
+	name="STATE_931" # Cameroon
+	manpower = 38027
+	
+	state_category = wasteland
+
+	history={
+		owner = ENG
+		add_core_of = AMB
+		victory_points = {
+			14502 1
+		}
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+		14499 14502
+	}
+}

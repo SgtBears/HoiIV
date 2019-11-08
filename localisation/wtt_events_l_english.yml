@@ -1084,6 +1084,7 @@
  attache_communism_tt:0 "Due to the amount of §YCommunism§! support in our country this will have the following effect:\n"
  attache_democratic_tt:0 "Due to the amount of §YDemocratic§! support in our country this will have the following effect:\n"
  attache_neutrality_tt:0 "Due to the amount of §YUnaligned§! support in our country this will have the following effect:\n"
+ attache_monarchist_tt:0 "Due to the amount of §YMonarchist§! support in our country this will have the following effect:\n"
  generic.15.t:0 "[From.GetName] Recalls Attaché"
  generic.15.d:0 "In response to our demands, [From.GetNameDef] has withdrawn their military mission to our enemies."
  generic.16.t:0 "[From.GetName] Maintains Attaché"

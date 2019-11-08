@@ -1,0 +1,110 @@
+ideas = {
+
+	country = {
+		ENG_guided_by_britain_colony_1 = {
+
+			name = ENG_guided_by_britain
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_advisor_cost_factor = -0.33
+				trade_laws_cost_factor = -0.33
+				mobilization_laws_cost_factor = -0.33
+				economy_cost_factor = -0.33
+				high_command_cost_factor = -0.50
+				air_chief_cost_factor = -0.50
+				army_chief_cost_factor = -0.50
+				navy_chief_cost_factor = -0.50
+				training_time_factor = -0.1
+			}
+
+			picture = eng_guided_by_britain
+			
+			removal_cost = -1	
+
+		}
+		ENG_guided_by_britain_colony_2 = {
+
+			name = ENG_guided_by_britain
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_advisor_cost_factor = -0.33
+				trade_laws_cost_factor = -0.33
+				mobilization_laws_cost_factor = -0.33
+				economy_cost_factor = -0.33
+			}
+
+			picture = eng_guided_by_britain
+			
+			removal_cost = -1	
+
+		}
+		guided_colony_2 = {
+		
+			name = guided_colony_mil
+			
+			picture = generic_infantry_bonus
+			
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				high_command_cost_factor = -0.50
+				air_chief_cost_factor = -0.50
+				army_chief_cost_factor = -0.50
+				navy_chief_cost_factor = -0.50
+				training_time_factor = -0.1
+			}
+	
+
+		}
+		guided_colony_1 = {
+		
+			name = guided_colony_loc
+			
+			picture = generic_flexible_foreign_policy
+			
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_advisor_cost_factor = -0.33
+				trade_laws_cost_factor = -0.33
+				mobilization_laws_cost_factor = -0.33
+				economy_cost_factor = -0.33
+			}
+	
+
+		}
+	}
+}

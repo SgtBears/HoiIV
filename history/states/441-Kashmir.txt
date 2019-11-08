@@ -11,7 +11,14 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			10905 1 
+		}
+		victory_points = {
+			12754 2 
+		}
 		add_core_of = RAJ
+		add_core_of = JAK
 		add_claim_by = PAK
 	}
 
@@ -19,3 +26,4 @@ state={
 		5042 7273 7316 8005 10905 12754 12884 
 	}
 }
+5.696568679245283‬

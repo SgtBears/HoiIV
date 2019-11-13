@@ -1009,10 +1009,11 @@ country_event = {
 		}
     }
 }
+add_namespace = britain_am
 country_event = {
-    id = britain.23
-    title = britain.23.t
-    desc = britain.23.d
+    id = britain_am.23
+    title = britain_am.23.t
+    desc = britain_am.23.d
     picture = GFX_report_event_royal_parade
  
 	hidden = yes
@@ -1030,7 +1031,7 @@ country_event = {
     }
 
     option = {
-        name = britain.23.a
+        name = britain_am.23.a
         kill_country_leader = yes
 		create_country_leader = {
 			name = "Edward VIII"
@@ -1045,9 +1046,9 @@ country_event = {
 	}
 }
 country_event = {
-    id = britain.24
-    title = britain.24.t
-    desc = britain.24.d
+    id = britain_am.24
+    title = britain_am.24.t
+    desc = britain_am.24.d
     picture = GFX_report_event_royal_parade
  
 	hidden = yes
@@ -1068,7 +1069,7 @@ country_event = {
     }
 
     option = {
-        name = britain.24.a
+        name = britain_am.24.a
         kill_country_leader = yes
 		create_country_leader = {
 			name = "George VI"
@@ -1083,9 +1084,9 @@ country_event = {
 	}
 }
 country_event = {
-    id = britain.25
-    title = britain.25.t
-    desc = britain.25.d
+    id = britain_am.25
+    title = britain_am.25.t
+    desc = britain_am.25.d
     picture = GFX_report_event_royal_parade
  
 	hidden = yes
@@ -1103,7 +1104,7 @@ country_event = {
     }
 
     option = {
-        name = britain.25.a
+        name = britain_am.25.a
         kill_country_leader = yes
 		create_country_leader = {
 			name = "Elizabeth II"

@@ -8670,7 +8670,7 @@ focus_tree = {
 			add_ideas = ENG_the_kings_party_idea
 			hidden_effect = {
 				kill_country_leader = yes
-				country_event = { id = britain.23 }
+				country_event = { id = britain_am.23 }
 			}
 			set_politics = { ruling_party = monarchism elections_allowed = no }
 			add_popularity = { ideology = monarchism popularity = 0.15 }

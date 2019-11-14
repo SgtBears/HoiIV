@@ -177,7 +177,7 @@ equipments = {
 
 
 		
-		build_cost_ic = 270
+		build_cost_ic = 320
 		resources = {
 			steel = 2
 		}

@@ -641,7 +641,7 @@ units = {
 
 	### West Africa Command (CO: Richards) ###
 	division= {	
-		name = "1 West African Force"
+		name = "1st West African Force"
 		location = 2050
 		division_template = "Colonial Garrison"			# Militia (oldest equipment, little experience)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
@@ -649,7 +649,7 @@ units = {
 
 	}
 	division= {	  
-		name = "2 West African Force"
+		name = "2nd West African Force"
 		location = 10862 
 		division_template = "Colonial Garrison"			# Garrison force (older equipment, low experience)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }

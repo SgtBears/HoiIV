@@ -18,7 +18,7 @@ congress_low_support_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = congress_low_support_trigger_tt
 		check_variable = { var = senators_support value = quorum_low compare = greater_than_or_equals }
-		check_variable = { var = representatives_support value = 174 compare = greater_than_or_equals }
+		check_variable = { var = representatives_support value = rep_quorum_low compare = greater_than_or_equals }
 	}
 }
 
@@ -26,7 +26,7 @@ congress_medium_support_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = congress_medium_support_trigger_tt
 		check_variable = { var = senators_support value = quorum_medium compare = greater_than_or_equals }
-		check_variable = { var = representatives_support value = 218 compare = greater_than_or_equals }
+		check_variable = { var = representatives_support value = rep_quorum_medium compare = greater_than_or_equals }
 	}
 }
 
@@ -34,6 +34,31 @@ congress_high_support_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = congress_high_support_trigger_tt
 		check_variable = { var = senators_support value = quorum_high compare = greater_than_or_equals }
-		check_variable = { var = representatives_support value = 261 compare = greater_than_or_equals }
+		check_variable = { var = representatives_support value = rep_quorum_high compare = greater_than_or_equals }
+	}
+}
+is_us_state = {
+	OR = {
+		AND = {
+			state = 361
+			has_global_flag = washington_made_state
+		}
+		AND = {
+			state = 848
+			has_global_flag = superior_made_state
+		}
+		AND = {
+			NOT = {
+				state = 845
+				state = 906
+				state = 846
+				state = 847
+				state = 907
+				state = 852
+				state = 851
+				state = 848
+				state = 361
+			}
+		}
 	}
 }

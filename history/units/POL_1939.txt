@@ -340,7 +340,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "10 Brygada Motorowej"
+		name = "10. Brygada Motorowej"
 		location = 11398
 		division_template = "Brygada Motorowej"
 		start_experience_factor = 0.3
@@ -387,7 +387,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "1 Brygada Piechoty Górskiej"
+		name = "1. Brygada Piechoty Górskiej"
 		location = 9551
 		division_template = "Brygada Piechoty Górskiej"
 		start_experience_factor = 0.2
@@ -397,7 +397,7 @@ units = {
 	
 	### Armia Karpaty (CO: Szylling) ###	
 	division= {	
-		name = "2 Brygada Piechoty Górskiej"
+		name = "2. Brygada Piechoty Górskiej"
 		location = 417
 		division_template = "Brygada Piechoty Górskiej"
 		start_experience_factor = 0.2
@@ -405,7 +405,7 @@ units = {
 
 	}
 	division= {	
-		name = "3 Brygada Piechoty Górskiej"
+		name = "3. Brygada Piechoty Górskiej"
 		location = 3410
 		division_template = "Brygada Piechoty Górskiej"
 		start_experience_factor = 0.2

@@ -67,7 +67,7 @@ units = {
 		start_equipment_factor = 0.9
 	}
 	division = {
-		name = "4 Qu Jun"
+		name = "4. Qu Jun"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4

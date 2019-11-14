@@ -649,27 +649,7 @@ USA_congress = {
 		}
 		visible = {
 			any_owned_state = {
-				OR = {
-					AND = {
-						state = 361
-						has_global_flag = washington_made_state
-					}
-					AND = {
-						state = 848
-						has_global_flag = superior_made_state
-					}
-					AND = {
-						NOT = {
-							state = 845
-							state = 906
-							state = 846
-							state = 847
-							state = 907
-							state = 852
-							state = 851
-						}
-					}
-				}
+				is_us_state = yes
 				is_core_of = CS0
 				not = { is_core_of = ROOT }
 				is_claimed_by = ROOT
@@ -705,6 +685,8 @@ USA_congress = {
 								state = 907
 								state = 852
 								state = 851
+								state = 848
+								state = 361
 							}
 						}
 					}
@@ -725,7 +707,117 @@ USA_congress = {
 					add_state_core = PREV
 					remove_state_claim = PREV
 				}
-			
+				if = {
+					limit = {
+						state = 391
+					}
+					906 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						state = 391
+					}
+					906 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						state = 393
+					}
+					847 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						state = 393
+						NOT = {
+							has_global_flag = superior_made_state
+						}
+					}
+					848 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						state = 849
+						NOT = {
+							has_global_flag = washington_made_state
+						}
+					}
+					361 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						state = 360
+					}
+					852 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+					851 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						state = 362
+					}
+					907 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						state = 378
+					}
+					845 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						state = 395
+					}
+					846 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
 				clr_state_flag = USA_state_admit
 			}			
 		}

@@ -956,6 +956,92 @@ GER_PAR_01 =
 		# deleted Fallschirm-Division Erdmann as it was an unusually large Kampfgruppe raised in response to an operational crisis (Market-Garden), and not a properly planned and raised division. It was soon renamed 7. FJD.
 	}
 }
+GER_LAND_01 = 
+{
+	name = "Landsturmregiment"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry"  }
+
+	fallback_name = "%d. Landsturmregiment"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		1 = { "%d. Landsturmregiment" }
+		2 = { "%d. Landsturmregiment" }
+		3 = { "%d. Landsturmregiment" }
+		4 = { "%d. Landsturmregiment" }
+		5 = { "%d. Landsturmregiment" }
+		6 = { "%d. Landsturmregiment" }
+		7 = { "%d. Landsturmregiment" }
+		8 = { "%d. Landsturmregiment" }
+		9 = { "%d. Landsturmregiment" }
+		10 = { "%d. Landsturmregiment" }
+		11 = { "%d. Landsturmregiment" }
+		12 = { "%d. Landsturmregiment" }
+		13 = { "%d. Landsturmregiment" }
+		14 = { "%d. Landsturmregiment" }
+		15 = { "%d. Landsturmregiment" }
+		16 = { "%d. Landsturmregiment" }
+		17 = { "%d. Landsturmregiment" }
+		18 = { "%d. Landsturmregiment" }
+		19 = { "%d. Landsturmregiment" }
+		20 = { "%d. Landsturmregiment" }
+		21 = { "%d. Landsturmregiment" }
+		22 = { "%d. Landsturmregiment" }
+		23 = { "%d. Landsturmregiment" }
+		24 = { "%d. Landsturmregiment" }
+		
+	}
+}
+GER_SSST_01 = 
+{
+	name = "SS-Sturmbrigade"
+
+	for_countries = { GER }
+
+	can_use = { 
+		has_government = fascism
+	}
+
+	division_types = { "infantry"  }
+
+	fallback_name = "%d. SS-Sturmbrigade"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		1 = { "%d. SS-Sturmbrigade" }
+		2 = { "%d. SS-Sturmbrigade" }
+		3 = { "%d. SS-Sturmbrigade" }
+		4 = { "%d. SS-Sturmbrigade" }
+		5 = { "%d. SS-Sturmbrigade" }
+		6 = { "%d. SS-Sturmbrigade" }
+		7 = { "%d. SS-Sturmbrigade" }
+		8 = { "%d. SS-Sturmbrigade" }
+		9 = { "%d. SS-Sturmbrigade" }
+		10 = { "%d. SS-Sturmbrigade" }
+		11 = { "%d. SS-Sturmbrigade" }
+		12 = { "%d. SS-Sturmbrigade" }
+		13 = { "%d. SS-Sturmbrigade" }
+		14 = { "%d. SS-Sturmbrigade" }
+		15 = { "%d. SS-Sturmbrigade" }
+		16 = { "%d. SS-Sturmbrigade" }
+		17 = { "%d. SS-Sturmbrigade" }
+		18 = { "%d. SS-Sturmbrigade" }
+		19 = { "%d. SS-Sturmbrigade" }
+		20 = { "%d. SS-Sturmbrigade" }
+		21 = { "%d. SS-Sturmbrigade" }
+		22 = { "%d. SS-Sturmbrigade" }
+		23 = { "%d. SS-Sturmbrigade" }
+		24 = { "%d. SS-Sturmbrigade" }
+		
+	}
+}
 
 GER_GAR_01 = 
 {

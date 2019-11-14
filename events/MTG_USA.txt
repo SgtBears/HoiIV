@@ -382,6 +382,7 @@ country_event = {
 			random_owned_state = {
 				limit = {
 					is_csa_state = yes
+					NOT = { state = 907 }
 				}
 				CS0 = {
 					transfer_state = PREV
@@ -392,6 +393,149 @@ country_event = {
 					remove_state_core = PREV 
 					add_state_claim = PREV
 					USA_congress_remove_state = yes
+				}
+				if = {
+					limit = {
+						state = 366
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 20 }
+						set_variable = { var = senators_total value = 40 }
+						set_variable = { var = representatives_support value = 60 }
+						set_variable = { var = representatives_total value = 120 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 365
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 28 }
+						set_variable = { var = senators_total value = 56 }
+						set_variable = { var = representatives_support value = 90 }
+						set_variable = { var = representatives_total value = 180 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 364
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 23 }
+						set_variable = { var = senators_total value = 46 }
+						set_variable = { var = representatives_support value = 62 }
+						set_variable = { var = representatives_total value = 124 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 363
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 25 }
+						set_variable = { var = senators_total value = 50 }
+						set_variable = { var = representatives_support value = 60 }
+						set_variable = { var = representatives_total value = 120 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 362
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 20 }
+						set_variable = { var = senators_total value = 40 }
+						set_variable = { var = representatives_support value = 50 }
+						set_variable = { var = representatives_total value = 100 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 368
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 16 }
+						set_variable = { var = senators_total value = 33 }
+						set_variable = { var = representatives_support value = 48 }
+						set_variable = { var = representatives_total value = 99 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 367
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 17 }
+						set_variable = { var = senators_total value = 35 }
+						set_variable = { var = representatives_support value = 52 }
+						set_variable = { var = representatives_total value = 105 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 370
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 26 }
+						set_variable = { var = senators_total value = 52 }
+						set_variable = { var = representatives_support value = 61 }
+						set_variable = { var = representatives_total value = 122 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 372
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 17 }
+						set_variable = { var = senators_total value = 35 }
+						set_variable = { var = representatives_support value = 50 }
+						set_variable = { var = representatives_total value = 100 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 371
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 19 }
+						set_variable = { var = senators_total value = 39 }
+						set_variable = { var = representatives_support value = 52 }
+						set_variable = { var = representatives_total value = 105 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 375
+					}
+					CS0 = {
+						set_variable = { var = senators_support value = 15 }
+						set_variable = { var = senators_total value = 31 }
+						set_variable = { var = representatives_support value = 75 }
+						set_variable = { var = representatives_total value = 150 }
+						USA_congress_get_quorum = yes
+						CSA_congress_get_quorum = yes
+					}
 				}
 			}
 			country_event = { id = mtg_usa_civil_war_fascists.21 days = 3 }
@@ -439,11 +583,36 @@ country_event = {
 				CS0 = {
 					transfer_state = PREV
 					add_state_core = PREV
+					USA_recalc_congress_icon_frames = yes
 				}
 				US0 = { 
 					remove_state_core = PREV 
 					add_state_claim = PREV
+				}
+				if = {
+					limit = {
+						NOT = { state = 907 }
+					}
 					USA_congress_remove_state = yes
+				}
+				CS0 = {
+					set_variable = { var = senators_support value = 0 }
+					set_variable = { var = senators_total value = 0 }
+					set_variable = { var = representatives_support value = 160 }
+					set_variable = { var = representatives_total value = 321 }
+					every_owned_state = {
+						limit = {
+							is_csa_state = yes
+							NOT = { state = 907 }
+						}
+						add_to_variable = { senators_support = 1 }
+						add_to_variable = { senators_total = 2 }
+					}
+					USA_congress_get_quorum = yes
+					set_variable = { var = rep_quorum_low value = 129 }
+					set_variable = { var = rep_quorum_medium value = 161 }
+					set_variable = { var = rep_quorum_high value = 193 }
+					USA_recalc_congress_icon_frames = yes
 				}
 			}
 		}
@@ -785,9 +954,24 @@ country_event = {
 				CS0 = {
 					add_state_core = PREV
 				}
-				US0 = {
-					USA_congress_remove_state = yes
-					
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								NOT = { state = 906 }
+								NOT = { state = 847 }
+								NOT = { state = 846 }
+								NOT = { state = 848 }
+							}
+							AND = {
+								state = 848
+								has_global_flag = superior_made_state
+							}
+						}
+					}
+					US0 = {
+						USA_congress_remove_state = yes
+					}
 				}
 			}		
 		}
@@ -797,6 +981,29 @@ country_event = {
 				set_war_support = 1.0
 				load_oob = "USB_defense_force"
 				country_event = { id = mtg_usa_civil_war_fascists.230 days = 5 }
+				if = {
+					limit = {
+						has_global_flag = superior_made_state
+					}
+					set_variable = { var = senators_support value = 7 }
+					set_variable = { var = senators_total value = 14 }
+					set_variable = { var = quorum_low value = 6 }
+					set_variable = { var = quorum_medium value = 7 }
+					set_variable = { var = quorum_high value = 9 }
+				}
+				else = {
+					set_variable = { var = senators_support value = 6 }
+					set_variable = { var = senators_total value = 12 }
+					set_variable = { var = quorum_low value = 5 }
+					set_variable = { var = quorum_medium value = 6 }
+					set_variable = { var = quorum_high value = 8 }
+				}
+				set_variable = { var = representatives_support value = 133 }
+				set_variable = { var = representatives_total value = 265 }
+				set_variable = { var = rep_quorum_low value = 106 }
+				set_variable = { var = rep_quorum_medium value = 133 }
+				set_variable = { var = rep_quorum_high value = 159 }
+				USA_recalc_congress_icon_frames = yes
 				
 			}
 		}
@@ -832,9 +1039,47 @@ country_event = {
 			CS0 = {
 				transfer_state = PREV
 				add_state_core = PREV
+				CSA_congress_add_state = yes
 			}
 			US0 = {
 				USA_congress_remove_state = yes
+			}
+		}
+		US5 = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 393
+						state = 847
+						state = 848
+						state = 396
+						state = 394
+						state = 392
+						state = 395
+						state = 846
+						state = 391
+						state = 906
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								NOT = { state = 906 }
+								NOT = { state = 847 }
+								NOT = { state = 846 }
+								NOT = { state = 848 }
+							}
+							AND = {
+								state = 848
+								has_global_flag = superior_made_state
+							}
+						}
+					}
+					CS0 = {
+						CSA_congress_add_state = yes
+					}
+				}
 			}
 		}
 		hidden_effect = {
@@ -879,7 +1124,25 @@ country_event = {
 			}
 			US0 = {
 				add_state_core = PREV
-				USA_congress_add_state = yes
+			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							NOT = { state = 906 }
+							NOT = { state = 847 }
+							NOT = { state = 846 }
+							NOT = { state = 848 }
+						}
+						AND = {
+							state = 848
+							has_global_flag = superior_made_state
+						}
+					}
+				}
+				US0 = {
+					USA_congress_add_state = yes
+				}
 			}
 		}
 	}
@@ -1078,7 +1341,6 @@ country_event = {
 		name = mtg_usa_civil_war_fascists.203.a
 		USA_congress_remove_state = yes 
 	}
-		
 }
 
 #hidden trigger event that shows the civil war is over

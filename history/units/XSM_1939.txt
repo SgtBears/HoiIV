@@ -39,22 +39,22 @@ units = {
 	
 	##### Eighth War Area (CO: Zhu Shaoling) [Subordinate to KMT but acting quasi-independently within their own theatre] #####
 	division = {
-		name = "80 Juntuán"
+		name = "80. Juntuán"
 		location = 8081
 		division_template = "Binary Infantry"
 	}
 	division = {
-		name = "82 Juntuán"
+		name = "82. Juntuán"
 		location = 3745
 		division_template = "Binary Infantry"
 	}
 	division = {
-		name = "Xin 2 Juntuán"
+		name = "Xin 2. Juntuán"
 		location = 1647
 		division_template = "Binary Infantry"
 	}
 	division = {
-		name = "5 Qábing Jun"
+		name = "5. Qábing Jun"
 		location = 8081
 		division_template = "Triangular Cavalry"
 	}
@@ -65,17 +65,17 @@ units = {
 	}
 	### 17th Army Group (CO: Hu Zongnan) ###
 	division = {
-		name = "81 Juntuán"
+		name = "81. Juntuán"
 		location = 10724
 		division_template = "Binary Infantry"
 	}
 	division = {
-		name = "2 Qábing Jun"
+		name = "2. Qábing Jun"
 		location = 8055
 		division_template = "Triangular Cavalry"
 	}
 	division = {
-		name = "6 Qábing Jun"
+		name = "6. Qábing Jun"
 		location = 7803
 		division_template = "Triangular Cavalry"
 	}

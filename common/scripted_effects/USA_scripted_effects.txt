@@ -65,6 +65,18 @@ USA_congress_get_quorum = {
 	round_variable = quorum_high
 	USA_recalc_congress_icon_frames = yes
 }
+CSA_congress_get_quorum = {
+	set_variable = { var = rep_quorum_low value = senators_total }
+	multiply_variable = { var = rep_quorum_low value = 0.4 }
+	set_variable = { var = rep_quorum_medium value = senators_total }
+	multiply_variable = { var = rep_quorum_medium value = 0.5 }
+	set_variable = { var = rep_quorum_high value = senators_total }
+	multiply_variable = { var = rep_quorum_high value = 0.6 }
+	round_variable = rep_quorum_low 
+	round_variable = rep_quorum_medium 
+	round_variable = rep_quorum_high
+	USA_recalc_congress_icon_frames = yes
+}
 USA_congress_remove_state = {
 	custom_effect_tooltip = mtg_usa_congress_remove_state_tt
 	subtract_from_variable = { senators_total = 2 }
@@ -77,6 +89,59 @@ USA_congress_add_state = {
 	add_to_variable = { senators_total = 2 }
 	add_to_variable = { senators_support = 2 }
 	USA_congress_get_quorum = yes
+	USA_recalc_congress_icon_frames = yes
+}
+CSA_congress_add_state = {
+	custom_effect_tooltip = mtg_usa_congress_add_state_tt
+	custom_effect_tooltip = mtg_csa_congress_add_state_tt
+	add_to_variable = { senators_total = 2 }
+	add_to_variable = { senators_support = 2 }
+	if = {
+		limit = {
+			check_variable = {
+				var = representatives_total
+				value = 431
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = { representatives_total = 4 }
+		add_to_variable = { representatives_support = 4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = representatives_total
+				value = 432
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = { representatives_total = 3 }
+		add_to_variable = { representatives_support = 3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = representatives_total
+				value = 433
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = { representatives_total = 2 }
+		add_to_variable = { representatives_support = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = representatives_total
+				value = 434
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = { representatives_total = 1 }
+		add_to_variable = { representatives_support = 1 }
+	}
+	USA_congress_get_quorum = yes
+	CSA_congress_get_quorum = yes
 	USA_recalc_congress_icon_frames = yes
 }
 USA_congress_small_opposition = {

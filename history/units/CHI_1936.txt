@@ -42,25 +42,25 @@ units = {
 	##### Beiping-Tianjin Area (CO: ) #####
 	### 29 Juntuan (highly-reinforced corps) ###
 	division = {
-		name = "37 Bubing Shi"
+		name = "37. Bubing Shi"
 		location = 9843
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "38 Bubing Shi"
+		name = "38. Bubing Shi"
 		location = 10068
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "132 Bubing Shi"
+		name = "132. Bubing Shi"
 		location = 11761
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "143 Bubing Shi"
+		name = "143. Bubing Shi"
 		location = 4140
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
@@ -125,7 +125,7 @@ units = {
 
 	}
 	division = {
-		name = "1 Lujun Shi"
+		name = "1. Lujun Shi"
 		location = 8072
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
@@ -133,7 +133,7 @@ units = {
 	}
 	## 14th Army ##
 	division = {
-		name = "14 Lujun Shi"
+		name = "14. Lujun Shi"
 		location = 10144
 		division_template = "Sanjiao Jun"
 		start_equipment_factor = 0.7
@@ -254,21 +254,21 @@ units = {
 
 	}
 	division = {
-		name = "1 Fujian Jingbei"
+		name = "1. Fujian Jingbei"
 		location = 9974
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "2 Fujian Jingbei"
+		name = "2. Fujian Jingbei"
 		location = 4169
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "3 Fujian Jingbei"
+		name = "3. Fujian Jingbei"
 		location = 4196
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
@@ -313,14 +313,14 @@ units = {
 
 	}
 	division = {
-		name = "8 Lujun Shi"
+		name = "8. Lujun Shi"
 		location = 4925
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	## 9th Army (CO: Zhang Zhizhong) ##
-	division = { # "36 Bubing Shi"
+	division = { # "36. Bubing Shi"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 436
@@ -331,7 +331,7 @@ units = {
 		start_equipment_factor = 1.0
 
 	}
-	division = { # "87 Bubing Shi"
+	division = { # "87. Bubing Shi"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 487
@@ -342,7 +342,7 @@ units = {
 		start_equipment_factor = 1.0
 
 	}
-	division = { # "88 Bubing Shi"
+	division = { # "88. Bubing Shi"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 488
@@ -355,7 +355,7 @@ units = {
 	}
 	## 10th Army (CO: Liu Jiangxu) ##
 	division = {
-		name = "10 Lujun Shi"
+		name = "10. Lujun Shi"
 		location = 10076
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
@@ -484,14 +484,14 @@ units = {
 	}
 	### River Defense Force (CO: ) ###
 	division = {
-		name = "11 Lujun Shi"
+		name = "11. Lujun Shi"
 		location = 1036
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "12 Lujun Shi"
+		name = "12. Lujun Shi"
 		location = 7637
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
@@ -510,7 +510,7 @@ units = {
 	}
 	### Capital Garrison Force (CO: ) ###
 	division = {
-		name = "2 Lujun Shi"
+		name = "2. Lujun Shi"
 		location = 11913
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
@@ -528,28 +528,28 @@ units = {
 
 	}
 	division = {
-		name = "1 Nanking Jingbei"
+		name = "1. Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "2 Nanking Jingbei"
+		name = "2. Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "3 Nanking Jingbei"
+		name = "3. Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "4 Nanking Jingbei"
+		name = "4. Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7

@@ -28,7 +28,7 @@ units = {
 			ship = { name = "Kasumi" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Asashio Class"} } }
 		}
 		task_force = {
-			name = "1 Kantai"				# CO: Nagumo
+			name = "1. Kantai"				# CO: Nagumo
 			location = 1092  # Hiroshima
 			ship = { name = "Hiryu" definition = carrier equipment = { ship_hull_carrier_1 = {amount = 1 owner = JAP version_name = "Soryu Class" } } 	
 				air_wings = { 
@@ -98,7 +98,7 @@ units = {
 			ship = { name = "Yugiri" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class" } } }
 		}
 		task_force = {
-			name = "2 Kantai"
+			name = "2. Kantai"
 			location = 12068	# Taiwan
 			ship = { name = "Takao" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Myoko Class" } } }
 			ship = { name = "Atago" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Myoko Class" } } }
@@ -137,7 +137,7 @@ units = {
 		}
 		# Submarine Squadrons #
 		task_force = {
-			name = "4 Sensui Kantai"
+			name = "4. Sensui Kantai"
 			location = 1092  # Hiroshima
 			# 18 Sensui Sentai
 			ship = { ordered_name = 53 definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class"} } }			
@@ -152,7 +152,7 @@ units = {
 			ship = { name = "Ro-34" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class" } } }
 		}
 		task_force = {
-			name = "5 Sensui Kantai"
+			name = "5. Sensui Kantai"
 			location = 1092  # Hiroshima
 			# 9 Sensui Sentai
 			ship = { ordered_name = 59 definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class"} } }
@@ -164,7 +164,7 @@ units = {
 			ship = { ordered_name = 66 definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class"} } }	
 		}
 		task_force = {
-			name = "3 Sensui Sentai"
+			name = "3. Sensui Sentai"
 			location = 9950 #Sasebo
 			ship = { ordered_name = 121 definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "I-121 Class"} } }	
 			ship = { ordered_name = 122 definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "I-121 Class"} } }		
@@ -228,7 +228,7 @@ units = {
 		name = "Chikogu Eira Kantai"			
 		naval_base = 7014	# Shanghai
 		task_force = {
-			name = "3 Kantai"		# CO: Koga
+			name = "3. Kantai"		# CO: Koga
 			location = 1070	# Hainan
 			ship = { name = "Akagi" definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "Akagi Class" } }
 				air_wings = { 
@@ -260,7 +260,7 @@ units = {
 			ship = { name = "Itsukushima" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
 		}
 		task_force = {
-			name = "4 Kantai"
+			name = "4. Kantai"
 			location = 10000	# Tsingtao
 			ship = { name = "Ashigara" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Myoko Class" } } }
 			ship = { name = "Natori" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class" } } }
@@ -276,7 +276,7 @@ units = {
 			ship = { name = "Yuzuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
 		}
 		task_force = {
-			name = "5 Kantai"
+			name = "5. Kantai"
 			location = 7014	# Shanghai
 			ship = { name = "Kaga" definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "Kaga Class" } }
 				air_wings = { 
@@ -326,7 +326,7 @@ units = {
 		name = "Taiheiyo Kantai"			
 		naval_base = 14275  # Truk
 		task_force = {
-			name = "1 Sensui Kantai"
+			name = "1. Sensui Kantai"
 			location = 13041  #Kwajalein
 			# 1 Sensui Sentai
 			ship = { ordered_name = 8 definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
@@ -346,7 +346,7 @@ units = {
 			ship = { name = "Ro-67" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class" } } }
 		}
 		task_force = {
-			name = "2 Sensui Kantai"
+			name = "2. Sensui Kantai"
 			location = 13041  #Kwajalein
 			# 5 Sensui Sentai
 			ship = { name = "Ro-63" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class" } } }
@@ -368,7 +368,7 @@ units = {
 		}
 
 		task_force = {
-			name = "3 Sensui Kantai"
+			name = "3. Sensui Kantai"
 			location = 14275  # Truk
 			# 11 Sensui Sentai
 			ship = { ordered_name = 68 definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class"} } }

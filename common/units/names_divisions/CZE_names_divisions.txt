@@ -173,6 +173,37 @@ CZE_CAV_01 =
 		10 = { "%d. jezdecká divize" }
 	}
 }
+CZE_CAV_02 = 
+{
+	name = "Cavalry Brigade"
+
+	for_countries = { CZE }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CZE_INF_01 }
+
+	fallback_name = "%d. jezdecká brigáda"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. jezdecká brigáda" }
+		2 = { "%d. jezdecká brigáda" }
+		3 = { "%d. jezdecká brigáda" }
+		4 = { "%d. jezdecká brigáda" }
+		5 = { "%d. jezdecká brigáda" }
+		6 = { "%d. jezdecká brigáda" }
+		7 = { "%d. jezdecká brigáda" }
+		8 = { "%d. jezdecká brigáda" }
+		9 = { "%d. jezdecká brigáda" }
+		10 = { "%d. jezdecká brigáda" }
+	}
+}
 
 CZE_MOT_01 = 
 {

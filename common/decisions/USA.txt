@@ -435,7 +435,32 @@ war_measures = {
 				ROOT = {
 					any_of = {
 						array = PREV.core_states
-						var:v = { is_fully_controlled_by = ROOT }
+						var:v = {
+							is_fully_controlled_by = ROOT
+							OR = {
+								AND = {
+									state = 361
+									has_global_flag = washington_made_state
+								}
+								AND = {
+									state = 848
+									has_global_flag = superior_made_state
+								}
+								AND = {
+									NOT = {
+										state = 845
+										state = 906
+										state = 846
+										state = 847
+										state = 907
+										state = 852
+										state = 851
+										state = 848
+										state = 361
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -453,17 +478,150 @@ war_measures = {
 		modifier = {
 			political_power_gain = -0.25
 		}
-		remove_effect = {
+		complete_effect = {
 			random_state = {
 				limit = {
-					not = { is_core_of = ROOT }
-					is_core_of = US0
 					is_fully_controlled_by = ROOT
+					is_core_of = US0
+					OR = {
+						AND = {
+							state = 361
+							has_global_flag = washington_made_state
+						}
+						AND = {
+							state = 848
+							has_global_flag = superior_made_state
+						}
+						AND = {
+							NOT = {
+								state = 845
+								state = 906
+								state = 846
+								state = 847
+								state = 907
+								state = 852
+								state = 851
+								state = 848
+								state = 361
+							}
+						}
+					}
 				}
+				set_state_flag = CSA_state_admit
+				custom_effect_tooltip = USA_readmit_state_tt
+			}
+		}
+		remove_effect = {
+			random_state = {
+				limit = { has_state_flag = CSA_state_admit }
 				remove_core_of = US0
 				add_claim_by = US0
 				add_core_of = CS0
+				if = {
+					limit = {
+						state = 391
+					}
+					906 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 391
+					}
+					906 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 393
+					}
+					847 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 393
+						NOT = {
+							has_global_flag = superior_made_state
+						}
+					}
+					848 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 849
+						NOT = {
+							has_global_flag = washington_made_state
+						}
+					}
+					361 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 360
+					}
+					852 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+					851 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 362
+					}
+					907 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						state = 378
+					}
+					845 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 395
+					}
+					846 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
 				save_event_target_as = USA_state_government_created
+				clr_state_flag = CSA_state_admit
 			}
 			US0 = {
 				country_event = mtg_usa_civil_war_fascists.203

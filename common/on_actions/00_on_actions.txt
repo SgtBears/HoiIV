@@ -1400,11 +1400,11 @@ on_actions = {
 						OR = {
 							AND = {
 								state = 361
-								NOT = { is_core_of = MR5 }
+								has_global_flag = washington_made_state
 							}
 							AND = {
 								state = 848
-								NOT = { is_core_of = MI5 }
+								has_global_flag = superior_made_state
 							}
 							AND = {
 								NOT = { state = 907 }
@@ -1443,11 +1443,11 @@ on_actions = {
 						OR = {
 							AND = {
 								state = 361
-								NOT = { is_core_of = MR5 }
+								has_global_flag = washington_made_state
 							}
 							AND = {
 								state = 848
-								NOT = { is_core_of = MI5 }
+								has_global_flag = superior_made_state
 							}
 							AND = {
 								NOT = { state = 907 }

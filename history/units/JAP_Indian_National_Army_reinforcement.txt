@@ -12,12 +12,12 @@
 units = {
 
 	division = {
-		name = "1 Azad Hind Fauj"
+		name = "1. Azad Hind Fauj"
 		location = 12299
 		division_template = "Azad Hind Infantry Corps"
 	}
 	division = {
-		name = "2 Azad Hind Fauj"
+		name = "2. Azad Hind Fauj"
 		location = 12299
 		division_template = "Azad Hind Infantry Corps"
 	}

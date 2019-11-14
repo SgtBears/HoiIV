@@ -18,7 +18,10 @@ division_template = {
 units = {
 	##### Ejército Nacional de Colombia #####
 	division= {	
-		name = "1a Brigada del Ejército"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 12790 # Cartegena
 		division_template = "Brigada del Ejército"	
 		start_experience_factor = 0.1
@@ -26,7 +29,10 @@ units = {
 
 	}
 	division= {	
-		name = "2a Brigada del Ejército"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 8056
 		division_template = "Brigada del Ejército"	
 		start_experience_factor = 0.1
@@ -34,7 +40,10 @@ units = {
 
 	}
 	division= {	
-		name = "3a Brigada del Ejército"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 2007
 		division_template = "Brigada del Ejército"	
 		start_experience_factor = 0.1
@@ -42,7 +51,10 @@ units = {
 
 	}
 	division= {	
-		name = "4a Brigada del Ejército"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 1887
 		division_template = "Brigada del Ejército"	
 		start_experience_factor = 0.1
@@ -50,7 +62,10 @@ units = {
 
 	}
 	division= {	
-		name = "5a Brigada del Ejército"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 10747 # Bogota
 		division_template = "Brigada del Ejército"	
 		start_experience_factor = 0.1
@@ -58,7 +73,10 @@ units = {
 
 	}
 	division= {	
-		name = "6a Brigada del Ejército"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
 		location = 2023 # Medellin
 		division_template = "Brigada del Ejército"	
 		start_experience_factor = 0.1

@@ -2,7 +2,7 @@
 	name = "SS-Sturmbrigade"
 	is_locked = yes
 
-	division_names_group = GER_Inf_01
+	division_names_group = GER_SSST_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -13,122 +13,194 @@
 
 units = {
 	division = {
-		name = "1. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 11638
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "2. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 9666
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "3. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 708  # Augsburg
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "4. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 6540
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "5. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 692  # Munich
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "6. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
 		location = 692  # Munich
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "7. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
 		location = 11544  # Nuremberg
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "8. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
 		location = 11529
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "9. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
 		location = 9557
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "10. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
 		location = 6594
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "11. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
 		location = 11417
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "12. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
 		location = 13116
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "13. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
 		location = 6521 # Berlin
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "14. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
 		location = 3500
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "15. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
 		location = 3561  # Erfurt
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "16. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
 		location = 3561  # Erfurt
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "17. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
 		location = 425  # Weimar
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "18. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
 		location = 425  # Weimar
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "19. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
 		location = 6487
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "20. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
 		location = 3522  # Magdeburg
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "21. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
 		location = 11359
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "22. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
 		location = 11219
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "23. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
 		location = 9294
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
-		name = "24. SS-Sturmbrigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
 		location = 11305  # Lubeck
 		division_template = "SS-Sturmbrigade"
 	}

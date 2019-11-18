@@ -2626,6 +2626,7 @@ focus_tree = {
 				limit = {
 					is_fully_controlled_by = ROOT
 					is_owned_by = ROOT
+					not_is_wasteland_state = yes
 					any_neighbor_state = {
 						OR = {
 							is_controlled_by = SOV
@@ -2652,6 +2653,7 @@ focus_tree = {
 						is_fully_controlled_by = MAN
 						is_owned_by = MAN
 						MAN = { is_puppet_of = JAP }
+						not_is_wasteland_state = yes
 					}
 					add_building_construction = {
 						type = infrastructure
@@ -2666,6 +2668,7 @@ focus_tree = {
 						is_fully_controlled_by = MEN
 						is_owned_by = MEN
 						MEN = { is_puppet_of = JAP }
+						not_is_wasteland_state = yes
 					}
 					add_building_construction = {
 						type = infrastructure
@@ -4211,6 +4214,7 @@ focus_tree = {
 							size > 0
 							include_locked = yes
 						}
+						not_is_wasteland_state = yes
 					}
 					add_building_construction = {
 						type = infrastructure
@@ -4227,6 +4231,7 @@ focus_tree = {
 							size > 1
 							include_locked = yes
 						}
+						not_is_wasteland_state = yes
 					}
 					add_building_construction = {
 						type = infrastructure

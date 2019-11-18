@@ -1105,6 +1105,7 @@ focus_tree = {
 						building = infrastructure
 						size > 0
 					}
+					not_is_wasteland_state = yes
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -1120,6 +1121,7 @@ focus_tree = {
 						building = infrastructure
 						size > 0
 					}
+					not_is_wasteland_state = yes
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -1135,6 +1137,7 @@ focus_tree = {
 						building = infrastructure
 						size > 0
 					}
+					not_is_wasteland_state = yes
 				}
 				add_building_construction = {
 					type = infrastructure

@@ -1,0 +1,777 @@
+focus_tree = {
+	id = usa_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = USB
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+#	focus = {
+#		id = USA_
+#		#icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 70
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = USB_neutrality_in_the_civil_war
+		icon = GFX_goal_generic_neutrality_focus
+		x = 8
+		y = 0
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		available = {
+		}
+		
+		bypass = {
+			has_idea = neutrality_idea
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = neutrality_idea
+		}
+	}
+	focus = {
+		id = USB_allow_gun_trades
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = USB_neutrality_in_the_civil_war }
+		x = 11
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 8000
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			USA_civil_war_order_weapons_get_factories = yes
+		}
+	}
+	focus = {
+		id = USB_expand_arms_production
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = USB_allow_gun_trades }
+		relative_position_id = USB_allow_gun_trades
+		x = 0
+		y = 1
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = USB_civilian_construction }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = USB_civilian_construction
+			}
+		}
+	}
+	focus = {
+		id = USB_expand_arms_production_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = USB_expand_arms_production }
+		relative_position_id = USB_allow_gun_trades
+		x = 0
+		y = 2
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = USB_civilian_construction2 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = USB_civilian_construction2
+			}
+		}
+	}
+	focus = {
+		id = USB_expand_arms_production_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = USB_expand_arms_production_2 }
+		relative_position_id = USB_allow_gun_trades
+		x = 0
+		y = 3
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = USB_civilian_construction3 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = USB_civilian_construction3
+			}
+		}
+	}
+	focus = {
+		id = USB_ensure_neutrality
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = USB_neutrality_in_the_civil_war }
+		x = 3
+		y = 1
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_ideas = usb_fortification
+		}
+	}
+	focus = {
+		id = USB_build_airforce
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = USB_ensure_neutrality }
+		relative_position_id = USB_ensure_neutrality
+		x = 5
+		y = 1
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			air_experience = 25
+			393 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			395 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = USB_air_superiority
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = USB_build_airforce }
+		relative_position_id = USB_ensure_neutrality
+		x = 5
+		y = 2
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = jet_fighter1
+				}
+				add_equipment_to_stockpile = {
+					type = jet_fighter_equipment
+					amount = 500
+					producer = US5
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment
+					amount = 500
+					producer = US5
+				}
+			}
+		}
+	}
+	focus = {
+		id = USB_air_defence
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = USB_air_superiority }
+		relative_position_id = USB_ensure_neutrality
+		x = 5
+		y = 3
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = CAS_equipment
+				amount = 200
+				producer = US5
+			}
+		}
+	}
+	focus = {
+		id = USB_fortify_canadian_border
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = USB_ensure_neutrality }
+		relative_position_id = USB_ensure_neutrality
+		x = 0
+		y = 1
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			393 = {
+				add_building_construction = { type = bunker province = 9724 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 6710 level = 3 instant_build = yes }
+			}
+			391 = {
+				add_building_construction = { type = bunker province = 11667 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12588 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 7896 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 6767 level = 3 instant_build = yes }
+			}
+			906 = {
+				add_building_construction = { type = bunker province = 14403 level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USB_fortify_minnesota
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = USB_ensure_neutrality }
+		relative_position_id = USB_ensure_neutrality
+		x = -2
+		y = 1
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			391 = {
+				add_building_construction = { type = bunker province = 11667 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12597 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 10618 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 10719 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 1867 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12577 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 1866 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 4807 level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USB_fortify_iowa
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = USB_ensure_neutrality }
+		relative_position_id = USB_ensure_neutrality
+		x = -1
+		y = 2
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			392 = {
+				add_building_construction = { type = bunker province = 12646 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 10666 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9892 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 1678 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 1586 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 7539 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 1770 level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USB_fortify_illinois
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = USB_ensure_neutrality }
+		relative_position_id = USB_ensure_neutrality
+		x = 1
+		y = 2
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			846 = {
+				add_building_construction = { type = bunker province = 10393 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 4590 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12365 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 10457 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12305 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 7831 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 954 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12697 level = 3 instant_build = yes }
+			}
+			395 = {
+				add_building_construction = { type = bunker province = 9450 level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USB_fortify_indiana
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = USB_ensure_neutrality }
+		relative_position_id = USB_ensure_neutrality
+		x = 2
+		y = 1
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			396 = {
+				add_building_construction = { type = bunker province = 11635 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11621 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 1881 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 4527 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9796 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9810 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 870 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11637 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 1595 level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USB_fortify_michigan
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = USB_ensure_neutrality }
+		relative_position_id = USB_ensure_neutrality
+		x = 3
+		y = 2
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			393 = {
+				add_building_construction = { type = bunker province = 691 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11656 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 6710 level = 3 instant_build = yes }
+			}
+			847 = {
+				add_building_construction = { type = bunker province = 6769 level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USB_fortify_wisconsin
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = USB_ensure_neutrality }
+		relative_position_id = USB_ensure_neutrality
+		x = -3
+		y = 2
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			394 = {
+				add_building_construction = { type = bunker province = 12456 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12357 level = 3 instant_build = yes }
+			}
+			848 = {
+				add_building_construction = { type = bunker province = 4854 level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USB_form_neutral_congress
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = USB_neutrality_in_the_civil_war }
+		x = 13
+		y = 1
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+			unlock_decision_category_tooltip = USA_congress
+			hidden_effect = {
+				if = {
+					limit = {
+						has_global_flag = superior_made_state
+					}
+					set_variable = { var = senators_total value = 14 }
+					set_variable = { var = senators_support value = 7 }
+					set_variable = { var = quorum_low value = 6 }
+					set_variable = { var = quorum_medium value = 7 }
+					set_variable = { var = quorum_high value = 9 }
+				}
+				else = {
+					set_variable = { var = senators_total value = 12 }
+					set_variable = { var = senators_support value = 6 }
+					set_variable = { var = quorum_low value = 5 }
+					set_variable = { var = quorum_medium value = 6 }
+					set_variable = { var = quorum_high value = 8 }
+				}
+				set_variable = { var = representatives_total value = 265 }
+				set_variable = { var = representatives_support value = 133 }
+				set_variable = { var = rep_quorum_low value = 106 }
+				set_variable = { var = rep_quorum_medium value = 133 }
+				set_variable = { var = rep_quorum_high value = 159 }
+				USA_recalc_congress_icon_frames = yes
+			}
+		}
+	}
+	focus = {
+		id = USB_stop_bank_runs
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = USB_form_neutral_congress }
+		x = 13
+		y = 2
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+}

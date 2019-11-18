@@ -2130,6 +2130,7 @@ focus_tree = {
 						size > 4
 						include_locked = yes
 					}
+					not_is_wasteland_state = yes
 					OR = {
 						region = 117
 						region = 118
@@ -2325,6 +2326,7 @@ focus_tree = {
 							building = infrastructure
 							size > 2
 						}
+						not_is_wasteland_state = yes
 						OR = {
 							region = 117
 							region = 118
@@ -3189,7 +3191,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_category_tooltip = USA_honor_the_confederacy
 			custom_effect_tooltip = USA_honor_the_confederacy_tt
 		}
 	}

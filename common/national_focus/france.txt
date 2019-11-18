@@ -33,6 +33,7 @@ focus_tree = {
 							building = infrastructure
 							size > 2
 						}
+						not_is_wasteland_state = yes
 						OR = {
 							region = 19
 							region = 20
@@ -60,6 +61,7 @@ focus_tree = {
 						building = infrastructure
 						size > 2
 					}
+					not_is_wasteland_state = yes
 					OR = {
 						region = 19
 						region = 20
@@ -78,6 +80,7 @@ focus_tree = {
 						building = infrastructure
 						size > 2
 					}
+					not_is_wasteland_state = yes
 					OR = {
 						region = 19
 						region = 20
@@ -96,6 +99,7 @@ focus_tree = {
 						building = infrastructure
 						size > 2
 					}
+					not_is_wasteland_state = yes
 					OR = {
 						region = 19
 						region = 20
@@ -418,6 +422,7 @@ focus_tree = {
 							building = infrastructure
 							size > 1
 						}
+						not_is_wasteland_state = yes
 						NOT = { is_on_continent = europe }
 					}
 				}
@@ -487,6 +492,7 @@ focus_tree = {
 							building = infrastructure
 							size > 1
 						}
+						not_is_wasteland_state = yes
 						NOT = { is_on_continent = europe }
 					}
 					add_building_construction = {
@@ -502,6 +508,7 @@ focus_tree = {
 							building = infrastructure
 							size > 1
 						}
+						not_is_wasteland_state = yes
 						NOT = { is_on_continent = europe }
 					}
 					add_building_construction = {

@@ -440,7 +440,6 @@ USA_recalc_congress_icon_frames = {
 		set_temp_variable = { senators_temp = 1 }
 	}
 	set_variable = { current_senate_icon_frame = senators_temp }
-
 	set_temp_variable = { house_temp = representatives_support }
 	divide_temp_variable = { house_temp = representatives_total }
 	multiply_temp_variable = { house_temp = 21 }

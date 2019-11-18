@@ -1226,6 +1226,7 @@ focus_tree = {
 						building = infrastructure
 						size < 1
 					}
+					not_is_wasteland_state = yes
 				}
 			}
 		}
@@ -1250,20 +1251,8 @@ focus_tree = {
 						building = infrastructure
 						size > 0
 					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+					not_is_wasteland_state = yes
+					is_core_of = ROOT
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -1277,20 +1266,8 @@ focus_tree = {
 						building = infrastructure
 						size > 1
 					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+					not_is_wasteland_state = yes
+					is_core_of = ROOT
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -1392,6 +1369,7 @@ focus_tree = {
 						building = infrastructure
 						size < 1
 					}
+					not_is_wasteland_state = yes
 				}
 			}
 		}
@@ -1416,20 +1394,8 @@ focus_tree = {
 						building = infrastructure
 						size > 0
 					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+					not_is_wasteland_state = yes
+					is_core_of = ROOT
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -1443,20 +1409,8 @@ focus_tree = {
 						building = infrastructure
 						size > 1
 					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+					not_is_wasteland_state = yes
+					is_core_of = ROOT
 				}
 				add_building_construction = {
 					type = infrastructure

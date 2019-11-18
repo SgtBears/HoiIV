@@ -142,20 +142,8 @@ focus_tree = {
 						building = infrastructure
 						size > 0
 					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+					not_is_wasteland_state = yes
+					is_core_of = ROOT
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -170,20 +158,8 @@ focus_tree = {
 						building = infrastructure
 						size > 0
 					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+					not_is_wasteland_state = yes
+					is_core_of = ROOT
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -384,6 +360,7 @@ focus_tree = {
 						size > 1
 						include_locked = yes
 					}
+					not_is_wasteland_state = yes
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {

@@ -106,5 +106,26 @@ ideas = {
 	
 
 		}
+		usb_fortification = {
+			
+			picture = FRA_fortification_focus
+			
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_bunker_factor = 0.3
+				conscription = 0.003
+				training_time_factor = -0.4
+			}
+	
+
+		}
 	}
 }

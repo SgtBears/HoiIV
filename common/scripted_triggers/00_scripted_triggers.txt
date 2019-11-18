@@ -12,6 +12,29 @@
 #		exampel_trigger = yes
 #	}
 #
+has_any_building_slots_trigger = {
+	NOT = { has_state_category = wasteland }
+	NOT = { has_state_category = tiny_island }
+	NOT = { has_state_category = enclave }
+}
+not_is_wasteland_state = {
+	NOT = { State = 674 }
+	NOT = { State = 885 }
+	NOT = { State = 893 }
+	NOT = { State = 892 }
+	NOT = { State = 894 }
+	NOT = { State = 886 }
+	NOT = { State = 887 }
+	NOT = { State = 800 }
+	NOT = { State = 678 }
+	NOT = { State = 858 }
+	NOT = { State = 471 }
+	NOT = { State = 857 }
+	NOT = { State = 472 }
+	NOT = { State = 856 }
+	NOT = { State = 683 }
+	NOT = { State = 795 }
+}
 can_ROOT_get_wargoal_on_THIS = {
 	exists = yes
 	NOT = { is_in_faction_with = ROOT }
@@ -272,6 +295,34 @@ is_csa_state = {
 	}
 }
 
+is_usa_state = {
+	OR = {
+		AND = {
+			state = 361
+			has_global_flag = washington_made_state
+		}
+		AND = {
+			state = 848
+			has_global_flag = superior_made_state
+		}
+		AND = {
+			NOT = {
+				state = 845
+				state = 906
+				state = 846
+				state = 847
+				state = 907
+				state = 852
+				state = 851
+				state = 848
+				state = 361
+				state = 844
+				state = 858
+				state = 650
+			}
+		}
+	}
+}
 has_naval_treaty_trigger = {
 	OR = {
 		has_idea = MTG_naval_treaty_adherent

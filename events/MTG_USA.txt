@@ -538,15 +538,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_usa_civil_war_fascists.21 days = 3 }
-			if = {
-				limit = {
-					not = {
-						has_completed_focus = USA_guarantee_the_american_dream
-					}
-				}
-				country_event = mtg_usa_civil_war_fascists.22 #forms neutral bloc
-			}	
+			country_event = { id = mtg_usa_civil_war_fascists.21 hours = 6 }
 		}
 	}
 	option = {
@@ -576,6 +568,15 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = USA_guarantee_the_american_dream
+					}
+				}
+				country_event = { id = mtg_usa_civil_war_fascists.22 hours = 10 } #forms neutral bloc
+			}
+			country_event = { id = mtg_usa_civil_war_am.3 hours = 24 } # declare war
 			every_owned_state = {
 				limit = {
 					is_csa_state = yes
@@ -605,8 +606,10 @@ country_event = {
 							is_csa_state = yes
 							NOT = { state = 907 }
 						}
-						add_to_variable = { senators_support = 1 }
-						add_to_variable = { senators_total = 2 }
+						CS0 = {
+							add_to_variable = { senators_support = 1 }
+							add_to_variable = { senators_total = 2 }
+						}
 					}
 					USA_congress_get_quorum = yes
 					set_variable = { var = rep_quorum_low value = 129 }
@@ -617,8 +620,6 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			news_event = { id = mtg_news.1 days = 3 }
-			set_global_flag = USA_civil_war_fired
 			USA_naval_mutinies_effect = yes
 			CS0 = {
 				load_oob = "CSA_fascist_uprising"
@@ -664,7 +665,6 @@ country_event = {
 							type = infantry_equipment
 							amount = PREV.usa_fascists_arms_stockpile
 						}
-						declare_war_on = { target = PREV type = annex_everything }
 					}
 				}
 				add_ai_strategy = {
@@ -956,18 +956,7 @@ country_event = {
 				}
 				if = {
 					limit = {
-						OR = {
-							AND = {
-								NOT = { state = 906 }
-								NOT = { state = 847 }
-								NOT = { state = 846 }
-								NOT = { state = 848 }
-							}
-							AND = {
-								state = 848
-								has_global_flag = superior_made_state
-							}
-						}
+						is_usa_state = yes
 					}
 					US0 = {
 						USA_congress_remove_state = yes
@@ -977,34 +966,9 @@ country_event = {
 		}
 		hidden_effect = {
 			US5 = {
-				set_stability = 1.0
-				set_war_support = 1.0
+				set_stability = .5
+				set_war_support = 0.0
 				load_oob = "USB_defense_force"
-				country_event = { id = mtg_usa_civil_war_fascists.230 days = 5 }
-				if = {
-					limit = {
-						has_global_flag = superior_made_state
-					}
-					set_variable = { var = senators_support value = 7 }
-					set_variable = { var = senators_total value = 14 }
-					set_variable = { var = quorum_low value = 6 }
-					set_variable = { var = quorum_medium value = 7 }
-					set_variable = { var = quorum_high value = 9 }
-				}
-				else = {
-					set_variable = { var = senators_support value = 6 }
-					set_variable = { var = senators_total value = 12 }
-					set_variable = { var = quorum_low value = 5 }
-					set_variable = { var = quorum_medium value = 6 }
-					set_variable = { var = quorum_high value = 8 }
-				}
-				set_variable = { var = representatives_support value = 133 }
-				set_variable = { var = representatives_total value = 265 }
-				set_variable = { var = rep_quorum_low value = 106 }
-				set_variable = { var = rep_quorum_medium value = 133 }
-				set_variable = { var = rep_quorum_high value = 159 }
-				USA_recalc_congress_icon_frames = yes
-				
 			}
 		}
 	}
@@ -1013,13 +977,22 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		US5 = {
-			US0 = {
-				give_guarantee = PREV
+		US0 = {
+			diplomatic_relation = {
+				country = US5
+				relation = guarantee
+				active = yes
 			}
-			CS0 = {
-				give_guarantee = PREV
+		}
+		CS0 = {
+			diplomatic_relation = {
+				country = US5
+				relation = guarantee
+				active = yes
 			}
+		}
+		hidden_effect = {
+			CS0 = { country_event = { id = mtg_usa_civil_war_am.1 hours = 1 } }
 		}
 	}
 	option = {
@@ -1039,50 +1012,40 @@ country_event = {
 			CS0 = {
 				transfer_state = PREV
 				add_state_core = PREV
-				CSA_congress_add_state = yes
+				hidden_effect = { CSA_congress_add_state = yes }
 			}
 			US0 = {
 				USA_congress_remove_state = yes
 			}
 		}
-		US5 = {
-			every_owned_state = {
-				limit = {
-					OR = {
-						state = 393
-						state = 847
-						state = 848
-						state = 396
-						state = 394
-						state = 392
-						state = 395
-						state = 846
-						state = 391
-						state = 906
-					}
-				}
-				if = {
+		hidden_effect = {
+			CS0 = { country_event = { id = mtg_usa_civil_war_am.2 hours = 1 } }
+			US5 = {
+				every_owned_state = {
 					limit = {
 						OR = {
-							AND = {
-								NOT = { state = 906 }
-								NOT = { state = 847 }
-								NOT = { state = 846 }
-								NOT = { state = 848 }
-							}
-							AND = {
-								state = 848
-								has_global_flag = superior_made_state
-							}
+							state = 393
+							state = 847
+							state = 848
+							state = 396
+							state = 394
+							state = 392
+							state = 395
+							state = 846
+							state = 391
+							state = 906
 						}
 					}
-					CS0 = {
-						CSA_congress_add_state = yes
+					if = {
+						limit = {
+							is_usa_state = yes
+						}
+						CS0 = {
+							CSA_congress_add_state = yes
+						}
 					}
 				}
 			}
-		}
-		hidden_effect = {
 			CS0 = {
 				annex_country = { target = US5 transfer_troops = yes }
 				add_offsite_building = { type = arms_factory level = 3 }
@@ -1127,18 +1090,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					OR = {
-						AND = {
-							NOT = { state = 906 }
-							NOT = { state = 847 }
-							NOT = { state = 846 }
-							NOT = { state = 848 }
-						}
-						AND = {
-							state = 848
-							has_global_flag = superior_made_state
-						}
-					}
+					is_usa_state = yes
 				}
 				US0 = {
 					USA_congress_add_state = yes
@@ -1167,17 +1119,6 @@ country_event = {
 	}
 	option = {
 		name = OK
-	}
-}
-
-#hidden trigger event to allow arms purchases in ACW
-country_event = {
-	id = mtg_usa_civil_war_fascists.230
-	hidden = yes
-	is_triggered_only = yes
-	fire_only_once = yes
-	immediate = {
-		USA_civil_war_order_weapons_get_factories = yes
 	}
 }
 
@@ -5665,13 +5606,9 @@ country_event = {
 			add_war_support = -0.05
 			add_stability = -0.1
 		}
-		JA0 = {
-			ROOT = {
-				create_wargoal = {
-					target = PREV
-					type = topple_government
-				}
-			}
+		create_wargoal = {
+			target = JA0
+			type = topple_government
 		}
 		add_state_claim = 882
 		add_state_claim = 884
@@ -5698,5 +5635,96 @@ country_event = {
 	option = {
 		name = panay_incident.6.a
 		add_political_power = 100
+	}
+}
+
+
+add_namespace = mtg_usa_civil_war_am
+country_event = {
+	id = mtg_usa_civil_war_am.1
+	title = mtg_usa_civil_war_am.1.t
+	desc = mtg_usa_civil_war_am.1.d
+	picture = GFX_report_event_generic_rally_3
+
+	is_triggered_only = yes
+
+	option = {
+		name = mtg_usa_civil_war_am.1.a
+		effect_tooltip = {
+			US0 = {
+				diplomatic_relation = {
+					country = US5
+					relation = guarantee
+					active = yes
+				}
+			}
+			diplomatic_relation = {
+				country = US5
+				relation = guarantee
+				active = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = mtg_usa_civil_war_am.2
+	title = mtg_usa_civil_war_am.2.t
+	desc = mtg_usa_civil_war_am.2.d
+	picture = GFX_report_event_generic_rally_3
+
+	is_triggered_only = yes
+
+	option = {
+		name = mtg_usa_civil_war_am.2.a
+		effect_tooltip = {
+			CS0 = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 369 # two more states join CSA because you are a meanie!
+							state = 373
+							state = 393
+							state = 847
+							state = 848
+							state = 396
+							state = 394
+							state = 392
+							state = 395
+							state = 846
+							state = 391
+							state = 906
+						}
+					}
+					CS0 = {
+						transfer_state = PREV
+						add_state_core = PREV
+						CSA_congress_add_state = yes
+					}
+				}
+			}
+			annex_country = { target = US5 transfer_troops = yes }
+			add_offsite_building = { type = arms_factory level = 3 }
+			add_manpower = 80000
+		}
+	}
+}
+country_event = {
+	id = mtg_usa_civil_war_am.3
+	title = mtg_usa_civil_war_am.3.t
+	desc = mtg_usa_civil_war_am.3.desc
+	picture = GFX_report_event_generic_battle
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			declare_war_on = { target = CS0 type = annex_everything }
+		}
+	}
+		
+	option = {
+		name = mtg_usa_civil_war_am.3.a
+		effect_tooltip = {
+			declare_war_on = { target = CS0 type = annex_everything }
+		}
 	}
 }

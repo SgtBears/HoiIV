@@ -627,7 +627,7 @@ focus_tree = {
 		cost = 70
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		available = {
@@ -685,7 +685,7 @@ focus_tree = {
 		cost = 70
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		available = {
@@ -1063,11 +1063,7 @@ focus_tree = {
 		cost = 70
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.1
-				is_historical_focus_on = yes
-			}
+			factor = 0
 		}
 
 		available = {

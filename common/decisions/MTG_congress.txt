@@ -219,7 +219,7 @@ USA_congress = {
 		available = {
 			congress_medium_support_trigger = yes
 		}
-		visible = {has_government = democratic }
+		visible = { has_government = democratic }
 		cost = 25
 		days_remove = 90
 		days_re_enable = 275
@@ -428,21 +428,10 @@ USA_congress = {
 	USA_statehood_for_alaska = {
 		icon = infiltrate_state
 		available = {
-			463 = {
-				not = { is_core_of = ROOT }
-			}
-			650 = {
-				not = { is_core_of = ROOT }
-			}
-			844 = {
-				not = { is_core_of = ROOT }
-			}
-			858 = {
-				not = { is_core_of = ROOT }
-			}
 			political_power_daily > 0.1
 		}
 		visible = {
+			NOT = { has_global_flag = alaska_made_state }
 			463 = {
 				is_fully_controlled_by = ROOT
 			}
@@ -483,6 +472,7 @@ USA_congress = {
 		}
 		remove_effect = {
 			USA_congress_add_state = yes
+			set_global_flag = alaska_made_state
 			add_state_core = 463
 			add_state_core = 650
 			add_state_core = 844
@@ -495,14 +485,12 @@ USA_congress = {
 	USA_statehood_for_hawaii = {
 		icon = infiltrate_state
 		available = {
-			629 = {
-				not = { is_core_of = ROOT }
-			}
 			political_power_daily > 0.1
 		}
 		visible = {
+			NOT = { has_global_flag = hawaii_made_state }
 			629 = {
-				is_fully_controlled_by = US0
+				is_fully_controlled_by = ROOT
 			}
 			629 = {
 				not = { is_core_of = ROOT }
@@ -523,6 +511,7 @@ USA_congress = {
 		}
 		remove_effect = {
 			USA_congress_add_state = yes
+			set_global_flag = hawaii_made_state
 			add_state_core = 629
 			hidden_effect = {
 				USA_calc_stars = yes
@@ -532,14 +521,12 @@ USA_congress = {
 	USA_statehood_for_puerto_rico = {
 		icon = infiltrate_state
 		available = {
-			686 = {
-				not = { is_core_of = ROOT }
-			}
 			political_power_daily > 0.1
 		}
 		visible = {
+			NOT = { has_global_flag = puerto_rico_made_state }
 			686 = {
-				is_fully_controlled_by = US0
+				is_fully_controlled_by = ROOT
 			}
 			686 = {
 				not = { is_core_of = ROOT }
@@ -559,7 +546,8 @@ USA_congress = {
 			political_power_gain = -0.1
 		}
 		remove_effect = {
-			USA_congress_small_opposition = yes 
+			USA_congress_small_opposition = yes
+			set_global_flag = puerto_rico_made_state
 			USA_congress_add_state = yes
 			add_state_core = 686
 			hidden_effect = {
@@ -573,16 +561,16 @@ USA_congress = {
 			political_power_daily > 0.1
 		}
 		visible = {
+			NOT = { has_global_flag = washington_made_state }
 			361 = {
-				is_fully_controlled_by = US0
+				is_fully_controlled_by = ROOT
+			}
+			361 = {
+				is_core_of = MR5
 			}
 		}
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
+			factor = 0
 		}
 		fire_only_once = yes
 		days_remove = 240
@@ -606,19 +594,19 @@ USA_congress = {
 	USA_statehood_for_superior = {
 		icon = infiltrate_state
 		available = {
+			NOT = { has_global_flag = superior_made_state }
 			political_power_daily > 0.1
 		}
 		visible = {
 			848 = {
-				is_fully_controlled_by = US0
+				is_fully_controlled_by = ROOT
+			}
+			848 = {
+				is_core_of = MI5
 			}
 		}
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
+			factor = 0
 		}
 		fire_only_once = yes
 		days_remove = 240
@@ -649,7 +637,7 @@ USA_congress = {
 		}
 		visible = {
 			any_owned_state = {
-				is_us_state = yes
+				is_usa_state = yes
 				is_core_of = CS0
 				not = { is_core_of = ROOT }
 				is_claimed_by = ROOT
@@ -667,29 +655,7 @@ USA_congress = {
 		complete_effect = {
 			random_state = {
 				limit = {
-					OR = {
-						AND = {
-							state = 361
-							has_global_flag = washington_made_state
-						}
-						AND = {
-							state = 848
-							has_global_flag = superior_made_state
-						}
-						AND = {
-							NOT = {
-								state = 845
-								state = 906
-								state = 846
-								state = 847
-								state = 907
-								state = 852
-								state = 851
-								state = 848
-								state = 361
-							}
-						}
-					}
+					is_usa_state = yes
 					is_controlled_by = ROOT
 					is_core_of = CS0
 					not = { is_core_of = ROOT }
@@ -818,8 +784,206 @@ USA_congress = {
 						}
 					}
 				}
+				if = {
+					limit = {
+						state = 463
+					}
+					844 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+					650 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+					858 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
 				clr_state_flag = USA_state_admit
 			}			
+		}
+	}
+	USA_CSA_set_up_provisional_government = { 
+		available = {
+			US0 = {
+				ROOT = {
+					any_of = {
+						array = PREV.core_states
+						var:v = {
+							is_fully_controlled_by = ROOT
+							is_usa_state = yes
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			original_tag = CSA
+			has_war_with = US0
+		}
+		cost = 0
+		days_remove = 100
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			political_power_gain = -0.25
+		}
+		complete_effect = {
+			random_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = US0
+					is_usa_state = yes
+				}
+				set_state_flag = CSA_state_admit
+				custom_effect_tooltip = USA_readmit_state_tt
+			}
+		}
+		remove_effect = {
+			random_state = {
+				limit = { has_state_flag = CSA_state_admit }
+				remove_core_of = US0
+				add_claim_by = US0
+				add_core_of = CS0
+				if = {
+					limit = {
+						state = 391
+					}
+					906 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 391
+					}
+					906 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 393
+					}
+					847 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 393
+						NOT = {
+							has_global_flag = superior_made_state
+						}
+					}
+					848 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 849
+						NOT = {
+							has_global_flag = washington_made_state
+						}
+					}
+					361 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 360
+					}
+					852 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+					851 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 362
+					}
+					907 = {
+						ROOT = {
+							add_state_core = PREV
+							remove_state_claim = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						state = 378
+					}
+					845 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 395
+					}
+					846 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				if = {
+					limit = {
+						state = 463
+					}
+					844 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+					650 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+					858 = {
+						remove_core_of = US0
+						add_claim_by = US0
+						add_core_of = CS0
+					}
+				}
+				save_event_target_as = USA_state_government_created
+				clr_state_flag = CSA_state_admit
+			}
+			US0 = {
+				country_event = mtg_usa_civil_war_fascists.203
+			}
 		}
 	}
 	USA_reshuffle_congress = {
@@ -834,6 +998,244 @@ USA_congress = {
 		complete_effect = {
 			add_stability = -0.05
 			USA_return_majority = yes
+		}
+	}
+	USA_celebrate_montgomery_convention_day = {
+		icon = generic_nationalism
+		available = {
+			
+		}
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = USA_honor_the_confederacy
+					tag = US0
+				}
+				OR = {
+					has_cosmetic_tag = USA_CSA
+					has_cosmetic_tag = USA_loyalists
+				}
+			}
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = 0.05
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			if = {
+				limit = {
+					not = {
+						has_country_flag = USA_CSA_legitimacy
+					}
+				}
+				set_country_flag = {
+					flag = USA_CSA_legitimacy
+					value = 1
+				}
+			}
+			else = {
+				modify_country_flag = {
+					flag = USA_CSA_legitimacy
+					value = 1
+				}
+			}
+		}
+	}
+	USA_move_government_to_richmond = {
+		icon = generic_nationalism
+		available = {
+			362 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			capital_scope = {
+				not = { state = 362 }
+			}
+			OR = {
+				AND = {
+					has_completed_focus = USA_honor_the_confederacy
+					tag = US0
+				}
+				OR = {
+					has_cosmetic_tag = USA_CSA
+					has_cosmetic_tag = USA_loyalists
+				}
+			}
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				original_tag = CSA
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = 0.1
+			set_capital = 362
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			if = {
+				limit = {
+					not = {
+						has_country_flag = USA_CSA_legitimacy
+					}
+				}
+				set_country_flag = {
+					flag = USA_CSA_legitimacy
+					value = 1
+				}
+			}
+			else = {
+				modify_country_flag = {
+					flag = USA_CSA_legitimacy
+					value = 1
+				}
+			}
+		}
+	}
+	USA_secure_state_rights = {
+		icon = generic_nationalism
+		available = {
+			OR = {
+				has_cosmetic_tag = USA_CSA
+				has_cosmetic_tag = USA_loyalists
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = USA_honor_the_confederacy
+					tag = US0
+				}
+				OR = {
+					has_cosmetic_tag = USA_CSA
+					has_cosmetic_tag = USA_loyalists
+				}
+			}
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			if = {
+				limit = {
+					not = {
+						has_country_flag = USA_CSA_legitimacy
+					}
+				}
+				set_country_flag = {
+					flag = USA_CSA_legitimacy
+					value = 1
+				}
+			}
+			else = {
+				modify_country_flag = {
+					flag = USA_CSA_legitimacy
+					value = 1
+				}
+			}
+		}
+	}
+	USA_permit_confederate_flags = {
+		icon = generic_nationalism
+		available = {
+			OR = {
+				has_cosmetic_tag = USA_CSA
+				has_cosmetic_tag = USA_loyalists
+			}
+		}
+		visible = {
+			has_country_flag = {
+				flag = USA_CSA_legitimacy
+				value > 2
+			}
+			OR = {
+				AND = {
+					has_completed_focus = USA_honor_the_confederacy
+					tag = US0
+				}
+				OR = {
+					has_cosmetic_tag = USA_CSA
+					has_cosmetic_tag = USA_loyalists
+				}
+			}
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			if = {
+				limit = {
+					not = {
+						has_country_flag = USA_CSA_legitimacy
+					}
+				}
+				set_country_flag = {
+					flag = USA_CSA_legitimacy
+					value = 1
+				}
+			}
+			else = {
+				modify_country_flag = {
+					flag = USA_CSA_legitimacy
+					value = 1
+				}
+			}
+		}
+	}
+	USA_constitutional_convention = {
+		icon = eng_trade_unions_support
+		available = {
+			fascism > 0.35
+		}
+		visible = {
+			has_country_flag = {
+				flag = USA_CSA_legitimacy
+				value > 2
+			}
+			OR = {
+				AND = {
+					has_completed_focus = USA_honor_the_confederacy
+					tag = US0
+				}
+				OR = {
+					has_cosmetic_tag = USA_CSA
+					has_cosmetic_tag = USA_loyalists
+				}
+			}
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_war_support = 0.05
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			set_politics = { ruling_party = fascism }
+			if = {
+				limit = {
+					NOT = {
+						has_cosmetic_tag = USA_CSA
+					}
+				}
+				set_cosmetic_tag = USA_CSA
+			}
 		}
 	}
 }

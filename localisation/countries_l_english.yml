@@ -133,7 +133,7 @@
  HOL_communism_ADJ:0 "Dutch"
  HOL_monarchism:2 "Kingdom of the Netherlands"
  HOL_monarchism_DEF:1 "the Kingdom of the Netherlands"
- BEL_monarchism_ADJ:0 "Dutch"
+ HOL_monarchism_ADJ:0 "Dutch"
  CZE_fascism:0 "Bohemian Empire"
  CZE_fascism_DEF:0 "the Bohemian Empire"
  CZE_democratic:0 "Czechoslovakia"

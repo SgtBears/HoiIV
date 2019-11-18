@@ -1397,27 +1397,7 @@ on_actions = {
 						tag = USA
 					}
 					FROM.FROM = {
-						OR = {
-							AND = {
-								state = 361
-								has_global_flag = washington_made_state
-							}
-							AND = {
-								state = 848
-								has_global_flag = superior_made_state
-							}
-							AND = {
-								NOT = { state = 907 }
-								NOT = { state = 852 }
-								NOT = { state = 851 }
-								NOT = { state = 358 }
-								NOT = { state = 847 }
-								NOT = { state = 361 }
-								NOT = { state = 848 }
-								NOT = { state = 846 }
-								NOT = { state = 845 }
-							}
-						}
+						is_usa_state = yes
 						is_core_of = USA
 						not = { has_state_flag = USA_civil_war_state_cooldown }
 					}
@@ -1440,27 +1420,7 @@ on_actions = {
 						tag = CSA
 					}
 					FROM.FROM = {
-						OR = {
-							AND = {
-								state = 361
-								has_global_flag = washington_made_state
-							}
-							AND = {
-								state = 848
-								has_global_flag = superior_made_state
-							}
-							AND = {
-								NOT = { state = 907 }
-								NOT = { state = 852 }
-								NOT = { state = 851 }
-								NOT = { state = 358 }
-								NOT = { state = 847 }
-								NOT = { state = 361 }
-								NOT = { state = 848 }
-								NOT = { state = 846 }
-								NOT = { state = 845 }
-							}
-						}
+						is_usa_state = yes
 						OR = {
 							is_core_of = CSA
 							is_claimed_by = USA

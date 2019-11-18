@@ -37,28 +37,3 @@ congress_high_support_trigger = {
 		check_variable = { var = representatives_support value = rep_quorum_high compare = greater_than_or_equals }
 	}
 }
-is_us_state = {
-	OR = {
-		AND = {
-			state = 361
-			has_global_flag = washington_made_state
-		}
-		AND = {
-			state = 848
-			has_global_flag = superior_made_state
-		}
-		AND = {
-			NOT = {
-				state = 845
-				state = 906
-				state = 846
-				state = 847
-				state = 907
-				state = 852
-				state = 851
-				state = 848
-				state = 361
-			}
-		}
-	}
-}
